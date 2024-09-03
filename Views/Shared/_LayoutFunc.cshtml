@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - edutico</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/siteFuncionario.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/edutico.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="Tudo  justify-content-between">
+        <div class="sidebarF d-flex flex-column align-items-center py-4">
+            <!-- Usei classes Bootstrap para alinhar -->
+            <!-- logo -->
+            <div class="logoFunc mb-4">
+                <img src="~/imgs/logonav.png" alt="LOGO" style="height: 45px;">
+            </div>
+
+            <!-- Dashboard-->
+            <div class="BotoesSidebar w-100">
+                <!-- Adicionei w-100 para ocupar toda a largura -->
+                <p class="d-flex align-items-center">
+                    <!-- Alinhei ícones e texto -->
+                    <img src="~/imgs/Dashboard.png" alt="Dashboard" class="icone me-3"> <!-- Adicionei me-2 para espaçar -->
+                    Dashboard
+                </p>
+
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/caixa.png" alt="caixa" class="icone me-3">
+                    Produto
+                </p>
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/Notification.png" alt="Notification" class="icone me-3">
+                    Pedidos
+                </p>
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/Devolucao.png" alt="Devolucao" class="icone me-3">
+                    Devolução
+                </p>
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/Historico.png" alt="Historico" class="icone me-3">
+                    Histórico de Vendas
+                </p>
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/Logout.png" alt="Logout" class="icone me-3">
+                    Sair
+                </p>
+            </div>
+        </div>
+
+        <section class="Conteudo">
+            <!-- Barra de pesquisa centralizada -->
+            <form class="d-flex justify-content-top align-items-top search-bar">
+                <img src="~/imgs/lupa.png" class="icone" style="height: 18px; width: 18px; opacity: 0.3; margin-left: 10px; margin-top: 5px;">
+                <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial Bold'; opacity: 0.5;">
+                
+            </form>
+
+        </section>
+
+    </div>
+
+    
+
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer >
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
