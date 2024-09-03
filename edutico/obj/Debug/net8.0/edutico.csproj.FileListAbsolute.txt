@@ -105,7 +105,6 @@ C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\edutico.csproj.CoreCo
 C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\edutico.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\edutico.RazorAssemblyInfo.cache
 C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\edutico.RazorAssemblyInfo.cs
-C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\edutico.sourcelink.json
 C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\3ds\Source\Repos\Edutico\edutico\obj\Debug\net8.0\staticwebassets\msbuild.edutico.Microsoft.AspNetCore.StaticWebAssets.props
@@ -217,3 +216,4 @@ C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\refint\edu
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\edutico.pdb
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\ref\edutico.dll
+C:\Users\3ds\source\repos\edutico\edutico\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutFunc.cshtml.rz.scp.css

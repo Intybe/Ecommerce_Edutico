@@ -1,0 +1,67 @@
+﻿@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Produtos Funcionário";
+}
+
+    <section class="Conteudo"> <!-- base -->
+        <!-- Barra de pesquisa centralizada -->
+        <form class="d-flex justify-content-center align-items-center search-bar">
+            <img src="~/imgs/lupa.png" class="icone" style="height: 18px; width: 18px; opacity: 0.3; margin-left: 10px; margin-top: 5px;">
+            <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial Bold'; opacity: 0.5;">
+
+       </form>
+
+    <section class="PedidosAndamento">
+        <div class="header">
+            <h1>PEDIDOS</h1>
+    </div>
+        <table class="Tabela">
+            <thead>
+                <tr>
+                    <th>N° Pedido</th>
+                    <th>Produtos</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Cliente</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>142309</td>
+                    <td>Monta-monta 6 pçs...</td>
+                    <td>R$20,00</td>
+                    <td>27/07/2024</td>
+                    <td>Fulano Silva</td>
+                    <td>Concluído</td>  
+                    <td><a asp-controller="Home" asp-action="ProdutosF">Detalhes</a></td>
+                </tr>
+                <tr>
+                    <td>142309</td>
+                    <td>Monta-monta 6 pçs...</td>
+                    <td>R$20,00</td>
+                    <td>27/07/2024</td>
+                    <td>Fulano Silva</td>
+                    <td>Concluído</td>
+                    <td><a asp-controller="Home" asp-action="ProdutosF">Detalhes</a></td>
+                </tr>
+                <tr>
+                    <td>142309</td>
+                    <td>Monta-monta 6 pçs...</td>
+                    <td>R$20,00</td>
+                    <td>27/07/2024</td>
+                    <td>Fulano Silva</td>
+                    <td>Concluído</td>
+                    <td><a asp-controller="Home" asp-action="ProdutosF">Detalhes</a></td>   
+                </tr>
+                
+            </tbody>
+        </table>
+
+
+
+    </section>
+</section>
+        

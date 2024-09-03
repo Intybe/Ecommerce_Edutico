@@ -53,6 +53,7 @@ body {
     justify-content: space-between;
     margin-left: 32px;
     margin-top: 10px;
+ 
 }
 
     .sidebarF .BotoesSidebar img {
@@ -62,6 +63,7 @@ body {
 
     .sidebarF .BotoesSidebar p {
         font-size: 15px;
+        text-decoration: none;
     }
 
 /* Conteúdo */
@@ -235,3 +237,32 @@ body {
     .desativar-btn:hover, .editar-btn:hover {
         opacity: 0.8; /* Adiciona um efeito de opacidade ao passar o mouse */
     }
+
+/* PEDIDOS EM ANDAMENTO  */
+table {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+}
+
+th {
+    color: #ABABAB;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Glacial Indifference';
+    border-top: none;
+}
+
+td {
+    font-size: 12px;
+    font-family: Glacial;
+}
