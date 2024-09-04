@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\flavi\\.nuget\\packages\\": {}
+    "C:\\Users\\Rebeka\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\flavi\\source\\repos\\Edutico\\EduTico3\\edutico\\edutico.csproj",
+      "projectUniqueName": "C:\\Users\\Rebeka\\Desktop\\Edutico3\\Edutico3\\edutico\\edutico.csproj",
       "projectName": "edutico",
-      "projectPath": "C:\\Users\\flavi\\source\\repos\\Edutico\\EduTico3\\edutico\\edutico.csproj",
-      "packagesPath": "C:\\Users\\flavi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\flavi\\source\\repos\\Edutico\\EduTico3\\edutico\\obj\\",
+      "projectPath": "C:\\Users\\Rebeka\\Desktop\\Edutico3\\Edutico3\\edutico\\edutico.csproj",
+      "packagesPath": "C:\\Users\\Rebeka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rebeka\\Desktop\\Edutico3\\Edutico3\\edutico\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\flavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rebeka\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

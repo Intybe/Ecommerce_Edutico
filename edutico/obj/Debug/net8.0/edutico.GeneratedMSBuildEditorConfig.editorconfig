@@ -9,59 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = edutico
 build_property.RootNamespace = edutico
-build_property.ProjectDir = C:\Users\flavi\source\repos\Edutico\EduTico3\edutico\
+build_property.ProjectDir = C:\Users\Rebeka\Desktop\Edutico3\Edutico3\edutico\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\flavi\source\repos\Edutico\EduTico3\edutico
+build_property.MSBuildProjectDirectory = C:\Users\Rebeka\Desktop\Edutico3\Edutico3\edutico
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Home/DetalhesPedidoF.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/BuscaCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNjYUNhdGVnb3JpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/CadastroCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3Ryb0NsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/DetalheProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlUHJvZHV0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/DetalhesPedidoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1BlZGlkb0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Home/EsqueceuSenha.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/EsqueceuSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFc3F1ZWNldVNlbmhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Home/Index.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Home/Login.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Home/PedidosAndamentoF.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/PedidosAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZWRpZG9zQW5kYW1lbnRvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Home/ProdutosF.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Home/ProdutosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdXRvc0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Shared/Error.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/_ViewImports.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/_ViewStart.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Shared/_Layout.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-suo7fxcrqw
 
-[C:/Users/flavi/source/repos/Edutico/EduTico3/edutico/Views/Shared/_LayoutFunc.cshtml]
+[C:/Users/Rebeka/Desktop/Edutico3/Edutico3/edutico/Views/Shared/_LayoutFunc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGdW5jLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-067ufqa8tk

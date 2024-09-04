@@ -41,6 +41,21 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult BuscaCategoria()
+        {
+            return View();
+        }
+
+        public IActionResult CadastroCliente() 
+        {
+            return View();
+        }
+
+        public IActionResult DetalheProduto()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -159,6 +159,33 @@ html, body {
 }
 
 
+.product-card {
+    width: 200px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+    .product-card .card-img-top {
+        height: 150px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .product-card .btn-outline-danger {
+        background-color: white;
+        border: 1px solid #f8d7da;
+    }
+
+    .product-card .btn-outline-primary {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: white;
+        border: 1px solid #007bff;
+    }
+
 
 /*TELA LOGIN*/
 .containerLogin {
@@ -269,6 +296,170 @@ input[type="password"] {
     margin-left: 38px;
 }
 
+/*Cadastro Cliente*/
+
+.base-cli {
+    width: 100%;
+    height: 81vh;
+    margin-inline: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+}
+
+.titulo_cadascli {
+    font-family: 'Glacial Bold';
+    color: #1F3C9D;
+    margin-left: 20px;
+}
+
+.base-cli .form_cadastro input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.form_cadastro select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.form_cadastro label {
+    font-family: 'Glacial';
+}
+
+.campo {
+    margin-inline: 10px;
+}
+
+#sub_form {
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.botao_cadastro {
+    margin-inline: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cadastro-btn {
+    background: #385BD2;
+    color: white;
+    width: 150px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+    .cadastro-btn:hover {
+        color: white;
+        opacity: 0.5;
+    }
+
+.cancelar-btn {
+    background: transparent;
+    border: 2px solid #385BD2;
+    color: #385BD2;
+    width: 150px;
+    height: 44px;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+}
+
+    .cancelar-btn:hover {
+        opacity: 0.5;
+    }
+
+.obg {
+    color: red;
+}
+
+/*Busca Categoria*/
+
+
+.filtro {
+    padding-inline: 5px;
+}
+
+    .filtro select {
+        border: none;
+        background: none;
+    }
+
+.filter-section {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+    .filter-section h3 {
+        color: #426ef0;
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-family: 'Edutico';
+    }
+
+.filter-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-title {
+    font-family: 'Glacial';
+    padding: 8px;
+    padding-inline: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+    .filter-title:after {
+        content: '\25BC'; /* Setinha para baixo */
+        font-size: 12px;
+    }
+
+    .filter-title.active:after {
+        content: '\25B2'; /* Setinha para cima */
+    }
+
+.filter-content {
+    display: none;
+    padding-inline: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border-top: none; /* Remover a linha divisória */
+}
+
+    .filter-content label {
+        display: block;
+        padding: 8px 0;
+        cursor: pointer;
+    }
+
+    .filter-content input {
+        margin-right: 10px;
+    }
 /*Footer*/
 .meurodape {
     background-color: #1F3C9D;
@@ -293,32 +484,6 @@ input[type="password"] {
     font-family: 'Glacial';
 }
 
-.product-card {
-    width: 200px;
-    border: 1px solid #e0e0e0;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-    .product-card .card-img-top {
-        height: 150px;
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-    }
-
-    .product-card .btn-outline-danger {
-        background-color: white;
-        border: 1px solid #f8d7da;
-    }
-
-    .product-card .btn-outline-primary {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        background-color: white;
-        border: 1px solid #007bff;
-    }
 
 /*TELA ESQUECI A SENHA*/
 .containerSenha {
@@ -383,6 +548,51 @@ input[type="password"] {
     z-index: -1; /* Coloca a imagem atrás do conteúdo principal */
 }
 
+/*Detalhe Produto*/
+
+.base-prod-detalhe {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.imgpequena {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imgprincipal {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 31rem;
+    height: 31rem;
+}
+
+.provi {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+}
+
+.btncar {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    justify-content: center;
+}
 
 /*FUNCIONÁRIO*/
 
