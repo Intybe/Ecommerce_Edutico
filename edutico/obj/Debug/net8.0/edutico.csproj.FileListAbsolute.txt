@@ -199,7 +199,6 @@ C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\edutico.cs
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\edutico.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\edutico.RazorAssemblyInfo.cache
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\edutico.RazorAssemblyInfo.cs
-C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\edutico.sourcelink.json
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\flavi\source\repos\Edutico\edutico3\edutico\obj\Debug\net8.0\staticwebassets\msbuild.edutico.Microsoft.AspNetCore.StaticWebAssets.props

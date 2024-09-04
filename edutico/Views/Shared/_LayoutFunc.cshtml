@@ -27,7 +27,8 @@
                     Dashboard
                 </p>
 
-                <p class="d-flex align-items-center">
+                <!-- adiciona a classe "active" (coloca a cor azul no fundo) ao item de menu <p> quando a página atual corresponde à ação "ProdutosF". -->
+                <p class="d-flex align-items-center  @((ViewContext.RouteData.Values["action"] as string) == "ProdutosF" ? "active" : "")">
                     <a asp-controller="Home" asp-action="ProdutosF">
                         <img src="~/imgs/caixa.png" alt="caixa" class="icone me-3">
                         Produto
@@ -35,7 +36,7 @@
                 </p>
                        
                    
-                <p class="d-flex align-items-center">
+                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "PedidosAndamentoF" ? "active" : "")">
                      <a asp-controller="Home" asp-action="PedidosAndamentoF">
                         <img src="~/imgs/Notification.png" alt="Notification" class="icone me-3">
                         Pedidos

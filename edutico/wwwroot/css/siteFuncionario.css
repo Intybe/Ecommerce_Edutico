@@ -53,18 +53,35 @@ body {
     justify-content: space-between;
     margin-left: 32px;
     margin-top: 10px;
- 
 }
 
-    .sidebarF .BotoesSidebar img {
-        height: 20px;
-        width: 20px;
+.BotoesSidebar .active {
+    background-color: #F4F7FF; /* Cor de fundo quando ativo */
+    border-radius: 10px;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+}
+
+    .BotoesSidebar .active a {
+        color: #385BD2; /* Cor do texto e ícone quando ativo */
+        font-weight: bold;
     }
+
+.sidebarF .BotoesSidebar img {
+    height: 20px;
+    width: 20px;
+    
+}
 
     .sidebarF .BotoesSidebar p {
         font-size: 15px;
+    }
+
+    .sidebarF .BotoesSidebar a {
         text-decoration: none;
     }
+
 
 /* Conteúdo */
 .Conteudo {
@@ -249,7 +266,7 @@ table {
 th, td {
     border: 2px solid #ddd;
     padding: 8px;
-    text-align: center;
+    
     border-left: none;
     border-right: none;
 }
@@ -259,10 +276,125 @@ th {
     font-weight: normal;
     font-size: 14px;
     font-family: 'Glacial Indifference';
+    text-align: left;
     border-top: none;
+    padding-bottom: 0px;
 }
 
 td {
     font-size: 12px;
     font-family: Glacial;
+    text-align: center;
+}
+
+
+/* DETALHES PEDIDO*/
+.headerDetalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+    .headerDetalhes h1 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: #000;
+        font-family: Edutico;
+    }
+
+hr {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 95%;
+    border: 1px solid #b1b1b1;
+}
+.DadosCliPed{
+    margin-left: 90px;
+}
+.Infos1 {
+    width: 60%;
+    height: 20%;
+    align-items: center;
+}
+
+    .Infos1 .Nped {
+        width: 100%;
+        font-family: 'Glacial Indifference';
+        color: black;
+        font-size: 15px;
+    }
+
+    .Infos1 .DadosNped {
+        width: 90%;
+        font-family: 'Glacial Bold';
+        font-size: 16px;
+    }
+
+.Nped p, .DadosNped p {
+    text-align: left;
+    padding-inline: 20px; /* Adiciona 20px de espaço à esquerda e à direita */
+    margin-left: 10px;
+    margin-bottom: 0; /* Remove qualquer margem inferior */
+}
+
+/* Dados Cliente*/
+.DadosCliPed {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 50%;
+    height: 20%;
+    align-items: center;
+}
+.headerDadoCli {
+    font-family: 'Glacial Bold';
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.line {
+    border-top: 1px solid #e0e0e0;
+    margin-top: -15px;
+}
+
+.NomeSobre {
+    margin-top: 15px;
+    width: 90%;
+    font-family: 'Glacial Indifference';
+    color: black;
+    font-size: 14px;
+    padding-inline: 5px;
+    margin-bottom: 0;
+}
+
+.DadoNomeSobre {
+    margin-top: -15px;
+    padding-inline: 5px;
+    width: 90%;
+    font-family: 'Glacial Bold';
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+
+
+.TelCpf {
+    margin-top: 15px;
+    width: 90%;
+    font-family: 'Glacial Indifference';
+    color: black;
+    font-size: 14px;
+    padding-inline: 5px;
+    margin-bottom: 0;
+}
+
+.DadoTelCpf {
+    margin-top: -15px;
+    padding-inline: 5px;
+    width: 90%;
+    font-family: 'Glacial Bold';
+    opacity: 0.5;
+    font-size: 13px;
 }
