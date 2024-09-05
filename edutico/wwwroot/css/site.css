@@ -589,28 +589,27 @@ input[type="password"] {
     padding: 20px;
 }
 
-/* Sidebar */
+/* Sidebar Perfil*/
 .MinhaConta {
     width: 250px;
-    height: 90vh;
+    height: auto;
     background-color: white;
     border-radius: 10px;
     align-items: center;
     box-shadow: 2px 2px 2px 1px #ccc;
+    padding-inline: 25px;
 }
 
-.MinhaConta .MenuLateral {
-    font-family: Glacial Bold;
-    color: #385BD2;
-    display: grid;
-    gap: 20px;
-    justify-content: space-between;
-    margin-left: 32px;
-    margin-top: 10px;
-}
+    .MinhaConta .MenuLateral {
+        font-family: 'Glacial Bold';
+        color: #555555;
+        display: grid;
+        gap: 10px;
+        justify-content: space-between;
+    }
 
 .MenuLateral .active {
-    background-color: #F4F7FF; /* Cor de fundo quando ativo */
+    background-color: red; /* Cor de fundo quando ativo */
     border-radius: 10px;
     align-items: center;
     width: 200px;
@@ -618,7 +617,7 @@ input[type="password"] {
 }
 
     .MenuLateral .active a {
-        color: #385BD2; /* Cor do texto e ícone quando ativo */
+        color: red; /* Cor do texto e ícone quando ativo */
         font-weight: bold;
     }
 
@@ -629,14 +628,22 @@ input[type="password"] {
 
 .MinhaConta .MenuLateral p {
     font-size: 15px;
+    color: #555555;
 }
 
 .MinhaConta .MenuLateral a {
     text-decoration: none;
 }
 
+.MinhaConta .MenuLateral .Botoes a {
+    font-family: 'Glacial';
+    color: #555555;
+}
+
 .areaFavoritos {
-    flex: 2; /* Ajusta a largura conforme necessário */
+    background: red;
+    margin-left:20px;
+
 }
 
 /*Detalhe Produto*/
