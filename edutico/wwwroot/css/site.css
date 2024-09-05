@@ -487,49 +487,55 @@ input[type="password"] {
 
 /*TELA ESQUECI A SENHA*/
 .containerSenha {
+    background-color: white;
+    border: 1px solid black;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    justify-items: center;
+    justify-content: center;
     align-items: center;
-    height: 583px; /*delimita a altura (para a img ficar centralizada*/
-    margin-left: 10px;
+    height: 340px;
+    width: 600px;
 }
 
-.container .TxtNovaSenha {
+.TxtNovaSenha {
     font-family: 'Glacial Bold';
     text-align: center;
-    margin-top: 70px;
-    width: 1050px;
+    font-size: 25px;
 }
 
-/*FORM SENHA*/
-.areaSenha {
 
-    width: 400px;
-    margin-top: 35px;
-}
-
-.form-group {
+.form-senha {
+    align-items: center;
     margin-bottom: 15px;
+    text-align: left;
 }
 
-    .form-group label {
+
+    .form-senha label {
         font-family: 'Glacial';
         display: block;
         margin-bottom: 5px;
-        font-size: 20px;
+        font-size: 15px;
+        align-items: center;
     }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-}
 
-    input[type="text"]:focus,
-    input[type="password"]:focus {
-        border: 1px solid #E37B1B; /* Cor da borda ao focar */
-        outline: none; /* Remove o contorno padrão */
+
+    .form-senha input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 10px;
     }
+
+        .form-senha input[type="text"]:focus,
+        input[type="password"]:focus {
+            border: 1px solid #1F3C9D; /* Cor da borda ao focar */
+            outline: none; /* Remove o contorno padrão */
+        }
 
 .forgot-password {
     display: block;
@@ -540,12 +546,97 @@ input[type="password"] {
 
 
 .imgBolas {
-    position: absolute; /* Posiciona a imagem relativamente ao container pai */
-    bottom: 0; /* Ajusta a imagem na parte inferior */
-    right: 0; /* Ajusta a imagem na parte direita */
-    height: 100%; /* Ajusta a altura para ocupar todo o container */
-    width: auto; /* Mantém a proporção da imagem */
-    z-index: -1; /* Coloca a imagem atrás do conteúdo principal */
+    background-image: url('/imgs/bolas.png');
+    background-position: center;
+    padding: 0;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSenha .button-senha {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    background: #1F3C9D;
+    font-weight: bold;
+    font-family: 'Glacial Bold';
+    width: 210px;
+    height: 44px;
+    padding: 4px;
+    border-radius: 20px;
+    border: none;
+}
+
+.button-senha:hover {
+    color: white;
+    border: 2px solid #1F3C9D;
+    opacity: 1;
+}
+
+.containerSenha .ConfirmarSenha-btn {
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*FAVORITOS*/
+.Favs {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar */
+.MinhaConta {
+    width: 250px;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px #ccc;
+}
+
+.MinhaConta .MenuLateral {
+    font-family: Glacial Bold;
+    color: #385BD2;
+    display: grid;
+    gap: 20px;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-top: 10px;
+}
+
+.MenuLateral .active {
+    background-color: #F4F7FF; /* Cor de fundo quando ativo */
+    border-radius: 10px;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+}
+
+    .MenuLateral .active a {
+        color: #385BD2; /* Cor do texto e ícone quando ativo */
+        font-weight: bold;
+    }
+
+.MinhaConta .MenuLateral img {
+    height: 20px;
+    width: 20px;
+}
+
+.MinhaConta .MenuLateral p {
+    font-size: 15px;
+}
+
+.MinhaConta .MenuLateral a {
+    text-decoration: none;
+}
+
+.areaFavoritos {
+    flex: 2; /* Ajusta a largura conforme necessário */
 }
 
 /*Detalhe Produto*/
