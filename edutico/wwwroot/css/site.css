@@ -688,6 +688,30 @@ input[type="password"] {
     justify-content: center;
 }
 
+/*Carrinho Vazio*/
+.ticoCarrinho {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .ticoCarrinho img {
+        display: block; /* Assegura que a imagem se comporte como um bloco, permitindo o centrar com margin auto */
+        width: 250px;
+        height: 355px;
+    }
+
+
+    .ticoCarrinho p {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
 /*Detalhe Produto*/
 
 .base-prod-detalhe {

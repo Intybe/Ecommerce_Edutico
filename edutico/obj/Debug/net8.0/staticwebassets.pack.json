@@ -141,6 +141,10 @@
       "PackagePath": "staticwebassets\\imgs\\instagram.png"
     },
     {
+      "Id": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\linha.png",
+      "PackagePath": "staticwebassets\\imgs\\linha.png"
+    },
+    {
       "Id": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\logo.png",
       "PackagePath": "staticwebassets\\imgs\\logo.png"
     },
@@ -187,6 +191,10 @@
     {
       "Id": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\sair.png",
       "PackagePath": "staticwebassets\\imgs\\sair.png"
+    },
+    {
+      "Id": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
+      "PackagePath": "staticwebassets\\imgs\\ticoCarrinhoVazio.png"
     },
     {
       "Id": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\ticofavoritos.png",

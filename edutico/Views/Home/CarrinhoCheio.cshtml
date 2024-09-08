@@ -2,4 +2,44 @@
 @{
     ViewData["Title"] = "Carrinho Cheio";
 }
+<section class="carrinhoCheio">
+    <div class="col-9 base produtos">
+        <a href="#" class="Voltar">Voltar</a>
+        <div class="justify-content-between d-flex">
+            <p style=" font-family: 'Edutico'; font-size:23px; color:#426ef0">SEU CARRINHO</p>
+        </div>
+        <div class="col-sm-3 d-flex justify-content-between">
+            <div class="card product-card my-2">
+                <div class="card-body py-2">
+                    <div class="position-relative">
+                        <button class="btn position-absolute right-0 top-0 px-0">
+                            <img src="~/imgs/heart.png" class="heart-icon">
+                        </button>
+                    </div>
+                    <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
+                    <h6 class="card-title mt-3 text-center mx-0 glacial-bold">Monta-Monta, 6 pçs</h6>
+                    <p class="text mb-3 small-text">
+                        <img src="~/imgs/Star.png" class="icone mb-1"> 5.0 (10 avaliações)
+                    </p>
+                    <p class="text-primary h4 glacial-bold">R$ 10,00</p>
+                </div>
+                <button class="btn position-absolute bottom-0 end-0 px-2">
+                    <img src="~/imgs/carrinhoadd.png" class="cart-icon">
+                </button>
+            </div>
 
+        </div>
+
+    </div>
+    <div class="col-6 base areaPrevia">
+        <div class="previa">
+            <p style=" font-family: 'Glacial Bold'; font-size:23px">Prévia</p>
+            <img src="~/imgs/linha.png" alt="linha">
+            <p style=" font-family: 'Glacial Indifference'; font-size:23px">Entrega</p>
+
+        </div>
+        <div class="tipoPag">
+
+        </div>
+    </div>
+</section>

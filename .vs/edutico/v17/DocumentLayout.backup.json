@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\carrinhocheio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\tcc\\edutico3\\edutico\\views\\home\\favoritosvazio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\favoritosvazio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\tcc\\edutico3\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\tcc\\edutico3\\edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\tcc\\edutico3\\edutico\\views\\home\\favoritoscheio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\favoritoscheio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\tcc\\edutico3\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\tcc\\edutico3\\edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -48,7 +40,7 @@
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\CarrinhoCheio.cshtml",
               "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\Views\\Home\\CarrinhoCheio.cshtml",
               "RelativeToolTip": "edutico\\Views\\Home\\CarrinhoCheio.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwCQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-08T01:20:40.313Z",
               "EditorCaption": ""
@@ -56,40 +48,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FavoritosVazio.cshtml",
-              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\Views\\Home\\FavoritosVazio.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\FavoritosVazio.cshtml",
-              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\Views\\Home\\FavoritosVazio.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\FavoritosVazio.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-07T23:09:54.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\css\\site.css",
               "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAIoCAAAAAAAAAAAAAJECAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALECAAAAAAAAAAAAALICAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-04T21:47:01.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FavoritosCheio.cshtml",
-              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\Views\\Home\\FavoritosCheio.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\FavoritosCheio.cshtml",
-              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\Views\\Home\\FavoritosCheio.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\FavoritosCheio.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-04T23:34:49.215Z",
               "EditorCaption": ""
             },
             {
@@ -100,14 +66,14 @@
               "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\Controllers\\HomeController.cs",
               "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAEkAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAUwE0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T23:16:28.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "siteFuncionario.css",
               "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\css\\siteFuncionario.css",
               "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteFuncionario.css",

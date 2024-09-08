@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JVv1IwlWn9FbJiZX+KobsiT317pRL9RTibX/rGmBCo0=",
+  "Hash": "YXhZxi3bz3LIpmlqLsPyTWYzZhcB24tMHEVZc+7Pj3c=",
   "Source": "edutico",
   "BasePath": "_content/edutico",
   "Mode": "Default",
@@ -606,6 +606,25 @@
       "OriginalItemSpec": "wwwroot\\imgs\\instagram.png"
     },
     {
+      "Identity": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\linha.png",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/linha.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\linha.png"
+    },
+    {
       "Identity": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\logo.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
@@ -927,6 +946,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\Star.png"
+    },
+    {
+      "Identity": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/ticoCarrinhoVazio.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\ticoCarrinhoVazio.png"
     },
     {
       "Identity": "C:\\Users\\evely\\OneDrive\\Área de Trabalho\\TCC\\Edutico3\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
