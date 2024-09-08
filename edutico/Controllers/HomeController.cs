@@ -26,20 +26,7 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult ProdutosF()
-        {
-            return View();
-        }
-
-        public IActionResult PedidosAndamentoF()
-        {
-            return View();
-        }
-
-        public IActionResult DetalhesPedidoF()
-        {
-            return View();
-        }
+     
 
         public IActionResult BuscaCategoria()
         {
@@ -80,7 +67,28 @@ namespace edutico.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //FUNCIONÁRIO
+        public IActionResult ProdutosF()
+        {
+            return View();
+        }
+
+        public IActionResult PedidosAndamentoF()
+        {
+            return View();
+        }
+
+        public IActionResult DetalhesPedidoF()
+        {
+            return View();
+        }
+
+        public IActionResult CadastrarProdutosF()
+        {
+            return View();
+        }
+
+            [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

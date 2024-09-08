@@ -71,22 +71,20 @@ body {
 .sidebarF .BotoesSidebar img {
     height: 20px;
     width: 20px;
-    
 }
 
-    .sidebarF .BotoesSidebar p {
-        font-size: 15px;
-    }
+.sidebarF .BotoesSidebar p {
+    font-size: 15px;
+}
 
-    .sidebarF .BotoesSidebar a {
-        text-decoration: none;
-    }
-
+.sidebarF .BotoesSidebar a {
+    text-decoration: none;
+}
 
 /* Conteúdo */
 .Conteudo {
     width: 90%;
-    height: 100%;
+    height: auto;
     margin-left: 190px;
     margin-top: -93vh;
     padding: 15px;
@@ -105,7 +103,7 @@ body {
     border-radius: 10px;
 }
 
-.Conteudo .layout-label {
+.layout-label {
     background-color: transparent;
     margin-left: 2px;
     width: 95%;
@@ -119,7 +117,6 @@ body {
 .ProdutosF {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Previne o conteúdo de ultrapassar as bordas */
 }
 
 
@@ -149,15 +146,14 @@ body {
             font-size: 14px;
             font-family: 'Glacial Indifference';
             color: #000;
-          
         }
+
 
         .header .sort select {
             font-size: 14px;
             padding: 5px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            
             margin-left: 5px;
         }
 
@@ -172,7 +168,6 @@ body {
         margin-top: 40px;
         margin-left: 5px;
     }
-
 
 .product-card {
     margin-left: 15px;
@@ -191,15 +186,14 @@ body {
 
     .product-card img.card-img-top {
         border-radius: 30px; /* Arredonda as bordas da imagem */
-       
-        margin-top: 5px; /* Espaçamento superior */
+        margin-top: 5px;
         width: 150px;
         height: 150px;
     }
 
     .product-card h6.card-title {
-        margin-top: 5px; /* Espaçamento superior do título */
-        margin-bottom: 5px; /* Espaçamento inferior do título */
+        margin-top: 5px;
+        margin-bottom: 5px;
         font-family: "Glacial Bold"
     }
 
@@ -211,25 +205,23 @@ body {
     }
 
     .product-card p.text-primary {
-        margin-top: -15px; /* Espaçamento superior do preço */
-        margin-bottom: 5px; /* Espaçamento inferior do preço */
+        margin-top: -15px;
+        margin-bottom: 5px;
         font-family: "Glacial Bold";
         color: #385BD2;
     }
 
     .product-card .button-container {
-        margin-top: 5px; /* Espaçamento superior dos botões */
+        margin-top: 5px;
     }
-
-
 
 /* Botões */
 .button-container {
     margin-right: 15px;
 }
+
 .btn {
-    padding: 2px; /* Espaçamento interno dos botões */
-    
+    padding: 2px;
     border-radius: 10px;
     border: none;
     font-family: 'Glacial';
@@ -237,7 +229,6 @@ body {
     font-size: 14px; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
 }
-
 
 .desativar-btn {
     background-color: rgba(227, 27, 33, 0.3); /* Cor vermelha com 30% de opacidade */
@@ -266,7 +257,6 @@ table {
 th, td {
     border: 2px solid #ddd;
     padding: 8px;
-    
     border-left: none;
     border-right: none;
 }
@@ -288,7 +278,12 @@ td {
 }
 
 
-/* DETALHES PEDIDO*/
+/* DETALHES PEDIDO */
+.DetalhesPedidosF {
+    height: auto;
+    padding: 10px;
+}
+
 .headerDetalhes {
     display: flex;
     justify-content: space-between;
@@ -310,48 +305,55 @@ hr {
     width: 95%;
     border: 1px solid #b1b1b1;
 }
-.DadosCliPed{
-    margin-left: 90px;
-}
-.Infos1 {
-    width: 60%;
-    height: 20%;
+
+.Info {
+    margin-top: 5px;
+    margin-left: 2px;
+    width: auto;
+    padding: 10px;
     align-items: center;
 }
 
-    .Infos1 .Nped {
-        width: 100%;
+    .Info p {
         font-family: 'Glacial Indifference';
         color: black;
-        font-size: 15px;
+        font-size: 14px;
+        padding-inline: 5px;
+        margin-bottom: 0;
     }
 
-    .Infos1 .DadosNped {
+    .Info h6 {
+        font-size: 15px;
+        padding-inline: 5px;
         width: 90%;
         font-family: 'Glacial Bold';
-        font-size: 16px;
     }
 
-.Nped p, .DadosNped p {
-    text-align: left;
-    padding-inline: 20px; /* Adiciona 20px de espaço à esquerda e à direita */
-    margin-left: 10px;
-    margin-bottom: 0; /* Remove qualquer margem inferior */
+.NPed {
+    margin-left: 15px;
 }
 
-/* Dados Cliente*/
+.Data {
+    margin-left: 220px;
+    margin-top: -50px;
+}
+
+/* Dados Cliente */
 .DadosCliPed {
-    margin-top: 50px;
-    margin-left: 20px;
-    width: 50%;
-    height: 20%;
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 60%;
+    height: auto;
+    padding: 10px;
     align-items: center;
 }
+
 .headerDadoCli {
     font-family: 'Glacial Bold';
     font-size: 16px;
     margin-bottom: 10px;
-    margin-left: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .line {
@@ -359,9 +361,7 @@ hr {
     margin-top: -15px;
 }
 
-.NomeSobre {
-    margin-top: 15px;
-    width: 90%;
+.DadosCliPed p {
     font-family: 'Glacial Indifference';
     color: black;
     font-size: 14px;
@@ -369,32 +369,245 @@ hr {
     margin-bottom: 0;
 }
 
-.DadoNomeSobre {
-    margin-top: -15px;
+.DadosCliPed h6 {
+    font-size: 12px;
     padding-inline: 5px;
     width: 90%;
     font-family: 'Glacial Bold';
     opacity: 0.5;
-    font-size: 13px;
 }
 
+.DadosCliPed1 {
+    margin-left: 15px;
+}
 
+.DadosCliPed2 {
+    margin-left: 210px;
+    margin-top: -87px;
+}
 
-.TelCpf {
-    margin-top: 15px;
-    width: 90%;
+.DadosCliPed3 {
+    margin-left: 15px;
+}
+
+.DadosCliPedEnd4 {
+    margin-left: 220px;
+    margin-top: -84px;
+}
+
+.DadosCliPedEnd5 {
+    margin-left: 390px;
+    margin-top: -87px;
+}
+
+.Tipo {
+    margin-left: 15px;
+}
+
+.CodPix {
+    margin-left: 122px;
+    margin-top: -16px;
+}
+
+/*CARD PEDIDO */
+.CardPed {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    margin-left: 525px;
+    margin-top: -400px;
     font-family: 'Glacial Indifference';
-    color: black;
-    font-size: 14px;
-    padding-inline: 5px;
-    margin-bottom: 0;
 }
 
-.DadoTelCpf {
-    margin-top: -15px;
-    padding-inline: 5px;
-    width: 90%;
-    font-family: 'Glacial Bold';
-    opacity: 0.5;
-    font-size: 13px;
+    .CardPed h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-family: 'Glacial Bold';
+        font-weight: bold;
+    }
+
+    .CardPed .Detalhes {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+        .CardPed .Detalhes p {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .CardPed .Detalhes p img {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+            }
+
+    .CardPed .total {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Glacial Bold';
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .CardPed .total .amount {
+            font-size: 24px;
+            color: #000;
+        }
+
+    .CardPed .btn {
+        background-color: #0047bb;
+        width: 150px;
+        height: 30px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: none;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Glacial Bold';
+        font-size: 14px;
+    }
+
+
+.btnvoltar {
+    margin-top: 80px;
+    margin-left: 750px;
+    width: 150px;
+    height: 30px;
 }
+
+    .btnvoltar .register-button {
+        font-size: 14px;
+        font-family: 'Glacial Bold';
+        color: #385BD2;
+        border: 2px solid #385BD2;
+        padding: 5px 30px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+/*CADASTRAR PRODUTO*/
+.form-group {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: 35%;
+    height: auto;
+    padding: 10px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.req {
+    color: red;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+    .form-control:focus {
+        border-color: #ccc;
+    }
+
+#CxTipo1 {
+    border: 0.5px solid #191919;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#CxDesc {
+    border: 0.5px solid #191919;
+    height: 120px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+#CxTipo2 {
+    border: 0.5px solid #191919;
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Select {
+    border: 0.5px solid #191919;
+    height: 25px;
+    width: 300px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+
+.form-group2 {
+    margin-top: -500px;
+    margin-bottom: 15px;
+    margin-left: 525px;
+    width: 35%;
+    height: auto;
+    padding: 10px;
+}
+
+.Select2 {
+    border: 0.5px solid #191919;
+    height: 25px;
+    width: 400px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+}
+
+.btns {
+    margin-top: 80px;
+    margin-left: 550px;
+    text-align: center; /* Centraliza os botões horizontalmente */
+}
+
+    .btns .btnCancelar {
+        font-size: 14px;
+        font-family: 'Glacial Bold';
+        color: #1C3FB9;
+        background-color: transparent;
+        border: 2px solid #1C3FB9;
+        padding: 5px 30px;
+        border-radius: 20px;
+        text-decoration: none;
+        margin-right: 10px; /* Espaço entre os botões */
+        display: inline-block; /* Mantém o botão lado a lado */
+    }
+
+    .btns .btnCadastrar {
+        font-size: 14px;
+        font-family: 'Glacial Bold';
+        color: white;
+        border: 2px solid #1C3FB9;
+        background-color: #1C3FB9;
+        padding: 5px 30px;
+        border-radius: 20px;
+        text-decoration: none;
+        display: inline-block; /* Mantém o botão lado a lado */
+    }

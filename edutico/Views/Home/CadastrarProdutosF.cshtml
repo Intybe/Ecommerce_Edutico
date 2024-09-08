@@ -1,0 +1,94 @@
+﻿@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Cadastrar Produtos";
+}
+
+<section class="Conteudo">
+    <!-- base -->
+
+
+    <section class="Cadastrar Produtos">
+        <div class="header">
+            <h1>CADASTRAR PRODUTOS</h1>
+        </div>
+        <hr />
+
+        <div class="form-group">
+
+            <!-- NOME DO PRODUTO-->
+            <label for="NomeProd">Nome <span class="req">*</span></label>
+            <input type="text" id="CxTipo1" class="form-control" placeholder="Digite aqui o nome do produto" />
+
+            <!-- DESCRIÇÃO DO PRODUTO-->
+            <label for="DescProd">Descrição <span class="req">*</span></label>
+            <input type="text" id="CxDesc" class="form-control" placeholder="Digite aqui a descrição do produto" />
+
+            <!-- CLASSIFICAÇÃO INDICATIVA-->
+            <div class="ClassIndProd">
+                <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
+
+            </div>
+            <div>
+                <select class="Select">
+                    <option value="3Anos">3 Anos</option>
+                    <option value="3Anos">3 Anos</option>
+                    <option value="3Anos">3 Anos</option>
+                </select>
+            </div>
+
+            <!-- HABILIDADE TRABALHADA-->
+            <label for="HabTabalhada">Habilidade Trabalhada <span class="req">*</span></label>
+            <input type="text" id="CxTipo2" class="form-control" placeholder="Digite aqui a habilidade trabalhada do produto" />
+
+            <!-- VALOR UNITÁRIO-->
+            <label for="ValorUni">Valor Unitário <span class="req">*</span></label>
+            <input type="text" id="CxTipo2" class="form-control" placeholder="Digite aqui o valor unitário do produto" />
+
+            <!--STATUS DO PRODUTO-->
+            <div class="StatusProd">
+                <label for="StatusProd">Status <span class="req">*</span> </label>
+            </div>
+
+            <select class="Select">
+                <option value="Disponive">Disponível</option>
+                <option value="Disponive">Disponível</option>
+                <option value="Disponive">Disponível</option>
+            </select>
+            <!--FORM GROUP -->
+        </div>
+
+
+        <div class="form-group2">
+            <!-- ESTOQUE-->
+            <label for="EstoqueProd">Estoque <span class="req">*</span></label>
+            <input type="text" id="CxTipo1" class="form-control" placeholder="Digite aqui a quantidade em estoque" />
+
+            <!--DESTAQUE-->
+            <div class="DestaqueProd">
+                <label for="DestaqueProd">Destaque <span class="req">*</span></label>
+
+            </div>
+            <div>
+                <select class="Select2">
+                    <option value=""></option>
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select>
+            </div>
+
+            <div class="UpImg">
+                <label for="Upimg">Imagem <span class="req">*</span></label>
+                <input type="file" accept="image/*" class="picture__input" />
+                <span class="picture__image"></span>
+            </div>
+        </div>
+
+        <div class="btns">
+            <button class="btnCancelar btn-primary">Cancelar</button>
+            <button class="btnCadastrar btn-primary">Cadastrar</button>
+        </div>
+
+
+    </section>
+</section>
