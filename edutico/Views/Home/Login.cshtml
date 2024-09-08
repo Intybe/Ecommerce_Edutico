@@ -16,35 +16,43 @@
                         <hr />
                     </div>
 
+                    <!-- Mensagem de erro -->
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.Error
+                        </div>
+                    }
+
                     <!-- FORM LOGIN-->
                     <div class="areaLogin">
-                        <form>
+                        <form asp-controller="Login" asp-action="Login" method="post">
                             <div class="form-group">
                                 <label for="username">Usuário</label>
-                                <input type="text" id="username" placeholder="Digite aqui seu nome de usuário">
+                                <input type="text" id="username" name="usuario" placeholder="Digite aqui seu nome de usuário">
                             </div>
                             <div class="form-group">
-                                 <label for="password">Senha</label>
-                                 <input type="password" id="password" placeholder="Digite aqui sua senha">
+                                <label for="password">Senha</label>
+                                <input type="password" id="password" name="senha" placeholder="Digite aqui sua senha">
                             </div>
                             <div class="form-group">
-                                 <a href="#" class="forgot-password">Esqueci a senha</a>
+                                <a href="#" class="forgot-password">Esqueci a senha</a>
                             </div>
                             <div class="button-group">
-                                    <button type="submit" asp-controller="Home" asp-action="MenuGerenciar" class="btn Entrar-btn">Entrar</button>
+                                <button type="submit" class="btn Entrar-btn">Entrar</button>
                                 <button type="submit" asp-controller="Home" asp-action="CadastroCliente" class="btn Criar-btn">Criar conta</button>
                             </div>
                         </form>
 
                     </div>
-                        
+
                 </div>
             </div>
 
             <div class="imgMaeFilho">
                 <img src="~/imgs/img_mae_filho.png" alt="Menino Feliz" style="height: 705px;">
-           </div>
+            </div>
+        </div>
     </div>
-</div>
 </section>
 
