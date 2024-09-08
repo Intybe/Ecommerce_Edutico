@@ -583,16 +583,19 @@ input[type="password"] {
     color: white;
 }
 
+
 /*FAVORITOS*/
 .Favs {
     display: flex;
     padding: 20px;
+
 }
+
 
 /* Sidebar Perfil*/
 .MinhaConta {
-    width: 250px;
-    height: auto;
+    width: 900px;
+    height: 325px;
     background-color: white;
     border-radius: 10px;
     align-items: center;
@@ -612,7 +615,7 @@ input[type="password"] {
     background-color: red; /* Cor de fundo quando ativo */
     border-radius: 10px;
     align-items: center;
-    width: 200px;
+    width: 250px;
     height: 30px;
 }
 
@@ -641,9 +644,48 @@ input[type="password"] {
 }
 
 .areaFavoritos {
-    background: red;
-    margin-left:20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
+    padding-inline: 25px;
+}
 
+
+.imgCataventos img {
+    width: 270px;
+    height: 270px;
+    margin: auto;
+
+}
+
+/*FAVORITOS VAZIO*/
+.Fav {
+
+    display: flex;
+    padding: 20px;
+    height: 125vh;
+}
+
+.Vazio {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Vazio img {
+        display: block; /* Assegura que a imagem se comporte como um bloco, permitindo o centrar com margin auto */
+        width:250px;
+        height:355px;
+}
+
+
+.Vazio p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Detalhe Produto*/

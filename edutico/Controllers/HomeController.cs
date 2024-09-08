@@ -66,6 +66,15 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult FavoritosVazio()
+        {
+            return View();
+        }
+
+        public IActionResult CarrinhoCheio() {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
