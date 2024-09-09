@@ -38,11 +38,6 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult DetalheProduto()
-        {
-            return View();
-        }
-
         public IActionResult EsqueceuSenha()
         {
             return View();
@@ -84,6 +79,11 @@ namespace edutico.Controllers
         }
 
         public IActionResult CadastrarProdutosF()
+        {
+            return View();
+        }
+
+        public IActionResult DetalhesProduto()
         {
             return View();
         }
