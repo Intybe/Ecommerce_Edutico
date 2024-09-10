@@ -88,11 +88,6 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult CadastrarProdutosF()
-        {
-            return View();
-        }
-
         public IActionResult AlterarProdutosF()
         {
             return View();
