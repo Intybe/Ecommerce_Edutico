@@ -71,6 +71,11 @@ namespace edutico.Controllers
         {
             return View();
         }
+        
+        public IActionResult DetalhesPedido()
+        {
+            return View();
+        }
 
         //FUNCIONÁRIO
         public IActionResult ProdutosF()

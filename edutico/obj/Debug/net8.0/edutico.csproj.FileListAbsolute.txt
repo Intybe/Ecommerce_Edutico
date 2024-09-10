@@ -557,3 +557,4 @@ C:\Users\3ds\Documents\Edutico\edutico\obj\Debug\net8.0\scopedcss\projectbundle\
 C:\Users\3ds\Documents\Edutico\edutico\obj\Debug\net8.0\edutico.csproj.Up2Date
 C:\Users\3ds\Documents\Edutico\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\3ds\Documents\Edutico\edutico\obj\Debug\net8.0\ref\edutico.dll
+C:\Users\Rebeka\Desktop\Edutico_oficial\edutico\obj\Debug\net8.0\edutico.sourcelink.json
