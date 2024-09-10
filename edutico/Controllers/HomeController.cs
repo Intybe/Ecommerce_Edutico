@@ -62,6 +62,16 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult DetalhesProduto()
+        {
+            return View();
+        }
+
+        public IActionResult MeuPerfil()
+        {
+            return View();
+        }
+
         //FUNCIONÁRIO
         public IActionResult ProdutosF()
         {
@@ -82,12 +92,6 @@ namespace edutico.Controllers
         {
             return View();
         }
-
-        public IActionResult DetalhesProduto()
-        {
-            return View();
-        }
-
         public IActionResult AlterarProdutosF()
         {
             return View();
