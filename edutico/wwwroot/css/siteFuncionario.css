@@ -1,4 +1,4 @@
-﻿﻿ /* Fontes */
+﻿/* Fontes */
 @font-face {
     font-family: 'Edutico';
     src: url('/fonts/Edutico-Regular.otf') format('opentype');
@@ -523,7 +523,7 @@ label {
 }
 
     .form-control:focus {
-        border-color: #ccc;
+        border-color: #000;
     }
 
 #CxTipo1 {
@@ -534,6 +534,10 @@ label {
     margin-bottom: 10px;
 }
 
+    #CxTipo1:focus {
+        border-color: #000;
+    }
+
 #CxDesc {
     border: 0.5px solid #191919;
     height: 120px;
@@ -541,6 +545,10 @@ label {
     margin-bottom: 10px;
     width: 400px;
 }
+
+    #CxDesc:focus {
+        border-color: #000;
+    }
 
 #CxTipo2 {
     border: 0.5px solid #191919;
@@ -550,6 +558,10 @@ label {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+    #CxTipo2:focus {
+        border-color: #000;
+    }
 
 .Select {
     border: 0.5px solid #191919;
@@ -582,8 +594,9 @@ label {
 }
 
 .btns {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 550px;
+    margin-bottom: 20px;
     text-align: center; /* Centraliza os botões horizontalmente */
 }
 
@@ -610,4 +623,43 @@ label {
         border-radius: 20px;
         text-decoration: none;
         display: inline-block; /* Mantém o botão lado a lado */
+    }
+
+/* SUBIDNO IMG */
+.picture__input {
+    display: none;
+}
+
+.picture {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    border: 0.5px dashed #bbb;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Glacial Indifference', sans-serif;
+    padding: 10px;
+    position: relative; /* Para controlar a posição do texto/imagem */
+}
+
+.picture__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    border-radius: 10px;
+}
+
+.picture__placeholder {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+    .picture__placeholder img {
+        max-width: 200px; /* Tamanho do símbolo */
+        display: block;
+        margin: 0 auto;
     }

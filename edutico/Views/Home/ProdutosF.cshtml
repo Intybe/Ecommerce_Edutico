@@ -4,14 +4,15 @@
     ViewData["Title"] = "Produtos Funcionário";
 }
 
-    <section class="Conteudo"> <!-- base -->
-        <!-- Barra de pesquisa centralizada -->
-        <form class="d-flex justify-content-center align-items-center search-bar">
-            <img src="~/imgs/lupa.png" class="icone" style="height: 18px; width: 18px; opacity: 0.3; margin-left: 10px; margin-top: 5px;">
-            <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial Bold'; opacity: 0.5;">
+<section class="Conteudo">
+    <!-- base -->
+    <!-- Barra de pesquisa centralizada -->
+    <form class="d-flex justify-content-center align-items-center search-bar">
+        <img src="~/imgs/lupa.png" class="icone" style="height: 18px; width: 18px; opacity: 0.3; margin-left: 10px; margin-top: 5px;">
+        <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial Bold'; opacity: 0.5;">
 
-       </form>
-        <section class="ProdutosF">
+    </form>
+    <section class="ProdutosF">
         <div class="header">
             <h1>PRODUTOS</h1>
             <div class="sort">
@@ -21,7 +22,7 @@
                     <option value="esgotados">Esgotados</option>
                     <option value="esgotados">Esgotados</option>
                 </select>
-               
+
             </div>
             <!-- ** COLOCAR FORA DESSA DIV-->
             <a asp-controller="Home" asp-action="CadastrarProdutosF" class="register-button">Cadastrar produto</a>
@@ -49,7 +50,7 @@
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
                         </div>
                     </div>
                 </div>
@@ -71,13 +72,11 @@
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                 <div class="card product-card my-2">
                     <div class="card-body py-2">
@@ -92,28 +91,7 @@
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
-                <div class="card product-card my-2">
-                    <div class="card-body py-2">
-
-                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
-                        <h6 class="card-title mt-3  mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
-                        <p class="text mb-3 small-text">
-                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
-                        </p>
-                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
-
-                        <!-- BOTÕES -->
-                        <div class="button-container d-flex mt-3">
-                            <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +111,7 @@
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
                         </div>
                     </div>
                 </div>
@@ -153,12 +131,11 @@
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                 <div class="card product-card my-2">
@@ -174,12 +151,11 @@
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                 <div class="card product-card my-2">
@@ -195,15 +171,73 @@
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn">Editar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+                <div class="card product-card my-2">
+                    <div class="card-body py-2">
 
+                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
+                        <h6 class="card-title mt-3  mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
+                        <p class="text mb-3 small-text">
+                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
+                        </p>
+                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
+
+                        <!-- BOTÕES -->
+                        <div class="button-container d-flex mt-3">
+                            <button class="btn desativar-btn">Desativar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+                <div class="card product-card my-2">
+                    <div class="card-body py-2">
+
+                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
+                        <h6 class="card-title mt-3  mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
+                        <p class="text mb-3 small-text">
+                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
+                        </p>
+                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
+
+                        <!-- BOTÕES -->
+                        <div class="button-container d-flex mt-3">
+                            <button class="btn desativar-btn">Desativar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+                <div class="card product-card my-2">
+                    <div class="card-body py-2">
+
+                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
+                        <h6 class="card-title mt-3  mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
+                        <p class="text mb-3 small-text">
+                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
+                        </p>
+                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
+
+                        <!-- BOTÕES -->
+                        <div class="button-container d-flex mt-3">
+                            <button class="btn desativar-btn">Desativar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
     </section>
 </section>
-        
