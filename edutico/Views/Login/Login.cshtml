@@ -1,6 +1,10 @@
-﻿@{
+﻿@model edutico.Models.Login
+
+
+@{
     ViewData["Title"] = "Login";
 }
+
 <section Class="my-3">
     <div class="containerLogin inicial position-relative">
         <div class="row">
@@ -17,29 +21,30 @@
                     </div>
 
                     <!-- Mensagem de erro -->
-                    @if (ViewBag.Error != null)
+                    @if (ViewData["msg"] != null)
                     {
-                        <div class="alert alert-danger">
-                            @ViewBag.Error
-                        </div>
+                        @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
+                        <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
                     }
+
 
                     <!-- FORM LOGIN-->
                     <div class="areaLogin">
-                        <form asp-controller="Login" asp-action="Login" method="post">
-                            <div class="form-group">
+                        <form method="post">
+                           <div class="form-group">
                                 <label for="username">Usuário</label>
-                                <input type="text" id="username" name="usuario" placeholder="Digite aqui seu nome de usuário">
+                                <input asp-for="usuario" type="text" id="username" name="usuario" placeholder="Digite aqui seu usuário ou seu email">
                             </div>
                             <div class="form-group">
                                 <label for="password">Senha</label>
-                                <input type="password" id="password" name="senha" placeholder="Digite aqui sua senha">
+                                <input asp-for="senha" type="password" id="password" name="senha" placeholder="Digite aqui sua senha">
                             </div>
                             <div class="form-group">
                                 <a href="#" class="forgot-password">Esqueci a senha</a>
                             </div>
+
                             <div class="button-group">
-                                <button type="submit" class="btn Entrar-btn">Entrar</button>
+                                <button type="submit" asp-controller="Login" asp-action="Login" class="btn Entrar-btn">Entrar</button>
                                 <button type="submit" asp-controller="Home" asp-action="CadastroCliente" class="btn Criar-btn">Criar conta</button>
                             </div>
                         </form>

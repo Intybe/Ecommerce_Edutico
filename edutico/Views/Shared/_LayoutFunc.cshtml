@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/siteFuncionario.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/edutico.styles.css" asp-append-version="true" />
+    <style src="~/js/site.js" type="text/javascript">
+    </style>
 </head>
 <body>
     <div class="Tudo  justify-content-between">
@@ -34,10 +35,10 @@
                         Produto
                     </a>
                 </p>
-                       
-                   
+
+
                 <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "PedidosAndamentoF" ? "active" : "")">
-                     <a asp-controller="Home" asp-action="PedidosAndamentoF">
+                    <a asp-controller="Home" asp-action="PedidosAndamentoF">
                         <img src="~/imgs/Notification.png" alt="Notification" class="icone me-3">
                         Pedidos
                     </a>
@@ -59,15 +60,7 @@
                 </p>
             </div>
         </div>
-
-       
-
     </div>
-
-
-
-
-
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -84,5 +77,4 @@
 </body>
 
 <script src="~/js/site.js" type="text/javascript"></script>
-
 </html>

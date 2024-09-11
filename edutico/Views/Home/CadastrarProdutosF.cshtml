@@ -109,3 +109,90 @@
 
     </section>
 </section>
+
+
+
+
+
+
+------ ARRUMAR O LAYOUTFUNC (COPIAR TD E COLA):
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - edutico</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/siteFuncionario.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/edutico.styles.css" asp-append-version="true" />
+    <style src="~/js/site.js" type="text/javascript">
+    </style>
+</head>
+<body>
+    <div class="Tudo  justify-content-between">
+        <div class="sidebarF d-flex flex-column align-items-center py-4">
+            <!-- Usei classes Bootstrap para alinhar -->
+            <!-- logo -->
+            <div class="logoFunc mb-4">
+                <img src="~/imgs/logonav.png" alt="LOGO" style="height: 45px;">
+            </div>
+
+            <!-- Dashboard-->
+            <div class="BotoesSidebar w-100">
+                <!-- Adicionei w-100 para ocupar toda a largura -->
+                <p class="d-flex align-items-center">
+                    <!-- Alinhei ícones e texto -->
+                    <img src="~/imgs/Dashboard.png" alt="Dashboard" class="icone me-3"> <!-- Adicionei me-2 para espaçar -->
+                    Dashboard
+                </p>
+
+                <!-- adiciona a classe "active" (coloca a cor azul no fundo) ao item de menu <p> quando a página atual corresponde à ação "ProdutosF". -->
+                <p class="d-flex align-items-center  @((ViewContext.RouteData.Values["action"] as string) == "ProdutosF" ? "active" : "")">
+                    <a asp-controller="Home" asp-action="ProdutosF">
+                        <img src="~/imgs/caixa.png" alt="caixa" class="icone me-3">
+                        Produto
+                    </a>
+                </p>
+
+
+                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "PedidosAndamentoF" ? "active" : "")">
+                    <a asp-controller="Home" asp-action="PedidosAndamentoF">
+                        <img src="~/imgs/Notification.png" alt="Notification" class="icone me-3">
+                        Pedidos
+                    </a>
+                </p>
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/Devolucao.png" alt="Devolucao" class="icone me-3">
+                    Devolução
+                </p>
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/Historico.png" alt="Historico" class="icone me-3">
+                    Histórico de Vendas
+                </p>
+                <p class="d-flex align-items-center">
+
+                    <img src="~/imgs/Logout.png" alt="Logout" class="icone me-3">
+                    Sair
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+<script src="~/js/site.js" type="text/javascript"></script>
+</html>

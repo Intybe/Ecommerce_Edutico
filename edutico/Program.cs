@@ -1,3 +1,7 @@
+using edutico.Models;
+using edutico.Libraries.Login;
+using edutico.Repositorio;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Adiciona o serviço de sessão
@@ -5,6 +9,10 @@ builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor(); // Adiciona suporte ao HttpContext
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ILoginRepositorio, LoginRepositorio>();
+builder.Services.AddScoped<edutico.Libraries.Sessao.Sessao>();
+builder.Services.AddScoped<LoginSessao>();
 
 var app = builder.Build();
 

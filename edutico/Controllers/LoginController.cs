@@ -1,43 +1,52 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using edutico.Libraries.Login;
 using edutico.Models;
+using edutico.Repositorio;
+using Microsoft.AspNetCore.Mvc;
 
-public class LoginController : Controller
+namespace edutico.Controllers
 {
-    [HttpGet]
-    public IActionResult Index()
+    public class LoginController : Controller
     {
-        return View();
-    }
 
-    [HttpPost]
-    public IActionResult Login(string usuario, string senha)
-    {
-        Login loginModel = new Login();
+        private ILoginRepositorio? _loginRepositorio;
+        private LoginSessao _loginSessao;
 
-        // Chama o método para verificar o login no banco de dados
-        bool loginValido = loginModel.login(usuario, senha);
-
-        if (loginValido)
+        public LoginController(ILoginRepositorio loginRepositorio, LoginSessao loginSessao)
         {
-            // Se o login for válido, armazene os dados do usuário (codLogin e nivelAcesso) na sessão
-            HttpContext.Session.SetInt32("codLogin", loginModel.codLogin);
-            HttpContext.Session.SetInt32("nivelAcesso", loginModel.nivelAcesso);
-
-            // Redirecionar para a página com base no nível de acesso
-            if (loginModel.nivelAcesso == 1)
-            {
-                return RedirectToAction("DetalhesPedidoF", "Home");
-            }
-            else if (loginModel.nivelAcesso == 2)
-            {
-                return RedirectToAction("Index", "Home");
-            }
+            _loginRepositorio = loginRepositorio;
+            _loginSessao = loginSessao;
         }
 
-        // Se o login falhar, defina a mensagem de erro e retorne a view de login
-        ViewBag.Error = "Usuário ou senha incorretos!";
-        return View("Index"); // Assegura que a view correta seja retornada
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(Login login)
+        {
+            Login loginDB = _loginRepositorio.Login(login.usuario, login.senha);
+
+            if (loginDB != null)
+            {
+                if (loginDB.nivelAcesso == 0 || loginDB.nivelAcesso == 1)
+                {
+                    _loginSessao.Login(loginDB);
+                    return RedirectToAction("PedidosAndamentoF", "Home");
+                }
+                else
+                {
+                    _loginSessao.Login(loginDB);
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            else
+            {
+                // Erro na sessão
+                ViewData["msg"] = "Usuário ou senha inválidos";
+                return View();
+            }
+
+        }
     }
-
-
 }

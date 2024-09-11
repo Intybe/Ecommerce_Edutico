@@ -44,7 +44,6 @@ for (let rating in ratingsData) {
 document.getElementById('total-ratings').innerText = totalRatings;
 
 
-// UPLOAD IMAGEM CADASTRO/ALTERAÇÕES DE PRODUTO
 document.addEventListener('DOMContentLoaded', function () {
     const inputFile = document.querySelector('#picture_input');
     const pictureImage = document.querySelector('.picture__image'); // Deve ser um <span>
