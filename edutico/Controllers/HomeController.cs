@@ -19,6 +19,7 @@ namespace edutico.Controllers
         {
             return View();
         }
+
         public IActionResult Login()
         {
             return View();
@@ -29,7 +30,12 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult CadastroCliente() 
+        public IActionResult CadastroCliente()
+        {
+            return View();
+        }
+
+        public IActionResult DetalheProduto()
         {
             return View();
         }
@@ -49,26 +55,12 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult CarrinhoCheio() {
+        public IActionResult CarrinhoCheio()
+        {
             return View();
         }
 
         public IActionResult CarrinhoVazio()
-        {
-            return View();
-        }
-
-        public IActionResult DetalhesProduto()
-        {
-            return View();
-        }
-
-        public IActionResult MeuPerfil()
-        {
-            return View();
-        }
-        
-        public IActionResult DetalhesPedido()
         {
             return View();
         }
@@ -93,6 +85,7 @@ namespace edutico.Controllers
         {
             return View();
         }
+
         public IActionResult AlterarProdutosF()
         {
             return View();
