@@ -1651,19 +1651,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\3ds\\.nuget\\packages\\": {}
+    "C:\\Users\\flavi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\3ds\\Documents\\Teste\\edutico\\edutico.csproj",
+      "projectUniqueName": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj",
       "projectName": "edutico",
-      "projectPath": "C:\\Users\\3ds\\Documents\\Teste\\edutico\\edutico.csproj",
-      "packagesPath": "C:\\Users\\3ds\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\3ds\\Documents\\Teste\\edutico\\obj\\",
+      "projectPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj",
+      "packagesPath": "C:\\Users\\flavi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\3ds\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\flavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

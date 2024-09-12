@@ -91,6 +91,16 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult FavoritosF()
+        {
+            return View();
+        }
+
+        public IActionResult HistoricoVendasF()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

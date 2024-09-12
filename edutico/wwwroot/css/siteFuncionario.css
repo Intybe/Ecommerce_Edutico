@@ -252,6 +252,7 @@ table {
     margin-top: 10px;
     width: 90%;
     border-collapse: collapse;
+    align-items: initial;
 }
 
 th, td {
@@ -262,6 +263,7 @@ th, td {
 }
 
 th {
+    margin-left: 15px;
     color: #ABABAB;
     font-weight: normal;
     font-size: 14px;
@@ -272,10 +274,57 @@ th {
 }
 
 td {
+    margin-left: 5px;
     font-size: 12px;
     font-family: Glacial;
-    text-align: center;
+    text-align: left;
 }
+
+/* FAVORITOS */
+.TabelaF {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 90%;
+    border-collapse: collapse;
+    align-items: initial;
+}
+
+    .TabelaF th, td {
+        border: 2px solid #ddd;
+        padding: 8px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .TabelaF th {
+        margin-left: 15px;
+        color: #ABABAB;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: 'Glacial Indifference';
+        text-align: left;
+        border-top: none;
+        padding-bottom: 0px;
+    }
+
+
+
+    .TabelaF td {
+        margin-left: 8px;
+        font-size: 12px;
+        font-family: Glacial;
+        text-align: left;
+        max-width: 80px;
+    }
+
+        .TabelaF td img {
+            margin-left: 5px;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            text-align: left;
+        }
 
 
 /* DETALHES PEDIDO */
@@ -662,4 +711,125 @@ label {
         max-width: 200px; /* Tamanho do símbolo */
         display: block;
         margin: 0 auto;
+    }
+
+
+/*HISTÓRICO DE VENDAS*/
+/* FAVORITOS */
+.TabelaH {
+    margin-left: 240px;
+    margin-top: -250px;
+    margin-bottom: 100px;
+    width: 72%;
+    border-collapse: collapse;
+    align-items: initial;
+}
+
+    .TabelaH th, td {
+        border: 2px solid #ddd;
+        padding: 8px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .TabelaH th {
+        margin-left: 15px;
+        color: #ABABAB;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: 'Glacial Indifference';
+        text-align: left;
+        border-top: none;
+        padding-bottom: 0px;
+    }
+
+
+
+    .TabelaH td {
+        margin-left: 8px;
+        font-size: 12px;
+        font-family: Glacial;
+        text-align: left;
+        max-width: 80px;
+    }
+
+        .TabelaH td img {
+            margin-left: 5px;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            text-align: left;
+        }
+/*filtros*/
+.filtro {
+    padding-inline: 5px;
+}
+
+    .filtro select {
+        border: none;
+        background: none;
+    }
+
+.filter-section {
+    padding: 20px;
+    max-width: 200px;
+    margin-left: 5px;
+}
+
+    .filter-section h3 {
+        color: #426ef0;
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-family: 'Edutico';
+    }
+
+.filter-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-title {
+    font-family: 'Glacial';
+    padding: 8px;
+    padding-inline: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+    .filter-title:after {
+        content: '\25BC'; /* Setinha para baixo */
+        font-size: 10px;
+    }
+
+    .filter-title.active:after {
+        content: '\25B2'; /* Setinha para cima */
+    }
+
+.filter-content {
+    max-height: 0; /* Altura inicial, escondida */
+    overflow: hidden; /* Esconde o conteúdo extra */
+    transition: max-height 0.3s ease-out; /* Transição suave */
+    padding-inline: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border-top: none;
+}
+
+    .filter-content label {
+        display: block;
+        padding: 8px 0;
+        cursor: pointer;
+    }
+
+    .filter-content input {
+        margin-right: 10px;
     }

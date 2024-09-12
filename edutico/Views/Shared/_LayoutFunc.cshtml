@@ -22,11 +22,14 @@
             <!-- Dashboard-->
             <div class="BotoesSidebar w-100">
                 <!-- Adicionei w-100 para ocupar toda a largura -->
-                <p class="d-flex align-items-center">
+                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "FavoritosF" ? "active" : "")">
                     <!-- Alinhei ícones e texto -->
-                    <img src="~/imgs/Dashboard.png" alt="Dashboard" class="icone me-3"> <!-- Adicionei me-2 para espaçar -->
-                    Dashboard
+                    <a asp-controller="Home" asp-action="FavoritosF">
+                        <img src="~/imgs/Dashboard.png" alt="Dashboard" class="icone me-3"> <!-- Adicionei me-2 para espaçar -->
+                        Dashboard
+                    </a>
                 </p>
+
 
                 <!-- adiciona a classe "active" (coloca a cor azul no fundo) ao item de menu <p> quando a página atual corresponde à ação "ProdutosF". -->
                 <p class="d-flex align-items-center  @((ViewContext.RouteData.Values["action"] as string) == "ProdutosF" ? "active" : "")">
