@@ -1,0 +1,149 @@
+﻿@{
+    Layout = "_Layout"; // Isso desativa o layout padrão
+    ViewData["Title"] = "Cadastro Cliente";
+}
+
+<div class="container base-cli position-relative">
+    <h2 class="titulo_cadascli">Cadastro</h2>
+    <hr/>
+    
+    <form id="cadastroForm" asp-controller="Cliente" asp-action="CadastrarCliente" method="post">
+        <!-- Mensagem de erro -->
+        @{
+           if (ViewData["msg"] != null)
+            {
+                @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
+                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+            }
+        }
+
+        <!-- Informações pessoais -->
+        <div class="row my-2">
+            <div class="col-3">
+                <h3 id="sub_form">Informações pessoais</h3>
+            </div>
+            <div class="col-9">
+                <div class="d-flex form_cadastro mb-4">
+                    <div class="campo col-5">
+                        <label for="firstname">Primeiro Nome <span class="obg">*</span></label>
+                        <input type="text" id="firstname" name="nome" placeholder="Digite aqui seu primeiro nome" required>
+                    </div>
+                    <div class="campo col-5">
+                        <label for="lastname">Sobrenome <span class="obg">*</span></label>
+                        <input type="text" id="lastname" name="sobrenome" placeholder="Digite aqui seu sobrenome" required>
+                    </div>
+                </div>
+                <div class="d-flex form_cadastro mb-4">
+                    <div class="campo col-5">
+                        <label for="email">E-mail <span class="obg">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui seu e-mail" required>
+                    </div>
+                    <div class="campo col-2">
+                        <label for="tel">Telefone <span class="obg">*</span></label>
+                        <input type="text" id="tel" name="telefone" placeholder="(DD) _____-____" required>
+                    </div>
+                    <div class="campo col-2">
+                        <label for="cpf">CPF <span class="obg">*</span></label>
+                        <input type="text" id="cpf" name="cpf" placeholder="___.___.___-__" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Endereço -->
+        <hr/>
+        <div class="row my-2">
+            <div class="col-3">
+                <h3 id="sub_form">Endereço</h3>
+            </div>
+            <div class="col-9">
+                <div class="d-flex form_cadastro mb-4">
+                    <div class="campo col-3">
+                        <label for="uf">UF <span class="obg">*</span></label>
+                        <select id="uf" name="uf" required>
+                            <option value="SP"> SP </option>
+                            <option value="RJ"> RJ </option>
+                            <option value="MG"> MG </option>
+                            <option value="CE"> CE </option>
+                            <option value="AM"> AM </option>
+                            <option value="BA"> BA </option>
+                        </select>
+                    </div>
+                    <div class="campo col-3">
+                        <label for="cidade">Cidade <span class="obg">*</span></label>
+                        <select id="cidade" name="cidade" required>
+                            <option value="São Paulo"> São Paulo </option>
+                            <option value="Osasco"> Osasco </option>
+                            <option value="Itapevi"> Itapevi </option>
+                            <option value="Caieiras"> Caieiras </option>
+                            <option value="Cajamar"> Cajamar </option>
+                        </select>
+                    </div>
+                    <div class="campo col-3">
+                        <label for="cep">CEP <span class="obg">*</span></label>
+                        <input type="text" id="cep" name="cep" placeholder="Digite aqui seu CEP" required>
+                    </div>
+                </div>
+                <div class="d-flex form_cadastro mb-4">
+                    <div class="campo col-5">
+                        <label for="logradouro">Logradouro <span class="obg">*</span></label>
+                        <input type="text" id="logradouro" name="logradouro" placeholder="Digite aqui seu logradouro" required>
+                    </div>
+                    <div class="campo col-5">
+                        <label for="bairro">Bairro <span class="obg">*</span></label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Digite aqui seu bairro" required>
+                    </div>
+                </div>
+                <div class="d-flex form_cadastro mb-4">
+                    <div class="campo col-5">
+                        <label for="numero">Número de residência <span class="obg">*</span></label>
+                        <input type="text" id="numero" name="numEnd" placeholder="Digite aqui seu número" required>
+                    </div>
+                    <div class="campo col-5">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="compEnd" placeholder="Digite aqui seu complemento">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Senha -->
+        <hr />
+        <div class="row my-2">
+            <div class="col-3">
+                <h3 id="sub_form">Senha</h3>
+                <p style="font-family:'Glacial Indifference'; font-size:15px; width:150px; margin-left: 20px;">A senha deve ter no mínimo 8 caracteres</p>
+            </div>
+            <div class="col-9">
+                <div class="d-flex form_cadastro mb-4">
+                    <div class="campo col-5">
+                        <label for="senha">Senha <span class="obg">*</span></label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite aqui sua nova senha" required>
+                    </div>
+                    <div class="campo col-5">
+                        <label for="confirmarSenha">Confirmar senha <span class="obg">*</span></label>
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Digite novamente sua senha" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botões -->
+        <hr />
+        <div class="botao_cadastro">
+            <button type="button" class="btn cancelar-btn" onclick="window.location.href='@Url.Action("Index", "Home")'">Cancelar</button>
+            <button type="submit" class="btn cadastro-btn">Criar cadastro</button>
+        </div>
+    </form>
+    
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+            var senha = document.getElementById('senha').value;
+            var confirmarSenha = document.getElementById('confirmarSenha').value;
+            if (senha !== confirmarSenha) {
+                alert('As senhas não coincidem. Por favor, digite a mesma senha em ambos os campos.');
+                event.preventDefault(); // Impede o envio do formulário
+            }
+        });
+    </script>
+</div>
