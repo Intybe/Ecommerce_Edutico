@@ -1184,6 +1184,44 @@ input[type="password"] {
     font-family: 'Glacial Bold';
     font-size: 20px;
 }
+
+/*QRCODE*/
+.base-code {
+    background: white;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.alinhamento {
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    display: flex;
+}
+
+/*Cartão pagamento*/
+.base-cartao {
+    background: white;
+    width: 450px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bandeira {
+    width: 50px;
+    height: auto;
+}
+
+.text-esquerda {
+    text-align: left;
+}
+
 /*FUNCIONÁRIO*/
 
 

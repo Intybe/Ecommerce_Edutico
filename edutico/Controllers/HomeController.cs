@@ -65,6 +65,16 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult PagamentoQrcode()
+        {
+            return View();
+        }
+
+        public IActionResult PagamentoCartao()
+        {
+            return View();
+        }
+
         //FUNCIONÁRIO
         public IActionResult ProdutosF()
         {
