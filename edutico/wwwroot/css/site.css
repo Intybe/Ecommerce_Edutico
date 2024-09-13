@@ -712,6 +712,159 @@ input[type="password"] {
 
     }
 
+
+/*CARRINHO CHEIO*/
+.padrao {
+    margin-left: 95px;
+}
+
+.produtos {
+    width: 60%;
+}
+
+.produto .card-img-top {
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.info_prod_car p {
+    margin-bottom: 5px;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.previa {
+    width: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+    .previa hr {
+        margin: 2px;
+    }
+
+    .previa .previaTitulo {
+        font-family: 'Glacial Bold';
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+.Prazo img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.limite {
+    font-size: 10px;
+}
+
+
+
+.precoPrevia {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.precoPrevia {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.precoPreviaSub {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.precoPreviaSub {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.precoPreviaT {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.precoPreviaT {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.tipoPag {
+    margin-top: 20px;
+    width: auto;
+    height: 150px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.pagMet {
+    display: flex;
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: space-around; /* Distribui as imagens e o parágrafo com espaço ao redor */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+    .pagMet p {
+        font-size: 15px;
+    }
+
+    .pagMet img {
+        width: 40px;
+    }
+
+
+
+.btn-primary {
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background: #1C3FB9;
+    margin: 30px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 15px;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
 /*Detalhe Produto*/
 
 .base-prod-detalhe {

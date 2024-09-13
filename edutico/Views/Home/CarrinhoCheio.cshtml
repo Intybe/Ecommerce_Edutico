@@ -1,45 +1,135 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Carrinho Cheio";
 }
-<section class="carrinhoCheio">
-    <div class="col-9 base produtos">
+<section class="carrinhoCheio texto-simples">
+    <div class="row padrao">
         <a href="#" class="Voltar">Voltar</a>
         <div class="justify-content-between d-flex">
             <p style=" font-family: 'Edutico'; font-size:23px; color:#426ef0">SEU CARRINHO</p>
         </div>
-        <div class="col-sm-3 d-flex justify-content-between">
-            <div class="card product-card my-2">
-                <div class="card-body py-2">
-                    <div class="position-relative">
-                        <button class="btn position-absolute right-0 top-0 px-0">
-                            <img src="~/imgs/heart.png" class="heart-icon">
-                        </button>
-                    </div>
+    </div>
+    <div class="container d-flex col-10">
+
+        <div class="produtos texto-simples col-7">
+            <div class="produto">
+                <div class="imgProd">
                     <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
-                    <h6 class="card-title mt-3 text-center mx-0 glacial-bold">Monta-Monta, 6 pçs</h6>
-                    <p class="text mb-3 small-text">
-                        <img src="~/imgs/Star.png" class="icone mb-1"> 5.0 (10 avaliações)
-                    </p>
-                    <p class="text-primary h4 glacial-bold">R$ 10,00</p>
                 </div>
-                <button class="btn position-absolute bottom-0 end-0 px-2">
-                    <img src="~/imgs/carrinhoadd.png" class="cart-icon">
-                </button>
+                <div class="col-3">
+                    <div class="info_prod_car">
+                        <p>Produto</p>
+                        <p id="glacial-bold">Jogo do alfabeto</p>
+                    </div>
+                    <div class="info_prod_car">
+                        <p>Quantidade:</p>
+                        <p id="glacial-bold">2</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info_prod_car">
+                        <p>Quantidade:</p>
+                        <p id="glacial-bold">R$ 100,00</p>
+                    </div>
+                    <div class="info_prod_car">
+                        <p>Total:</p>
+                        <p id="glacial-bold">R$ 200,00</p>
+                    </div>
+                </div>
             </div>
 
+            <div class="produto">
+                <div class="imgProd">
+                    <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
+                </div>
+                <div class="col-3">
+                    <div class="info_prod_car">
+                        <p>Produto</p>
+                        <p>Jogo do alfabeto</p>
+                    </div>
+                    <div class="info_prod_car">
+                        <p>Quantidade:</p>
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info_prod_car">
+                        <p>Quantidade:</p>
+                        <p id="glacial-bold">R$ 100,00</p>
+                    </div>
+                    <div class="info_prod_car">
+                        <p>Total:</p>
+                        <p>R$ 200,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="imgProd">
+                    <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
+                </div>
+                <div class="col-3">
+                    <div class="info_prod_car">
+                        <p>Produto</p>
+                        <p>Jogo do alfabeto</p>
+                    </div>
+                    <div class="info_prod_car">
+                        <p>Quantidade:</p>
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info_prod_car">
+                        <p>Quantidade:</p>
+                        <p id="glacial-bold">R$ 100,00</p>
+                    </div>
+                    <div class="info_prod_car">
+                        <p>Total:</p>
+                        <p>R$ 200,00</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-    <div class="col-6 base areaPrevia">
-        <div class="previa">
-            <p style=" font-family: 'Glacial Bold'; font-size:23px">Prévia</p>
-            <img src="~/imgs/linha.png" alt="linha">
-            <p style=" font-family: 'Glacial Indifference'; font-size:23px">Entrega</p>
+        <div class="col-4 mx-4">
+            <div class="previa">
+                <p class="previaTitulo">Previa</p>
+                <hr />
+                <div class="precoPrevia">
+                    <p style="font-size:15px;">Entrega</p>
+                    <p style="font-size:15px;">R$ 20,00</p>
+                </div>
+                <div class="precoPreviaSub">
+                    <p id="glacial-bold" style="font-size:15px;">Subtotal</p>
+                    <p style="font-size:15px;">R$ 400,00</p>
+                </div>
+                <hr />
+                <div class="precoPreviaT">
+                    <p id="glacial-bold" style="font-size:25px;">Total</p>
+                    <p style="font-size:25px;">R$ 420,00</p>
+                </div>
 
-        </div>
-        <div class="tipoPag">
+                <div class="Prazo" style="display: flex; align-items: center;">
+                    <img src="~/imgs/reembolso.png" class="img-fluid" alt="Prazo" />
+                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                        <p class="limite" style="margin: 0; display: inline;">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
+                    </div>
+                </div>
+                <button class="btn-primary">Prosseguir compra</button>
+            </div>
 
+            <div class="tipoPag">
+                <p id="glacial-bold">Tipos de pagamentos</p>
+                <div class="row">
+                    <div class="col-md-6 pagMet">
+                        <img src="~/imgs/tipoPagC.png" class="img-fluid" alt="cartão" />
+                        <p id="glacial-bold">Cartão de credito</p>
+                    </div>
+                    <div class="col-md-6 pagMet">
+                        <img src="~/imgs/tipoPagP.png" class="img-fluid" alt="pix" />
+                        <p id="glacial-bold">PIX</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
