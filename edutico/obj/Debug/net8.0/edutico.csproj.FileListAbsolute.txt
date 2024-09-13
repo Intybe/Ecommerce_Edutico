@@ -764,3 +764,4 @@ C:\Users\barro\Desktop\Nova pasta\edutico\obj\Debug\net8.0\scopedcss\projectbund
 C:\Users\barro\Desktop\Nova pasta\edutico\obj\Debug\net8.0\edutico.csproj.Up2Date
 C:\Users\barro\Desktop\Nova pasta\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\barro\Desktop\Nova pasta\edutico\obj\Debug\net8.0\ref\edutico.dll
+C:\Users\Rebeka\Desktop\Edutico_oficial\edutico\bin\Debug\net8.0\Newtonsoft.Json.dll

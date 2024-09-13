@@ -75,6 +75,15 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult TermoDevolucao()
+        {
+            return View();
+        }
+
+        public IActionResult TermoCancelamento()
+        {
+            return View();
+        }
         //FUNCIONÁRIO
         public IActionResult ProdutosF()
         {
