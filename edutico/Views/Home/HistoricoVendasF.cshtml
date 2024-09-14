@@ -18,69 +18,68 @@
             <h1>HISTÓRICO DE VENDAS</h1>
         </div>
 
+        <div class="containerTabela">
+            <div class="status">
+                <div class="tabactive">
+                    Concluídos
+                </div>
+                <div class="tab">
+                    Em andamento
+                </div>
+                <div class="tab">
+                    Cancelados
+                </div>
+            </div>
+            <table class="TabelaH">
+                <thead>
+                    <tr>
+                        <th>N° Pedido</th>
+                        <th>Produto</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Informações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>142309</td>
+                        <td><span><img src="~/imgs/montamonta.jpg" /></span>Monta-monta 6 pçs...</td>
+                        <td>R$20,00</td>
+                        <td>20/08/2024</td>
+                        <td><a asp-controller="Home" asp-action="DetalhesPedidoF">Detalhes</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
         <div class="row">
             <div class="col-4">
-                <div class="filter-section">
-                    <h3>FILTROS</h3>
-                    <div class="filter-item">
-                        <div class="filter-title">Categoria</div>
-                        <div class="filter-content">
-                            <label><input type="checkbox" name="categoria" value="categoria1"> Categoria 1</label>
-                            <label><input type="checkbox" name="categoria" value="categoria2"> Categoria 2</label>
-                            <label><input type="checkbox" name="categoria" value="categoria3"> Categoria 3</label>
-                        </div>
-                    </div>
+                <div class="filter-section1">
+                    <h2>FILTROS</h2>
 
-                    <div class="filter-item">
-                        <div class="filter-title">Habilidade</div>
-                        <div class="filter-content">
-                            <label><input type="checkbox" name="habilidade" value="motora"> Motora</label>
-                            <label><input type="checkbox" name="habilidade" value="critica"> Crítica</label>
-                            <label><input type="checkbox" name="habilidade" value="logica"> Lógica</label>
-                        </div>
+                    <div class="filter-section2">
+                        <h3>Categoria</h3>
+                        <label><input type="radio" name="categoria" checked> jogo</label>
+                        <label><input type="radio" name="categoria"> quebra-cabeça</label>
+                        <label><input type="radio" name="categoria"> jogoo</label>
+                        <label><input type="radio" name="categoria"> quebra-cabeça</label>
+                        <label><input type="radio" name="categoria"> jogoo</label>
+                        <label><input type="radio" name="categoria"> quebra-cabeça</label>
+                        <label><input type="radio" name="categoria"> jogoo</label>
                     </div>
-                    <div class="filter-item">
-                        <div class="filter-title">Classificação</div>
-                        <div class="filter-content">
-                            <label><input type="checkbox" name="classificacao" value="5estrelas"> 5 Estrelas</label>
-                            <label><input type="checkbox" name="classificacao" value="4estrelas"> 4 Estrelas</label>
-                            <label><input type="checkbox" name="classificacao" value="3estrelas"> 3 Estrelas</label>
-                        </div>
-                    </div>
-
-                    <div class="filter-item">
-                        <div class="filter-title">Preço</div>
-                        <div class="filter-content">
-                            <label><input type="checkbox" name="preco" value="barato"> Barato</label>
-                            <label><input type="checkbox" name="preco" value="medio"> Médio</label>
-                            <label><input type="checkbox" name="preco" value="caro"> Caro</label>
-                        </div>
+                    <div class="filter-section2">
+                        <h3>Avaliação</h3>
+                        <label><input type="radio" name="avaliacao" checked> 5 Estrelas</label>
+                        <label><input type="radio" name="avaliacao"> 4 Estrelas</label>
+                        <label><input type="radio" name="avaliacao"> 3 Estrelas</label>
+                        <label><input type="radio" name="avaliacao"> 2 Estrelas</label>
+                        <label><input type="radio" name="avaliacao"> 1 Estrelas</label>
                     </div>
                 </div>
             </div>
         </div>
 
-        <table class="TabelaH">
-            <thead>
-                <tr>
-                    <th>N° Pedido</th>
-                    <th>Produto</th>
-                    <th>Valor</th>
-                    <th>Data</th>
-                    <th>Informações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>142309</td>
-                    <td><span><img src="~/imgs/montamonta.jpg" /></span>Monta-monta 6 pçs...</td>
-                    <td>R$20,00</td>
-                    <td>20/08/2024</td>
-                    <td><a asp-controller="Home" asp-action="DetalhesPedidoF">Detalhes</a></td>
-                </tr>
-
-            </tbody>
-        </table>
 
 
 

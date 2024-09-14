@@ -1,0 +1,78 @@
+﻿@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Histórico de Vendas Informações";
+}
+
+<section class="Conteudo">
+    <section class="HistoricoVendasInfo">
+        <div class="header">
+            <h1>HISTÓRICO DE VENDAS</h1>
+        </div>
+        <div class="subtitulo">
+            <h3>Informações sobre o pedido</h3>
+        </div>
+
+        <!-- Adicionei a classe row para organizar as colunas horizontalmente -->
+        <div class="row">
+            <!-- DIV 1 -->
+            <div class="col-6 mx-3">
+                <div class="areaAtribs">
+                    <div class="sub_perfil">
+                        <div class="d-flex">
+                            <div class="col-6">
+                                <div class="info-ped">
+                                    <p>Número do Pedido</p>
+                                    <p>Data do Pedido</p>
+                                    <p>Produto</p>
+                                    <p>Valor Unitário</p>
+                                    <p>Cliente</p>
+                                    <p>Endereço de entrega</p>
+                                    <p>Status do Pedido</p>
+                                    <p>Avaliações</p>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="dado-ped">
+                                    <p>º 702-5704592-7637069</p>
+                                    <p>10/07/2024</p>
+                                    <p>Monta-monta 6 peças</p>
+                                    <p>R$ 10,00</p>
+                                    <p>Fulano Ciclano Beltrano</p>
+                                    <p>Rua Exemplo, 123, São Paulo, SP</p>
+                                    <p>Concluído</p>
+                                    <p>4,5 Estrelas <span>(10 avaliações)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIV 2 -->
+            <div class="col-4 mx-3">
+                <div class="histacoes">
+                    <h3>Histórico de ações</h3>
+                    <div class="sub_perfil">
+                        <div class="d-flex">
+                            <div class="col-4">
+                                <div class="data">
+                                    <p>01/07/2024</p>
+                                    <p>05/07/2024</p>
+                                    <p>07/07/2024</p>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="acao">
+                                    <p>Pedido Realizado</p>
+                                    <p>Pedido Enviado</p>
+                                    <p>Pedido Entregue</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

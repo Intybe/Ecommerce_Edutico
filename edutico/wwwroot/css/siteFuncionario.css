@@ -833,3 +833,269 @@ label {
     .filter-content input {
         margin-right: 10px;
     }
+
+/*HISTÓRICO DE VENDAS*/
+.containerTabela {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+    .containerTabela .status {
+        width: 20rem;
+        margin-left: 180px;
+        margin-bottom: 10px;
+        max-width: 65%;
+        display: flex;
+        font-size: 15px;
+        font-family: "Glacial Bold";
+        justify-content: space-between;
+    }
+
+    .containerTabela .tab {
+        text-align: left;
+        cursor: pointer;
+        color: #ABABAB;
+    }
+
+.status .tabactive {
+    color: #385BD2;
+    border-bottom: 2px solid #385BD2;
+}
+
+.containerTabela .TabelaH {
+    margin-left: 190px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    width: 78%;
+    border-collapse: collapse;
+    align-items: initial;
+}
+
+.TabelaH th, td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    border-left: none;
+    border-right: none;
+}
+
+.TabelaH th {
+    margin-left: 15px;
+    color: #ABABAB;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Glacial Indifference';
+    text-align: left;
+    border-top: none;
+    padding-bottom: 0px;
+}
+
+
+
+.TabelaH td {
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: Glacial;
+    text-align: left;
+    max-width: 80px;
+}
+
+    .TabelaH td img {
+        margin-left: 5px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        text-align: left;
+    }
+/*filtros*/
+/* Estilo da seção principal de filtros */
+.filter-section1 {
+    padding: 20px;
+    max-width: 200px;
+    margin-left: -2px;
+    margin-top: -260px;
+    margin-bottom: 20px; /* Espaço entre as seções de filtro */
+    display: block;
+}
+
+    .filter-section1 h2 {
+        color: #426ef0;
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-family: 'Edutico';
+    }
+
+.filter-section2 {
+    padding: 20px;
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaço entre as seções de filtro */
+}
+
+
+    .filter-section2 h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+        font-family: 'Glacial Indifference';
+    }
+
+
+.filter-item {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*label e input de cada filtro (radios) */
+.filter-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    cursor: pointer; /* Para que a label seja clicável */
+    padding-left: 10px;
+}
+
+.filter-section input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #426ef0;
+    vertical-align: middle; /* Alinhar o radio button verticalmente com o texto */
+}
+
+/*INFO HISTORICO*/
+.subtitulo h3 {
+    font-size: 18px;
+    margin-top: -5px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    color: #000;
+    font-family: 'Glacial Bold';
+}
+
+.areaAtribs {
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    align-items: center;
+    padding: 25px;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    font-family: 'Glacial Indifference';
+}
+
+.detalhes-ped p {
+    margin-bottom: 10px;
+}
+
+
+.info-ped {
+    margin-bottom: 30px;
+}
+
+    .info-ped p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: 'Glacial Bold';
+    }
+
+.dado-ped {
+    margin-bottom: 30px;
+}
+
+    .dado-ped p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .dado-ped span {
+        font-size: 12px;
+        font-family: 'Glacial Indifference';
+        color: #000;
+        opacity: 0.5;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+
+.histacoes {
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    align-items: center;
+    padding: -5px;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    font-family: 'Glacial Indifference';
+}
+
+    .histacoes h3 {
+        font-family: 'Glacial Bold';
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+.data {
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+
+    .data p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+.acao {
+    margin-left: 60px;
+    margin-bottom: 3px;
+}
+
+    .acao p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: 'Glacial Bold';
+    }
+
+
+.histacoes {
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    align-items: center;
+    padding: -5px;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    font-family: 'Glacial Indifference';
+}
+
+    .histacoes h3 {
+        font-family: 'Glacial Bold';
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+.data {
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+
+    .data p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+.acao {
+    margin-left: 60px;
+    margin-bottom: 3px;
+}
+
+    .acao p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: 'Glacial Bold';
+    }
