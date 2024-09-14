@@ -1099,3 +1099,283 @@ label {
         margin-bottom: 5px;
         font-family: 'Glacial Bold';
     }
+
+.base-prod-detalhe {
+    background: #F9F9F9;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.imgpequena {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imgprincipal {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 31rem;
+    height: 31rem;
+}
+
+.provi {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+}
+
+.btncar {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    justify-content: center;
+}
+
+/*DETALHE PRODUTO
+
+/*Geral*/
+.base-prod-detalhe {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+    .base-prod-detalhe h3 {
+        font-family: 'Edutico';
+        font-size: 20px;
+    }
+
+.texto-simples {
+    font-family: 'Glacial';
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+#glacial-bold {
+    font-family: 'Glacial Bold';
+}
+
+.qtdProd{
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+    font-size:14px;
+    width: 120px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+/*Div imgs*/
+.imgpequena {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imgprincipal {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 31rem;
+    height: 31rem;
+}
+
+/*Div detalhes*/
+#versaocompleta.hidden {
+    display: none;
+    margin-top: 20px;
+}
+
+.base-prod-detalhe .vermais {
+    background-color: #fff;
+    color: #385BD2;
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Glacial Bold';
+}
+
+.base-prod-detalhe h4 {
+    font-family: 'Glacial Bold';
+    color: #385BD2;
+}
+
+.fundo_ver {
+    height: 70px;
+    width: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to top, white, transparent);
+}
+
+/*Div avaliações*/
+.rating-score {
+    text-align: center;
+}
+
+.total-ratings hr {
+    margin: 2px;
+}
+
+.stars {
+    font-size: 24px;
+    color: gold;
+}
+
+.rating-summary {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-inline: 10px;
+}
+
+    .rating-row span {
+        width: 15px;
+        font-size: 15px;
+    }
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 7px;
+    width: 100%;
+    height: 7px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #385BD2;
+    border-radius: 5px;
+}
+
+.total-ratings {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rating-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.review-form {
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+    .review-form h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+.stars-input {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+}
+
+.base-prod-detalhe textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #bdbdbd66;
+}
+
+.btnava {
+    width: 100%;
+    padding: 5px;
+    background: #385BD2;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    font-family: 'Glacial Bold';
+    font-size: 15px;
+    border: none;
+}
+
+.iconeava {
+    height: 15px;
+    width: 15px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review-header {
+    margin-bottom: 10px;
+    width: 70px;
+    line-height: 15px;
+}
+
+.review-content {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    border: 1px solid #BBBBBB;
+    font-size: 14px;
+}
+
+.btnAlt {
+    margin-left: -15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    font-family: 'Glacial Bold';
+    align-items: center;
+    text-align: center;
+}
+
+.btnDes {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 35px;
+    border-radius: 15px;
+    border: 2px solid #E31B21;
+    padding: 10px;
+    background: white;
+    color: #E31B21;
+    font-weight: bold;
+    font-family: 'Glacial Bold';
+    align-items: center;
+    text-align: center;
+}
