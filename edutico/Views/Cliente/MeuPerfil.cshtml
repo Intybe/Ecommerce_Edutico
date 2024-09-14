@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Meu Perfil";
 }
+@model edutico.Models.Cliente;
 
 <section class="meuperfil">
     <div class="Perfil position-relative">
@@ -67,7 +68,7 @@
             <div class="col-3">
                 <div class="info-grup">
                     <p>E-mail</p>
-                    <p id="info_perfil">fulanograxinha@gmail.com</p>
+                    <p id="info_perfil">@Model.email</p>
                 </div>
                 <div class="info-grup">
                     <p>Senha</p>
@@ -85,21 +86,21 @@
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Primeiro Nome</p>
-                        <p id="info_perfil">Fulamnin</p>
+                        <p id="info_perfil">@Model.nome</p>
                     </div>
                     <div class="info-grup">
                         <p>Telefone</p>
-                        <p id="info_perfil">(11)00000-0222</p>
+                        <p id="info_perfil">@Model.telefone</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Ultimo Nome</p>
-                        <p id="info_perfil">Silvinha</p>
+                        <p id="info_perfil">@Model.sobrenome</p>
                     </div>
                     <div class="info-grup">
                         <p>CPF</p>
-                        <p id="info_perfil">123.456.789.10</p>
+                        <p id="info_perfil">@Model.cpf</p>
                     </div>
                 </div>
             </div>
@@ -114,32 +115,32 @@
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Logradouro</p>
-                        <p id="info_perfil">Rua dos que não acham</p>
+                        <p id="info_perfil">@Model.logradouro</p>
                     </div>
                     <div class="info-grup">
                         <p>CEP</p>
-                        <p id="info_perfil">00000-090</p>
+                        <p id="info_perfil">@Model.cep</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Bairro</p>
-                        <p id="info_perfil">Morro Doce</p>
+                        <p id="info_perfil">@Model.bairro</p>
                     </div>
                     <div class="info-grup">
                         <p>Cidade</p>
-                        <p id="info_perfil">Fim do Mundo</p>
+                        <p id="info_perfil">@Model.cidade</p>
                     </div>
 
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Nº Residência</p>
-                        <p id="info_perfil">123</p>
+                        <p id="info_perfil">@Model.numEnd</p>
                     </div>
                     <div class="info-grup">
                         <p>UF</p>
-                        <p id="info_perfil">FM</p>
+                        <p id="info_perfil">@Model.uf</p>
                     </div>
 
                 </div>

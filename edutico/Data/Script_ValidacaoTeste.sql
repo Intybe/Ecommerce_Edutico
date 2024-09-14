@@ -6,8 +6,10 @@
 
 Delimiter $$
 	Call spInsertTbCliente(10399833309, 'Cleia', 'Santana Alves', 11966163308, 'cleia@gmail.com', 'teste@123', 'Rua Angelina', 'Latrim', 'Rio de Janeiro','RJ', '12345058', 91, 'Residência');
-	Call spInsertTbCliente(50780848859, 'Mario', 'Silva Cruz', 11966163308, 'mario@gmail.com', 'teste@123', 'Rua Angelina', 'Lapa', 'São Paulo','SP', '12345058', 60, 'Apartamento 309');
+	Call spInsertTbCliente(50780848859, 'Mario', 'Silva Cruz', 11966163308, 'mario@gmail.com', 'teste@123', 'Rua Angelina', 'Lapa', 'São Paulo','SP', '12345059', 60, 'Apartamento 309');
 $$
+
+Delete from tbLogin where codLogin = 2;
 
 Select * from vwCliente;
 
@@ -36,7 +38,7 @@ Delimiter $$
 	Call spInsertTbHabilidade('Coordenação Motora');
     Call spInsertTbHabilidade('Cognição e Aprendizado');
     Call spInsertTbHabilidade('Raciocínio Lógico');
-    Call spInsertTbHabilidade('Criatividade e Imaginação');
+    Call spInsertTbHabilidade('Criatividade');
 $$
 
 Delimiter $$
@@ -62,6 +64,7 @@ Delimiter $$
     Call spInsertTbHabilidade_Produto(7896027524796, 3);
 $$
 
+Select * from tbImagem;
 Select * from vwProduto;
 
 Delimiter $$

@@ -25,7 +25,7 @@
         Sessão de Cadastro de Habilidade trabalhada do Produto
 		Sessão de Cadastro da tabela Habilidade_Produto pois era relacionamento N:N
         Sessão de Cadastro de Produtos
-        Sessão de Castrado da Imagem do Produto
+        Sessão de Casdastro da Imagem do Produto
         Sessão de Cadastro dos Produtos favoritos
         Sessão de Cadastro de Produtos no Carrinho
         Sessão de Cadastro de Pedidos
@@ -453,7 +453,7 @@ Begin
     End if;
 End $$
 
--- Sessão de Castrado da Imagem do Produto --
+-- Sessão de Cadastro da Imagem do Produto --
 Delimiter $$
 Create Procedure spInsertTbImagem(
 	vCodProd decimal(14,0), 
@@ -985,19 +985,27 @@ End $$
 Delimiter $$
 Create View vwCliente As
 	Select
+		tbCliente.codLogin,
 		codCli As 'Código',
 		CPF As 'CPF',
 		nomeCli As 'Nome',
 		sobrenome As 'Sobrenome',
 		telefone As 'Telefone',
-		email As 'Usuário',
+		email As 'Email',
 		senha As 'Senha',
 		cepCli As 'CEP',
+        logradouro As 'Logradouro',
+        nomeBairro As 'Bairro',
+        nomeCidade As 'Cidade',
+        nomeUf As 'Estado',
 		numEnd As 'Número',
 		compEnd As 'Complemento'
 	from tbCliente
+		Inner Join tbLogin On tbCliente.CodLogin = tbLogin.CodLogin
 		Inner Join tbEndereco On tbCliente.CepCli = tbEndereco.CEP
-		Inner Join tbLogin On tbCliente.CodLogin = tbLogin.CodLogin;
+        Inner Join tbBairro On tbEndereco.bairroId = tbBairro.BairroId
+        Inner Join tbCidade On tbEndereco.cidadeId = tbCidade.CidadeId
+        Inner Join tbEstado On tbEndereco.ufId = tbEstado.UfId;
 $$
 
 -- Procedure para selecionar os cartões de um cliente --

@@ -1,0 +1,92 @@
+﻿@{
+    Layout = "_LayoutFunc";
+    ViewData["Title"] = "Cadastrar Produtos";
+}
+
+<section class="Conteudo">
+    <form asp-controller="Produto" asp-action="CadastrarProduto" method="post" enctype="multipart/form-data">
+        <!-- Mensagem -->
+        @{
+            if (ViewData["msg"] != null)
+            {
+                @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
+                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+            }
+        }
+        
+        <section class="Cadastrar Produtos">
+            <div class="header">
+                <h1>CADASTRAR PRODUTOS</h1>
+            </div>
+            <hr />
+
+            <div class="form-group">
+                <!-- NOME DO PRODUTO -->
+                <label for="NomeProd">Nome <span class="req">*</span></label>
+                <input type="text" id="CxTipo1" class="form-control" name="NomeProduto" placeholder="Digite aqui o nome do produto" />
+
+                <!-- CÓDIGO DO PRODUTO -->
+                <label for="CodigoProd">Código Produto <span class="req">*</span></label>
+                <input type="text" id="CxTipo2" class="form-control" name="CodigoProduto" placeholder="Digite aqui o código do Produto" />
+
+                <!-- DESCRIÇÃO DO PRODUTO -->
+                <label for="DescProd">Descrição <span class="req">*</span></label>
+                <input type="text" id="CxDesc" class="form-control" name="DescricaoProduto" placeholder="Digite aqui a descrição do produto" />
+
+                <!-- CLASSIFICAÇÃO INDICATIVA -->
+                <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
+                <select class="Select" name="ClassificacaoIndicativa">
+                    <option value="0 a 12 meses">0 a 12 meses</option>
+                    <option value="1 a 2 anos">1 a 2 anos</option>
+                    <option value="5 a 7 anos">5 a 7 anos</option>
+                </select>
+
+                <!-- HABILIDADES TRABALHADAS -->
+                <label for="HabTrabalhada">Habilidade Trabalhada <span class="req">*</span></label>
+                <div id="habilidades-trabalhadas" class="chips-container">
+                    <span class="chip" onclick="selecionarHabilidade(this)">Criatividade</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)">Coordenação motora</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)">Raciocínio lógico</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)">Empatia</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)">Trabalho em equipe</span>
+                </div>
+                <input type="hidden" id="habilidadesSelecionadas" name="HabilidadesSelecionadas" />
+
+                <!-- VALOR UNITÁRIO -->
+                <label for="ValorUni">Valor Unitário <span class="req">*</span></label>
+                <input type="text" id="CxTipo2" class="form-control" name="ValorUnitario" placeholder="Digite aqui o valor unitário do produto" />
+
+                <!-- ESTOQUE -->
+                <label for="EstoqueProd">Estoque <span class="req">*</span></label>
+                <input type="text" id="CxTipo1" class="form-control" name="EstoqueProduto" placeholder="Digite aqui a quantidade em estoque" />
+
+                <!-- CATEGORIA -->
+                <label for="DestaqueProd">Categoria <span class="req">*</span></label>
+                <select class="Select2" name="CategoriaProduto">
+                    <option value=""></option>
+                    <option value="Jogos de Tabuleiro">Jogos de Tabuleiro</option>
+                    <option value="Jogos de Ação">Jogos de Ação</option>
+                </select>
+
+                <!-- IMAGEM -->
+                <label for="Upimg">Imagem <span class="req">*</span></label>
+                <input type="file" name="ImagemProduto" accept="image/*" />
+            </div>
+
+            <!-- BOTÕES -->
+            <div class="btns">
+                <button class="btnCancelar btn-primary">Cancelar</button>
+                <button type="submit" class="btnCadastrar btn-primary">Cadastrar</button>
+            </div>
+        </section>
+    </form>
+</section>
+
+<script>
+    function selecionarHabilidade(element) {
+        element.classList.toggle('selected');
+        const chipsSelecionados = document.querySelectorAll('.chip.selected');
+        const habilidadesSelecionadas = Array.from(chipsSelecionados).map(chip => chip.innerText);
+        document.getElementById('habilidadesSelecionadas').value = habilidadesSelecionadas.join(', ');
+    }
+</script>

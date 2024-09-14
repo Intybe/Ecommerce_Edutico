@@ -14,6 +14,7 @@ builder.Services.AddScoped<ILoginRepositorio, LoginRepositorio>();
 builder.Services.AddScoped<edutico.Libraries.Sessao.Sessao>();
 builder.Services.AddScoped<LoginSessao>();
 builder.Services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+builder.Services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
 
 var app = builder.Build();
 
