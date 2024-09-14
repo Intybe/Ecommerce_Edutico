@@ -1215,6 +1215,7 @@ input[type="password"] {
 
 
 
+
 /* MEU PERFIL*/
 .Perfil {
     display: flex;
@@ -1256,15 +1257,25 @@ input[type="password"] {
         margin-bottom: 0;
     }
 
-#info_perfil {
+.info-grup input[disabled] {
     font-family: 'Glacial Bold';
     color: gray;
+    border: none;
+    font-size: 14px;
+    background: none;
 }
 
 .info-grup {
     margin-block: 10px;
     height: auto;
     padding-block: 10px;
+}
+
+.editar {
+    border: none;
+    background: none;
+    color: #1C3FB9;
+    text-decoration: underline;
 }
 
 /*DETALHES PEDIDO*/

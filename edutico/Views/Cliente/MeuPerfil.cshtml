@@ -8,7 +8,7 @@
 
         <div class="MinhaConta d-flex flex-column align-items-center py-4">
             <div class="MenuLateral w-100">
-                <!-- Adicionei w-100 para ocupar toda a largura -->
+
                 <p class="Botoes align-items-center">
                     <!-- Alinhei ícones e texto -->
                     Minha Conta
@@ -62,45 +62,46 @@
 
             <div class="sub_perfil">
                 <h5 id="glacial-bold">Dados Conta</h5>
-                <a href="#" class="Voltar">Modificar</a>
+                <!--botao que recebe quais campos irao ser modificados de acordo com id-->
+                <button onclick="edicao(this,['email', 'senha'])" class="editar">Modificar</button>
             </div>
             <hr />
             <div class="col-3">
                 <div class="info-grup">
                     <p>E-mail</p>
-                    <p id="info_perfil">@Model.email</p>
+                    <input type="email" id="email" value="email@gmail.com" disabled>
                 </div>
                 <div class="info-grup">
                     <p>Senha</p>
-                    <p id="info_perfil">********</p>
+                    <input id="senha" value="senhasecreta" disabled>
                 </div>
             </div>
 
 
             <div class="sub_perfil">
                 <h5 id="glacial-bold">Dados Pessoais</h5>
-                <a href="#" class="Voltar">Modificar</a>
+                <button onclick="edicao(this,['nomeprimeiro', 'tel', 'sombrenome', 'cpf'])" class="editar">Modificar</button>
             </div>
             <hr />
             <div class="d-flex">
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Primeiro Nome</p>
-                        <p id="info_perfil">@Model.nome</p>
+                        <input id="nomeprimeiro" value="Fulamnin" disabled>
                     </div>
                     <div class="info-grup">
                         <p>Telefone</p>
-                        <p id="info_perfil">@Model.telefone</p>
+                        <input id="tel" value="(11)00000-0222" disabled>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Ultimo Nome</p>
-                        <p id="info_perfil">@Model.sobrenome</p>
+                        <input id="sombrenome" value="Silvinha" disabled>
                     </div>
                     <div class="info-grup">
                         <p>CPF</p>
-                        <p id="info_perfil">@Model.cpf</p>
+                        <input id="cpf" value="123.456.789.10" disabled>
                     </div>
                 </div>
             </div>
@@ -108,39 +109,39 @@
 
             <div class="sub_perfil">
                 <h5 id="glacial-bold">Endereço</h5>
-                <a href="#" class="Voltar">Modificar</a>
+                <button onclick="edicao(this,['logradouro', 'cep', 'bairro', 'cidade','num', 'uf'])" class="editar">Modificar</button>
             </div>
             <hr />
             <div class="d-flex">
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Logradouro</p>
-                        <p id="info_perfil">@Model.logradouro</p>
+                        <input id="logradouro" value="Rua dos que não acham" disabled>
                     </div>
                     <div class="info-grup">
                         <p>CEP</p>
-                        <p id="info_perfil">@Model.cep</p>
+                        <input id="cep" value="00000-090" disabled>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Bairro</p>
-                        <p id="info_perfil">@Model.bairro</p>
+                        <input id="bairro" value="Morro Doce" disabled>
                     </div>
                     <div class="info-grup">
                         <p>Cidade</p>
-                        <p id="info_perfil">@Model.cidade</p>
+                        <input id="cidade" value="Fim do Mundo" disabled>
                     </div>
 
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Nº Residência</p>
-                        <p id="info_perfil">@Model.numEnd</p>
+                        <input id="num" value="123" disabled>
                     </div>
                     <div class="info-grup">
                         <p>UF</p>
-                        <p id="info_perfil">@Model.uf</p>
+                        <input id="uf" value="FM" class="info-perfil" disabled>
                     </div>
 
                 </div>

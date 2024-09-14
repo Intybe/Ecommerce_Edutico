@@ -86,4 +86,22 @@
             item.classList.toggle('active');
         });
     });
+
+    // função para editar campos da tela Meu Perfil
+    function edicao(botao, ids) {
+        //loop para enqunto tiver campos no array
+        ids.forEach(function (id) {
+            var inputField = document.getElementById(id);
+
+            if (inputField.hasAttribute('disabled')) {
+                inputField.removeAttribute('disabled');
+                inputField.focus();
+                botao.textContent = 'Salvar';
+            } else {
+                inputField.setAttribute('disabled', true);
+                botao.textContent = 'Modificar';
+            }
+        });
+    }
+
 });
