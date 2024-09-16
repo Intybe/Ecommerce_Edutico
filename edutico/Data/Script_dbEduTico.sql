@@ -36,7 +36,9 @@
         Sessão de Cadastro de Devoluções
 	Procedures Alterações (Update)
         Sessão de Atualização da Senha
-        Sessão de Atualização dos Dados do Cliente
+        Sessão de Atualização dos Dados do Cliente (Informações Pessoais)
+        Sessão de Atualização dos Dados do Cliente (Endereço)
+        Sessão de Atualização dos Dados do Cliente (Dados Conta)
         Sessão de Atualização de Status do Pedido
         Sessão de Atualização de Produto
         Sessão de Atualização das Imagens do Produto
@@ -387,24 +389,29 @@ End $$
 Delimiter $$
 Create Procedure spInsertTbHabilidade_Produto(
 	vCodProd decimal(14,0), 
-	vCodHabilidade int
+	vNomeHabilidade varchar(100)
 )
 Begin
+	Declare vCodHabilidade int;
 	-- Verifica se existe esse código de produto e a códig da habilidade --
 	If exists 
 		(Select codProd from tbProduto where codProd = vCodProd) 
 		And 
-        (Select codHabilidade from tbHabilidade where codHabilidade = vCodHabilidade) then
+        (Select codHabilidade from tbHabilidade where nomeHabilidade = vNomeHabilidade) then
         
 		If not exists
 			(Select codProd, codHabilidade from tbHabilidade_Produto 
             where codProd = vCodProd And codHabilidade = vCodHabilidade) then
             
-			Insert into tbHabilidade_Produto(codProd, codHabilidade)
+			Set vCodHabilidade = (Select codHabilidade from tbHabilidade where nomeHabilidade = vNomeHabilidade);
+			
+            Insert into tbHabilidade_Produto(codProd, codHabilidade)
 					values(vCodProd, vCodHabilidade);
 		End if;
 	End if;
 End $$
+
+
 
 -- Sessão de Cadastro de Produtos --
 Delimiter $$
@@ -656,15 +663,11 @@ Begin
 	Update tbLogin Set Senha = vSenha where codLogin = vCodLogin;
 End $$
 
--- Sessão de Atualização dos Dados do Cliente --
+-- Sessão de Atualização dos Dados do Cliente (Endereço) --
 Delimiter $$
-Create Procedure spUpdateTbCliente(
+Create Procedure spUpdateTbClienteEndereco(
 	-- Variáveis de Entrada --
 	vCodLogin int, 
-	vNome varchar(200), 
-	vSobrenome varchar(200), 
-	vTelefone decimal(11,0), 
-	vEmail varchar(200), 
 	vLogradouro varchar (200), 
 	vBairro varchar (200),  
 	vCidade varchar (200), 
@@ -701,22 +704,66 @@ Begin
 		
 		Insert into tbEndereco (Logradouro, BairroId, CidadeId, UFId, CEP)
 				values(vLogradouro, vBairroId, vCidadeId, vUfId, vCEP);
-	End if; -- Fechamneto cadastro tbEndereco --
+	End if; -- Fechamento cadastro tbEndereco --
 	
     -- Atuliza os dados do cliente --
 	Update tbCliente Set 
-		nomeCli = vNome, 
-		sobrenome = vSobrenome, 
-		telefone = vTelefone, 
-		email = vEmail, 
 		cepCli = vCEP, 
 		numEnd = vNumEnd, 
 		compEnd = vCompEnd  
 	where codLogin = vCodLogin;
     
-	Update tbLogin Set usuario = vEmail where codLogin = vCodLogin;
 	
 	Select('Dados Alterados com sucesso!');
+End $$
+
+-- Sessão de Atualização dos Dados do Cliente (Dados Conta) --
+Delimiter $$
+Create Procedure spUpdateTbClienteConta(
+	-- Variáveis de Entrada --
+	vCodLogin int, 
+	vEmail varchar(200), 
+	vSenha varchar(20)
+)
+Begin
+	If not exists(Select usuario from tbLogin where usuario = vEmail and codLogin != vCodLogin) then
+		-- Atuliza os dados do cliente --
+		Update tbCliente Set 
+			email = vEmail
+		where codLogin = vCodLogin;
+		
+		Update tbLogin Set usuario = vEmail, senha = vSenha where codLogin = vCodLogin;
+		
+		Select('Dados Alterados com sucesso!');
+	else
+		Select('Esse email já está cadastrado, tente outro');
+	end if;
+End $$
+
+-- Sessão de Atualização dos Dados do Cliente (Informações Pessoais) --
+Delimiter $$
+Create Procedure spUpdateTbClienteDados(
+	-- Variáveis de Entrada --
+	vCodLogin int, 
+    vCPF decimal,
+	vNome varchar(200), 
+	vSobrenome varchar(200), 
+	vTelefone decimal(11,0)
+)
+Begin
+	If not exists(Select cpf from tbCliente where cpf = vCPF) then
+		-- Atuliza os dados do cliente --
+		Update tbCliente Set 
+			cpf = vCPF,
+			nomeCli = vNome, 
+			sobrenome = vSobrenome, 
+			telefone = vTelefone
+		where codLogin = vCodLogin;
+		
+        Select('Dados atulizados com sucesso');
+	End if;
+	
+	Select('Este CPF já está cadastrado, por favor digite outro');
 End $$
 
 -- Sessão de Atualização de Status do Pedido --

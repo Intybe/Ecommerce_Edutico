@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "T:\\Reposit\u00F3rio Backend Edutico\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -35,8 +59,12 @@
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +74,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Script_dbEduTico.sql ",
+              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_dbEduTico.sql",
+              "RelativeDocumentMoniker": "edutico\\Data\\Script_dbEduTico.sql",
+              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_dbEduTico.sql",
+              "RelativeToolTip": "edutico\\Data\\Script_dbEduTico.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-16T08:20:46.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Script_ValidacaoTeste.sql ",
+              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
+              "RelativeDocumentMoniker": "edutico\\Data\\Script_ValidacaoTeste.sql",
+              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
+              "RelativeToolTip": "edutico\\Data\\Script_ValidacaoTeste.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-16T08:20:15.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\ClienteController.cs",
+              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAADwv2AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T08:10:30.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "IClienteRepositorio.cs",
+              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\IClienteRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\IClienteRepositorio.cs",
+              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\IClienteRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\IClienteRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T08:09:57.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MeuPerfil.cshtml",
+              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAwwKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T08:05:22.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
@@ -58,12 +149,11 @@
               "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T05:02:56.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T05:02:56.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "DetalhesProduto.cshtml",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
@@ -71,12 +161,11 @@
               "RelativeToolTip": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T04:49:56.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T04:49:56.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
@@ -89,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "IProdutoRepositorio.cs",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\IProdutoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\IProdutoRepositorio.cs",
@@ -97,25 +186,24 @@
               "RelativeToolTip": "edutico\\Repositorio\\IProdutoRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T06:17:21.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T06:17:21.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "ClienteRepositorio.cs",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\ClienteRepositorio.cs",
               "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
               "RelativeToolTip": "edutico\\Repositorio\\ClienteRepositorio.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAADwv84AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T05:03:59.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ProdutoController.cs",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\ProdutoController.cs",
@@ -123,12 +211,11 @@
               "RelativeToolTip": "edutico\\Controllers\\ProdutoController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T04:47:26.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T04:47:26.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ProdutoRepositorio.cs",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ProdutoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
@@ -136,12 +223,11 @@
               "RelativeToolTip": "edutico\\Repositorio\\ProdutoRepositorio.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAEwFEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T05:04:13.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T05:04:13.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Produto.cs",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "edutico\\Models\\Produto.cs",
@@ -149,12 +235,11 @@
               "RelativeToolTip": "edutico\\Models\\Produto.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAywBsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T04:47:20.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T04:47:20.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Imagem.cs",
               "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Models\\Imagem.cs",
               "RelativeDocumentMoniker": "edutico\\Models\\Imagem.cs",
@@ -162,8 +247,7 @@
               "RelativeToolTip": "edutico\\Models\\Imagem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T06:01:56.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T06:01:56.843Z"
             }
           ]
         }

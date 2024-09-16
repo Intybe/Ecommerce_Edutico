@@ -2,6 +2,7 @@
 using edutico.Models;
 using edutico.Repositorio;
 using Microsoft.AspNetCore.Mvc;
+using MySqlX.XDevAPI;
 
 namespace edutico.Controllers
 {
@@ -22,6 +23,24 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult MeuPerfil()
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+
+            // Chama o método do repositório para consultar o cliente no banco de dados
+            Cliente cliente = _clienteRepositorio.ConsultarCliente(codLogin.codLogin);
+
+            // Passa os dados do cliente para a view
+            return View(cliente);
+        }
+
         [HttpPost]
         public IActionResult CadastrarCliente(decimal cpf, string nome, string sobrenome, string telefone, string email, string logradouro, string bairro, string cidade, string uf, string cep, int numEnd, string compEnd, string senha)
         {
@@ -31,22 +50,47 @@ namespace edutico.Controllers
             return View("CadastroCliente");
         }
 
-        public IActionResult MeuPerfil()
+        [HttpPost]
+        public IActionResult AtualizarClienteConta(string email, string senha)
         {
-            // Obtém o cliente logado através da sessão
-            var login = _loginSessao.GetLogin();
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
 
-            if (login == null)
+            string mensagem = _clienteRepositorio.AtualizarClienteConta(codLogin.codLogin, email, senha);
+
+            ViewData["msg"] = mensagem;
+            return View("MeuPerfil");
+        }
+
+        [HttpPost]
+        public IActionResult AtualizarClienteDados(decimal cpf, string nome, string sobrenome, string telefone)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
             {
                 // Se o cliente não estiver logado, redireciona para a página de login
                 return RedirectToAction("Login", "Login");
             }
 
-            // Chama o método do repositório para consultar o cliente no banco de dados
-            Cliente cliente = _clienteRepositorio.ConsultarCliente(login.codLogin);
+            string mensagem = _clienteRepositorio.AtualizarClienteDados(codLogin.codLogin, cpf, nome, sobrenome, telefone);
 
-            // Passa os dados do cliente para a view
-            return View(cliente);
+            ViewData["msg"] = mensagem;
+            return View("MeuPerfil");
         }
+
+        [HttpPost]
+        public IActionResult AtualizarClienteEndereco(string logradouro, string bairro, string cep, string cidade, string uf, string numEnd, string compEnd)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            string mensagem = _clienteRepositorio.AtualizarClienteEndereco(codLogin.codLogin, logradouro, bairro, cep, cidade, uf, Convert.ToInt32(numEnd), compEnd);
+
+            ViewData["msg"] = mensagem;
+            return View("MeuPerfil");
+        }
+
     }
 }

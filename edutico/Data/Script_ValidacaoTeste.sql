@@ -1,8 +1,11 @@
 
+Call spUpdateTbClienteConta(4, 'teste@gmail.com', '12345678');
 
+Select * from tbCliente;
 
+Call spInsertTbHabilidade_Produto(12345678910556, 'Criatividade');
 
-
+Select * from tbHabilidade_Produto;
 
 Delimiter $$
 	Call spInsertTbCliente(10399833309, 'Cleia', 'Santana Alves', 11966163308, 'cleia@gmail.com', 'teste@123', 'Rua Angelina', 'Latrim', 'Rio de Janeiro','RJ', '12345058', 91, 'Residência');
@@ -65,7 +68,22 @@ Delimiter $$
 $$
 
 Select * from tbImagem;
-Select * from vwProduto;
+Select * from vwProduto where Status = 0;
+
+
+Delete from tbProduto where codProd = 12345678910556, , ;
+Select * from tbImagem;
+SET SQL_SAFE_UPDATES = 0;
+
+SELECT p.*, i.enderecoImg 
+        FROM tbProduto p
+        LEFT JOIN tbImagem i ON p.codProd = i.codProd
+        WHERE p.statusProd = 0;
+Select * from vwProduto Left Join tbImagem On Código = tbImagem.codProd where Status = 0 and Lançamento = 0;
+
+Update tbProduto Set statusProd = 1 where codProd = 12345678910550;
+
+Select * from tbHabilidade;
 
 Delimiter $$
 	Call spInsertTbCarrinho(1, 7896054025112, 1);

@@ -8,48 +8,37 @@
 
         <div class="MinhaConta d-flex flex-column align-items-center py-4">
             <div class="MenuLateral w-100">
-
-                <p class="Botoes align-items-center">
-                    <!-- Alinhei ícones e texto -->
-                    Minha Conta
-                </p>
-
+                <p class="Botoes align-items-center">Minha Conta</p>
                 <p class="Botoes align-items-center">
                     <a asp-controller="Home" asp-action="ProdutosF">
                         <img src="~/imgs/PerfilF.png" alt="Perfil" class="icon me-3">
                         Meu Perfil
                     </a>
                 </p>
-
-
                 <p class="Botoes align-items-center">
                     <a asp-controller="Home" asp-action="PedidosAndamentoF">
                         <img src="~/imgs/Pedidos.png" alt="Pedidos" class="icon me-3">
                         Meus Pedidos
                     </a>
                 </p>
-
-                <p class="Botoes align-items-center  @((ViewContext.RouteData.Values["action"] as string) == "ProdutosF" ? "active" : "")">
+                <p class="Botoes align-items-center">
                     <a asp-controller="Home" asp-action="PedidosAndamentoF">
                         <img src="~/imgs/favoritos.png" alt="favoritos" class="icon me-3">
                         Meus Favoritos
                     </a>
                 </p>
-
                 <p class="Botoes align-items-center">
                     <a asp-controller="Home" asp-action="PedidosAndamentoF">
                         <img src="~/imgs/cartoes.png" alt="Cartoes" class="icon me-3">
                         Meus Cartões
                     </a>
                 </p>
-
                 <p class="Botoes align-items-center">
                     <a asp-controller="Home" asp-action="PedidosAndamentoF">
                         <img src="~/imgs/sair.png" alt="Logout" class="icon me-3">
                         Sair
                     </a>
                 </p>
-
             </div>
         </div>
         <div class="position-absolute bottom-0 start-0 imgCataventos">
@@ -57,105 +46,126 @@
         </div>
 
         <div class="col-9 areaCliente">
-
             <p class="titulo_perfil">MEU PERFIL</p>
 
-            <div class="sub_perfil">
-                <h5 id="glacial-bold">Dados Conta</h5>
-                <!--botao que recebe quais campos irao ser modificados de acordo com id-->
-                <button onclick="edicao(this,['email', 'senha'])" class="editar">Modificar</button>
-            </div>
-            <hr />
-            <div class="col-3">
-                <div class="info-grup">
-                    <p>E-mail</p>
-                    <input type="email" id="email" value="email@gmail.com" disabled>
+            <!-- Formulário de Dados Conta -->
+            <form id="formDadosConta" method="post" asp-controller="Cliente" asp-action="AtualizarClienteConta">
+                <div class="sub_perfil">
+                    <h5 id="glacial-bold">Dados Conta</h5>
+                    <button type="button" onclick="edicao(this, ['email', 'senha'], 'formDadosConta')" class="editar">Modificar</button>
                 </div>
-                <div class="info-grup">
-                    <p>Senha</p>
-                    <input id="senha" value="senhasecreta" disabled>
-                </div>
-            </div>
-
-
-            <div class="sub_perfil">
-                <h5 id="glacial-bold">Dados Pessoais</h5>
-                <button onclick="edicao(this,['nomeprimeiro', 'tel', 'sombrenome', 'cpf'])" class="editar">Modificar</button>
-            </div>
-            <hr />
-            <div class="d-flex">
+                <hr />
                 <div class="col-3">
                     <div class="info-grup">
-                        <p>Primeiro Nome</p>
-                        <input id="nomeprimeiro" value="Fulamnin" disabled>
+                        <p>E-mail</p>
+                        <input type="email" id="email" name="email" value="@Model.email" disabled>
                     </div>
                     <div class="info-grup">
-                        <p>Telefone</p>
-                        <input id="tel" value="(11)00000-0222" disabled>
+                        <p>Senha</p>
+                        <input type="password" id="senha" name="senha" value="@Model.senha" disabled>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="info-grup">
-                        <p>Ultimo Nome</p>
-                        <input id="sombrenome" value="Silvinha" disabled>
-                    </div>
-                    <div class="info-grup">
-                        <p>CPF</p>
-                        <input id="cpf" value="123.456.789.10" disabled>
-                    </div>
-                </div>
-            </div>
+            </form>
 
-
-            <div class="sub_perfil">
-                <h5 id="glacial-bold">Endereço</h5>
-                <button onclick="edicao(this,['logradouro', 'cep', 'bairro', 'cidade','num', 'uf'])" class="editar">Modificar</button>
-            </div>
-            <hr />
-            <div class="d-flex">
-                <div class="col-3">
-                    <div class="info-grup">
-                        <p>Logradouro</p>
-                        <input id="logradouro" value="Rua dos que não acham" disabled>
+            <!-- Formulário de Dados Pessoais -->
+            <form id="formDadosPessoais" method="post" asp-controller="Cliente" asp-action="AtualizarClienteDados">
+                <div class="sub_perfil">
+                    <h5 id="glacial-bold">Dados Pessoais</h5>
+                    <button type="button" onclick="edicao(this, ['nomeprimeiro', 'tel', 'sombrenome', 'cpf'], 'formDadosPessoais')" class="editar">Modificar</button>
+                </div>
+                <hr />
+                <div class="d-flex">
+                    <div class="col-3">
+                        <div class="info-grup">
+                            <p>Primeiro Nome</p>
+                            <input id="nomeprimeiro" name="nome" value="@Model.nome" disabled>
+                        </div>
+                        <div class="info-grup">
+                            <p>Telefone</p>
+                            <input id="tel" name="telefone" value="@Model.telefone" disabled>
+                        </div>
                     </div>
-                    <div class="info-grup">
-                        <p>CEP</p>
-                        <input id="cep" value="00000-090" disabled>
+                    <div class="col-3">
+                        <div class="info-grup">
+                            <p>Ultimo Nome</p>
+                            <input id="sombrenome" name="sobrenome" value="@Model.sobrenome" disabled>
+                        </div>
+                        <div class="info-grup">
+                            <p>CPF</p>
+                            <input id="cpf" name="cpf" value="@Model.cpf" disabled>
+                        </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="info-grup">
-                        <p>Bairro</p>
-                        <input id="bairro" value="Morro Doce" disabled>
-                    </div>
-                    <div class="info-grup">
-                        <p>Cidade</p>
-                        <input id="cidade" value="Fim do Mundo" disabled>
-                    </div>
+            </form>
 
+            <!-- Formulário de Endereço -->
+            <form id="formEndereco" method="post" asp-controller="Cliente" asp-action="AtualizarClienteEndereco">
+                <div class="sub_perfil">
+                    <h5 id="glacial-bold">Endereço</h5>
+                    <button type="button" onclick="edicao(this, ['logradouro', 'cep', 'bairro', 'cidade', 'num', 'uf'], 'formEndereco')" class="editar">Modificar</button>
                 </div>
-                <div class="col-3">
-                    <div class="info-grup">
-                        <p>Nº Residência</p>
-                        <input id="num" value="123" disabled>
+                <hr />
+                <div class="d-flex">
+                    <div class="col-3">
+                        <div class="info-grup">
+                            <p>Logradouro</p>
+                            <input id="logradouro" name="logradouro" value="@Model.logradouro" disabled>
+                        </div>
+                        <div class="info-grup">
+                            <p>CEP</p>
+                            <input id="cep" name="cep" value="@Model.cep" disabled>
+                        </div>
                     </div>
-                    <div class="info-grup">
-                        <p>UF</p>
-                        <input id="uf" value="FM" class="info-perfil" disabled>
+                    <div class="col-3">
+                        <div class="info-grup">
+                            <p>Bairro</p>
+                            <input id="bairro" name="bairro" value="@Model.bairro" disabled>
+                        </div>
+                        <div class="info-grup">
+                            <p>Cidade</p>
+                            <input id="cidade" name="cidade" value="@Model.cidade" disabled>
+                        </div>
                     </div>
-
+                    <div class="col-3">
+                        <div class="info-grup">
+                            <p>Nº Residência</p>
+                            <input id="num" name="numEnd" value="@Model.numEnd" disabled>
+                        </div>
+                        <div class="info-grup">
+                            <p>UF</p>
+                            <input id="uf" name="uf" value="@Model.uf" class="info-perfil" disabled>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-
-
 </section>
 
+<script>
+    // Função para habilitar edição dos campos e salvar o formulário específico
+    function edicao(botao, ids, formId) {
+        var isEditing = false;
 
+        ids.forEach(function (id) {
+            var inputField = document.getElementById(id);
 
+            if (inputField.hasAttribute('disabled')) {
+                inputField.removeAttribute('disabled');
+                inputField.focus();
+                isEditing = true;
+            } else {
+                inputField.setAttribute('disabled', true);
+            }
+        });
 
-
-
-
-
+        // Troca o texto do botão para "Salvar" se está em modo de edição
+        if (isEditing) {
+            botao.textContent = 'Salvar';
+        } else {
+            botao.textContent = 'Modificar';
+            // Submete o formulário correto
+            document.getElementById(formId).submit();
+        }
+    }
+</script>

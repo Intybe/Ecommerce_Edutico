@@ -12,7 +12,7 @@ namespace edutico.Repositorio
         public string CadastrarCliente(decimal cpf, string nome, string sobrenome, string telefone, string email, string logradouro, string bairro, string cidade, string uf, string cep, int numEnd, string compEnd, string senha)
         {
             // Conexão com o banco de Dados
-            Conexao con = new Conexao(); 
+            Conexao con = new Conexao();
             MySqlConnection conexao = con.ConectarBD();
 
             // Variável que armazena o comando SQL
@@ -106,6 +106,101 @@ namespace edutico.Repositorio
                 // Trate o caso em que nenhum registro foi encontrado
                 return null;
             }
+        }
+
+        public string AtualizarClienteConta(int codLogin, string email, string senha)
+        {
+            // Conexão com o banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "spUpdateTbClienteConta(@codLogin, @email, @senha)";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Adicionando Parâmetros
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@senha", senha);
+
+            // Lê os dados retornados pela procedure do BD
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            // Armazena os dados retornados do Banco de Dados
+            MySqlDataReader dr;
+
+            // Executando os comandos do mysql e passsando paa a variavel dr
+            dr = cmd.ExecuteReader();
+
+            // Retorna para controller mensagem que veio do Banco de Dados
+            return dr.GetString(0);
+        }
+
+        public string AtualizarClienteEndereco(int codLogin, string logradouro, string bairro, string cep, string cidade, string uf, int numEnd, string compEnd)
+        {
+            // Conexão com o banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "spUpdateTbClienteEndereco(@codLogin, @logradouro, @bairro, @cidade, @uf, @cep, @numEnd, @compEnd)";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Adicionando Parâmetros
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+            cmd.Parameters.AddWithValue("@logradouro", logradouro);
+            cmd.Parameters.AddWithValue("@bairro", bairro);
+            cmd.Parameters.AddWithValue("@cidade", cidade);
+            cmd.Parameters.AddWithValue("@uf", uf);
+            cmd.Parameters.AddWithValue("@cep", cep);
+            cmd.Parameters.AddWithValue("@numEnd", numEnd);
+            cmd.Parameters.AddWithValue("@compEnd", compEnd);
+
+            // Lê os dados retornados pela procedure do BD
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            // Armazena os dados retornados do Banco de Dados
+            MySqlDataReader dr;
+
+            // Executando os comandos do mysql e passsando paa a variavel dr
+            dr = cmd.ExecuteReader();
+
+            // Retorna para controller mensagem que veio do Banco de Dados
+            return dr.GetString(0);
+        }
+
+        public string AtualizarClienteDados(int codLogin, decimal cpf, string nome, string sobrenome, string telefone)
+        {
+            // Conexão com o banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "spUpdateTbClienteDados(@codLogin, @cpf, @nome, @sobrenome, @telefone)";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Adicionando Parâmetros
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+            cmd.Parameters.AddWithValue("@cpf", cpf);
+            cmd.Parameters.AddWithValue("@nome", nome);
+            cmd.Parameters.AddWithValue("@sobrenome", sobrenome);
+            cmd.Parameters.AddWithValue("@telefone", telefone);
+
+
+            // Lê os dados retornados pela procedure do BD
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            // Armazena os dados retornados do Banco de Dados
+            MySqlDataReader dr;
+
+            // Executando os comandos do mysql e passsando paa a variavel dr
+            dr = cmd.ExecuteReader();
+
+            // Retorna para controller mensagem que veio do Banco de Dados
+            return dr.GetString(0);
         }
     }
 }
