@@ -6,7 +6,7 @@ namespace edutico.Repositorio
     {
         string CadastrarProduto(Produto produto, List<IFormFile> imgs, List<string> habilidades);
 
-        IEnumerable<Produto> ConsultarProdutoLacamento();
+        IEnumerable<Produto> ConsultarProdutoLancamento();
 
         Produto ConsultarProduto(decimal codProd);
     }

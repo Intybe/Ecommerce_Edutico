@@ -122,6 +122,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDYWRhc3Ryb1Byb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[T:/Repositório Backend Edutico/edutico/Views/Produto/DetalhesProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlc1Byb2R1dG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [T:/Repositório Backend Edutico/edutico/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

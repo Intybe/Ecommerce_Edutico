@@ -1,4 +1,5 @@
 using edutico.Models;
+using edutico.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -9,15 +10,24 @@ namespace edutico.Controllers
     {
 
         private readonly ILogger<HomeController> _logger;
+        private IProdutoRepositorio? _produtoRepositorio;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IProdutoRepositorio produtoRepositorio)
         {
             _logger = logger;
+            _produtoRepositorio = produtoRepositorio;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Produto> produto = null;
+
+            if ((_produtoRepositorio.ConsultarProdutoLancamento()) != null)
+            {
+                produto = _produtoRepositorio.ConsultarProdutoLancamento(); // Obtém os produtos
+            }
+
+            return View(produto); // Passa os produtos para a view
         }
 
         public IActionResult Login()
