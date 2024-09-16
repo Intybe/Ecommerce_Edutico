@@ -1145,8 +1145,8 @@ label {
     justify-content: center;
 }
 
-/*DETALHE PRODUTO
 
+/*DETALHE PRODUTO*/
 /*Geral*/
 .base-prod-detalhe {
     background: white;
@@ -1173,11 +1173,11 @@ label {
     font-family: 'Glacial Bold';
 }
 
-.qtdProd{
+.qtdProd {
     margin-left: 10px;
     align-items: center;
     text-align: center;
-    font-size:14px;
+    font-size: 14px;
     width: 120px;
     height: 25px;
     border: 1px solid #000;
@@ -1362,6 +1362,10 @@ label {
     align-items: center;
     text-align: center;
 }
+
+    .btnAlt a {
+        text-decoration: none;
+    }
 
 .btnDes {
     margin-left: 15px;

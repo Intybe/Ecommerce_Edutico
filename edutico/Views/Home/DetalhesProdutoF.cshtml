@@ -1,4 +1,5 @@
-﻿@{
+﻿detalhes produto
+@{
     @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
     Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
     ViewData["Title"] = "Detalhes Produto Funcionário";
@@ -7,183 +8,179 @@
 <section class="Conteudo">
     <!-- base -->
 
-   
-<div class="container row justify-content-center">
-    <div class="col-7">
-        <div class="base-prod-detalhe d-flex">
-            <div>
-                <div class="imgpequena"></div>
-                <div class="imgpequena"></div>
+
+    <div class="container row justify-content-center">
+        <div class="col-7">
+            <div class="base-prod-detalhe d-flex">
+                <div>
+                    <div class="imgpequena"></div>
+                    <div class="imgpequena"></div>
+                </div>
+                <div class="imgprincipal"></div>
             </div>
-            <div class="imgprincipal"></div>
-        </div>
-        <div class="base-prod-detalhe position-relative">
-            <h3>Descrição do produto</h3>
-            <p class="texto-simples">
-                Apresentamos o Monta Monta, o brinquedo de construção perfeito para crianças que adoram explorar a criatividade e a engenhosidade.
-                Com o Monta Monta, cada peça é um tijolo para a imaginação, permitindo criar estruturas únicas e incríveis.
-                Apresentamos o Monta Monta, o brinquedo de construção perfeito para crianças que adoram explorar a criatividade e a engenhosidade.
-                Com o Monta Monta, cada peça é um tijolo para a imaginação, permitindo criar estruturas únicas e incríveis.
-            </p>
-            <div id="versaocompleta" class="hidden">
-                <p class="texto-simples">Características do Produto:</p>
-                <ul class="texto-simples">
-                    <li>
-                        Conjunto Completo: O Monta Monta vem com um kit de 500 peças de construção coloridas, projetadas para se encaixar perfeitamente umas nas outras.
-                        Inclui blocos básicos, peças especiais e acessórios temáticos.
-                    </li>
+            <div class="base-prod-detalhe position-relative">
+                <h3>Descrição do produto</h3>
+                <p class="texto-simples">
+                    Apresentamos o Monta Monta, o brinquedo de construção perfeito para crianças que adoram explorar a criatividade e a engenhosidade.
+                    Com o Monta Monta, cada peça é um tijolo para a imaginação, permitindo criar estruturas únicas e incríveis.
+                    Apresentamos o Monta Monta, o brinquedo de construção perfeito para crianças que adoram explorar a criatividade e a engenhosidade.
+                    Com o Monta Monta, cada peça é um tijolo para a imaginação, permitindo criar estruturas únicas e incríveis.
+                </p>
+                <div id="versaocompleta" class="hidden">
+                    <p class="texto-simples">Características do Produto:</p>
+                    <ul class="texto-simples">
+                        <li>
+                            Conjunto Completo: O Monta Monta vem com um kit de 500 peças de construção coloridas, projetadas para se encaixar perfeitamente umas nas outras.
+                            Inclui blocos básicos, peças especiais e acessórios temáticos.
+                        </li>
 
                     </ul>  <br />
-            </div>
-            <div class="fundo_ver position-absolute bottom-0 end-0">
-                <button class="vermais position-absolute bottom-0 end-0" id="toggle-button">Ler descrição completa</button>
-            </div>
-
-
-        </div>
-        <div class="base-prod-detalhe  texto-simples">
-            <h3>Avaliações do produto</h3>
-            <div class="row">
-                <div class="col-5 ">
-                    <div class="rating-score ">
-
-                        <div class="d-flex">
-
-                            <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">5.0</h4>
-                            <div class="align-content-center">
-                                <img src="~/imgs/Star.png" class="icone ">
-                                <img src="~/imgs/Star.png" class="icone ">
-                                <img src="~/imgs/Star.png" class="icone ">
-                                <img src="~/imgs/Star.png" class="icone">
-                                <img src="~/imgs/Star.png" class="icone">
-                            </div>
-
-                        </div>
-
-                        <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>5</span></div>
-                            <div class="progress-bar">
-                                <div class="progress" id="bar-5"></div>
-                            </div>
-                        </div>
-                        <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>4</span></div>
-                            <div class="progress-bar">
-                                <div class="progress" id="bar-4"></div>
-                            </div>
-                        </div>
-                        <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>3</span></div>
-                            <div class="progress-bar">
-                                <div class="progress" id="bar-3"></div>
-                            </div>
-                        </div>
-                        <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>2</span></div>
-                            <div class="progress-bar">
-                                <div class="progress" id="bar-2"></div>
-                            </div>
-                        </div>
-                        <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>1</span></div>
-                            <div class="progress-bar">
-                                <div class="progress" id="bar-1"></div>
-                            </div>
-                        </div>
-
-                        <div class="total-ratings">
-                            <hr />
-                            <p class="texto-simples"><span id="total-ratings">10</span> avaliações realizadas</p>
-                        </div>
-
-                    </div>
-
-
-                   
-
-
+                </div>
+                <div class="fundo_ver position-absolute bottom-0 end-0">
+                    <button class="vermais position-absolute bottom-0 end-0" id="toggle-button">Ler descrição completa</button>
                 </div>
 
 
-                <div class="col-7 border-start">
-                    <div class="review">
-                        <div class="d-flex">
-                            <div class="review-header">
-                                <strong>Usuário 01</strong>
-                                <span style="font-size:10px;">22/05/2024</span>
-                            </div>
+            </div>
+            <div class="base-prod-detalhe  texto-simples">
+                <h3>Avaliações do produto</h3>
+                <div class="row">
+                    <div class="col-5 ">
+                        <div class="rating-score ">
+
                             <div class="d-flex">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
+
+                                <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">5.0</h4>
+                                <div class="align-content-center">
+                                    <img src="~/imgs/Star.png" class="icone ">
+                                    <img src="~/imgs/Star.png" class="icone ">
+                                    <img src="~/imgs/Star.png" class="icone ">
+                                    <img src="~/imgs/Star.png" class="icone">
+                                    <img src="~/imgs/Star.png" class="icone">
+                                </div>
+
                             </div>
+
+                            <div class="rating-row">
+                                <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>5</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" id="bar-5"></div>
+                                </div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>4</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" id="bar-4"></div>
+                                </div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>3</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" id="bar-3"></div>
+                                </div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>2</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" id="bar-2"></div>
+                                </div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>1</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" id="bar-1"></div>
+                                </div>
+                            </div>
+
+                            <div class="total-ratings">
+                                <hr />
+                                <p class="texto-simples"><span id="total-ratings">10</span> avaliações realizadas</p>
+                            </div>
+
                         </div>
-                        <div class="review-content">Produto muito bom!! Minha filha está apaixonada</div>
+
+
+
+
+
                     </div>
 
-                    <hr />
 
-                    <div class="review">
-                        <div class="d-flex">
-                            <div class="review-header">
-                                <strong>Usuário 01</strong>
-                                <span style="font-size:10px;">22/05/2024</span>
-                            </div>
+                    <div class="col-7 border-start">
+                        <div class="review">
                             <div class="d-flex">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
+                                <div class="review-header">
+                                    <strong>Usuário 01</strong>
+                                    <span style="font-size:10px;">22/05/2024</span>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                </div>
                             </div>
+                            <div class="review-content">Produto muito bom!! Minha filha está apaixonada</div>
                         </div>
-                        <div class="review-content">Produto muito bom!! Minha filha está apaixonada</div>
-                    </div>
 
-                    <hr />
+                        <hr />
+
+                        <div class="review">
+                            <div class="d-flex">
+                                <div class="review-header">
+                                    <strong>Usuário 01</strong>
+                                    <span style="font-size:10px;">22/05/2024</span>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                    <img src="~/imgs/Star.png" class="iconeava ">
+                                </div>
+                            </div>
+                            <div class="review-content">Produto muito bom!! Minha filha está apaixonada</div>
+                        </div>
+
+                        <hr />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="base-prod-detalhe">
+                <div class="d-flex pb-2 px-2">
+                    <h5 class="glacial-bold">Kit Monta Monta Trem Estrela 20pçs</h5>
+                    <!-- div provisória (substituir por icone coração) -->
+
+                    <img src="~/imgs/heart.png" class="curti">
+                </div>
+                <p class=" mb-1 texto-simples">
+                    <img src="~/imgs/Star.png" class="icone mb-1">
+                    <img src="~/imgs/Star.png" class="icone mb-1">
+                    <img src="~/imgs/Star.png" class="icone mb-1">
+                    <img src="~/imgs/Star.png" class="icone mb-1">
+                    <img src="~/imgs/Star.png" class="icone mb-1">
+                    5.0 (10 avaliações)
+                </p>
+                <div class="mb-2 px-2">
+                    <p class="texto-simples"> De <span style="text-decoration: line-through">70,00</span></p>
+                    <h4>R$ 60,00</h4>
+                </div>
+                <div class="d-flex mb-3 px-2">
+                    <h6 class="glacial-bold" style="color:#8ED61A;">Status</h6>
+                    <div class="qtdProd"><p>100 disponíveis </p> </div>
+                </div>
+                <div class="row justify-content-center px-2 m-1">
+                    <a asp-controller="Home" asp-action="AlterarProdutosF" class="btnAlt">ALTERAR</a>
+                    <buttom class="btnDes">DESATIVAR</buttom>
                 </div>
             </div>
-
+        </div>
+        <div class="btnvoltar">
+            <a asp-controller="Home" asp-action="PedidosAndamentoF" class="register-button">Voltar</a>
         </div>
     </div>
-    <div class="col-6">
-        <div class="base-prod-detalhe">
-            <div class="d-flex pb-2 px-2">
-                <h5 class="glacial-bold">Kit Monta Monta Trem Estrela 20pçs</h5>
-                <!-- div provisória (substituir por icone coração) -->
-
-                <img src="~/imgs/heart.png" class="curti">
-            </div>
-            <p class=" mb-1 texto-simples">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                5.0 (10 avaliações)
-            </p>
-            <div class="mb-2 px-2">
-                <p class="texto-simples"> De <span style="text-decoration: line-through">70,00</span></p>
-                <h4>R$ 60,00</h4>
-            </div>
-            <div class="d-flex mb-3 px-2">
-                <h6 class="glacial-bold" style="color:#8ED61A;">Status</h6>
-                <div class="qtdProd"><p>100 disponíveis </p> </div>
-               
-               
-            </div>
-            <div class="row justify-content-center px-2 m-1">
-                <buttom class="btnAlt">ALTERAR</buttom>
-                <buttom class="btnDes">DESATIVAR</buttom>
-            </div>
-        </div>
-
-        
-       
-    </div>
-</div>
 </section>
-
-
