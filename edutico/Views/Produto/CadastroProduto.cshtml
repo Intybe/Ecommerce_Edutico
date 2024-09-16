@@ -13,7 +13,7 @@
                 <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
             }
         }
-        
+
         <section class="Cadastrar Produtos">
             <div class="header">
                 <h1>CADASTRAR PRODUTOS</h1>
@@ -41,8 +41,8 @@
                     <option value="5 a 7 anos">5 a 7 anos</option>
                 </select>
 
-                <!-- HABILIDADES TRABALHADAS -->
-                <label for="HabTrabalhada">Habilidade Trabalhada <span class="req">*</span></label>
+                <!-- HABILIDADE TRABALHADA (chips)-->
+                <label for="HabTabalhada">Habilidade Trabalhada <span class="req">*</span></label>
                 <div id="habilidades-trabalhadas" class="chips-container">
                     <span class="chip" onclick="selecionarHabilidade(this)">Criatividade</span>
                     <span class="chip" onclick="selecionarHabilidade(this)">Coordenação motora</span>
@@ -50,7 +50,8 @@
                     <span class="chip" onclick="selecionarHabilidade(this)">Empatia</span>
                     <span class="chip" onclick="selecionarHabilidade(this)">Trabalho em equipe</span>
                 </div>
-                <input type="hidden" id="habilidadesSelecionadas" name="HabilidadesSelecionadas" />
+                <!-- Um campo escondido para armazenar os chips selecionados -->
+                <input type="hidden" id="habilidadesSelecionadas" name="habilidadesSelecionadas" />
 
                 <!-- VALOR UNITÁRIO -->
                 <label for="ValorUni">Valor Unitário <span class="req">*</span></label>
@@ -70,7 +71,7 @@
 
                 <!-- IMAGEM -->
                 <label for="Upimg">Imagem <span class="req">*</span></label>
-                <input type="file" name="ImagemProduto" accept="image/*" />
+                <input type="file" name="imgs" accept="image/*" multiple />
             </div>
 
             <!-- BOTÕES -->
@@ -84,9 +85,14 @@
 
 <script>
     function selecionarHabilidade(element) {
+        // Alterna a classe "selected" para o chip
         element.classList.toggle('selected');
+
+        // Atualiza o campo hidden com as habilidades selecionadas
         const chipsSelecionados = document.querySelectorAll('.chip.selected');
         const habilidadesSelecionadas = Array.from(chipsSelecionados).map(chip => chip.innerText);
+
+        // Armazena as habilidades selecionadas no input hidden
         document.getElementById('habilidadesSelecionadas').value = habilidadesSelecionadas.join(', ');
     }
 </script>

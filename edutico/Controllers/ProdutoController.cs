@@ -2,6 +2,7 @@
 using edutico.Models;
 using edutico.Repositorio;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography.X509Certificates;
 
 namespace edutico.Controllers
 {
@@ -23,22 +24,45 @@ namespace edutico.Controllers
         [HttpPost]
         public IActionResult CadastrarProduto(string NomeProduto, string CodigoProduto, string DescricaoProduto, string ClassificacaoIndicativa, string HabilidadesSelecionadas, string ValorUnitario, string EstoqueProduto, string CategoriaProduto, List<IFormFile> imgs)
         {
-            Produto produto = new Produto()
+            if (imgs == null || !imgs.Any())
             {
-                codProd = Convert.ToDecimal(CodigoProduto),
-                nomeProd = Convert.ToString(NomeProduto),
-                descricao = Convert.ToString(DescricaoProduto),
-                classificacao = Convert.ToString(ClassificacaoIndicativa),
-                categoria = Convert.ToString(CategoriaProduto),
-                valorUnit = Convert.ToDecimal(ValorUnitario),
-                estoque = Convert.ToInt32(EstoqueProduto)
-            };
+                ViewData["msg"] = "Nenhuma imagem foi enviada!";
+                return View("CadastroCliente");
+            }
+            else
+            {
+                Produto produto = new Produto()
+                {
+                    codProd = Convert.ToDecimal(CodigoProduto),
+                    nomeProd = Convert.ToString(NomeProduto),
+                    descricao = Convert.ToString(DescricaoProduto),
+                    classificacao = Convert.ToString(ClassificacaoIndicativa),
+                    categoria = Convert.ToString(CategoriaProduto),
+                    valorUnit = Convert.ToDecimal(ValorUnitario),
+                    estoque = Convert.ToInt32(EstoqueProduto)
+                };
 
-            // Chamar o repositório e passar o objeto produto e as imagens
-            string resultado = _produtoRepositorio.CadastrarProduto(produto, imgs);
+                List<string> habilidades = HabilidadesSelecionadas.Split(',').ToList();
 
-            ViewData["msg"] = resultado;
-            return View("CadastroCliente");
+                // Chamar o repositório e passar o objeto produto e as imagens
+                string resultado = _produtoRepositorio.CadastrarProduto(produto, imgs, habilidades);
+
+                ViewData["msg"] = resultado;
+                return View("CadastroProduto");
+            }
+        }
+
+        public IActionResult DetalhesProduto(decimal codProd)
+        {
+            // Consultar o produto pelo código
+            Produto produto = _produtoRepositorio.ConsultarProduto(codProd);
+
+            if (produto == null)
+            {
+                return NotFound();
+            }
+
+            return View(produto);
         }
     }
 }

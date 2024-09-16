@@ -1,451 +1,451 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css",
       "PackagePath": "staticwebassets\\edutico.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\css\\site.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\css\\siteFuncionario.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\css\\siteFuncionario.css",
       "PackagePath": "staticwebassets\\css\\siteFuncionario.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\favicon.ico",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\fonts\\Edutico-Regular.otf",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\fonts\\Edutico-Regular.otf",
       "PackagePath": "staticwebassets\\fonts\\Edutico-Regular.otf"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\fonts\\GlacialIndifference-Bold.otf",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\fonts\\GlacialIndifference-Bold.otf",
       "PackagePath": "staticwebassets\\fonts\\GlacialIndifference-Bold.otf"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\fonts\\glacial.otf",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\fonts\\glacial.otf",
       "PackagePath": "staticwebassets\\fonts\\glacial.otf"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\6maisanos.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\6maisanos.png",
       "PackagePath": "staticwebassets\\imgs\\6maisanos.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Bandeira.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Bandeira.png",
       "PackagePath": "staticwebassets\\imgs\\Bandeira.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Dashboard.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Dashboard.png",
       "PackagePath": "staticwebassets\\imgs\\Dashboard.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Devolucao.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Devolucao.png",
       "PackagePath": "staticwebassets\\imgs\\Devolucao.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Historico.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Historico.png",
       "PackagePath": "staticwebassets\\imgs\\Historico.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Logout.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Logout.png",
       "PackagePath": "staticwebassets\\imgs\\Logout.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Notification.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Notification.png",
       "PackagePath": "staticwebassets\\imgs\\Notification.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Pedidos.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Pedidos.png",
       "PackagePath": "staticwebassets\\imgs\\Pedidos.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\PerfilF.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\PerfilF.png",
       "PackagePath": "staticwebassets\\imgs\\PerfilF.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\QrCode.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\QrCode.png",
       "PackagePath": "staticwebassets\\imgs\\QrCode.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\Star.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\Star.png",
       "PackagePath": "staticwebassets\\imgs\\Star.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\ate2anos.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\ate2anos.png",
       "PackagePath": "staticwebassets\\imgs\\ate2anos.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\blur.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\blur.png",
       "PackagePath": "staticwebassets\\imgs\\blur.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\blur.svg",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\blur.svg",
       "PackagePath": "staticwebassets\\imgs\\blur.svg"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\blurmenino.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\blurmenino.png",
       "PackagePath": "staticwebassets\\imgs\\blurmenino.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\blurmenino.svg",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\blurmenino.svg",
       "PackagePath": "staticwebassets\\imgs\\blurmenino.svg"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\bolas.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\bolas.png",
       "PackagePath": "staticwebassets\\imgs\\bolas.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\caixa.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\caixa.png",
       "PackagePath": "staticwebassets\\imgs\\caixa.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\carrinho.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\carrinho.png",
       "PackagePath": "staticwebassets\\imgs\\carrinho.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\carrinhoadd.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\carrinhoadd.png",
       "PackagePath": "staticwebassets\\imgs\\carrinhoadd.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\cartao.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\cartao.png",
       "PackagePath": "staticwebassets\\imgs\\cartao.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\cartoes.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\cartoes.png",
       "PackagePath": "staticwebassets\\imgs\\cartoes.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\cataventos.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\cataventos.png",
       "PackagePath": "staticwebassets\\imgs\\cataventos.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\chamada-telefonica.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\chamada-telefonica.png",
       "PackagePath": "staticwebassets\\imgs\\chamada-telefonica.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\coracao.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\coracao.png",
       "PackagePath": "staticwebassets\\imgs\\coracao.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\facebook.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\facebook.png",
       "PackagePath": "staticwebassets\\imgs\\facebook.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\favoritos.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\favoritos.png",
       "PackagePath": "staticwebassets\\imgs\\favoritos.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\heart.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\heart.png",
       "PackagePath": "staticwebassets\\imgs\\heart.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\img_mae_filho.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\img_mae_filho.png",
       "PackagePath": "staticwebassets\\imgs\\img_mae_filho.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\instagram.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\instagram.png",
       "PackagePath": "staticwebassets\\imgs\\instagram.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\linha.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\linha.png",
       "PackagePath": "staticwebassets\\imgs\\linha.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\logo.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\logo.png",
       "PackagePath": "staticwebassets\\imgs\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\logonav.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\logonav.png",
       "PackagePath": "staticwebassets\\imgs\\logonav.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\lupa.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\lupa.png",
       "PackagePath": "staticwebassets\\imgs\\lupa.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\mais10anos.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\mais10anos.png",
       "PackagePath": "staticwebassets\\imgs\\mais10anos.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\mais12.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\mais12.png",
       "PackagePath": "staticwebassets\\imgs\\mais12.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\mais3.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\mais3.png",
       "PackagePath": "staticwebassets\\imgs\\mais3.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\meninoo.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\meninoo.png",
       "PackagePath": "staticwebassets\\imgs\\meninoo.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\montamonta.jpg",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\montamonta.jpg",
       "PackagePath": "staticwebassets\\imgs\\montamonta.jpg"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\perfil.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\perfil.png",
       "PackagePath": "staticwebassets\\imgs\\perfil.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\pix.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\pix.png",
       "PackagePath": "staticwebassets\\imgs\\pix.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\promo.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\promo.png",
       "PackagePath": "staticwebassets\\imgs\\promo.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\sair.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\sair.png",
       "PackagePath": "staticwebassets\\imgs\\sair.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
       "PackagePath": "staticwebassets\\imgs\\ticoCarrinhoVazio.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
       "PackagePath": "staticwebassets\\imgs\\ticofavoritos.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\upload.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\upload.png",
       "PackagePath": "staticwebassets\\imgs\\upload.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\imgs\\whatsapp.png",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\imgs\\whatsapp.png",
       "PackagePath": "staticwebassets\\imgs\\whatsapp.png"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\js\\site.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Rebeka\\Desktop\\Edutico_atual\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "T:\\Repositório Backend Edutico\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

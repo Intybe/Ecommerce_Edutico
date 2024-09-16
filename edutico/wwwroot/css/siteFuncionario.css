@@ -1379,3 +1379,27 @@ label {
     align-items: center;
     text-align: center;
 }
+
+
+/* TESTE CADASTRO DE PRODUTOS, NÃO MEXER ENQUANTO A TELA OFICIAL NÃO TIVER PRONTA */
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.chip {
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Glacial';
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .chip.selected {
+        background-color: #385BD2;
+        color: white;
+    }
