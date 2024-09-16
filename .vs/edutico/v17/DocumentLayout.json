@@ -1,70 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "T:\\Reposit\u00F3rio Backend Edutico\\",
+  "WorkspaceRootPath": "C:\\Users\\3ds\\Desktop\\Edutico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\views\\home\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\models\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\models\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,15 +82,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAGEDAAAAAAAAAAAAAH4DAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-16T10:31:40.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DetalhesProduto.cshtml",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Home\\DetalhesProduto.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\DetalhesProduto.cshtml",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Home\\DetalhesProduto.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\DetalhesProduto.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T10:26:31.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Script_dbEduTico.sql ",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_dbEduTico.sql",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Data\\Script_dbEduTico.sql",
               "RelativeDocumentMoniker": "edutico\\Data\\Script_dbEduTico.sql",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_dbEduTico.sql",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Data\\Script_dbEduTico.sql",
               "RelativeToolTip": "edutico\\Data\\Script_dbEduTico.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2024-09-16T08:20:46.984Z",
@@ -90,11 +128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Script_ValidacaoTeste.sql ",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
               "RelativeDocumentMoniker": "edutico\\Data\\Script_ValidacaoTeste.sql",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
               "RelativeToolTip": "edutico\\Data\\Script_ValidacaoTeste.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2024-09-16T08:20:15.223Z",
@@ -102,50 +140,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ClienteController.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\ClienteController.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "edutico\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAADwv2AAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T08:10:30.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IClienteRepositorio.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\IClienteRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\IClienteRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\IClienteRepositorio.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\IClienteRepositorio.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\IClienteRepositorio.cs",
               "RelativeToolTip": "edutico\\Repositorio\\IClienteRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T08:09:57.699Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "MeuPerfil.cshtml",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
               "RelativeToolTip": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAwwKsAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-16T08:05:22.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Controllers\\HomeController.cs",
               "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -153,36 +191,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "DetalhesProduto.cshtml",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
               "RelativeToolTip": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T04:49:56.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwEMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T04:46:56.622Z",
+              "WhenOpened": "2024-09-16T04:49:56.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T04:46:56.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "IProdutoRepositorio.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\IProdutoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\IProdutoRepositorio.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\IProdutoRepositorio.cs",
               "RelativeToolTip": "edutico\\Repositorio\\IProdutoRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -190,24 +228,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ClienteRepositorio.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\ClienteRepositorio.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
               "RelativeToolTip": "edutico\\Repositorio\\ClienteRepositorio.cs",
               "ViewState": "AgIAALkAAAAAAAAAAADwv84AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T05:03:59.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T05:03:59.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ProdutoController.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\ProdutoController.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "edutico\\Controllers\\ProdutoController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -215,11 +252,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ProdutoRepositorio.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\ProdutoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Repositorio\\ProdutoRepositorio.cs",
               "RelativeToolTip": "edutico\\Repositorio\\ProdutoRepositorio.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAEwFEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -227,11 +264,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Produto.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Models\\Produto.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "edutico\\Models\\Produto.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Models\\Produto.cs",
               "RelativeToolTip": "edutico\\Models\\Produto.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAywBsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -239,11 +276,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Imagem.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Models\\Imagem.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Models\\Imagem.cs",
               "RelativeDocumentMoniker": "edutico\\Models\\Imagem.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Models\\Imagem.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico\\edutico\\Models\\Imagem.cs",
               "RelativeToolTip": "edutico\\Models\\Imagem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -865,7 +865,7 @@ input[type="password"] {
         background-color: #0056b3;
     }
 
-/*Detalhe Produto*/
+/*Detalhes Produto*/
 
 .base-prod-detalhe {
     background: white;
@@ -887,12 +887,12 @@ input[type="password"] {
     margin-bottom: 10px;
 }
 
-.imgprincipal {
+.base-prod-detalhe  .imgprincipal {
     background-color: #fff;
     border-radius: 16px;
     border: 1px solid gray;
-    width: 31rem;
-    height: 31rem;
+    width: 29rem;
+    height: 100%;
 }
 
 .provi {
