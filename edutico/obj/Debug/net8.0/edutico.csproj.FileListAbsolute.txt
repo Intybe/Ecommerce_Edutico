@@ -907,3 +907,4 @@ C:\Users\3ds\Desktop\Edutico\edutico\obj\Debug\net8.0\refint\edutico.dll
 C:\Users\3ds\Desktop\Edutico\edutico\obj\Debug\net8.0\edutico.pdb
 C:\Users\3ds\Desktop\Edutico\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\3ds\Desktop\Edutico\edutico\obj\Debug\net8.0\ref\edutico.dll
+C:\Users\3ds\Documents\teste\edutico\obj\Debug\net8.0\edutico.sourcelink.json
