@@ -1,0 +1,56 @@
+﻿@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Produtos Funcionário";
+}
+
+    <section class="Conteudo"> <!-- base -->
+        <!-- Barra de pesquisa centralizada -->
+        <form class="d-flex justify-content-center align-items-center search-bar">
+            <img src="~/imgs/lupa.png" class="icone" style="height: 18px; width: 18px; opacity: 0.3; margin-left: 10px; margin-top: 5px;">
+            <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial Bold'; opacity: 0.5;">
+
+       </form>
+
+    <section class="PedidosAndamento">
+        <div class="header">
+            <h1>DEVOLUÇÕES</h1>
+    </div>
+        
+            <div class="statusdevolucoes">
+                <div class="tabactive">
+                    Pendentes
+                </div>
+                <div class="tab">
+                    Concluido
+                </div>
+            </div>
+        
+
+        <table class="TabelaF">
+            <thead>
+                <tr>
+                    <th>N° Pedido</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Informações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>142309</td>
+                    <td><span><img src="~/imgs/montamonta.jpg" /></span>Monta-monta 6 pçs...</td>
+                    <td>R$20,00</td>
+                    <td>22/07/2024</td>
+                    <td><a asp-controller="Home" asp-action="DetalhesDevolucoesF">Detalhes</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+    </section>
+</section>
+        

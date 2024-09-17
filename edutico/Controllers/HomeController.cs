@@ -95,6 +95,8 @@ namespace edutico.Controllers
             return View();
         }
 
+
+
        
 
 
@@ -141,6 +143,11 @@ namespace edutico.Controllers
         }
 
         public IActionResult DetalhesProdutoF()
+        {
+            return View();
+        }
+
+        public IActionResult DevolucoesF()
         {
             return View();
         }

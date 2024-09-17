@@ -282,7 +282,7 @@ td {
 
 /* FAVORITOS */
 .TabelaF {
-    margin-left: 50px;
+    margin-left: 35px;
     margin-top: 10px;
     width: 90%;
     border-collapse: collapse;
@@ -1407,3 +1407,27 @@ label {
         background-color: #385BD2;
         color: white;
     }
+
+
+.statusdevolucoes {
+    width: 20rem;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    max-width: 20%;
+    display: flex;
+    font-size: 15px;
+    font-family: "Glacial Bold";
+    justify-content: space-between;
+}
+
+.statusdevolucoes .tab {
+    text-align: left;
+    cursor: pointer;
+    color: #ABABAB;
+}
+
+.statusdevolucoes .tabactive {
+    color: #385BD2;
+    border-bottom: 2px solid #385BD2;
+}

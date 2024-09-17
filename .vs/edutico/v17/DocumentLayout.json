@@ -1,78 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\3ds\\Downloads\\intybe\\",
+  "WorkspaceRootPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\views\\home\\detalhesprodutof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\detalhesprodutof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\shared\\_layoutfunc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\shared\\_layoutfunc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\views\\home\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\models\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\home\\devolucoesf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\devolucoesf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\intybe\\edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\home\\historicovendasf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\historicovendasf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\home\\favoritosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\favoritosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\home\\pedidosandamentof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\pedidosandamentof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,224 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "siteFuncionario.css",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\wwwroot\\css\\siteFuncionario.css",
-              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteFuncionario.css",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\wwwroot\\css\\siteFuncionario.css",
-              "RelativeToolTip": "edutico\\wwwroot\\css\\siteFuncionario.css",
-              "ViewState": "AgIAAIAFAAAAAAAAAAAAAIEEAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-16T11:24:15.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DetalhesProdutoF.cshtml",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Home\\DetalhesProdutoF.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\DetalhesProdutoF.cshtml",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Home\\DetalhesProdutoF.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\DetalhesProdutoF.cshtml",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAAAK0AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T11:23:46.893Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAGEDAAAAAAAAAAAAAH4DAAAQAAAAAAAAAA==",
+              "Title": "siteFuncionario.css",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\wwwroot\\css\\siteFuncionario.css",
+              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteFuncionario.css",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\wwwroot\\css\\siteFuncionario.css",
+              "RelativeToolTip": "edutico\\wwwroot\\css\\siteFuncionario.css",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAMwBwBAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-16T10:31:40.053Z",
+              "WhenOpened": "2024-09-17T17:22:35.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FavoritosF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\FavoritosF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\FavoritosF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\FavoritosF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\FavoritosF.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwCcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T17:12:27.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DetalhesProduto.cshtml",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Home\\DetalhesProduto.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\DetalhesProduto.cshtml",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Home\\DetalhesProduto.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\DetalhesProduto.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAANAAAA",
+              "Title": "DevolucoesF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\DevolucoesF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\DevolucoesF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\DevolucoesF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\DevolucoesF.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T10:26:31.453Z"
+              "WhenOpened": "2024-09-17T16:46:17.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Script_dbEduTico.sql",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Data\\Script_dbEduTico.sql",
-              "RelativeDocumentMoniker": "edutico\\Data\\Script_dbEduTico.sql",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Data\\Script_dbEduTico.sql",
-              "RelativeToolTip": "edutico\\Data\\Script_dbEduTico.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-16T08:20:46.984Z"
+              "DocumentIndex": 0,
+              "Title": "_LayoutFunc.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Shared\\_LayoutFunc.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Shared\\_LayoutFunc.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Shared\\_LayoutFunc.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Shared\\_LayoutFunc.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T16:52:34.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Script_ValidacaoTeste.sql",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Data\\Script_ValidacaoTeste.sql",
-              "RelativeDocumentMoniker": "edutico\\Data\\Script_ValidacaoTeste.sql",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Data\\Script_ValidacaoTeste.sql",
-              "RelativeToolTip": "edutico\\Data\\Script_ValidacaoTeste.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-16T08:20:15.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "edutico\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "edutico\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAwwJUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:10:30.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IClienteRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\IClienteRepositorio.cs",
-              "RelativeDocumentMoniker": "edutico\\Repositorio\\IClienteRepositorio.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\IClienteRepositorio.cs",
-              "RelativeToolTip": "edutico\\Repositorio\\IClienteRepositorio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:09:57.699Z"
+              "WhenOpened": "2024-09-17T16:46:39.991Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MeuPerfil.cshtml",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "HistoricoVendasF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\HistoricoVendasF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\HistoricoVendasF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\HistoricoVendasF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\HistoricoVendasF.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T08:05:22.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T05:02:56.402Z"
+              "WhenOpened": "2024-09-17T17:20:08.917Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DetalhesProduto.cshtml",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHcFAAAAAAAAAAAAAKcFAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-17T17:22:22.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PedidosAndamentoF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\PedidosAndamentoF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\PedidosAndamentoF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\PedidosAndamentoF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\PedidosAndamentoF.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T04:49:56.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwEMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T04:46:56.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IProdutoRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\IProdutoRepositorio.cs",
-              "RelativeDocumentMoniker": "edutico\\Repositorio\\IProdutoRepositorio.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\IProdutoRepositorio.cs",
-              "RelativeToolTip": "edutico\\Repositorio\\IProdutoRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T06:17:21.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClienteRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\ClienteRepositorio.cs",
-              "RelativeDocumentMoniker": "edutico\\Repositorio\\ClienteRepositorio.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\ClienteRepositorio.cs",
-              "RelativeToolTip": "edutico\\Repositorio\\ClienteRepositorio.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAADwv84AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T05:03:59.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "edutico\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "edutico\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T04:47:26.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProdutoRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\ProdutoRepositorio.cs",
-              "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Repositorio\\ProdutoRepositorio.cs",
-              "RelativeToolTip": "edutico\\Repositorio\\ProdutoRepositorio.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAEwFEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T05:04:13.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "edutico\\Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Models\\Produto.cs",
-              "RelativeToolTip": "edutico\\Models\\Produto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAywBsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T04:47:20.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Imagem.cs",
-              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Models\\Imagem.cs",
-              "RelativeDocumentMoniker": "edutico\\Models\\Imagem.cs",
-              "ToolTip": "C:\\Users\\3ds\\Downloads\\intybe\\edutico\\Models\\Imagem.cs",
-              "RelativeToolTip": "edutico\\Models\\Imagem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T06:01:56.843Z"
+              "WhenOpened": "2024-09-17T16:46:09.036Z",
+              "EditorCaption": ""
             }
           ]
         }
