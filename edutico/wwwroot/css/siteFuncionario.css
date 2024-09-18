@@ -1,4 +1,4 @@
-﻿﻿ /* Fontes */
+﻿/* Fontes */
 @font-face {
     font-family: 'Edutico';
     src: url('/fonts/Edutico-Regular.otf') format('opentype');
@@ -282,7 +282,7 @@ td {
 
 /* FAVORITOS */
 .TabelaF {
-    margin-left: 35px;
+    margin-left: 50px;
     margin-top: 10px;
     width: 90%;
     border-collapse: collapse;
@@ -337,23 +337,15 @@ td {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 20px;
 }
 
     .headerDetalhes h1 {
         font-size: 30px;
         margin-top: 20px;
-        margin-left: 20px;
         color: #000;
         font-family: Edutico;
     }
 
-hr {
-    margin-left: 20px;
-    margin-top: 5px;
-    width: 95%;
-    border: 1px solid #b1b1b1;
-}
 
 .Info {
     margin-top: 5px;
@@ -461,15 +453,14 @@ hr {
 /*CARD PEDIDO */
 .CardPed {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     padding: 20px;
     width: 400px;
     text-align: center;
-    margin-left: 525px;
-    margin-top: -400px;
     font-family: 'Glacial Indifference';
+    margin: 20px;
 }
 
     .CardPed h1 {
@@ -528,8 +519,8 @@ hr {
 
 
 .btnvoltar {
-    margin-top: 80px;
-    margin-left: 750px;
+    position: relative;
+    left: 55%;
     width: 150px;
     height: 30px;
 }
@@ -1408,26 +1399,67 @@ label {
         color: white;
     }
 
-
-.statusdevolucoes {
-    width: 20rem;
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    max-width: 20%;
-    display: flex;
-    font-size: 15px;
-    font-family: "Glacial Bold";
-    justify-content: space-between;
+/*TELA DETALHES DEVOLUÇÃO (A APROVAR)*/
+.MensagemCliente {
+    margin-top: 20px; /* Espaçamento entre o card de pedido e a mensagem */
+    padding: 15px; /* Ajuste de padding */
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
 }
 
-.statusdevolucoes .tab {
-    text-align: left;
-    cursor: pointer;
-    color: #ABABAB;
+    .MensagemCliente h1 {
+        font-size: 18px; /* Reduzindo um pouco o tamanho da fonte */
+        margin-bottom: 10px;
+    }
+
+.mensagem-box {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px; /* Ajuste de tamanho de fonte para melhor leitura */
 }
 
-.statusdevolucoes .tabactive {
-    color: #385BD2;
-    border-bottom: 2px solid #385BD2;
+    .mensagem-box p {
+        margin: 0;
+        line-height: 1.5;
+        text-align: justify; /* Justifica o texto para uma melhor apresentação */
+    }
+
+/*Modificações detalhes pedido*/
+
+.info-devo {
+    margin-right: 30px;
+}
+
+    .info-devo p {
+        margin-bottom: 5px;
+    }
+
+.sub_perfil p {
+    margin-bottom: 0;
+}
+
+.DetalhesPedidosF hr {
+    margin-top: 0;
+}
+
+#infoped {
+    font-family: 'Glacial Bold';
+    color: gray;
+}
+
+.campomsg {
+    height: auto;
+    width: 400px;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.msgcli {
+    width: auto;
+    margin: 20px;
 }

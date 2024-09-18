@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\3ds\\Documents\\teste\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Rebeka\\Desktop\\eduedu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\eduedu\\edutico\\views\\home\\detalhesdevolucaof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\detalhesdevolucaof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\eduedu\\edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\eduedu\\edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "siteFuncionario.css",
+              "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\css\\siteFuncionario.css",
+              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteFuncionario.css",
+              "ToolTip": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\css\\siteFuncionario.css",
+              "RelativeToolTip": "edutico\\wwwroot\\css\\siteFuncionario.css",
+              "ViewState": "AQIAAI8FAAAAAAAAAAAiwKEFAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-18T01:04:56.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetalhesDevolucaoF.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\Views\\Home\\DetalhesDevolucaoF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\DetalhesDevolucaoF.cshtml",
+              "ToolTip": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\Views\\Home\\DetalhesDevolucaoF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\DetalhesDevolucaoF.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowBcAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-18T01:04:25.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAQwJwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T01:02:25.298Z",
+              "EditorCaption": ""
             }
           ]
         }
