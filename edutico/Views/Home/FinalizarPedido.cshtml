@@ -1,0 +1,166 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Finalizar Pedido";
+}
+
+
+<div class="row texto-simples">
+    <div class="col-8">
+        <!--seção do cliente-->
+        <div class="base-fim-ped ">
+            <div class="sub_perfil">
+                <h5 id="glacial-bold">Dados do cliente</h5>
+            </div>
+            <hr />
+            <div class="d-flex">
+                <div class="col-3">
+                    <div class="info-ped">
+                        <p>Nome</p>
+                        <p id="info_perfil">Fulano Souza da Silva</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info-ped">
+                        <p>CPF</p>
+                        <p id="info_perfil">*********9-12</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info-ped">
+                        <p>Telefone</p>
+                        <p id="info_perfil">(11) 99999-0000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--seção do endereço de entrega-->
+        <div class="base-fim-ped">
+            <div class="sub_perfil">
+                <h5 id="glacial-bold">Endereço</h5>
+                <button type="button" class="editar">Editar</button>
+            </div>
+            <hr />
+            <div class="d-flex">
+                <div class="col-3">
+                    <div class="info-ped mb-2">
+                        <p>Logradouro</p>
+                        <p id="info_perfil">Rua dos que não acham</p>
+                    </div>
+                    <div class="info-ped">
+                        <p>CEP</p>
+                        <p id="info_perfil">00000-090</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info-ped mb-2">
+                        <p>Bairro</p>
+                        <p id="info_perfil">Morro Doce</p>
+                    </div>
+                    <div class="info-ped">
+                        <p>Cidade</p>
+                        <p id="info_perfil">Fim do Mundo</p>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="info-ped mb-2">
+                        <p>Nº Residência</p>
+                        <p id="info_perfil">123</p>
+                    </div>
+                    <div class="info-ped">
+                        <p>UF</p>
+                        <p id="info_perfil">FM</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="base-fim-ped">
+            <!--seção do método de pagamento-->
+            <div class="sub_perfil">
+                <h5 id="glacial-bold">Método Pagamento</h5>
+            </div>
+            <hr />
+            <div class="col-5">
+                <!--radio buttom customizado-->
+                <div class="radio-container">
+                    <label for="radiopix">
+                        <input type="radio" id="radiopix" name="radio" />
+                        <!--esse span vazio é a bolinha-->
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <img src="~/imgs/pixpag.png" alt="PIX" width="30">
+                        <p>PIX</p>
+
+                    </label>
+                </div>
+                <div class="radio-container">
+
+                    <label for="radiocartao">
+                        <input type="radio" id="radiocartao" name="radio" />
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <img src="~/imgs/cartaopag.png" alt="PIX" width="30">
+                        <p>Cartão de crédito</p>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-4">
+        <!--card pedido igual ao carrinho-->
+        <div class="areaPedido">
+            <h5 class="text-center glacial-bold" style="font-size:30px;">Pedido</h5>
+            <hr />
+            <div class="detalhes-ped">
+
+                <div class="item-prod">
+
+                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
+                    <p>R$ 199,99</p>
+                </div>
+                <div class="item-prod">
+                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
+                    <p>R$ 199,99</p>
+                </div>
+                <div class="item-prod">
+                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
+                    <p>R$ 199,99</p>
+                </div>
+
+                <div class="item-prod mt-2">
+                    <p>Entrega</p>
+                    <p>R$ 20,00</p>
+                </div>
+
+
+             <hr />
+            <div class="total-pedido d-flex" id="glacial-bold">
+                <p>Total</p>
+                <p>R$ 418,98</p>
+            </div>
+        </div>
+
+        <div class="Prazo" style="display: flex; align-items: center;">
+                    <img src="~/imgs/reembolso.png" class="img-fluid" alt="Prazo" />
+                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                        <p class="limite" style="margin: 0; display: inline;">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
+                    </div>
+                </div>
+
+        </div>
+    <!--botões para prosseguir ou cancelar-->
+    <div class="d-flex justify-content-center"">
+            <button class="btncanc-ped">Cancelar</button>
+            <button class="btnnav-ped">Confirmar</button>
+    </div>
+</div>
+</div>

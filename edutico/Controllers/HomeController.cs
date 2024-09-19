@@ -105,6 +105,10 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult FinalizarPedido()
+        {
+            return View();
+        }
        
 
 
