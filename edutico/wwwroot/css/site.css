@@ -1278,10 +1278,12 @@ input[type="password"] {
     text-decoration: underline;
 }
 
+
 /*DETALHES PEDIDO*/
-.tudodedetalhe{
-    height:80vh;
+.tudodedetalhe {
+    height: 80vh;
 }
+
 .areaPedido {
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.20);
@@ -1290,44 +1292,50 @@ input[type="password"] {
     background: white;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
-.total-pedido{
-    justify-content:space-between;
-    font-size:20px;
+
+.total-pedido {
+    justify-content: space-between;
+    font-size: 20px;
 }
+
 .item-prod {
     display: flex;
     justify-content: space-between;
 }
 
-.item-prod p img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
+    .item-prod p img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
 
 .detalhes-ped p {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 
-.areaPedido hr{
-    margin-bottom:30px;
-    margin-top:10px;
+.areaPedido hr {
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
-.info-ped{
-    margin-bottom:30px;
+
+.info-ped p {
+    margin-bottom: 5px;
 }
-.info-ped p{
-    margin-bottom:5px;
+
+#info_perfil {
+    font-family: 'Glacial Bold';
+    color: gray;
 }
+
 .btncanc {
     padding: 10px;
-    width:300px;
-    text-align:center;
+    width: 300px;
+    text-align: center;
     background: #FFFEF8;
-    margin-block:20px;
-    margin-right:20px;
+    margin-block: 20px;
+    margin-right: 20px;
     border: 1px solid #1C3FB9;
     color: #1C3FB9;
     text-align: center;
@@ -1335,12 +1343,13 @@ input[type="password"] {
     font-family: 'Glacial Bold';
     font-size: 20px;
 }
+
 .btnnav {
     padding: 10px;
     width: 300px;
     text-align: center;
     background: #1C3FB9;
-    margin: 30px;
+    margin-block: 20px;
     border: none;
     color: white;
     text-align: center;
@@ -1423,6 +1432,92 @@ input[type="password"] {
     border-radius: 50px;
     font-family: 'Glacial Bold';
     font-size: 20px;
+}
+
+
+/*Acompanhar Pedido*/
+
+.acompanharpedido {
+    margin-left: 20px;
+}
+
+.sumario-pedido {
+    background: white;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.miniprod {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    padding: 0;
+}
+
+    .miniprod p {
+        margin: 0;
+    }
+
+#imgped {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.btndeta-ped {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #1C3FB9;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+
+.ops-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 10px;
+    margin-left: 30px;
+}
+
+
+.cabeca-sum {
+    display: flex;
+    height: 15px;
+}
+
+    .cabeca-sum p {
+        margin-right: 50px;
+    }
+
+.btnrastreio {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #FFFEF8;
+    margin-right: 20px;
+    border: 1px solid #1C3FB9;
+    color: #1C3FB9;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.btncancelarped {
+    border: none;
+    background: none;
+    color: red;
+    text-decoration: underline;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
 }
 
 /*FUNCIONÁRIO*/

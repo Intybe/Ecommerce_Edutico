@@ -95,7 +95,15 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult AcompanharPedidos()
+        {
+            return View();
+        }
 
+        public IActionResult AcompanharPedidosVazio()
+        {
+            return View();
+        }
 
        
 
