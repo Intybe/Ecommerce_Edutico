@@ -2,6 +2,8 @@
     ViewData["Title"] = "Detalhe Produto";
 }
 
+@model edutico.Models.Produto;
+
 <div class="container row justify-content-center">
     <div class="col-6">
         <div class="base-prod-detalhe d-flex">
@@ -9,7 +11,7 @@
                 <img src="~/imgs/montamonta.jpg" class="imgpequena" />
                 <img src="~/imgs/montamonta.jpg" class="imgpequena" />
             </div>
-            <img src="~/imgs/montamonta.jpg" class="imgprincipal" />
+            <img src="@Url.Content(@Model.imgs.First().enderecoImg)" class="imgprincipal" />
         </div>
         <div class="base-prod-detalhe position-relative">
             <h3>Descrição do produto</h3>
@@ -20,8 +22,7 @@
                 <p class="texto-simples">Características do Produto:</p>
                 <ul class="texto-simples">
                     <li>
-                        Conjunto Completo: O Monta Monta vem com um kit de 500 peças de construção coloridas, projetadas para se encaixar perfeitamente umas nas outras.
-                        Inclui blocos básicos, peças especiais e acessórios temáticos.
+                        @Model.descricao;
                     </li>
                     <br />
                 </ul>

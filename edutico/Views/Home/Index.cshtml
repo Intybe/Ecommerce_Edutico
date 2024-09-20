@@ -44,33 +44,33 @@
             <div class="row">
                 @foreach (var produto in Model)
                 {
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
-                            <!-- Link que envolve o card inteiro -->
-                            <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-id="@produto.codProd" class="text-decoration-none">
-                                <div class="card product-card my-2">
-                                    <div class="card-body py-2">
-                                        <div class="position-relative">
-                                            <button class="btn position-absolute start-0 top-0 px-0">
-                                                <img src="imgs/heart.png" class="heart-icon">
-                                            </button>
-                                        </div>
-                                    <img src="@produto.imgs.First().enderecoImg" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
-                                        <h6 class="card-title mt-3 text-center mx-0 glacial-bold">@produto.nomeProd</h6>
-                                        <p class="text mb-3 small-text">
-                                            <img src="imgs/Star.png" class="icone mb-1">  (10 avaliações)
-                                        </p>
-                                        <p class="text-primary h4 glacial-bold">R$ @produto.valorUnit</p>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+                        <!-- Link que envolve o card inteiro -->
+                        <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-codProd="@produto.codProd" class="text-decoration-none">
+                            <div class="card product-card my-2">
+                                <div class="card-body py-2">
+                                    <div class="position-relative">
+                                        <button class="btn position-absolute start-0 top-0 px-0">
+                                            <img src="~/imgs/heart.png" class="heart-icon">
+                                        </button>
                                     </div>
-                                    <button class="btn position-absolute bottom-0 end-0 px-2">
-                                        <img src="imgs/carrinhoadd.png" class="cart-icon">
-                                    </button>
+                                    <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
+                                    <h6 class="card-title mt-3 text-center mx-0 glacial-bold">@produto.nomeProd</h6>
+                                    <p class="text mb-3 small-text">
+                                        <img src="~/imgs/Star.png" class="icone mb-1">  (10 avaliações)
+                                    </p>
+                                    <p class="text-primary h4 glacial-bold">R$ @produto.valorUnit</p>
                                 </div>
-                            </a>
-                        </div>
+                                <button class="btn position-absolute bottom-0 end-0 px-2">
+                                    <img src="~/imgs/carrinhoadd.png" class="cart-icon">
+                                </button>
+                            </div>
+                        </a>
+                    </div>
                 }
             </div>
             <div class="row my-3">
-                <img src="imgs/promo.png">
+                <img src="~/imgs/promo.png">
             </div>
         </div>
     </div>

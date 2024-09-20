@@ -53,7 +53,8 @@ namespace edutico.Repositorio
                 foreach (var img in imgs)
                 {
                     string nomeImg = Guid.NewGuid().ToString() + Path.GetExtension(img.FileName);
-                    string caminhoImg = Path.Combine("wwwroot/imgs/", nomeImg);
+                    string caminhoImg = Path.Combine("wwwroot/imgs", nomeImg);
+                    string caminhoImgBD = Path.Combine("~/imgs/", nomeImg);
 
                     using (var stream = new FileStream(caminhoImg, FileMode.Create))
                     {
@@ -64,7 +65,7 @@ namespace edutico.Repositorio
 
                     cmd = new MySqlCommand(sqlImagem, conexao);
                     cmd.Parameters.AddWithValue("@nomeImg", nomeImg);
-                    cmd.Parameters.AddWithValue("@enderecoImg", caminhoImg);
+                    cmd.Parameters.AddWithValue("@enderecoImg", caminhoImgBD);
                     cmd.Parameters.AddWithValue("@codProd", produto.codProd);
 
                     cmd.ExecuteNonQuery();
@@ -131,7 +132,7 @@ namespace edutico.Repositorio
                         nomeProd = dr["Nome"].ToString(),
                         descricao = dr["Descrição"].ToString(),
                         classificacao = dr["Classificação Indicativa"].ToString(),
-                        categoria = dr["Categoria"].ToString(),         
+                        categoria = dr["Categoria"].ToString(),
                         valorUnit = Convert.ToDecimal(dr["Valor Unitário"]),
                         estoque = Convert.ToInt32(dr["Estoque"]),
                         statusProd = Convert.ToBoolean(dr["Status"]),
@@ -173,47 +174,62 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Vairável que recebe o comando SQL
-            string sql = "Select * from vwProduto where Status = 0;";
+            string sql = "Select * from vwProduto Left Join tbImagem On Código = tbImagem.codProd where Código = @codprod;";
 
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
+            cmd.Parameters.AddWithValue("@codProd", codProd);
 
-            // Lê os dados retornados pela procedure do BD
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            // Lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
 
-            // Armazena os dados retornados do Banco de Dados
-            MySqlDataReader dr;
-
-            // Executando os comandos do mysql e passsando paa a variavel dr
-            dr = cmd.ExecuteReader();
-
-            // Instâncianddo um objeto da classe produto para caso não retorne nada do Banco de Dados
+            // Instancia um objeto Produto para armazenar os dados retornados
             Produto produto = null;
 
-            // Irá repetir o precesso para cada linha retornada
+            // Enquanto houver linhas retornadas
             while (dr.Read())
             {
-                // Instânciando um novo objeto produto a atribuindo valores retornados para do BD
-                produto = new Produto()
+                // Verifica se já existe um produto instanciado
+                if (produto == null)
                 {
-                    codProd = Convert.ToDecimal(dr["Código"]),
-                    nomeProd = dr["Nome"].ToString(),
-                    descricao = dr["Descrição"].ToString(),
-                    classificacao = dr["Classificação Indicativa"].ToString(),
-                    categoria = dr["Categoria"].ToString(),
-                    valorUnit = Convert.ToDecimal(dr["Valor Unitário"]),
-                    estoque = Convert.ToInt32(dr["Estoque"]),
-                    statusProd = Convert.ToBoolean(dr["Status"]),
-                    lancamento = Convert.ToBoolean(dr["Lançamento"])
-                };
+                    // Cria uma nova instância do produto com os dados retornados
+                    produto = new Produto()
+                    {
+                        codProd = codProd,
+                        nomeProd = dr["Nome"].ToString(),
+                        descricao = dr["Descrição"].ToString(),
+                        classificacao = dr["Classificação Indicativa"].ToString(),
+                        categoria = dr["Categoria"].ToString(),
+                        valorUnit = Convert.ToDecimal(dr["Valor Unitário"]),
+                        estoque = Convert.ToInt32(dr["Estoque"]),
+                        statusProd = Convert.ToBoolean(dr["Status"]),
+                        lancamento = Convert.ToBoolean(dr["Lançamento"]),
+                        imgs = new List<Imagem>() // Inicializa a lista de imagens
+                    };
+                }
 
+                // Verifica se há uma imagem associada ao produto
+                if (!dr.IsDBNull(dr.GetOrdinal("nomeImg")))
+                {
+                    Imagem imagem = new Imagem()
+                    {
+                        nomeImg = dr["nomeImg"].ToString(),
+                        enderecoImg = dr["enderecoImg"].ToString(),
+                        codProd = codProd
+                    };
+
+                    // Adiciona a imagem à lista de imagens do produto
+                    produto.imgs.Add(imagem);
+                }
             }
 
             // Fecha o leitor e a conexão com o banco de dados
             dr.Close();
             con.DesconectarBD();
 
+            // Retorna o produto (ou null se não for encontrado)
             return produto;
-
         }
+
+
     }
 }
