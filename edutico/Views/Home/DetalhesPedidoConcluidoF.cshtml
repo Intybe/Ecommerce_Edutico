@@ -1,7 +1,7 @@
 ﻿@{
     @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
     Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
-    ViewData["Title"] = "Detalhes Devolução";
+    ViewData["Title"] = "Detalhes Pedido";
 }
 
 <section class="Conteudo">
@@ -18,11 +18,7 @@
             <!--coluna que guarda os dados do cliente, endereço e fomas de pagamento-->
             <div class="col-6">
                 <!--numero e datas da comanda-->
-                <div class="d-flex mb-4">
-                    <div class="info-devo">@*essa classe ajusta espaçamento para n ficar grudado*@
-                        <p>Nº devolução</p>
-                        <p id="glacial-bold">123456</p> @*esse id esta deixano o texto em negrito "glacial bold"*@
-                    </div>
+                <div class="d-flex mb-4">       
                     <div class="info-devo">
                         <p>Nº pedido</p>
                         <p id="glacial-bold">123456</p>
@@ -57,7 +53,7 @@
                         </div>
                         <div class="info-devo">
                             <p>CPF</p>
-                            <p id="infoped">******9-12</p>
+                            <p id="infoped">**9-12</p>
                         </div>
                     </div>
                 </div>
@@ -135,28 +131,17 @@
                         <span>Total</span>
                         <span class="amount">R$ 418,98</span>
                     </div>
-                    <button class="btn btn-primary">Pedido enviado</button>
+                    <p id="glacial-bold" style="margin-bottom: -5px; font-size: 18px;">Concluído</p> 
                 </div>
-                <!--mensagem-->
-                <div class="msgcli">
-                    <h6 id="glacial-bold" class="px-3">Mensagem do cliente</h6>
-                    <div class="campomsg">
-                        <p>
-                            Ao abrir o pacote e examinar o produto, percebi que ele estava quebrado.
-                            Infelizmente, o defeito compromete completamente o uso do brinquedo,
-                            tornando-o inadequado para sua finalidade e não correspondendo às
-                            expectativas de qualidade que eu esperava.Agradeço desde já pela atenção
-                            e aguardo um retorno breve com as instruções pertinentes.
-                        </p>
-                    </div>
-                </div>
-                <div class="btnvoltar">
-                    <a asp-controller="Home" asp-action="PedidosAndamentoF" class="register-button">Voltar</a>
-                </div>
+              
+               
+                
             </div>
 
         </div>
-
+        <div class="btnvoltar">
+            <a asp-controller="Home" asp-action="PedidosAndamentoF" class="register-button">Voltar</a>
+        </div>
 
 
     </section>

@@ -130,7 +130,6 @@ body {
     .header h1 {
         font-size: 30px;
         margin-top: 40px;
-        margin-left: 15px;
         color: #000;
         font-family: Edutico;
     }
@@ -282,7 +281,7 @@ td {
 
 /* FAVORITOS */
 .TabelaF {
-    margin-left: 50px;
+    margin-left: 25px;
     margin-top: 10px;
     width: 90%;
     border-collapse: collapse;
@@ -520,7 +519,7 @@ td {
 
 .btnvoltar {
     position: relative;
-    left: 55%;
+    margin-left: 70%;
     width: 150px;
     height: 30px;
 }
@@ -1340,38 +1339,34 @@ label {
 }
 
 .btnAlt {
-    margin-left: -15px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px -15px;
     width: 130px;
     height: 35px;
     border-radius: 15px;
     padding: 10px;
-    background: blue;
+    background-color: blue;
     color: white;
     font-family: 'Glacial Bold';
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-    .btnAlt a {
-        text-decoration: none;
-    }
-
 .btnDes {
-    margin-left: 15px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 15px;
     width: 130px;
     height: 35px;
-    border-radius: 15px;
     border: 2px solid #E31B21;
+    border-radius: 15px;
     padding: 10px;
-    background: white;
+    background-color: white;
     color: #E31B21;
     font-weight: bold;
     font-family: 'Glacial Bold';
+    display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -1427,6 +1422,8 @@ label {
         text-align: justify; /* Justifica o texto para uma melhor apresentação */
     }
 
+
+
 /*Modificações detalhes pedido*/
 
 .info-devo {
@@ -1463,3 +1460,55 @@ label {
     width: auto;
     margin: 20px;
 }
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px; /* Espaço entre os elementos filhos */
+}
+
+.Aceitar {
+    width: 180px;
+    height: 35px;
+    background-color: #1C3FB9;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+.Recusar {
+    height: 35px;
+    width: 120px;
+    border-radius: 35px;
+    background-color: transparent;
+    color: #1C3FB9;
+    border: 2px solid #1C3FB9;
+}
+
+/*DEVOLUÇÕES*/
+.statusdevolucoes {
+    width: 20rem; /* ou ajuste conforme necessário */
+    max-width: 65%;
+    margin: 5px 0 20px 25px;
+    display: flex;
+    gap: 30px; /* diminua o gap entre as tabs */
+    font-size: 15px;
+    font-family: "Glacial Bold";
+    justify-content: flex-start; /* alinha os itens ao início */
+}
+
+    .statusdevolucoes .tab {
+        text-align: left;
+        cursor: pointer;
+        color: #ABABAB;
+        padding-bottom: 3px;
+    }
+
+    .statusdevolucoes .tabactive {
+        color: #385BD2;
+        border-bottom: 2px solid #385BD2;
+    }
+

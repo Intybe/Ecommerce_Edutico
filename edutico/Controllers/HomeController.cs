@@ -132,11 +132,15 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult DetalhesPedidoF()
+        public IActionResult DetalhesPedidoEmAndamentoF()
         {
             return View();
         }
 
+        public IActionResult DetalhesPedidoConcluidoF()
+        {
+            return View();
+        }
         public IActionResult CadastrarProdutosF()
         {
             return View();
@@ -172,7 +176,12 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult DetalhesDevolucaoF()
+        public IActionResult DevolucaoConcluidaF()
+        {
+            return View();
+        }
+
+        public IActionResult DevolucaoEmAndamentoF()
         {
             return View();
         }
