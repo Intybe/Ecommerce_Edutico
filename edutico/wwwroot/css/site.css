@@ -1604,16 +1604,60 @@ input[type='radio']:checked + .custom-radio span {
 .radio-container p {
     margin: 0;
 }
-/*FUNCIONÁRIO*/
 
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+/*Cartao pagamento*/
+.base-cartao-com {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.base-cartao-com select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.base-cartao-com hr{
+    margin-block:10px;
+}
+
+.btn-cartao {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #1C3FB9;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+.vercartao {
+    background: transparent;
+    border: none;
+    width:10%;
+}
+
+
+    /*FUNCIONÁRIO*/
+
+
+    @media (min-width: 768px) {
+        html {
+            font-size: 16px;
+        }
+    }
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 

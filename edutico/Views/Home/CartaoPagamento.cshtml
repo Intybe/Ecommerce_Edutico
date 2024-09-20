@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Cartao Pagamento";
+}
+
+
+<div class="row texto-simples ">
+    <div class="text-center mb-2">
+        <p>Pedido confirmado! Realize o pagamento para efetuarmos a sua compra.</p>
+        <p>Selecione ou cadastre o seu cartão de crédito abaixo:</p>
+    </div>
+    
+    <div class="col-6">
+        <div class="base-cartao-com p-4 ">
+            <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">MEUS CARTÕES CADASTRADOS</h5>
+            <hr />
+            <div class="menu-cartões ">
+                <div class="radio-container justify-content-between d-flex ">
+                    <label for="radio">
+                        <input type="radio" id="radio" name="radio" />
+                        <!--esse span vazio é a bolinha-->
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <img src="~/imgs/master.png" alt="iconecartao" width="50">
+                        <p>1234</p>
+                    </label>
+                    <button class="vercartao"><img src="~/imgs/setalado.png" /></button>
+                </div>
+
+                <hr />
+                <div class="radio-container justify-content-between d-flex">
+                    <label for="radio1">
+                        <input type="radio" id="radio1" name="radio" />
+                        <!--esse span vazio é a bolinha-->
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <img src="~/imgs/master.png" alt="iconecartao" width="50">
+                        <p>1234</p>
+                    </label>
+                    <button class="vercartao"><img src="~/imgs/setalado.png" /></button>
+                </div>
+                <hr />
+                <div class="radio-container justify-content-between d-flex">
+                    <label for="radio2">
+                        <input type="radio" id="radio2" name="radio" />
+                        <!--esse span vazio é a bolinha-->
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <img src="~/imgs/master.png" alt="iconecartao" width="50">
+                        <p>1234</p>
+                    </label>
+                    <button class="vercartao"><img src="~/imgs/setalado.png" /></button>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+
+        <div class="base-cartao-com">
+        <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">CADASTRE SEU CARTÃO AQUI</h5>
+        <br />
+       
+            <form>
+                <div class="campo mb-3">
+                    <label for="titular">Nome do titular <span class="obg">*</span></label>
+                    <input type="text" placeholder="Digite aqui o número do cartão" />
+                </div>
+                <div class="campo mb-3">
+                    <label for="titular">Número do cartão <span class="obg">*</span></label>
+                    <input type="text" placeholder="Digite aqui o número do cartão" />
+                </div>
+                <div class="d-flex campo mb-3">
+                    <div class="me-3">
+                        <label for="validade">Data de validade<span class="obg">*</span></label>
+                        <input type="text" placeholder="MM/AA" />
+                    </div>
+                    <div>
+                        <label for="cvv">Código de segurança<span class="obg">*</span></label>
+                        <input type="text" placeholder="CVV" />
+                    </div>
+                </div>
+                <div class="col-4 campo">
+                    <label for="parcelas">Parcelas <span class="obg">*</span></label>
+                    <select id="parcelas" type="text" name="parcelas" placeholder="Selecione a quantidade de parcelas" required>
+                        <option value="1x"> 1X </option>
+                        <option value="2x"> 2X </option>
+                        <option value="3x"> 3X </option>
+                    </select>
+                </div>
+            </form>
+            <div class="d-flex justify-content-end">
+                <button class="btn-cartao ">Confirmar</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button class="btncanc">Voltar para o menu</button>
+        <button class="btnnav">Concluir pagamento</button>
+    </div>
+</div>
+
+

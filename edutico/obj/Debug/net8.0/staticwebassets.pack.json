@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\imgs\\cartao.png"
     },
     {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\cartaopag.png",
+      "PackagePath": "staticwebassets\\imgs\\cartaopag.png"
+    },
+    {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\cartoes.png",
       "PackagePath": "staticwebassets\\imgs\\cartoes.png"
     },
@@ -177,6 +181,10 @@
       "PackagePath": "staticwebassets\\imgs\\mais3.png"
     },
     {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\master.png",
+      "PackagePath": "staticwebassets\\imgs\\master.png"
+    },
+    {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\meninoo.png",
       "PackagePath": "staticwebassets\\imgs\\meninoo.png"
     },
@@ -193,12 +201,20 @@
       "PackagePath": "staticwebassets\\imgs\\pix.png"
     },
     {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\pixpag.png",
+      "PackagePath": "staticwebassets\\imgs\\pixpag.png"
+    },
+    {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\promo.png",
       "PackagePath": "staticwebassets\\imgs\\promo.png"
     },
     {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\sair.png",
       "PackagePath": "staticwebassets\\imgs\\sair.png"
+    },
+    {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\setalado.png",
+      "PackagePath": "staticwebassets\\imgs\\setalado.png"
     },
     {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduedu\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
