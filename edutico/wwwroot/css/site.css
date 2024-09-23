@@ -734,13 +734,16 @@ input[type="password"] {
 }
 
 .produto {
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: white;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
 .previa {
@@ -1597,7 +1600,7 @@ input[type='radio'] {
         border-radius: 50%;
     }
 
-input[type='radio']:checked + .custom-radio span {
+input[type='radio']:checked + .custom-radio span { /* o "+"  é um seletor que abrange o primeiro elemento span depois do input*/
     background: #000; /*quando checado fica preto*/
 }
 
@@ -1647,6 +1650,67 @@ input[type='radio']:checked + .custom-radio span {
     width:10%;
 }
 
+/*Selecionar produtos Devolucao*/
+
+.alinha-radio{
+    margin-top:-20px;
+}
+
+.produto-devo {
+    padding:20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.produto-devo .card-img-top {
+    height: 100px;
+    width: auto;
+    margin-top:20px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/*customização check buttons*/
+input[type='checkbox'] {
+    display: none;
+}
+
+.check-container label {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.custom-check {
+    border: 1px solid #fff;
+    width: 40px; 
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%; 
+}
+
+    .custom-check span {
+        width: 13px;
+        height: 13px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        transition: 0.2s ease;
+        background: transparent; 
+    }
+
+input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é um seletor que abrange todos os elementos span depois do input*/
+    background: #426ef0;
+}
+.check-container p {
+    margin: 0;
+}
 
     /*FUNCIONÁRIO*/
 
