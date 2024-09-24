@@ -123,8 +123,12 @@ namespace edutico.Controllers
         public IActionResult ProdutosDevolucao()
         {
             return View();
-        }
+        }   
 
+        public IActionResult MeusCartoes()
+        {
+            return View();
+        }
         //FUNCIONÁRIO
         public IActionResult ProdutosF()
         {
