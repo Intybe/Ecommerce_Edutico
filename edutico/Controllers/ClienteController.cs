@@ -9,13 +9,15 @@ namespace edutico.Controllers
     public class ClienteController : Controller
     {
         private IClienteRepositorio? _clienteRepositorio;
+        private ICarrinhoRepositorio? _carrinhoRepositorio;
         private readonly LoginSessao _loginSessao;
 
         // Construtor com injeção de dependência
-        public ClienteController(IClienteRepositorio clienteRepositorio, LoginSessao loginSessao)
+        public ClienteController(IClienteRepositorio clienteRepositorio, LoginSessao loginSessao, ICarrinhoRepositorio carrinhoRepositorio)
         {
             _clienteRepositorio = clienteRepositorio;
             _loginSessao = loginSessao; // Inicializa a variável _loginSessao
+            _carrinhoRepositorio = carrinhoRepositorio;
         }
 
         public IActionResult CadastroCliente()
@@ -90,6 +92,23 @@ namespace edutico.Controllers
 
             ViewData["msg"] = mensagem;
             return View("MeuPerfil");
+        }
+
+        public IActionResult CadastrarProdutoCarrinho(decimal codProd, int qtdProd)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+
+            string mensagem = _carrinhoRepositorio.CadastrarProdutoCarrinho(codLogin.codLogin, codProd, qtdProd);
+
+            ViewData["msg"] = mensagem;
+            return RedirectToAction("Index", "Home");
         }
 
     }
