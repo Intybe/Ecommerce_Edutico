@@ -8,6 +8,6 @@ namespace edutico.Repositorio
 
         IEnumerable<Produto> ConsultarProdutoLancamento();
 
-        Produto ConsultarProduto(decimal codProd);
+        Produto ConsultarDetalheProduto(decimal codProd);
     }
 }

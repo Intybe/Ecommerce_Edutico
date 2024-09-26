@@ -165,9 +165,7 @@ namespace edutico.Repositorio
             // Retorna a lista de produtos com suas imagens
             return produtoDict.Values;
         }
-
-
-        public Produto ConsultarProduto(decimal codProd)
+        public Produto ConsultarDetalheProduto(decimal codProd)
         {
             // Cria variável de Conexão com o Banco de Dados
             Conexao con = new Conexao();
@@ -229,7 +227,6 @@ namespace edutico.Repositorio
             // Retorna o produto (ou null se não for encontrado)
             return produto;
         }
-
 
     }
 }

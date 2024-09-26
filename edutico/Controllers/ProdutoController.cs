@@ -55,7 +55,7 @@ namespace edutico.Controllers
         public IActionResult DetalhesProduto(decimal codProd)
         {
             // Consultar o produto pelo código
-            Produto produto = _produtoRepositorio.ConsultarProduto(codProd);
+            Produto produto = _produtoRepositorio.ConsultarDetalheProduto(codProd);
 
             if (produto == null)
             {
