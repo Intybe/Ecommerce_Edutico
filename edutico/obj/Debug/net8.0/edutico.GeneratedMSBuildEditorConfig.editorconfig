@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYWRhc3Ryb0NsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[T:/Repositório Backend Edutico/edutico/Views/Cliente/CarrinhoCheio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5ob0NoZWlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[T:/Repositório Backend Edutico/edutico/Views/Cliente/CarrinhoVazio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5ob1ZhemlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [T:/Repositório Backend Edutico/edutico/Views/Cliente/MeuPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxNZXVQZXJmaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,14 +54,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3RyYXJQcm9kdXRvc0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[T:/Repositório Backend Edutico/edutico/Views/Home/CarrinhoCheio.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJyaW5ob0NoZWlvLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[T:/Repositório Backend Edutico/edutico/Views/Home/CarrinhoVazio.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJyaW5ob1ZhemlvLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [T:/Repositório Backend Edutico/edutico/Views/Home/CartaoPagamento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0YW9QYWdhbWVudG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,10 +68,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [T:/Repositório Backend Edutico/edutico/Views/Home/DetalhesPedidoEmAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1BlZGlkb0VtQW5kYW1lbnRvRi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[T:/Repositório Backend Edutico/edutico/Views/Home/DetalhesProduto.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1Byb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [T:/Repositório Backend Edutico/edutico/Views/Home/DetalhesProdutoF.cshtml]

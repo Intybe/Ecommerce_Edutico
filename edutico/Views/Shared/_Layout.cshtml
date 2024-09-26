@@ -31,9 +31,11 @@
                     </button>
 
                     <!-- Carrinho -->
-                    <button class="btn-with-image">
-                        <img src="~/imgs/carrinho.png" alt="carrinho" style="height:26px; width:auto;">
-                    </button>
+                    <a asp-controller="Cliente" asp-action="CarrinhoVazio">
+                        <button class="btn-with-image">
+                            <img src="~/imgs/carrinho.png" alt="carrinho" style="height:26px; width:auto;">
+                        </button>
+                    </a>
 
                     <!-- Perfil -->
                     <button class="btn-with-image">

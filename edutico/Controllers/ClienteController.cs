@@ -111,5 +111,34 @@ namespace edutico.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public IActionResult CarrinhoCheio()
+        {
+            return View();
+        }
+
+        public IActionResult CarrinhoVazio()
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+
+            var retorno = _carrinhoRepositorio.ConsultarCarrinho(codLogin.codLogin);
+
+            if (retorno != null)
+            {
+                IEnumerable<Carrinho> carrinho = _carrinhoRepositorio.ConsultarCarrinho(codLogin.codLogin);
+                return View("CarrinhoCheio", carrinho);
+            }
+            else
+            {
+                return View();
+            }
+        }
+
     }
 }
