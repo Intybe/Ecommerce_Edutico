@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\imgs\\Star.png"
     },
     {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\aprovado.png",
+      "PackagePath": "staticwebassets\\imgs\\aprovado.png"
+    },
+    {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\ate2anos.png",
       "PackagePath": "staticwebassets\\imgs\\ate2anos.png"
     },
@@ -227,6 +231,10 @@
     {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
       "PackagePath": "staticwebassets\\imgs\\ticofavoritos.png"
+    },
+    {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\ticofeliz.png",
+      "PackagePath": "staticwebassets\\imgs\\ticofeliz.png"
     },
     {
       "Id": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\upload.png",

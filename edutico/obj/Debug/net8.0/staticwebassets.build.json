@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FRgatsWvxKKhn5fTEPxbC1YXv2TF2NX6qEBsC2aAIQg=",
+  "Hash": "cZMZM0JnajwsdAYLx9rhC1nyau/BZYr06EHix83IOYM=",
   "Source": "edutico",
   "BasePath": "_content/edutico",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\6maisanos.png"
+    },
+    {
+      "Identity": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\aprovado.png",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/aprovado.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\aprovado.png"
     },
     {
       "Identity": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\ate2anos.png",
@@ -1117,6 +1136,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\ticofavoritos.png"
+    },
+    {
+      "Identity": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\ticofeliz.png",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/ticofeliz.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\ticofeliz.png"
     },
     {
       "Identity": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\imgs\\upload.png",

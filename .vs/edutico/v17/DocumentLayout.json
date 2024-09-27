@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Rebeka\\Desktop\\eduofi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\eduofi\\edutico\\views\\home\\cartaopagamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\cartaopagamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\eduofi\\edutico\\views\\home\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -75,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\acompanharpedidosvazio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\eduofi\\edutico\\views\\home\\cartaopagamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\cartaopagamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\eduofi\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -97,24 +97,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MeusCartoes.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\MeusCartoes.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\MeusCartoes.cshtml",
               "ToolTip": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\MeusCartoes.cshtml",
               "RelativeToolTip": "edutico\\Views\\Home\\MeusCartoes.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAABaAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAABzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-27T19:26:45.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CarrinhoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Repositorio\\CarrinhoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\CarrinhoRepositorio.cs",
@@ -126,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ICarrinhoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Repositorio\\ICarrinhoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\ICarrinhoRepositorio.cs",
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CarrinhoCheio.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Cliente\\CarrinhoCheio.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\CarrinhoCheio.cshtml",
@@ -150,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Shared\\_Layout.cshtml",
@@ -162,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\ClienteController.cs",
@@ -174,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
@@ -182,12 +182,11 @@
               "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
               "ViewState": "AQIAANQGAAAAAAAAAAAYwP8GAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-23T21:15:33.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T21:15:33.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ProdutoController.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\ProdutoController.cs",
@@ -199,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Carrinho.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Models\\Carrinho.cs",
               "RelativeDocumentMoniker": "edutico\\Models\\Carrinho.cs",
@@ -211,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "DetalhesProduto.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
@@ -223,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IProdutoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Repositorio\\IProdutoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\IProdutoRepositorio.cs",
@@ -235,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Program.cs",
               "RelativeDocumentMoniker": "edutico\\Program.cs",
@@ -243,8 +242,7 @@
               "RelativeToolTip": "edutico\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T00:28:04.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T00:28:04.912Z"
             },
             {
               "$type": "Document",
@@ -260,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ProdutoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Repositorio\\ProdutoRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
@@ -272,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
@@ -284,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AcompanharPedidosVazio.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\AcompanharPedidosVazio.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\AcompanharPedidosVazio.cshtml",
@@ -296,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AcompanharPedidos.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\AcompanharPedidos.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\AcompanharPedidos.cshtml",
@@ -320,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CadastroMeusCartoes.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\CadastroMeusCartoes.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\CadastroMeusCartoes.cshtml",
@@ -332,15 +330,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 0,
               "Title": "CartaoPagamento.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\CartaoPagamento.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\CartaoPagamento.cshtml",
               "ToolTip": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Views\\Home\\CartaoPagamento.cshtml",
               "RelativeToolTip": "edutico\\Views\\Home\\CartaoPagamento.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAD0AAAAfAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAIsAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-23T21:21:44.842Z"
+              "WhenOpened": "2024-09-23T21:21:44.842Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -356,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\eduofi\\edutico\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
@@ -364,8 +363,7 @@
               "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAGwAAAAAAAAAAAAIwIUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T20:54:57.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T20:54:57.188Z"
             }
           ]
         }
