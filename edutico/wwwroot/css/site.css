@@ -1744,6 +1744,54 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é 
     font-size: 15px;
 }
 
+/*Meus cartões da tela PERFIL*/
+
+.base-op-cartao {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.card-sumario {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.card-info {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+    .card-info.expandido {
+        height: 310px;
+        padding: 10px;
+        text-align: center;
+    }
+
+.setaabrefecha {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+.setaabre {
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+    /* classe para quando a div estiver expandida (rotação de 90 graus) */
+    .setaabre.giraseta {
+        transform: rotate(90deg);
+    }
+
+
     /*FUNCIONÁRIO*/
 
 

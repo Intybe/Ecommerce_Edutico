@@ -125,10 +125,16 @@ namespace edutico.Controllers
             return View();
         }   
 
-        public IActionResult MeusCartoes()
+        public IActionResult CadastroMeusCartoes()
         {
             return View();
         }
+
+        public IActionResult MeusCartoes()
+        {
+            return View();  
+        }
+
         //FUNCIONÁRIO
         public IActionResult ProdutosF()
         {
