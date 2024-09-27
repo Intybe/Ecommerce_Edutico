@@ -1,0 +1,1829 @@
+@font-face {
+    font-family: 'Edutico';
+    src: url('/fonts/Edutico-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glacial';
+    src: url('/fonts/glacial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glacial Bold';
+    src: url('/fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body {
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    background-color: #FFFEF3;
+    position: relative; /* Adiciona posição ao body para controle de camadas */
+    z-index: 0; /* Garante que o body tenha um z-index menor que outros elementos */
+}
+
+
+
+/*Tela inicial*/
+.navbar {
+    height: 78px;
+    z-index: 10;
+    background-color: #FFFEF3;
+}
+
+
+
+.search-bar {
+    width: 330px;
+    height: 32px;
+    border-radius: 25px;
+    border: 2px solid black;
+    
+}
+
+.layout-label {
+        border: none;
+        height: 25px;
+        width: 290px;
+        padding-inline: 10px;
+        outline: none; /*tira contorno quando clica*/
+        background:none;
+    }
+.navbar .icons {
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.imgCataVento {
+    position: fixed; /* Faz com que a imagem permaneça fixa no final da página */
+    bottom: -100px; /* Alinha a imagem com a parte inferior da janela */
+    left: 0; /* Posiciona a imagem à esquerda */
+    width: 100%;
+    z-index: -1; /* Coloca a imagem atrás de outros elementos */
+}
+
+    .imgCataVento img {
+        width: 100%; /* Garante que a imagem preencha a largura total */
+    }
+
+
+.btn-with-image {
+    background-color: #FFFEF3;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-nav{
+    height:22px;
+    width:auto;
+}
+
+.blur {
+    position: absolute;
+    top: -160px;
+    left: 0;
+}
+
+.blur2 {
+    height: 1000px;
+    position: absolute;
+    top: -160px;
+    left: 43rem;
+}
+
+.btn-explorar {
+    padding-inline: 40px;
+    background-color: #385BD2;
+    font-family: 'Glacial Bold';
+    color: white;
+}
+.container .inicial {
+    align-items: center;
+    justify-content: center;
+}
+
+.container .DivQEn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto_inicial {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Glacial';
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.container .DivQEn .divercao {
+    font-family: 'Edutico';
+    color: black;
+    width: 400px;
+}
+
+.container .DivQEn .ensina {
+    font-size: 120px;
+    color: red;
+    line-height: 100px;
+}
+
+.ponto {
+    font-size: 120px;
+    font-family: Cooper;
+    font-weight: bold;
+    color: red;
+    line-height: 60px;
+    position: relative;
+    top: 10px;
+}
+
+
+.heart-icon {
+    width: 25px;
+}
+
+.cart-icon {
+    width: 35px;
+}
+
+.cat_img {
+    width: 200px;
+    height: auto;
+}
+
+.glacial-bold {
+    font-family: 'Glacial Bold';
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.cat_prod {
+    font-family: 'Edutico';
+    color: black;
+    padding-inline: 20px;
+}
+
+
+.product-card {
+    width: 200px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+    .product-card .card-img-top {
+        height: 150px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .product-card .btn-outline-danger {
+        background-color: white;
+        border: 1px solid #f8d7da;
+    }
+
+    .product-card .btn-outline-primary {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: white;
+        border: 1px solid #007bff;
+    }
+
+
+/*TELA LOGIN*/
+.containerLogin {
+    height: 583px; /*delimita a altura (para a img ficar centralizada*/
+    margin-left: 10px;
+}
+.container .TxtBemVindo {
+    font-family: 'Glacial Bold';
+    margin-top: 70px;
+    width: 500px;
+}
+
+.container .facalogin {
+    font-family: 'Glacial Bold';
+    margin-top: -21px;
+    width: 500px;
+}
+.container .hr {
+    width: 210px;
+    height: 2px;
+    background: linear-gradient(to right, yellow, red);
+    margin-top: -18px;
+}
+
+/*FORM LOGIN*/
+.areaLogin {
+    width: 400px;
+    margin-top: 35px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-family: 'Glacial';
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border: 1px solid #E37B1B; /* Cor da borda ao focar */
+        outline: none; /* Remove o contorno padrão */
+    }
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 17px;
+    color: #0066cc;
+}
+
+/*BOTÕES*/
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.Entrar-btn {
+    background: linear-gradient(to right, #E37B1B, #E31B21);
+    color: white;
+    width: 150px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+    .Entrar-btn:hover {
+        color: white;
+        border: 2px solid #e74c3c;
+        opacity: 1;
+    }
+
+.Criar-btn {
+    background: white;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    width: 150px;
+    height: 44px;
+    padding: 8px;  
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+}
+    .Criar-btn:hover {
+        background: #e74c3c;
+        color: white;
+        
+    }
+    
+.imgMaeFilho {
+    height: 300px;
+    width: 3px;
+    margin-top: -90px;
+    margin-left: 38px;
+}
+
+/*Cadastro Cliente*/
+
+.base-cli {
+    width: 100%;
+    height: 81vh;
+    margin-inline: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+}
+
+.titulo_cadascli {
+    font-family: 'Glacial Bold';
+    color: #1F3C9D;
+    margin-left: 20px;
+}
+
+.base-cli .form_cadastro input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.form_cadastro select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.form_cadastro label {
+    font-family: 'Glacial';
+}
+
+.campo {
+    margin-inline: 10px;
+}
+
+#sub_form {
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.botao_cadastro {
+    margin-inline: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cadastro-btn {
+    background: #385BD2;
+    color: white;
+    width: 150px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+    .cadastro-btn:hover {
+        color: white;
+        opacity: 0.5;
+    }
+
+.cancelar-btn {
+    background: transparent;
+    border: 2px solid #385BD2;
+    color: #385BD2;
+    width: 150px;
+    height: 44px;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+}
+
+    .cancelar-btn:hover {
+        opacity: 0.5;
+    }
+
+.obg {
+    color: red;
+}
+
+/*Busca Categoria*/
+
+
+.filtro {
+    padding-inline: 5px;
+}
+
+    .filtro select {
+        border: none;
+        background: none;
+    }
+
+.filter-section {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+    .filter-section h3 {
+        color: #426ef0;
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-family: 'Edutico';
+    }
+
+.filter-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-title {
+    font-family: 'Glacial';
+    padding: 8px;
+    padding-inline: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+    .filter-title:after {
+        content: '\25BC'; /* Setinha para baixo */
+        font-size: 12px;
+    }
+
+    .filter-title.active:after {
+        content: '\25B2'; /* Setinha para cima */
+    }
+
+.filter-content {
+    display: none;
+    padding-inline: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border-top: none; /* Remover a linha divisória */
+}
+
+    .filter-content label {
+        display: block;
+        padding: 8px 0;
+        cursor: pointer;
+    }
+
+    .filter-content input {
+        margin-right: 10px;
+    }
+/*Footer*/
+.meurodape {
+    background-color: #1F3C9D;
+}
+
+.icone {
+    width: 20px;
+    height: 20px;
+}
+
+#img_pag {
+    width: auto;
+    height: 60px;
+    margin-inline: 10px;
+}
+
+.titulo_footer {
+    font-family: 'Glacial Bold';
+}
+
+.texto_footer {
+    font-family: 'Glacial';
+}
+
+
+/*TELA ESQUECI A SENHA*/
+.containerSenha {
+    background-color: white;
+    border: 1px solid black;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    width: 600px;
+}
+
+.TxtNovaSenha {
+    font-family: 'Glacial Bold';
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.form-senha {
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+    .form-senha label {
+        font-family: 'Glacial';
+        display: block;
+        margin-bottom: 5px;
+        font-size: 15px;
+        align-items: center;
+    }
+
+
+
+    .form-senha input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+        .form-senha input[type="text"]:focus,
+        input[type="password"]:focus {
+            border: 1px solid #1F3C9D; /* Cor da borda ao focar */
+            outline: none; /* Remove o contorno padrão */
+        }
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    color: #0066cc;
+}
+
+
+.imgBolas {
+    background-image: url('/imgs/bolas.png');
+    background-position: center;
+    padding: 0;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSenha .button-senha {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    background: #1F3C9D;
+    font-weight: bold;
+    font-family: 'Glacial Bold';
+    width: 210px;
+    height: 44px;
+    padding: 4px;
+    border-radius: 20px;
+    border: none;
+}
+
+.button-senha:hover {
+    color: white;
+    border: 2px solid #1F3C9D;
+    opacity: 1;
+}
+
+.containerSenha .ConfirmarSenha-btn {
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/*FAVORITOS*/
+.Favs {
+    display: flex;
+    padding: 20px;
+
+}
+
+
+/* Sidebar Perfil*/
+.MinhaConta {
+    width: 900px;
+    height: 325px;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    padding-inline: 25px;
+    border: 1px solid #b2b2b2;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+    .MinhaConta .MenuLateral {
+        font-family: 'Glacial Bold';
+        color: #555555;
+        display: grid;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+.MenuLateral .active {
+    background-color: red; /* Cor de fundo quando ativo */
+    border-radius: 10px;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+}
+
+    .MenuLateral .active a {
+        color: red; /* Cor do texto e ícone quando ativo */
+        font-weight: bold;
+    }
+
+.MinhaConta .MenuLateral img {
+    height: 20px;
+    width: 20px;
+}
+
+.MinhaConta .MenuLateral p {
+    font-size: 15px;
+    color: #555555;
+}
+
+.MinhaConta .MenuLateral a {
+    text-decoration: none;
+}
+
+.MinhaConta .MenuLateral .Botoes a {
+    font-family: 'Glacial';
+    color: #555555;
+}
+
+.areaFavoritos {
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
+    padding-inline: 25px;
+}
+
+
+.imgCataventos img {
+    width: 270px;
+    height: 270px;
+    margin: auto;
+
+}
+
+/*FAVORITOS VAZIO*/
+.Fav {
+
+    display: flex;
+    padding: 20px;
+    height: 125vh;
+}
+
+.Vazio {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Vazio img {
+        display: block; /* Assegura que a imagem se comporte como um bloco, permitindo o centrar com margin auto */
+        width:250px;
+        height:355px;
+}
+
+
+.Vazio p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Carrinho Vazio*/
+.ticoCarrinho {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .ticoCarrinho img {
+        display: block; /* Assegura que a imagem se comporte como um bloco, permitindo o centrar com margin auto */
+        width: 250px;
+        height: 355px;
+    }
+
+
+    .ticoCarrinho p {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+/*CARRINHO CHEIO*/
+.padrao {
+    margin-left: 95px;
+}
+
+.produtos {
+    width: 60%;
+}
+
+.produto .card-img-top {
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.info_prod_car p {
+    margin-bottom: 5px;
+}
+
+.produto {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.previa {
+    width: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+    .previa hr {
+        margin: 2px;
+    }
+
+    .previa .previaTitulo {
+        font-family: 'Glacial Bold';
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+.Prazo img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.limite {
+    font-size: 10px;
+}
+
+
+
+.precoPrevia {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.precoPrevia {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.precoPreviaSub {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.precoPreviaSub {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.precoPreviaT {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.precoPreviaT {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.tipoPag {
+    margin-top: 20px;
+    width: auto;
+    height: 150px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.pagMet {
+    display: flex;
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: space-around; /* Distribui as imagens e o parágrafo com espaço ao redor */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+    .pagMet p {
+        font-size: 15px;
+    }
+
+    .pagMet img {
+        width: 40px;
+    }
+
+
+
+.btn-primary {
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background: #1C3FB9;
+    margin: 30px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 15px;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+/*Detalhes Produto*/
+
+.base-prod-detalhe {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.imgpequena {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.base-prod-detalhe  .imgprincipal {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 29rem;
+    height: 100%;
+}
+
+.provi {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+}
+
+.btncar {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    justify-content: center;
+}
+
+/*Detalhe Produto*/
+
+/*Geral*/
+.base-prod-detalhe {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+    .base-prod-detalhe h3 {
+        font-family: 'Edutico';
+        font-size: 20px;
+    }
+
+.texto-simples {
+    font-family: 'Glacial';
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+#glacial-bold {
+    font-family: 'Glacial Bold';
+}
+
+/*Div imgs*/
+.imgpequena {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imgprincipal {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 31rem;
+    height: 31rem;
+}
+
+/*Div detalhes*/
+#versaocompleta.hidden {
+    display: none;
+    margin-top: 20px;
+}
+
+.base-prod-detalhe .vermais {
+    background-color: #fff;
+    color: #385BD2;
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Glacial Bold';
+}
+
+.base-prod-detalhe h4 {
+    font-family: 'Glacial Bold';
+    color: #385BD2;
+}
+
+.fundo_ver {
+    height: 70px;
+    width: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to top, white, transparent);
+}
+
+/*Div comprar*/
+.curti {
+    width: 25px;
+    height: 25px;
+}
+
+#qtd {
+    border: 1px solid gray;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding-inline: 10px;
+}
+
+.btncar {
+    width: 100%;
+    padding: 5px;
+    background: #385BD2;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+    .btncar:hover {
+        opacity: 0.5;
+    }
+
+
+
+
+#cal-frete-text {
+    width: 130px;
+}
+
+#bold {
+    font-family: 'Glacial Bold';
+}
+
+
+.cal-frete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #888;
+    border-radius: 50px;
+    padding: 0px;
+    margin-inline: 10px;
+    width: auto;
+    height: 35px;
+}
+
+    .cal-frete input {
+        border: none;
+        font-size: 15px;
+        width: 100px;
+        height: 20px;
+    }
+
+        .cal-frete input::placeholder {
+            font-size: 15px;
+        }
+
+    .cal-frete button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    /*tirar linha quando clica*/
+    .cal-frete input:focus {
+        border: none;
+        outline: none;
+    }
+
+    .cal-frete button:hover {
+        background-color: #333;
+    }
+
+
+/*Div recomenadados*/
+.card-recome {
+    width: 100%;
+    justify-content: center;
+}
+
+.base-prod-detalhe .card-img-top {
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-recome .btn-outline-danger {
+    background-color: white;
+    border: 1px solid #f8d7da;
+}
+
+.card-recome .btn-outline-primary {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #007bff;
+}
+
+/*Div avaliações*/
+.rating-score {
+    text-align: center;
+}
+
+.total-ratings hr {
+    margin: 2px;
+}
+
+.stars {
+    font-size: 24px;
+    color: gold;
+}
+
+.rating-summary {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-inline: 10px;
+}
+
+    .rating-row span {
+        width: 15px;
+        font-size: 15px;
+    }
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 7px;
+    width: 100%;
+    height: 7px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #385BD2;
+    border-radius: 5px;
+}
+
+.total-ratings {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rating-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.review-form {
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+    .review-form h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+.stars-input {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+}
+
+.base-prod-detalhe textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #bdbdbd66;
+}
+
+.btnava {
+    width: 100%;
+    padding: 5px;
+    background: #385BD2;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    font-family: 'Glacial Bold';
+    font-size: 15px;
+    border: none;
+}
+
+.iconeava {
+    height: 15px;
+    width: 15px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review-header {
+    margin-bottom: 10px;
+    width: 70px;
+    line-height: 15px;
+}
+
+.review-content {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    border: 1px solid #BBBBBB;
+    font-size: 14px;
+}
+
+
+
+
+/* MEU PERFIL*/
+.Perfil {
+    display: flex;
+    padding: 20px;
+}
+
+.areaCliente {
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
+    padding-inline: 25px;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    font-family: 'Glacial';
+}
+
+    .areaCliente hr {
+        margin: 4px;
+    }
+
+    .areaCliente p {
+        margin-bottom: 5px;
+    }
+
+.titulo_perfil {
+    font-family: 'Edutico';
+    font-size: 30px;
+    color: #1F3C9D;
+    margin-block: 10px;
+}
+
+.sub_perfil {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+    .sub_perfil h5 {
+        margin-bottom: 0;
+    }
+
+.info-grup input[disabled] {
+    font-family: 'Glacial Bold';
+    color: gray;
+    border: none;
+    font-size: 14px;
+    background: none;
+}
+
+.info-grup {
+    margin-block: 10px;
+    height: auto;
+    padding-block: 10px;
+}
+
+.editar {
+    border: none;
+    background: none;
+    color: #1C3FB9;
+    text-decoration: underline;
+}
+
+
+/*DETALHES PEDIDO*/
+.tudodedetalhe {
+    height: 80vh;
+}
+
+.areaPedido {
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    align-items: center;
+    padding: 25px;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.total-pedido {
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.item-prod {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .item-prod p img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+.detalhes-ped p {
+    margin-bottom: 10px;
+}
+
+
+.areaPedido hr {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+.info-ped p {
+    margin-bottom: 5px;
+}
+
+#info_perfil {
+    font-family: 'Glacial Bold';
+    color: gray;
+}
+
+.btncanc {
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background: #FFFEF8;
+    margin-block: 20px;
+    margin-right: 20px;
+    border: 1px solid #1C3FB9;
+    color: #1C3FB9;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+.btnnav {
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background: #1C3FB9;
+    margin-block: 20px;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+/*QRCODE*/
+.base-code {
+    background: white;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.alinhamento {
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    display: flex;
+}
+
+/*Cartão pagamento*/
+.base-cartao {
+    background: white;
+    width: 450px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bandeira {
+    width: 50px;
+    height: auto;
+}
+
+.text-esquerda {
+    text-align: left;
+}
+
+/*Termos*/
+
+.base-termo {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    text-align:justify;
+}
+
+    .base-termo h6{
+        font-family:'Glacial Bold';
+    }
+
+    .aceitar {
+        width: 100%;
+        margin-block:40px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+.btnaceitar {
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    background: #1C3FB9;
+    border: none;
+
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+
+/*Acompanhar Pedido*/
+
+.acompanharpedido {
+    margin-left: 20px;
+}
+
+.sumario-pedido {
+    background: white;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.miniprod {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    padding: 0;
+}
+
+    .miniprod p {
+        margin: 0;
+    }
+
+#imgped {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.btndeta-ped {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #1C3FB9;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+
+.ops-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 10px;
+    margin-left: 30px;
+}
+
+
+.cabeca-sum {
+    display: flex;
+    height: 15px;
+}
+
+    .cabeca-sum p {
+        margin-right: 50px;
+    }
+
+.btnrastreio {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #FFFEF8;
+    margin-right: 20px;
+    border: 1px solid #1C3FB9;
+    color: #1C3FB9;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.btncancelarped {
+    border: none;
+    background: none;
+    color: red;
+    text-decoration: underline;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*FINALIZAR PEDIDO*/
+
+.base-fim-ped {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+    .base-fim-ped hr {
+        margin-top: 5px;
+    }
+
+.btncanc-ped {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #FFFEF8;
+    margin-block: 20px;
+    margin-right: 20px;
+    border: 1px solid #1C3FB9;
+    color: #1C3FB9;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+.btnnav-ped {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #1C3FB9;
+    margin-block: 20px;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+/*customização radio buttons*/
+input[type='radio'] {
+    display: none;
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.custom-radio {
+    border: 1px solid #fff;
+    width: 40px; /*epaço para o radio*/
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.custom-radio, span {
+    transition: 0.2s ease;
+}
+
+    .custom-radio span {
+        content: '';
+        width: 13px;
+        height: 13px;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+
+input[type='radio']:checked + .custom-radio span { /* o "+"  é um seletor que abrange o primeiro elemento span depois do input*/
+    background: #000; /*quando checado fica preto*/
+}
+
+.radio-container p {
+    margin: 0;
+}
+
+
+/*Cartao pagamento*/
+.base-cartao-com {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+.base-cartao-com select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.base-cartao-com hr{
+    margin-block:10px;
+}
+
+.btn-cartao {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #1C3FB9;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 20px;
+}
+
+.vercartao {
+    background: transparent;
+    border: none;
+    width:10%;
+}
+
+/*Selecionar produtos Devolucao*/
+
+.alinha-radio{
+    margin-top:-20px;
+}
+
+.produto-devo {
+    padding:20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.produto-devo .card-img-top {
+    height: 100px;
+    width: auto;
+    margin-top:20px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/*customização check buttons*/
+input[type='checkbox'] {
+    display: none;
+}
+
+.check-container label {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.custom-check {
+    border: 1px solid #fff;
+    width: 40px; 
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%; 
+}
+
+    .custom-check span {
+        width: 13px;
+        height: 13px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        transition: 0.2s ease;
+        background: transparent; 
+    }
+
+input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é um seletor que abrange todos os elementos span depois do input*/
+    background: #426ef0;
+}
+.check-container p {
+    margin: 0;
+}
+
+/*Meus Cartões*/
+
+.btnvoltarcar{
+    padding: 10px 20px;
+    width: auto;
+    text-align: center;
+    background: #FFFEF8;
+    margin-right: 20px;
+    border: 1px solid #1C3FB9;
+    color: #1C3FB9;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 15px;
+}
+
+.btnconfirmcar {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: #1C3FB9;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Glacial Bold';
+    font-size: 15px;
+}
+
+/*Meus cartões da tela PERFIL*/
+
+.base-op-cartao {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.card-sumario {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.card-info {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+    .card-info.expandido {
+        height: 310px;
+        padding: 10px;
+        text-align: center;
+    }
+
+.setaabrefecha {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+.setaabre {
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+    /* classe para quando a div estiver expandida (rotação de 90 graus) */
+    .setaabre.giraseta {
+        transform: rotate(90deg);
+    }
+
+
+    /*FUNCIONÁRIO*/
+
+
+    @media (min-width: 768px) {
+        html {
+            font-size: 16px;
+        }
+    }
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}

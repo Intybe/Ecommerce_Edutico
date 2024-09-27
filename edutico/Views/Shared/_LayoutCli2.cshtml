@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - edutico</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/siteCli2.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/edutico.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm border-bottom shadow-sm mb-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Link para a página inicial com uma imagem -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/imgs/logonav.png" alt="LOGO" style="height: 45px;">
+                </a>
+
+                <!-- Barra de pesquisa centralizada -->
+                <form class="d-flex justify-content-center align-items-center search-bar">
+                    <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial';">
+                    <img src="~/imgs/lupa.png" class="icone">
+                </form>
+
+                <!-- Ícones à direita -->
+                <div class="d-flex align-items-center icons">
+                    <!-- Coração -->
+                    <button class="btn-with-image">
+                        <img src="~/imgs/coracao.png" alt="curtidas" class="btn-nav">
+                    </button>
+
+                    <!-- Carrinho -->
+                    <button class="btn-with-image">
+                        <img src="~/imgs/carrinho.png" alt="carrinho" style="height:26px; width:auto;">
+                    </button>
+
+                    <!-- Perfil -->
+                    <button class="btn-with-image">
+                        <!-- Chama o método da Controller "Login" que é para mopstrar a tela login-->
+                        <a asp-controller="Cliente" asp-action="MeuPerfil">
+                            <img src="~/imgs/perfil.png" alt="usuario" class="btn-nav">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="imgCataVento">
+        <img src="~/imgs/cataventos_largo.png" />
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
