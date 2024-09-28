@@ -9,187 +9,187 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = edutico
 build_property.RootNamespace = edutico
-build_property.ProjectDir = C:\Users\flavi\OneDrive - Etec Centro Paula Souza\Trabalhos2024\TCC\EduTicos\Programação\Edutico\edutico\
+build_property.ProjectDir = T:\Repositório Backend Edutico\edutico\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\flavi\OneDrive - Etec Centro Paula Souza\Trabalhos2024\TCC\EduTicos\Programação\Edutico\edutico
+build_property.MSBuildProjectDirectory = T:\Repositório Backend Edutico\edutico
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Cliente/CadastroCliente.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Cliente/CadastroCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYWRhc3Ryb0NsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Cliente/CarrinhoCheio.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Cliente/CarrinhoCheio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5ob0NoZWlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Cliente/CarrinhoVazio.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Cliente/CarrinhoVazio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5ob1ZhemlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Cliente/MeuPerfil.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Cliente/MeuPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxNZXVQZXJmaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/AcompanharPedidos.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/AcompanharPedidos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY29tcGFuaGFyUGVkaWRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/AcompanharPedidosVazio.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/AcompanharPedidosVazio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY29tcGFuaGFyUGVkaWRvc1ZhemlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/AlterarProdutosF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/AlterarProdutosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbHRlcmFyUHJvZHV0b3NGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/BuscaCategoria.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/BuscaCategoria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNjYUNhdGVnb3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/CadastrarProdutosF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/CadastrarProdutosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3RyYXJQcm9kdXRvc0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/CadastroMeusCartoes.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/CadastroMeusCartoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3Ryb01ldXNDYXJ0b2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/CartaoPagamento.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/CartaoPagamento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0YW9QYWdhbWVudG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/DetalhesPedido.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/DetalhesPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1BlZGlkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/DetalhesPedidoConcluidoF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/DetalhesPedidoConcluidoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1BlZGlkb0NvbmNsdWlkb0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/DetalhesPedidoEmAndamentoF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/DetalhesPedidoEmAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1BlZGlkb0VtQW5kYW1lbnRvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/DetalhesProdutoF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/DetalhesProdutoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1Byb2R1dG9GLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/DevolucaoConcluidaF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/DevolucaoConcluidaF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZvbHVjYW9Db25jbHVpZGFGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/DevolucaoEmAndamentoF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/DevolucaoEmAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZvbHVjYW9FbUFuZGFtZW50b0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/DevolucoesF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/DevolucoesF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZvbHVjb2VzRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/EsqueceuSenha.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/EsqueceuSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFc3F1ZWNldVNlbmhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/FavoritosCheio.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/FavoritosCheio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3NDaGVpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/FavoritosF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/FavoritosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3NGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/FavoritosVazio.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/FavoritosVazio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3NWYXppby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/FinalizarPedido.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/FinalizarPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaW5hbGl6YXJQZWRpZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/HistoricoVendasF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/HistoricoVendasF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3JpY29WZW5kYXNGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/HistoricoVendasInfoF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/HistoricoVendasInfoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3JpY29WZW5kYXNJbmZvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/Index.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/MeusCartoes.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/MeusCartoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZXVzQ2FydG9lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/PagamentoCartao.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/PagamentoCartao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdhbWVudG9DYXJ0YW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/PagamentoQrcode.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/PagamentoQrcode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdhbWVudG9RcmNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/PedidosAndamentoF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/PedidosAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZWRpZG9zQW5kYW1lbnRvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/ProdutosDevolucao.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/ProdutosDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdXRvc0Rldm9sdWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/ProdutosF.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/ProdutosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdXRvc0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/TermoCancelamento.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/TermoCancelamento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtb0NhbmNlbGFtZW50by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Home/TermoDevolucao.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Home/TermoDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtb0Rldm9sdWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Login/Login.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Produto/CadastroProduto.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Produto/CadastroProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDYWRhc3Ryb1Byb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Produto/DetalhesProduto.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Produto/DetalhesProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlc1Byb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Shared/Error.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Shared/_ValidationScriptsPartial.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/_ViewImports.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/_ViewStart.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Shared/_Layout.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-suo7fxcrqw
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Shared/_LayoutCli2.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Shared/_LayoutCli2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDbGkyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-jom6apkxm2
 
-[C:/Users/flavi/OneDrive - Etec Centro Paula Souza/Trabalhos2024/TCC/EduTicos/Programação/Edutico/edutico/Views/Shared/_LayoutFunc.cshtml]
+[T:/Repositório Backend Edutico/edutico/Views/Shared/_LayoutFunc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGdW5jLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-067ufqa8tk

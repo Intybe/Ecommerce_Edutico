@@ -1065,3 +1065,4 @@ C:\Users\Rebeka\Desktop\eduofi\edutico\obj\Debug\net8.0\edutico.pdb
 C:\Users\Rebeka\Desktop\eduofi\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\Rebeka\Desktop\eduofi\edutico\obj\Debug\net8.0\ref\edutico.dll
 C:\Users\flavi\OneDrive - Etec Centro Paula Souza\Trabalhos2024\TCC\EduTicos\Programação\Edutico\edutico\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutCli2.cshtml.rz.scp.css
+T:\Repositório Backend Edutico\edutico\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutCli2.cshtml.rz.scp.css

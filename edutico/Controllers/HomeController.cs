@@ -1,3 +1,4 @@
+using edutico.Libraries.Login;
 using edutico.Models;
 using edutico.Repositorio;
 using Microsoft.AspNetCore.Mvc;
@@ -11,28 +12,47 @@ namespace edutico.Controllers
 
         private readonly ILogger<HomeController> _logger;
         private IProdutoRepositorio? _produtoRepositorio;
+        private readonly LoginSessao _loginSessao;
 
-        public HomeController(ILogger<HomeController> logger, IProdutoRepositorio produtoRepositorio)
+        public HomeController(ILogger<HomeController> logger, IProdutoRepositorio produtoRepositorio, LoginSessao loginSessao)
         {
             _logger = logger;
             _produtoRepositorio = produtoRepositorio;
+            _loginSessao = loginSessao;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<Produto> produto = null;
+            // Cria uma lista para armazenar vários produtos
+            List<Produto> produtos = new List<Produto>();
 
-            if ((_produtoRepositorio.ConsultarProdutoLancamento()) != null)
+            // Verifica se o usuário está logado
+            if (_loginSessao != null && _loginSessao.GetLogin() != null)
             {
-                produto = _produtoRepositorio.ConsultarProdutoLancamento(); // Obtém os produtos
+                // Verificando se o nível de acesso é da manutenção
+                if (_loginSessao.GetLogin().nivelAcesso == 0)
+                {
+                    // Looping para passar 10 produtos
+                    for (int i = 0; i < 10; i++)
+                    {
+                        (produtos as List<Produto>).Add(
+                            new Produto
+                            {
+                                nomeProd = "Nome Produto",
+                                valorUnit = 0,
+                                imgs = new List<Imagem> { new Imagem { enderecoImg = "~/imgs/img_prod_padrao_quadrada.png" } }
+                            }
+                        );
+                    }
+                }
+            }
+            else if ((_produtoRepositorio.ConsultarProdutoLancamento()) != null)
+            {
+                // Busca os produtos no banco de dados e armazena na lista
+                produtos = _produtoRepositorio.ConsultarProdutoLancamento().ToList(); // Obtém os produtos
             }
 
-            return View(produto); // Passa os produtos para a view
-        }
-
-        public IActionResult Login()
-        {
-            return View();
+            return View(produtos); // Passa os produtos para a view
         }
 
         public IActionResult BuscaCategoria()

@@ -40,7 +40,7 @@ namespace edutico.Controllers
             Cliente cliente = _clienteRepositorio.ConsultarCliente(codLogin.codLogin);
 
             // Passa os dados do cliente para a view
-            return View(cliente);
+            return View("MeuPerfil", cliente);
         }
 
         [HttpPost]
@@ -94,26 +94,10 @@ namespace edutico.Controllers
             return View("MeuPerfil");
         }
 
-        public IActionResult CadastrarProdutoCarrinho(decimal codProd, int qtdProd)
-        {
-            // Pega o codLogin do Usuário Logado através da sessão
-            var codLogin = _loginSessao.GetLogin();
-
-            if (codLogin == null)
-            {
-                // Se o cliente não estiver logado, redireciona para a página de login
-                return RedirectToAction("Login", "Login");
-            }
-
-            string mensagem = _carrinhoRepositorio.CadastrarProdutoCarrinho(codLogin.codLogin, codProd, qtdProd);
-
-            ViewData["msg"] = mensagem;
-            return RedirectToAction("Index", "Home");
-        }
-
         public IActionResult CarrinhoCheio()
         {
             return View();
+            ;
         }
 
         public IActionResult CarrinhoVazio()
@@ -136,7 +120,7 @@ namespace edutico.Controllers
             }
             else
             {
-                return View();
+                return View("CarrinhoVazio");
             }
         }
 
