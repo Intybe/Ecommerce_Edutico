@@ -160,6 +160,11 @@ namespace edutico.Controllers
             return View();
         }
 
+        public IActionResult FormDevolucao()
+        {
+            return View();
+        }
+
         //FUNCIONÁRIO
         public IActionResult ProdutosF()
         {

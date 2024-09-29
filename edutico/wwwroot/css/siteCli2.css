@@ -1840,3 +1840,63 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é 
     text-decoration: underline;
     display: block;
 }
+
+/*FORM DEVOLUÇÃO*/
+.FormDevolucao {
+    width: 650px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: -15px;
+    text-align: left;
+}
+
+.TitFormDev {
+    margin-top: 60px;
+   
+}
+
+    .TitFormDev h1 {
+        font-size: 30px;
+        color: #1F3C9D;
+        margin-bottom: 20px;
+        margin-left: 330px;
+        font-family: Edutico;
+    }
+
+.Msg h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Glacial Bold';
+    text-align: start;
+}
+
+textarea#cxDesc, input#cxPix {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+textarea#cxDesc {
+    height: 100px;
+}
+
+button.btnAvancar {
+    background-color: #1C3FB9;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Glacial Bold';
+    cursor: pointer;
+}
+
+    button.btnAvancar:hover {
+        background-color: #154cae;
+    }

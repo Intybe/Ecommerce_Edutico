@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_LayoutCli2";
+    ViewData["Title"] = "Formulário de Devolução";
+}
+<content class="FormDev">
+    <div class="TitFormDev text-start">
+        <!-- Alinha o título à direita -->
+        <h1>FORMULÁRIO DEVOLUÇÃO</h1>
+    </div>
+    <section class="FormDevolucao">
+
+        <form>
+            <div class="Msg text-center">
+                <!-- Centraliza a mensagem -->
+                <h3>Lamentamos que seu produto não tenha atendido às suas expectativas!</h3>
+            </div>
+
+            <div class="mb-3">
+                <label for="cxDesc" class="form-label">Descreva o motivo da devolução, para que possamos iniciar o processo:</label>
+                <textarea id="cxDesc" class="form-control" placeholder="Descreva aqui o motivo da devolução maneira mais detalhada possível."></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="cxPix" class="form-label">Digite a chave PIX para receber o reembolso:</label>
+                <input type="text" id="cxPix" class="form-control" placeholder="Digite aqui a chave pix" />
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <!-- Alinha o botão à esquerda -->
+                <button class="btn btn-primary btnAvancar">Avançar</button>
+            </div>
+        </form>
+    </section>
+</content>
