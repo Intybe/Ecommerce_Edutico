@@ -727,14 +727,20 @@ Create Procedure spUpdateTbClienteConta(
 )
 Begin
 	If not exists(Select usuario from tbLogin where usuario = vEmail and codLogin != vCodLogin) then
-		-- Atuliza os dados do cliente --
-		Update tbCliente Set 
-			email = vEmail
-		where codLogin = vCodLogin;
+		if(vSenha is null) then
+			if not exists (Select email from tbCliente where email = vEmail) then
+				Update tbCliente Set email = vEmail where codLogin = vCodLogin;
+				Update tbLogin Set usuario = vEmail where codLogin = vCodLogin;
+                
+                Select('Dados Alterados com sucesso!');
+			end if;
+		else
+			-- Atuliza os dados do cliente --
+			Update tbCliente Set email = vEmail where codLogin = vCodLogin;
+			Update tbLogin Set usuario = vEmail, senha = vSenha where codLogin = vCodLogin;
 		
-		Update tbLogin Set usuario = vEmail, senha = vSenha where codLogin = vCodLogin;
-		
-		Select('Dados Alterados com sucesso!');
+			Select('Dados Alterados com sucesso!');
+        end if;
 	else
 		Select('Esse email já está cadastrado, tente outro');
 	end if;
@@ -745,7 +751,7 @@ Delimiter $$
 Create Procedure spUpdateTbClienteDados(
 	-- Variáveis de Entrada --
 	vCodLogin int, 
-    vCPF decimal,
+    vCPF decimal(11,0),
 	vNome varchar(200), 
 	vSobrenome varchar(200), 
 	vTelefone decimal(11,0)
@@ -760,10 +766,11 @@ Begin
 			telefone = vTelefone
 		where codLogin = vCodLogin;
 		
-        Select('Dados atulizados com sucesso');
+        Select('Dados atualizados com sucesso!');
+        
+	else
+		Select('Este CPF já está cadastrado, por favor digite outro');
 	End if;
-	
-	Select('Este CPF já está cadastrado, por favor digite outro');
 End $$
 
 -- Sessão de Atualização de Status do Pedido --

@@ -61,11 +61,12 @@ namespace edutico.Controllers
             string mensagem = _clienteRepositorio.AtualizarClienteConta(codLogin.codLogin, email, senha);
 
             ViewData["msg"] = mensagem;
-            return View("MeuPerfil");
+
+            return RedirectToAction("MeuPerfil");
         }
 
         [HttpPost]
-        public IActionResult AtualizarClienteDados(decimal cpf, string nome, string sobrenome, string telefone)
+        public IActionResult AtualizarClienteDados(string cpf, string nome, string sobrenome, string telefone)
         {
             // Pega o codLogin do Usuário Logado através da sessão
             var codLogin = _loginSessao.GetLogin();
@@ -76,10 +77,11 @@ namespace edutico.Controllers
                 return RedirectToAction("Login", "Login");
             }
 
-            string mensagem = _clienteRepositorio.AtualizarClienteDados(codLogin.codLogin, cpf, nome, sobrenome, telefone);
+            string mensagem = _clienteRepositorio.AtualizarClienteDados(codLogin.codLogin, Convert.ToInt64(cpf), nome, sobrenome, telefone);
 
             ViewData["msg"] = mensagem;
-            return View("MeuPerfil");
+
+            return RedirectToAction("MeuPerfil");
         }
 
         [HttpPost]
@@ -91,7 +93,8 @@ namespace edutico.Controllers
             string mensagem = _clienteRepositorio.AtualizarClienteEndereco(codLogin.codLogin, logradouro, bairro, cep, cidade, uf, Convert.ToInt32(numEnd), compEnd);
 
             ViewData["msg"] = mensagem;
-            return View("MeuPerfil");
+
+            return RedirectToAction("MeuPerfil");
         }
 
         public IActionResult CarrinhoCheio()

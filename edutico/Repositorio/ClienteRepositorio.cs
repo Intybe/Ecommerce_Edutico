@@ -115,7 +115,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Variável que armazena o comando SQL
-            string sql = "spUpdateTbClienteConta(@codLogin, @email, @senha)";
+            string sql = "Call spUpdateTbClienteConta(@codLogin, @email, @senha)";
 
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
@@ -133,8 +133,23 @@ namespace edutico.Repositorio
             // Executando os comandos do mysql e passsando paa a variavel dr
             dr = cmd.ExecuteReader();
 
+            // Criando  variável para receber mensagem de retorno
+            string mensagem = null;
+
+            if (dr.Read())
+            {
+                mensagem = dr.GetString(0); // Captura a primeira coluna (que é a mensagem retornada)
+            }
+            else
+            {
+                mensagem = "Erro Desconhecido";
+            }
+
+            // Fechar o DataReader antes de executar outro comando
+            dr.Close();
+
             // Retorna para controller mensagem que veio do Banco de Dados
-            return dr.GetString(0);
+            return mensagem;
         }
 
         public string AtualizarClienteEndereco(int codLogin, string logradouro, string bairro, string cep, string cidade, string uf, int numEnd, string compEnd)
@@ -144,7 +159,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Variável que armazena o comando SQL
-            string sql = "spUpdateTbClienteEndereco(@codLogin, @logradouro, @bairro, @cidade, @uf, @cep, @numEnd, @compEnd)";
+            string sql = "Call spUpdateTbClienteEndereco(@codLogin, @logradouro, @bairro, @cidade, @uf, @cep, @numEnd, @compEnd)";
 
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
@@ -167,8 +182,23 @@ namespace edutico.Repositorio
             // Executando os comandos do mysql e passsando paa a variavel dr
             dr = cmd.ExecuteReader();
 
+            // Criando  variável para receber mensagem de retorno
+            string mensagem = null;
+
+            if (dr.Read())
+            {
+                mensagem = dr.GetString(0); // Captura a primeira coluna (que é a mensagem retornada)
+            }
+            else
+            {
+                mensagem = "Erro Desconhecido";
+            }
+
+            // Fechar o DataReader antes de executar outro comando
+            dr.Close();
+
             // Retorna para controller mensagem que veio do Banco de Dados
-            return dr.GetString(0);
+            return mensagem;
         }
 
         public string AtualizarClienteDados(int codLogin, decimal cpf, string nome, string sobrenome, string telefone)
@@ -178,7 +208,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Variável que armazena o comando SQL
-            string sql = "spUpdateTbClienteDados(@codLogin, @cpf, @nome, @sobrenome, @telefone)";
+            string sql = "Call spUpdateTbClienteDados(@codLogin, @cpf, @nome, @sobrenome, @telefone)";
 
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
@@ -199,8 +229,23 @@ namespace edutico.Repositorio
             // Executando os comandos do mysql e passsando paa a variavel dr
             dr = cmd.ExecuteReader();
 
+            // Criando  variável para receber mensagem de retorno
+            string mensagem = null;
+
+            if (dr.Read())
+            {
+                mensagem = dr.GetString(0); // Captura a primeira coluna (que é a mensagem retornada)
+            }
+            else
+            {
+                mensagem = "Erro Desconhecido";
+            }
+
+            // Fechar o DataReader antes de executar outro comando
+            dr.Close();
+
             // Retorna para controller mensagem que veio do Banco de Dados
-            return dr.GetString(0);
+            return mensagem;
         }
     }
 }
