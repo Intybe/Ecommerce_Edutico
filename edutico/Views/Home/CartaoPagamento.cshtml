@@ -98,16 +98,17 @@
         </div>
     </div>
 
+    <!--EXISTEM DUAS MODAIS APENAS UMA ESTA SENDO CHAMDA NO MOMENTO SÓ POR CONTA DO TESTE-->
     <div class="d-flex justify-content-end">
         <button class="btncanc">Voltar para o menu</button>
     <!--botão que chama a modal o id da modal é locado no data-bs-target -->
-        <button class="btnnav" type="button" data-bs-toggle="modal" data-bs-target="#successModal">Concluir pagamento</button>
+        <button class="btnnav" type="button" data-bs-toggle="modal" data-bs-target="#negadoModal">Concluir pagamento</button>
     </div>
 </div>
 
-<!-- Button trigger modal -->
 
-<!-- Modal -->
+
+<!-- Modal Aprovado-->
 
 <div class="modal fade texto-simples" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false"> @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
     <!-- modal-dialog-centered faz ficar no centro verticalmente-->
@@ -134,9 +135,53 @@
             </div>
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
-                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary px-4 py-2" style="border-radius: 25px;"> <!--faz com que abra outra padina na mesma aba-->
+                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary px-4 py-4" style="border-radius: 25px;"> <!--faz com que abra outra padina na mesma aba-->
                     Acompanhar pedido
                 </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal Negado-->
+
+
+<div class="modal fade texto-simples" id="negadoModal" data-bs-backdrop="static" data-bs-keyboard="false">
+    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+    <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+            <!-- x para fechar-->
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- aqui fica icone confere-->
+                <div class="mb-3">
+                    <img src="~/imgs/Cancel.png" alt="Ícone de Confirmação" class="mb-3" style="height: 60px;">
+                </div>
+                <!-- Título e Mensagem -->
+                <h1 class="modal-title fs-4 glacial-bold">Falha no pagamento</h1>
+                <!-- ese fs é fonte size-->
+                <p class="mb-3 fs-5">Tente novamente!</p>
+                <p class="text-center mx-4 mb-4">
+                    Lamentamos informar que houve um problema ao processar o seu pagamento. Por favor, verifique os detalhes do seu cartão e tente novamente ou utilize um método de pagamento diferente.
+                </p>
+              
+                <p class="text-center mx-4 mb-4">
+                    Se precisar de ajuda, nossa equipe de atendimento ao cliente está à disposição para auxiliar.
+                </p>
+                
+                <p class="text-center mx-4">
+                    Agradecemos pela sua compreensão.
+                <p>
+            </div>
+            <!--botao de dentro da modal-->
+            <div class="modal-footer border-0 d-flex justify-content-center">
+                <!--fecha modal-->
+                <bytton class="btn btn-primary px-4 py-3" data-bs-dismiss="modal" style="border-radius: 25px;">
+                    Voltar para o menu
+                </bytton>
             </div>
         </div>
     </div>

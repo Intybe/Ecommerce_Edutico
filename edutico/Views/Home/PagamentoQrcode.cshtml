@@ -12,6 +12,92 @@
             <p class="pt-3">28719692738e4092905ikldsjfu4ty746y37</p>
         </div>
         <p class="pt-3">*O pagamento deve ser efetuado em até 30 minutos</p>
-        <button class="btnnav">Voltar para o menu</button>
+        <button class="btnnav" type="button" data-bs-toggle="modal" data-bs-target="#negadoqrcode">Voltar para o menu</button>
     </div>
 </section>
+
+
+<!--Modal Negado por conta do processamento-->
+
+
+<div class="modal fade texto-simples" id="negadoqrcode" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px; position: relative;">
+            <!-- x para fechar -->
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Ícone -->
+                <div class="mb-2">
+                    <img src="~/imgs/Cancel.png" alt="Ícone de Confirmação" class="mb-2" style="height: 60px;">
+                </div>
+                <!-- Título e Mensagem -->
+                <h1 class="modal-title fs-4 glacial-bold">Falha no pagamento</h1>
+                <p class="mb-2 fs-5">Tente novamente!</p>
+                <p class="text-center mx-3 mb-2">
+                    Lamentamos informar que houve um problema ao processar seu pagamento via Pix. Por favor, verifique os detalhes de sua transação e tente novamente.
+                </p>
+                <p class="text-center mx-3 mb-2">
+                    Se o problema persistir, entre em contato com nosso atendimento ao cliente para que possamos ajudar a resolver a situação o mais rápido possível.
+                </p>
+                <p class="text-center mx-3">
+                    Agradecemos pela compreensão e estamos à disposição para ajudar.
+                </p>
+            </div>
+            <!-- Botão -->
+            <div class="modal-footer border-0 d-flex justify-content-center">
+                <button class="btn btn-primary " data-bs-dismiss="modal" style="border-radius: 25px;">
+                    Voltar para o menu
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Modal Negado por conta do tempo-->
+
+
+<div class="modal fade texto-simples" id="negadoqrcodetempo" data-bs-backdrop="static" data-bs-keyboard="false">
+    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+    <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+            <!-- x para fechar-->
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- aqui fica icone confere-->
+                <div class="mb-2">
+                    <img src="~/imgs/Cancel.png" alt="Ícone de Confirmação" class="mb-3" style="height: 60px;">
+                </div>
+                <!-- Título e Mensagem -->
+                <h1 class="modal-title fs-4 glacial-bold">Falha no pagamento</h1>
+                <!-- ese fs é fonte size-->
+                <p class="mb-2 fs-5">Tente novamente!</p>
+                <p class="text-center mx-3 mb-2">
+                    Infelizmente, seu pagamento via Pix não foi concluído a tempo. O prazo para a confirmação do pagamento expirou.
+
+                </p>
+
+                <p class="text-center mx-3 mb-2">
+                    Por favor, tente realizar o pagamento novamente. Se precisar de assistência, nossa equipe de atendimento ao cliente está à disposição para ajudar.
+                </p>
+
+                <p class="text-center mx-3">
+
+                    Agradecemos pela compreensão e esperamos concluir sua compra em breve. Estamos à disposição para ajudar.
+                <p>
+            </div>
+            <!--botao de dentro da modal-->
+            <div class="modal-footer border-0 d-flex justify-content-center">
+                <!--fecha modal-->
+                <bytton class="btn btn-primary" data-bs-dismiss="modal" style="border-radius: 25px;">
+                    Voltar para o menu
+                </bytton>
+            </div>
+        </div>
+    </div>
+</div>
