@@ -155,6 +155,11 @@ namespace edutico.Controllers
             return View();  
         }
 
+        public IActionResult CancelamentoEfetuado()
+        {
+            return View();
+        }
+
         //FUNCIONÁRIO
         public IActionResult ProdutosF()
         {

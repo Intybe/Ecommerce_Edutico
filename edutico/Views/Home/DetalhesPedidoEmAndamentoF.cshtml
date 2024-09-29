@@ -14,11 +14,12 @@
         <hr />
 
         <!--conteudo começa aqui (informações/dados)-->
-        <div class="row texto-simples justify-content-between"> @*a classe texto-simples esta estilizando todos os textos para o glacial tradicional*@
+        <div class="row texto-simples justify-content-between">
+            @*a classe texto-simples esta estilizando todos os textos para o glacial tradicional*@
             <!--coluna que guarda os dados do cliente, endereço e fomas de pagamento-->
             <div class="col-6">
                 <!--numero e datas da comanda-->
-                <div class="d-flex mb-4">       
+                <div class="d-flex mb-4">
                     <div class="info-devo">
                         <p>Nº pedido</p>
                         <p id="glacial-bold">123456</p>
@@ -37,7 +38,7 @@
                 <div class="d-flex mb-4">
                     <!--colunas com informações (col-4 largura dela)-->
                     <div class="col-4 mb-2">
-                        <div class="info-devo mb-3"> 
+                        <div class="info-devo mb-3">
                             <p>Primeiro nome</p>
                             <p id="infoped">Fulano</p> @*esse id esta fazendo ficar negrito e cinza*@
                         </div>
@@ -58,7 +59,8 @@
                     </div>
                 </div>
                 <!--informações entrega-->
-                <div class="sub_perfil"> @*essa classe esta tirando o margin do p*@
+                <div class="sub_perfil">
+                    @*essa classe esta tirando o margin do p*@
                     <p id="glacial-bold">Endereço de entrega</p>
                 </div>
                 <hr />
@@ -95,7 +97,7 @@
                     </div>
                 </div>
                 <!--informações pagamento-->
-                <div class="sub_perfil"> 
+                <div class="sub_perfil">
                     <p id="glacial-bold">Tipo de pagamento</p>
                 </div>
                 <hr />
@@ -131,11 +133,43 @@
                         <span>Total</span>
                         <span class="amount">R$ 418,98</span>
                     </div>
-                    <button class="btn btn-primary">Pedido enviado</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalPedidoEnviado">Pedido enviado</button>
+
                 </div>
-              
-               
-                
+
+                <!-- MODAL -->
+                <div class="modal fade texto-simples" id="ModalPedidoEnviado" data-bs-backdrop="static" data-bs-keyboard="false">
+                    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+                    <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+
+                            <!-- x para fechar-->
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- aqui fica icone confere-->
+                                <div class="mb-3">
+                                    <img src="~/imgs/aprovado.png" alt="Ícone de Confirmação" class="mb-3" style="height: 80px;">
+                                </div>
+                                <!-- Título e Mensagem -->
+                                <h1 class="modal-title fs-4 glacial-bold">O Pedido agora está enviado!</h1>
+                                <!-- ese fs é fonte size-->
+                                <p class="mb-3 fs-5 glacial-bold">O cliente foi notificado.</p>
+
+                            </div>
+                            <!--botao de dentro da modal-->
+                            <div class="modal-footer border-0 d-flex justify-content-center">
+                                <a href="@Url.Action("PedidosAndamentoF", "Home")" class="btn btn-primary Modal-btn">
+                                    <!--faz com que abra outra padina na mesma aba-->
+                                    Voltar para o menu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>

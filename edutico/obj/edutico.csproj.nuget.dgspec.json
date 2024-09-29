@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "T:\\Repositório Backend Edutico\\edutico\\edutico.csproj": {}
+    "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj": {}
   },
   "projects": {
-    "T:\\Repositório Backend Edutico\\edutico\\edutico.csproj": {
+    "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Repositório Backend Edutico\\edutico\\edutico.csproj",
+        "projectUniqueName": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj",
         "projectName": "edutico",
-        "projectPath": "T:\\Repositório Backend Edutico\\edutico\\edutico.csproj",
-        "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-        "outputPath": "T:\\Repositório Backend Edutico\\edutico\\obj\\",
+        "projectPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj",
+        "packagesPath": "C:\\Users\\flavi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "P:\\Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\barro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\flavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

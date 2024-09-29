@@ -1512,3 +1512,23 @@ label {
         border-bottom: 2px solid #385BD2;
     }
 
+/*MODAL*/
+.Modal-btn {
+    border-radius: 25px;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: 'Glacial Bold';
+    background-color: #0046F5; /* Cor do botão como na imagem */
+}
+
+.modal-body h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-body p {
+    font-size: 18px;
+    font-weight: normal;
+}
