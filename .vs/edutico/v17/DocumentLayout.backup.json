@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "T:\\Reposit\u00F3rio Backend Edutico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\wwwroot\\css\\sitecli2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\sitecli2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClienteRepositorio.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
-              "RelativeDocumentMoniker": "edutico\\Repositorio\\ClienteRepositorio.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Repositorio\\ClienteRepositorio.cs",
-              "RelativeToolTip": "edutico\\Repositorio\\ClienteRepositorio.cs",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAIwPsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T23:43:46.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MeuPerfil.cshtml",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T23:35:43.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "edutico\\Controllers\\ClienteController.cs",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "edutico\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T23:34:11.843Z",
+              "Title": "siteCli2.css",
+              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\wwwroot\\css\\siteCli2.css",
+              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteCli2.css",
+              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\wwwroot\\css\\siteCli2.css",
+              "RelativeToolTip": "edutico\\wwwroot\\css\\siteCli2.css",
+              "ViewState": "AgIAAI0DAAAAAAAAAAAIwJ4DAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-30T00:00:17.954Z",
               "EditorCaption": ""
             }
           ]

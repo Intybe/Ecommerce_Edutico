@@ -749,16 +749,13 @@ input[type="password"] {
 }
 
 .produto {
-    align-items: center;
+    display: flex;
     justify-content: space-between;
+    padding: 10px;
     margin-bottom: 10px;
-    background: white;
-    border-radius: 20px;
-    border: 1px solid #b2b2b2;
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .previa {
@@ -882,6 +879,52 @@ input[type="password"] {
     .btn-primary:hover {
         background-color: #0056b3;
     }
+
+/*Detalhes Produto*/
+
+.base-prod-detalhe {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.imgpequena {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.base-prod-detalhe .imgprincipal {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 29rem;
+    height: 100%;
+}
+
+.provi {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+}
+
+.btncar {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    justify-content: center;
+}
 
 /*Detalhes Produto*/
 
