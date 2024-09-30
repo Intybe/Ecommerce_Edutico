@@ -139,8 +139,8 @@
                         <span class="amount">R$ 418,98</span>
                     </div>
                     <div class="buttons">
-                        <button class="Aceitar">Aceitar devolução</button>
-                        <button class="Recusar">Recusar</button>
+                        <button class="Aceitar" data-bs-toggle="modal" data-bs-target="#ModalDevolucaoAceita">Aceitar devolução</button>
+                        <button class="Recusar" data-bs-toggle="modal" data-bs-target="#ModalDevolucaoRecusada">Recusar</button>
                     </div>
                 </div>
                 <!--mensagem-->
@@ -163,7 +163,76 @@
 
         </div>
 
+        <!-- MODAL ACEITO -->
+        <div class="modal fade texto-simples" id="ModalDevolucaoAceita" data-bs-backdrop="static" data-bs-keyboard="false">
+            @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+            <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
 
+                    <!-- x para fechar-->
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- aqui fica icone confere-->
+                        <div class="mb-3">
+                            <img src="~/imgs/aprovado.png" alt="Ícone de Confirmação" class="mb-3" style="height: 80px;">
+                        </div>
+                        <!-- Título e Mensagem -->
+                        <h1 class="modal-title fs-4 glacial-bold">
+                            A solicitação de devolução
+                            foi aprovada!
+                        </h1>
+                        <!-- ese fs é fonte size-->
+                        <p class="mb-3 fs-5 glacial-bold">O cliente foi notificado.</p>
+
+                    </div>
+                    <!--botao de dentro da modal-->
+                    <div class="modal-footer border-0 d-flex justify-content-center">
+                        <a href="@Url.Action("DevolucoesF", "Home")" class="btn btn-primary Modal-btn">
+                            <!--faz com que abra outra padina na mesma aba-->
+                            Voltar para o menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL RECUSADO -->
+        <div class="modal fade texto-simples" id="ModalDevolucaoRecusada" data-bs-backdrop="static" data-bs-keyboard="false">
+            @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+            <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+
+                    <!-- x para fechar-->
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- aqui fica icone confere-->
+                        <div class="mb-3">
+                            <img src="~/imgs/Cancel.png" alt="Ícone de Confirmação" class="mb-3" style="height: 80px;">
+                        </div>
+                        <!-- Título e Mensagem -->
+                        <h1 class="modal-title fs-4 glacial-bold">
+                            A solicitação de devolução
+                            foi recusada!
+                        </h1>
+                        <!-- ese fs é fonte size-->
+                        <p class="mb-3 fs-5 glacial-bold">O cliente foi notificado.</p>
+
+                    </div>
+                    <!--botao de dentro da modal-->
+                    <div class="modal-footer border-0 d-flex justify-content-center">
+                        <a href="@Url.Action("DevolucoesF", "Home")" class="btn btn-primary Modal-btn">
+                            <!--faz com que abra outra padina na mesma aba-->
+                            Voltar para o menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 </section>
