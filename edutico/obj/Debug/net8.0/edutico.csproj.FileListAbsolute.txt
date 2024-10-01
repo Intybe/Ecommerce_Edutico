@@ -1223,3 +1223,4 @@ T:\Backend Edutico\edutico\obj\Debug\net8.0\refint\edutico.dll
 T:\Backend Edutico\edutico\obj\Debug\net8.0\edutico.pdb
 T:\Backend Edutico\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 T:\Backend Edutico\edutico\obj\Debug\net8.0\ref\edutico.dll
+T:\Backend Edutico\edutico\obj\Debug\net8.0\edutico.sourcelink.json

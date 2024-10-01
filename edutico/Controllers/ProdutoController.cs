@@ -9,11 +9,13 @@ namespace edutico.Controllers
     public class ProdutoController : Controller
     {
         private IProdutoRepositorio? _produtoRepositorio;
+        private readonly LoginSessao _loginSessao;
 
         // Construtor com injeção de dependência
-        public ProdutoController(IProdutoRepositorio produtoRepositorio)
+        public ProdutoController(IProdutoRepositorio produtoRepositorio, LoginSessao loginSessao)
         {
             _produtoRepositorio = produtoRepositorio;
+            _loginSessao = loginSessao;
         }
 
         public IActionResult CadastroProduto()
@@ -52,14 +54,43 @@ namespace edutico.Controllers
             }
         }
 
-        public IActionResult DetalhesProduto(decimal codProd)
+        public IActionResult DetalhesProduto(decimal? codProd)
         {
-            // Consultar o produto pelo código
-            Produto produto = _produtoRepositorio.ConsultarDetalheProduto(codProd);
+            Produto produto = null;
 
-            if (produto == null)
+            // Verifica se o codProd é nulo ou não foi passado
+            if (!codProd.HasValue)
             {
-                return NotFound();
+                // Criar o produto padrão
+                produto = new Produto()
+                {
+                    codProd = 1, // Código do produto
+                    nomeProd = "Nome Produto Padrão",
+                    descricao = "Descrição Padrão",
+                    classificacao = "Livre",
+                    categoria = "Geral",
+                    valorUnit = 0, // Valor padrão
+                    estoque = 100, // Estoque padrão
+                    statusProd = true, // Produto ativo
+                    lancamento = false, // Não é lançamento
+                    imgs = new List<Imagem>() // Inicializa a lista de imagens
+                };
+
+                // Adiciona múltiplas imagens padrão ao produto
+                for (int i = 1; i <= 5; i++)
+                {
+                    Imagem imagem = new Imagem
+                    {
+                        enderecoImg = "~/imgs/img_prod_padrao_quadrada.png" // Caminhos de imagem diferentes
+                    };
+
+                    produto.imgs.Add(imagem); // Adiciona a imagem à lista de imagens do produto
+                }
+            }
+            else
+            {
+                // Consultar o produto pelo código
+                produto = _produtoRepositorio.ConsultarDetalheProduto(codProd.Value);
             }
 
             return View(produto);
