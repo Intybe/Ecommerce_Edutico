@@ -67,8 +67,8 @@ namespace edutico.Controllers
                     codProd = 1, // Código do produto
                     nomeProd = "Nome Produto Padrão",
                     descricao = "Descrição Padrão",
-                    classificacao = "Livre",
-                    categoria = "Geral",
+                    classificacao = "Classificação Indicativa",
+                    categoria = "Categoria",
                     valorUnit = 0, // Valor padrão
                     estoque = 100, // Estoque padrão
                     statusProd = true, // Produto ativo

@@ -99,8 +99,33 @@ namespace edutico.Controllers
 
         public IActionResult CarrinhoCheio()
         {
-            return View();
-            ;
+
+            // Cria uma lista para armazenar vários produtos
+            List<Carrinho> itemCarrinho = new List<Carrinho>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                // Primeiro, instancie o produto fora do Carrinho
+                Produto produtos = new Produto
+                {
+                    nomeProd = "Nome Produto",  // Exemplo para nome diferente
+                    valorUnit = 0,
+                    imgs = new List<Imagem> { new Imagem { enderecoImg = "~/imgs/img_prod_padrao_quadrada.png" } }
+                };
+
+                // Agora, instancie o Carrinho com o produto
+                Carrinho carrinho = new Carrinho
+                {
+                    produto = produtos,  // Atribua o produto ao carrinho
+                    qtdProd = 0
+                };
+
+                // Adiciona o carrinho à lista de itens no carrinho
+                itemCarrinho.Add(carrinho);
+
+            }
+
+            return View(itemCarrinho);
         }
 
         public IActionResult CarrinhoVazio()

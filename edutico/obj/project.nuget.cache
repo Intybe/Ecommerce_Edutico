@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uuGzqo03DC4=",
+  "dgSpecHash": "UY+bDpEPMeA=",
   "success": true,
-  "projectFilePath": "T:\\Backend Edutico\\edutico\\edutico.csproj",
+  "projectFilePath": "T:\\Backend Edutico - Copia\\edutico\\edutico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\barro\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\barro\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

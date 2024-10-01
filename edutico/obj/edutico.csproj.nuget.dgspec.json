@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "T:\\Backend Edutico\\edutico\\edutico.csproj": {}
+    "T:\\Backend Edutico - Copia\\edutico\\edutico.csproj": {}
   },
   "projects": {
-    "T:\\Backend Edutico\\edutico\\edutico.csproj": {
+    "T:\\Backend Edutico - Copia\\edutico\\edutico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Backend Edutico\\edutico\\edutico.csproj",
+        "projectUniqueName": "T:\\Backend Edutico - Copia\\edutico\\edutico.csproj",
         "projectName": "edutico",
-        "projectPath": "T:\\Backend Edutico\\edutico\\edutico.csproj",
+        "projectPath": "T:\\Backend Edutico - Copia\\edutico\\edutico.csproj",
         "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-        "outputPath": "T:\\Backend Edutico\\edutico\\obj\\",
+        "outputPath": "T:\\Backend Edutico - Copia\\edutico\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "P:\\Visual Studio\\Shared\\NuGetPackages"
