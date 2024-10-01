@@ -8,7 +8,7 @@ namespace edutico.Repositorio
         IEnumerable<Carrinho> ConsultarCarrinho(int codLogin);
 
         // Instanciando o método de cadastro dos produtos no carrinho
-        String CadastrarProdutoCarrinho(int codLogin, decimal codProd, int qtdProd);
+        public String CadastrarProdutoCarrinho(int codLogin, decimal codProd, int qtdProd);
     }
 }
 

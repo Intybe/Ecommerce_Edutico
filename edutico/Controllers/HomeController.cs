@@ -45,6 +45,11 @@ namespace edutico.Controllers
                         );
                     }
                 }
+                else if ((_produtoRepositorio.ConsultarProdutoLancamento()) != null)
+                {
+                    // Busca os produtos no banco de dados e armazena na lista
+                    produtos = _produtoRepositorio.ConsultarProdutoLancamento().ToList(); // Obtém os produtos
+                }
             }
             else if ((_produtoRepositorio.ConsultarProdutoLancamento()) != null)
             {
