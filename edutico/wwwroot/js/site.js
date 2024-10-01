@@ -103,5 +103,18 @@
             }
         });
     }
+    /*Trocar imagem na tela Detalhes produto*/
+    // Seleciona todas as imagens pequenas
+    const imgsPequenas = document.querySelectorAll('.imgpequena');
+    // Seleciona a imagem principal
+    const imgPrincipal = document.querySelector('.imgprincipal');
+
+    // Adiciona um evento de clique a cada imagem pequena
+    imgsPequenas.forEach(img => {
+        img.addEventListener('click', function () {
+            // Atualiza o src da imgprincipal para o src da imagem pequena clicada
+            imgPrincipal.src = this.src;
+        });
+    });
 
 });

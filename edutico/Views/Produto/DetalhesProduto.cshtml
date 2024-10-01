@@ -7,14 +7,19 @@
 <div class="container row justify-content-center">
     <div class="col-6">
         <div class="base-prod-detalhe d-flex">
-            <div>
-                @foreach (var img in Model.imgs)
-                {
-                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem("@Url.Content(img.enderecoImg)")" />
-                }
+            <div class="scrollable-div col-3 overflow-auto" style="max-height: 31rem; width:20%;">
+                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
+                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
+                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
+                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
+                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
             </div>
-            <img src="@Url.Content(@Model.imgs.First().enderecoImg)" class="imgprincipal" id="imgprincipal" />
+
+            <div class="imgprincipal-container">
+                <img src="@Url.Content(@Model.imgs.First().enderecoImg)" class="imgprincipal" />
+            </div>
         </div>
+
         <div class="base-prod-detalhe position-relative">
             <h3>Descrição do produto</h3>
             <p class="texto-simples">
@@ -155,11 +160,12 @@
     </div>
     <div class="col-4">
         <div class="base-prod-detalhe">
-            <div class="d-flex pb-2 px-2">
-                <h5 class="glacial-bold">@Model.nomeProd</h5>
-                <!-- div provisória (substituir por icone coração) -->
+            <div class="d-flex pb-2 px-2 justify-content-between">
+                <h5 class="glacial-bold titulo-detalhe">@Model.nomeProd</h5>
+    
+                    <img src="~/imgs/heart.png" class="curti ">
 
-                <img src="~/imgs/heart.png" class="curti">
+                
             </div>
             <p class=" mb-1 texto-simples">
                 <img src="~/imgs/Star.png" class="icone mb-1">
@@ -171,7 +177,7 @@
             </p>
             <div class="mb-2 px-2">
                 <p class="texto-simples"> De <span style="text-decoration: line-through">70,00</span></p>
-                <h4>R$ @Model.valorUnit</h4>
+                <h4>R$ 60,00</h4>
             </div>
             <div class="d-flex mb-3 px-2">
                 <h6 class="glacial-bold" style="color:#8ED61A;"> Em estoque</h6>
@@ -274,10 +280,3 @@
         </div>
     </div>
 </div>
-<script>
-    function mudarImagem(novaImagem) {
-        var imgPrincipal = document.getElementsById.('#imgprincipal'),
-        
-        imgPrincipal.src = novaImagem;
-    }
-</script>

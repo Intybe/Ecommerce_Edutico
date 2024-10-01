@@ -45,17 +45,17 @@ html, body {
     height: 32px;
     border-radius: 25px;
     border: 2px solid black;
-    
 }
 
 .layout-label {
-        border: none;
-        height: 25px;
-        width: 290px;
-        padding-inline: 10px;
-        outline: none; /*tira contorno quando clica*/
-        background:none;
-    }
+    border: none;
+    height: 25px;
+    width: 290px;
+    padding-inline: 10px;
+    outline: none; /*tira contorno quando clica*/
+    background: none;
+}
+
 .navbar .icons {
     gap: 20px; /* Espaçamento entre os ícones */
 }
@@ -79,9 +79,9 @@ html, body {
     border-radius: 10px;
 }
 
-.btn-nav{
-    height:22px;
-    width:auto;
+.btn-nav {
+    height: 22px;
+    width: auto;
 }
 
 .blur {
@@ -103,6 +103,7 @@ html, body {
     font-family: 'Glacial Bold';
     color: white;
 }
+
 .container .inicial {
     align-items: center;
     justify-content: center;
@@ -206,6 +207,7 @@ html, body {
     height: 583px; /*delimita a altura (para a img ficar centralizada*/
     margin-left: 10px;
 }
+
 .container .TxtBemVindo {
     font-family: 'Glacial Bold';
     margin-top: 70px;
@@ -217,6 +219,7 @@ html, body {
     margin-top: -21px;
     width: 500px;
 }
+
 .container .hr {
     width: 210px;
     height: 2px;
@@ -234,12 +237,12 @@ html, body {
     margin-bottom: 15px;
 }
 
-.form-group label {
-    font-family: 'Glacial';
-    display: block;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
+    .form-group label {
+        font-family: 'Glacial';
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
 
 input[type="text"],
 input[type="password"] {
@@ -248,6 +251,7 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 15px;
 }
+
     input[type="text"]:focus,
     input[type="password"]:focus {
         border: 1px solid #E37B1B; /* Cor da borda ao focar */
@@ -266,7 +270,6 @@ input[type="password"] {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    
 }
 
 .Entrar-btn {
@@ -279,6 +282,7 @@ input[type="password"] {
     border: none;
     font-weight: bold;
 }
+
     .Entrar-btn:hover {
         color: white;
         border: 2px solid #e74c3c;
@@ -291,18 +295,18 @@ input[type="password"] {
     color: #e74c3c;
     width: 150px;
     height: 44px;
-    padding: 8px;  
+    padding: 8px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     align-items: center;
 }
+
     .Criar-btn:hover {
         background: #e74c3c;
         color: white;
-        
     }
-    
+
 .imgMaeFilho {
     height: 300px;
     width: 3px;
@@ -602,7 +606,6 @@ input[type="password"] {
 .Favs {
     display: flex;
     padding: 20px;
-
 }
 
 
@@ -670,12 +673,10 @@ input[type="password"] {
     width: 270px;
     height: 270px;
     margin: auto;
-
 }
 
 /*FAVORITOS VAZIO*/
 .Fav {
-
     display: flex;
     padding: 20px;
     height: 125vh;
@@ -690,18 +691,18 @@ input[type="password"] {
     text-align: center;
 }
 
-.Vazio img {
+    .Vazio img {
         display: block; /* Assegura que a imagem se comporte como um bloco, permitindo o centrar com margin auto */
-        width:250px;
-        height:355px;
-}
+        width: 250px;
+        height: 355px;
+    }
 
 
-.Vazio p {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+    .Vazio p {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 
 /*Carrinho Vazio*/
 .ticoCarrinho {
@@ -724,7 +725,6 @@ input[type="password"] {
         text-align: center;
         align-items: center;
         justify-content: center;
-
     }
 
 
@@ -880,51 +880,7 @@ input[type="password"] {
         background-color: #0056b3;
     }
 
-/*Detalhes Produto*/
 
-.base-prod-detalhe {
-    background: white;
-    border-radius: 20px;
-    border: 1px solid #808080;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.imgpequena {
-    background-color: #808080;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.base-prod-detalhe .imgprincipal {
-    background-color: #fff;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 29rem;
-    height: 100%;
-}
-
-.provi {
-    background-color: #808080;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 25px;
-    height: 25px;
-}
-
-.btncar {
-    width: 100%;
-    padding: 10px;
-    background: blue;
-    color: white;
-    justify-content: center;
-}
 
 /*Detalhes Produto*/
 
@@ -938,23 +894,7 @@ input[type="password"] {
     margin-bottom: 10px;
 }
 
-.imgpequena {
-    background-color: #808080;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
 
-.base-prod-detalhe  .imgprincipal {
-    background-color: #fff;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 29rem;
-    height: 100%;
-}
 
 .provi {
     background-color: #808080;
@@ -1000,6 +940,11 @@ input[type="password"] {
     font-family: 'Glacial Bold';
 }
 
+.titulo-detalhe {
+    max-width: 400px;
+    white-space: normal;
+}
+
 /*Div imgs*/
 .imgpequena {
     background-color: #808080;
@@ -1011,12 +956,19 @@ input[type="password"] {
     margin-bottom: 10px;
 }
 
+.imgprincipal-container {
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    max-height: 100%;
+}
+
 .imgprincipal {
-    background-color: #fff;
     border-radius: 16px;
     border: 1px solid gray;
-    width: 31rem;
-    height: 31rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /*Div detalhes*/
@@ -1466,20 +1418,20 @@ input[type="password"] {
     padding: 30px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    text-align:justify;
+    text-align: justify;
 }
 
-    .base-termo h6{
-        font-family:'Glacial Bold';
+    .base-termo h6 {
+        font-family: 'Glacial Bold';
     }
 
-    .aceitar {
-        width: 100%;
-        margin-block:40px;
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-    }
+.aceitar {
+    width: 100%;
+    margin-block: 40px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
 
 .btnaceitar {
     padding: 5px;
@@ -1487,7 +1439,6 @@ input[type="password"] {
     text-align: center;
     background: #1C3FB9;
     border: none;
-
     color: white;
     text-align: center;
     border-radius: 50px;
@@ -1677,9 +1628,10 @@ input[type='radio']:checked + .custom-radio span { /* o "+"  é um seletor que ab
     margin-bottom: 10px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
+
 border-radius: 10px;
-    align-items: center;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+align-items: center;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 .base-cartao-com select {
     width: 50%;
     padding: 10px;
@@ -1687,8 +1639,8 @@ border-radius: 10px;
     border-radius: 15px;
 }
 
-.base-cartao-com hr{
-    margin-block:10px;
+.base-cartao-com hr {
+    margin-block: 10px;
 }
 
 .btn-cartao {
@@ -1707,17 +1659,17 @@ border-radius: 10px;
 .vercartao {
     background: transparent;
     border: none;
-    width:10%;
+    width: 10%;
 }
 
 /*Selecionar produtos Devolucao*/
 
-.alinha-radio{
-    margin-top:-20px;
+.alinha-radio {
+    margin-top: -20px;
 }
 
 .produto-devo {
-    padding:20px;
+    padding: 20px;
     justify-content: space-between;
     margin-bottom: 10px;
     background: white;
@@ -1728,13 +1680,13 @@ border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
-.produto-devo .card-img-top {
-    height: 100px;
-    width: auto;
-    margin-top:20px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
+    .produto-devo .card-img-top {
+        height: 100px;
+        width: auto;
+        margin-top: 20px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
 
 /*customização check buttons*/
 input[type='checkbox'] {
@@ -1749,11 +1701,11 @@ input[type='checkbox'] {
 
 .custom-check {
     border: 1px solid #fff;
-    width: 40px; 
+    width: 40px;
     height: 40px;
     display: grid;
     place-content: center;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
     .custom-check span {
@@ -1762,19 +1714,20 @@ input[type='checkbox'] {
         border: 1px solid #000;
         border-radius: 50%;
         transition: 0.2s ease;
-        background: transparent; 
+        background: transparent;
     }
 
 input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é um seletor que abrange todos os elementos span depois do input*/
     background: #426ef0;
 }
+
 .check-container p {
     margin: 0;
 }
 
 /*Meus Cartões*/
 
-.btnvoltarcar{
+.btnvoltarcar {
     padding: 10px 20px;
     width: auto;
     text-align: center;
@@ -1898,7 +1851,6 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é 
 
 .TitFormDev {
     margin-top: 60px;
-   
 }
 
     .TitFormDev h1 {
