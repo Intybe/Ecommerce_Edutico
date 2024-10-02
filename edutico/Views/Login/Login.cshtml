@@ -1,20 +1,21 @@
 ﻿@model edutico.Models.Login
 
-
 @{
+    Layout = "_Layout";
     ViewData["Title"] = "Login";
 }
 
-<section Class="my-3">
-    <div class="containerLogin inicial position-relative">
+<section class="my-3">
+    <div class="containerLogin container inicial position-relative">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="p-3 lg-2">
+            <!-- Formulário de Login -->
+            <div class="col-lg-6">
+                <div class="p-3">
                     <div class="TxtBemVindo">
-                        <p style="font-size: 30px;">Seja Bem-Vindo(a) de volta, </p>
+                        <p class="fs-4">Seja Bem-Vindo(a) de volta,</p>
                     </div>
                     <div class="facalogin">
-                        <p style="font-size: 30px;">faça seu Login!</p>
+                        <p class="fs-4">faça seu Login!</p>
                     </div>
                     <div class="hr">
                         <hr />
@@ -23,41 +24,48 @@
                     <!-- Mensagem de erro -->
                     @if (ViewData["msg"] != null)
                     {
-                        @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
                         <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
                     }
 
-
-                    <!-- FORM LOGIN-->
+                    <!-- FORM LOGIN -->
                     <div class="areaLogin">
-                        <form method="post">
-                           <div class="form-group">
-                                <label for="username">Usuário</label>
-                                <input asp-for="usuario" type="text" id="username" name="usuario" placeholder="Digite aqui seu usuário ou seu email">
+                        <form method="post" class="needs-validation" novalidate>
+                            <div class="form-group mb-3">
+                                <label for="username" class="form-label">Usuário</label>
+                                <input asp-for="usuario" type="text" id="username" name="usuario" class="form-control" placeholder="Digite aqui seu usuário ou seu email" required>
                             </div>
-                            <div class="form-group">
-                                <label for="password">Senha</label>
-                                <input asp-for="senha" type="password" id="password" name="senha" placeholder="Digite aqui sua senha">
+                            <div class="form-group mb-3">
+                                <label for="password" class="form-label">Senha</label>
+                                <input asp-for="senha" type="password" id="password" name="senha" class="form-control" placeholder="Digite aqui sua senha" required>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group d-flex justify-content-end">
                                 <a href="#" class="forgot-password">Esqueci a senha</a>
                             </div>
 
-                            <div class="button-group">
+                            <div class="d-flex justify-content-between">
                                 <button type="submit" asp-controller="Login" asp-action="Login" class="btn Entrar-btn">Entrar</button>
                                 <button type="submit" asp-controller="Home" asp-action="CadastroCliente" class="btn Criar-btn">Criar conta</button>
                             </div>
                         </form>
-
                     </div>
-
                 </div>
+
             </div>
 
-            <div class="imgMaeFilho">
-                <img src="~/imgs/img_mae_filho.png" alt="Menino Feliz" style="height: 705px;">
-            </div>
         </div>
+
     </div>
 </section>
+
+<!-- Imagem Mae e Filho -->
+<div class="position-relative">
+    <div class="position-absolute bottom-0 end-0">
+        <div class="col-lg-12 d-flex justify-content-end">
+            <img src="~/imgs/img_mae_filho.png" alt="Menino Feliz" class="imgMaeFilho">
+        </div>
+    </div>
+</div>
+
+
+
 

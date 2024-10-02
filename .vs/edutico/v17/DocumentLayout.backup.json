@@ -1,9 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "T:\\Reposit\u00F3rio Backend Edutico\\",
+  "WorkspaceRootPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\reposit\u00F3rio backend edutico\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive - etec centro paula souza\\trabalhos2024\\tcc\\eduticos\\programa\u00E7\u00E3o\\edutico\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -14,15 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T20:21:50.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAMYAAAAAAAAAAADwvzYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-02T20:21:15.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T20:21:07.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
-              "ToolTip": "T:\\Reposit\u00F3rio Backend Edutico\\edutico\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programa\u00E7\u00E3o\\Edutico\\edutico\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "edutico\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAEEAAAAAAAAAAAAAAE4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
