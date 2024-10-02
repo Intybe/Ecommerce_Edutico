@@ -24,7 +24,7 @@
                 // Adiciona ao subtotal
                 subtotal += totalItem;
 
-                <div class="produto">
+                <div class="produto position-relative" id="cardProduto">
                     <div class="imgProd">
                         <img src="@Url.Content(itemCarrinho.produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@itemCarrinho.produto.nomeProd" />
                     </div>
@@ -35,7 +35,12 @@
                         </div>
                         <div class="info_prod_car">
                             <p>Quantidade:</p>
-                            <p id="glacial-bold">@itemCarrinho.qtdProd</p>
+                            <!--aqui é o botao de quantidade-->
+                            <div class="contador glacial-bold">
+                                <button id="decrementar">-</button>
+                                <input type="number" id="valor" value="1" min="0" />
+                                <button id="incrementar">+</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-3">
@@ -48,6 +53,8 @@
                             <p id="glacial-bold">R$ @totalItem</p>
                         </div>
                     </div>
+                    <!--botao de excluir produto-->
+                    <button class="fechar" id="fecharCard"><img src="~/imgs/x.png"/></button>
                 </div>
             }
         </div>
@@ -56,38 +63,43 @@
             <div class="previa">
                 <p class="previaTitulo">Previa</p>
                 <hr />
-                <div class="precoPrevia">
-                    <p style="font-size:15px;">Entrega</p>
-                    <p style="font-size:15px;">R$ 20,00</p> <!-- Taxa fixa -->
-                </div>
-                <div class="precoPreviaSub">
-                    <p id="glacial-bold" style="font-size:15px;">Subtotal</p>
-                    <p style="font-size:15px;">R$ @subtotal</p> <!-- Exibe o subtotal calculado -->
-                </div>
-                <hr />
-                <div class="precoPreviaT">
-                    <p id="glacial-bold" style="font-size:25px;">Total</p>
-                    <p style="font-size:25px;">R$ @(subtotal + 20)</p> <!-- Total é o subtotal + taxa de entrega -->
-                </div>
-
-                <div class="Prazo" style="display: flex; align-items: center;">
-                    <img src="~/imgs/reembolso.png" class="img-fluid" alt="Prazo" />
-                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
-                        <p class="limite" style="margin: 0; display: inline;">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
+                <div class="my-3">
+                    <div class="precoPrevia">
+                        <p>Entrega</p>
+                        <p>R$ 20,00</p> <!-- Taxa fixa -->
+                    </div>
+                    <div class="precoPrevia glacial-bold">
+                        <p>Subtotal</p>
+                        <p>R$ @subtotal</p> <!-- Exibe o subtotal calculado -->
                     </div>
                 </div>
-                <button class="btn-primary">Prosseguir compra</button>
+
+                <hr />
+                <div class="precoPreviaT">
+                    <p>Total</p>
+                    <p>R$ @(subtotal + 20)</p> <!-- Total é o subtotal + taxa de entrega -->
+                </div>
+
+                <div class="align-items-center d-flex">
+                    <img src="~/imgs/reembolso.png" class="prazoimg" alt="Prazo" />
+                    <p class="limite">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
+
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <button class="btn-primary">Prosseguir compra</button>
+                </div>
+
             </div>
 
             <div class="tipoPag">
                 <p id="glacial-bold">Tipos de pagamentos</p>
                 <div class="row">
                     <div class="col-md-6 pagMet">
-                        <img src="~/imgs/tipoPagC.png" class="img-fluid" alt="cartão" />
+                        <img src="~/imgs/cartaopag.png" class="img-fluid" alt="cartão" />
                         <p id="glacial-bold">Cartão de credito</p>
                     </div>
                     <div class="col-md-6 pagMet">
-                        <img src="~/imgs/tipoPagP.png" class="img-fluid" alt="pix" />
+                        <img src="~/imgs/pixpag.png" class="img-fluid" alt="pix" />
                         <p id="glacial-bold">PIX</p>
                     </div>
                 </div>
