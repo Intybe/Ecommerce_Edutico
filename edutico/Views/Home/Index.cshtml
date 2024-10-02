@@ -72,9 +72,11 @@
                                     </p>
                                     <p class="h4 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
                                 </div>
-                                <button class="btn position-absolute bottom-0 end-0 px-2">
-                                    <img src="~/imgs/carrinhoadd.png" class="cart-icon">
-                                </button>
+                                <a asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@produto.codProd" asp-route-qtdProd=1 class="text-decoration-none">
+                                    <button class="btn position-absolute bottom-0 end-0 px-2">
+                                        <img src="~/imgs/carrinhoadd.png" class="cart-icon">
+                                    </button>
+                                </a>
                             </div>
                         </a>
 
@@ -117,9 +119,11 @@
                                     </p>
                                     <p class="h4 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
                                 </div>
-                                <button class="btn position-absolute bottom-0 end-0 px-2">
-                                    <img src="~/imgs/carrinhoadd.png" class="cart-icon">
-                                </button>
+                                <a asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@produto.codProd" asp-route-qtdProd=1 class="text-decoration-none">
+                                    <button class="btn position-absolute bottom-0 end-0 px-2">
+                                        <img src="~/imgs/carrinhoadd.png" class="cart-icon">
+                                    </button>
+                                </a>
                             </div>
                         </a>
 
