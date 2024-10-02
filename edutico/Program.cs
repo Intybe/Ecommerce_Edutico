@@ -16,6 +16,7 @@ builder.Services.AddScoped<LoginSessao>();
 builder.Services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
 builder.Services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
 builder.Services.AddScoped<ICarrinhoRepositorio, CarrinhoRepositorio>();
+builder.Services.AddScoped<ICartaoRepositorio, CartaoRepositorio>();
 
 var app = builder.Build();
 
