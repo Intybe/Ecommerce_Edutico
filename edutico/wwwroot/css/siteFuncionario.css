@@ -113,20 +113,21 @@ body {
     outline: none;
 }
 
-/* Produtos */
+/* PRODUTOS */
 .ProdutosF {
     width: 100%;
     height: 100%;
 }
 
-
+/* Estilos para o cabeçalho */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 20px;
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding-inline: 20px; /* Adiciona espaçamento nas laterais */
 }
 
+    /* Estilos para o título dentro do cabeçalho */
     .header h1 {
         font-size: 30px;
         margin-top: 40px;
@@ -134,115 +135,123 @@ body {
         font-family: Edutico;
     }
 
-    .header .sort {
-        display: flex;
-        align-items: center;
-        margin-top: 40px;
-        margin-left: 45px;
-    }
 
-        .header .sort span {
-            font-size: 14px;
-            font-family: 'Glacial Indifference';
-            color: #000;
-        }
-
-
-        .header .sort select {
-            font-size: 14px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-left: 5px;
-        }
-
+    /* Estilos para o botão cadastrar */
     .header .register-button {
         font-size: 14px;
         font-family: 'Glacial Bold';
         color: #385BD2;
         border: 2px solid #385BD2;
-        padding: 5px 10px;
+        padding: 5px 10px; /* Preenchimento interno */
         border-radius: 20px;
-        text-decoration: none;
+        text-decoration: none; /* Remove o sublinhado */
         margin-top: 40px;
         margin-left: 5px;
     }
 
+    /*FILTRO*/
+    .header .sort {
+        display: flex;
+        align-items: center;
+    }
+
+        .header .sort span {
+            font-size: 16px;
+            font-family: 'Glacial Bold';
+            color: #808080;
+        }
+
+        .header .sort select {
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+            /*TEXTO "ESGOTADOS ETC*/
+            .header .sort select option {
+                color: #808080; /* Cor do texto */
+                font-size: 14px;
+                font-family: 'Glacial Indifference';
+            }
+
+
+/* Estilos para o card de produto */
 .product-card {
     margin-left: 15px;
     width: 90%;
     height: 95%;
-    background-color: #f9f9f9; /* Cor de fundo do card */
-    border-radius: 20px; /* Bordas arredondadas do card */
-    box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra nas bordas */
-    border: 1px solid #ddd; /* Adiciona uma borda sutil ao redor do card */
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ao redor do card */
+    border: 1px solid #ddd;
 }
 
+    /* Estilos para o corpo do card */
     .product-card .card-body {
-        padding: 8px; /* Reduz o espaçamento interno do card */
+        padding: 8px; /* Preenchimento interno do corpo do card */
         margin-left: 15px;
     }
 
+    /* Estilos para a imagem no topo do card */
     .product-card img.card-img-top {
-        border-radius: 30px; /* Arredonda as bordas da imagem */
+        border-radius: 30px;
         margin-top: 5px;
         width: 150px;
         height: 150px;
     }
 
+    /* Estilos para o título do card */
     .product-card h6.card-title {
         margin-top: 5px;
         margin-bottom: 5px;
-        font-family: "Glacial Bold"
+        font-family: "Glacial Bold";
     }
 
+    /* Estilos para o texto pequeno no card */
     .product-card .small-text {
-        margin-bottom: 5px; /* Espaçamento inferior do texto pequeno */
+        margin-bottom: 5px;
         font-size: 12px;
         font-family: "Glacial";
-        opacity: 0.5;
     }
 
+    /* Estilos para o texto principal em azul */
     .product-card p.text-primary {
         margin-top: -15px;
-        margin-bottom: 5px;
-        font-family: "Glacial Bold";
-        color: #385BD2;
+        margin-bottom: 0px;
     }
 
-    .product-card .button-container {
-        margin-top: 5px;
-    }
-
-/* Botões */
+/* Estilos para o contêiner dos botões */
 .button-container {
     margin-right: 15px;
 }
 
+/* Estilos globais para botões */
 .btn {
     padding: 2px;
     border-radius: 10px;
-    border: none;
+    border: none; /* Sem borda */
     font-family: 'Glacial';
     width: 80px;
-    font-size: 14px; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 14px;
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
 }
 
+/* Estilos para o botão "desativar" */
 .desativar-btn {
     background-color: rgba(227, 27, 33, 0.3); /* Cor vermelha com 30% de opacidade */
     color: black;
-    margin-left: 10px; /* Espaçamento à esquerda do botão desativar */
+    margin-left: 10px;
 }
 
+/* Estilos para o botão "editar" */
 .editar-btn {
     background-color: rgba(151, 227, 27, 0.25); /* Cor verde com 25% de opacidade */
     color: black;
-    margin-left: 20px; /* Espaçamento à esquerda do botão editar */
+    margin-left: 20px;
 }
 
+    /* Efeito ao passar o mouse sobre os botões */
     .desativar-btn:hover, .editar-btn:hover {
-        opacity: 0.8; /* Adiciona um efeito de opacidade ao passar o mouse */
+        opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
     }
 
 /* PEDIDOS EM ANDAMENTO  */
