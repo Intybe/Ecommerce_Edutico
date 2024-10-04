@@ -747,9 +747,11 @@ input[type="password"] {
 .info_prod_car p {
     margin-bottom: 5px;
 }
-.info_prod_car{
-    justify-content:center;
+
+.info_prod_car {
+    justify-content: center;
 }
+
 .produto {
     display: flex;
     justify-content: space-between;
@@ -1922,7 +1924,6 @@ textarea#cxDesc, input#cxPix {
 
 textarea#cxDesc {
     height: 100px;
-    resize: none; /*usuário n pode redimensionar o tamanho da caixo*/
 }
 
 button.btnAvancar {
@@ -1959,4 +1960,3 @@ button.btnAvancar {
     scrollbar-width: thin; /* Barra de rolagem fina no Firefox */
     scrollbar-color: #1F3C9D transparent; /* Azul claro para a thumb e transparente para o fundo */
 }
-

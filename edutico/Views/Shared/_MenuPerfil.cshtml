@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - edutico</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/edutico.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm border-bottom shadow-sm mb-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Link para a página inicial com uma imagem -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/imgs/logonav.png" alt="LOGO" style="height: 45px;">
+                </a>
+
+                <!-- Barra de pesquisa centralizada -->
+                <form class="d-flex justify-content-center align-items-center search-bar">
+                    <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial';">
+                    <img src="~/imgs/lupa.png" class="icone">
+                </form>
+
+                <!-- Ícones à direita -->
+                <div class="d-flex align-items-center icons">
+                    <!-- Coração -->
+                    <button class="btn-with-image">
+                        <img src="~/imgs/coracao.png" alt="curtidas" class="btn-nav">
+                    </button>
+
+                    <!-- Carrinho -->
+                    <a asp-controller="Cliente" asp-action="CarrinhoVazio">
+                        <button class="btn-with-image">
+                            <img src="~/imgs/carrinho.png" alt="carrinho" style="height:26px; width:auto;">
+                        </button>
+                    </a>
+
+                    <!-- Perfil -->
+                    <button class="btn-with-image">
+                        <!-- Chama o método da Controller "Login" que é para mopstrar a tela login-->
+                        <a asp-controller="Cliente" asp-action="MeuPerfil">
+                            <img src="~/imgs/perfil.png" alt="usuario" class="btn-nav">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container d-flex  justify-content-center " style="min-height:80vh;">
+        <div class="position-relative">
+            <div class="MinhaConta align-items-center py-4">
+                <div class="MenuLateral">
+                    <p class="Botoes align-items-center">Minha Conta</p>
+                    <p class="Botoes align-items-center">
+                        <a asp-controller="Cliente" asp-action="MeuPerfil">
+                            <img src="~/imgs/PerfilF.png" alt="Perfil" class="icon me-3">
+                            Meu Perfil
+                        </a>
+                    </p>
+                    <p class="Botoes align-items-center">
+                        <a asp-controller="Home" asp-action="AcompanharPedidos">
+                            <img src="~/imgs/Pedidos.png" alt="Pedidos" class="icon me-3">
+                            Meus Pedidos
+                        </a>
+                    </p>
+                    <p class="Botoes align-items-center">
+                        <a asp-controller="Home" asp-action="FavoritosCheio">
+                            <img src="~/imgs/favoritos.png" alt="favoritos" class="icon me-3">
+                            Meus Favoritos
+                        </a>
+                    </p>
+                    <p class="Botoes align-items-center">
+                        <a asp-controller="Home" asp-action="MeusCartoes">
+                            <img src="~/imgs/cartoes.png" alt="Cartoes" class="icon me-3">
+                            Meus Cartões
+                        </a>
+                    </p>
+                    <p class="Botoes align-items-center">
+                        <a asp-controller="Login" asp-action="Login">
+                            <img src="~/imgs/sair.png" alt="Logout" class="icon me-3">
+                            Sair
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 start-0 imgCataventos">
+                <img src="~/imgs/cataventos.png" alt="cataventos">
+            </div>
+        </div>
+
+        <div class="col-9 mb-4">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    <footer class=" mt-auto meurodape">
+        <div class="container">
+            @*p = padding y = eixo y (a margem vai ficar vertical) + 3 unidades -> py-3*@
+            <div class="row py-4 texto_footer">
+                <div class="col-6 col-md-2">
+                    <img src="~/imgs/logo.png" alt="logo" class="img-fluid" style="max-width:150px">
+                </div>
+
+                <div class="col-6 col-md-2 text-left text-md-left text-white ">
+                    <p class="titulo_footer">INSTITUIÇÃO</p>
+                    <p>Quem Somos</p>
+                    <p>Parcerias</p>
+                    <p>Trabalhe Conosco</p>
+                </div>
+                <div class="col-6 col-md-2 text-left text-white">
+                    <p class="titulo_footer">ATENDIMENTO</p>
+                    <p><img src="~/imgs/whatsapp.png" alt="whatsapp" class="icone">  (11) 00000-0000</p>
+                    <p><img src="~/imgs/chamada-telefonica.png" alt="telefone" class="icone">  (11) 3900-000</p>
+                </div>
+                <div class="col-6 col-md-2 text-left text-md-left text-white">
+                    <p class="titulo_footer">SIGA-NOS!</p>
+                    <p><img src="~/imgs/instagram.png" alt="instagram" class="icone">  eduticoo</p>
+                    <p><img src="~/imgs/facebook.png" alt="facebook" class="icone">  edutico</p>
+                </div>
+                <div class="col-4 col-md-3 text-center text-md-left text-white">
+                    <p class="titulo_footer">LOJA FÍSICA</p>
+                    <p>R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</p>
+                    <br />
+                    <div class="row">
+                        <div class="col col-lg-4">
+                            <p class="titulo_footer text-left">
+                                PAGAMENTOS DISPONÍVEIS
+                            </p>
+                        </div>
+                        <div class="col col-lg-8">
+                            <img src="~/imgs/cartao.png" alt="cartão" id="img_pag">
+                            <img src="~/imgs/pix.png" alt="PIX" id="img_pag">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="row py-0 text-white">
+                <div class="col text-center">&copy; 2024 Edutico | Política de Privacidade</div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

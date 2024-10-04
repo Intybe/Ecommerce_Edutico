@@ -1,169 +1,132 @@
 ﻿@{
+    Layout = "_MenuPerfil";
     ViewData["Title"] = "Meu Perfil";
 }
 @model edutico.Models.Cliente;
 
 <section class="meuperfil">
-    <div class="Perfil position-relative">
 
-        <div class="MinhaConta d-flex flex-column align-items-center py-4">
-            <div class="MenuLateral w-100">
-                <p class="Botoes align-items-center">Minha Conta</p>
-                <p class="Botoes align-items-center">
-                    <a asp-controller="Home" asp-action="ProdutosF">
-                        <img src="~/imgs/PerfilF.png" alt="Perfil" class="icon me-3">
-                        Meu Perfil
-                    </a>
-                </p>
-                <p class="Botoes align-items-center">
-                    <a asp-controller="Home" asp-action="PedidosAndamentoF">
-                        <img src="~/imgs/Pedidos.png" alt="Pedidos" class="icon me-3">
-                        Meus Pedidos
-                    </a>
-                </p>
-                <p class="Botoes align-items-center">
-                    <a asp-controller="Home" asp-action="PedidosAndamentoF">
-                        <img src="~/imgs/favoritos.png" alt="favoritos" class="icon me-3">
-                        Meus Favoritos
-                    </a>
-                </p>
-                <p class="Botoes align-items-center">
-                    <a asp-controller="Home" asp-action="PedidosAndamentoF">
-                        <img src="~/imgs/cartoes.png" alt="Cartoes" class="icon me-3">
-                        Meus Cartões
-                    </a>
-                </p>
-                <p class="Botoes align-items-center">
-                    <a asp-controller="Home" asp-action="PedidosAndamentoF">
-                        <img src="~/imgs/sair.png" alt="Logout" class="icon me-3">
-                        Sair
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="position-absolute bottom-0 start-0 imgCataventos">
-            <img src="~/imgs/cataventos.png" alt="cataventos">
-        </div>
-
-        <div class="col-9 areaCliente">
-            <!-- Mensagem de erro -->
-            @{
-                if (ViewData["msg"] == "Erro Desconhecido")
-                {
-                    ViewData["msg"] = null;
-                }
-                if (ViewData["msg"] != null)
-                {
-                    @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
-                    <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
-                }
+    <div class="areaCliente">
+        <!-- Mensagem de erro -->
+        @{
+            if (ViewData["msg"] == "Erro Desconhecido")
+            {
+                ViewData["msg"] = null;
             }
-            <p class="titulo_perfil">MEU PERFIL</p>
+            if (ViewData["msg"] != null)
+            {
+                @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
+                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+            }
+        }
+        <p class="titulo_perfil">MEU PERFIL</p>
 
-            <!-- Formulário de Dados Conta -->
-            <form id="formDadosConta" method="post" asp-controller="Cliente" asp-action="AtualizarClienteConta">
-                <div class="sub_perfil">
-                    <h5 id="glacial-bold">Dados Conta</h5>
-                    <button type="button" onclick="edicao(this, formDadosConta)" class="editar">Modificar</button>
+        <!-- Formulário de Dados Conta -->
+        <form id="formDadosConta" method="post" asp-controller="Cliente" asp-action="AtualizarClienteConta">
+            <div class="sub_perfil">
+                <h5 id="glacial-bold">Dados Conta</h5>
+                <button type="button" onclick="edicao(this, formDadosConta)" class="editar">Modificar</button>
+            </div>
+            <hr />
+            <div class="col-3">
+                <div class="info-grup">
+                    <p>E-mail</p>
+                    <label>@Model.email</label>
+                    <input type="text" id="email" name="email" value="@Model.email" style="display: none">
                 </div>
-                <hr />
+                <div class="info-grup">
+                    <p>Senha</p>
+                    <label>*******</label>
+                    <input type="text" id="senha" name="senha" placeholder="*******" style="display: none">
+                </div>
+            </div>
+        </form>
+
+        <!-- Formulário de Dados Pessoais -->
+        <form id="formDadosPessoais" method="post" asp-controller="Cliente" asp-action="AtualizarClienteDados">
+            <div class="sub_perfil">
+                <h5 id="glacial-bold">Dados Pessoais</h5>
+                <button type="button" onclick="edicao(this, formDadosPessoais)" class="editar">Modificar</button>
+            </div>
+            <hr />
+            <div class="d-flex">
                 <div class="col-3">
                     <div class="info-grup">
-                        <p>E-mail</p>
-                        <label>@Model.email</label>
-                        <input type="text" id="email" name="email" value="@Model.email" style="display: none">
+                        <p>Primeiro Nome</p>
+                        <label>@Model.nome</label>
+                        <input type="text" id="nomeprimeiro" name="nome" value="@Model.nome" style="display: none">
                     </div>
                     <div class="info-grup">
-                        <p>Senha</p>
-                        <label>*******</label>
-                        <input type="text" id="senha" name="senha" placeholder="*******" style="display: none">
+                        <p>Telefone</p>
+                        <label>@Model.telefone</label>
+                        <input type="text" id="tel" name="telefone" value="@Model.telefone" style="display: none">
                     </div>
                 </div>
-            </form>
+                <div class="col-3">
+                    <div class="info-grup">
+                        <p>Ultimo Nome</p>
+                        <label>@Model.sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" value="@Model.sobrenome" style="display: none">
+                    </div>
+                    <div class="info-grup">
+                        <p>CPF</p>
+                        <label>@Model.cpf</label>
+                        <input type="text" id="cpf" name="cpf" value="@Model.cpf" style="display: none">
+                    </div>
+                </div>
+            </div>
+        </form>
 
-            <!-- Formulário de Dados Pessoais -->
-            <form id="formDadosPessoais" method="post" asp-controller="Cliente" asp-action="AtualizarClienteDados">
-                <div class="sub_perfil">
-                    <h5 id="glacial-bold">Dados Pessoais</h5>
-                    <button type="button" onclick="edicao(this, formDadosPessoais)" class="editar">Modificar</button>
-                </div>
-                <hr />
-                <div class="d-flex">
-                    <div class="col-3">
-                        <div class="info-grup">
-                            <p>Primeiro Nome</p>
-                            <label>@Model.nome</label>
-                            <input type="text" id="nomeprimeiro" name="nome" value="@Model.nome" style="display: none">
-                        </div>
-                        <div class="info-grup">
-                            <p>Telefone</p>
-                            <label>@Model.telefone</label>
-                            <input type="text" id="tel" name="telefone" value="@Model.telefone" style="display: none">
-                        </div>
+        <!-- Formulário de Endereço -->
+        <form id="formEndereco" method="post" asp-controller="Cliente" asp-action="AtualizarClienteEndereco">
+            <div class="sub_perfil">
+                <h5 id="glacial-bold">Endereço</h5>
+                <button type="button" onclick="edicao(this, formEndereco)" class="editar">Modificar</button>
+            </div>
+            <hr />
+            <div class="d-flex">
+                <div class="col-3">
+                    <div class="info-grup">
+                        <p>Logradouro</p>
+                        <label>@Model.logradouro</label>
+                        <input type="text" id="logradouro" name="logradouro" value="@Model.logradouro" style="display: none">
                     </div>
-                    <div class="col-3">
-                        <div class="info-grup">
-                            <p>Ultimo Nome</p>
-                            <label>@Model.sobrenome</label>
-                            <input type="text" id="sobrenome" name="sobrenome" value="@Model.sobrenome" style="display: none">
-                        </div>
-                        <div class="info-grup">
-                            <p>CPF</p>
-                            <label>@Model.cpf</label>
-                            <input type="text" id="cpf" name="cpf" value="@Model.cpf" style="display: none">
-                        </div>
+                    <div class="info-grup">
+                        <p>CEP</p>
+                        <label>@Model.cep</label>
+                        <input type="text" id="cep" name="cep" value="@Model.cep" style="display: none">
                     </div>
                 </div>
-            </form>
-
-            <!-- Formulário de Endereço -->
-            <form id="formEndereco" method="post" asp-controller="Cliente" asp-action="AtualizarClienteEndereco">
-                <div class="sub_perfil">
-                    <h5 id="glacial-bold">Endereço</h5>
-                    <button type="button" onclick="edicao(this, formEndereco)" class="editar">Modificar</button>
-                </div>
-                <hr />
-                <div class="d-flex">
-                    <div class="col-3">
-                        <div class="info-grup">
-                            <p>Logradouro</p>
-                            <label>@Model.logradouro</label>
-                            <input type="text" id="logradouro" name="logradouro" value="@Model.logradouro" style="display: none">
-                        </div>
-                        <div class="info-grup">
-                            <p>CEP</p>
-                            <label>@Model.cep</label>
-                            <input type="text" id="cep" name="cep" value="@Model.cep" style="display: none">
-                        </div>
+                <div class="col-3">
+                    <div class="info-grup">
+                        <p>Bairro</p>
+                        <label>@Model.bairro</label>
+                        <input type="text" id="bairro" name="bairro" value="@Model.bairro" style="display: none">
                     </div>
-                    <div class="col-3">
-                        <div class="info-grup">
-                            <p>Bairro</p>
-                            <label>@Model.bairro</label>
-                            <input type="text" id="bairro" name="bairro" value="@Model.bairro" style="display: none">
-                        </div>
-                        <div class="info-grup">
-                            <p>Cidade</p>
-                            <label>@Model.cidade</label>
-                            <input type="text" id="cidade" name="cidade" value="@Model.cidade" style="display: none">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="info-grup">
-                            <p>Nº Residência</p>
-                            <label>@Model.numEnd</label>
-                            <input type="text" id="num" name="numEnd" value="@Model.numEnd" style="display: none">
-                        </div>
-                        <div class="info-grup">
-                            <p>UF</p>
-                            <label>@Model.uf</label>
-                            <input type="text" id="uf" name="uf" value="@Model.uf" class="info-perfil" style="display: none">
-                        </div>
+                    <div class="info-grup">
+                        <p>Cidade</p>
+                        <label>@Model.cidade</label>
+                        <input type="text" id="cidade" name="cidade" value="@Model.cidade" style="display: none">
                     </div>
                 </div>
-            </form>
-        </div>
+                <div class="col-3">
+                    <div class="info-grup">
+                        <p>Nº Residência</p>
+                        <label>@Model.numEnd</label>
+                        <input type="text" id="num" name="numEnd" value="@Model.numEnd" style="display: none">
+                    </div>
+                    <div class="info-grup">
+                        <p>UF</p>
+                        <label>@Model.uf</label>
+                        <input type="text" id="uf" name="uf" value="@Model.uf" class="info-perfil" style="display: none">
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
+
+
+
 </section>
 
 <script>

@@ -132,6 +132,35 @@
         habilidadesSelecionadas.value = habilidades.join(', ');
     }
 
+    /*Quantidade de carrinho */
+    const valorInput = document.getElementById("valor");
+    const incrementarBtn = document.getElementById("incrementar");
+    const decrementarBtn = document.getElementById("decrementar");
+
+    incrementarBtn.addEventListener("click", function () {
+        valorInput.value = parseInt(valorInput.value) + 1;
+    });
+
+    decrementarBtn.addEventListener("click", function () {
+        if (valorInput.value > 0) {  // Evitar valores negativos
+            valorInput.value = parseInt(valorInput.value) - 1;
+        }
+    });
+
+    valorInput.addEventListener("input", function () {
+        // Evitar que o input tenha valores negativos
+        if (valorInput.value < 0) {
+            valorInput.value = 0;
+        }
+    });
+
+    // Função para fechar o card
+    const fecharCard = document.getElementById("fecharCard");
+    const cardProduto = document.getElementById("cardProduto");
+
+    fecharCard.addEventListener("click", function () {
+        cardProduto.style.display = "none";
+    });
   
 
 

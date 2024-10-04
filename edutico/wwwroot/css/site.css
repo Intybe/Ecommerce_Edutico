@@ -230,18 +230,17 @@ html, body {
         font-size: 20px;
     }
 
-    .form-group input[type="text"],
-    input[type="password"] {
+    .form-group input {
         width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 15px;
     }
 
-        .form-group input[type="text"]:focus,
-        input[type="password"]:focus {
+        .form-group input:focus {
             border: 1px solid #E37B1B; /* Cor da borda ao focar */
             outline: none; /* Remove o contorno padrão */
+            box-shadow: none;
         }
 
 .forgot-password {
@@ -276,7 +275,7 @@ html, body {
     }
 
 .Criar-btn {
-    background: white;
+    background: transparent;
     border: 2px solid #e74c3c;
     color: #e74c3c;
     width: 150px;
@@ -294,10 +293,8 @@ html, body {
     }
 
 .imgMaeFilho {
-    height: 300px;
-    width: 3px;
-    margin-top: -90px;
-    margin-left: 38px;
+    height: auto;
+    width: 60%;
 }
 
 /*Cadastro Cliente*/
@@ -350,9 +347,8 @@ html, body {
 .botao_cadastro {
     margin-inline: 30px;
     margin-bottom: 10px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    display: flex;
+    justify-content: end;
 }
 
 .cadastro-btn {
@@ -499,7 +495,7 @@ html, body {
     justify-items: center;
     justify-content: center;
     align-items: center;
-    height: 340px;
+    height: 430px;
     width: 600px;
 }
 
@@ -527,16 +523,14 @@ html, body {
 
 
 
-    .form-senha input[type="text"],
-    input[type="password"] {
+    .form-senha input {
         width: 100%;
         padding: 8px;
         border: 1px solid black;
         border-radius: 10px;
     }
 
-        .form-senha input[type="text"]:focus,
-        input[type="password"]:focus {
+        .form-senha input:focus {
             border: 1px solid #1F3C9D; /* Cor da borda ao focar */
             outline: none; /* Remove o contorno padrão */
         }
@@ -597,7 +591,7 @@ html, body {
 
 /* Sidebar Perfil*/
 .MinhaConta {
-    width: 900px;
+    width: 300px;
     height: 325px;
     background-color: white;
     border-radius: 20px;
@@ -606,6 +600,7 @@ html, body {
     border: 1px solid #b2b2b2;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
+
 
     .MinhaConta .MenuLateral {
         font-family: 'Glacial Bold';
@@ -715,33 +710,6 @@ html, body {
 
 
 
-/*Detalhes Produto*/
-
-.base-prod-detalhe {
-    background: white;
-    border-radius: 20px;
-    border: 1px solid #808080;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.provi {
-    background-color: #808080;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 25px;
-    height: 25px;
-}
-
-.btncar {
-    width: 100%;
-    padding: 10px;
-    background: blue;
-    color: white;
-    justify-content: center;
-}
 
 /*Detalhe Produto*/
 
@@ -1035,10 +1003,11 @@ html, body {
 
 .areaCliente {
     margin-left: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     align-items: center;
     padding-inline: 25px;
     background: white;
+    border: 1px solid rgba(0, 0, 0, 0.30);
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     font-family: 'Glacial';
 }
@@ -1088,6 +1057,17 @@ html, body {
     height: auto;
     padding-block: 10px;
 }
+
+    .info-grup input {
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+    }
+
+        .info-grup input:focus {
+            border: 1px solid blue;
+            outline: none;
+        }
 
 .editar {
     border: none;

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj": {}
+    "C:\\Users\\Rebeka\\Desktop\\ajustes\\edutico\\edutico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj": {
+    "C:\\Users\\Rebeka\\Desktop\\ajustes\\edutico\\edutico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj",
+        "projectUniqueName": "C:\\Users\\Rebeka\\Desktop\\ajustes\\edutico\\edutico.csproj",
         "projectName": "edutico",
-        "projectPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj",
-        "packagesPath": "C:\\Users\\flavi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\obj\\",
+        "projectPath": "C:\\Users\\Rebeka\\Desktop\\ajustes\\edutico\\edutico.csproj",
+        "packagesPath": "C:\\Users\\Rebeka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rebeka\\Desktop\\ajustes\\edutico\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\flavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rebeka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

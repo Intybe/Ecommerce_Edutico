@@ -1,15 +1,14 @@
 ﻿@model edutico.Models.Login
 
 @{
-    Layout = "_Layout";
+    Layout = "_Login";
     ViewData["Title"] = "Login";
 }
-
-<section class="my-3">
-    <div class="containerLogin container inicial position-relative">
+<section class="my-3 align-content-center" style="height: 75vh; z-index: 2; position: relative;">
+    <div class="containerLogin container inicial">
         <div class="row">
             <!-- Formulário de Login -->
-            <div class="col-lg-6">
+            <div class="col-4">
                 <div class="p-3">
                     <div class="TxtBemVindo">
                         <p class="fs-4">Seja Bem-Vindo(a) de volta,</p>
@@ -39,33 +38,20 @@
                                 <input asp-for="senha" type="password" id="password" name="senha" class="form-control" placeholder="Digite aqui sua senha" required>
                             </div>
                             <div class="form-group d-flex justify-content-end">
-                                <a href="#" class="forgot-password">Esqueci a senha</a>
+                                <a href="@Url.Action("EsqueceuSenha", "Home")" class="forgot-password">Esqueci a senha</a>
                             </div>
 
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-3">
                                 <button type="submit" asp-controller="Login" asp-action="Login" class="btn Entrar-btn">Entrar</button>
-                                <button type="submit" asp-controller="Home" asp-action="CadastroCliente" class="btn Criar-btn">Criar conta</button>
+                                <button type="submit" asp-controller="Cliente" asp-action="CadastroCliente" class="btn Criar-btn">Criar conta</button>
                             </div>
                         </form>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
 </section>
-
-<!-- Imagem Mae e Filho -->
-<div class="position-relative">
-    <div class="position-absolute bottom-0 end-0">
-        <div class="col-lg-12 d-flex justify-content-end">
-            <img src="~/imgs/img_mae_filho.png" alt="Menino Feliz" class="imgMaeFilho">
-        </div>
-    </div>
-</div>
-
 
 
 
