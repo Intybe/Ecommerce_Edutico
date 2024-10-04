@@ -165,6 +165,7 @@ body {
             padding: 5px;
             border: none;
             border-radius: 4px;
+            outline: none;
         }
             /*TEXTO "ESGOTADOS ETC*/
             .header .sort select option {
@@ -544,6 +545,9 @@ td {
     }
 
 /*CADASTRAR PRODUTO*/
+
+
+/*LADO ESQUERDO*/
 .form-group {
     margin-bottom: 15px;
     margin-left: 20px;
@@ -560,61 +564,55 @@ label {
     color: red;
 }
 
-.form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 12px;
-    outline: none;
-    box-sizing: border-box;
-}
 
-    .form-control:focus {
-        border-color: #000;
-    }
 
-#CxTipo1 {
-    border: 0.5px solid #191919;
+#InputType1 {
+    border: 0.5px solid #000;
     height: 30px;
     width: 400px;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
-    #CxTipo1:focus {
+    #InputType1:focus {
         border-color: #000;
     }
 
+
+
+#ValorUni {
+    border: 1px solid #000;
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
 #CxDesc {
-    border: 0.5px solid #191919;
+    border: 0.5px solid #000;
     height: 120px;
     border-radius: 5px;
     margin-bottom: 10px;
     width: 400px;
+    padding-top: 10px; /* Espaçamento interno superior */
+    padding-left: 10px; /* Opcional: ajusta o espaçamento à esquerda */
+    resize: none; 
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+    font-size: 12px;
 }
 
     #CxDesc:focus {
-        border-color: #000;
+        border-color: #191919;
     }
 
-#CxTipo2 {
-    border: 0.5px solid #191919;
+.ClassIndProd {
+    border: 0.5px solid #000;
     height: 30px;
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-    #CxTipo2:focus {
-        border-color: #000;
-    }
-
-.Select {
-    border: 0.5px solid #191919;
-    height: 25px;
-    width: 300px;
+    width: 180px;
     font-size: 12px;
     border-radius: 5px;
     margin-left: 4px;
@@ -622,24 +620,60 @@ label {
 }
 
 
-.form-group2 {
-    margin-top: -500px;
-    margin-bottom: 15px;
-    margin-left: 525px;
-    width: 35%;
-    height: auto;
-    padding: 10px;
-}
-
-.Select2 {
-    border: 0.5px solid #191919;
-    height: 25px;
+.CatBrinquedo {
+    border: 0.5px solid #000;
+    height: 30px;
     width: 400px;
     font-size: 12px;
     border-radius: 5px;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-bottom: 10px;
 }
+
+#Estoque {
+    border: 1px solid #000;
+    height: 30px;
+    width: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+
+/*LADO DIREITO*/
+.form-group2 {
+    margin-right: 0; /* Remove espaçamento extra à direita */
+    padding-right: 0; /* Remove preenchimento extra à direita */
+}
+
+.row.d-flex {
+    margin-right: -15px; /* Aproxima o lado direito da borda */
+}
+
+/*chips*/
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.chip {
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Glacial';
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .chip.selected {
+        background-color: #385BD2;
+        color: white;
+    }
 
 .btns {
     margin-top: 60px;
@@ -680,7 +714,7 @@ label {
 
 .picture {
     width: 400px;
-    height: 300px;
+    height: 290px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1380,28 +1414,6 @@ label {
 }
 
 
-/* TESTE CADASTRO DE PRODUTOS, NÃO MEXER ENQUANTO A TELA OFICIAL NÃO TIVER PRONTA */
-.chips-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.chip {
-    background-color: #e0e0e0;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-family: 'Glacial';
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-    .chip.selected {
-        background-color: #385BD2;
-        color: white;
-    }
 
 /*TELA DETALHES DEVOLUÇÃO (A APROVAR)*/
 .MensagemCliente {

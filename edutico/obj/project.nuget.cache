@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iBS72O8uUQU=",
+  "dgSpecHash": "/um3f7pHekM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\EduticoOFC\\edutico\\edutico.csproj",
+  "projectFilePath": "C:\\Users\\flavi\\OneDrive - Etec Centro Paula Souza\\Trabalhos2024\\TCC\\EduTicos\\Programação\\Edutico\\edutico\\edutico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flavi\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\flavi\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

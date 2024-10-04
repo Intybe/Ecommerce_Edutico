@@ -117,32 +117,23 @@
         });
     });
 
-    const valorInput = document.getElementById("valor");
-    const incrementarBtn = document.getElementById("incrementar");
-    const decrementarBtn = document.getElementById("decrementar");
+    function selecionarHabilidade(chip) {
+        // Adiciona ou remove a classe 'selected' ao chip
+        chip.classList.toggle('selected');
 
-    incrementarBtn.addEventListener("click", function () {
-        valorInput.value = parseInt(valorInput.value) + 1;
-    });
+        // Obtém todas as habilidades selecionadas
+        const habilidadesSelecionadas = document.getElementById('habilidadesSelecionadas');
+        const selectedChips = document.querySelectorAll('.chip.selected');
 
-    decrementarBtn.addEventListener("click", function () {
-        if (valorInput.value > 0) {  // Evitar valores negativos
-            valorInput.value = parseInt(valorInput.value) - 1;
-        }
-    });
+        // Cria um array com as habilidades selecionadas
+        const habilidades = Array.from(selectedChips).map(chip => chip.textContent);
 
-    valorInput.addEventListener("input", function () {
-        // Evitar que o input tenha valores negativos
-        if (valorInput.value < 0) {
-            valorInput.value = 0;
-        }
-    });
+        // Atualiza o campo escondido com as habilidades selecionadas
+        habilidadesSelecionadas.value = habilidades.join(', ');
+    }
 
-    // Função para fechar o card
-    const fecharCard = document.getElementById("fecharCard");
-    const cardProduto = document.getElementById("cardProduto");
+  
 
-    fecharCard.addEventListener("click", function () {
-        cardProduto.style.display = "none";
-    });
+
+
 });

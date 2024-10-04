@@ -1922,6 +1922,7 @@ textarea#cxDesc, input#cxPix {
 
 textarea#cxDesc {
     height: 100px;
+    resize: none; /*usuário n pode redimensionar o tamanho da caixo*/
 }
 
 button.btnAvancar {
