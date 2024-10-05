@@ -77,13 +77,12 @@ namespace edutico.Repositorio
                 // Cria uma nova instância do cartão para cada linha retornada
                 Cartao cartao = new Cartao()
                 {
-                    CodLogin = CodLogin,
-                    NumCartao = Convert.ToDecimal(dr["numCartao"]),
-                    NomeTitular = dr["nomeTitular"].ToString(),
-                    DataVali = dr["dataVali"].ToString(),
-                    Bandeira = Convert.ToInt32(dr["bandeira"])
+                    codLogin = CodLogin,
+                    numCartao = Convert.ToDecimal(dr["numCartao"]),
+                    nomeTitular = dr["nomeTitular"].ToString(),
+                    dataVali = dr["dataVali"].ToString(),
+                    bandeira = Convert.ToInt32(dr["bandeira"])
                 };
-                
 
                 // Adiciona o cartão à lista
                 cartoes.Add(cartao);

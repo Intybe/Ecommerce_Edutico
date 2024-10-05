@@ -32,7 +32,7 @@
                     <!--o que aparece antes de clicar para expandir-->
                     <div class="card-sumario">
 
-                        <p id="glacial-bold"><img src="~/imgs/master.png" alt="Master" class="me-2" />9087</p>
+                                <p id="glacial-bold"><img src="~/imgs/master.png" alt="Master" class="me-2" />@cartoes.numCartao.ToString().Substring(cartoes.numCartao.ToString().Length - 4)</p>
                         <!--botão que expande-->
                         <button class="setaabrefecha" onclick="expandirCartao('card-info-1', 'seta-1')">
                             <img id="seta-1" src="~/imgs/setalado.png" alt="Seta" class="setaabre">
@@ -59,9 +59,9 @@
                                     <p>****</p>
                                     <p>****</p>
                                     <p>*</p>
-                                    <p>@cartoes.NumCartao.ToString().Substring(cartoes.NumCartao.ToString().Length - 4)</p>
+                                    <p>@cartoes.numCartao.ToString().Substring(cartoes.numCartao.ToString().Length - 4)</p>
                                 </div>
-                                <p class="text-esquerda">Data de validade: @cartoes.DataVali</p>
+                                <p class="text-esquerda">Data de validade: @cartoes.dataVali</p>
                             </div>
 
                         </div>

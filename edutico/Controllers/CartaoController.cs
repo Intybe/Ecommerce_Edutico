@@ -41,22 +41,22 @@ namespace edutico.Controllers
         }
         public IActionResult MeusCartoes()
         {
-                // Pega o codLogin do Usuário Logado através da sessão
-                var codLogin = _loginSessao.GetLogin();
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
 
-                if (codLogin == null)
-                {
-                    // Se o cliente não estiver logado, redireciona para a página de login
-                    return RedirectToAction("Login", "Login");
-                }
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
 
-                List<Cartao> cartoes = new List<Cartao>();
+            List<Cartao> cartoes = new List<Cartao>();
 
-                // Consulta a lista de cartões cadastrados para o usuário logado
-                cartoes = _cartaoRepositorio.ConsultarCartao(codLogin.codLogin);
+            // Consulta a lista de cartões cadastrados para o usuário logado
+            cartoes = _cartaoRepositorio.ConsultarCartao(codLogin.codLogin);
 
-                // Passa a lista de cartões para a view
-                return View(cartoes);
+            // Passa a lista de cartões para a view
+            return View(cartoes);
 
         }
     }

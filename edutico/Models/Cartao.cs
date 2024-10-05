@@ -2,11 +2,12 @@
 {
     public class Cartao
     {
-        public decimal NumCartao { get; set; }
-        public string NomeTitular { get; set; }
-        public string DataVali { get; set; }
-        public int Bandeira { get; set; }
-        public int CodLogin { get; set; }
+        public int codCartao { get; set; }
+        public decimal numCartao { get; set; }
+        public string nomeTitular { get; set; }
+        public string dataVali { get; set; }
+        public int bandeira { get; set; }
+        public int codLogin { get; set; }
 
     }
 }
