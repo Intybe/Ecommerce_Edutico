@@ -622,9 +622,17 @@ Begin
 	If exists(
 		Select codProd from tbItemPedido where codProd = vCodProd and 
         NF in (Select NF from tbPedido where codLogin = vCodLogin and statusPedido >= 2)) then
+        
+        If not exists(Select codProd, codLogin from tbavaliacao where codLogin = vCodLogin and codProd = vCodProd) then
 		
-        Insert into tbAvaliacao(qtdEstrela, comentario, codLogin, codProd) -- Insere os dados --
-						values(vQtdEstrela, vComentario, vCodLogin, vCodProd);
+			Insert into tbAvaliacao(qtdEstrela, comentario, codLogin, codProd) -- Insere os dados --
+							values(vQtdEstrela, vComentario, vCodLogin, vCodProd);
+			
+			Select('Avaliação Registrada!');
+		end if;
+	else
+		Select('É necessário comprar o produto para avaliar!');
+		
 	End if;
 End $$
 

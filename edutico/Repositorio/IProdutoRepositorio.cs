@@ -9,5 +9,7 @@ namespace edutico.Repositorio
         IEnumerable<Produto> ConsultarProdutoLancamento();
 
         Produto ConsultarDetalheProduto(decimal codProd);
+
+        string CadastrarAvaliacao(int qtdEstrela, string comentario, int codLogin, decimal codProd);
     }
 }

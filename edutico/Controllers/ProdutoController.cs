@@ -95,5 +95,27 @@ namespace edutico.Controllers
 
             return View(produto);
         }
+
+        public IActionResult Espelho()
+        {
+            return View();
+        }
+
+        public IActionResult CadastrarAvaliacao(decimal codProd, int qtdEstrela, string comentario)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+
+            string mensagem = _produtoRepositorio.CadastrarAvaliacao(qtdEstrela, comentario, codLogin.codLogin, codProd);
+
+            TempData["msg"] = mensagem;
+            return RedirectToAction("DetalhesProduto", new { codProd });
+        }
     }
 }

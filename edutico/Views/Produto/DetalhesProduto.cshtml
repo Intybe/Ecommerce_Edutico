@@ -97,19 +97,36 @@
 
                     </div>
 
+                    <!-- Mensagem -->
+                    @if (TempData["msg"] != null)
+                    {
+                        <div class="alert alert-success">
+                            @TempData["msg"]
+                        </div>
+                    }
 
-                    <h6 id="glacial-bold" class="text-center">FAÇA SUA AVALIAÇÃO!</h6>
-                    <p class="mt-0">Dê uma nota geral para o produto</p>
-                    <div class="d-flex">
-                        <img src="~/imgs/Star.png" class="icone ">
-                        <img src="~/imgs/Star.png" class="icone ">
-                        <img src="~/imgs/Star.png" class="icone ">
-                        <img src="~/imgs/Star.png" class="icone">
-                        <img src="~/imgs/Star.png" class="icone">
-                    </div>
-                    <p>Escreva o que você achou!</p>
-                    <textarea placeholder="Justifique sua resposta para ajudar outros consumidores :)"></textarea>
-                    <button class="btnava">Enviar avaliação</button>
+                    <form asp-controller="Produto" asp-action="CadastrarAvaliacao" method="post">
+                        <h6 id="glacial-bold" class="text-center">FAÇA SUA AVALIAÇÃO!</h6>
+                        <p class="mt-0">Dê uma nota geral para o produto</p>
+                        <div class="d-flex">
+                            <img src="~/imgs/Star.png" class="icone" id="star1" onclick="valorEstrela(1, this)">
+                            <img src="~/imgs/Star.png" class="icone" id="star2" onclick="valorEstrela(2, this)">
+                            <img src="~/imgs/Star.png" class="icone" id="star3" onclick="valorEstrela(3, this)">
+                            <img src="~/imgs/Star.png" class="icone" id="star4" onclick="valorEstrela(4, this)">
+                            <img src="~/imgs/Star.png" class="icone" id="star5" onclick="valorEstrela(5, this)">
+                        </div>
+
+                        <input type="text" id="qtdEstrela" name="qtdEstrela" value="" style="display: none" />
+
+                        <input type="text" name="codProd" value="@Model.codProd" style="display: none" />
+
+                        <p>Escreva o que você achou!</p>
+                        
+                        <textarea name="comentario" placeholder="Justifique sua resposta para ajudar outros consumidores :)"></textarea>
+                        
+                        <button type="submit" class="btnava">Enviar avaliação</button>
+                    </form>
+                    
 
 
                 </div>
@@ -280,3 +297,12 @@
         </div>
     </div>
 </div>
+
+<script>
+    function valorEstrela(valor, estrelaId){
+        const qtdEstrela = document.querySelector('#qtdEstrela');
+
+        qtdEstrela.value = valor;
+        estrelaId.src = "wwwroot/imgs/aprovado.png";
+    }
+</script>
