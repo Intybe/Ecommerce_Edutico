@@ -674,7 +674,7 @@ html, body {
 
     .Vazio img {
         display: block; /* Assegura que a imagem se comporte como um bloco, permitindo o centrar com margin auto */
-        width: 250px;
+        width: auto;
         height: 355px;
     }
 
@@ -1052,19 +1052,19 @@ html, body {
     border-radius: 15px;
 }
 
-.info-grup {
+.areaCliente .info-grup {
     margin-block: 10px;
     height: auto;
     padding-block: 10px;
 }
 
-    .info-grup input {
+    .areaCliente .info-grup input {
         border-radius: 10px;
         padding: 5px 10px;
         border: 1px solid gray;
     }
 
-        .info-grup input:focus {
+        .areaCliente .info-grup input:focus {
             border: 1px solid blue;
             outline: none;
         }
@@ -1074,6 +1074,7 @@ html, body {
     background: none;
     color: #1C3FB9;
     text-decoration: underline;
+    margin-bottom:0px;
 }
 
 
@@ -1414,12 +1415,6 @@ input[type='radio']:checked + .custom-radio span { /* o "+"  é um seletor que ab
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
-    .base-cartao-com select {
-        width: 50%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 15px;
-    }
 
     .base-cartao-com hr {
         margin-block: 10px;
@@ -1437,7 +1432,33 @@ input[type='radio']:checked + .custom-radio span { /* o "+"  é um seletor que ab
     font-family: 'Glacial Bold';
     font-size: 20px;
 }
+.base-cartao-com .info-grup {
+    margin-block: 10px;
+    height: auto;
+    padding-block: 10px;
+}
 
+   .base-cartao-com .info-grup input {
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+    }
+
+        .base-cartao-com .info-grup input:focus {
+            border: 1px solid blue;
+            outline: none;
+        }
+
+    .base-cartao-com .info-grup select {
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+    }
+
+        .base-cartao-com .info-grup select:focus {
+            border: 1px solid blue;
+            outline: none;
+        }
 .vercartao {
     background: transparent;
     border: none;

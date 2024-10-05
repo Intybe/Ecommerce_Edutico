@@ -202,118 +202,6 @@ html, body {
     }
 
 
-/*TELA LOGIN*/
-.containerLogin {
-    height: 583px; /*delimita a altura (para a img ficar centralizada*/
-    margin-left: 10px;
-}
-
-.container .TxtBemVindo {
-    font-family: 'Glacial Bold';
-    margin-top: 70px;
-    width: 500px;
-}
-
-.container .facalogin {
-    font-family: 'Glacial Bold';
-    margin-top: -21px;
-    width: 500px;
-}
-
-.container .hr {
-    width: 210px;
-    height: 2px;
-    background: linear-gradient(to right, yellow, red);
-    margin-top: -18px;
-}
-
-/*FORM LOGIN*/
-.areaLogin {
-    width: 400px;
-    margin-top: 35px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-    .form-group label {
-        font-family: 'Glacial';
-        display: block;
-        margin-bottom: 5px;
-        font-size: 20px;
-    }
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-}
-
-    input[type="text"]:focus,
-    input[type="password"]:focus {
-        border: 1px solid #E37B1B; /* Cor da borda ao focar */
-        outline: none; /* Remove o contorno padrão */
-    }
-
-.forgot-password {
-    display: block;
-    text-align: right;
-    font-size: 17px;
-    color: #0066cc;
-}
-
-/*BOTÕES*/
-.button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.Entrar-btn {
-    background: linear-gradient(to right, #E37B1B, #E31B21);
-    color: white;
-    width: 150px;
-    height: 44px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    font-weight: bold;
-}
-
-    .Entrar-btn:hover {
-        color: white;
-        border: 2px solid #e74c3c;
-        opacity: 1;
-    }
-
-.Criar-btn {
-    background: white;
-    border: 2px solid #e74c3c;
-    color: #e74c3c;
-    width: 150px;
-    height: 44px;
-    padding: 8px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    align-items: center;
-}
-
-    .Criar-btn:hover {
-        background: #e74c3c;
-        color: white;
-    }
-
-.imgMaeFilho {
-    height: 300px;
-    width: 3px;
-    margin-top: -90px;
-    margin-left: 38px;
-}
-
 /*Cadastro Cliente*/
 
 .base-cli {
@@ -1274,69 +1162,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 
-/* MEU PERFIL*/
-.Perfil {
-    display: flex;
-    padding: 20px;
-}
-
-.areaCliente {
-    margin-left: 20px;
-    border-radius: 10px;
-    align-items: center;
-    padding-inline: 25px;
-    background: white;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    font-family: 'Glacial';
-}
-
-    .areaCliente hr {
-        margin: 4px;
-    }
-
-    .areaCliente p {
-        margin-bottom: 5px;
-    }
-
-.titulo_perfil {
-    font-family: 'Edutico';
-    font-size: 30px;
-    color: #1F3C9D;
-    margin-block: 10px;
-}
-
-.sub_perfil {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-}
-
-    .sub_perfil h5 {
-        margin-bottom: 0;
-    }
-
-.info-grup input[disabled] {
-    font-family: 'Glacial Bold';
-    color: gray;
-    border: none;
-    font-size: 14px;
-    background: none;
-}
-
-.info-grup {
-    margin-block: 10px;
-    height: auto;
-    padding-block: 10px;
-}
-
-.editar {
-    border: none;
-    background: none;
-    color: #1C3FB9;
-    text-decoration: underline;
-}
-
-
 /*DETALHES PEDIDO*/
 .tudodedetalhe {
     height: 80vh;
@@ -1622,6 +1447,44 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 20px;
 }
 
+.sub_perfil {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.base-cartao-com .info-grup input[disabled] {
+    font-family: 'Glacial Bold';
+    color: gray;
+    border: none;
+    font-size: 14px;
+    background: none;
+}
+.base-cartao-com .info-grup {
+    margin-block: 10px;
+    height: auto;
+    padding-block: 10px;
+}
+
+.base-cartao-com .info-grup input {
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+}
+
+    .base-cartao-com .info-grup input:focus {
+        border: 1px solid blue;
+        outline: none;
+    }
+
+
+.editar {
+    border: none;
+    background: none;
+    color: #1C3FB9;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
 /*customização radio buttons*/
 input[type='radio'] {
     display: none;

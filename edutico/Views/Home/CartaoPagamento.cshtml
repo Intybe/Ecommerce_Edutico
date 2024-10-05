@@ -24,6 +24,7 @@
                         <img src="~/imgs/master.png" alt="iconecartao" width="50">
                         <p>1234</p>
                     </label>
+                    <!--esse botao leva pra view PagamentoCartao-->
                     <button class="vercartao"><img src="~/imgs/setalado.png" /></button>
                 </div>
 
@@ -38,7 +39,7 @@
                         <img src="~/imgs/master.png" alt="iconecartao" width="50">
                         <p>1234</p>
                     </label>
-                    <button class="vercartao"><img src="~/imgs/setalado.png" /></button>
+                    <button class="vercartao" ><img src="~/imgs/setalado.png" /></button>
                 </div>
                 <hr />
                 <div class="radio-container justify-content-between d-flex">
@@ -64,25 +65,25 @@
         <br />
        
             <form>
-                <div class="campo mb-3">
+                <div class="info-grup d-flex flex-column mb-3">
                     <label for="titular">Nome do titular <span class="obg">*</span></label>
                     <input type="text" placeholder="Digite aqui o número do cartão" />
                 </div>
-                <div class="campo mb-3">
+                <div class="info-grup d-flex flex-column mb-3">
                     <label for="titular">Número do cartão <span class="obg">*</span></label>
                     <input type="text" placeholder="Digite aqui o número do cartão" />
                 </div>
-                <div class="d-flex campo mb-3">
-                    <div class="me-3">
+                <div class="d-flex info-grup">
+                    <div class="me-3 d-flex flex-column w-100">
                         <label for="validade">Data de validade<span class="obg">*</span></label>
                         <input type="text" placeholder="MM/AA" />
                     </div>
-                    <div>
+                    <div class="d-flex flex-column w-100">
                         <label for="cvv">Código de segurança<span class="obg">*</span></label>
                         <input type="text" placeholder="CVV" />
                     </div>
                 </div>
-                <div class="col-4 campo">
+                <div class=" d-flex flex-column col-6 info-grup">
                     <label for="parcelas">Parcelas <span class="obg">*</span></label>
                     <select id="parcelas" type="text" name="parcelas" placeholder="Selecione a quantidade de parcelas" required>
                         <option value="1x"> 1X </option>

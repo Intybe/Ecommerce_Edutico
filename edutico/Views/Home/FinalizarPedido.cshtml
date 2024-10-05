@@ -41,43 +41,51 @@
         <div class="base-cartao-com">
             <div class="sub_perfil">
                 <h5 id="glacial-bold">Endereço</h5>
-                <button type="button" class="editar">Editar</button>
+                <button type="button" onclick="edicao(this, formEnderecoPedido)" class="editar">Editar</button>
             </div>
             <hr />
-            <div class="d-flex">
-                <div class="col-3">
-                    <div class="info-ped mb-2">
-                        <p>Logradouro</p>
-                        <p id="info_perfil">Rua dos que não acham</p>
+            <form id="formEnderecoPedido">
+                <div class="d-flex">
+                    <div class="col-4">
+                        <div class="info-grup">
+                            <p>Logradouro</p>
+                            <label id="info_perfil">LALALALALALLA</label>
+                            <input type="text" id="logradouro " name="logradouro" value="LALALALALALLA" style="display: none">
+                        </div>
+                        <div class="info-grup">
+                            <p>CEP</p>
+                            <label id="info_perfil" >LALALALALALLA</label>
+                            <input type="text" id="cep" name="cep" value="LALALALALALLA" style="display: none">
+                        </div>
                     </div>
-                    <div class="info-ped">
-                        <p>CEP</p>
-                        <p id="info_perfil">00000-090</p>
+                    <div class="col-3">
+                        <div class="info-grup">
+                            <p>Bairro</p>
+                            <label id="info_perfil">Morro</label>
+                            <input type="text" id="bairro" name="bairro" value="" style="display: none">
+                        </div>
+                        <div class="info-grup">
+                            <p>Cidade</p>
+                            <label id="info_perfil">sao aplo</label>
+                            <input type="text" id="cidade" name="cidade" value="" style="display: none">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="info-grup">
+                            <p>Nº Residência</p>
+                            <label id="info_perfil">123</label>
+                            <input type="text" id="num" name="numEnd" value="" style="display: none">
+                        </div>
+                        <div class="info-grup">
+                            <p>UF</p>
+                            <label id="info_perfil">SP</label>
+                            <input type="text" id="uf" name="uf" value="" class="info-perfil" style="display: none">
+                        </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="info-ped mb-2">
-                        <p>Bairro</p>
-                        <p id="info_perfil">Morro Doce</p>
-                    </div>
-                    <div class="info-ped">
-                        <p>Cidade</p>
-                        <p id="info_perfil">Fim do Mundo</p>
-                    </div>
 
-                </div>
-                <div class="col-3">
-                    <div class="info-ped mb-2">
-                        <p>Nº Residência</p>
-                        <p id="info_perfil">123</p>
-                    </div>
-                    <div class="info-ped">
-                        <p>UF</p>
-                        <p id="info_perfil">FM</p>
-                    </div>
-                </div>
+            </form>
 
-            </div>
         </div>
         <div class="base-cartao-com">
             <!--seção do método de pagamento-->
@@ -164,11 +172,10 @@
             </div>
         </div>
 
-        <div class="Prazo" style="display: flex; align-items: center;">
-                    <img src="~/imgs/reembolso.png" class="img-fluid" alt="Prazo" />
-                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
-                        <p class="limite" style="margin: 0; display: inline;">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
-                    </div>
+                <div class="align-items-center d-flex mt-3">
+                    <img src="~/imgs/reembolso.png" class="prazoimg" alt="Prazo" />
+                    <p class="limite">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
+
                 </div>
 
         </div>
@@ -181,3 +188,42 @@
 </div>
 
 
+
+    <script>
+        function edicao(botao, formId) {
+            var campos = formId.querySelectorAll('input[type="text"]');
+            var labels = formId.querySelectorAll('label');
+
+            if (botao.textContent == 'Editar') {
+                // Muda o texto do botão
+                botao.textContent = 'Salvar';
+
+                // Deixa os texts visíveis
+                campos.forEach(campo => {
+                    campo.style.display = 'block';
+                });
+
+                // Deixa os labels invisíveis
+                labels.forEach(label => {
+                    label.style.display = 'none';
+                });
+            }
+            else if (botao.textContent == 'Salvar') {
+                // Muda o texto do botão
+                botao.textContent = 'Editar';
+
+                // Envia o formulário
+                formId.submit();
+
+                // Deixa os texts invisíveis
+                campos.forEach(campo => {
+                    campo.style.display = 'none';
+                });
+
+                // Deixa os labels visíveis
+                labels.forEach(label => {
+                    label.style.display = 'block';
+                });
+            }
+        }
+    </script>
