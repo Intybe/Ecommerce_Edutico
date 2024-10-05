@@ -1,12 +1,207 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "T:\\Vai dar Certo\\",
-  "Documents": [],
+  "WorkspaceRootPath": "T:\\Evelyn\\Vai dar Certo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\views\\home\\cadastromeuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\cadastromeuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\repositorio\\cartaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\cartaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\views\\cartao\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cartao\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\controllers\\cartaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\cartaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\views\\shared\\_menuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\shared\\_menuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\views\\shared\\_layoutcli2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\shared\\_layoutcli2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|t:\\evelyn\\vai dar certo\\edutico\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CadastroMeusCartoes.cshtml",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Home\\CadastroMeusCartoes.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\CadastroMeusCartoes.cshtml",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Home\\CadastroMeusCartoes.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\CadastroMeusCartoes.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T16:17:33.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartaoRepositorio.cs",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Repositorio\\CartaoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\CartaoRepositorio.cs",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Repositorio\\CartaoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\CartaoRepositorio.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAFMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T16:00:13.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\_ViewImports.cshtml",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "edutico\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T15:40:07.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeusCartoes.cshtml",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Cartao\\MeusCartoes.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Cartao\\MeusCartoes.cshtml",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Cartao\\MeusCartoes.cshtml*",
+              "RelativeToolTip": "edutico\\Views\\Cartao\\MeusCartoes.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T15:30:17.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartaoController.cs",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Controllers\\CartaoController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\CartaoController.cs",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Controllers\\CartaoController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\CartaoController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T15:28:47.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\ClienteController.cs",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T15:45:24.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_MenuPerfil.cshtml",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Shared\\_MenuPerfil.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Shared\\_MenuPerfil.cshtml",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Shared\\_MenuPerfil.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Shared\\_MenuPerfil.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T15:41:18.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutoRepositorio.cs",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAowLsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T16:07:51.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MeuPerfil.cshtml",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T15:41:01.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\_ViewStart.cshtml",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "edutico\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T15:40:11.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_LayoutCli2.cshtml",
+              "DocumentMoniker": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Shared\\_LayoutCli2.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Shared\\_LayoutCli2.cshtml",
+              "ToolTip": "T:\\Evelyn\\Vai dar Certo\\edutico\\Views\\Shared\\_LayoutCli2.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Shared\\_LayoutCli2.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T15:40:27.261Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

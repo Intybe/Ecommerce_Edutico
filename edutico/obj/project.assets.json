@@ -1657,11 +1657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "T:\\Vai dar Certo\\edutico\\edutico.csproj",
+      "projectUniqueName": "T:\\Evelyn\\Vai dar Certo\\edutico\\edutico.csproj",
       "projectName": "edutico",
-      "projectPath": "T:\\Vai dar Certo\\edutico\\edutico.csproj",
+      "projectPath": "T:\\Evelyn\\Vai dar Certo\\edutico\\edutico.csproj",
       "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-      "outputPath": "T:\\Vai dar Certo\\edutico\\obj\\",
+      "outputPath": "T:\\Evelyn\\Vai dar Certo\\edutico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "P:\\Visual Studio\\Shared\\NuGetPackages"

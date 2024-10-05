@@ -6,5 +6,6 @@ namespace edutico.Repositorio
     {
         String CadastrarCartao(decimal NumCartao, string NomeTitular, int DataVali, int Bandeira, int CodLogin);
 
+        List<Cartao> ConsultarCartao(int CodLogin);
     }
 }
