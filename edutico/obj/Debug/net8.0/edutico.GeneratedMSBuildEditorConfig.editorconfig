@@ -26,12 +26,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYWRhc3Ryb0NsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Agora/edutico/Views/Cliente/CarrinhoCheio.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5ob0NoZWlvLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/barro/Desktop/Agora/edutico/Views/Cliente/CarrinhoVazio.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5ob1ZhemlvLmNzaHRtbA==
+[C:/Users/barro/Desktop/Agora/edutico/Views/Cliente/Carrinho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5oby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/barro/Desktop/Agora/edutico/Views/Cliente/MeuPerfil.cshtml]

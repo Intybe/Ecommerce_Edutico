@@ -97,39 +97,11 @@ namespace edutico.Controllers
             return RedirectToAction("MeuPerfil");
         }
 
-        public IActionResult CarrinhoCheio()
+        public IActionResult Carrinho()
         {
-
             // Cria uma lista para armazenar vários produtos
             List<Carrinho> itemCarrinho = new List<Carrinho>();
 
-            for (int i = 0; i < 10; i++)
-            {
-                // Primeiro, instancie o produto fora do Carrinho
-                Produto produtos = new Produto
-                {
-                    nomeProd = "Nome Produto",  // Exemplo para nome diferente
-                    valorUnit = 0,
-                    imgs = new List<Imagem> { new Imagem { enderecoImg = "~/imgs/img_prod_padrao_quadrada.png" } }
-                };
-
-                // Agora, instancie o Carrinho com o produto
-                Carrinho carrinho = new Carrinho
-                {
-                    produto = produtos,  // Atribua o produto ao carrinho
-                    qtdProd = 0
-                };
-
-                // Adiciona o carrinho à lista de itens no carrinho
-                itemCarrinho.Add(carrinho);
-
-            }
-
-            return View(itemCarrinho);
-        }
-
-        public IActionResult CarrinhoVazio()
-        {
             // Pega o codLogin do Usuário Logado através da sessão
             var codLogin = _loginSessao.GetLogin();
 
@@ -138,17 +110,38 @@ namespace edutico.Controllers
                 // Se o cliente não estiver logado, redireciona para a página de login
                 return RedirectToAction("Login", "Login");
             }
-
-            var retorno = _carrinhoRepositorio.ConsultarCarrinho(codLogin.codLogin);
-
-            if (retorno != null)
+            else if(codLogin.codLogin == 1)
             {
-                IEnumerable<Carrinho> carrinho = _carrinhoRepositorio.ConsultarCarrinho(codLogin.codLogin);
-                return View("CarrinhoCheio", carrinho);
+                for (int i = 0; i < 10; i++)
+                {
+                    // Primeiro, instancie o produto fora do Carrinho
+                    Produto produtos = new Produto
+                    {
+                        nomeProd = "Nome Produto",  // Exemplo para nome diferente
+                        valorUnit = 0,
+                        imgs = new List<Imagem> { new Imagem { enderecoImg = "~/imgs/img_prod_padrao_quadrada.png" } }
+                    };
+
+                    // Agora, instancie o Carrinho com o produto
+                    Carrinho carrinho = new Carrinho
+                    {
+                        produto = produtos,  // Atribua o produto ao carrinho
+                        qtdProd = 0
+                    };
+
+                    // Adiciona o carrinho à lista de itens no carrinho
+                    itemCarrinho.Add(carrinho);
+
+                }
+
+                return View(itemCarrinho);
             }
             else
             {
-                return View("CarrinhoVazio");
+                var carrinhos = _carrinhoRepositorio.ConsultarCarrinho(codLogin.codLogin);
+
+
+                return View(carrinhos);
             }
         }
 
@@ -167,6 +160,11 @@ namespace edutico.Controllers
 
             ViewData["msg"] = mensagem;
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult CarrinhoVazio()
+        {
+            return View();
         }
 
     }
