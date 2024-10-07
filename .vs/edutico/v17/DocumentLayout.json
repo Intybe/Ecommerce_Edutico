@@ -1,12 +1,126 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\barro\\Desktop\\Agora\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\edutcc\\edutico3\\edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\edutcc\\edutico3\\edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\edutcc\\edutico3\\edutico\\models\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\edutcc\\edutico3\\edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\edutcc\\edutico3\\edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\edutcc\\edutico3\\edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetalhesProduto.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAACsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T20:20:02.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "edutico\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Models\\Produto.cs",
+              "RelativeToolTip": "edutico\\Models\\Produto.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T20:18:59.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAACUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T20:16:53.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T20:16:05.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Avaliacao.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Models\\Avaliacao.cs",
+              "RelativeDocumentMoniker": "edutico\\Models\\Avaliacao.cs",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Models\\Avaliacao.cs",
+              "RelativeToolTip": "edutico\\Models\\Avaliacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T20:15:31.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T20:10:14.293Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -121,68 +121,59 @@
                         <input type="text" name="codProd" value="@Model.codProd" style="display: none" />
 
                         <p>Escreva o que você achou!</p>
-                        
+
                         <textarea name="comentario" placeholder="Justifique sua resposta para ajudar outros consumidores :)"></textarea>
-                        
+
                         <button type="submit" class="btnava">Enviar avaliação</button>
                     </form>
-                    
+
 
 
                 </div>
 
 
                 <div class="col-7 border-start">
-                    <div class="review">
-                        <div class="d-flex">
-                            <div class="review-header">
-                                <strong>Usuário 01</strong>
-                                <span style="font-size:10px;">22/05/2024</span>
+                    @if (Model.avaliacoes != null && Model.avaliacoes.Any())
+                    {
+                        foreach (var avaliacao in Model.avaliacoes)
+                        {
+                            <div class="review">
+                                <div class="d-flex">
+                                    <div class="review-header">
+                                        <strong>Usuário @(avaliacao.codLogin)</strong>
+                                    </div>
+                                    <div class="d-flex">
+                                        @for (int i = 0; i < avaliacao.qtdEstrela; i++)
+                                        {
+                                            <img src="~/imgs/Star.png" class="iconeava" />
+                                        }
+                                        @for (int i = avaliacao.qtdEstrela; i < 5; i++)
+                                        {
+                                            <img src="~/imgs/StarEmpty.png" class="iconeava" />
+                                        }
+                                    </div>
+                                </div>
+                                <div class="review-content">@avaliacao.comentario</div>
                             </div>
-                            <div class="d-flex">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                            </div>
-                        </div>
-                        <div class="review-content">Produto muito bom!! Minha filha está apaixonada</div>
-                    </div>
-
-                    <hr />
-
-                    <div class="review">
-                        <div class="d-flex">
-                            <div class="review-header">
-                                <strong>Usuário 01</strong>
-                                <span style="font-size:10px;">22/05/2024</span>
-                            </div>
-                            <div class="d-flex">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                                <img src="~/imgs/Star.png" class="iconeava ">
-                            </div>
-                        </div>
-                        <div class="review-content">Produto muito bom!! Minha filha está apaixonada</div>
-                    </div>
-
-                    <hr />
+                            <hr />
+                        }
+                    }
+                    else
+                    {
+                        <p>Não há avaliações para este produto ainda.</p>
+                    }
                 </div>
             </div>
-
         </div>
     </div>
     <div class="col-4">
         <div class="base-prod-detalhe">
             <div class="d-flex pb-2 px-2 justify-content-between">
                 <h5 class="glacial-bold titulo-detalhe">@Model.nomeProd</h5>
-    
-                    <img src="~/imgs/heart.png" class="curti ">
 
-                
+                <img src="~/imgs/heart.png" class="curti ">
+
+
             </div>
             <p class=" mb-1 texto-simples">
                 <img src="~/imgs/Star.png" class="icone mb-1">
@@ -299,7 +290,7 @@
 </div>
 
 <script>
-    function valorEstrela(valor, estrelaId){
+    function valorEstrela(valor, estrelaId) {
         const qtdEstrela = document.querySelector('#qtdEstrela');
 
         qtdEstrela.value = valor;

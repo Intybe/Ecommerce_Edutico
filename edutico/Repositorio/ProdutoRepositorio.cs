@@ -172,7 +172,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Vairável que recebe o comando SQL
-            string sql = "Select * from vwProduto Left Join tbImagem On Código = tbImagem.codProd where Código = @codprod;";
+            string sql = "Select * from vwProduto Left Join tbImagem On Código = tbImagem.codProd Left Join tbAvaliacao On Código = tbAvaliacao.codProd where Código = @codprod;";
 
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
             cmd.Parameters.AddWithValue("@codProd", codProd);
@@ -201,7 +201,9 @@ namespace edutico.Repositorio
                         estoque = Convert.ToInt32(dr["Estoque"]),
                         statusProd = Convert.ToBoolean(dr["Status"]),
                         lancamento = Convert.ToBoolean(dr["Lançamento"]),
-                        imgs = new List<Imagem>() // Inicializa a lista de imagens
+                        imgs = new List<Imagem>(),// Inicializa a lista de imagens
+                        avaliacoes = new List<Avaliacao>() // Inicializa a lista de avaliações
+
                     };
                 }
 
@@ -217,6 +219,20 @@ namespace edutico.Repositorio
 
                     // Adiciona a imagem à lista de imagens do produto
                     produto.imgs.Add(imagem);
+                }
+
+                // Verifica se há uma avaliação associada ao produto
+                if (!dr.IsDBNull(dr.GetOrdinal("qtdEstrela")))
+                {
+                    Avaliacao avaliacao = new Avaliacao()
+                    {
+                        codLogin = Convert.ToInt32(dr["codLogin"]),
+                        comentario = dr["comentario"].ToString(),
+                        qtdEstrela = Convert.ToInt32(dr["qtdEstrela"])
+                    };
+
+                    // Adiciona a avaliação à lista de avaliações do produto
+                    produto.avaliacoes.Add(avaliacao);
                 }
             }
 
@@ -271,6 +287,8 @@ namespace edutico.Repositorio
 
             return mensagem;
         }
+
+
 
     }
 }
