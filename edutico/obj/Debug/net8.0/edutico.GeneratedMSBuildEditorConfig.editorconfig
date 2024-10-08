@@ -110,10 +110,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3NWYXppby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/evely/OneDrive/Área de Trabalho/EduTCC/Edutico3/edutico/Views/Home/FinalizarPedido.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaW5hbGl6YXJQZWRpZG8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/evely/OneDrive/Área de Trabalho/EduTCC/Edutico3/edutico/Views/Home/FormDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtRGV2b2x1Y2FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -160,6 +156,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/evely/OneDrive/Área de Trabalho/EduTCC/Edutico3/edutico/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evely/OneDrive/Área de Trabalho/EduTCC/Edutico3/edutico/Views/Pedido/FinalizarPedido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEZpbmFsaXphclBlZGlkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/evely/OneDrive/Área de Trabalho/EduTCC/Edutico3/edutico/Views/Produto/CadastroProduto.cshtml]
