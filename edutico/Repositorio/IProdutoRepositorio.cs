@@ -1,5 +1,6 @@
 ﻿using edutico.Models;
 
+
 namespace edutico.Repositorio
 {
     public interface IProdutoRepositorio
