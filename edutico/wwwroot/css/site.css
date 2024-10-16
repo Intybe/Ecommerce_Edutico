@@ -27,7 +27,9 @@ html, body {
     background-color: #FFFEF3;
 }
 
-
+h5{
+    margin-bottom:5px;
+}
 
 /*Tela inicial*/
 .navbar {
