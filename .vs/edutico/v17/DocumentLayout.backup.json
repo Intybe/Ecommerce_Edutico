@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\",
+  "WorkspaceRootPath": "C:\\Users\\3ds\\Downloads\\Edutico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evely\\onedrive\\\u00E1rea de trabalho\\edutcc\\edutico3\\edutico\\views\\pedido\\finalizarpedido.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\pedido\\finalizarpedido.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\edutico\\edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_dbedutico.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\downloads\\edutico\\edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\data\\script_validacaoteste.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +26,30 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FinalizarPedido.cshtml",
-              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "ToolTip": "C:\\Users\\evely\\OneDrive\\\u00C1rea de Trabalho\\EduTCC\\Edutico3\\edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T23:17:53.478Z",
+              "Title": "Script_ValidacaoTeste.sql ",
+              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
+              "RelativeDocumentMoniker": "edutico\\Data\\Script_ValidacaoTeste.sql",
+              "ToolTip": "C:\\Users\\3ds\\Downloads\\Edutico\\edutico\\Data\\Script_ValidacaoTeste.sql",
+              "RelativeToolTip": "edutico\\Data\\Script_ValidacaoTeste.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-17T14:55:56.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Script_dbEduTico.sql ",
+              "DocumentMoniker": "C:\\Users\\3ds\\Downloads\\Edutico\\edutico\\Data\\Script_dbEduTico.sql",
+              "RelativeDocumentMoniker": "edutico\\Data\\Script_dbEduTico.sql",
+              "ToolTip": "C:\\Users\\3ds\\Downloads\\Edutico\\edutico\\Data\\Script_dbEduTico.sql",
+              "RelativeToolTip": "edutico\\Data\\Script_dbEduTico.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-17T14:55:34.406Z",
               "EditorCaption": ""
             }
           ]

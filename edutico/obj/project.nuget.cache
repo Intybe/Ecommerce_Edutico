@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ThoJ61/hO0=",
+  "dgSpecHash": "BpiDKUgPtUs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\3ds\\Desktop\\Edutico3\\edutico\\edutico.csproj",
+  "projectFilePath": "C:\\Users\\3ds\\Downloads\\Edutico\\edutico\\edutico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\3ds\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\3ds\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

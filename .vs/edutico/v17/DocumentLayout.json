@@ -1,75 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\3ds\\Desktop\\Edutico3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico3\\edutico\\views\\home\\cartaopagamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\cartaopagamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico3\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\3ds\\desktop\\edutico3\\edutico\\views\\pedido\\finalizarpedido.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\pedido\\finalizarpedido.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\3ds\\Downloads\\Edutico\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico3\\edutico\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico3\\edutico\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-16T14:02:53.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartaoPagamento.cshtml",
-              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico3\\edutico\\Views\\Home\\CartaoPagamento.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\CartaoPagamento.cshtml",
-              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico3\\edutico\\Views\\Home\\CartaoPagamento.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\CartaoPagamento.cshtml",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAwwFQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T13:59:32.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FinalizarPedido.cshtml",
-              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Edutico3\\edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "ToolTip": "C:\\Users\\3ds\\Desktop\\Edutico3\\edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Pedido\\FinalizarPedido.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAIcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T23:17:53.478Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

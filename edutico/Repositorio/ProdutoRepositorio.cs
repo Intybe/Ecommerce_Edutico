@@ -14,7 +14,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Vairável que recebe o comando SQL
-            string sql = "Call spInsertTbProduto(@codprod, @nomeProd, @descricao, @Classificacao, @Categoria, @valorUnit, @estoque);";
+            string sql = "Call spInsertTbProduto(@codprod, @nomeProd, @descricao, @Classificacao, @Categoria, @valorUnit, @estoque, @lancamento);";
 
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
@@ -25,6 +25,7 @@ namespace edutico.Repositorio
             cmd.Parameters.AddWithValue("@Categoria", produto.categoria);
             cmd.Parameters.AddWithValue("@valorUnit", produto.valorUnit);
             cmd.Parameters.AddWithValue("@estoque", produto.estoque);
+            cmd.Parameters.AddWithValue("@lancamento", produto.lancamento);
 
             // Lê os dados retornados pela procedure do BD
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);

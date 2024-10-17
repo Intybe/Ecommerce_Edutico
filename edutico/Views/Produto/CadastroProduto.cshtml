@@ -1,90 +1,138 @@
 ﻿@{
+    // Ativa o layout específico para funcionários, em vez do layout padrão
     Layout = "_LayoutFunc";
-    ViewData["Title"] = "Cadastrar Produtos";
+    ViewData["Title"] = "Cadastrar Produtos"; // Define o título da página
 }
 
 <section class="Conteudo">
-    <form asp-controller="Produto" asp-action="CadastrarProduto" method="post" enctype="multipart/form-data">
-        <!-- Mensagem -->
-        @{
-            if (ViewData["msg"] != null)
-            {
-                @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
-                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+    <!-- Seção de cadastro de produtos -->
+    <section class="Cadastrar Produtos">
+        <!-- Cabeçalho da seção -->
+        <div class="header">
+            <h1>CADASTRAR PRODUTOS</h1>
+        </div>
+        <hr />
+        <form asp-controller="Produto" asp-action="CadastrarProduto" method="post" enctype="multipart/form-data">
+            <!-- Mensagem -->
+            @{
+                if (ViewData["msg"] != null)
+                {
+                    @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
+                    <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+                }
             }
-        }
+            <div class="row d-flex justify-content-between">
+                <!-- Primeiro form-group -->
+                <div class="form-group col-lg-6">
+                    <!-- Conteúdo do lado esquerdo aqui -->
+                    <label for="NomeProd">Nome <span class="req">*</span></label>
+                    <input type="text" id="InputType1" class="InputType1" placeholder="Digite aqui o nome do produto" name="nomeProd" />
 
-        <section class="Cadastrar Produtos">
-            <div class="header">
-                <h1>CADASTRAR PRODUTOS</h1>
-            </div>
-            <hr />
+                    <label for="CodProd">Código Produto <span class="req">*</span></label>
+                    <input type="text" id="InputType1" class="InputType1" placeholder="Digite aqui o código do produto" name="codProd" />
 
-            <div class="form-group">
-                <!-- NOME DO PRODUTO -->
-                <label for="NomeProd">Nome <span class="req">*</span></label>
-                <input type="text" id="CxTipo1" class="form-control" name="NomeProduto" placeholder="Digite aqui o nome do produto" />
+                    <label for="DescProd">Descrição <span class="req">*</span></label>
+                    <textarea id="CxDesc" class="CxDesc" placeholder="Digite aqui a descrição do produto" name="descricaoProd"></textarea>
 
-                <!-- CÓDIGO DO PRODUTO -->
-                <label for="CodigoProd">Código Produto <span class="req">*</span></label>
-                <input type="text" id="CxTipo2" class="form-control" name="CodigoProduto" placeholder="Digite aqui o código do Produto" />
+                    <!-- Classificação Indicativa e Valor Unitário -->
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
+                            <select class="ClassIndProd" name="classificacao">
+                                <option value="Até 2 Anos">Até 2 Anos</option>
+                                <option value="3+ Anos">3+ Anos</option>
+                                <option value="6+ Anos">6+ Anos</option>
+                                <option value="10+ Anos">10+ Anos</option>
+                                <option value="12+ Anos">12+ Anos</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-5">
+                            <label for="ValorUni">Valor Unitário <span class="req">*</span></label>
+                            <input type="text" id="ValorUni" class="InputType1" placeholder="Digite o valor" name="valorUnit"/>
+                        </div>
+                    </div>
 
-                <!-- DESCRIÇÃO DO PRODUTO -->
-                <label for="DescProd">Descrição <span class="req">*</span></label>
-                <input type="text" id="CxDesc" class="form-control" name="DescricaoProduto" placeholder="Digite aqui a descrição do produto" />
+                    <label for="CatBrinquedo" placeholder="Selecione a categoria do brinquedo">Categoria de brinquedos <span class="req">*</span></label>
+                    <select class="CatBrinquedo" name="categoria">
+                        <option value="Brinquedos de Montar">Brinquedos de Montar</option>
+                        <option value="Brinquedos Sustentáveis">Brinquedos Sustentáveis</option>
+                        <option value="Brinquedos Científicos">Brinquedos Científicos</option>
+                        <option value="Quebra-Cabeças">Quebra-Cabeças</option>
+                        <option value="Livros Interativos">Livros Interativos</option>
+                        <option value="Brinquedos Sensoriais">Brinquedos Sensoriais</option>
+                        <option value="Instrumentos Musicais">Instrumentos Musicais</option>
+                        <option value="Jogos de Tabuleiro">Jogos de Tabuleiro</option>
+                        <option value="Jogos de Desafio">Jogos de Desafio</option>
+                        <option value="Jogos de Ação">Jogos de Ação</option>
+                        <option value="Jogos de Cartas">Jogos de Cartas</option>
+                        <option value="Jogos Eletrônicos">Jogos Eletrônicos</option>
+                    </select>
 
-                <!-- CLASSIFICAÇÃO INDICATIVA -->
-                <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
-                <select class="Select" name="ClassificacaoIndicativa">
-                    <option value="0 a 12 meses">0 a 12 meses</option>
-                    <option value="1 a 2 anos">1 a 2 anos</option>
-                    <option value="5 a 7 anos">5 a 7 anos</option>
-                </select>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <label for="Estoque">Estoque<span class="req">*</span></label>
+                            <input type="text" id="Estoque" class="InputType1" placeholder="Quantidade em estoque" name="estoque"/>
+                        </div>
+                        <div class="col-lg-5 mb-3">
+                            <label for="Lancamento" class="form-label">Lançamento <span class="req">*</span></label>
+                            <div class="d-flex">
+                                <div class="form-check me-3">
+                                    <input type="radio" id="LancamentoSim" name="lancamento" value="0" class="form-check-input">
+                                    <label for="LancamentoSim" class="form-check-label">Sim</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" id="LancamentoNao" name="lancamento" value="1" class="form-check-input">
+                                    <label for="LancamentoNao" class="form-check-label">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                @* 
-                    <!-- HABILIDADE TRABALHADA (chips)-->
-                <label for="HabTabalhada">Habilidade Trabalhada <span class="req">*</span></label>
-                <div id="habilidades-trabalhadas" class="chips-container">
-                    <span class="chip" onclick="selecionarHabilidade(this)">Criatividade</span>
-                    <span class="chip" onclick="selecionarHabilidade(this)">Coordenação motora</span>
-                    <span class="chip" onclick="selecionarHabilidade(this)">Raciocínio lógico</span>
-                    <span class="chip" onclick="selecionarHabilidade(this)">Empatia</span>
-                    <span class="chip" onclick="selecionarHabilidade(this)">Trabalho em equipe</span>
+                    <div class="col-lg-5 mb-3">
+                        <label for="Status" class="form-label">Status <span class="req">*</span></label>
+                    </div>
                 </div>
-                <!-- Um campo escondido para armazenar os chips selecionados -->
-                <input type="hidden" id="habilidadesSelecionadas" name="habilidadesSelecionadas" />
 
-                *@
-               
+                <!-- Segundo form-group2 -->
+                <div class="form-group2 col-lg-6">
+                    <!-- Conteúdo do lado direito aqui -->
+                    <label for="HabTabalhada">Habilidade Trabalhada <span class="req">*</span></label>
+                    <div id="HabTabalhada" class="chips-container">
+                        <span class="chip" onclick="selecionarHabilidade(this)">Criatividade</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Coordenação motora</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Concentração</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Educação Emocional</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Linguagem e comunicação</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Matemática</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Raciocínio lógico</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Socialização</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Resolução de problemas</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)">Pensamento crítico</span>
+                    </div>
+                    <!-- Um campo escondido para armazenar os chips selecionados -->
+                    <input type="hidden" id="habilidadesSelecionadas" name="habilidadesEnviadas" />
 
-                <!-- VALOR UNITÁRIO -->
-                <label for="ValorUni">Valor Unitário <span class="req">*</span></label>
-                <input type="text" id="CxTipo2" class="form-control" name="ValorUnitario" placeholder="Digite aqui o valor unitário do produto" />
-
-                <!-- ESTOQUE -->
-                <label for="EstoqueProd">Estoque <span class="req">*</span></label>
-                <input type="text" id="CxTipo1" class="form-control" name="EstoqueProduto" placeholder="Digite aqui a quantidade em estoque" />
-
-                <!-- CATEGORIA -->
-                <label for="DestaqueProd">Categoria <span class="req">*</span></label>
-                <select class="Select2" name="CategoriaProduto">
-                    <option value=""></option>
-                    <option value="Jogos de Tabuleiro">Jogos de Tabuleiro</option>
-                    <option value="Jogos de Ação">Jogos de Ação</option>
-                </select>
-
-                <!-- IMAGEM -->
-                <label for="Upimg">Imagem <span class="req">*</span></label>
-                <input type="file" name="imgs" accept="image/*" multiple />
+                    <!-- Upload de imagem -->
+                    <div class="UpImg mt-3">
+                        <label for="Upimg">Imagem <span class="req">*</span></label>
+                        <label class="picture" for="picture_input" tabindex="0">
+                            <input type="file" accept="image/*" name="imgs" class="picture__input" id="picture_input" multiple />
+                            <div class="picture__placeholder">
+                                <img src="~/imgs/upload.png" alt="Placeholder"/>
+                            </div>
+                            <span class="picture__image"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
 
-            <!-- BOTÕES -->
+            <!-- Botões de ação -->
             <div class="btns">
                 <button class="btnCancelar btn-primary">Cancelar</button>
-                <button type="submit" class="btnCadastrar btn-primary">Cadastrar</button>
+                <button class="btnCadastrar btn-primary">Cadastrar</button>
             </div>
-        </section>
-    </form>
+        </form>
+    </section>
 </section>
 
 <script>

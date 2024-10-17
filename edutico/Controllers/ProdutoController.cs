@@ -24,7 +24,7 @@ namespace edutico.Controllers
         }
 
         [HttpPost]
-        public IActionResult CadastrarProduto(string NomeProduto, string CodigoProduto, string DescricaoProduto, string ClassificacaoIndicativa, string HabilidadesSelecionadas, string ValorUnitario, string EstoqueProduto, string CategoriaProduto, List<IFormFile> imgs)
+        public IActionResult CadastrarProduto(string nomeProd, string codProd, string descricaoProd, string classificacao, string habilidadesEnviadas, string valorUnit, string estoque, string categoria, string lacamentoProd, List<IFormFile> imgs)
         {
             if (imgs == null || !imgs.Any())
             {
@@ -35,16 +35,17 @@ namespace edutico.Controllers
             {
                 Produto produto = new Produto()
                 {
-                    codProd = Convert.ToDecimal(CodigoProduto),
-                    nomeProd = Convert.ToString(NomeProduto),
-                    descricao = Convert.ToString(DescricaoProduto),
-                    classificacao = Convert.ToString(ClassificacaoIndicativa),
-                    categoria = Convert.ToString(CategoriaProduto),
-                    valorUnit = Convert.ToDecimal(ValorUnitario),
-                    estoque = Convert.ToInt32(EstoqueProduto)
+                    codProd = Convert.ToDecimal(codProd),
+                    nomeProd = Convert.ToString(nomeProd),
+                    descricao = Convert.ToString(descricaoProd),
+                    classificacao = Convert.ToString(classificacao),
+                    categoria = Convert.ToString(categoria),
+                    valorUnit = Convert.ToDecimal(valorUnit),
+                    estoque = Convert.ToInt32(estoque),
+                    lancamento = Convert.ToBoolean(lacamentoProd)
                 };
 
-                List<string> habilidades = HabilidadesSelecionadas.Split(',').ToList();
+                List<string> habilidades = habilidadesEnviadas.Split(',').ToList();
 
                 // Chamar o repositório e passar o objeto produto e as imagens
                 string resultado = _produtoRepositorio.CadastrarProduto(produto, imgs, habilidades);

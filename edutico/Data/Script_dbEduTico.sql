@@ -134,7 +134,7 @@ Create table tbProduto(
     descricao varchar(600) not null,
     codClassificacao int not null,
     codCategoria int not null,
-    lancamento boolean default(0),
+    lancamento boolean,
     valorUnit decimal(8,2) not null,
     estoque int not null,
     statusProd boolean not null
@@ -422,7 +422,8 @@ Create procedure spInsertTbProduto(
     vNomeClassificacao varchar(50), 
     vNomeCategoria varchar(100), 
     vValorUnit decimal(8,2), 
-    vEstoque int
+    vEstoque int,
+    vLancamento bool
 )
 Begin
 	-- Declaração de variáveis para aramzenar os Ids --
@@ -452,7 +453,8 @@ Begin
             vCodClassificacao, 
             vCodCategoria, 
             vValorUnit, 
-            vEstoque, 0);
+            vEstoque,
+            vLancamento);
     
 		Select('Produto Cadastrado com sucesso!');
 	Else

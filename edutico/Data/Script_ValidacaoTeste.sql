@@ -12,31 +12,43 @@ $$
 
 -- Inserção das Categorias --
 Delimiter $$
+	Call spInsertTbCategoria('Brinquedos de Montar');
+	Call spInsertTbCategoria('Brinquedos Sustentáveis');
+	Call spInsertTbCategoria('Brinquedos Científicos');
+	Call spInsertTbCategoria('Quebra-Cabeças');
+	Call spInsertTbCategoria('Livros Interativos');
+	Call spInsertTbCategoria('Brinquedos Sensoriais');
+	Call spInsertTbCategoria('Instrumentos Musicais');
 	Call spInsertTbCategoria('Jogos de Tabuleiro');
-    Call spInsertTbCategoria('Jogos de Ação');
-    Call spInsertTbCategoria('Jogos de Cartas');
-    Call spInsertTbCategoria('Jogos de Eletrônicos');
-    Call spInsertTbCategoria('Blocos de Montar');
-    Call spInsertTbCategoria('Quebra-Cabeças');
-    Call spInsertTbCategoria('Musicais');
+	Call spInsertTbCategoria('Jogos de Desafio');
+	Call spInsertTbCategoria('Jogos de Ação');
+	Call spInsertTbCategoria('Jogos de Cartas');
+	Call spInsertTbCategoria('Jogos Eletrônicos');
 $$
 
 -- Inserção das Classificação Indicativa --
 Delimiter $$
-	Call spInsertTbClassificação('0 a 12 meses');
-    Call spInsertTbClassificação('1 a 2 anos');
-    Call spInsertTbClassificação('2 a 4 anos');
-    Call spInsertTbClassificação('5 a 7 anos');
-    Call spInsertTbClassificação('8 a 11 anos');
-    Call spInsertTbClassificação('12 anos ou +');
-$$
+	Call spInsertTbClassificação('Até 2 Anos');
+    Call spInsertTbClassificação('3+ Anos');
+    Call spInsertTbClassificação('6+ Anos');
+    Call spInsertTbClassificação('10+ Anos');
+    Call spInsertTbClassificação('12+ Anos');  
+$$                
 
 -- Inserção da Habilidade do Produto --
 Delimiter $$
-	Call spInsertTbHabilidade('Coordenação Motora');
-    Call spInsertTbHabilidade('Cognição e Aprendizado');
-    Call spInsertTbHabilidade('Raciocínio Lógico');
-    Call spInsertTbHabilidade('Criatividade');
+	Call spInsertTbHabilidade('Brinquedos de Montar');
+    Call spInsertTbHabilidade('Brinquedos Sustentáveis');
+    Call spInsertTbHabilidade('Brinquedos Científicos');
+    Call spInsertTbHabilidade('Quebra-Cabeças');
+    Call spInsertTbHabilidade('Livros Interativos');
+    Call spInsertTbHabilidade('Brinquedos Sensoriais');
+    Call spInsertTbHabilidade('Instrumentos Musicais');
+    Call spInsertTbHabilidade('Jogos de Tabuleiro');
+    Call spInsertTbHabilidade('Jogos de Desafio');
+    Call spInsertTbHabilidade('Jogos de Ação');
+    Call spInsertTbHabilidade('Jogos de Cartas');
+    Call spInsertTbHabilidade('Jogos Eletrônicos');  
 $$
 
 /*
