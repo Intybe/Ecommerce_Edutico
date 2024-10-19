@@ -19,13 +19,12 @@ namespace edutico.Models
 
         public List<Imagem> imgs { get; set; }
 
-        public List<Avaliacao> avaliacoes { get; set; } // Adiciona a lista de avaliações
+        public List<Avaliacao> avaliacoes { get; set; }
 
-        // Construtor para inicializar a lista de imagens e a lista de avaliaçoes
+        // Construtor para inicializar a lista de imagens
         public Produto()
         {
             imgs = new List<Imagem>(); // Inicializa a lista vazia
-            avaliacoes = new List<Avaliacao>();
         }
     }
 }

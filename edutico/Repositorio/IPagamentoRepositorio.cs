@@ -1,8 +1,10 @@
-﻿namespace edutico.Repositorio
+﻿using edutico.Models;
+
+namespace edutico.Repositorio
 {
     public interface IPagamentoRepositorio
     {
-        string PagamentoPix(int NF, int qtdParcela, string codPix);
+        string PagamentoPix(Pagamento pagamento);
         string PagamentoCartao(int NF, int qtdParcela, int codCartao);
     }
 }

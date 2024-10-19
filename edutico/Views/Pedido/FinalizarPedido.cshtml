@@ -1,15 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     Layout = "_LayoutCli2";
     ViewData["Title"] = "Finalizar Pedido";
 }
+@model Pedido;
 
 
 <div class="row texto-simples">
     <div class="col-8">
-        <!-- Seção do cliente -->
+        <!--seção do cliente-->
         <div class="base-cartao-com ">
             <div class="sub_perfil">
                 <h5 id="glacial-bold">Dados do cliente</h5>
@@ -19,134 +17,162 @@
                 <div class="col-3">
                     <div class="info-ped">
                         <p>Nome</p>
-                        <p id="info_perfil">Fulano Souza da Silva</p>
+                        <p id="info_perfil">@Model.cliente.nome + @Model.cliente.sobrenome</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-ped">
                         <p>CPF</p>
-                        <p id="info_perfil">*********9-12</p>
+                        <p id="info_perfil">@Model.cliente.cpf</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-ped">
                         <p>Telefone</p>
-                        <p id="info_perfil">(11) 99999-0000</p>
+                        <p id="info_perfil">@Model.cliente.telefone</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Seção do endereço de entrega -->
+        <!--seção do endereço de entrega-->
         <div class="base-cartao-com">
             <div class="sub_perfil">
                 <h5 id="glacial-bold">Endereço</h5>
                 <button type="button" onclick="edicao(this, formEnderecoPedido)" class="editar">Editar</button>
             </div>
             <hr />
-            <form id="formEnderecoPedido">
+            <form id="formEnderecoPedido" method="post" asp-controller="Cliente" asp-action="AtualizarClienteEndereco">
                 <div class="d-flex">
                     <div class="col-4">
                         <div class="info-grup">
                             <p>Logradouro</p>
-                            <label id="info_perfil">LALALALALALLA</label>
-                            <input type="text" id="logradouro" name="logradouro" value="LALALALALALLA" style="display: none">
+                            <label id="info_perfil">@Model.cliente.logradouro</label>
+                            <input type="text" id="logradouro " name="logradouro" value="@Model.cliente.logradouro" style="display: none">
                         </div>
                         <div class="info-grup">
                             <p>CEP</p>
-                            <label id="info_perfil">LALALALALALLA</label>
-                            <input type="text" id="cep" name="cep" value="LALALALALALLA" style="display: none">
+                            <label id="info_perfil">@Model.cliente.cep</label>
+                            <input type="text" id="cep" name="cep" value="@Model.cliente.cep" style="display: none">
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="info-grup">
                             <p>Bairro</p>
-                            <label id="info_perfil">Morro</label>
-                            <input type="text" id="bairro" name="bairro" value="" style="display: none">
+                            <label id="info_perfil">@Model.cliente.bairro</label>
+                            <input type="text" id="bairro" name="bairro" value="@Model.cliente.bairro" style="display: none">
                         </div>
                         <div class="info-grup">
                             <p>Cidade</p>
-                            <label id="info_perfil">São Paulo</label>
-                            <input type="text" id="cidade" name="cidade" value="" style="display: none">
+                            <label id="info_perfil">@Model.cliente.cidade</label>
+                            <input type="text" id="cidade" name="cidade" value="@Model.cliente.cidade" style="display: none">
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="info-grup">
                             <p>Nº Residência</p>
-                            <label id="info_perfil">123</label>
-                            <input type="text" id="num" name="numEnd" value="" style="display: none">
+                            <label id="info_perfil">@Model.cliente.numEnd</label>
+                            <input type="text" id="num" name="numEnd" value="@Model.cliente.numEnd" style="display: none">
                         </div>
                         <div class="info-grup">
                             <p>UF</p>
-                            <label id="info_perfil">SP</label>
-                            <input type="text" id="uf" name="uf" value="" class="info-perfil" style="display: none">
+                            <label id="info_perfil">@Model.cliente.uf</label>
+                            <input type="text" id="uf" name="uf" value="@Model.cliente.uf" class="info-perfil" style="display: none">
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
 
-        <!-- Formulário de finalização de pedido -->
-        <form asp-action="CadastrarPedido" asp-controller="Pedido" method="post">
-            <!-- Seção do método de pagamento -->
-            <div class="base-cartao-com">
-                <div class="sub_perfil">
-                    <h5 id="glacial-bold">Método Pagamento</h5>
-                </div>
-                <hr />
+            </form>
+
+        </div>
+        <div class="base-cartao-com">
+            <!--seção do método de pagamento-->
+            <div class="sub_perfil">
+                <h5 id="glacial-bold">Método Pagamento</h5>
+            </div>
+            <hr />
+            <form id="formPagamento" asp-controller="Pedido" asp-action="CadastrarPedido">
                 <div class="col-5">
-                    <!-- Radio button customizado -->
+                    <!--radio buttom customizado-->
                     <div class="radio-container">
                         <label for="radiopix">
-                            <input type="radio" id="radiopix" name="radio" />
-                            <div class="custom-radio"><span></span></div>
+                            <input type="radio" id="radiopix" name="radio" onclick="tipoPagamento(0, this)" />
+                            <!--esse span vazio é a bolinha-->
+                            <div class="custom-radio">
+                                <span></span>
+                            </div>
                             <img src="~/imgs/pixpag.png" alt="PIX" width="30">
                             <p>PIX</p>
+
                         </label>
                     </div>
                     <div class="radio-container">
+
                         <label for="radiocartao">
-                            <input type="radio" id="radiocartao" name="radio" />
-                            <div class="custom-radio"><span></span></div>
-                            <img src="~/imgs/cartaopag.png" alt="Cartão de crédito" width="30">
+                            <input type="radio" id="radiocartao" name="radio" onclick="tipoPagamento(1, this)" />
+                            <div class="custom-radio">
+                                <span></span>
+                            </div>
+                            <img src="~/imgs/cartaopag.png" alt="PIX" width="30">
                             <p>Cartão de crédito</p>
                         </label>
                     </div>
-                </div>
-            </div>
 
-            <!-- Seção de resumo do pedido -->
-            <div class="areaPedido">
-                <h5 class="text-center glacial-bold" style="font-size:30px;">Pedido</h5>
-                <hr />
-                <div class="detalhes-ped">
-                    <div class="scrollable-div overflow-auto" style="max-height: 150px;">
+                    <input type="hidden" id="tipoPag" name="tipoPag" />
+                    <input type="hidden" name="pedidoIn" value='@Json.Serialize(Model)' />
+
+                </div>
+            </form>
+
+        </div>
+
+
+    </div>
+    <div class="col-4">
+        <!--card pedido igual ao carrinho-->
+        <div class="areaPedido">
+            <h5 class="text-center glacial-bold" style="font-size:30px;">Pedido</h5>
+            <hr />
+            <div class="detalhes-ped">
+
+                <!--scroll classe boostrap | sumario de produtos na prévia-->
+                <div class="scrollable-div overflow-auto" style="max-height: 150px; ">
+                    @foreach (var itens in Model.itensPedido)
+                    {
                         <div class="item-prod">
-                            <p><img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta-Monta </p>
-                            <p>R$ 199,00</p>
+                            <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> @itens.produto.nomeProd</p>
+                            <p>R$ @itens.produto.valorUnit</p>
                         </div>
-                        <!-- Aqui você pode adicionar mais itens dinamicamente do pedido -->
-                    </div>
+                    }
+
+
                     <div class="item-prod mt-2">
                         <p>Entrega</p>
                         <p>R$ 20,00</p>
                     </div>
+
+
                     <hr />
                     <div class="total-pedido d-flex" id="glacial-bold">
                         <p>Total</p>
-                        <p>R$ 418,98</p>
+                        <p>@Model.valorTotal</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Botões de Cancelar e Confirmar -->
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btncanc-ped">Cancelar</button>
-                <button type="submit" class="btnnav-ped">Confirmar</button>
+                <div class="align-items-center d-flex mt-3">
+                    <img src="~/imgs/reembolso.png" class="prazoimg" alt="Prazo" />
+                    <p class="limite">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
+
+                </div>
+
             </div>
-        </form>
+            <!--botões para prosseguir ou cancelar-->
+            <div class="d-flex justify-content-center">
+                <button class="btncanc-ped">Cancelar</button>
+
+                <button class="btnnav-ped" id="btnProsseguir" onclick="enviarFormulario()" disabled>Confirmar</button>
+            </div>
+        </div>
     </div>
-</div>
 
 
 
@@ -186,5 +212,22 @@
                     label.style.display = 'block';
                 });
             }
+        }
+
+        function tipoPagamento(valor, elemento) {
+            const tipoPag = document.querySelector("#tipoPag");
+            const botao = document.querySelector("#btnProsseguir");
+
+            tipoPag.value = valor;
+
+            botao.removeAttribute('disabled');
+
+        }
+
+        function enviarFormulario() {
+            const formulario = document.querySelector("#formPagamento");
+
+            formulario.submit();
+
         }
     </script>

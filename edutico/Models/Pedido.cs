@@ -1,18 +1,12 @@
-﻿using edutico.Models;
-
-namespace Edutico.Models
+﻿namespace edutico.Models
 {
-    // Classe Pedido contendo informações do pedido em si
     public class Pedido
     {
-        public int codLogin { get; set; }         
-        public DateTime data { get; set; }      
-        public string statusPedido { get; set; }  
-        public decimal valorTotal { get; set; }   
-        public List<ItemPedido> itensPedido { get; set; } 
+        public int NF { get; set; }
+        public DateTime data { get; set; }
+        public Cliente cliente { get; set; }
+        public int statusPedido { get; set; }
+        public decimal valorTotal { get; set; }
+        public List<ItemPedido> itensPedido { get; set; }
     }
-
-    
 }
-
-

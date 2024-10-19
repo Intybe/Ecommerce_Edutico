@@ -1,9 +1,8 @@
 ﻿using edutico.Libraries.Login;
 using edutico.Repositorio;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using edutico.Models;
-using Edutico.Models;
+using Newtonsoft.Json;
 
 namespace edutico.Controllers
 {
@@ -11,45 +10,113 @@ namespace edutico.Controllers
     {
         private readonly IPedidoRepositorio _pedidoRepositorio;
         private readonly LoginSessao _loginSessao;
+        private IClienteRepositorio? _clienteRepositorio;
+        private ICartaoRepositorio? _cartaoRepositorio;
 
-        public PedidoController(IPedidoRepositorio pedidoRepositorio, LoginSessao loginSessao)
+        public PedidoController(IPedidoRepositorio pedidoRepositorio, LoginSessao loginSessao, IClienteRepositorio clienteRepositorio, ICartaoRepositorio? cartaoRepositorio)
         {
             _pedidoRepositorio = pedidoRepositorio;
             _loginSessao = loginSessao;
+            _clienteRepositorio = clienteRepositorio;
+            _cartaoRepositorio = cartaoRepositorio;
+
         }
 
         // Método para exibir a página de finalizar o pedido
-        [HttpGet]
-        public IActionResult FinalizarPedido()
+        [HttpPost]
+        public IActionResult FinalizarPedido(string lista, double valorTotal)
         {
-            return View();
+            // Pega o codLogin do Usuário Logado através da sessão
+            var Login = _loginSessao.GetLogin();
+
+            // Chama o método do repositório para consultar o cliente no banco de dados
+            Cliente cliente = _clienteRepositorio.ConsultarCliente(Login.codLogin);
+
+            var listaProdutos = JsonConvert.DeserializeObject<List<Carrinho>>(lista);
+
+            // Criar uma instância do Pedido
+            var pedido = new Pedido
+            {
+                cliente = cliente,
+                itensPedido = new List<ItemPedido>(),
+                valorTotal = Convert.ToDecimal(valorTotal)
+            };
+
+            // Fragmentar os itens do carrinho em itens do pedido
+            foreach (var item in listaProdutos)
+            {
+                var itemPedido = new ItemPedido
+                {
+                    produto = item.produto,
+                    qtdItem = item.qtdProd,
+                    valorItem = item.produto.valorUnit * item.qtdProd // Calcular o valor do item
+                };
+
+                pedido.itensPedido.Add(itemPedido);
+            }
+
+            return View(pedido);
         }
 
         // Método POST para cadastrar o pedido e os itens
         [HttpPost]
-        public IActionResult CadastrarPedido(Pedido pedido, List<ItemPedido> itensPedido)
+        public IActionResult CadastrarPedido(string pedidoIn, int tipoPag)
         {
-            if (ModelState.IsValid)
-            {
-                // Chama o método do repositório para cadastrar o pedido e seus itens
-                string resultado = _pedidoRepositorio.CadastrarPedido(pedido, itensPedido);
+            // Desserializa o JSON recebido de volta para um objeto Cartao
+            var pedido = JsonConvert.DeserializeObject<Pedido>(pedidoIn);
 
-                // Verifica se o pedido foi cadastrado com sucesso
-                if (resultado == "Pedido cadastrado com sucesso!")
+            // Chama o método do repositório para cadastrar o pedido e seus itens
+            string resultado = _pedidoRepositorio.CadastrarPedido(pedido);
+
+            // Tenta converter o resultado para int
+            if (int.TryParse(resultado, out _))
+            {
+                pedido.NF = Convert.ToInt32(resultado);
+
+                if (tipoPag == 0)
                 {
-                    // Redireciona automaticamente para a página de pagamento padrão (ex: cartão de crédito)
-                    return RedirectToAction("PagamentoCartao", "Pagamento");
+                    // Gerando o código PIX no formato GUID
+                    var codigoPix = Guid.NewGuid().ToString();
+
+                    // Retorno Aleatório
+                    var retornoPag = new Random().Next(0, 2) == 1;
+
+                    Pagamento pagamento = new Pagamento()
+                    {
+                        qtdParcela = 1,
+                        codPix = codigoPix,
+                        pedido = pedido,
+                        retorno = retornoPag
+                    };
+
+                    TempData["Pagamento"] = JsonConvert.SerializeObject(pagamento);
+                    return RedirectToAction("PagamentoQrcode", "Pagamento");
                 }
                 else
                 {
-                    // Em caso de erro, exibe a mensagem de erro na própria página
-                    ViewBag.Erro = resultado;
-                    return View("FinalizarPedido");
+                    // Pega o codLogin do Usuário Logado através da sessão
+                    var Login = _loginSessao.GetLogin();
+
+                    List<Cartao> cartoes = new List<Cartao>();
+
+                    // Consulta a lista de cartões cadastrados para o usuário logado
+                    cartoes = _cartaoRepositorio.ConsultarCartao(Login.codLogin);
+
+                    Pagamento pagamento = new Pagamento()
+                    {
+                        pedido = pedido,
+                        cartoes = cartoes
+                    };
+
+                    TempData["Pagamento"] = JsonConvert.SerializeObject(pagamento);
+                    return RedirectToAction("PagamentoCartao", "Pagamento");
                 }
             }
-
-            // Se o ModelState não for válido, retorna à página de finalização de pedido
-            return View("FinalizarPedido");
+            else
+            {
+                // Se o ModelState não for válido, retorna à página de finalização de pedido
+                return View("FinalizarPedido", pedido);
+            }
         }
     }
 }

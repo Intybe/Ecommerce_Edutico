@@ -29,7 +29,7 @@ namespace edutico.Controllers
             if (imgs == null || !imgs.Any())
             {
                 ViewData["msg"] = "Nenhuma imagem foi enviada!";
-                return View("CadastroCliente");
+                return View("CadastroProduto");
             }
             else
             {

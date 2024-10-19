@@ -1,12 +1,12 @@
 ﻿using edutico.Data;
+using edutico.Models;
 using MySql.Data.MySqlClient;
 
 namespace edutico.Repositorio
 {
-    public class PagamentoRepositorio
+    public class PagamentoRepositorio : IPagamentoRepositorio
     {
-
-        public string PagamentoPix(int nf, int qtdParcela, string codPix)
+        public string PagamentoPix(Pagamento pagamento)
         {
             // Cria variável de Conexão com o Banco de Dados
             Conexao con = new Conexao();
@@ -18,9 +18,9 @@ namespace edutico.Repositorio
             // Atribuindo valores aos parâmetros
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
-            cmd.Parameters.AddWithValue("@qtdParcela", qtdParcela);
-            cmd.Parameters.AddWithValue("@NF", nf);
-            cmd.Parameters.AddWithValue("@codPix", codPix);
+            cmd.Parameters.AddWithValue("@qtdParcela", pagamento.qtdParcela);
+            cmd.Parameters.AddWithValue("@NF", pagamento.pedido.NF);
+            cmd.Parameters.AddWithValue("@codPix", pagamento.codPix);
             cmd.Parameters.AddWithValue("@codCartao", 0);
 
             // Lê os dados retornados pela procedure do BD

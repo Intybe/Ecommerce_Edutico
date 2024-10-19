@@ -190,10 +190,10 @@ Create table tbCarrinho(
 
 Create table tbPedido(
 	NF int primary key auto_increment,
-    data datetime not null,
-    codLogin int not null,
-    statusPedido decimal(1,0),
-    valorTotal decimal(8,2) not null Default(0.00)
+	data datetime not null,
+	codLogin int not null,
+	statusPedido decimal(1,0),
+	valorTotal decimal(8,2) not null
 );
 
 Create table tbItemPedido(
@@ -445,7 +445,8 @@ Begin
             codCategoria, 
             valorUnit, 
             estoque, 
-            statusProd)
+            statusProd,
+            lancamento)
 		values(
 			vCodProd, 
             vNomeProd, 
@@ -454,6 +455,7 @@ Begin
             vCodCategoria, 
             vValorUnit, 
             vEstoque,
+            1,
             vLancamento);
     
 		Select('Produto Cadastrado com sucesso!');
@@ -511,48 +513,27 @@ End $$
 
 -- Sessão de Cadastro de Pedidos --
 Delimiter $$
-Create Procedure spInsertTbPedido(vCodLogin int)
+Create Procedure spInsertTbPedido(vCodLogin int, vValorTotal decimal(8,2))
 Begin
-	-- Apenas insere a data atual e demais parâmetros --
-	Insert into tbPedido(data, codLogin, statusPedido)
-				values(current_timestamp(), vCodLogin, 0);
-End $$
+	Insert into tbPedido(data, codLogin, statusPedido, valorTotal)
+				values(current_timestamp(), vCodLogin, 1, vValorTotal);
+   SELECT LAST_INSERT_ID() AS NF;
+End $$ 
 
 -- Sessão de Cadastro dos Itens do Pedido --
-Delimiter $$
 Create Procedure spInsertTbItemPedido(
-	vCodLogin int, 
+	vNF int, 
     vCodProd decimal(14,0), 
-    vQtdProd int
+    vQtdItem int,
+    vValorProd decimal(8,2)
 )
 Begin
-	-- Declaração das variáveis para complementar a inserção --
-	Declare vNF int;
-    Declare vValorProd decimal(8,2);
-    Declare vQtdItem int;
-    Declare vValorTotal decimal(8,2);
-    
-    -- Atribui o código NF do último pedido realizado pelo o cliente --
-    Set vNF = (Select NF from tbPedido where codLogin = vCodLogin order by data desc limit 1);
-    
     -- Verifica se o registro não existe --
     If not exists(Select * from tbItemPedido where NF = vNF And codProd = vCodProd) then
-		-- Atribui o valor do produto (disponível na tbProduto --
-		Set vValorProd = (Select ValorUnit from tbProduto where codProd = vCodProd);
-    
 		Insert into tbItemPedido(NF, codProd, qtdItem, valorItem)
-						values(vNF, vCodProd, vQtdProd, (vValorProd * vQtdProd)); -- Insere os dados --
-		
-        -- Atribui o valor do item (valor do produto X quantidade) --
-        Set vQtdItem = (vValorProd * vQtdProd);
-        
-        -- Atribui a variável valor do Total do Pedido --
-        Set vValorTotal = ((Select ValorTotal from tbPedido where NF = vNF) + vQtdItem);
-        
-        -- Atualiza o valor total do pedido --
-		Update tbPedido Set valorTotal = vValorTotal where NF = vNF;
+						values(vNF, vCodProd, vQtdItem, (vValorProd * vQtdItem)); -- Insere os dados --
     End if;
-End $$
+End $$ 
 
 -- Sessão de Cadastro de Cartão de Crédito --
 Delimiter $$

@@ -84,6 +84,7 @@ namespace edutico.Repositorio
             {
                 Cliente cliente = new Cliente()
                 {
+                    codLogin = Convert.ToInt32(dr["codLogin"]),
                     codCli = Convert.ToInt32(dr["Código"]),
                     cpf = Convert.ToDecimal(dr["CPF"]),
                     nome = dr["Nome"].ToString(),

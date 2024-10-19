@@ -8,8 +8,26 @@
 
 
 
-    @if (!Model.Any())
-    {
+@if (!Model.Any())
+{
+
+    <div class="carrinhoVTodo">
+        <div class="col-9 base carrinhoV">
+            <a href="#" class="Voltar">Voltar a navegação</a>
+            <div class="justify-content-between d-flex">
+                <p style=" font-family: 'Edutico'; font-size:23px; color:#426ef0">SEU CARRINHO</p>
+            </div>
+        </div>
+        <div class="ticoCarrinho">
+            <img src="~/imgs/ticoCarrinhoVazio.png" alt="Tico Carrinho Vazio">
+            <p style=" font-family: 'Glacial Bold'; font-size:15px ">Seu carrinho está vazio</p>
+            <p style=" font-family: 'Glacial Indifference'; font-size:15px ">Explore a variedade de produtos e adicione produtos ao seu carrinho!</p>
+        </div>
+    </div>
+
+}
+else
+{
     <section class="carrinhoCheio texto-simples">
         <div class="row padrao">
             <a href="#" class="Voltar">Voltar</a>
@@ -22,11 +40,12 @@
             <div class="produtos texto-simples col-7">
                 @foreach (var itemCarrinho in Model)
                 {
+                    var produto = Json.Serialize(itemCarrinho);
+
                     // Calcula o total do item
                     decimal totalItem = itemCarrinho.qtdProd * Convert.ToDecimal(itemCarrinho.produto.valorUnit);
 
-                    // Adiciona ao subtotal
-                    subtotal += totalItem;
+                    <input type="checkbox" id="check" value="@produto" onchange='atualizarListaProdutos(this, @produto, @subtotal)' />
 
                     <div class="produto position-relative" id="cardProduto">
                         <div class="imgProd">
@@ -74,25 +93,31 @@
                         </div>
                         <div class="precoPrevia glacial-bold">
                             <p>Subtotal</p>
-                            <p>R$ @subtotal</p> <!-- Exibe o subtotal calculado -->
+                            <p id="lblSubtotal">R$ 0,00</p>
                         </div>
                     </div>
 
                     <hr />
                     <div class="precoPreviaT">
                         <p>Total</p>
-                        <p>R$ @(subtotal + 20)</p> <!-- Total é o subtotal + taxa de entrega -->
+                        <p id="lblTotal">R$ 0,00 </p>
                     </div>
+
 
                     <div class="align-items-center d-flex">
                         <img src="~/imgs/reembolso.png" class="prazoimg" alt="Prazo" />
                         <p class="limite">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
 
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
-                        <button class="btn-primary">Prosseguir compra</button>
-                    </div>
 
+                    <form asp-controller="Pedido" asp-action="FinalizarPedido">
+                        <input type="hidden" id="SelecionadosInput" name="lista" />
+                        <input type="hidden" id="totalInput" name="valorTotal" />
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn-primary" type="submit">Prosseguir compra</button>
+                        </div>
+                    </form>
                 </div>
 
                 <div class="tipoPag">
@@ -111,20 +136,44 @@
             </div>
         </div>
     </section>
+}
+
+<script>
+    let itemSelecionado = [];
+
+    function atualizarListaProdutos(checkbox, produto, subtotal) {
+        var valorUnitario = parseFloat(produto.produto.valorUnit);
+        var qtdProduto = parseInt(produto.qtdProd);
+        const totalInput = document.querySelector("#totalInput");
+        const lblSubtotal = document.querySelector("#lblSubtotal");
+        const lblTotal = document.querySelector("#lblTotal");
+
+        if (checkbox.checked) {
+            // Adiciona o produto à lista
+            itemSelecionado.push(produto);
+            subtotal += valorUnitario * qtdProduto;
+        }
+        else {
+            // Remove o produto da lista
+            itemSelecionado = itemSelecionado.filter(item => item.produto.codProd !== produto.produto.codProd);
+            subtotal -= valorUnitario * qtdProduto;
+        }
+
+        var total = subtotal + 20;
+
+        if(subtotal < 0){
+            subtotal = 0;
+            total = 0;
+        }
+
+        const input = document.querySelector("#SelecionadosInput");
+        input.value = JSON.stringify(itemSelecionado);
+
+
+
+        // Atualiza o subtotal na exibição
+        totalInput.value = total.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+        lblSubtotal.innerHTML = "R$ " + subtotal.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+        lblTotal.innerHTML = "R$ " + total.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     }
-    else
-    {
-        <div class="carrinhoVTodo">
-            <div class="col-9 base carrinhoV">
-                <a href="#" class="Voltar">Voltar a navegação</a>
-                <div class="justify-content-between d-flex">
-                    <p style=" font-family: 'Edutico'; font-size:23px; color:#426ef0">SEU CARRINHO</p>
-                </div>
-            </div>
-            <div class="ticoCarrinho">
-                <img src="~/imgs/ticoCarrinhoVazio.png" alt="Tico Carrinho Vazio">
-                <p style=" font-family: 'Glacial Bold'; font-size:15px ">Seu carrinho está vazio</p>
-                <p style=" font-family: 'Glacial Indifference'; font-size:15px ">Explore a variedade de produtos e adicione produtos ao seu carrinho!</p>
-            </div>
-        </div>
-    }
+</script>

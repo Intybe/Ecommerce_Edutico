@@ -110,7 +110,7 @@ namespace edutico.Controllers
                 // Se o cliente não estiver logado, redireciona para a página de login
                 return RedirectToAction("Login", "Login");
             }
-            else if(codLogin.codLogin == 1)
+            else if (codLogin.nivelAcesso == 0)
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -134,14 +134,13 @@ namespace edutico.Controllers
 
                 }
 
-                return View(itemCarrinho);
+                return View("Carrinho", itemCarrinho);
             }
             else
             {
-                var carrinhos = _carrinhoRepositorio.ConsultarCarrinho(codLogin.codLogin);
+                IEnumerable<Carrinho> carrinho = _carrinhoRepositorio.ConsultarCarrinho(codLogin.codLogin);
 
-
-                return View(carrinhos);
+                return View("Carrinho", carrinho);
             }
         }
 
@@ -161,11 +160,5 @@ namespace edutico.Controllers
             ViewData["msg"] = mensagem;
             return RedirectToAction("Index", "Home");
         }
-
-        public IActionResult CarrinhoVazio()
-        {
-            return View();
-        }
-
     }
 }

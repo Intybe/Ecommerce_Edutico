@@ -98,7 +98,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Comando SQL para selecionar produtos e suas respectivas imagens
-            string sql = "Select * from vwProduto Left Join tbImagem On Código = tbImagem.codProd where Status = 0 and Lançamento = 0;";
+            string sql = "Select * from vwProduto Left Join tbImagem On Código = tbImagem.codProd where Status = 1 and Lançamento = 1;";
 
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 

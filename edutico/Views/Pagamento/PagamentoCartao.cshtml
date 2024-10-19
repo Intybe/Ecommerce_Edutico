@@ -1,0 +1,264 @@
+﻿@{
+    ViewData["Title"] = "Cartao Pagamento";
+}
+
+@model Pagamento;
+
+
+@{
+    string valorModal = string.Empty;
+    string textoModal = string.Empty;
+
+    if (Model.mensagem == "Pagamento Realizado Com Sucesso!")
+    {
+        textoModal = Model.mensagem;
+        valorModal = "#successModal";
+    }
+    else
+    {
+        valorModal = "#negadoModal"; // Modal para tratar qualquer outro tipo de erro
+    }
+}
+
+<div class="row texto-simples ">
+    <div class="text-center mb-2">
+        <p>Pedido confirmado! Realize o pagamento para efetuarmos a sua compra.</p>
+        <p>Selecione ou cadastre o seu cartão de crédito abaixo:</p>
+    </div>
+
+    <div class="col-6">
+        <div class="base-cartao-com p-4 ">
+            <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">MEUS CARTÕES CADASTRADOS</h5>
+            <hr />
+            <div class="menu-cartões ">
+                @foreach (var cartoesLista in Model.cartoes)
+                {
+                    var cartao = @Html.Raw(Json.Serialize(cartoesLista));
+                    var index = Model.cartoes.IndexOf(cartoesLista);
+
+                    <div class="radio-container justify-content-between d-flex">
+                        <label for="radio-@index">
+                            <input type="radio" id="radio-@index" name="radio" onchange='selecionarCartao(@cartao)' />
+                            <!--esse span vazio é a bolinha-->
+                            <div class="custom-radio">
+                                <span></span>
+                            </div>
+                            <img src="~/imgs/master.png" alt="iconecartao" width="50">
+                            <p>@cartoesLista.numCartao.ToString().Substring(cartoesLista.numCartao.ToString().Length - 4)</p>
+                        </label>
+                        <a asp-controller="Pagamento" asp-action="VisualizarCartao" asp-route-cartaoEnviado="@cartao">
+                            <button class="vercartao"><img src="~/imgs/setalado.png" /></button>
+                        </a>
+                    </div>
+                    <hr />
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+
+        <div class="base-cartao-com">
+            <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">CADASTRE SEU CARTÃO AQUI</h5>
+            <br />
+
+            <form>
+                <div class="info-grup d-flex flex-column mb-3">
+                    <label for="titular">Nome do titular <span class="obg">*</span></label>
+                    <input type="text" placeholder="Digite aqui o número do cartão" />
+                </div>
+                <div class="info-grup d-flex flex-column mb-3">
+                    <label for="titular">Número do cartão <span class="obg">*</span></label>
+                    <input type="text" placeholder="Digite aqui o número do cartão" />
+                </div>
+                <div class="d-flex info-grup">
+                    <div class="me-3 d-flex flex-column w-100">
+                        <label for="validade">Data de validade<span class="obg">*</span></label>
+                        <input type="text" placeholder="MM/AA" />
+                    </div>
+                    <div class="d-flex flex-column w-100">
+                        <label for="cvv">Código de segurança<span class="obg">*</span></label>
+                        <input type="text" placeholder="CVV" />
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                <button class="btn-cartao ">Confirmar</button>
+            </div>  
+            </form>
+        </div>
+        <form id="formPagamento" asp-controller="Pagamento" asp-action="CadastrarPagamentoCartao" method="post">
+            <div class="base-cartao-com">
+                <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">SELECIONE A QUANTIDADE DE PARCELAS</h5>
+                    <div class="d-flex info-grup align-items-end justify-content-between">
+                        <div class="me-3 d-flex flex-column col-6">
+                            <label for="parcelas">Parcelas <span class="obg">*</span></label>
+                            <select id="parcelas" type="text" name="parcelas" placeholder="Selecione a quantidade de parcelas" required>
+                            <option value="1">1X de R$ @Model.pedido.valorTotal.ToString("F2")</option>
+                            <option value="2">2X de R$ @((Model.pedido.valorTotal / 2).ToString("F2"))</option>
+                            <option value="3">3X de R$ @((Model.pedido.valorTotal / 3).ToString("F2"))</option>
+                            <option value="4">4X de R$ @((Model.pedido.valorTotal / 4).ToString("F2"))</option>
+                            <option value="5">5X de R$ @((Model.pedido.valorTotal / 5).ToString("F2"))</option>
+                            <option value="6">6X de R$ @((Model.pedido.valorTotal / 6).ToString("F2"))</option>
+                            <option value="7">7X de R$ @((Model.pedido.valorTotal / 7).ToString("F2"))</option>
+                            <option value="8">8X de R$ @((Model.pedido.valorTotal / 8).ToString("F2"))</option>
+                            <option value="9">9X de R$ @((Model.pedido.valorTotal / 9).ToString("F2"))</option>
+                            <option value="10">10X de R$ @((Model.pedido.valorTotal / 10).ToString("F2"))</option>
+                            <option value="11">11X de R$ @((Model.pedido.valorTotal / 11).ToString("F2"))</option>
+                            <option value="12">12X de R$ @((Model.pedido.valorTotal / 12).ToString("F2"))</option>
+                            </select>
+                        </div>
+                        <div class="d-flex glacial-bold">
+                            <h5 class="me-2">Total:</h5>
+                            <h5>R$ @Model.pedido.valorTotal</h5>
+                        </div>
+                    </div>
+            </div>
+
+            <input type="hidden" name="qtdParcela" />
+            <input id="cartaoSelecionado" type="hidden" name="dadosCartao" />
+            <input type="hidden" name="dadosPagamento" value='@Json.Serialize(Model)' />
+        </form>
+        
+    </div>
+
+    <!--EXISTEM DUAS MODAIS APENAS UMA ESTA SENDO CHAMDA NO MOMENTO SÓ POR CONTA DO TESTE-->
+    <div class="d-flex justify-content-end">
+        <button class="btncanc">Voltar para o menu</button>
+        <!--botão que chama a modal o id da modal é locado no data-bs-target -->
+        <button class="btnnav" type="button" onclick="enviarFormulario()">Concluir pagamento</button>
+    </div>
+    
+</div>
+<div>
+   <script>
+       /* $(document).ready(function () {
+            var modalId = '@valorModal'; // Recebe o valor do modal de acordo com a lógica C#
+            if (modalId !== '') {
+                $(modalId).modal.show(); // Exibe o modal
+            }
+            console.log(modalId);
+        });
+        */
+
+        function abreModal() {
+            var modalId = '#successModal';
+            $(modalId).modal({
+                show: true
+            });
+        }
+
+        setTimeout(abreModal, 1000);
+
+       function selecionarCartao(cartao) {
+           const input = document.querySelector("#cartaoSelecionado");
+            input.value = JSON.stringify(cartao);
+        }
+
+       document.getElementById("parcelas").addEventListener("change", function () {
+           // Captura o valor da parcela selecionada
+           var parcelaSelecionada = this.value;
+
+           // Define o valor no campo oculto
+           document.getElementById("qtdParcela").value = parcelaSelecionada;
+       });
+
+       function enviarFormulario(){
+           const form = document.querySelector("#formPagamento");
+           form.submit();
+       }
+   </script>
+</div>
+
+
+
+
+<!-- Modal Aprovado-->
+
+<div class="modal fade texto-simples" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false">
+    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+    <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+            <!-- tico feliz porque aprovou-->
+            <img src="~/imgs/ticofeliz.png" alt="Bonequinho" class="bonequinho-img" style="position: absolute; top: -167px; left: 30%;  height: 200px;"><!--esse position absolute faz ficar no meio e em cima da modal-->
+            <!-- x para fechar-->
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- aqui fica icone confere-->
+                <div class="mb-3">
+                    <img src="~/imgs/aprovado.png" alt="Ícone de Confirmação" class="mb-3" style="height: 60px;">
+                </div>
+                <!-- Título e Mensagem -->
+                <h1 class="modal-title fs-4 glacial-bold">@textoModal</h1>
+                <!-- ese fs é fonte size-->
+                <p class="mb-3 fs-5">Obrigado pela sua compra!</p>
+                <p class="text-center mx-2">
+                    Seu pedido foi confirmado e está sendo processado. Em breve, você receberá um e-mail com os detalhes da sua compra e informações de rastreamento.
+                </p>
+            </div>
+            <!--botao de dentro da modal-->
+            <div class="modal-footer border-0 d-flex justify-content-center">
+                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary px-4 py-4" style="border-radius: 25px;">
+                    <!--faz com que abra outra padina na mesma aba-->
+                    Acompanhar pedido
+                </a>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+<!--Modal Negado-->
+
+
+<div class="modal fade texto-simples" id="negadoModal" data-bs-backdrop="static" data-bs-keyboard="false">
+    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+    <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+            <!-- x para fechar-->
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- aqui fica icone confere-->
+                <div class="mb-3">
+                    <img src="~/imgs/Cancel.png" alt="Ícone de Confirmação" class="mb-3" style="height: 60px;">
+                </div>
+                <!-- Título e Mensagem -->
+                <h1 class="modal-title fs-4 glacial-bold">Falha no pagamento</h1>
+                <!-- ese fs é fonte size-->
+                <p class="mb-3 fs-5">Tente novamente!</p>
+                <p class="text-center mx-4 mb-4">
+                    Lamentamos informar que houve um problema ao processar o seu pagamento. Por favor, verifique os detalhes do seu cartão e tente novamente ou utilize um método de pagamento diferente.
+                </p>
+
+                <p class="text-center mx-4 mb-4">
+                    Se precisar de ajuda, nossa equipe de atendimento ao cliente está à disposição para auxiliar.
+                </p>
+
+                <p class="text-center mx-4">
+                    Agradecemos pela sua compreensão.
+                <p>
+            </div>
+            <!--botao de dentro da modal-->
+            <div class="modal-footer border-0 d-flex justify-content-center">
+                <!--fecha modal-->
+                <bytton class="btn btn-primary px-4 py-3" data-bs-dismiss="modal" style="border-radius: 25px;">
+                    Voltar para o menu
+                </bytton>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
