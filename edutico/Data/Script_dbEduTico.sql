@@ -1109,6 +1109,16 @@ Select Sum(ValorTotal) As 'Total Vendas essa semana' from tbPagamento
 where YEARWEEK(data, 1) = YEARWEEK(CURDATE(), 1); 
 -- O número 1 indica que a semana começa na Segunda, conforme o padrão ISO --
 
+-- Consulta dados das avalições do produto --
+Select
+    Count(*) AS total, 
+    Sum(qtdEstrelas) AS totalAvalicoes,
+    Sum(Case when qtdEstrela = 5 then 1 else 0 END) AS estrelas5,
+    Sum(Case when qtdEstrela = 4 then 1 else 0 END) AS estrelas4,
+    Sum(Case when qtdEstrela = 3 then 1 else 0 END) AS estrelas3,
+    Sum(Case when qtdEstrela = 2 then 1 else 0 END) AS estrelas2,
+    Sum(Case when qtdEstrela = 1 then 1 else 0 END) AS estrelas1
+from tbAvaliacao;
 -- Consulta da quantidade de devoluções --
 Select Count(*) As 'Quantidade de devoluções' from tbDevolucao;
 

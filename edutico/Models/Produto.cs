@@ -16,6 +16,9 @@ namespace edutico.Models
         public decimal valorUnit { get; set; }
         public int estoque { get; set; }
         public bool statusProd { get; set; }
+        public int somaAvaliacao { get; set;}
+        public int totalAvaliacao { get; set;}
+        public Dictionary<int, int> dadosAvaliacoes{ get; set; }
 
         public List<Imagem> imgs { get; set; }
 

@@ -80,10 +80,14 @@ Delimiter $$
     Call spInsertTbItemPedido(2, 7898578201263, 1);
 $$
 
+Select * from tbPedido;
+
+Update tbPedido set statusPedido = 2 where NF = 6;
+
 Select * from tbItemPedido;
 
 Delimiter $$
-	Call spInsertTbCartaoCredito(1234567890123456, 'Cleia Santana Alves', '06/27', 6, 1);
+	Call spInsertTbCartaoCredito(1234567890123456, 'Cleia Santana Alves', '06/27', 6, 2);
 $$
 
 Select * from tbCartaoCredito;
@@ -95,14 +99,18 @@ $$
 
 Select * from tbPagamento;
 
+Select * from tbProduto;
+
 Update tbPedido Set StatusPedido = 2 where NF = 1;
-Update tbPedido Set StatusPedido = 2 where NF = 2;
+Update tbPedido Set StatusPedido = 2 where NF = 7;
 
 Delimiter $$
-	Call spInsertTbAvaliacao(5, 'Meu filho amou', 1, 7896054025112);
-    Call spInsertTbAvaliacao(4, 'Gostei, cumpre o que promete', 2, 7896054025112);
-    Call spInsertTbAvaliacao(2, 'Horrível! Não funciona', 2, 7898578201263);
+	Call spInsertTbAvaliacao(5, 'Meu filho amou', 1, 12345678910120);
+    Call spInsertTbAvaliacao(4, 'Gostei, cumpre o que promete', 2, 12345678910120);
+    Call spInsertTbAvaliacao(2, 'Horrível! Não funciona', 2, 12345678910121);
 $$
+
+Select * from tbPedido;
 
 Select * from tbAvaliacao;
 
@@ -130,3 +138,5 @@ Call spSelectTbProdutoHabilidade(2);
 
 Call spSelectHabilidadeProduto(7896054025112);
 */
+
+Select * from tbImagem;

@@ -1,18 +1,19 @@
-﻿@{
+﻿@model edutico.Models.Produto;
+
+@{
     ViewData["Title"] = "Detalhe Produto";
 }
 
-@model edutico.Models.Produto;
+
 
 <div class="container row justify-content-center">
     <div class="col-6">
         <div class="base-prod-detalhe d-flex">
             <div class="scrollable-div col-3 overflow-auto" style="max-height: 31rem; width:20%;">
-                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
-                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
-                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
-                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
-                <img src="~/imgs/montamonta.jpg" class="imgpequena" />
+                @foreach (var img in Model.imgs)
+                {
+                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem(" @Url.Content(img.enderecoImg)")" />
+                }
             </div>
 
             <div class="imgprincipal-container">
@@ -48,11 +49,11 @@
 
                         <div class="d-flex">
 
-                            <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">5.0</h4>
+                            <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">@((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", "."))</h4>
                             <div class="align-content-center">
-                                <img src="~/imgs/Star.png" class="icone ">
-                                <img src="~/imgs/Star.png" class="icone ">
-                                <img src="~/imgs/Star.png" class="icone ">
+                                <img src="~/imgs/Star.png" class="icone">
+                                <img src="~/imgs/Star.png" class="icone">
+                                <img src="~/imgs/Star.png" class="icone">
                                 <img src="~/imgs/Star.png" class="icone">
                                 <img src="~/imgs/Star.png" class="icone">
                             </div>
@@ -60,31 +61,31 @@
                         </div>
 
                         <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>5</span></div>
+                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava"> <span>5</span></div>
                             <div class="progress-bar">
                                 <div class="progress" id="bar-5"></div>
                             </div>
                         </div>
                         <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>4</span></div>
+                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava"> <span>4</span></div>
                             <div class="progress-bar">
                                 <div class="progress" id="bar-4"></div>
                             </div>
                         </div>
                         <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>3</span></div>
+                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava"> <span>3</span></div>
                             <div class="progress-bar">
                                 <div class="progress" id="bar-3"></div>
                             </div>
                         </div>
                         <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>2</span></div>
+                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava"> <span>2</span></div>
                             <div class="progress-bar">
                                 <div class="progress" id="bar-2"></div>
                             </div>
                         </div>
                         <div class="rating-row">
-                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava "> <span>1</span></div>
+                            <div class="d-flex"><img src="~/imgs/starline.png" class="iconeava"> <span>1</span></div>
                             <div class="progress-bar">
                                 <div class="progress" id="bar-1"></div>
                             </div>
@@ -92,7 +93,7 @@
 
                         <div class="total-ratings">
                             <hr />
-                            <p class="texto-simples"><span id="total-ratings">10</span> avaliações realizadas</p>
+                            <p class="texto-simples"><span id="total-ratings">@Model.totalAvaliacao</span> avaliações realizadas</p>
                         </div>
 
                     </div>
@@ -109,11 +110,11 @@
                         <h6 id="glacial-bold" class="text-center">FAÇA SUA AVALIAÇÃO!</h6>
                         <p class="mt-0">Dê uma nota geral para o produto</p>
                         <div class="d-flex">
-                            <img src="~/imgs/Star.png" class="icone" id="star1" onclick="valorEstrela(1, this)">
-                            <img src="~/imgs/Star.png" class="icone" id="star2" onclick="valorEstrela(2, this)">
-                            <img src="~/imgs/Star.png" class="icone" id="star3" onclick="valorEstrela(3, this)">
-                            <img src="~/imgs/Star.png" class="icone" id="star4" onclick="valorEstrela(4, this)">
-                            <img src="~/imgs/Star.png" class="icone" id="star5" onclick="valorEstrela(5, this)">
+                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star1" onclick="valorEstrela(1, this)">
+                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star2" onclick="valorEstrela(2, this)">
+                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star3" onclick="valorEstrela(3, this)">
+                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star4" onclick="valorEstrela(4, this)">
+                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star5" onclick="valorEstrela(5, this)">
                         </div>
 
                         <input type="text" id="qtdEstrela" name="qtdEstrela" value="" style="display: none" />
@@ -149,7 +150,7 @@
                                         }
                                         @for (int i = avaliacao.qtdEstrela; i < 5; i++)
                                         {
-                                            <img src="~/imgs/StarEmpty.png" class="iconeava" />
+                                            <img src="~/imgs/estrelaVazia.png" class="iconeava" />
                                         }
                                     </div>
                                 </div>
@@ -176,16 +177,15 @@
 
             </div>
             <p class=" mb-1 texto-simples">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                <img src="~/imgs/Star.png" class="icone mb-1">
-                5.0 (10 avaliações)
+                <img src="~/imgs/Star.png" class="iconeava" />
+                <img src="~/imgs/Star.png" class="iconeava" />
+                <img src="~/imgs/Star.png" class="iconeava" />
+                <img src="~/imgs/Star.png" class="iconeava" />
+                <img src="~/imgs/Star.png" class="iconeava" />
+                @((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", ".")) (@Model.totalAvaliacao avaliações)
             </p>
             <div class="mb-2 px-2">
-                <p class="texto-simples"> De <span style="text-decoration: line-through">70,00</span></p>
-                <h4>R$ 60,00</h4>
+                <h4>R$ @Model.valorUnit</h4>
             </div>
             <div class="d-flex mb-3 px-2">
                 <h6 class="glacial-bold" style="color:#8ED61A;"> Em estoque</h6>
@@ -292,8 +292,69 @@
 <script>
     function valorEstrela(valor, estrelaId) {
         const qtdEstrela = document.querySelector('#qtdEstrela');
+        const s1 = document.querySelector('#star1');
+        const s2 = document.querySelector('#star2');
+        const s3 = document.querySelector('#star3');
+        const s4 = document.querySelector('#star4');
+        const s5 = document.querySelector('#star5');
 
         qtdEstrela.value = valor;
-        estrelaId.src = "wwwroot/imgs/aprovado.png";
+
+
+        if (valor == 5) {
+            s1.src = '@Url.Content("~/imgs/Star.png")';
+            s2.src = '@Url.Content("~/imgs/Star.png")';
+            s3.src = '@Url.Content("~/imgs/Star.png")';
+            s4.src = '@Url.Content("~/imgs/Star.png")';
+            s5.src = '@Url.Content("~/imgs/Star.png")';
+        }
+
+        else if (valor == 4) {
+            s1.src = '@Url.Content("~/imgs/Star.png")';
+            s2.src = '@Url.Content("~/imgs/Star.png")';
+            s3.src = '@Url.Content("~/imgs/Star.png")';
+            s4.src = '@Url.Content("~/imgs/Star.png")';
+            s5.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+        }
+
+        else if (valor == 3) {
+            s1.src = '@Url.Content("~/imgs/Star.png")';
+            s2.src = '@Url.Content("~/imgs/Star.png")';
+            s3.src = '@Url.Content("~/imgs/Star.png")';
+            s4.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+            s5.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+        }
+
+        else if (valor == 2) {
+            s1.src = '@Url.Content("~/imgs/Star.png")';
+            s2.src = '@Url.Content("~/imgs/Star.png")';
+            s3.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+            s4.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+            s5.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+        }
+
+        else if (valor == 1) {
+            s1.src = '@Url.Content("~/imgs/Star.png")';
+            s2.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+            s3.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+            s4.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+            s5.src = '@Url.Content("~/imgs/estrelaVazia.png")';
+        }
+    }
+
+
+    // Quantidade de avaliações
+    const totalRatings = @Model.totalAvaliacao;
+    const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
+
+    for (let rating in ratingsData) {
+        const percentage = (ratingsData[rating] / totalRatings) * 100;
+        const ratingBar = document.getElementById(`bar-${rating}`);
+
+        if (ratingBar) {
+            ratingBar.style.width = `${percentage}%`;
+        } else {
+            console.error(`Barra de progresso para ${rating} estrelas não encontrada.`);
+        }
     }
 </script>

@@ -46,24 +46,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbHRlcmFyUHJvZHV0b3NGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/BuscaCategoria.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNjYUNhdGVnb3JpYS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/CadastrarProdutosF.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3RyYXJQcm9kdXRvc0YuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/CadastroMeusCartoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3Ryb01ldXNDYXJ0b2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/CancelamentoEfetuado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYW5jZWxhbWVudG9FZmV0dWFkby5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/CartaoPagamento.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0YW9QYWdhbWVudG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/DetalhesPedido.cshtml]
@@ -126,14 +114,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/PagamentoCartao.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdhbWVudG9DYXJ0YW8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/PagamentoQrcode.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdhbWVudG9RcmNvZGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Home/PedidosAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZWRpZG9zQW5kYW1lbnRvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -182,8 +162,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlc1Byb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Produto/Espelho.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xFc3BlbGhvLmNzaHRtbA==
+[C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Produto/Pesquisa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQZXNxdWlzYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/barro/Desktop/Ultima Atualização/edutico/Views/Shared/Error.cshtml]

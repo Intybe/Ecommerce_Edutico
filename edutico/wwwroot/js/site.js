@@ -55,28 +55,7 @@
         console.error("Elemento #toggle-button ou #versaocompleta não foi encontrado.");
     }
 
-    // Quantidade de avaliações
-    const totalRatings = 10;
-    const ratingsData = { 5: 8, 4: 1, 3: 0, 2: 0, 1: 0 };
-
-    for (let rating in ratingsData) {
-        const percentage = (ratingsData[rating] / totalRatings) * 100;
-        const ratingBar = document.getElementById(`bar-${rating}`);
-
-        if (ratingBar) {
-            ratingBar.style.width = `${percentage}%`;
-        } else {
-            console.error(`Barra de progresso para ${rating} estrelas não encontrada.`);
-        }
-    }
-
-    // Exibe o total de avaliações
-    const totalRatingsElement = document.getElementById('total-ratings');
-    if (totalRatingsElement) {
-        totalRatingsElement.innerText = totalRatings;
-    } else {
-        console.error("#total-ratings não foi encontrado.");
-    }
+    
 
     // Extender filtros nas telas de Busca
     document.querySelectorAll('.filter-title').forEach(item => {

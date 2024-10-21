@@ -53,6 +53,14 @@
       "PackagePath": "staticwebassets\\imgs\\20547680-ccff-4ecb-9389-e6b664a90fc1.png"
     },
     {
+      "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\36ec4471-7920-4d62-b84c-7aebc4e19eea.jfif",
+      "PackagePath": "staticwebassets\\imgs\\36ec4471-7920-4d62-b84c-7aebc4e19eea.jfif"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\472ee46f-073d-4a62-bdb4-0318f2725f8c.jpg",
+      "PackagePath": "staticwebassets\\imgs\\472ee46f-073d-4a62-bdb4-0318f2725f8c.jpg"
+    },
+    {
       "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\6ec75e6e-2374-425f-b198-7c3048f2919b.jfif",
       "PackagePath": "staticwebassets\\imgs\\6ec75e6e-2374-425f-b198-7c3048f2919b.jfif"
     },
@@ -213,6 +221,10 @@
       "PackagePath": "staticwebassets\\imgs\\edupedidos.png"
     },
     {
+      "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\estrelaVazia.png",
+      "PackagePath": "staticwebassets\\imgs\\estrelaVazia.png"
+    },
+    {
       "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\facebook.png",
       "PackagePath": "staticwebassets\\imgs\\facebook.png"
     },
@@ -267,6 +279,10 @@
     {
       "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\master.png",
       "PackagePath": "staticwebassets\\imgs\\master.png"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\meiaEstrela.png",
+      "PackagePath": "staticwebassets\\imgs\\meiaEstrela.png"
     },
     {
       "Id": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\meninoo.png",

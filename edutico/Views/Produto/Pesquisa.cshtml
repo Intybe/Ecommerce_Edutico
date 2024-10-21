@@ -1,0 +1,115 @@
+﻿@model List<Produto>
+
+@{
+    ViewData["Title"] = "Categoria";
+}
+<div class="container">
+    <div class="d-flex ">
+        <p>Local de entrega</p>
+        <div class="filtro">
+            <label for="option" style="font-family: 'Glacial Bold'">CEP:</label>
+            <select id="cep">
+            </select>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="filter-section">
+                <h3>FILTROS</h3>
+                <div class="filter-item">
+                    <div class="filter-title">Categoria</div>
+                    <div class="filter-content">
+                        <label><input type="checkbox" name="categoria" value="categoria1"> Categoria 1</label>
+                        <label><input type="checkbox" name="categoria" value="categoria2"> Categoria 2</label>
+                        <label><input type="checkbox" name="categoria" value="categoria3"> Categoria 3</label>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-title">Habilidade</div>
+                    <div class="filter-content">
+                        <label><input type="checkbox" name="habilidade" value="motora"> Motora</label>
+                        <label><input type="checkbox" name="habilidade" value="critica"> Crítica</label>
+                        <label><input type="checkbox" name="habilidade" value="logica"> Lógica</label>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-title">Classificação</div>
+                    <div class="filter-content">
+                        <label><input type="checkbox" name="classificacao" value="5estrelas"> 5 Estrelas</label>
+                        <label><input type="checkbox" name="classificacao" value="4estrelas"> 4 Estrelas</label>
+                        <label><input type="checkbox" name="classificacao" value="3estrelas"> 3 Estrelas</label>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-title">Preço</div>
+                    <div class="filter-content">
+                        <label><input type="checkbox" name="preco" value="barato"> Barato</label>
+                        <label><input type="checkbox" name="preco" value="medio"> Médio</label>
+                        <label><input type="checkbox" name="preco" value="caro"> Caro</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-8">
+            <div class="justify-content-between d-flex">
+                <p style="font-family:'Glacial Bold'; font-size:23px;">Resultados para "@ViewData["pesquisa"]"</p>
+                <div class="filtro">
+                    <label for="option" style="font-family: 'Glacial Bold'; padding-inline:10px">Ordenar por</label>
+                    <select id="ordecao">
+                        <option value="relevante"> Relevante </option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                @*xl antes da maxima, cada item ocupa 2 colunas,
+                lg -> 3 colunas, md -> 4 colunas sm -> 6 colunas, e fora disso ocupa a linha toda*@
+                @*d-flex align-items-stretch, ajusta os itens deixando eles do mesmo tamanho*@
+                <div class="col-sm-3 d-flex align-items-stretch">
+                    @foreach (var produto in Model.Take(4))
+                    {
+                        <div class="card product-card my-2">
+                            <div class="card-body py-2">
+                                <div class="position-relative">
+                                    <button class="btn position-absolute right-0 top-0 px-0">
+                                        <img src="~/imgs/heart.png" class="heart-icon">
+                                    </button>
+                                </div>
+                                <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
+                                @if (produto.nomeProd.Length > 20)
+                                {
+                                    @produto.nomeProd.Substring(0, 20)
+
+                                    <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                }
+                                else
+                                {
+                                    @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                }
+                                <p class="text mb-3 small-text">
+                                    <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.totalAvaliacao).ToString("F1").Replace(",", ".")) (@produto.totalAvaliacao avaliações)
+                                </p>
+                                <p class="text-primary h4 glacial-bold">R$ @produto.valorUnit</p>
+                            </div>
+                            <a asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@produto.codProd" asp-route-qtdProd=1 class="text-decoration-none">
+                                <button class="btn position-absolute bottom-0 end-0 px-2">
+                                    <img src="~/imgs/carrinhoadd.png" class="cart-icon">
+                                </button>
+                            </a>
+                        </div>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
