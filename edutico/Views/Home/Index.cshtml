@@ -68,7 +68,7 @@
                                     </h6>
 
                                     <p class="text mb-3 small-text" style="color:#000">
-                                        <img src="~/imgs/Star.png" class="icone mb-1"> 5.0 (10 avaliações)
+                                        <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.totalAvaliacao).ToString("F1").Replace(",", ".")) (@produto.totalAvaliacao avaliações)
                                     </p>
                                     <p class="h4 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
                                 </div>

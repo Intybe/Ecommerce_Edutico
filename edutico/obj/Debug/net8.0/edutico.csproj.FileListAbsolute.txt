@@ -1855,6 +1855,7 @@ C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\edutico.csp
 C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\edutico.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\edutico.RazorAssemblyInfo.cache
 C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\edutico.RazorAssemblyInfo.cs
+C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\edutico.sourcelink.json
 C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\barro\Desktop\Ultima Atualização\edutico\obj\Debug\net8.0\staticwebassets\msbuild.edutico.Microsoft.AspNetCore.StaticWebAssets.props

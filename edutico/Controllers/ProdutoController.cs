@@ -118,6 +118,18 @@ namespace edutico.Controllers
             TempData["msg"] = mensagem;
             return RedirectToAction("DetalhesProduto", new { codProd });
         }
+
+        public IActionResult Pesquisa(string pesquisa)
+        {
+            // Cria uma lista para armazenar vários produtos
+            List<Produto> produtos = new List<Produto>();
+
+            // Busca os produtos no banco de dados e armazena na lista
+            produtos = _produtoRepositorio.ConsultarProdutoLancamento().ToList(); // Obtém os produtos
+
+            ViewData["pesquisa"] = pesquisa;
+            return View(produtos);
+        }
     }
 }
 
