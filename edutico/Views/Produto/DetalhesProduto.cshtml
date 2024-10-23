@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Detalhe Produto";
+    Layout = "_LayoutCli2";
 }
 
 
@@ -9,11 +10,12 @@
 <div class="container row justify-content-center">
     <div class="col-6">
         <div class="base-prod-detalhe d-flex">
-            <div class="scrollable-div col-3 overflow-auto" style="max-height: 31rem; width:20%;">
+            <div class="scrollable-div col-3 overflow-auto" >
                 @foreach (var img in Model.imgs)
                 {
-                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem(" @Url.Content(img.enderecoImg)")" />
+                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem("@Url.Content(img.enderecoImg)")" />
                 }
+                
             </div>
 
             <div class="imgprincipal-container">
@@ -48,15 +50,28 @@
                     <div class="rating-score ">
 
                         <div class="d-flex">
-
-                            <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">@((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", "."))</h4>
-                            <div class="align-content-center">
-                                <img src="~/imgs/Star.png" class="icone">
-                                <img src="~/imgs/Star.png" class="icone">
-                                <img src="~/imgs/Star.png" class="icone">
-                                <img src="~/imgs/Star.png" class="icone">
-                                <img src="~/imgs/Star.png" class="icone">
-                            </div>
+                            @if (Model.avaliacoes != null && Model.avaliacoes.Any())
+                            {
+                                <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">@((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", "."))</h4>
+                                <div class="align-content-center">
+                                    <img src="~/imgs/Star.png" class="icone">
+                                    <img src="~/imgs/Star.png" class="icone">
+                                    <img src="~/imgs/Star.png" class="icone">
+                                    <img src="~/imgs/Star.png" class="icone">
+                                    <img src="~/imgs/Star.png" class="icone">
+                                </div>
+                            }
+                            else
+                            {
+                                <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">0.0</h4>
+                                <div class="align-content-center">
+                                    <img src="~/imgs/estrelaVazia.png" class="icone">
+                                    <img src="~/imgs/estrelaVazia.png" class="icone">
+                                    <img src="~/imgs/estrelaVazia.png" class="icone">
+                                    <img src="~/imgs/estrelaVazia.png" class="icone">
+                                    <img src="~/imgs/estrelaVazia.png" class="icone">
+                                </div>
+                            }
 
                         </div>
 
@@ -176,14 +191,34 @@
 
 
             </div>
-            <p class=" mb-1 texto-simples">
-                <img src="~/imgs/Star.png" class="iconeava" />
-                <img src="~/imgs/Star.png" class="iconeava" />
-                <img src="~/imgs/Star.png" class="iconeava" />
-                <img src="~/imgs/Star.png" class="iconeava" />
-                <img src="~/imgs/Star.png" class="iconeava" />
-                @((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", ".")) (@Model.totalAvaliacao avaliações)
-            </p>
+            
+                @if (Model.avaliacoes != null && Model.avaliacoes.Any())
+                {
+                    <p class=" mb-1 texto-simples">
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+
+                
+                        @((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", ".")) (Model.totalAvaliacao avaliações)
+                    </p>
+                }
+                else
+                {
+                    <p class=" mb-1 texto-simples">
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+                        <img src="~/imgs/Star.png" class="iconeava" />
+
+                
+                        (0 avaliações)
+                    </p>
+                }
+            
             <div class="mb-2 px-2">
                 <h4>R$ @Model.valorUnit</h4>
             </div>
@@ -196,9 +231,11 @@
                     <option>4</option>
                 </select>
             </div>
-            <div class="row justify-content-center px-2 m-1">
-                <buttom class="btncar">Adicionar carrinho</buttom>
-            </div>
+            <a asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@Model.codProd" asp-route-qtdProd=1 class="text-decoration-none">
+                <div class="row justify-content-center px-2 m-1">
+                    <buttom class="btncar">Adicionar carrinho</buttom>
+                </div>
+            </a>
         </div>
 
         <div class="base-prod-detalhe">

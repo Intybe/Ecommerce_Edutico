@@ -713,372 +713,6 @@ h5{
 
 
 
-/*Detalhe Produto*/
-
-/*Geral*/
-.base-prod-detalhe {
-    background: white;
-    border-radius: 20px;
-    border: 1px solid #b2b2b2;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-}
-
-    .base-prod-detalhe h3 {
-        font-family: 'Edutico';
-        font-size: 20px;
-    }
-
-.texto-simples {
-    font-family: 'Glacial';
-    font-size: 15px;
-    margin-bottom: 0;
-}
-
-#glacial-bold {
-    font-family: 'Glacial Bold';
-}
-
-
-/*Div detalhes*/
-#versaocompleta.hidden {
-    display: none;
-    margin-top: 20px;
-}
-
-.base-prod-detalhe .vermais {
-    background-color: #fff;
-    color: #385BD2;
-    border-radius: 30px;
-    border: none;
-    margin: 10px;
-    font-size: 15px;
-    margin-top: 10px;
-    font-family: 'Glacial Bold';
-}
-
-.base-prod-detalhe h4 {
-    font-family: 'Glacial Bold';
-    color: #385BD2;
-}
-
-.fundo_ver {
-    height: 70px;
-    width: 100%;
-    border-radius: 30px;
-    background: linear-gradient(to top, white, transparent);
-}
-
-/*Div comprar*/
-.curti {
-    width: 25px;
-    height: 25px;
-}
-
-#qtd {
-    border: 1px solid gray;
-    border-radius: 30px;
-    margin-left: 10px;
-    padding-inline: 10px;
-}
-
-.btncar {
-    width: 100%;
-    padding: 5px;
-    background: #385BD2;
-    color: white;
-    text-align: center;
-    border-radius: 16px;
-    font-family: 'Glacial Bold';
-    font-size: 20px;
-}
-
-    .btncar:hover {
-        opacity: 0.5;
-    }
-
-#cal-frete-text {
-    width: 130px;
-}
-
-#bold {
-    font-family: 'Glacial Bold';
-}
-
-
-.cal-frete {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #888;
-    border-radius: 50px;
-    padding: 0px;
-    margin-inline: 10px;
-    width: auto;
-    height: 35px;
-}
-
-    .cal-frete input {
-        border: none;
-        font-size: 15px;
-        width: 100px;
-        height: 20px;
-    }
-
-        .cal-frete input::placeholder {
-            font-size: 15px;
-        }
-
-    .cal-frete button {
-        background-color: black;
-        color: white;
-        border: none;
-        padding: 5px 15px;
-        cursor: pointer;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-    /*tirar linha quando clica*/
-    .cal-frete input:focus {
-        border: none;
-        outline: none;
-    }
-
-    .cal-frete button:hover {
-        background-color: #333;
-    }
-
-
-/*Div recomenadados*/
-.card-recome {
-    width: 100%;
-    justify-content: center;
-}
-
-.base-prod-detalhe .card-img-top {
-    height: 100px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-.card-recome .btn-outline-danger {
-    background-color: white;
-    border: 1px solid #f8d7da;
-}
-
-.card-recome .btn-outline-primary {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: white;
-    border: 1px solid #007bff;
-}
-
-/*Div avaliações*/
-.rating-score {
-    text-align: center;
-}
-
-.total-ratings hr {
-    margin: 2px;
-}
-
-.stars {
-    font-size: 24px;
-    color: gold;
-}
-
-.rating-summary {
-    width: 300px;
-    margin: 20px auto;
-}
-
-.rating-row {
-    display: flex;
-    align-items: center;
-    margin-inline: 10px;
-}
-
-    .rating-row span {
-        width: 15px;
-        font-size: 15px;
-    }
-
-.progress-bar {
-    background-color: #e0e0e0;
-    border-radius: 7px;
-    width: 100%;
-    height: 7px;
-}
-
-.progress {
-    height: 100%;
-    background-color: #385BD2;
-    border-radius: 5px;
-}
-
-.total-ratings {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.rating-details ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-}
-
-.review-form {
-    border-top: 1px solid #eaeaea;
-    padding-top: 20px;
-    margin-bottom: 30px;
-}
-
-    .review-form h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-.stars-input {
-    font-size: 24px;
-    color: gray;
-    cursor: pointer;
-}
-
-.base-prod-detalhe textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid gray;
-    border-radius: 15px;
-    background-color: #bdbdbd66;
-}
-
-.btnava {
-    width: 100%;
-    padding: 5px;
-    background: #385BD2;
-    color: white;
-    text-align: center;
-    border-radius: 16px;
-    font-family: 'Glacial Bold';
-    font-size: 15px;
-    border: none;
-}
-
-.iconeava {
-    height: 15px;
-    width: 15px;
-}
-
-.review {
-    margin-bottom: 20px;
-}
-
-.review-header {
-    margin-bottom: 10px;
-    width: 70px;
-    line-height: 15px;
-}
-
-.review-content {
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 0 10px 10px 10px;
-    border: 1px solid #BBBBBB;
-    font-size: 14px;
-}
-
-
-
-
-/* MEU PERFIL*/
-.Perfil {
-    display: flex;
-    padding: 20px;
-}
-
-.areaCliente {
-    margin-left: 20px;
-    border-radius: 20px;
-    align-items: center;
-    padding-inline: 25px;
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.30);
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    font-family: 'Glacial';
-}
-
-    .areaCliente hr {
-        margin: 4px;
-    }
-
-    .areaCliente p {
-        margin-bottom: 5px;
-    }
-
-.titulo_perfil {
-    font-family: 'Edutico';
-    font-size: 30px;
-    color: #1F3C9D;
-    margin-block: 10px;
-}
-
-.sub_perfil {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-}
-
-    .sub_perfil h5 {
-        margin-bottom: 0;
-    }
-
-.info-grup input[disabled] {
-    font-family: 'Glacial Bold';
-    color: gray;
-    border: none;
-    font-size: 14px;
-    background: none;
-}
-
-#senhameuperfil {
-    width: 100%;
-    padding: 0px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-}
-
-.areaCliente .info-grup {
-    margin-block: 10px;
-    height: auto;
-    padding-block: 10px;
-}
-
-    .areaCliente .info-grup input {
-        border-radius: 10px;
-        padding: 5px 10px;
-        border: 1px solid gray;
-    }
-
-        .areaCliente .info-grup input:focus {
-            border: 1px solid blue;
-            outline: none;
-        }
-
-.editar {
-    border: none;
-    background: none;
-    color: #1C3FB9;
-    text-decoration: underline;
-    margin-bottom:0px;
-}
-
 
 /*DETALHES PEDIDO*/
 .tudodedetalhe {
@@ -1530,6 +1164,86 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é 
     margin: 0;
 }
 
+/* MEU PERFIL*/
+.Perfil {
+    display: flex;
+    padding: 20px;
+}
+
+.areaCliente {
+    margin-left: 20px;
+    border-radius: 20px;
+    align-items: center;
+    padding-inline: 25px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    font-family: 'Glacial';
+}
+
+    .areaCliente hr {
+        margin: 4px;
+    }
+
+    .areaCliente p {
+        margin-bottom: 5px;
+    }
+
+.titulo_perfil {
+    font-family: 'Edutico';
+    font-size: 30px;
+    color: #1F3C9D;
+    margin-block: 10px;
+}
+
+.sub_perfil {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+    .sub_perfil h5 {
+        margin-bottom: 0;
+    }
+
+.info-grup input[disabled] {
+    font-family: 'Glacial Bold';
+    color: gray;
+    border: none;
+    font-size: 14px;
+    background: none;
+}
+
+#senhameuperfil {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.info-grup {
+    margin-block: 10px;
+    height: auto;
+    padding-block: 10px;
+}
+    .info-grup input {
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+    }
+
+        .info-grup input:focus {
+            border: 1px solid blue;
+            outline: none;
+        }
+
+
+.editar {
+    border: none;
+    background: none;
+    color: #1C3FB9;
+    text-decoration: underline;
+}
 /*Meus Cartões*/
 
 .btnvoltarcar {
@@ -1628,3 +1342,4 @@ html {
 body {
     margin-bottom: 60px;
 }
+

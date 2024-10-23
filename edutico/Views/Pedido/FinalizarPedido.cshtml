@@ -136,6 +136,7 @@
 
                 <!--scroll classe boostrap | sumario de produtos na prévia-->
                 <div class="scrollable-div overflow-auto" style="max-height: 150px; ">
+               
                     @foreach (var itens in Model.itensPedido)
                     {
                         <div class="item-prod">
@@ -143,7 +144,7 @@
                             <p>R$ @itens.produto.valorUnit</p>
                         </div>
                     }
-
+                </div>
 
                     <div class="item-prod mt-2">
                         <p>Entrega</p>
@@ -164,7 +165,7 @@
 
                 </div>
 
-            </div>
+          
             <!--botões para prosseguir ou cancelar-->
             <div class="d-flex justify-content-center">
                 <button class="btncanc-ped">Cancelar</button>
