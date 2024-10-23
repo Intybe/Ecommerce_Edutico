@@ -180,7 +180,14 @@ namespace edutico.Repositorio
                         produto.dadosAvaliacoes = new Dictionary<int, int>();
 
                         // Verifica se há resultados da consulta de avaliações
-                        if (drAvaliacoes.Read())
+                        if (drAvaliacoes.Read() && drAvaliacoes != null &&
+    drAvaliacoes["estrelas1"] != DBNull.Value &&
+    drAvaliacoes["estrelas2"] != DBNull.Value &&
+    drAvaliacoes["estrelas3"] != DBNull.Value &&
+    drAvaliacoes["estrelas4"] != DBNull.Value &&
+    drAvaliacoes["estrelas5"] != DBNull.Value &&
+    drAvaliacoes["somaAvaliacao"] != DBNull.Value &&
+    drAvaliacoes["total"] != DBNull.Value)
                         {
                             // Para cada categoria de estrelas de 1 a 5, atribui a quantidade correspondente
                             for (int i = 5; i >= 1; i--)
@@ -191,6 +198,7 @@ namespace edutico.Repositorio
                                 // Inserindo no dicionário
                                 produto.dadosAvaliacoes[chave] = valor;
                             }
+
                             produto.somaAvaliacao = Convert.ToInt32(drAvaliacoes["somaAvaliacao"]);
                             produto.totalAvaliacao = Convert.ToInt32(drAvaliacoes["total"]);
                         }
@@ -305,18 +313,25 @@ namespace edutico.Repositorio
             produto.dadosAvaliacoes = new Dictionary<int, int>();
 
             // Verifica se há resultados da consulta de avaliações
-            if (drAvaliacoes.Read())
+            if (drAvaliacoes.Read() && drAvaliacoes != null &&
+    drAvaliacoes["estrelas1"] != DBNull.Value &&
+    drAvaliacoes["estrelas2"] != DBNull.Value &&
+    drAvaliacoes["estrelas3"] != DBNull.Value &&
+    drAvaliacoes["estrelas4"] != DBNull.Value &&
+    drAvaliacoes["estrelas5"] != DBNull.Value &&
+    drAvaliacoes["somaAvaliacao"] != DBNull.Value &&
+    drAvaliacoes["total"] != DBNull.Value)
             {
                 // Para cada categoria de estrelas de 1 a 5, atribui a quantidade correspondente
                 for (int i = 5; i >= 1; i--)
                 {
-                    // Supondo que 'produto.dadosAvaliacoes' seja o seu dicionário
-                    int chave = Convert.ToInt32(i); // A chave do dicionário
+                    int chave = i; // A chave do dicionário
                     int valor = Convert.ToInt32(drAvaliacoes[$"estrelas{i}"]); // O valor a ser inserido
 
                     // Inserindo no dicionário
                     produto.dadosAvaliacoes[chave] = valor;
                 }
+
                 produto.somaAvaliacao = Convert.ToInt32(drAvaliacoes["somaAvaliacao"]);
                 produto.totalAvaliacao = Convert.ToInt32(drAvaliacoes["total"]);
             }
@@ -468,7 +483,14 @@ namespace edutico.Repositorio
                         produto.dadosAvaliacoes = new Dictionary<int, int>();
 
                         // Verifica se há resultados da consulta de avaliações
-                        if (drAvaliacoes.Read())
+                        if (drAvaliacoes.Read() && drAvaliacoes != null &&
+    drAvaliacoes["estrelas1"] != DBNull.Value &&
+    drAvaliacoes["estrelas2"] != DBNull.Value &&
+    drAvaliacoes["estrelas3"] != DBNull.Value &&
+    drAvaliacoes["estrelas4"] != DBNull.Value &&
+    drAvaliacoes["estrelas5"] != DBNull.Value &&
+    drAvaliacoes["somaAvaliacao"] != DBNull.Value &&
+    drAvaliacoes["total"] != DBNull.Value)
                         {
                             // Para cada categoria de estrelas de 1 a 5, atribui a quantidade correspondente
                             for (int i = 5; i >= 1; i--)
@@ -479,6 +501,7 @@ namespace edutico.Repositorio
                                 // Inserindo no dicionário
                                 produto.dadosAvaliacoes[chave] = valor;
                             }
+
                             produto.somaAvaliacao = Convert.ToInt32(drAvaliacoes["somaAvaliacao"]);
                             produto.totalAvaliacao = Convert.ToInt32(drAvaliacoes["total"]);
                         }

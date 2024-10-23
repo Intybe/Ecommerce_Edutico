@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WrXyf3Z/Z1OxDVbX75grIFp9UPvFJGUU2EOARQbRcxM=",
+  "Hash": "lTr78w3vl6lQtxWhPFuVXjgRfHDRFDq0uJv1VIZLzco=",
   "Source": "edutico",
   "BasePath": "_content/edutico",
   "Mode": "Default",
@@ -302,6 +302,25 @@
       "OriginalItemSpec": "wwwroot\\imgs\\36ec4471-7920-4d62-b84c-7aebc4e19eea.jfif"
     },
     {
+      "Identity": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\44c59aa0-0763-4f38-a612-84073a587666.jfif",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/44c59aa0-0763-4f38-a612-84073a587666.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\44c59aa0-0763-4f38-a612-84073a587666.jfif"
+    },
+    {
       "Identity": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\472ee46f-073d-4a62-bdb4-0318f2725f8c.jpg",
       "SourceId": "edutico",
       "SourceType": "Discovered",
@@ -357,6 +376,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\6maisanos.png"
+    },
+    {
+      "Identity": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\7616c674-4e4b-44ec-ab3a-c51a8a377ed9.jfif",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/7616c674-4e4b-44ec-ab3a-c51a8a377ed9.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\7616c674-4e4b-44ec-ab3a-c51a8a377ed9.jfif"
     },
     {
       "Identity": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\7c9a61b3-aed2-4564-8c93-5b1e2681c8e5.jpg",
@@ -927,6 +965,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\Devolucao.png"
+    },
+    {
+      "Identity": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\e17c528f-77a9-442f-aa88-e42e8c10a2bf.jfif",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/e17c528f-77a9-442f-aa88-e42e8c10a2bf.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\e17c528f-77a9-442f-aa88-e42e8c10a2bf.jfif"
     },
     {
       "Identity": "C:\\Users\\barro\\Desktop\\Ultima Atualização\\edutico\\wwwroot\\imgs\\edupedidos.png",

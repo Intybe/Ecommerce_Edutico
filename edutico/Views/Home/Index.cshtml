@@ -67,9 +67,18 @@
                                         }
                                     </h6>
 
-                                    <p class="text mb-3 small-text" style="color:#000">
-                                        <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.totalAvaliacao).ToString("F1").Replace(",", ".")) (@produto.totalAvaliacao avaliações)
-                                    </p>
+                                    @if (produto.avaliacoes != null && produto.avaliacoes.Any())
+{
+    <p class="text mb-3 small-text">
+        <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.totalAvaliacao).ToString("F1").Replace(",", ".")) (@produto.totalAvaliacao avaliações)
+    </p>
+}
+else
+{
+    <p class="text mb-3 small-text">
+        <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
+    </p>
+}
                                     <p class="h4 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
                                 </div>
                                 <a asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@produto.codProd" asp-route-qtdProd=1 class="text-decoration-none">
