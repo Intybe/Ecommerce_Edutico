@@ -111,73 +111,7 @@
         habilidadesSelecionadas.value = habilidades.join(', ');
     }
 
-    /*Quantidade de carrinho */
-    const valorInput = document.getElementById("valor");
-    const incrementarBtn = document.getElementById("incrementar");
-    const decrementarBtn = document.getElementById("decrementar");
-
-    incrementarBtn.addEventListener("click", function () {
-        valorInput.value = parseInt(valorInput.value) + 1;
-    });
-
-    decrementarBtn.addEventListener("click", function () {
-        if (valorInput.value > 0) {  // Evitar valores negativos
-            valorInput.value = parseInt(valorInput.value) - 1;
-        }
-    });
-
-    valorInput.addEventListener("input", function () {
-        // Evitar que o input tenha valores negativos
-        if (valorInput.value < 0) {
-            valorInput.value = 0;
-        }
-    });
-
-    let itemSelecionado = [];
-
-    function atualizarListaProdutos(checkbox, produto, subtotal) {
-        var valorUnitario = parseFloat(produto.produto.valorUnit);
-        var qtdProduto = parseInt(produto.qtdProd);
-        const totalInput = document.querySelector("#totalInput");
-        const lblSubtotal = document.querySelector("#lblSubtotal");
-        const lblTotal = document.querySelector("#lblTotal");
-
-        if (checkbox.checked) {
-            // Adiciona o produto à lista
-            itemSelecionado.push(produto);
-            subtotal += valorUnitario * qtdProduto;
-        }
-        else {
-            // Remove o produto da lista
-            itemSelecionado = itemSelecionado.filter(item => item.produto.codProd !== produto.produto.codProd);
-            subtotal -= valorUnitario * qtdProduto;
-        }
-
-        var total = subtotal + 20;
-
-        if (subtotal < 0) {
-            subtotal = 0;
-            total = 0;
-        }
-
-        const input = document.querySelector("#SelecionadosInput");
-        input.value = JSON.stringify(itemSelecionado);
-
-
-
-        // Atualiza o subtotal na exibição
-        totalInput.value = total.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-        lblSubtotal.innerHTML = "R$ " + subtotal.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-        lblTotal.innerHTML = "R$ " + total.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-
-        // Função para fechar o card
-        const fecharCard = document.getElementById("fecharCard");
-        const cardProduto = document.getElementById("cardProduto");
-
-        fecharCard.addEventListener("click", function () {
-            cardProduto.style.display = "none";
-        });
-    }
+    
   
 
 

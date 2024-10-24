@@ -49,6 +49,7 @@
 		Sessão de Exclusão de Favoritos
         Sessão de Exclusão de Avaliação
         Sessão de Exclusão de Produtos do Carrinho
+        Sessão de Atualizar quantidade de Produtos do Carrinho
 	Triggers
 		Sessão de Redução de estoque
 		Sessão de Deletar os produtos do carrinho após realização do pedido
@@ -904,6 +905,16 @@ Begin
 	Delete from tbCarrinho where codLogin = vCodLogin and codProd = vCodProd;
 End $$  
 
+-- Sessão de Atualizar quantidade de Produtos do Carrinho --
+Delimiter $$
+Create Procedure spUpdateTbCarrinho(
+	vCodLogin int, 
+    vCodProd decimal(14,0),
+    VQtdProd int
+)
+Begin 
+	Update tbCarrinho set qtdProd = vQtdProd where codProd= vCodProd and codLogin = vCodLogin;
+End $$  
 
 /*
 	Triggers

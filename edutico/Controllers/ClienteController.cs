@@ -178,5 +178,30 @@ namespace edutico.Controllers
             ViewData["msg"] = mensagem;
             return RedirectToAction("Carrinho", "Cliente");
         }
+
+
+        [HttpPost]
+        public IActionResult AtualizarQtdProdCarrinho(decimal codProd, int qtdProd)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+
+            // Atualiza a quantidade de produtos no banco de dados
+            string mensagem = _carrinhoRepositorio.AtualizarQtdProdCarrinho(codLogin.codLogin, codProd, qtdProd);
+
+            // Exibe uma mensagem de sucesso ou erro
+            ViewData["msg"] = mensagem;
+
+            // Redireciona de volta para a página do carrinho
+            return RedirectToAction("Carrinho");
+        }
+
     }
+
 }

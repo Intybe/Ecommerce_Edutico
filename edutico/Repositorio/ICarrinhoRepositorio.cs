@@ -12,6 +12,9 @@ namespace edutico.Repositorio
         public String CadastrarProdutoCarrinho(int codLogin, decimal codProd, int qtdProd);
 
         public String ExcluirItemCarrinho(int codLogin, decimal codProd);
+
+        public String AtualizarQtdProdCarrinho(int codLogin, decimal codProd, int qtdProd);
+
     }
 }
 
