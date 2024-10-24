@@ -10,6 +10,8 @@ namespace edutico.Repositorio
 
         // Instanciando o método de cadastro dos produtos no carrinho
         public String CadastrarProdutoCarrinho(int codLogin, decimal codProd, int qtdProd);
+
+        public String ExcluirItemCarrinho(int codLogin, decimal codProd);
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H5zF611sUt7v3uefL7gJwgtkv7o98pJ2nnaMVXWBHEs=",
+  "Hash": "VC3vKx1xBi3hCoiNNlup1W/B+tyAanHtP33XGD8p9yk=",
   "Source": "edutico",
   "BasePath": "_content/edutico",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\GlacialIndifference-Bold.otf"
+    },
+    {
+      "Identity": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/35475685-7b34-41eb-8647-582f99c296c9.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp"
     },
     {
       "Identity": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\aprovado.png",
@@ -699,6 +718,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\Devolucao.png"
+    },
+    {
+      "Identity": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp"
     },
     {
       "Identity": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\edupedidos.png",

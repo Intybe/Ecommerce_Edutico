@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\fonts\\glacial.otf"
     },
     {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp",
+      "PackagePath": "staticwebassets\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp"
+    },
+    {
       "Id": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\Bandeira.png",
       "PackagePath": "staticwebassets\\imgs\\Bandeira.png"
     },
@@ -171,6 +175,10 @@
     {
       "Id": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif",
       "PackagePath": "staticwebassets\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
+      "PackagePath": "staticwebassets\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp"
     },
     {
       "Id": "C:\\Users\\Rebeka\\Desktop\\edu_23_10\\edutico\\wwwroot\\imgs\\edupedidos.png",

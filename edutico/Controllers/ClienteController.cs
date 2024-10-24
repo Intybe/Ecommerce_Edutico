@@ -160,5 +160,23 @@ namespace edutico.Controllers
             ViewData["msg"] = mensagem;
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpPost]
+        public IActionResult ExcluirItemProduto(decimal codProd)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+
+            string mensagem = _carrinhoRepositorio.ExcluirItemCarrinho(codLogin.codLogin, codProd);
+
+            ViewData["msg"] = mensagem;
+            return RedirectToAction("Carrinho", "Cliente");
+        }
     }
 }

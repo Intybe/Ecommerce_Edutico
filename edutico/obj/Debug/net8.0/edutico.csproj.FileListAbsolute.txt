@@ -1984,3 +1984,4 @@ C:\Users\Rebeka\Desktop\edu_23_10\edutico\obj\Debug\net8.0\refint\edutico.dll
 C:\Users\Rebeka\Desktop\edu_23_10\edutico\obj\Debug\net8.0\edutico.pdb
 C:\Users\Rebeka\Desktop\edu_23_10\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\Rebeka\Desktop\edu_23_10\edutico\obj\Debug\net8.0\ref\edutico.dll
+C:\Users\Rebeka\Desktop\edu_23_10\edutico\obj\Debug\net8.0\edutico.sourcelink.json
