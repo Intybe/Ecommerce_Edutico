@@ -4,7 +4,7 @@
     const pictureImage = document.querySelector('.picture__image'); // Deve ser um <span>
     const picturePlaceholder = document.querySelector('.picture__placeholder');
 
-    if (pictureImage && picturePlaceholder) {
+    /*if (pictureImage && picturePlaceholder) {
         picturePlaceholder.style.display = 'block';
         pictureImage.innerHTML = ''; // Limpa qualquer conteúdo inicial
 
@@ -35,7 +35,7 @@
         });
     } else {
         console.error("Elemento .picture__image ou .picture__placeholder não foi encontrado.");
-    }
+    }*/
 
     // Ver mais em detalhes do produto
     const toggleButton = document.getElementById("toggle-button");

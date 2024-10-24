@@ -26,33 +26,34 @@ namespace edutico.Controllers
         [HttpPost]
         public IActionResult CadastrarProduto(string nomeProd, string codProd, string descricaoProd, string classificacao, string habilidadesEnviadas, string valorUnit, string estoque, string categoria, string lacamentoProd, List<IFormFile> imgs)
         {
-            if (imgs == null || !imgs.Any())
+            // Verificar se os dados obrigatórios estão presentes
+            if (string.IsNullOrEmpty(nomeProd) || string.IsNullOrEmpty(codProd) || imgs == null || !imgs.Any())
             {
-                ViewData["msg"] = "Nenhuma imagem foi enviada!";
+                ViewData["msg"] = "Preencha todos os campos obrigatórios e selecione pelo menos uma imagem!";
                 return View("CadastroProduto");
             }
-            else
+
+            // Criar o objeto produto com os dados recebidos
+            Produto produto = new Produto()
             {
-                Produto produto = new Produto()
-                {
-                    codProd = Convert.ToDecimal(codProd),
-                    nomeProd = Convert.ToString(nomeProd),
-                    descricao = Convert.ToString(descricaoProd),
-                    classificacao = Convert.ToString(classificacao),
-                    categoria = Convert.ToString(categoria),
-                    valorUnit = Convert.ToDecimal(valorUnit),
-                    estoque = Convert.ToInt32(estoque),
-                    lancamento = Convert.ToBoolean(lacamentoProd)
-                };
+                codProd = Convert.ToDecimal(codProd),
+                nomeProd = nomeProd,
+                descricao = descricaoProd,
+                classificacao = classificacao,
+                categoria = categoria,
+                valorUnit = Convert.ToDecimal(valorUnit),
+                estoque = Convert.ToInt32(estoque),
+                lancamento = Convert.ToBoolean(lacamentoProd)
+            };
 
-                List<string> habilidades = habilidadesEnviadas.Split(',').ToList();
+            // Processar habilidades selecionadas
+            List<string> habilidades = habilidadesEnviadas.Split(',').ToList();
 
-                // Chamar o repositório e passar o objeto produto e as imagens
-                string resultado = _produtoRepositorio.CadastrarProduto(produto, imgs, habilidades);
+            // Chamar o repositório para salvar o produto e as imagens
+            string resultado = _produtoRepositorio.CadastrarProduto(produto, imgs, habilidades);
 
-                ViewData["msg"] = resultado;
-                return View("CadastroProduto");
-            }
+            ViewData["msg"] = resultado;
+            return View("CadastroProduto");
         }
 
         public IActionResult DetalhesProduto(decimal? codProd)

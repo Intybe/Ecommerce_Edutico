@@ -83,10 +83,8 @@ body {
 
 /* Conteúdo */
 .Conteudo {
-    width: 90%;
-    height: auto;
-    margin-left: 190px;
-    margin-top: -93vh;
+    font-family: 'Glacial';
+    height: 100%;
     padding: 15px;
     background-color: white;
     justify-content: center;
@@ -97,8 +95,7 @@ body {
 
 .search-bar {
     background-color: #F4F4F4;
-    margin-left: 25px;
-    width: 95%;
+    width: 100%;
     height: 32px;
     border-radius: 10px;
 }
@@ -111,6 +108,136 @@ body {
     border-radius: 10px;
     border: 2px #F4F4F4;
     outline: none;
+}
+
+
+/*DASHBOARD*/
+h5 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.Conteudo .base {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid rgba(187, 187, 187, 0.73);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icone-menu {
+    width: 67px;
+    height: 60px;
+}
+
+#porcentagem {
+    font-family: 'Glacial';
+    font-size: 15px;
+    vertical-align: super;
+}
+
+.Conteudo a {
+    text-decoration: none;
+    color: black;
+}
+
+.Conteudo .base h6 {
+    color: #BBB;
+}
+
+.item-prod {
+    padding: 15px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgba(187, 187, 187, 0.73);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.img-prod {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.nome-prod {
+    font-family: 'Glacial Bold';
+    color: #385BD2;
+}
+
+.scroll {
+    max-height: 420px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+    .scroll:hover {
+        overflow-y: auto;
+    }
+
+    .scroll::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+        background-color: #385BD2;
+        border-radius: 10px;
+    }
+
+    .scroll::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+/*GRAFICOS*/
+.base-grafico {
+    border-radius: 20px;
+    border: 1px solid rgba(187, 187, 187, 0.73);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.dropdown-toggle {
+    background-color: #f5f7fb;
+    border: none;
+    color: #3e63dd;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.dropdown-menu {
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: block; /* Precisamos que esteja sempre 'block' para que funcione com Bootstrap */
+    visibility: hidden;
+}
+
+    .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible; /* Agora é visível e interativo */
+    }
+
+.chart-area {
+    height: 300px;
 }
 
 /* PRODUTOS */
@@ -600,7 +727,7 @@ label {
     width: 400px;
     padding-top: 10px; /* Espaçamento interno superior */
     padding-left: 10px; /* Opcional: ajusta o espaçamento à esquerda */
-    resize: none; 
+    resize: none;
     box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
     font-size: 12px;
 }
@@ -707,44 +834,6 @@ label {
         display: inline-block; /* Mantém o botão lado a lado */
     }
 
-/* SUBIDNO IMG */
-.picture__input {
-    display: none;
-}
-
-.picture {
-    width: 400px;
-    height: 290px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #bbb;
-    border: 0.5px dashed #bbb;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: 'Glacial Indifference', sans-serif;
-    padding: 10px;
-    position: relative; /* Para controlar a posição do texto/imagem */
-}
-
-.picture__img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
-    border-radius: 10px;
-}
-
-.picture__placeholder {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #bbb;
-}
-
-    .picture__placeholder img {
-        max-width: 200px; /* Tamanho do símbolo */
-        display: block;
-        margin: 0 auto;
-    }
 
 
 /*HISTÓRICO DE VENDAS*/
@@ -1552,4 +1641,79 @@ label {
 .modal-body p {
     font-size: 18px;
     font-weight: normal;
+}
+
+/IMAGEM/
+.conteudo_imagens {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.conteudo_imagens img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.organizacao_imagens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 520px;
+    max-height: 320px;
+    overflow-y: auto;
+    margin-top: 15px;
+    border: 2px dashed #bbb;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#thumbnailInput {
+    display: none;
+}
+
+.placeholder {
+    text-align: center;
+}
+
+
+.image-thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-thumbnail {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.miniaturas {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+#remove-miniatura {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    cursor: pointer;
+    border: none;
+    object-fit: contain;
+}
+
+.miniaturas:hover #remove-miniatura {
+    display: block;
 }

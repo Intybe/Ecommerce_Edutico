@@ -11,8 +11,8 @@
     </style>
 </head>
 <body>
-    <div class="Tudo  justify-content-between">
-        <div class="sidebarF d-flex flex-column align-items-center py-4">
+    <div class="Tudo ">
+        <div class="sidebarF d-flex flex-column align-items-center py-4 me-3">
             <!-- Usei classes Bootstrap para alinhar -->
             <!-- logo -->
             <div class="logoFunc mb-4">
@@ -22,9 +22,9 @@
             <!-- Dashboard-->
             <div class="BotoesSidebar w-100">
                 <!-- Adicionei w-100 para ocupar toda a largura -->
-                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "FavoritosF" ? "active" : "")">
+                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "DashBoard" ? "active" : "")">
                     <!-- Alinhei ícones e texto -->
-                    <a asp-controller="Home" asp-action="FavoritosF">
+                    <a asp-controller="Home" asp-action="DashBoard">
                         <img src="~/imgs/Dashboard.png" alt="Dashboard" class="icone me-3"> <!-- Adicionei me-2 para espaçar -->
                         Dashboard
                     </a>
@@ -50,13 +50,13 @@
                     <a asp-controller="Home" asp-action="DevolucoesF">
                         <img src="~/imgs/Devolucao.png" alt="Devolucao" class="icone me-3">
                         Devolução
-                   </a>
+                    </a>
                 </p>
                 <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "HistoricoVendasF" ? "active" : "")">
                     <a asp-controller="Home" asp-action="HistoricoVendasF">
                         <img src="~/imgs/Historico.png" alt="Historico" class="icone me-3">
                         Histórico de Vendas
-                   </a>
+                    </a>
                 </p>
                 <p class="d-flex align-items-center">
                     <img src="~/imgs/Logout.png" alt="Logout" class="icone me-3">
@@ -64,21 +64,27 @@
                 </p>
             </div>
         </div>
+        <div class="Conteudo w-100 mr-5">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+
 
     <footer>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 <script src="~/js/site.js" type="text/javascript"></script>
+
 </html>

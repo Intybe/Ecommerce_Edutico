@@ -4,7 +4,7 @@
     ViewData["Title"] = "Cadastrar Produtos"; // Define o título da página
 }
 
-<section class="Conteudo">
+<section class="Conteudo texto-simples">
     <!-- Seção de cadastro de produtos -->
     <section class="Cadastrar Produtos">
         <!-- Cabeçalho da seção -->
@@ -109,16 +109,18 @@
                     <input type="hidden" id="habilidadesSelecionadas" name="habilidadesEnviadas" />
 
                     <!-- Upload de imagem -->
-                    <div class="UpImg mt-3">
-                        <label for="Upimg">Imagem <span class="req">*</span></label>
-                        <label class="picture" for="picture_input" tabindex="0">
-                            <input type="file" accept="image/*" name="imgs" class="picture__input" id="picture_input" multiple />
-                            <div class="picture__placeholder">
-                                <img src="~/imgs/upload.png" alt="Placeholder"/>
-                            </div>
-                            <span class="picture__image"></span>
-                        </label>
+                   <div class="conteudo_imagens">
+                        <label for="ImgProduto">Selecione as imagens<span class="req">*</span></label>
+                        <div class="organizacao_imagens" id="grid_imgs">
+                            <label for="thumbnailInput" class="add-thumbnail">
+                              
+                               <img src="~/imgs/Plus.png" style="border: none; width: 50px; height: auto;" />
+                                
+                            </label>
+                            <input type="file" id="thumbnailInput" name="imgs" accept="image/*" multiple onchange="addMiniatura(event)" multiple>
+                        </div>
                     </div>
+                   
                 </div>
             </div>
 
@@ -143,4 +145,51 @@
         // Armazena as habilidades selecionadas no input hidden
         document.getElementById('habilidadesSelecionadas').value = habilidadesSelecionadas.join(', ');
     }
+
+    function addMiniatura(event) {
+        // Pega o primeiro arquivo que o usuário escolheu (no caso, a imagem)
+        const file = event.target.files[0];
+
+        // Verifica se o arquivo existe
+        if (file) {
+            // Cria um leitor de arquivos para ler o conteúdo da imagem
+            const reader = new FileReader();
+
+            // Quando o leitor terminar de carregar a imagem, esta função será executada
+            reader.onload = function (e) {
+                // Pega o elemento no HTML onde as miniaturas serão exibidas
+                const grid_imgs = document.getElementById("grid_imgs");
+
+                // Cria um contêiner para a miniatura (um <div> que vai envolver a miniatura)
+                const thumbnailContainer = document.createElement("div");
+                thumbnailContainer.classList.add("miniaturas");  // Corrigido para usar thumbnailContainer
+
+                // Cria um elemento <img> para exibir a miniatura
+                const imgElement = document.createElement("img");
+                imgElement.src = e.target.result;  // Define a imagem carregada como a fonte da tag <img>
+
+                // Cria um botão para remover a miniatura
+                const removeButton = document.createElement("button");
+                removeButton.innerHTML = '<img src="/imgs/xx.png" id="remove-miniatura" style="width:30px; height:30px;">';  // Define o texto do botão como "x" (para remover)
+
+
+                // Define a ação do botão: remover a miniatura quando o botão for clicado
+                removeButton.onclick = function () {
+                    thumbnailContainer.remove();  // Remove o contêiner da miniatura correta
+                };
+
+                // Adiciona a imagem e o botão de remover ao contêiner da miniatura
+                thumbnailContainer.appendChild(imgElement);
+                thumbnailContainer.appendChild(removeButton);
+
+                // Adiciona o contêiner da miniatura antes do último item da galeria (um ícone "+")
+                grid_imgs.insertBefore(thumbnailContainer, grid_imgs.lastElementChild);
+            };
+
+            // Lê o arquivo da imagem como uma URL (para exibição)
+            reader.readAsDataURL(file);
+        }
+    } 
+       
+
 </script>

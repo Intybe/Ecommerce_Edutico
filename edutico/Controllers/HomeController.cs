@@ -171,6 +171,11 @@ namespace edutico.Controllers
         }
 
         //FUNCIONÁRIO
+
+        public IActionResult DashBoard()
+        {
+            return View();
+        }
         public IActionResult ProdutosF()
         {
             return View();

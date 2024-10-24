@@ -13,82 +13,91 @@ namespace edutico.Repositorio
             Conexao con = new Conexao();
             MySqlConnection conexao = con.ConectarBD();
 
-            // Vairável que recebe o comando SQL
-            string sql = "Call spInsertTbProduto(@codprod, @nomeProd, @descricao, @Classificacao, @Categoria, @valorUnit, @estoque, @lancamento);";
-
-            MySqlCommand cmd = new MySqlCommand(sql, conexao);
-
-            cmd.Parameters.AddWithValue("@codProd", produto.codProd);
-            cmd.Parameters.AddWithValue("@nomeProd", produto.nomeProd);
-            cmd.Parameters.AddWithValue("@descricao", produto.descricao);
-            cmd.Parameters.AddWithValue("@Classificacao", produto.classificacao);
-            cmd.Parameters.AddWithValue("@Categoria", produto.categoria);
-            cmd.Parameters.AddWithValue("@valorUnit", produto.valorUnit);
-            cmd.Parameters.AddWithValue("@estoque", produto.estoque);
-            cmd.Parameters.AddWithValue("@lancamento", produto.lancamento);
-
-            // Lê os dados retornados pela procedure do BD
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-
-            // Armazena os dados retornados do Banco de Dados
-            MySqlDataReader dr;
-
-            // Executando os comandos do mysql e passsando paa a variavel dr
-            dr = cmd.ExecuteReader();
-
-            string mensagem = null;
-
-            if (dr.Read())
+            try
             {
-                mensagem = dr.GetString(0); // Captura a primeira coluna (que é a mensagem retornada)
-            }
-            else
-            {
-                mensagem = "Erro Desconhecido";
-            }
-            // Fechar o DataReader antes de executar outro comando
-            dr.Close();
+                // Inicia uma transação para garantir que todas as operações sejam executadas ou nenhuma.
+                MySqlTransaction transacao = conexao.BeginTransaction();
 
-            if (mensagem == "Produto Cadastrado com sucesso!")
-            {
-                foreach (var img in imgs)
+                // Variável que recebe o comando SQL para inserir o produto
+                string sqlProduto = "Call spInsertTbProduto(@codprod, @nomeProd, @descricao, @Classificacao, @Categoria, @valorUnit, @estoque, @lancamento);";
+                MySqlCommand cmd = new MySqlCommand(sqlProduto, conexao, transacao);
+
+                // Adiciona os parâmetros para o produto
+                cmd.Parameters.AddWithValue("@codProd", produto.codProd);
+                cmd.Parameters.AddWithValue("@nomeProd", produto.nomeProd);
+                cmd.Parameters.AddWithValue("@descricao", produto.descricao);
+                cmd.Parameters.AddWithValue("@Classificacao", produto.classificacao);
+                cmd.Parameters.AddWithValue("@Categoria", produto.categoria);
+                cmd.Parameters.AddWithValue("@valorUnit", produto.valorUnit);
+                cmd.Parameters.AddWithValue("@estoque", produto.estoque);
+                cmd.Parameters.AddWithValue("@lancamento", produto.lancamento);
+
+                // Executa o comando e lê a mensagem retornada pela procedure
+                MySqlDataReader dr = cmd.ExecuteReader();
+                string mensagem = null;
+
+                if (dr.Read())
                 {
-                    string nomeImg = Guid.NewGuid().ToString() + Path.GetExtension(img.FileName);
-                    string caminhoImg = Path.Combine("wwwroot/imgs", nomeImg);
-                    string caminhoImgBD = Path.Combine("~/imgs/", nomeImg);
+                    mensagem = dr.GetString(0); // Captura a mensagem de sucesso ou erro
+                }
+                else
+                {
+                    mensagem = "Erro Desconhecido";
+                }
 
-                    using (var stream = new FileStream(caminhoImg, FileMode.Create))
+                dr.Close();  // Fecha o DataReader antes de prosseguir
+
+                // Se o produto foi cadastrado com sucesso, continuamos com o processo de imagem e habilidades
+                if (mensagem == "Produto Cadastrado com sucesso!")
+                {
+                    // 1. Processar as imagens
+                    foreach (var img in imgs)
                     {
-                        img.CopyTo(stream);
+                        // Gera um nome único para a imagem
+                        string nomeImg = Guid.NewGuid().ToString() + Path.GetExtension(img.FileName);
+                        string caminhoImg = Path.Combine("wwwroot/imgs", nomeImg);  // Caminho físico no servidor
+                        string caminhoImgBD = Path.Combine("~/imgs/", nomeImg);  // Caminho salvo no BD
+
+                        // Salva a imagem no diretório "wwwroot/imgs"
+                        using (var stream = new FileStream(caminhoImg, FileMode.Create))
+                        {
+                            img.CopyTo(stream);  // Salva o arquivo fisicamente
+                        }
+
+                        // Comando SQL para inserir a imagem associada ao produto
+                        string sqlImagem = "Call spInsertTbImagem(@codProd, @nomeImg, @enderecoImg);";
+                        cmd = new MySqlCommand(sqlImagem, conexao, transacao);
+                        cmd.Parameters.AddWithValue("@codProd", produto.codProd);
+                        cmd.Parameters.AddWithValue("@nomeImg", nomeImg);
+                        cmd.Parameters.AddWithValue("@enderecoImg", caminhoImgBD);
+
+                        cmd.ExecuteNonQuery();
                     }
 
-                    string sqlImagem = "Call spInsertTbImagem(@codProd, @nomeImg, @enderecoImg);";
+                    // 2. Processar as habilidades
+                    foreach (var habilidade in habilidades)
+                    {
+                        // Comando SQL para inserir as habilidades associadas ao produto
+                        string sqlHabilidade = "Call spInsertTbHabilidade_Produto(@codProd, @habilidade);";
+                        cmd = new MySqlCommand(sqlHabilidade, conexao, transacao);
+                        cmd.Parameters.AddWithValue("@codProd", produto.codProd);
+                        cmd.Parameters.AddWithValue("@habilidade", habilidade.Trim());
 
-                    cmd = new MySqlCommand(sqlImagem, conexao);
-                    cmd.Parameters.AddWithValue("@nomeImg", nomeImg);
-                    cmd.Parameters.AddWithValue("@enderecoImg", caminhoImgBD);
-                    cmd.Parameters.AddWithValue("@codProd", produto.codProd);
-
-                    cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
-            }
 
-            foreach (var habilidade in habilidades)
+                // Se chegou até aqui sem problemas, podemos confirmar (commit) a transação
+                transacao.Commit();
+
+                return mensagem;  // Retorna a mensagem de sucesso
+            }
+         
+            finally
             {
-                string sqlHabilidade = "Call spInsertTbHabilidade_Produto(@codProd, @habilidade);";
-
-                cmd = new MySqlCommand(sqlHabilidade, conexao);
-                cmd.Parameters.AddWithValue("@codProd", produto.codProd);
-                cmd.Parameters.AddWithValue("@habilidade", habilidade.Trim());
-
-                cmd.ExecuteNonQuery();
+                // Certifique-se de fechar a conexão e liberar os recursos
+                con.DesconectarBD();
             }
-
-            return mensagem;
-
-
-            con.DesconectarBD();
-
         }
 
         public IEnumerable<Produto> ConsultarProdutoLancamento()
