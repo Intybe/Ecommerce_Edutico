@@ -12,14 +12,15 @@ namespace edutico.Controllers
         private readonly LoginSessao _loginSessao;
         private IClienteRepositorio? _clienteRepositorio;
         private ICartaoRepositorio? _cartaoRepositorio;
+        private IProdutoRepositorio? _produtoRepositorio;
 
-        public PedidoController(IPedidoRepositorio pedidoRepositorio, LoginSessao loginSessao, IClienteRepositorio clienteRepositorio, ICartaoRepositorio? cartaoRepositorio)
+        public PedidoController(IPedidoRepositorio pedidoRepositorio, LoginSessao loginSessao, IClienteRepositorio clienteRepositorio, ICartaoRepositorio? cartaoRepositorio, IProdutoRepositorio? produtoRepositorio)
         {
             _pedidoRepositorio = pedidoRepositorio;
             _loginSessao = loginSessao;
             _clienteRepositorio = clienteRepositorio;
             _cartaoRepositorio = cartaoRepositorio;
-
+            _produtoRepositorio = produtoRepositorio;
         }
 
         // Método para exibir a página de finalizar o pedido
@@ -116,6 +117,81 @@ namespace edutico.Controllers
             {
                 // Se o ModelState não for válido, retorna à página de finalização de pedido
                 return View("FinalizarPedido", pedido);
+            }
+        }
+
+
+        public IActionResult MeusPedidos()
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var Login = _loginSessao.GetLogin();
+
+            if (Login == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+
+            List<Pedido> pedidos = _pedidoRepositorio.ConsultarPedidos(Login.codLogin);
+
+
+            foreach (var pedido in pedidos)
+            {
+                foreach (var item in pedido.itensPedido)
+                {
+                    // Chama o método para obter os detalhes completos do produto
+                    Produto produtoCompleto = _produtoRepositorio.ConsultarDetalheProduto(item.produto.codProd);
+
+                    // Atualiza o objeto produto do item com os dados completos
+                    item.produto = produtoCompleto;
+                }
+            }
+
+            return View(pedidos);
+        }
+
+        public IActionResult ConsultarPedidosFiltros(int statusPedido)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var Login = _loginSessao.GetLogin();
+
+            List<Pedido> pedidos = null;
+
+            if (statusPedido == 5)
+            {
+                pedidos = _pedidoRepositorio.ConsultarPedidos(Login.codLogin);
+
+                foreach (var pedido in pedidos)
+                {
+                    foreach (var item in pedido.itensPedido)
+                    {
+                        // Chama o método para obter os detalhes completos do produto
+                        Produto produtoCompleto = _produtoRepositorio.ConsultarDetalheProduto(item.produto.codProd);
+
+                        // Atualiza o objeto produto do item com os dados completos
+                        item.produto = produtoCompleto;
+                    }
+                }
+
+                return View(pedidos);
+            }
+            else
+            {
+                pedidos = _pedidoRepositorio.ConsultarPedidosFiltros(Login.codLogin, statusPedido);
+
+                foreach (var pedido in pedidos)
+                {
+                    foreach (var item in pedido.itensPedido)
+                    {
+                        // Chama o método para obter os detalhes completos do produto
+                        Produto produtoCompleto = _produtoRepositorio.ConsultarDetalheProduto(item.produto.codProd);
+
+                        // Atualiza o objeto produto do item com os dados completos
+                        item.produto = produtoCompleto;
+                    }
+                }
+
+                return View("MeusPedidos", pedidos);
             }
         }
     }

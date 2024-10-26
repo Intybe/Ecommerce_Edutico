@@ -1,5 +1,6 @@
 ﻿using edutico.Data;
 using edutico.Models;
+using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 
 
@@ -56,6 +57,116 @@ namespace edutico.Repositorio
 
             return mensagem;
         }
+
+        public List<Pedido> ConsultarPedidos(int codLogin)
+        {
+            // Cria a variável de conexão com o banco de dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where codLogin = @codLogin";
+
+            // Transforma em um comando SQL com a classe de conexão e adiciona os parâmetros
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+
+            // Lê os dados retornados pelo comando SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Cria a Lista de Pedidos Vazia
+            List<Pedido> pedidos = new List<Pedido>();
+
+            while (dr.Read())
+            {
+                // Verifica se já existe um pedido com a NF atual na lista
+                Pedido pedido = pedidos.FirstOrDefault(p => p.NF == Convert.ToInt32(dr["NF"]));
+
+                // Se o pedido não existir, cria um novo
+                if (pedido == null)
+                {
+                    pedido = new Pedido()
+                    {
+                        NF = Convert.ToInt32(dr["NF"]),
+                        data = Convert.ToDateTime(dr["data"]),
+                        statusPedido = Convert.ToInt32(dr["statusPedido"]),
+                        valorTotal = Convert.ToDecimal(dr["valorTotal"]),
+                        itensPedido = new List<ItemPedido>()
+                    };
+                    pedidos.Add(pedido);
+                }
+
+                // Cria o item do pedido e adiciona à lista de itens do pedido
+                ItemPedido item = new ItemPedido()
+                {
+                    codItem = Convert.ToInt32(dr["codItem"]),
+                    produto = new Produto() { codProd = Convert.ToDecimal(dr["codProd"]) }, // Inicialize o produto
+                    qtdItem = Convert.ToInt32(dr["qtdItem"]),
+                    valorItem = Convert.ToDecimal(dr["valorItem"])
+                };
+                pedido.itensPedido.Add(item);
+            }
+
+            dr.Close();
+            conexao.Close();
+
+            return pedidos;
+        }
+
+        public List<Pedido> ConsultarPedidosFiltros(int codLogin, int statusPedido)
+        {
+            // Cria a variável de conexão com o banco de dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where codLogin = @codLogin and statusPedido = @statusPedido";
+
+            // Transforma em um comando SQL com a classe de conexão e adiciona os parâmetros
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+            cmd.Parameters.AddWithValue("@statusPedido", statusPedido);
+
+            // Lê os dados retornados pelo comando SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Cria a Lista de Pedidos Vazia
+            List<Pedido> pedidos = new List<Pedido>();
+
+            while (dr.Read())
+            {
+                // Verifica se já existe um pedido com a NF atual na lista
+                Pedido pedido = pedidos.FirstOrDefault(p => p.NF == Convert.ToInt32(dr["NF"]));
+
+                // Se o pedido não existir, cria um novo
+                if (pedido == null)
+                {
+                    pedido = new Pedido()
+                    {
+                        NF = Convert.ToInt32(dr["NF"]),
+                        data = Convert.ToDateTime(dr["data"]),
+                        statusPedido = Convert.ToInt32(dr["statusPedido"]),
+                        valorTotal = Convert.ToDecimal(dr["valorTotal"]),
+                        itensPedido = new List<ItemPedido>()
+                    };
+                    pedidos.Add(pedido);
+                }
+
+                // Cria o item do pedido e adiciona à lista de itens do pedido
+                ItemPedido item = new ItemPedido()
+                {
+                    codItem = Convert.ToInt32(dr["codItem"]),
+                    produto = new Produto() { codProd = Convert.ToDecimal(dr["codProd"]) }, // Inicialize o produto
+                    qtdItem = Convert.ToInt32(dr["qtdItem"]),
+                    valorItem = Convert.ToDecimal(dr["valorItem"])
+                };
+                pedido.itensPedido.Add(item);
+            }
+
+            dr.Close();
+            conexao.Close();
+
+            return pedidos;
+        }
     }
 }
-
