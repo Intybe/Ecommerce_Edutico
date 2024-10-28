@@ -3,6 +3,7 @@ using edutico.Models;
 using edutico.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using MySqlX.XDevAPI;
+using System.Security.Claims;
 
 namespace edutico.Controllers
 {
@@ -10,14 +11,16 @@ namespace edutico.Controllers
     {
         private IClienteRepositorio? _clienteRepositorio;
         private ICarrinhoRepositorio? _carrinhoRepositorio;
+        private IFavoritosRepositorio? _favoritosRepositorio;
         private readonly LoginSessao _loginSessao;
 
         // Construtor com injeção de dependência
-        public ClienteController(IClienteRepositorio clienteRepositorio, LoginSessao loginSessao, ICarrinhoRepositorio carrinhoRepositorio)
+        public ClienteController(IClienteRepositorio clienteRepositorio, LoginSessao loginSessao, ICarrinhoRepositorio carrinhoRepositorio, IFavoritosRepositorio favoritosRepositorio)
         {
             _clienteRepositorio = clienteRepositorio;
             _loginSessao = loginSessao; // Inicializa a variável _loginSessao
             _carrinhoRepositorio = carrinhoRepositorio;
+            _favoritosRepositorio = favoritosRepositorio;
         }
 
         public IActionResult CadastroCliente()
@@ -201,6 +204,29 @@ namespace edutico.Controllers
             // Redireciona de volta para a página do carrinho
             return RedirectToAction("Carrinho");
         }
+
+        public IActionResult FavoritosCheio()
+        {
+            // Cria uma lista para armazenar vários produtos
+            List<Favoritos> produtoFavoritado = new List<Favoritos>();
+
+            // Pega o codLogin do Usuário Logado através da sessão
+            var codLogin = _loginSessao.GetLogin();
+
+            if (codLogin == null)
+            {
+                // Se o cliente não estiver logado, redireciona para a página de login
+                return RedirectToAction("Login", "Login");
+            }
+            else
+            {
+                IEnumerable<Favoritos> favoritos = _favoritosRepositorio.ConsultarFavoritos(codLogin.codLogin);
+
+                return View("FavoritosCheio", favoritos);
+            }
+
+        }
+
 
     }
 

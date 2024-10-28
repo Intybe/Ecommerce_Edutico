@@ -24,6 +24,7 @@ namespace edutico.Models
 
         public List<Avaliacao> avaliacoes { get; set; }
 
+   
         // Construtor para inicializar a lista de imagens
         public Produto()
         {

@@ -92,7 +92,7 @@ namespace edutico.Repositorio
 
                 return mensagem;  // Retorna a mensagem de sucesso
             }
-         
+
             finally
             {
                 // Certifique-se de fechar a conexão e liberar os recursos
@@ -140,7 +140,8 @@ namespace edutico.Repositorio
                             estoque = Convert.ToInt32(dr["Estoque"]),
                             statusProd = Convert.ToBoolean(dr["Status"]),
                             lancamento = Convert.ToBoolean(dr["Lançamento"]),
-                            imgs = new List<Imagem>() // Inicializa a lista de imagens
+                            imgs = new List<Imagem>(),
+                            // Inicializa a lista de imagens
                         };
 
                         // Adiciona o produto ao dicionário
@@ -262,7 +263,7 @@ namespace edutico.Repositorio
                         statusProd = Convert.ToBoolean(dr["Status"]),
                         lancamento = Convert.ToBoolean(dr["Lançamento"]),
                         imgs = new List<Imagem>(),// Inicializa a lista de imagens
-                        avaliacoes = new List<Avaliacao>() // Inicializa a lista de avaliações
+                        avaliacoes = new List<Avaliacao>(),
 
                     };
                 }

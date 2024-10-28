@@ -1,4 +1,4 @@
-﻿@model edutico.Models.Produto;
+﻿@model ViewProdutoFavoritos
 
 @{
     ViewData["Title"] = "Detalhe Produto";
@@ -10,29 +10,29 @@
 <div class="container row justify-content-center">
     <div class="col-6">
         <div class="base-prod-detalhe d-flex">
-            <div class="scrollable-div col-3 overflow-auto" >
-                @foreach (var img in Model.imgs)
+            <div class="scrollable-div col-3 overflow-auto">
+                @foreach (var img in Model.produto.imgs)
                 {
-                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem("@Url.Content(img.enderecoImg)")" />
+                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem(" @Url.Content(img.enderecoImg)")" />
                 }
-                
+
             </div>
 
             <div class="imgprincipal-container">
-                <img src="@Url.Content(@Model.imgs.First().enderecoImg)" class="imgprincipal" />
+                <img src="@Url.Content(@Model.produto.imgs.First().enderecoImg)" class="imgprincipal" />
             </div>
         </div>
 
         <div class="base-prod-detalhe position-relative">
             <h3>Descrição do produto</h3>
             <p class="texto-simples">
-                @Model.descricao
+                @Model.produto.descricao
             </p>
             <div id="versaocompleta" class="hidden">
                 <p class="texto-simples">Características do Produto:</p>
                 <ul class="texto-simples">
                     <li>
-                        @Model.descricao;
+                        @Model.produto.descricao;
                     </li>
                     <br />
                 </ul>
@@ -50,9 +50,9 @@
                     <div class="rating-score ">
 
                         <div class="d-flex">
-                            @if (Model.avaliacoes != null && Model.avaliacoes.Any())
+                            @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
                             {
-                                <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">@((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", "."))</h4>
+                                <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">@((Model.produto.somaAvaliacao / Model.produto.totalAvaliacao).ToString("F1").Replace(",", "."))</h4>
                                 <div class="align-content-center">
                                     <img src="~/imgs/Star.png" class="icone">
                                     <img src="~/imgs/Star.png" class="icone">
@@ -108,7 +108,7 @@
 
                         <div class="total-ratings">
                             <hr />
-                            <p class="texto-simples"><span id="total-ratings">@Model.totalAvaliacao</span> avaliações realizadas</p>
+                            <p class="texto-simples"><span id="total-ratings">@Model.produto.totalAvaliacao</span> avaliações realizadas</p>
                         </div>
 
                     </div>
@@ -134,7 +134,7 @@
 
                         <input type="text" id="qtdEstrela" name="qtdEstrela" value="" style="display: none" />
 
-                        <input type="text" name="codProd" value="@Model.codProd" style="display: none" />
+                        <input type="text" name="codProd" value="@Model.produto.codProd" style="display: none" />
 
                         <p>Escreva o que você achou!</p>
 
@@ -149,9 +149,9 @@
 
 
                 <div class="col-7 border-start">
-                    @if (Model.avaliacoes != null && Model.avaliacoes.Any())
+                    @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
                     {
-                        foreach (var avaliacao in Model.avaliacoes)
+                        foreach (var avaliacao in Model.produto.avaliacoes)
                         {
                             <div class="review">
                                 <div class="d-flex">
@@ -184,43 +184,70 @@
     </div>
     <div class="col-4">
         <div class="base-prod-detalhe">
-            <div class="d-flex pb-2 px-2 justify-content-between">
-                <h5 class="glacial-bold titulo-detalhe">@Model.nomeProd</h5>
+            <div class="d-flex pb-2 px-1 justify-content-between">
+                <h5 class="glacial-bold titulo-detalhe">@Model.produto.nomeProd</h5>
 
-                <img src="~/imgs/heart.png" class="curti ">
-
-
-            </div>
-            
-                @if (Model.avaliacoes != null && Model.avaliacoes.Any())
+                @if (!Model.favoritos.Any())
                 {
-                    <p class=" mb-1 texto-simples">
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
-
-                
-                        @((Model.somaAvaliacao / Model.totalAvaliacao).ToString("F1").Replace(",", ".")) (Model.totalAvaliacao avaliações)
-                    </p>
+                    <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                        <button class="btn">
+                            <img src="~/imgs/heart.png" class="curti">
+                        </button>
+                    </form>
                 }
                 else
                 {
-                    <p class=" mb-1 texto-simples">
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
-                        <img src="~/imgs/Star.png" class="iconeava" />
+                    if (Model.favoritos.Contains(Model.produto.codProd))
+                    {
+                        <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="RemoverFavorito" method="post">
+                            <button class="btn">
+                                <img src="~/imgs/favoritado.png" class="curti">
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                            <button class="btn">
+                                <img src="~/imgs/heart.png" class="curti">
+                            </button>
+                        </form>
 
-                
-                        (0 avaliações)
-                    </p>
+                    }
                 }
-            
+
+
+            </div>
+
+            @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
+            {
+                <p class=" mb-1 texto-simples">
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+
+
+                    @((Model.produto.somaAvaliacao / Model.produto.totalAvaliacao).ToString("F1").Replace(",", ".")) (Model.totalAvaliacao avaliações)
+                </p>
+            }
+            else
+            {
+                <p class=" mb-1 texto-simples">
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+                    <img src="~/imgs/Star.png" class="iconeava" />
+
+
+                    (0 avaliações)
+                </p>
+            }
+
             <div class="mb-2 px-2">
-                <h4>R$ @Model.valorUnit</h4>
+                <h4>R$ @Model.produto.valorUnit</h4>
             </div>
             <div class="d-flex mb-3 px-2">
                 <h6 class="glacial-bold" style="color:#8ED61A;"> Em estoque</h6>
@@ -231,7 +258,7 @@
                     <option>4</option>
                 </select>
             </div>
-            <a asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@Model.codProd" asp-route-qtdProd=1 class="text-decoration-none">
+            <a asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@Model.produto.codProd" asp-route-qtdProd=1 class="text-decoration-none">
                 <div class="row justify-content-center px-2 m-1">
                     <buttom class="btncar">Adicionar carrinho</buttom>
                 </div>
@@ -256,9 +283,34 @@
             <div class="card-recome my-2">
                 <div class="card-body d-flex py-2">
                     <div class="position-relative">
-                        <button class="btn position-absolute start-0 top-0 px-0">
-                            <img src="~/imgs/heart.png" class="icone">
-                        </button>
+                        @if (!Model.favoritos.Any())
+                        {
+                            <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                                <button class=" btn position-absolute start-0 top-0 px-0">
+                                    <img src="~/imgs/heart.png" class="heart-icon">
+                                </button>
+                            </form>
+                        }
+                        else
+                        {
+                            if (Model.favoritos.Contains(Model.produto.codProd))
+                            {
+                                <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="RemoverFavorito" method="post">
+                                    <button class=" btn position-absolute start-0 top-0 px-0">
+                                        <img src="~/imgs/favoritado.png" class="heart-icon">
+                                    </button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                                    <button class=" btn position-absolute start-0 top-0 px-0">
+                                        <img src="~/imgs/heart.png" class="heart-icon">
+                                    </button>
+                                </form>
+
+                            }
+                        }
                     </div>
                     <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
                     <div class="px-2">
@@ -381,10 +433,10 @@
 
 
     // Quantidade de avaliações
-    const totalRatings = @Model.totalAvaliacao;
-    const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
+    const totalRatings = @Model.produto.totalAvaliacao;
+    const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.produto.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
 
-    for (let rating in ratingsData) {
+        for (let rating in ratingsData) {
         const percentage = (ratingsData[rating] / totalRatings) * 100;
         const ratingBar = document.getElementById(`bar-${rating}`);
 

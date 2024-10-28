@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\barro\\Desktop\\Repositorio Backend\\edutico\\edutico.csproj": {}
+    "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\edutico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\barro\\Desktop\\Repositorio Backend\\edutico\\edutico.csproj": {
+    "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\edutico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\barro\\Desktop\\Repositorio Backend\\edutico\\edutico.csproj",
+        "projectUniqueName": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\edutico.csproj",
         "projectName": "edutico",
-        "projectPath": "C:\\Users\\barro\\Desktop\\Repositorio Backend\\edutico\\edutico.csproj",
-        "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\barro\\Desktop\\Repositorio Backend\\edutico\\obj\\",
+        "projectPath": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\edutico.csproj",
+        "packagesPath": "C:\\Users\\Rebeka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "P:\\Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\barro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Rebeka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
