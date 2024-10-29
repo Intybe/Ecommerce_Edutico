@@ -23,9 +23,15 @@ namespace edutico.Controllers
             _favoritosRepositorio = favoritosRepositorio;
         }
 
-        public IActionResult CadastroCliente()
+        [HttpPost]
+        public IActionResult CadastroCliente(Cliente cliente)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                // Algo deu errado, retorne a View com os erros
+                return View(cliente);
+            }
+            return RedirectToAction("CadastroCliente");
         }
 
         public IActionResult MeuPerfil()
