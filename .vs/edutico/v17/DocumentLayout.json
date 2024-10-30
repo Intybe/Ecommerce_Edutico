@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\edu_28_10\\edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\meuperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\rebeka\\desktop\\edu_28_10\\edutico\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -34,11 +38,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "MeuPerfil.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "ToolTip": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Cliente\\MeuPerfil.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T22:24:30.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ClienteRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Repositorio\\ClienteRepositorio.cs",
               "RelativeDocumentMoniker": "edutico\\Repositorio\\ClienteRepositorio.cs",
@@ -46,12 +63,11 @@
               "RelativeToolTip": "edutico\\Repositorio\\ClienteRepositorio.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAwwFcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T20:27:46.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T20:27:46.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_LayoutCli2.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Views\\Shared\\_LayoutCli2.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Shared\\_LayoutCli2.cshtml",
@@ -59,12 +75,11 @@
               "RelativeToolTip": "edutico\\Views\\Shared\\_LayoutCli2.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAD4AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T20:20:33.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T20:20:33.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "edutico\\Controllers\\ClienteController.cs",
@@ -72,25 +87,24 @@
               "RelativeToolTip": "edutico\\Controllers\\ClienteController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwBkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T20:17:00.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T20:17:00.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CadastroCliente.cshtml",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Views\\Cliente\\CadastroCliente.cshtml",
               "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\CadastroCliente.cshtml",
               "ToolTip": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Views\\Cliente\\CadastroCliente.cshtml",
               "RelativeToolTip": "edutico\\Views\\Cliente\\CadastroCliente.cshtml",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAiwJ4AAAA/AAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-29T20:08:06.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "edutico\\Models\\Cliente.cs",
@@ -98,12 +112,11 @@
               "RelativeToolTip": "edutico\\Models\\Cliente.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAAB8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:55:01.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:55:01.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Carrinho.cs",
               "DocumentMoniker": "C:\\Users\\Rebeka\\Desktop\\edu_28_10\\edutico\\Models\\Carrinho.cs",
               "RelativeDocumentMoniker": "edutico\\Models\\Carrinho.cs",
@@ -111,8 +124,7 @@
               "RelativeToolTip": "edutico\\Models\\Carrinho.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:54:56.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:54:56.96Z"
             }
           ]
         }

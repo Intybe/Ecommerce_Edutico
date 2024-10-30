@@ -5,7 +5,6 @@
 @model edutico.Models.Cliente;
 
 <section class="meuperfil">
-
     <div class="areaCliente">
         <!-- Mensagem de erro -->
         @{
@@ -13,16 +12,13 @@
             {
                 ViewData["msg"] = null;
             }
-            if (ViewData["msg"] != null)
-            {
-                @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
-                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
-            }
+           
         }
         <p class="titulo_perfil">MEU PERFIL</p>
 
         <!-- Formulário de Dados Conta -->
         <form id="formDadosConta" method="post" asp-controller="Cliente" asp-action="AtualizarClienteConta">
+            <div asp-validation-summary="ModelOnly"></div>
             <div class="sub_perfil">
                 <h5 id="glacial-bold">Dados Conta</h5>
                 <button type="button" onclick="edicao(this, formDadosConta)" class="editar">Modificar</button>
@@ -32,12 +28,13 @@
                 <div class="info-grup">
                     <p>E-mail</p>
                     <label>@Model.email</label>
-                    <input type="text" id="email" name="email" value="@Model.email" style="display: none">
+                    <input asp-for="email" type="text" style="display: none" />
+                    <span asp-validation-for="email" class="text-danger"></span>
                 </div>
                 <div class="info-grup">
                     <p>Senha</p>
                     <label>*******</label>
-                    <input type="text" id="senha" name="senha" placeholder="*******" style="display: none">
+                    <input asp-for="senha" type="password" placeholder="*******" style="display: none" />
                 </div>
             </div>
         </form>
@@ -54,24 +51,28 @@
                     <div class="info-grup">
                         <p>Primeiro Nome</p>
                         <label>@Model.nome</label>
-                        <input type="text" id="nomeprimeiro" name="nome" value="@Model.nome" style="display: none">
+                        <input asp-for="nome" type="text" style="display: none" />
+                        <span asp-validation-for="nome" class="text-danger"></span>
                     </div>
                     <div class="info-grup">
                         <p>Telefone</p>
                         <label>@Model.telefone</label>
-                        <input type="text" id="tel" name="telefone" value="@Model.telefone" style="display: none">
+                        <input asp-for="telefone" type="text" style="display: none" />
+                        <span asp-validation-for="telefone" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
-                        <p>Ultimo Nome</p>
+                        <p>Último Nome</p>
                         <label>@Model.sobrenome</label>
-                        <input type="text" id="sobrenome" name="sobrenome" value="@Model.sobrenome" style="display: none">
+                        <input asp-for="sobrenome" type="text" style="display: none" />
+                        <span asp-validation-for="sobrenome" class="text-danger"></span>
                     </div>
                     <div class="info-grup">
                         <p>CPF</p>
                         <label>@Model.cpf</label>
-                        <input type="text" id="cpf" name="cpf" value="@Model.cpf" style="display: none">
+                        <input asp-for="cpf" type="text" style="display: none" />
+                        <span asp-validation-for="cpf" class="text-danger"></span>
                     </div>
                 </div>
             </div>
@@ -84,49 +85,52 @@
                 <button type="button" onclick="edicao(this, formEndereco)" class="editar">Modificar</button>
             </div>
             <hr />
-            <div class="d-flex ">
+            <div class="d-flex">
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Logradouro</p>
                         <label>@Model.logradouro</label>
-                        <input type="text" id="logradouro" name="logradouro" value="@Model.logradouro" style="display: none">
+                        <input asp-for="logradouro" type="text" style="display: none" />
+                        <span asp-validation-for="logradouro" class="text-danger"></span>
                     </div>
                     <div class="info-grup">
                         <p>CEP</p>
                         <label>@Model.cep</label>
-                        <input type="text" id="cep" name="cep" value="@Model.cep" style="display: none">
+                        <input asp-for="cep" type="text" style="display: none" />
+                        <span asp-validation-for="cep" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Bairro</p>
                         <label>@Model.bairro</label>
-                        <input type="text" id="bairro" name="bairro" value="@Model.bairro" style="display: none">
+                        <input asp-for="bairro" type="text" style="display: none" />
+                        <span asp-validation-for="bairro" class="text-danger"></span>
                     </div>
                     <div class="info-grup">
                         <p>Cidade</p>
                         <label>@Model.cidade</label>
-                        <input type="text" id="cidade" name="cidade" value="@Model.cidade" style="display: none">
+                        <input asp-for="cidade" type="text" style="display: none" />
+                        <span asp-validation-for="cidade" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-grup">
                         <p>Nº Residência</p>
                         <label>@Model.numEnd</label>
-                        <input type="text" id="num" name="numEnd" value="@Model.numEnd" style="display: none">
+                        <input asp-for="numEnd" type="text" style="display: none" />
+                        <span asp-validation-for="numEnd" class="text-danger"></span>
                     </div>
                     <div class="info-grup">
                         <p>UF</p>
                         <label>@Model.uf</label>
-                        <input type="text" id="uf" name="uf" value="@Model.uf" class="info-perfil" style="display: none">
+                        <input asp-for="uf" type="text" style="display: none" />
+                        <span asp-validation-for="uf" class="text-danger"></span>
                     </div>
                 </div>
             </div>
         </form>
     </div>
-
-
-
 </section>
 
 <script>
@@ -138,7 +142,7 @@
             // Muda o texto do botão
             botao.textContent = 'Salvar';
 
-            // Deixa os texts visíveis
+            // Deixa os inputs visíveis
             campos.forEach(campo => {
                 campo.style.display = 'block';
             });
@@ -155,7 +159,7 @@
             // Envia o formulário
             formId.submit();
 
-            // Deixa os texts invisíveis
+            // Deixa os inputs invisíveis
             campos.forEach(campo => {
                 campo.style.display = 'none';
             });
@@ -167,3 +171,8 @@
         }
     }
 </script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
