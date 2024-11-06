@@ -213,9 +213,6 @@ namespace edutico.Controllers
 
         public IActionResult FavoritosCheio()
         {
-            // Cria uma lista para armazenar vários produtos
-            List<Favoritos> produtoFavoritado = new List<Favoritos>();
-
             // Pega o codLogin do Usuário Logado através da sessão
             var codLogin = _loginSessao.GetLogin();
 
@@ -226,14 +223,12 @@ namespace edutico.Controllers
             }
             else
             {
-                IEnumerable<Favoritos> favoritos = _favoritosRepositorio.ConsultarFavoritos(codLogin.codLogin);
+                IEnumerable<Favorito> favoritos = _favoritosRepositorio.ConsultarFavoritos(codLogin.codLogin);
 
                 return View("FavoritosCheio", favoritos);
             }
 
         }
-
-
     }
 
 }

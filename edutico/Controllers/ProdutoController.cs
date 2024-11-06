@@ -27,31 +27,28 @@ namespace edutico.Controllers
         [HttpPost]
         public IActionResult CadastrarProduto(string nomeProd, string codProd, string descricaoProd, string classificacao, string habilidadesEnviadas, string valorUnit, string estoque, string categoria, string lacamentoProd, List<IFormFile> imgs)
         {
-            // Verificar se os dados obrigatórios estão presentes
-            if (string.IsNullOrEmpty(nomeProd) || string.IsNullOrEmpty(codProd) || imgs == null || !imgs.Any())
+            // Verificar se a lista de imagens está vazia
+            if (imgs == null || !imgs.Any())
             {
-                ViewData["msg"] = "Preencha todos os campos obrigatórios e selecione pelo menos uma imagem!";
+                ViewData["msg"] = "Por favor, selecione ao menos uma imagem.";
                 return View("CadastroProduto");
             }
 
             // Criar o objeto produto com os dados recebidos
-            Produto produto = new Produto()
-            {
-                codProd = Convert.ToDecimal(codProd),
-                nomeProd = nomeProd,
-                descricao = descricaoProd,
-                classificacao = classificacao,
-                categoria = categoria,
-                valorUnit = Convert.ToDecimal(valorUnit),
-                estoque = Convert.ToInt32(estoque),
-                lancamento = Convert.ToBoolean(lacamentoProd)
-            };
-
-            // Processar habilidades selecionadas
-            List<string> habilidades = habilidadesEnviadas.Split(',').ToList();
+            Produto produto = new Produto(
+                Convert.ToDecimal(codProd),
+                nomeProd,
+                descricaoProd,
+                classificacao,
+                categoria,
+                habilidadesEnviadas,
+                Convert.ToDecimal(valorUnit),
+                Convert.ToInt32(estoque),
+                Convert.ToBoolean(lacamentoProd)
+            );
 
             // Chamar o repositório para salvar o produto e as imagens
-            string resultado = _produtoRepositorio.CadastrarProduto(produto, imgs, habilidades);
+            string resultado = _produtoRepositorio.CadastrarProduto(produto, imgs);
 
             ViewData["msg"] = resultado;
             return View("CadastroProduto");
@@ -60,13 +57,16 @@ namespace edutico.Controllers
         public IActionResult DetalhesProduto(decimal? codProd)
         {
             List<decimal> favoritos = new List<decimal>();
+
             Produto produto = null;
+
             if (_loginSessao != null && _loginSessao.GetLogin() != null)
             {
                 var login = _loginSessao.GetLogin();
                 // Verifica se o codProd é nulo ou não foi passado
                 if (!codProd.HasValue)
                 {
+                    /*
                     // Criar o produto padrão
                     produto = new Produto()
                     {
@@ -92,6 +92,7 @@ namespace edutico.Controllers
 
                         produto.imgs.Add(imagem); // Adiciona a imagem à lista de imagens do produto
                     }
+                    */
                 }
                 else
                 {

@@ -31,9 +31,11 @@
                     </button>
 
                     <!-- Carrinho -->
-                    <button class="btn-with-image">
-                        <img src="~/imgs/carrinho.png" alt="carrinho" style="height:26px; width:auto;">
-                    </button>
+                    <a asp-controller="Cliente" asp-action="Carrinho">
+                        <button class="btn-with-image">
+                            <img src="~/imgs/carrinho.png" alt="carrinho" style="height:26px; width:auto;">
+                        </button>
+                    </a>
 
                     <!-- Perfil -->
                     <button class="btn-with-image">
@@ -57,9 +59,6 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -6,6 +6,6 @@ namespace edutico.Repositorio
     {
         public void Favoritar(int codLogin, decimal codProd);
         public void RemoverFavorito(int codLogin, decimal codProd);
-        IEnumerable<Favoritos> ConsultarFavoritos(int codLogin);
+        IEnumerable<Favorito> ConsultarFavoritos(int codLogin);
     }
 }

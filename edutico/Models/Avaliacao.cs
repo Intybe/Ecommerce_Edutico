@@ -4,8 +4,8 @@
     {
         public int codAvaliacao { get; set; }
         public int qtdEstrela { get; set; }
-        public string comentario {  get; set; }
-        public int codLogin { get; set; }
+        public string comentario { get; set; }
+        public Cliente cliente { get; set; }
         public decimal codProd { get; set; }
     }
 }

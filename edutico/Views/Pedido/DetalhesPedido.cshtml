@@ -1,10 +1,9 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
      Layout = "_LayoutCli2";
     ViewData["Title"] = "Detalhes Pedido";
 }
+
+@model Pedido;
 
 <section class="container texto-simples tudodedetalhe align-content-center">
     <h3 style="font-family:'Edutico'; margin-left:43%;">DETALHES PEDIDO</h3>
@@ -12,36 +11,17 @@
         <div class="col-4 mx-3">
        
         <div class="areaPedido">
-            <p class="text-center" style="font-size:20px;">Pedido nº 702-570489-928736</P>
+            <p class="text-center" style="font-size:20px;">Pedido nº @Model.NF</P>
             <hr />
             <div class="detalhes-ped ">
                 <div class="scrollable-div overflow-auto" style="max-height: 150px;">
-                     <div class="item-prod">
-                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
-                    <p>R$ 199,99</p>
-                </div>
-                <div class="item-prod">
-                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
-                    <p>R$ 199,99</p>
-                </div>
-                <div class="item-prod">
-                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
-                    <p>R$ 199,99</p>
-                </div>
-                
-                     <div class="item-prod">
-                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
-                    <p>R$ 199,99</p>
-                </div>
-                <div class="item-prod">
-                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
-                    <p>R$ 199,99</p>
-                </div>
-                <div class="item-prod">
-                    <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> Jogo Monta Monta</p>
-                    <p>R$ 199,99</p>
-                </div>
-                
+                    @foreach(var itemPedido in Model.itensPedido)
+                    {
+                        <div class="item-prod">
+                            <p> <img src="@itemPedido.produto.img.enderecoImg" alt="@itemPedido.produto.nomeProd"> @itemPedido.produto.nomeProd</p>
+                            <p>R$ @itemPedido.valorItem</p>
+                        </div>
+                    }
                 </div>
                <div class="item-prod mt-2">
                     <p>Entrega</p>
@@ -51,7 +31,7 @@
              <hr />
             <div class="total-pedido d-flex" id="glacial-bold">
                 <p>Total</p>
-                <p>R$ 418,98</p>
+                <p>R$ @Model.valorTotal</p>
             </div>
         </div>
 
@@ -70,32 +50,32 @@
                         <div class="col-4">
                             <div class="info-ped mb-3">
                                 <p>Logradouro</p>
-                                <p id="info_perfil">Rua dos que não acham</p>
+                                <p id="info_perfil">@Model.cliente.logradouro</p>
                             </div>
                             <div class="info-ped mb-3"">
                                 <p>CEP</p>
-                                <p id="info_perfil">00000-090</p>
+                                <p id="info_perfil">@Model.cliente.cep</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="info-ped mb-3">
                                 <p>Bairro</p>
-                                <p id="info_perfil">Morro Doce</p>
+                                <p id="info_perfil">@Model.cliente.bairro</p>
                             </div>
                             <div class="info-ped">
                                 <p>Cidade</p>
-                                <p id="info_perfil">Fim do Mundo</p>
+                                <p id="info_perfil">@Model.cliente.cidade</p>
                             </div>
 
                         </div>
                         <div class="col-3">
                             <div class="info-ped mb-3">
                                 <p>Nº Residência</p>
-                                <p id="info_perfil">123</p>
+                                <p id="info_perfil">@Model.cliente.numEnd</p>
                             </div>
                             <div class="info-ped mb-3"">
                                 <p>UF</p>
-                                <p id="info_perfil">FM</p>
+                                <p id="info_perfil">@Model.cliente.uf</p>
                             </div>
                         </div>
                    

@@ -39,11 +39,13 @@ else
                     </select>
                 </form>
             </div>
-        </div> 
-        @foreach(var pedido in Model)
+        </div>
+        @foreach (var pedido in Model)
         {
+            var pedidoOut = System.Text.Json.JsonSerializer.Serialize(pedido);
+
             <!-- Pedidos Pendentes (Aguardando Pagamento) -->
-            if(pedido.statusPedido == 0)
+            if (pedido.statusPedido == 0)
             {
                 <div class="sumario-pedido glacial-bold">
                     <!--cabeçalho com status e número de pedido-->
@@ -78,9 +80,11 @@ else
                         </div>
                         <!--botão para encaminhar a detalhes pedido-->
                         <div class="ops-btn">
-                            <button class="btndeta-ped">Detalhes</button>
+                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                                <button type="submit" class="btndeta-ped">Detalhes</button>
+                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
+                            </form>
                         </div>
-
                     </div>
                 </div>
             }
@@ -119,7 +123,10 @@ else
                         </div>
                         <!--botões para acesso do usuario-->
                         <div class="ops-btn">
-                            <button class="btndeta-ped">Detalhes</button>
+                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                                <button type="submit" class="btndeta-ped">Detalhes</button>
+                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
+                            </form>
                             <button class="btnrastreio">Rastrear</button>
                             <button class="btncancelarped">Cancelar</button>
                         </div>
@@ -160,7 +167,11 @@ else
                         </div>
                         <!--botões de acesso-->
                         <div class="ops-btn">
-                            <button class="btndeta-ped">Detalhes</button>
+                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                                <button type="submit" class="btndeta-ped">Detalhes</button>
+                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
+                            </form>
+
                             <button class="btnrastreio">Avaliar</button>
                             <!--aqui estou chamando a modal como se já fosse sido solicitado a devolução mas pode ter a outra opção de encaminhar para o inicio do processo-->
                             <button class="btncancelarped" type="button" data-bs-toggle="modal" data-bs-target="#avisodevo">Devolver Produto</button>
@@ -203,7 +214,10 @@ else
                         </div>
                         <!--botões de acesso-->
                         <div class="ops-btn">
-                            <button class="btndeta-ped">Detalhes</button>
+                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                                <button type="submit" class="btndeta-ped">Detalhes</button>
+                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
+                            </form>
                             <button class="btnrastreio">Avaliar</button>
                             <!--aqui estou chamando a modal como se já fosse sido solicitado a devolução mas pode ter a outra opção de encaminhar para o inicio do processo-->
                             <button class="btncancelarped" type="button" data-bs-toggle="modal" data-bs-target="#avisodevo">Devolver Produto</button>
@@ -244,7 +258,10 @@ else
                             }
                         </div>
                         <div class="ops-btn">
-                            <button class="btndeta-ped">Detalhes</button>
+                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                                <button type="submit" class="btndeta-ped">Detalhes</button>
+                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
+                            </form>
                         </div>
 
                     </div>
@@ -256,38 +273,38 @@ else
 
 
 
-    <!-- Modal Devolucao Aprovado-->
+<!-- Modal Devolucao Aprovado-->
 
-    <div class="modal fade texto-simples" id="avisodevo" data-bs-backdrop="static" data-bs-keyboard="false">
-        @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
-        <!-- modal-dialog-centered faz ficar no centro verticalmente-->
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
-                <!-- tico feliz porque aprovou-->
-                <img src="~/imgs/ticofeliz.png" alt="Bonequinho" class="bonequinho-img" style="position: absolute; top: -167px; left: 30%;  height: 200px;"><!--esse position absolute faz ficar no meio e em cima da modal-->
-                <!-- x para fechar-->
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade texto-simples" id="avisodevo" data-bs-backdrop="static" data-bs-keyboard="false">
+    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+    <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+            <!-- tico feliz porque aprovou-->
+            <img src="~/imgs/ticofeliz.png" alt="Bonequinho" class="bonequinho-img" style="position: absolute; top: -167px; left: 30%;  height: 200px;"><!--esse position absolute faz ficar no meio e em cima da modal-->
+            <!-- x para fechar-->
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- aqui fica icone confere-->
+                <div class="mb-3">
+                    <img src="~/imgs/notifica.png" alt="Ícone de Confirmação" class="mb-3" style="height: 60px;">
                 </div>
-                <div class="modal-body">
-                    <!-- aqui fica icone confere-->
-                    <div class="mb-3">
-                        <img src="~/imgs/notifica.png" alt="Ícone de Confirmação" class="mb-3" style="height: 60px;">
-                    </div>
-                    <!-- Título e Mensagem -->
-                    <h1 class="modal-title fs-4 glacial-bold">
-                        A solicitação de devolução foi aprovada!
-                    </h1>
-                    <!-- ese fs é fonte size-->
-                    <p class="mb-3 fs-5">Siga com o próximo passo para concluir sua devolução.</p>
-                </div>
-                <!--botao de dentro da modal-->
-                <div class="modal-footer border-0 d-flex justify-content-center">
-                    <button class="btn btn-primary " data-bs-dismiss="modal" style="border-radius: 25px;">
-                        <!--faz com que abra outra padina na mesma aba-->
-                        Voltar para o menu    
-                    </button>
-                </div>
+                <!-- Título e Mensagem -->
+                <h1 class="modal-title fs-4 glacial-bold">
+                    A solicitação de devolução foi aprovada!
+                </h1>
+                <!-- ese fs é fonte size-->
+                <p class="mb-3 fs-5">Siga com o próximo passo para concluir sua devolução.</p>
+            </div>
+            <!--botao de dentro da modal-->
+            <div class="modal-footer border-0 d-flex justify-content-center">
+                <button class="btn btn-primary " data-bs-dismiss="modal" style="border-radius: 25px;">
+                    <!--faz com que abra outra padina na mesma aba-->
+                    Voltar para o menu
+                </button>
             </div>
         </div>
     </div>
+</div>

@@ -18,7 +18,7 @@
                 if (ViewData["msg"] != null)
                 {
                     @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
-                    <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+                            <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
                 }
             }
             <div class="row d-flex justify-content-between">
@@ -39,11 +39,12 @@
                         <div class="col-lg-7">
                             <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
                             <select class="ClassIndProd" name="classificacao">
-                                <option value="Até 2 Anos">Até 2 Anos</option>
-                                <option value="3+ Anos">3+ Anos</option>
-                                <option value="6+ Anos">6+ Anos</option>
-                                <option value="10+ Anos">10+ Anos</option>
-                                <option value="12+ Anos">12+ Anos</option>
+                                <option value="0">Selecione</option>
+                                <option value="1 - Até 2 Anos">Até 2 Anos</option>
+                                <option value="2 - 3+ Anos">3+ Anos</option>
+                                <option value="3 - 6+ Anos">6+ Anos</option>
+                                <option value="4 - 10+ Anos">10+ Anos</option>
+                                <option value="5 - 12+ Anos">12+ Anos</option>
                             </select>
                         </div>
                         <div class="col-lg-5">
@@ -54,18 +55,20 @@
 
                     <label for="CatBrinquedo" placeholder="Selecione a categoria do brinquedo">Categoria de brinquedos <span class="req">*</span></label>
                     <select class="CatBrinquedo" name="categoria">
-                        <option value="Brinquedos de Montar">Brinquedos de Montar</option>
-                        <option value="Brinquedos Sustentáveis">Brinquedos Sustentáveis</option>
-                        <option value="Brinquedos Científicos">Brinquedos Científicos</option>
-                        <option value="Quebra-Cabeças">Quebra-Cabeças</option>
-                        <option value="Livros Interativos">Livros Interativos</option>
-                        <option value="Brinquedos Sensoriais">Brinquedos Sensoriais</option>
-                        <option value="Instrumentos Musicais">Instrumentos Musicais</option>
-                        <option value="Jogos de Tabuleiro">Jogos de Tabuleiro</option>
-                        <option value="Jogos de Desafio">Jogos de Desafio</option>
-                        <option value="Jogos de Ação">Jogos de Ação</option>
-                        <option value="Jogos de Cartas">Jogos de Cartas</option>
-                        <option value="Jogos Eletrônicos">Jogos Eletrônicos</option>
+                        <option value="0">Selecione</option>
+                        <option value="1 - Brinquedos de Montar">Brinquedos de Montar</option>
+                        <option value="2 - Brinquedos Sustentáveis">Brinquedos Sustentáveis</option>
+                        <option value="3 - Brinquedos Científicos">Brinquedos Científicos</option>
+                        <option value="4 - Quebra-Cabeças">Quebra-Cabeças</option>
+                        <option value="5 - Livros Interativos">Livros Interativos</option>
+                        <option value="6 - Brinquedos Sensoriais">Brinquedos Sensoriais</option>
+                        <option value="7 - Instrumentos Musicais">Instrumentos Musicais</option>
+                        <option value="8 - Jogos de Tabuleiro">Jogos de Tabuleiro</option>
+                        <option value="9 - Jogos de Desafio">Jogos de Desafio</option>
+                        <option value="10 - Jogos de Ação">Jogos de Ação</option>
+                        <option value="11 - Jogos de Cartas">Jogos de Cartas</option>
+                        <option value="12 - Jogos Eletrônicos">Jogos Eletrônicos</option>
+
                     </select>
 
                     <div class="row">
@@ -94,16 +97,16 @@
                     <!-- Conteúdo do lado direito aqui -->
                     <label for="HabTabalhada">Habilidade Trabalhada <span class="req">*</span></label>
                     <div id="HabTabalhada" class="chips-container">
-                        <span class="chip" onclick="selecionarHabilidade(this)">Criatividade</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Coordenação motora</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Concentração</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Educação Emocional</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Linguagem e comunicação</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Matemática</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Raciocínio lógico</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Socialização</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Resolução de problemas</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)">Pensamento crítico</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="1 - Criatividade">Criatividade</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="2 - Coordenação motora">Coordenação motora</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="3 - Concentração">Concentração</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="4 - Educação Emocional">Educação Emocional</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="5 - Linguagem e comunicação">Linguagem e comunicação</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="6 - Matemática">Matemática</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="7 - Raciocínio lógico">Raciocínio lógico</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="8 - Socialização">Socialização</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="9 - Resolução de problemas">Resolução de problemas</span>
+                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="10 - Pensamento crítico">Pensamento crítico</span>
                     </div>
                     <!-- Um campo escondido para armazenar os chips selecionados -->
                     <input type="hidden" id="habilidadesSelecionadas" name="habilidadesEnviadas" />
@@ -113,14 +116,14 @@
                         <label for="ImgProduto">Selecione as imagens<span class="req">*</span></label>
                         <div class="organizacao_imagens" id="grid_imgs">
                             <label for="thumbnailInput" class="add-thumbnail">
-                              
+
                                <img src="~/imgs/Plus.png" style="border: none; width: 50px; height: auto;" />
-                                
+
                             </label>
-                            <input type="file" id="thumbnailInput" name="imgs" accept="image/*" multiple onchange="addMiniatura(event)" multiple>
+                            <input type="file" id="thumbnailInput" name="imgs" accept="image/*" multiple onchange="addMiniatura(event)">
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
 
@@ -140,10 +143,10 @@
 
         // Atualiza o campo hidden com as habilidades selecionadas
         const chipsSelecionados = document.querySelectorAll('.chip.selected');
-        const habilidadesSelecionadas = Array.from(chipsSelecionados).map(chip => chip.innerText);
+        const habilidadesSelecionadas = Array.from(chipsSelecionados).map(chip => chip.dataset.value);
 
         // Armazena as habilidades selecionadas no input hidden
-        document.getElementById('habilidadesSelecionadas').value = habilidadesSelecionadas.join(', ');
+        document.getElementById('habilidadesSelecionadas').value = habilidadesSelecionadas.join(' | ');
     }
 
     function addMiniatura(event) {
@@ -189,7 +192,5 @@
             // Lê o arquivo da imagem como uma URL (para exibição)
             reader.readAsDataURL(file);
         }
-    } 
-       
-
+    }
 </script>

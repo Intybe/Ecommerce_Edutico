@@ -5,7 +5,7 @@ namespace edutico.Repositorio
 {
     public interface IProdutoRepositorio
     {
-        string CadastrarProduto(Produto produto, List<IFormFile> imgs, List<string> habilidades);
+        string CadastrarProduto(Produto produto, List<IFormFile> imgs);
 
         IEnumerable<Produto> ConsultarProdutoLancamento();
 
