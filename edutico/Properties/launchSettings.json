@@ -13,7 +13,7 @@
       "IIS Express": {
         "commandName": "IISExpress",
         "launchBrowser": true,
-        "launchUrl": "Home/ProdutosF",
+        "launchUrl": "Home/Index",
         "environmentVariables": {
           "ASPNETCORE_ENVIRONMENT": "Development"
         }
@@ -21,7 +21,7 @@
       "edutico": {
         "commandName": "Project",
         "launchBrowser": true,
-        "applicationUrl": "https://localhost:7291/Home/ProdutosF", //rota para abrir o projeto em uma certa pag
+        "applicationUrl": "https://localhost:7291/Home/Index", //rota para abrir o projeto em uma certa pag
         "environmentVariables": {
           "ASPNETCORE_ENVIRONMENT": "Development"
         }

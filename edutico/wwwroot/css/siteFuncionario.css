@@ -676,8 +676,7 @@ td {
 
 /*LADO ESQUERDO*/
 .form-group {
-    margin-bottom: 15px;
-    margin-left: 20px;
+
     width: 35%;
     height: auto;
     padding: 10px;
@@ -803,9 +802,7 @@ label {
     }
 
 .btns {
-    margin-top: 60px;
-    margin-left: 550px;
-    margin-bottom: 20px;
+
     text-align: center; /* Centraliza os botões horizontalmente */
 }
 
@@ -1643,7 +1640,7 @@ label {
     font-weight: normal;
 }
 
-/IMAGEM/
+/*IMAGNES*/
 .conteudo_imagens {
     display: flex;
     flex-direction: column;
@@ -1658,6 +1655,7 @@ label {
     border: 1px solid #ccc;
     border-radius: 20px;
 }
+
 
 .organizacao_imagens {
     display: grid;

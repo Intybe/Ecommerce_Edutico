@@ -1,18 +1,38 @@
-﻿namespace edutico.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace edutico.Models
 {
     public class Produto
     {
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
+        [MinLength(16, ErrorMessage = "O campo deve ter no máximo 16 caracteres.")]
         public decimal codProd { get; set; }
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        [MaxLength(200)]
         public string nomeProd { get; set; }
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        [MaxLength(600)]
         public string descricao { get; set; }
+        [Required(ErrorMessage = "Selecione uma opção")]
         public Classificacao classificacao { get; set; }
+        [Required(ErrorMessage = "Selecione uma opção")]
         public Categoria categoria { get; set; }
+        [Required(ErrorMessage = "Selecione uma opção")]
         public List<Habilidade> habilidades { get; set; }
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        [Range(0.01, 999999999.99)]
         public decimal valorUnit { get; set; }
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
+        [Required(ErrorMessage = "O campo é obrigatório.")]
         public int estoque { get; set; }
+        [Required(ErrorMessage = "O campo é obrigatório.")]
         public bool statusProd { get; set; }
+        [Required(ErrorMessage = "Selecione uma opção")]
         public bool lancamento { get; set; }
+    
         public Imagem img { get; set; }
+        [Required(ErrorMessage = "Selecione ao menos 2 imagens")]
         public List<Imagem> imgs { get; set; }
         public List<Avaliacao> avaliacoes { get; set; }
         public Dictionary<int, int> dadosAvaliacoes { get; set; }
