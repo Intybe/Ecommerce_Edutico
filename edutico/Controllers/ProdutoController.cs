@@ -10,7 +10,7 @@ namespace edutico.Controllers
     {
         private IProdutoRepositorio? _produtoRepositorio;
         private readonly LoginSessao _loginSessao;
-        private IFavoritosRepositorio?_favoritosRepositorio;
+        private IFavoritosRepositorio? _favoritosRepositorio;
         // Construtor com injeção de dependência
         public ProdutoController(IProdutoRepositorio produtoRepositorio, LoginSessao loginSessao, IFavoritosRepositorio favoritosRepositorio)
         {
@@ -63,6 +63,7 @@ namespace edutico.Controllers
             if (_loginSessao != null && _loginSessao.GetLogin() != null)
             {
                 var login = _loginSessao.GetLogin();
+
                 // Verifica se o codProd é nulo ou não foi passado
                 if (!codProd.HasValue)
                 {
@@ -106,7 +107,13 @@ namespace edutico.Controllers
                     favoritos = favoritosList.Select(f => f.produto.codProd).ToList();
                 }
             }
-            var viewModel = new ViewProdutoFavoritos
+            else
+            {
+                // Consultar o produto pelo código
+                produto = _produtoRepositorio.ConsultarDetalheProduto(codProd.Value);
+            }
+
+            var viewModel = new ViewProdutoFavoritos()
             {
                 produto = produto,
                 favoritos = favoritos
@@ -143,7 +150,7 @@ namespace edutico.Controllers
             List<Produto> produtos = new List<Produto>();
 
             // Busca os produtos no banco de dados e armazena na lista
-            produtos = _produtoRepositorio.ConsultarProdutoLancamento().ToList(); // Obtém os produtos
+            produtos = _produtoRepositorio.ConsultarProdutoPesquisa(pesquisa).ToList(); // Obtém os produtos
 
             ViewData["pesquisa"] = pesquisa;
             return View(produtos);

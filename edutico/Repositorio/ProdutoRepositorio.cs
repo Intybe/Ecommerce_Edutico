@@ -189,7 +189,7 @@ namespace edutico.Repositorio
                     estoque: Convert.ToInt32(dr["estoque"]),
                     statusProd: Convert.ToBoolean(dr["statusProd"]),
                     lancamento: Convert.ToBoolean(dr["lancamento"]),
-                    imgsConcatenadas: dr["imgs"]?.ToString(),
+                    imgsConcatenadas: dr["imgs"].ToString(),
                     detalhesAvaliacaoConcatenados: dr["detalhesAvaliacao"]?.ToString(),
                     qtdPorEstrelaConcatenada: dr["qtdPorEstrela"]?.ToString(),
                     qtdAvaliacao: Convert.ToInt32(dr["qtdAvaliacao"]),
@@ -293,129 +293,39 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Comando SQL para selecionar produtos e suas respectivas imagens, com filtro de pesquisa
-            string sql = @"
-                Select * from vwProduto 
-                Left Join tbImagem On Código = tbImagem.codProd 
-                where Status = 1 and Lançamento = 1 
-                and (nomeProd like @pesquisa OR descricao like @pesquisa);"; // Filtro de pesquisa
+            string sql = "Select * from vwPreviaProduto where statusProd = 1 and nomeProd like @pesquisa;"; // Filtro de pesquisa            
 
+            // Junta o comando SQL com a informações do banco
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
-            cmd.Parameters.AddWithValue("@pesquisa", "%" + pesquisa + "%"); // Adiciona o parâmetro de pesquisa com wildcards
 
-            // Dicionário para armazenar os produtos enquanto lemos as imagens
-            Dictionary<decimal, Produto> produtoDict = new Dictionary<decimal, Produto>();
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@pesquisa", "%" + pesquisa + "%");
 
-            MySqlDataReader dr = null;
+            // Executa e lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
 
-            try
+            // Cria uma lista de objeto do tipo Produto
+            List<Produto> produtos = new List<Produto>();
+
+            // Enquanto houver linhas cria um objeto produto e adiciona a lista de produtos relacioados
+            while (dr.Read())
             {
-                // Lê os dados retornados pelo comando SQL
-                dr = cmd.ExecuteReader();
-
-                // Irá repetir o processo para cada linha retornada
-                while (dr.Read())
-                {
-                    decimal codProd = Convert.ToDecimal(dr["Código"]);
-
-                    // Verifica se o produto já foi adicionado ao dicionário
-                    if (!produtoDict.ContainsKey(codProd))
-                    {
-                        // Se o produto ainda não foi adicionado, cria uma nova instância
-                        Produto produto = new Produto()
-                        {/*
-                            codProd = codProd,
-                            nomeProd = dr["Nome"].ToString(),
-                            descricao = dr["Descrição"].ToString(),
-                            classificacao = dr["Classificação Indicativa"].ToString(),
-                            categoria = dr["Categoria"].ToString(),
-                            valorUnit = Convert.ToDecimal(dr["Valor Unitário"]),
-                            estoque = Convert.ToInt32(dr["Estoque"]),
-                            statusProd = Convert.ToBoolean(dr["Status"]),
-                            lancamento = Convert.ToBoolean(dr["Lançamento"]),
-                            imgs = new List<Imagem>() // Inicializa a lista de imagens
-                            */
-                        };
-
-                        // Adiciona o produto ao dicionário
-                        produtoDict.Add(codProd, produto);
-                    }
-
-                    // Adiciona a imagem ao produto correspondente, se existir
-                    if (!dr.IsDBNull(dr.GetOrdinal("nomeImg")))
-                    {
-                        Imagem imagem = new Imagem()
-                        {
-                            nomeImg = dr["nomeImg"].ToString(),
-                            enderecoImg = dr["enderecoImg"].ToString(),
-                            codProd = codProd
-                        };
-
-                        produtoDict[codProd].imgs.Add(imagem);
-                    }
-                }
-
-                // Fecha o primeiro DataReader antes de abrir outro
-                dr.Close();
-
-                // Agora, vamos buscar as métricas de avaliação para cada produto
-                foreach (var produto in produtoDict.Values)
-                {
-                    string sqlAvaliacoes = @"
-                        Select 
-                            Count(*) AS total, 
-                            Sum(qtdEstrela) AS somaAvaliacao,
-                            Sum(Case when qtdEstrela = 5 then 1 else 0 END) AS estrelas5,
-                            Sum(Case when qtdEstrela = 4 then 1 else 0 END) AS estrelas4,
-                            Sum(Case when qtdEstrela = 3 then 1 else 0 END) AS estrelas3,
-                            Sum(Case when qtdEstrela = 2 then 1 else 0 END) AS estrelas2,
-                            Sum(Case when qtdEstrela = 1 then 1 else 0 END) AS estrelas1
-                        from tbAvaliacao 
-                        where codProd = @codProd;"; // Filtrando pela codProd
-
-                    MySqlCommand cmdAvaliacoes = new MySqlCommand(sqlAvaliacoes, conexao);
-                    cmdAvaliacoes.Parameters.AddWithValue("@codProd", produto.codProd);
-
-                    // Agora podemos abrir um novo DataReader sem conflitos
-                    using (MySqlDataReader drAvaliacoes = cmdAvaliacoes.ExecuteReader())
-                    {
-                        // Inicializa o dicionário de avaliações
-                        produto.dadosAvaliacoes = new Dictionary<int, int>();
-
-                        // Verifica se há resultados da consulta de avaliações
-                        if (drAvaliacoes.Read() && drAvaliacoes != null &&
-    drAvaliacoes["estrelas1"] != DBNull.Value &&
-    drAvaliacoes["estrelas2"] != DBNull.Value &&
-    drAvaliacoes["estrelas3"] != DBNull.Value &&
-    drAvaliacoes["estrelas4"] != DBNull.Value &&
-    drAvaliacoes["estrelas5"] != DBNull.Value &&
-    drAvaliacoes["somaAvaliacao"] != DBNull.Value &&
-    drAvaliacoes["total"] != DBNull.Value)
-                        {
-                            // Para cada categoria de estrelas de 1 a 5, atribui a quantidade correspondente
-                            for (int i = 5; i >= 1; i--)
-                            {
-                                int chave = i; // A chave do dicionário
-                                int valor = Convert.ToInt32(drAvaliacoes[$"estrelas{i}"]); // O valor a ser inserido
-
-                                // Inserindo no dicionário
-                                produto.dadosAvaliacoes[chave] = valor;
-                            }
-
-                            produto.somaAvaliacao = Convert.ToInt32(drAvaliacoes["somaAvaliacao"]);
-                            produto.qtdAvaliacao = Convert.ToInt32(drAvaliacoes["total"]);
-                        }
-                    }
-                }
-            }
-            finally
-            {
-                // Fecha a conexão com o banco de dados
-                if (dr != null && !dr.IsClosed) dr.Close();
-                con.DesconectarBD();
+                Produto produtoRelacionados = new Produto(
+                    Convert.ToDecimal(dr["codProd"]),
+                    dr["nomeProd"].ToString(),
+                    Convert.ToDecimal(dr["valorUnit"]),
+                    Convert.ToInt32(dr["qtdAvaliacao"]),
+                    Convert.ToInt32(dr["somaAvaliacao"]),
+                    dr["imgs"]?.ToString()
+                );
+                produtos.Add(produtoRelacionados);
             }
 
-            // Retorna a lista de produtos com suas imagens e avaliações
-            return produtoDict.Values;
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna o produto (ou null se não for encontrado)
+            return produtos;
         }
     }
 }

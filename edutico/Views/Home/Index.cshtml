@@ -1,4 +1,5 @@
-﻿@model ViewProdutoFavoritos;
+﻿@model ViewProdutoFavoritos
+
 
 @{
     ViewData["Title"] = "Home Page";
@@ -44,14 +45,42 @@
             <div class="row">
                 @foreach (var produto in Model.produtos.Take(6))
                 {
+                  
+                    
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                         <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-codProd="@produto.codProd" class="text-decoration-none">
                             <div class="card product-card my-2">
                                 <div class="card-body py-2">
                                     <div class="position-relative">
-                                        <button class="btn position-absolute start-0 top-0 px-0">
-                                            <img src="~/imgs/heart.png" class="heart-icon">
-                                        </button>
+                                        @if(!Model.favoritos.Any()){
+                                            <form asp-controller="Home" asp-route-codProd="@produto.codProd" asp-action="Favoritar" method="post">
+                                                <button class=" btn position-absolute start-0 top-0 px-0">
+                                                    <img src="~/imgs/heart.png" class="heart-icon">
+                                                </button>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            if (Model.favoritos.Contains(produto.codProd)){
+                                                <form asp-controller="Home" asp-route-codProd="@produto.codProd" asp-action="RemoverFavorito" method="post">
+                                                    <button class=" btn position-absolute start-0 top-0 px-0">
+                                                        <img src="~/imgs/favoritado.png" class="heart-icon">
+                                                    </button>
+                                                </form>
+                                            }else
+                                            {
+                                                <form asp-controller="Home" asp-route-codProd="@produto.codProd" asp-action="Favoritar" method="post">
+                                                    <button class=" btn position-absolute start-0 top-0 px-0">
+                                                        <img src="~/imgs/heart.png" class="heart-icon">
+                                                    </button>
+                                                </form>
+
+                                            }
+                                        }
+                                        
+                                          
+                                           
+
                                     </div>
                                     <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
                                     <h6 class="card-title mt-3 mx-0" id="glacial-bold" style="color:#000">
@@ -67,16 +96,16 @@
                                         }
                                     </h6>
 
-                                    @if (produto.qtdAvaliacao == 0)
+                                    @if (produto.avaliacoes != null && produto.avaliacoes.Any())
                                     {
                                         <p class="text mb-3 small-text">
-                                            <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
+                                            <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
                                         </p>
                                     }
                                     else
                                     {
                                         <p class="text mb-3 small-text">
-                                            <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
+                                            <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
                                         </p>
                                     }
                                     <p class="h4 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
@@ -105,9 +134,40 @@
                             <div class="card product-card my-2">
                                 <div class="card-body py-2">
                                     <div class="position-relative">
-                                        <button class="btn position-absolute start-0 top-0 px-0">
-                                            <img src="~/imgs/heart.png" class="heart-icon">
-                                        </button>
+                                        <div class="position-relative">
+                                            @if (!Model.favoritos.Any())
+                                            {
+                                                <form asp-controller="Home" asp-route-codProd="@produto.codProd" asp-action="Favoritar" method="post">
+                                                    <button class=" btn position-absolute start-0 top-0 px-0">
+                                                        <img src="~/imgs/heart.png" class="heart-icon">
+                                                    </button>
+                                                </form>
+                                            }
+                                            else
+                                            {
+                                                if (Model.favoritos.Contains(produto.codProd))
+                                                {
+                                                    <form asp-controller="Home" asp-route-codProd="@produto.codProd" asp-action="RemoverFavorito" method="post">
+                                                        <button class=" btn position-absolute start-0 top-0 px-0">
+                                                            <img src="~/imgs/favoritado.png" class="heart-icon">
+                                                        </button>
+                                                    </form>
+                                                }
+                                                else
+                                                {
+                                                    <form asp-controller="Home" asp-route-codProd="@produto.codProd" asp-action="Favoritar" method="post">
+                                                        <button class=" btn position-absolute start-0 top-0 px-0">
+                                                            <img src="~/imgs/heart.png" class="heart-icon">
+                                                        </button>
+                                                    </form>
+
+                                                }
+                                            }
+
+
+
+
+                                        </div>
                                     </div>
                                     <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
                                     <h6 class="card-title mt-3 mx-0" id="glacial-bold" style="color:#000">

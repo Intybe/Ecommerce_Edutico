@@ -18,9 +18,11 @@
                 </a>
 
                 <!-- Barra de pesquisa centralizada -->
-                <form class="d-flex justify-content-center align-items-center search-bar">
-                    <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial';">
-                    <img src="~/imgs/lupa.png" class="icone">
+                <form asp-controller="Produto" asp-action="Pesquisa" class="d-flex justify-content-center align-items-center search-bar">
+                    <input class="layout-label" type="search" name="pesquisa" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial';">
+                    <button type="submit" class="btn p-0" style="border: none; background: none;">
+                        <img src="~/imgs/lupa.png" class="icone" alt="Pesquisar">
+                    </button>
                 </form>
 
                 <!-- Ícones à direita -->
