@@ -13,7 +13,7 @@
             <div class="scrollable-div col-3 overflow-auto">
                 @foreach (var img in Model.produto.imgs)
                 {
-                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem("@Url.Content(img.enderecoImg)")" />
+                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem(" @Url.Content(img.enderecoImg)")" />
                 }
 
             </div>
@@ -31,26 +31,27 @@
             <div id="versaocompleta" class="hidden">
                 <p class="texto-simples">Características do Produto:</p>
                 <br />
-                <p class="texto-simple">@Model.produto.descricao;
-                <ul class="texto-simples">
-                    <li><strong>Categoria: </strong>@Model.produto.categoria.nomeCategoria</li>
-                    <li><strong>Classificação Indicativa: </strong>@Model.produto.classificacao.nomeClassificacao</li>
+                <p class="texto-simple">
+                    @Model.produto.descricao;
+                    <ul class="texto-simples">
+                        <li><strong>Categoria: </strong>@Model.produto.categoria.nomeCategoria</li>
+                        <li><strong>Classificação Indicativa: </strong>@Model.produto.classificacao.nomeClassificacao</li>
 
-                    @{
-                        int colorIndex = 0;
-                        var colors = new List<string> { "azul", "vermelho", "amarelo" };
-                    }
-
-                    <li>
-                        @foreach (var habilidade in Model.produto.habilidades)
-                        {
-                            <span style="color: @colors[colorIndex]; display: inline-block; margin-right: 10px;">
-                                #@habilidade.nomeHabilidade
-                            </span>
-                            colorIndex = (colorIndex + 1) % colors.Count; // alterna entre as cores
+                        @{
+                            int colorIndex = 0;
+                            var colors = new List<string> { "azul", "vermelho", "amarelo" };
                         }
-                    </li>
-                </ul>
+
+                        <li>
+                            @foreach (var habilidade in Model.produto.habilidades)
+                            {
+                                <span style="color: @colors[colorIndex]; display: inline-block; margin-right: 10px;">
+                                    #@habilidade.nomeHabilidade
+                                </span>
+                                colorIndex = (colorIndex + 1) % colors.Count; // alterna entre as cores
+                            }
+                        </li>
+                    </ul>
             </div>
             <div class="fundo_ver position-absolute bottom-0 end-0">
                 <button class="vermais position-absolute bottom-0 end-0" id="toggle-button">Ler descrição completa</button>
@@ -80,21 +81,21 @@
                                 <div class="align-content-center">
                                     @for (int i = 0; i < estrelasCheias; i++)
                                     {
-                                    // Exibe as estrelas cheias
+                                        // Exibe as estrelas cheias
                                         <img src="~/imgs/Star.png" class="iconeava" />
                                     }
 
 
                                     @if (meiaEstrela)
                                     {
-                                    // Exibe meia estrela, se necessário
+                                        // Exibe meia estrela, se necessário
                                         <img src="~/imgs/halfStar.png" class="iconeava" />
                                     }
 
 
                                     @for (int i = 0; i < estrelasVazias; i++)
                                     {
-                                    // Exibe as estrelas vazias
+                                        // Exibe as estrelas vazias
                                         <img src="~/imgs/estrelaVazia.png" class="iconeava" />
                                     }
                                     @((Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@Model.produto.qtdAvaliacao avaliações)
@@ -286,7 +287,7 @@
 
                     @for (int i = 0; i < estrelasVazias; i++)
                     {
-                    // Exibe as estrelas vazias
+                        // Exibe as estrelas vazias
                         <img src="~/imgs/estrelaVazia.png" class="iconeava" />
                     }
                     @((Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@Model.produto.qtdAvaliacao avaliações)
@@ -357,7 +358,7 @@
                             }
                             else
                             {
-                                if (Model.favoritos.Contains(Model.produto.codProd))
+                                if (Model.favoritos.Contains(produto.codProd))
                                 {
                                     <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="RemoverFavorito" method="post">
                                         <button class=" btn position-absolute start-0 top-0 px-0">
@@ -472,14 +473,14 @@
     const totalRatings = @Model.produto.qtdAvaliacao;
     const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.produto.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
 
-        for (let rating in ratingsData) {
+            for (let rating in ratingsData) {
         const percentage = (ratingsData[rating] / totalRatings) * 100;
-        const ratingBar = document.getElementById(`bar-${rating}`);
+        const ratingBar = document.getElementById(bar - ${ rating });
 
         if (ratingBar) {
-            ratingBar.style.width = `${percentage}%`;
+            ratingBar.style.width = ${ percentage }%;
         } else {
-            console.error(`Barra de progresso para ${rating} estrelas não encontrada.`);
+            console.error(Barra de progresso para ${ rating } estrelas não encontrada.);
         }
     }
 </script>

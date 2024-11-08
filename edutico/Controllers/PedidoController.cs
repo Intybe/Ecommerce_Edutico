@@ -100,13 +100,15 @@ namespace edutico.Controllers
 
                     List<Cartao> cartoes = new List<Cartao>();
 
+                    var retornoPag = new Random().Next(0, 2) == 1;
                     // Consulta a lista de cartões cadastrados para o usuário logado
                     cartoes = _cartaoRepositorio.ConsultarCartao(Login.codLogin);
 
                     Pagamento pagamento = new Pagamento()
                     {
                         pedido = pedido,
-                        cartoes = cartoes
+                        cartoes = cartoes,
+                         retorno = retornoPag
                     };
 
                     TempData["Pagamento"] = JsonConvert.SerializeObject(pagamento);

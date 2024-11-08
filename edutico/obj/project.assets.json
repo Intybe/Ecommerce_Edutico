@@ -1651,24 +1651,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\barro\\.nuget\\packages\\": {},
-    "P:\\Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Rebeka\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\edutico.csproj",
+      "projectUniqueName": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\edutico.csproj",
       "projectName": "edutico",
-      "projectPath": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\edutico.csproj",
-      "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\obj\\",
+      "projectPath": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\edutico.csproj",
+      "packagesPath": "C:\\Users\\Rebeka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "P:\\Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\barro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Rebeka\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

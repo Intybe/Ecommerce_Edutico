@@ -6,7 +6,7 @@ namespace edutico.Models
     {
         [Required(ErrorMessage = "O campo é obrigatório.")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
-        [MinLength(16, ErrorMessage = "O campo deve ter no máximo 16 caracteres.")]
+        [MinLength(14, ErrorMessage = "O campo deve ter no máximo 14 caracteres.")]
         public decimal codProd { get; set; }
         [Required(ErrorMessage = "O campo é obrigatório.")]
         [MaxLength(200)]
@@ -21,7 +21,8 @@ namespace edutico.Models
         [Required(ErrorMessage = "Selecione uma opção")]
         public List<Habilidade> habilidades { get; set; }
         [Required(ErrorMessage = "O campo é obrigatório.")]
-        [Range(0.01, 999999999.99)]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
+
         public decimal valorUnit { get; set; }
         [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
         [Required(ErrorMessage = "O campo é obrigatório.")]

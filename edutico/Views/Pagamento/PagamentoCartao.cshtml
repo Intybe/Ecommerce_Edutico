@@ -1,25 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Cartao Pagamento";
+    string valorModal = null;
 }
 
 @model Pagamento;
 
 
-@{
-    string valorModal = string.Empty;
-    string textoModal = string.Empty;
 
-    if (Model.mensagem == "Pagamento Realizado Com Sucesso!")
-    {
-        textoModal = Model.mensagem;
-        valorModal = "#successModal";
-    }
-    else
-    {
-        valorModal = "#negadoModal"; // Modal para tratar qualquer outro tipo de erro
-    }
+@if (Model.retorno == true)
+{
+    valorModal = "#successModal";
 }
-
+else
+{
+    valorModal = "#negadoModal";
+}
 <div class="row texto-simples ">
     <div class="text-center mb-2">
         <p>Pedido confirmado! Realize o pagamento para efetuarmos a sua compra.</p>
@@ -38,7 +33,7 @@
 
                     <div class="radio-container justify-content-between d-flex">
                         <label for="radio-@index">
-                            <input type="radio" id="radio-@index" name="radio" onchange='selecionarCartao(@cartao)' />
+                            <input type="radio" id="radio-@index" name="radio" onchange='selecionarCartao(@cartao)' required />
                             <!--esse span vazio é a bolinha-->
                             <div class="custom-radio">
                                 <span></span>
@@ -61,7 +56,7 @@
             <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">CADASTRE SEU CARTÃO AQUI</h5>
             <br />
 
-            <form>
+            <form id="cadastrocartao">
                 <div class="info-grup d-flex flex-column mb-3">
                     <label for="titular">Nome do titular <span class="obg">*</span></label>
                     <input type="text" placeholder="Digite aqui o número do cartão" />
@@ -82,17 +77,17 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                <button class="btn-cartao ">Confirmar</button>
-            </div>  
+                    <button class="btn-cartao ">Confirmar</button>
+                </div>
             </form>
         </div>
         <form id="formPagamento" asp-controller="Pagamento" asp-action="CadastrarPagamentoCartao" method="post">
             <div class="base-cartao-com">
                 <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">SELECIONE A QUANTIDADE DE PARCELAS</h5>
-                    <div class="d-flex info-grup align-items-end justify-content-between">
-                        <div class="me-3 d-flex flex-column col-6">
-                            <label for="parcelas">Parcelas <span class="obg">*</span></label>
-                            <select id="parcelas" type="text" name="parcelas" placeholder="Selecione a quantidade de parcelas" required>
+                <div class="d-flex info-grup align-items-end justify-content-between">
+                    <div class="me-3 d-flex flex-column col-6">
+                        <label for="parcelas">Parcelas <span class="obg">*</span></label>
+                        <select id="parcelas" type="text" name="parcelas" placeholder="Selecione a quantidade de parcelas" required>
                             <option value="1">1X de R$ @Model.pedido.valorTotal.ToString("F2")</option>
                             <option value="2">2X de R$ @((Model.pedido.valorTotal / 2).ToString("F2"))</option>
                             <option value="3">3X de R$ @((Model.pedido.valorTotal / 3).ToString("F2"))</option>
@@ -105,68 +100,54 @@
                             <option value="10">10X de R$ @((Model.pedido.valorTotal / 10).ToString("F2"))</option>
                             <option value="11">11X de R$ @((Model.pedido.valorTotal / 11).ToString("F2"))</option>
                             <option value="12">12X de R$ @((Model.pedido.valorTotal / 12).ToString("F2"))</option>
-                            </select>
-                        </div>
-                        <div class="d-flex glacial-bold">
-                            <h5 class="me-2">Total:</h5>
-                            <h5>R$ @Model.pedido.valorTotal</h5>
-                        </div>
+                        </select>
                     </div>
+                    <div class="d-flex glacial-bold">
+                        <h5 class="me-2">Total:</h5>
+                        <h5>R$ @Model.pedido.valorTotal</h5>
+                    </div>
+                </div>
             </div>
 
             <input type="hidden" name="qtdParcela" />
             <input id="cartaoSelecionado" type="hidden" name="dadosCartao" />
             <input type="hidden" name="dadosPagamento" value='@Json.Serialize(Model)' />
         </form>
-        
+
     </div>
 
     <!--EXISTEM DUAS MODAIS APENAS UMA ESTA SENDO CHAMDA NO MOMENTO SÓ POR CONTA DO TESTE-->
     <div class="d-flex justify-content-end">
         <button class="btncanc">Voltar para o menu</button>
         <!--botão que chama a modal o id da modal é locado no data-bs-target -->
-        <button class="btnnav" type="button" onclick="enviarFormulario()">Concluir pagamento</button>
+        <a ta-bs-toggle="modal" data-bs-target="@valorModal">
+            <button data-bs-toggle="modal" data-bs-target="@valorModal" class="btnnav" type="button">Concluir pagamento</button>
+        </a>
+
     </div>
-    
+
 </div>
 <div>
-   <script>
-       /* $(document).ready(function () {
-            var modalId = '@valorModal'; // Recebe o valor do modal de acordo com a lógica C#
-            if (modalId !== '') {
-                $(modalId).modal.show(); // Exibe o modal
-            }
-            console.log(modalId);
-        });
-        */
+    <script>
 
-        function abreModal() {
-            var modalId = '#successModal';
-            $(modalId).modal({
-                show: true
-            });
-        }
-
-        setTimeout(abreModal, 1000);
-
-       function selecionarCartao(cartao) {
-           const input = document.querySelector("#cartaoSelecionado");
+        function selecionarCartao(cartao) {
+            const input = document.querySelector("#cartaoSelecionado");
             input.value = JSON.stringify(cartao);
         }
 
-       document.getElementById("parcelas").addEventListener("change", function () {
-           // Captura o valor da parcela selecionada
-           var parcelaSelecionada = this.value;
+        document.getElementById("parcelas").addEventListener("change", function () {
+            // Captura o valor da parcela selecionada
+            var parcelaSelecionada = this.value;
 
-           // Define o valor no campo oculto
-           document.getElementById("qtdParcela").value = parcelaSelecionada;
-       });
+            // Define o valor no campo oculto
+            document.getElementById("qtdParcela").value = parcelaSelecionada;
+        });
 
-       function enviarFormulario(){
-           const form = document.querySelector("#formPagamento");
-           form.submit();
-       }
-   </script>
+        function enviarFormulario() {
+            const form = document.querySelector("#formPagamento");
+            form.submit();
+        }
+    </script>
 </div>
 
 
@@ -191,7 +172,7 @@
                     <img src="~/imgs/aprovado.png" alt="Ícone de Confirmação" class="mb-3" style="height: 60px;">
                 </div>
                 <!-- Título e Mensagem -->
-                <h1 class="modal-title fs-4 glacial-bold">@textoModal</h1>
+                <h1 class="modal-title fs-4 glacial-bold">Pagamento Realizado Com Sucesso!</h1>
                 <!-- ese fs é fonte size-->
                 <p class="mb-3 fs-5">Obrigado pela sua compra!</p>
                 <p class="text-center mx-2">
@@ -200,13 +181,13 @@
             </div>
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
-                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary px-4 py-4" style="border-radius: 25px;">
+                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary" style="border-radius: 25px;">
                     <!--faz com que abra outra padina na mesma aba-->
                     Acompanhar pedido
                 </a>
             </div>
 
-            
+
         </div>
     </div>
 </div>
@@ -249,16 +230,12 @@
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
                 <!--fecha modal-->
-                <bytton class="btn btn-primary px-4 py-3" data-bs-dismiss="modal" style="border-radius: 25px;">
+                <bytton class="btn btn-primary" data-bs-dismiss="modal" style="border-radius: 25px;">
                     Voltar para o menu
                 </bytton>
             </div>
         </div>
     </div>
 </div>
-    
-
-
-
 
 

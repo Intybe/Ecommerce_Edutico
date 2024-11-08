@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ok7RsRvVZ71X1L6qMvd6DcwB66fb17zdk/4tNzrUA1I=",
+  "Hash": "7BGpJSDrI6yTYaU0q61gQgwHNq62mMxqINKUgIajE+8=",
   "Source": "edutico",
   "BasePath": "_content/edutico",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "edutico\\wwwroot",
       "Source": "edutico",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\obj\\Debug\\net8.0\\scopedcss\\bundle\\edutico.styles.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\obj\\Debug\\net8.0\\scopedcss\\bundle\\edutico.styles.css",
       "SourceId": "edutico",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/edutico",
       "RelativePath": "edutico.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\obj\\Debug\\net8.0\\scopedcss\\bundle\\edutico.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\obj\\Debug\\net8.0\\scopedcss\\bundle\\edutico.styles.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css",
       "SourceId": "edutico",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/edutico",
       "RelativePath": "edutico.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\css\\site.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\css\\siteCli2.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\css\\siteCli2.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "css/siteCli2.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\siteCli2.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\css\\siteFuncionario.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\css\\siteFuncionario.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "css/siteFuncionario.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\siteFuncionario.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\favicon.ico",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\fonts\\Edutico-Regular.otf",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\fonts\\Edutico-Regular.otf",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "fonts/Edutico-Regular.otf",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Edutico-Regular.otf"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\fonts\\glacial.otf",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\fonts\\glacial.otf",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "fonts/glacial.otf",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\glacial.otf"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\fonts\\GlacialIndifference-Bold.otf",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\fonts\\GlacialIndifference-Bold.otf",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "fonts/GlacialIndifference-Bold.otf",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\GlacialIndifference-Bold.otf"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/35475685-7b34-41eb-8647-582f99c296c9.webp",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\6maisanos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\6maisanos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/6maisanos.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\6maisanos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\aprovado.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\aprovado.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/aprovado.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\aprovado.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\ate2anos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\ate2anos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/ate2anos.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\ate2anos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\b781f72b-7b99-4671-ba92-50d80e806913.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\b781f72b-7b99-4671-ba92-50d80e806913.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/b781f72b-7b99-4671-ba92-50d80e806913.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\b781f72b-7b99-4671-ba92-50d80e806913.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Bandeira.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Bandeira.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Bandeira.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Bandeira.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\blur.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\blur.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/blur.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\blur.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\blur.svg",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\blur.svg",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/blur.svg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\blur.svg"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\blurmenino.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\blurmenino.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/blurmenino.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\blurmenino.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\blurmenino.svg",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\blurmenino.svg",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/blurmenino.svg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\blurmenino.svg"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\bolas.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\bolas.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/bolas.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\bolas.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\caixa.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\caixa.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/caixa.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\caixa.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Cancel.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Cancel.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Cancel.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Cancel.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\carrinho.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\carrinho.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/carrinho.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\carrinho.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\carrinhoadd.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\carrinhoadd.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/carrinhoadd.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\carrinhoadd.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\cartao.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\cartao.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/cartao.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\cartao.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\cartaopag.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\cartaopag.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/cartaopag.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\cartaopag.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\cartoes.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\cartoes.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/cartoes.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\cartoes.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\cataventos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\cataventos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/cataventos.png",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\cataventos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\cataventos_largo.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\cataventos_largo.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/cataventos_largo.png",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\cataventos_largo.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\cesta.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\cesta.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/cesta.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\cesta.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\chamada-telefonica.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\chamada-telefonica.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/chamada-telefonica.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\chamada-telefonica.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\confereazul.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\confereazul.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/confereazul.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\confereazul.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\coracao.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\coracao.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/coracao.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\coracao.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\curtidos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\curtidos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/curtidos.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\curtidos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\d39f8968-2945-4929-af34-f8f3a94268ec.jpg",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\d39f8968-2945-4929-af34-f8f3a94268ec.jpg",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/d39f8968-2945-4929-af34-f8f3a94268ec.jpg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\d39f8968-2945-4929-af34-f8f3a94268ec.jpg"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Dashboard.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Dashboard.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Dashboard.png",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Dashboard.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/db50df16-199f-4176-9e6d-536d8354f1c6.jfif",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Devolucao.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Devolucao.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Devolucao.png",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Devolucao.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\edupedidos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\edupedidos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/edupedidos.png",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\edupedidos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\ee261419-bb8c-4706-90b7-7f44fab1a509.jfif",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\ee261419-bb8c-4706-90b7-7f44fab1a509.jfif",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/ee261419-bb8c-4706-90b7-7f44fab1a509.jfif",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\ee261419-bb8c-4706-90b7-7f44fab1a509.jfif"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\esgotados.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\esgotados.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/esgotados.png",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\esgotados.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\estrelaVazia.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\estrelaVazia.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/estrelaVazia.png",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\estrelaVazia.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\f8748c98-e708-4dec-a0e3-5eceaff5c959.webp",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\f8748c98-e708-4dec-a0e3-5eceaff5c959.webp",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/f8748c98-e708-4dec-a0e3-5eceaff5c959.webp",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\f8748c98-e708-4dec-a0e3-5eceaff5c959.webp"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\facebook.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\facebook.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/facebook.png",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\facebook.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\favoritado.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\favoritado.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/favoritado.png",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\favoritado.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\favoritos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\favoritos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/favoritos.png",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\favoritos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\heart.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\heart.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/heart.png",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\heart.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Historico.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Historico.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Historico.png",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Historico.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\img_mae_filho.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\img_mae_filho.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/img_mae_filho.png",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\img_mae_filho.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\img_prod_padrao_quadrada.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\img_prod_padrao_quadrada.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/img_prod_padrao_quadrada.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\img_prod_padrao_quadrada.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\instagram.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\instagram.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/instagram.png",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\instagram.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\linha.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\linha.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/linha.png",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\linha.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\logo.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\logo.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/logo.png",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\logonav.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\logonav.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/logonav.png",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\logonav.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Logout.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Logout.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Logout.png",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Logout.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\lupa.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\lupa.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/lupa.png",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\lupa.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\mais10anos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\mais10anos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/mais10anos.png",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\mais10anos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\mais12.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\mais12.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/mais12.png",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\mais12.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\mais3.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\mais3.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/mais3.png",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\mais3.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\master.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\master.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/master.png",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\master.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\meiaEstrela.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\meiaEstrela.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/meiaEstrela.png",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\meiaEstrela.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\meninoo.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\meninoo.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/meninoo.png",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\meninoo.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\montamonta.jpg",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\montamonta.jpg",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/montamonta.jpg",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\montamonta.jpg"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\notifica.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\notifica.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/notifica.png",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\notifica.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Notification.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Notification.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Notification.png",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Notification.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\pagina-da-internet-preto.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\pagina-da-internet-preto.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/pagina-da-internet-preto.png",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\pagina-da-internet-preto.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Pedidos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Pedidos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Pedidos.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Pedidos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\perfil.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\perfil.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/perfil.png",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\perfil.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\PerfilF.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\PerfilF.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/PerfilF.png",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\PerfilF.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\pix.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\pix.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/pix.png",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\pix.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\pixpag.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\pixpag.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/pixpag.png",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\pixpag.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Plus.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Plus.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Plus.png",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Plus.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\produtos\\ççç_1.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\produtos\\ççç_1.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/produtos/ççç_1.png",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\produtos\\ççç_1.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\produtos\\ççç_2.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\produtos\\ççç_2.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/produtos/ççç_2.png",
       "AssetKind": "All",
@@ -1442,10 +1442,48 @@
       "OriginalItemSpec": "wwwroot\\imgs\\produtos\\ççç_2.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\promo.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\produtos\\LEGO_City_-_Police_Car_-_60312_Copy_1.webp",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/produtos/LEGO_City_-_Police_Car_-_60312_Copy_1.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\produtos\\LEGO_City_-_Police_Car_-_60312_Copy_1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\produtos\\Quebra_Cabeça_-_Explorando_o_Corpo_Humano_-_120_Peças_-_Toyster_1.webp",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/produtos/Quebra_Cabeça_-_Explorando_o_Corpo_Humano_-_120_Peças_-_Toyster_1.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\produtos\\Quebra_Cabeça_-_Explorando_o_Corpo_Humano_-_120_Peças_-_Toyster_1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\promo.png",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/promo.png",
       "AssetKind": "All",
@@ -1461,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\promo.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\QrCode.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\QrCode.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/QrCode.png",
       "AssetKind": "All",
@@ -1480,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\QrCode.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\reembolso.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\reembolso.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/reembolso.png",
       "AssetKind": "All",
@@ -1499,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\reembolso.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\sair.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\sair.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/sair.png",
       "AssetKind": "All",
@@ -1518,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\sair.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\setalado.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\setalado.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/setalado.png",
       "AssetKind": "All",
@@ -1537,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\setalado.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\Star.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\Star.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/Star.png",
       "AssetKind": "All",
@@ -1556,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\Star.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/ticoCarrinhoVazio.png",
       "AssetKind": "All",
@@ -1575,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\ticoCarrinhoVazio.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\ticocartao.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\ticocartao.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/ticocartao.png",
       "AssetKind": "All",
@@ -1594,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\ticocartao.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/ticofavoritos.png",
       "AssetKind": "All",
@@ -1613,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\ticofavoritos.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\ticofeliz.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\ticofeliz.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/ticofeliz.png",
       "AssetKind": "All",
@@ -1632,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\ticofeliz.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\upload.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\upload.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/upload.png",
       "AssetKind": "All",
@@ -1651,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\upload.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\vendas.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\vendas.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/vendas.png",
       "AssetKind": "All",
@@ -1670,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\vendas.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\whatsapp.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\whatsapp.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/whatsapp.png",
       "AssetKind": "All",
@@ -1689,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\whatsapp.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\x.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\x.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/x.png",
       "AssetKind": "All",
@@ -1708,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\x.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\imgs\\xx.png",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\imgs\\xx.png",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "imgs/xx.png",
       "AssetKind": "All",
@@ -1727,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\xx.png"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\js\\Chart.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\js\\Chart.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "js/Chart.min.js",
       "AssetKind": "All",
@@ -1746,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Chart.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\js\\chart-area-demo.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\js\\chart-area-demo.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "js/chart-area-demo.js",
       "AssetKind": "All",
@@ -1765,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\js\\chart-area-demo.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\js\\chart-pie-demo.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\js\\chart-pie-demo.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "js/chart-pie-demo.js",
       "AssetKind": "All",
@@ -1784,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\js\\chart-pie-demo.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\js\\datatables-demo.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\js\\datatables-demo.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "js/datatables-demo.js",
       "AssetKind": "All",
@@ -1803,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\js\\datatables-demo.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\js\\site.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1822,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1841,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1860,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1879,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1898,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1917,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1936,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1955,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1974,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1993,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2012,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2031,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2050,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2069,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2088,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2107,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2126,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2145,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2164,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2183,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2202,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2221,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2240,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2259,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2297,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2316,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2335,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2354,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2373,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2392,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2411,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2430,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2449,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2468,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2487,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2506,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2525,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2544,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2563,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2582,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2601,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2620,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2639,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2658,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2677,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2696,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2715,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2734,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2753,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2772,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2791,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2810,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2829,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2848,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2867,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2886,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "edutico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\barro\\Desktop\\Ultima versão\\edutico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rebeka\\Downloads\\pf\\edutico\\wwwroot\\",
       "BasePath": "_content/edutico",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

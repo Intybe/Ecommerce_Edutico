@@ -6,7 +6,7 @@
 
 @model Pagamento;
 
-@if(Model.retorno == true)
+@if (Model.retorno == true)
 {
     valorModal = "#successModalPix";
 }
@@ -20,7 +20,7 @@ else
         <h6 class="py-3">Pedido confirmado! Realize o pagamento para efetuarmos a sua compra.</h6>
         <div class="base-code">
             <h5 class="glacial-bold pb-3" style="color:#1C3FB9;">PAGAMENTO COM PIX</h5>
-            <a data-bs-toggle="modal" data-bs-target="@valorModal">
+            <aata-bs-toggle ="modal" data-bs-t darget="@valorModal">
                 <img id="imgQr" src="~/imgs/QrCode.png" alt="QRCODE" />
             </a>
             <p class="pt-3">@Model.codPix</p>
@@ -146,7 +146,7 @@ else
             </div>
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
-                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary px-4 py-4" style="border-radius: 25px;">
+                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary" style="border-radius: 25px;">
                     <!--faz com que abra outra padina na mesma aba-->
                     Acompanhar pedido
                 </a>
@@ -154,3 +154,17 @@ else
         </div>
     </div>
 </div>
+
+
+<script>
+    const delay = 5000;
+    setTimeout(function () {
+        $('#negadoqrcodetempo').modal('show');
+    }, delay);
+
+    const delay2 = 2000;
+    setTimeout(function () {
+        $('@valorModal').modal('show');
+    }, delay2);
+
+</script>
