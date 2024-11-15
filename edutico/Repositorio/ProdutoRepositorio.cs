@@ -16,7 +16,7 @@ namespace edutico.Repositorio
             // Variável que recebe o comando SQL para inserir o produto
             string sql = "Call spInsertTbProduto(@codprod, @nomeProd, @descricao, @codClassificacao, @codCategoria, @valorUnit, @estoque, @lancamento);";
 
-            // Junta o comando SQL com a informações do banco
+            // Junta o comando SQL com a informações do banco   
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
             // Atribui valor aos parâmetros do comando SQL
@@ -152,6 +152,57 @@ namespace edutico.Repositorio
             // Retorna o produto (ou null se não for encontrado)
             return produtos;
         }
+
+
+
+        //Consultar Produto Funcionário
+        public IEnumerable<Produto> ConsultarProdutoF()
+        {
+            //var para conectar o bd 
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // comando sql para selecionar os produtos e suas imgs
+            string sql = "Call spSelectPreviaProduto()";
+
+            // Junta o comando SQL com a informações do banco
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            //  executa e le oq veio da query 
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+
+            // Cria uma lista de objeto do tipo Produto
+            List<Produto> produtos = new List<Produto>();
+
+            // Enquanto houver linhas cria um objeto produto e adiciona a lista
+            while (dr.Read())
+            {
+                Produto produto = new Produto(
+                    Convert.ToDecimal(dr["codProd"]),
+                    dr["nomeProd"].ToString(),
+                    Convert.ToDecimal(dr["valorUnit"]),
+                    Convert.ToInt32(dr["qtdAvaliacao"]),
+                    Convert.ToInt32(dr["somaAvaliacao"]),
+                    dr["imgs"].ToString()
+                );
+                produtos.Add(produto);
+            }
+
+            // Fecha o leitor do produto
+            dr.Close();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna o produto (ou null se não for encontrado)
+            return produtos;
+        }
+
+    
+
+
+
 
 
         // Método de consulta aos detalhes do produto

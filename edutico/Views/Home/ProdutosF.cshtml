@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<Produto>
+
+@{
     @* PARA ADICIONAR O LAYOUT 2 (FUNC) *@
     Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
     ViewData["Title"] = "Produtos Funcionário";
@@ -37,56 +39,41 @@
 
         <!-- PRODUTOS -->
         <div class="row">
-            <!-- Cards de produtos com diferentes larguras para diferentes telas -->
-            <div class="col-xl-2 col-lg-3 col-md-2 col-sm-6 d-flex align-items-stretch">
-                <div class="card product-card my-2">
-                    <div class="card-body py-2">
-                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
-                        <h6 class="card-title mt-3 mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
-                        <p class="text mb-3 small-text">
-                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
-                        </p>
-                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
-                        <!-- BOTÕES -->
-                        <div class="button-container d-flex mt-3">
-                            <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @foreach (var produto in Model)
+            {
+                <div class="col-xl-2 col-lg-3 col-md-2 col-sm-6 d-flex align-items-stretch">
+                    <div class="card product-card my-2">
+                        <div class="card-body py-2">
 
-            <!-- Outros produtos seguem aqui com a mesma estrutura -->
-            <!-- Exemplo repetido com diferentes produtos -->
-            <!-- Cards de produtos com diferentes larguras para diferentes telas -->
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                <div class="card product-card my-2">
-                    <div class="card-body py-2">
-                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
-                        <h6 class="card-title mt-3 mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
-                        <p class="text mb-3 small-text">
-                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
-                        </p>
-                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
-                        <!-- BOTÕES -->
-                        <div class="button-container d-flex mt-3">
-                            <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Cards de produtos com diferentes larguras para diferentes telas -->
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                <div class="card product-card my-2">
-                    <div class="card-body py-2">
-                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
-                        <h6 class="card-title mt-3 mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
-                        <p class="text mb-3 small-text">
-                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
-                        </p>
-                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
+                            <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
+                            <h6 class="card-title mt-3 mx-0 glacial-bold" style="color:#000">
+                                @if (produto.nomeProd.Length > 20)
+                                {
+                                    @produto.nomeProd.Substring(0, 20)
+
+                                    <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                }
+                                else
+                                {
+                                    @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                }
+                            </h6>
+
+                            @if (produto.avaliacoes != null && produto.avaliacoes.Any())
+                            {
+                                <p class="text mb-3 small-text">
+                                    <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
+                                </p>
+                            }
+                            else
+                            {
+                                <p class="text mb-3 small-text">
+                                    <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
+                                </p>
+                            }
+                            <p class="text-primary h5 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
+                        </div>
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
                             <button class="btn desativar-btn">Desativar</button>
@@ -94,43 +81,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Cards de produtos com diferentes larguras para diferentes telas -->
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                <div class="card product-card my-2">
-                    <div class="card-body py-2">
-                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
-                        <h6 class="card-title mt-3 mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
-                        <p class="text mb-3 small-text">
-                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
-                        </p>
-                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
-                        <!-- BOTÕES -->
-                        <div class="button-container d-flex mt-3">
-                            <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Cards de produtos com diferentes larguras para diferentes telas -->
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                <div class="card product-card my-2">
-                    <div class="card-body py-2">
-                        <img src="~/imgs/montamonta.jpg" class="card-img-top rounded mt-1" alt="Monta Monta" />
-                        <h6 class="card-title mt-3 mx-0 glacial-bold">Monta-Monta, 6 pçs...</h6>
-                        <p class="text mb-3 small-text">
-                            <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> 5.0 (10 avaliações)
-                        </p>
-                        <p class="text-primary h5 glacial-bold">R$ 10,00</p>
-                        <!-- BOTÕES -->
-                        <div class="button-container d-flex mt-3">
-                            <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
+
+
     </section>
 </section>

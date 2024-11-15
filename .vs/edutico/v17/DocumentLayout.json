@@ -1,12 +1,218 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "T:\\Backend Edutico\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\views\\home\\produtosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\produtosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\views\\home\\favoritosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\favoritosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\views\\cliente\\favoritoscheio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\favoritoscheio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:14:57.697Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAwwMkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:14:49.092Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DetalhesProduto.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T18:07:51.392Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "edutico\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Models\\Produto.cs",
+              "RelativeToolTip": "edutico\\Models\\Produto.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAzwCgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:17:34.445Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAIwJYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:18:24.466Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T18:10:56.656Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProdutosF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Home\\ProdutosF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\ProdutosF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Home\\ProdutosF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\ProdutosF.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T18:27:11.528Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "siteFuncionario.css",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\wwwroot\\css\\siteFuncionario.css",
+              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteFuncionario.css",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\wwwroot\\css\\siteFuncionario.css",
+              "RelativeToolTip": "edutico\\wwwroot\\css\\siteFuncionario.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-15T20:34:00.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FavoritosF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Home\\FavoritosF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\FavoritosF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Home\\FavoritosF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\FavoritosF.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T19:39:32.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FavoritosCheio.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T19:39:58.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAlwGMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:19:10.459Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

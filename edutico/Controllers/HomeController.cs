@@ -233,8 +233,44 @@ namespace edutico.Controllers
         }
         public IActionResult ProdutosF()
         {
-            return View();
+            List<Produto> produtos = new List<Produto>();
+
+            // Verifica se o usuário está logado
+            if (_loginSessao != null && _loginSessao.GetLogin() != null)
+            {
+                var login = _loginSessao.GetLogin(); // Obtém o login do usuário
+
+                // Verificando se o nível de acesso é da manutenção
+                if (login.nivelAcesso == 0)
+                {
+                    // Looping para passar 10 produtos
+                    for (int i = 0; i < 10; i++)
+                    {
+                        produtos.Add(
+                            new Produto
+                            {
+                                nomeProd = "Nome Produto",
+                                valorUnit = 0,
+                                imgs = new List<Imagem> { new Imagem { enderecoImg = "~/imgs/img_prod_padrao_quadrada.png" } }
+                            }
+                        );
+                    }
+                }
+                else if (_produtoRepositorio.ConsultarProdutoF() != null)
+                {
+                    // Busca os produtos no banco de dados e armazena na lista
+                    produtos = _produtoRepositorio.ConsultarProdutoF().ToList(); // Obtém os produtos
+                }
+            }
+            else if (_produtoRepositorio.ConsultarProdutoF() != null)
+            {
+                // Busca os produtos no banco de dados e armazena na lista
+                produtos = _produtoRepositorio.ConsultarProdutoF().ToList(); // Obtém os produtos
+
+            }
+            return View(produtos);
         }
+ 
 
         public IActionResult PedidosAndamentoF()
         {

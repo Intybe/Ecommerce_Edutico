@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "T:\\Backend Edutico\\edutico\\edutico.csproj": {}
+    "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\edutico.csproj": {}
   },
   "projects": {
-    "T:\\Backend Edutico\\edutico\\edutico.csproj": {
+    "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\edutico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Backend Edutico\\edutico\\edutico.csproj",
+        "projectUniqueName": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\edutico.csproj",
         "projectName": "edutico",
-        "projectPath": "T:\\Backend Edutico\\edutico\\edutico.csproj",
-        "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-        "outputPath": "T:\\Backend Edutico\\edutico\\obj\\",
+        "projectPath": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\edutico.csproj",
+        "packagesPath": "C:\\Users\\flavi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "P:\\Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\barro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\flavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,5 +14,7 @@ namespace edutico.Repositorio
         string CadastrarAvaliacao(int qtdEstrela, string comentario, int codLogin, decimal codProd);
 
         IEnumerable<Produto> ConsultarProdutoPesquisa(string pesquisa);
+
+        IEnumerable<Produto> ConsultarProdutoF();
     }
 }
