@@ -473,14 +473,14 @@
     const totalRatings = @Model.produto.qtdAvaliacao;
     const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.produto.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
 
-            for (let rating in ratingsData) {
+        for (let rating in ratingsData) {
         const percentage = (ratingsData[rating] / totalRatings) * 100;
-        const ratingBar = document.getElementById(bar - ${ rating });
+        const ratingBar = document.getElementById(`bar-${rating}`);
 
         if (ratingBar) {
-            ratingBar.style.width = ${ percentage }%;
+            ratingBar.style.width = `${percentage}%`;
         } else {
-            console.error(Barra de progresso para ${ rating } estrelas não encontrada.);
+            console.error(`Barra de progresso para ${rating} estrelas não encontrada.`);
         }
     }
 </script>

@@ -2367,3 +2367,5 @@ C:\Users\flavi\OneDrive\Anexos\Edutico\1\edutico\obj\Debug\net8.0\refint\edutico
 C:\Users\flavi\OneDrive\Anexos\Edutico\1\edutico\obj\Debug\net8.0\edutico.pdb
 C:\Users\flavi\OneDrive\Anexos\Edutico\1\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\flavi\OneDrive\Anexos\Edutico\1\edutico\obj\Debug\net8.0\ref\edutico.dll
+T:\Backend Edutico\edutico\obj\Debug\net8.0\scopedcss\Views\Shared\_Login.cshtml.rz.scp.css
+T:\Backend Edutico\edutico\obj\Debug\net8.0\scopedcss\Views\Shared\_MenuPerfil.cshtml.rz.scp.css

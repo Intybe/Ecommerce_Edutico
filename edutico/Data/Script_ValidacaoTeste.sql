@@ -10,47 +10,6 @@ Delimiter $$
     Insert into tbLogin(usuario, senha, nivelAcesso) values('edutico.loja', '12345678', 1);
 $$
 
--- Inserção das Categorias --
-Delimiter $$
-	Call spInsertTbCategoria('Brinquedos de Montar');
-	Call spInsertTbCategoria('Brinquedos Sustentáveis');
-	Call spInsertTbCategoria('Brinquedos Científicos');
-	Call spInsertTbCategoria('Quebra-Cabeças');
-	Call spInsertTbCategoria('Livros Interativos');
-	Call spInsertTbCategoria('Brinquedos Sensoriais');
-	Call spInsertTbCategoria('Instrumentos Musicais');
-	Call spInsertTbCategoria('Jogos de Tabuleiro');
-	Call spInsertTbCategoria('Jogos de Desafio');
-	Call spInsertTbCategoria('Jogos de Ação');
-	Call spInsertTbCategoria('Jogos de Cartas');
-	Call spInsertTbCategoria('Jogos Eletrônicos');
-$$
-
--- Inserção das Classificação Indicativa --
-Delimiter $$
-	Call spInsertTbClassificação('Até 2 Anos');
-    Call spInsertTbClassificação('3+ Anos');
-    Call spInsertTbClassificação('6+ Anos');
-    Call spInsertTbClassificação('10+ Anos');
-    Call spInsertTbClassificação('12+ Anos');  
-$$                
-
--- Inserção da Habilidade do Produto --
-Delimiter $$
-	Call spInsertTbHabilidade('Brinquedos de Montar');
-    Call spInsertTbHabilidade('Brinquedos Sustentáveis');
-    Call spInsertTbHabilidade('Brinquedos Científicos');
-    Call spInsertTbHabilidade('Quebra-Cabeças');
-    Call spInsertTbHabilidade('Livros Interativos');
-    Call spInsertTbHabilidade('Brinquedos Sensoriais');
-    Call spInsertTbHabilidade('Instrumentos Musicais');
-    Call spInsertTbHabilidade('Jogos de Tabuleiro');
-    Call spInsertTbHabilidade('Jogos de Desafio');
-    Call spInsertTbHabilidade('Jogos de Ação');
-    Call spInsertTbHabilidade('Jogos de Cartas');
-    Call spInsertTbHabilidade('Jogos Eletrônicos');  
-$$
-
 /*
 
 Select * from tbCarrinho Inner Join vwProduto On tbCarrinho.codProd = Código Left Join tbImagem On Código = tbImagem.codProd where codLogin = 1;
@@ -137,6 +96,9 @@ Call spSelectTbProdutoCategoria(5);
 Call spSelectTbProdutoHabilidade(2);
 
 Call spSelectHabilidadeProduto(7896054025112);
-*/
 
 Select * from tbImagem;
+
+Select * from tbPedido;
+*/
+

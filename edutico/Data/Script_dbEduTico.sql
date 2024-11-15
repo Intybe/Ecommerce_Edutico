@@ -36,6 +36,7 @@
         Sessão de Cadastro de Devoluções
 	Procedures Alterações (Update)
         Sessão de Atualização da Senha
+        Sessão de Atualização da Quantidade Carrinho
         Sessão de Atualização dos Dados do Cliente (Informações Pessoais)
         Sessão de Atualização dos Dados do Cliente (Endereço)
         Sessão de Atualização dos Dados do Cliente (Dados Conta)
@@ -53,9 +54,10 @@
 		Sessão de Redução de estoque
 		Sessão de Deletar os produtos do carrinho após realização do pedido
 	Views e Consultas
-		View para unificar as informações do produto (Com excessão da habilidade)
-        View para unificar nome da habilidade com seu produto
-        Procedure para concatenar as habilidades de um produto
+		View para unificar as informações do produto
+        Procedure para Selecionar os Produtos Relacionados
+		Procedure para Selecionar os Produtos Lancamentos
+		Procedure para Selecionar os Detalhes Produtos
         View para selecionar os produtos mais vendidos
         Consulta para obter as informações dos produtos mais vendidos
         View para selecionar os produtos mais favoritado
@@ -68,6 +70,11 @@
         Procedure para filtrar produtos por classifcação
         Procedure para filtrar produto por categoria
         Procedure para filtrar os produtos por habilidade
+        Procedure para Consultar os produtos no carrinho
+        Procedure para Selecionar os produtos favoritados do usuário
+		View para unificar as informações do pedido
+		Procedure para Selecionar todos os pedidos do usuário
+		Procedure para Selecionar os detalhes do pedido
         Consulta para contar a quantidade de vendas no mês
         Consulta para contar a quantidade de vendas em R$ no mês
         Consulta para contar a quantidade de vendas em R$ no ano
@@ -76,7 +83,10 @@
         Consulta da quantidade de pedidos pendentes
         Consulta da quantidade de produtos esgotados
         Consulta da quntidade de pedidos cancelados
-        
+	Inserção de Dados
+		Inserção das Categorias
+		Inserção das Classificação Indicativa
+		Inserção da Habilidade do Produto
 */
 
 -- Criando Database --
@@ -543,8 +553,6 @@ Begin
     End if;
 End $$
 
-select * from tbCartaoCredito;
-
 -- Sessão de Cadastro do Pagamento do Pedido --
 Delimiter $$
 Create Procedure spInsertTbPagamento(
@@ -643,6 +651,17 @@ Delimiter $$
 Create Procedure spUptade_SenhaCli(vCodLogin int, vSenha varchar(20))
 Begin
 	Update tbLogin Set Senha = vSenha where codLogin = vCodLogin;
+End $$
+
+-- Sessão de Atualização da Quantidade Carrinho --
+Delimiter $$
+Create Procedure spUpdateTbCarrinho(
+    vCodLogin int, 
+    vCodProd decimal(14,0),
+    vQtdProd int
+)
+Begin 
+    Update tbCarrinho set qtdProd = vQtdProd where codProd = vCodProd and codLogin = vCodLogin;
 End $$
 
 -- Sessão de Atualização dos Dados do Cliente (Endereço) --
@@ -830,6 +849,7 @@ Begin
 	Update tbAvaliacao Set qtdEstrela = vQtdEstrela, comentario = vComentario where codAvaliacao = vCodAvaliacao;
 End $$
 
+
 -- Sessão de Atualização do Status da devolução --
 Delimiter $$
 Create Procedure spUpdateTbDevolucao(
@@ -961,7 +981,7 @@ from tbProduto
 Group by tbProduto.codProd;
 $$
 
--- View para unificar as informações do produto (Com excessão da habilidade) --
+-- View para unificar as informações do produto  --
 Delimiter $$
 Create View vwProdutoCompleto As
 Select
@@ -1070,9 +1090,6 @@ Create View vwProduto_MaisComentado As
 	Order By Total_Comentarios Desc Limit 3;
 $$
 
--- Consulta para obter as infromações dos produtos mais comentados --
-Select vwProduto.* from vwProduto Inner Join vwProduto_MaisComentado On vwProduto.Código = vwProduto_MaisComentado.codProd;
-
 -- Procedure para selecionar as avaliações do produto --
 Delimiter $$
 Create Procedure spSelectTbAvaliacao(vCodProd decimal(14,0))
@@ -1149,13 +1166,98 @@ Begin
     where codHabilidade = vCodHabilidade and StatusProd = 0;
 End $$
 
-
 -- Procedure para Consultar os produtos no carrinho --
 Delimiter $$
 Create Procedure spSelectCarrinho(vCodLogin int)
 Begin
 	Select tbCarrinho.codLogin, qtdProd, vwPreviaProduto.codProd, nomeProd, valorUnit, imgs from tbCarrinho Inner Join vwPreviaProduto On tbCarrinho.codProd = vwPreviaProduto.codProd where codLogin = 1;
 End $$
+
+-- Procedure para Selecionar os produtos favoritados do usuário --
+Delimiter $$
+Create Procedure spSelectFavoritos(vCodLogin int)
+Begin
+	Select tbFavorito.codLogin, vwPreviaProduto.* from tbFavorito Inner Join vwPreviaProduto On tbFavorito.codProd = vwPreviaProduto.codProd where codLogin = vCodLogin;
+End $$
+
+-- View para unificar as informações do pedido --
+Delimiter $$
+Create View vwPedido As
+Select
+	tbPedido.NF,
+    tbPedido.data,
+    tbPedido.codLogin,
+    tbPedido.statusPedido,
+    tbPedido.valorTotal,
+	GROUP_CONCAT(CONCAT(tbItemPedido.codItem, ' - ', tbProduto.nomeProd, ' - ', tbItemPedido.codProd, ' - ', tbItemPedido.qtdItem, ' - ', tbItemPedido.valorItem, ' - ', (Select nomeImg from tbImagem where codProd = tbItemPedido.codProd limit 1), ' - ', (Select enderecoImg from tbImagem where codProd = tbItemPedido.codProd limit 1)) Order By tbItemPedido.codItem Separator ' | ') As 'itensPedido'
+from tbPedido
+	Inner Join tbItemPedido On tbPedido.NF = tbItemPedido.NF
+    Left Join tbProduto On tbProduto.codProd = tbItemPedido.codProd
+Group By tbPedido.NF;
+$$
+    
+-- Procedure para Selecionar todos os pedidos do usuário --
+Delimiter $$
+Create Procedure spSelectMeusPedidos(vCodLogin int)
+Begin
+	Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where codLogin = vCodLogin;
+End $$
+
+-- Procedure para Selecionar os detalhes do Pedido --
+Delimiter $$
+Create Procedure spSelectDetalhesPedido(vNF int)
+Begin
+	Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where NF = vNF;
+End $$
+
+/* Inserção de Dados */
+
+-- Inserção das Categorias --
+Delimiter $$
+	Call spInsertTbCategoria('Brinquedos de Montar');
+	Call spInsertTbCategoria('Brinquedos Sustentáveis');
+	Call spInsertTbCategoria('Brinquedos Científicos');
+	Call spInsertTbCategoria('Quebra-Cabeças');
+	Call spInsertTbCategoria('Livros Interativos');
+	Call spInsertTbCategoria('Brinquedos Sensoriais');
+	Call spInsertTbCategoria('Instrumentos Musicais');
+	Call spInsertTbCategoria('Jogos de Tabuleiro');
+	Call spInsertTbCategoria('Jogos de Desafio');
+	Call spInsertTbCategoria('Jogos de Ação');
+	Call spInsertTbCategoria('Jogos de Cartas');
+	Call spInsertTbCategoria('Jogos Eletrônicos');
+$$
+
+-- Inserção das Classificação Indicativa --
+Delimiter $$
+	Call spInsertTbClassificação('Até 2 Anos');
+    Call spInsertTbClassificação('3+ Anos');
+    Call spInsertTbClassificação('6+ Anos');
+    Call spInsertTbClassificação('10+ Anos');
+    Call spInsertTbClassificação('12+ Anos');  
+$$                
+
+-- Inserção da Habilidade do Produto --
+Delimiter $$
+	Call spInsertTbHabilidade('Brinquedos de Montar');
+    Call spInsertTbHabilidade('Brinquedos Sustentáveis');
+    Call spInsertTbHabilidade('Brinquedos Científicos');
+    Call spInsertTbHabilidade('Quebra-Cabeças');
+    Call spInsertTbHabilidade('Livros Interativos');
+    Call spInsertTbHabilidade('Brinquedos Sensoriais');
+    Call spInsertTbHabilidade('Instrumentos Musicais');
+    Call spInsertTbHabilidade('Jogos de Tabuleiro');
+    Call spInsertTbHabilidade('Jogos de Desafio');
+    Call spInsertTbHabilidade('Jogos de Ação');
+    Call spInsertTbHabilidade('Jogos de Cartas');
+    Call spInsertTbHabilidade('Jogos Eletrônicos');  
+$$
+
+
+/* REVISAR 
+
+-- Consulta para obter as informações dos produtos mais favoritado --
+Select vwProduto.* from vwProduto Inner Join vwProduto_MaisFavoritado On vwProduto.Código = vwProduto_MaisFavoritado.codProd;
 
 -- Consulta para contar a quantidade de vendas no mês --
 Select Count(*) As 'Vendas Realizadas esse mês' from tbPagamento 
@@ -1180,16 +1282,6 @@ Select Sum(ValorTotal) As 'Total Vendas essa semana' from tbPagamento
 where YEARWEEK(data, 1) = YEARWEEK(CURDATE(), 1); 
 -- O número 1 indica que a semana começa na Segunda, conforme o padrão ISO --
 
--- Consulta dados das avalições do produto --
-Select
-    Count(*) AS total, 
-    Sum(qtdEstrelas) AS totalAvalicoes,
-    Sum(Case when qtdEstrela = 5 then 1 else 0 END) AS estrelas5,
-    Sum(Case when qtdEstrela = 4 then 1 else 0 END) AS estrelas4,
-    Sum(Case when qtdEstrela = 3 then 1 else 0 END) AS estrelas3,
-    Sum(Case when qtdEstrela = 2 then 1 else 0 END) AS estrelas2,
-    Sum(Case when qtdEstrela = 1 then 1 else 0 END) AS estrelas1
-from tbAvaliacao;
 -- Consulta da quantidade de devoluções --
 Select Count(*) As 'Quantidade de devoluções' from tbDevolucao;
 
@@ -1202,46 +1294,7 @@ Select Count(*) As 'Quantidade de produtos esgotados' from vwProduto where estoq
 -- Consulta da quntidade de pedidos cancelados --
 Select Count(*) As 'Quantidade de pedidos cancelados' from tbPedido where statusPedido = 3;
 
-Create View vwPedido As
-Select
-	tbPedido.NF,
-    tbPedido.data,
-    tbPedido.codLogin,
-    tbPedido.statusPedido,
-    tbPedido.valorTotal,
-	GROUP_CONCAT(CONCAT(tbItemPedido.codItem, ' - ', tbProduto.nomeProd, ' - ', tbItemPedido.codProd, ' - ', tbItemPedido.qtdItem, ' - ', tbItemPedido.valorItem, ' - ', (Select nomeImg from tbImagem where codProd = tbItemPedido.codProd limit 1), ' - ', (Select enderecoImg from tbImagem where codProd = tbItemPedido.codProd limit 1)) Order By tbItemPedido.codItem Separator ' | ') As 'itensPedido'
-from tbPedido
-	Inner Join tbItemPedido On tbPedido.NF = tbItemPedido.NF
-    Left Join tbProduto On tbProduto.codProd = tbItemPedido.codProd
-Group By tbPedido.NF;
-    
-    
-Select * from vwPedido;
+-- Consulta para obter as infromações dos produtos mais comentados --
+Select vwProduto.* from vwProduto Inner Join vwProduto_MaisComentado On vwProduto.Código = vwProduto_MaisComentado.codProd;
 
-
-Delimiter $$
-Create Procedure spSelectMeusPedidos(vCodLogin int)
-Begin
-	Select * from vwPedido where codLogin = vCodLogin;
-End $$
-
-
-Call spSelectMeusPedidos(1);
-
-Call spInsertTbPedido(1, 12.80)
-
-
-Select * from tbProduto;
-Select * from vwPedido Inner Join vwPreviaProduto On vwPedido.codProd = vwProduto where codLogin = vCodLogin;
-
-Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where codLogin = @codLogin
-
-Delimiter $$
-Create Procedure spSelectFavoritos(vCodLogin int)
-Begin
-	Select tbFavorito.codLogin, vwPreviaProduto.* from tbFavorito Inner Join vwPreviaProduto On tbFavorito.codProd = vwPreviaProduto.codProd where codLogin = vCodLogin;
-End $$
-
-select * from tbCartaoCredito;
-
-
+*/
