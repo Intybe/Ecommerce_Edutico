@@ -1,0 +1,88 @@
+﻿@{
+    Layout = "_MenuPerfil";
+    ViewData["Title"] = "Meus Cartões";
+}
+<section class="meuperfil">
+
+    <div class="col-6 ms-4">
+
+        <div class="base-cartao-com">
+            <h5 class="text-center" style="color:#1C3FB9; font-family:Edutico;">CADASTRE SEU CARTÃO AQUI</h5>
+            <br />
+
+            <form asp-controller="Cartao" asp-action="CadastrarCartao" method="post">
+                <div class="form-group mb-3">
+                    <label for="titular">Nome do titular <span class="obg">*</span></label>
+                    <input name="nomeTitular" type="text" placeholder="Digite aqui o número do cartão" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="titular">Número do cartão <span class="obg">*</span></label>
+                    <input name="numCartao" id="numCartao" type="text" placeholder="Digite aqui o número do cartão" />
+                </div>
+                <div class="d-flex form-group mb-3">
+                    <div class="me-3">
+                        <label for="validade">Data de validade<span class="obg">*</span></label>
+                        <input name="dataVali" type="text" placeholder="MM/AA" />
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4">
+                    <button class="btnvoltarcar me-10">Voltar para o menu</button>
+                    <button type="submit" class="btnconfirmcar">Cadastrar</button>
+                </div>
+
+                <label id="NomeBandeira"></label>
+                <input type="hidden" id="Bandeira" name="bandeira" />
+
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+<script>
+    document.getElementById("numCartao").addEventListener("input", function () {
+        const numCartao = this.value.trim(); // Valor do campo de número do cartão
+        const Bandeira = document.getElementById("Bandeira"); // Campo oculto da bandeira
+        const NomeBandeira = document.getElementById("NomeBandeira"); // Elemento que exibe a bandeira
+
+        // Limpa os valores anteriores
+        Bandeira.value = "";
+        NomeBandeira.innerHTML = "";
+
+        // Verifica se o número do cartão tem o comprimento válido
+        if (numCartao.length >= 13 && numCartao.length <= 16) {
+            let bandeira = "";
+            // Determina a bandeira do cartão
+            if (numCartao.startsWith("4")) {
+                bandeira = "Visa";
+            } else if (numCartao.startsWith("5")) {
+                bandeira = "Mastercard";
+            } else if (numCartao.startsWith("6")) {
+                bandeira = "Elo";
+            } else if (
+                parseInt(numCartao.slice(0, 2)) >= 51 &&
+                parseInt(numCartao.slice(0, 2)) <= 55
+            ) {
+                bandeira = "Mastercard";
+            } else if (
+                parseInt(numCartao.slice(0, 2)) === 34 ||
+                parseInt(numCartao.slice(0, 2)) === 37
+            ) {
+                bandeira = "American Express";
+            }
+
+            // Se encontrou uma bandeira, preenche os campos
+            if (bandeira) {
+                Bandeira.value = bandeira;
+                NomeBandeira.innerHTML = bandeira;
+            }
+        }
+    });
+
+
+
+</script>
+
+

@@ -49,7 +49,6 @@
 		Sessão de Exclusão de Favoritos
         Sessão de Exclusão de Avaliação
         Sessão de Exclusão de Produtos do Carrinho
-        Sessão de Atualizar quantidade de Produtos do Carrinho
 	Triggers
 		Sessão de Redução de estoque
 		Sessão de Deletar os produtos do carrinho após realização do pedido
@@ -218,7 +217,7 @@ Create table tbCartaoCredito(
     numCartao decimal(16,0),
     nomeTitular varchar(200),
     dataVali char(5),
-    bandeira int,
+    Bandeira varchar(100), 
     codLogin int
 );
 
@@ -390,22 +389,19 @@ End $$
 Delimiter $$
 Create Procedure spInsertTbHabilidade_Produto(
 	vCodProd decimal(14,0), 
-	vNomeHabilidade varchar(100)
+	vCodHabilidade int
 )
 Begin
-	Declare vCodHabilidade int;
 	-- Verifica se existe esse código de produto e a códig da habilidade --
 	If exists 
 		(Select codProd from tbProduto where codProd = vCodProd) 
 		And 
-        (Select codHabilidade from tbHabilidade where nomeHabilidade = vNomeHabilidade) then
+        (Select codHabilidade from tbHabilidade where codHabilidade = vCodHabilidade) then
         
 		If not exists
 			(Select codProd, codHabilidade from tbHabilidade_Produto 
             where codProd = vCodProd And codHabilidade = vCodHabilidade) then
             
-			Set vCodHabilidade = (Select codHabilidade from tbHabilidade where nomeHabilidade = vNomeHabilidade);
-			
             Insert into tbHabilidade_Produto(codProd, codHabilidade)
 					values(vCodProd, vCodHabilidade);
 		End if;
@@ -420,23 +416,15 @@ Create procedure spInsertTbProduto(
 	vCodProd decimal(14,0), 
     vNomeProd varchar(200), 
     vDescricao varchar(600), 
-    vNomeClassificacao varchar(50), 
-    vNomeCategoria varchar(100), 
+    vCodClassificacao int, 
+    vCodCategoria int, 
     vValorUnit decimal(8,2), 
     vEstoque int,
     vLancamento bool
 )
 Begin
-	-- Declaração de variáveis para aramzenar os Ids --
-	Declare vCodClassificacao int;
-    Declare vCodCategoria int;
-    
     -- Verifica se esse código não está cadastrado --
     If not exists(Select codProd from tbProduto where codProd = vCodProd) then
-		-- Atribuindo valores --
-		Set vCodClassificacao = (Select CodClassificacao from tbClassificacao where nomeClassificacao = vNomeClassificacao);
-		Set vCodCategoria = (Select codCategoria from tbCategoria where nomeCategoria = vNomeCategoria);
-		
         -- Insere os dados
 		Insert into tbProduto(
 			codProd, 
@@ -542,7 +530,7 @@ Create Procedure spInsertTbCartaoCredito(
 	vNumCartao decimal(16,0), 
     vNomeTitular varchar(200), 
     vDataVali char(5), 
-    vBandeira int, 
+    vBandeira varchar(100), 
     vCodLogin int
 )
 Begin
@@ -554,6 +542,8 @@ Begin
 		Select('Este cartão já está registrado!');
     End if;
 End $$
+
+select * from tbCartaoCredito;
 
 -- Sessão de Cadastro do Pagamento do Pedido --
 Delimiter $$
@@ -905,16 +895,6 @@ Begin
 	Delete from tbCarrinho where codLogin = vCodLogin and codProd = vCodProd;
 End $$  
 
--- Sessão de Atualizar quantidade de Produtos do Carrinho --
-Delimiter $$
-Create Procedure spUpdateTbCarrinho(
-	vCodLogin int, 
-    vCodProd decimal(14,0),
-    VQtdProd int
-)
-Begin 
-	Update tbCarrinho set qtdProd = vQtdProd where codProd= vCodProd and codLogin = vCodLogin;
-End $$  
 
 /*
 	Triggers
@@ -946,38 +926,110 @@ End $$
 	Views e Consultas
 */
 
+-- View para Selecionar as Estatisicas da Avaliações --
+Delimiter $$
+Create View vwEstatisticasAvaliacao As 
+Select
+    codProd,
+    Count(*) AS totalAvaliacoes, 
+    Sum(qtdEstrela) AS totalEstrelas,
+    Sum(Case when qtdEstrela = 5 then 1 else 0 END) AS estrelas5,
+    Sum(Case when qtdEstrela = 4 then 1 else 0 END) AS estrelas4,
+    Sum(Case when qtdEstrela = 3 then 1 else 0 END) AS estrelas3,
+    Sum(Case when qtdEstrela = 2 then 1 else 0 END) AS estrelas2,
+    Sum(Case when qtdEstrela = 1 then 1 else 0 END) AS estrelas1
+from tbAvaliacao
+group by codProd;
+$$
+
+-- View para Selecionar Previa dos Produtos --
+Delimiter $$
+Create View vwPreviaProduto As
+Select
+    tbProduto.codProd,
+    tbProduto.nomeProd,
+    tbProduto.valorUnit,
+    tbProduto.lancamento,
+    tbProduto.statusProd,
+    GROUP_CONCAT(CONCAT(tbImagem.nomeImg, ' -- ', tbImagem.enderecoImg) Separator ' | ') AS 'imgs',
+    IFNULL(vwEstatisticasAvaliacao.totalAvaliacoes, 0) As 'qtdAvaliacao',
+    IFNULL(vwEstatisticasAvaliacao.totalEstrelas, 0) As 'somaAvaliacao'
+from tbProduto
+    Left Join tbImagem On tbImagem.codProd = tbProduto.codProd
+    Left Join tbAvaliacao On tbAvaliacao.codProd = tbProduto.codProd
+    Left Join vwEstatisticasAvaliacao On vwEstatisticasAvaliacao.codProd = tbProduto.codProd
+Group by tbProduto.codProd;
+$$
+
 -- View para unificar as informações do produto (Com excessão da habilidade) --
 Delimiter $$
-Create View vwProduto As 
-	Select
-		codProd As 'Código',
-		nomeProd As 'Nome',
-		descricao AS 'Descrição',
-		nomeClassificacao As 'Classificação Indicativa',
-		nomeCategoria As 'Categoria',
-		valorUnit As 'Valor Unitário',
-		estoque As 'Estoque',
-		statusProd As 'Status',
-		lancamento As 'Lançamento'
-	from tbProduto
-		Inner Join tbCategoria On tbProduto.CodCategoria = tbCategoria.CodCategoria
-		Inner Join tbClassificacao On tbProduto.CodClassificacao = tbClassificacao.CodClassificacao;
-$$
-
--- View para unificar nome da habilidade com seu produto --
-Delimiter $$
-Create View vwHabilidades As
+Create View vwProdutoCompleto As
 Select
-	codProd, nomeHabilidade
-from tbHabilidade
-	Inner Join tbHabilidade_Produto On tbHabilidade.CodHabilidade = tbHabilidade_Produto.CodHabilidade;
+    tbProduto.codProd,
+    tbProduto.nomeProd,
+    tbProduto.descricao,
+    CONCAT(tbClassificacao.codClassificacao, ' - ', tbClassificacao.nomeClassificacao) As 'classificacao',
+    CONCAT(tbCategoria.codCategoria, ' - ', tbCategoria.nomeCategoria) As 'categoria',
+    GROUP_CONCAT(Distinct CONCAT(tbHabilidade.codHabilidade, ' - ', tbHabilidade.nomeHabilidade) Order By tbHabilidade.codHabilidade Separator ' | ') As 'habilidades',
+    tbProduto.valorUnit,
+    tbProduto.estoque,
+    tbProduto.statusProd,
+    tbProduto.lancamento,
+    GROUP_CONCAT(Distinct CONCAT(tbImagem.nomeImg, ' -- ', tbImagem.enderecoImg) Separator ' | ') AS 'imgs',
+    GROUP_CONCAT(CONCAT(
+        tbAvaliacao.qtdEstrela, ' - ', 
+        tbAvaliacao.comentario, ' - ',
+        tbCliente.codLogin, ' - ', 
+        SUBSTRING_INDEX(tbCliente.nomeCli, ' ', 1), ' ', 
+        SUBSTRING_INDEX(tbCliente.sobrenome, ' ', -1)
+    ) Separator ' | ') As 'detalhesAvaliacao',
+    CONCAT_WS(', ',
+        IFNULL(vwEstatisticasAvaliacao.estrelas5, 0),
+        IFNULL(vwEstatisticasAvaliacao.estrelas4, 0),
+        IFNULL(vwEstatisticasAvaliacao.estrelas3, 0),
+        IFNULL(vwEstatisticasAvaliacao.estrelas2, 0),
+        IFNULL(vwEstatisticasAvaliacao.estrelas1, 0)
+    ) As 'qtdPorEstrela',
+    IFNULL(vwEstatisticasAvaliacao.totalAvaliacoes, 0) As 'qtdAvaliacao',
+    IFNULL(vwEstatisticasAvaliacao.totalEstrelas, 0) As 'somaAvaliacao'
+from tbProduto
+    Left Join tbCategoria On tbCategoria.codCategoria = tbProduto.codCategoria
+    Left Join tbClassificacao On tbClassificacao.codClassificacao = tbProduto.codClassificacao
+    Left Join tbHabilidade_Produto On tbProduto.codProd = tbHabilidade_Produto.codProd
+    Left Join tbHabilidade On tbHabilidade.codHabilidade = tbHabilidade_Produto.codHabilidade
+    Left Join tbImagem On tbImagem.codProd = tbProduto.codProd
+    Left Join tbAvaliacao On tbAvaliacao.codProd = tbProduto.codProd
+    Left Join vwEstatisticasAvaliacao On vwEstatisticasAvaliacao.codProd = tbProduto.codProd
+    Left Join tbCliente On tbCliente.codLogin = tbAvaliacao.codLogin
+Group by tbProduto.codProd;
 $$
 
--- Procedure para concatenar as habilidades de um produto --
+-- Procedure para Selecionar os Produtos Relacionados --
 Delimiter $$
-Create procedure spSelectHabilidadeProduto(vCodProd decimal(14,0))
+Create Procedure spSelectRelacionados(vCategoria varchar(100))
 Begin
-	Select Group_Concat(nomeHabilidade separator ', ') As 'Habilidades Trabalhadas' from vwHabilidades where codProd = vCodProd;
+    -- Tentar selecionar 5 produtos da categoria especificada
+	If((Select COUNT(*) from vwProdutoCompleto where categoria = vCategoria order by RAND() limit 5) >= 5) then
+		Select * from vwProdutoCompleto where categoria = vCategoria order by RAND() limit 5;
+	Else
+		-- Se não retornar resultados, selecionar produtos aleatórios
+        Select * from vwProdutoCompleto order by RAND() limit 5;
+    End if;
+End $$
+
+-- Procedure para Selecionar os Produtos Lancamentos --
+Delimiter $$
+Create Procedure spSelectPreviaProduto()
+Begin
+	Select * from vwPreviaProduto where statusProd = 1 and lancamento = 1;
+End $$
+
+
+-- Procedure para Selecionar os Detalhes Produtos --
+Delimiter $$
+Create Procedure spSelectDetalheProduto(vCodProd decimal(14,0))
+Begin
+	Select * from vwProdutoCompleto where codProd = vCodProd;
 End $$
 
 -- View para selecionar os produtos mais vendidos --
@@ -1097,6 +1149,14 @@ Begin
     where codHabilidade = vCodHabilidade and StatusProd = 0;
 End $$
 
+
+-- Procedure para Consultar os produtos no carrinho --
+Delimiter $$
+Create Procedure spSelectCarrinho(vCodLogin int)
+Begin
+	Select tbCarrinho.codLogin, qtdProd, vwPreviaProduto.codProd, nomeProd, valorUnit, imgs from tbCarrinho Inner Join vwPreviaProduto On tbCarrinho.codProd = vwPreviaProduto.codProd where codLogin = 1;
+End $$
+
 -- Consulta para contar a quantidade de vendas no mês --
 Select Count(*) As 'Vendas Realizadas esse mês' from tbPagamento 
 	Inner Join tbPedido On tbPagamento.NF = tbPedido.NF 
@@ -1141,3 +1201,47 @@ Select Count(*) As 'Quantidade de produtos esgotados' from vwProduto where estoq
 
 -- Consulta da quntidade de pedidos cancelados --
 Select Count(*) As 'Quantidade de pedidos cancelados' from tbPedido where statusPedido = 3;
+
+Create View vwPedido As
+Select
+	tbPedido.NF,
+    tbPedido.data,
+    tbPedido.codLogin,
+    tbPedido.statusPedido,
+    tbPedido.valorTotal,
+	GROUP_CONCAT(CONCAT(tbItemPedido.codItem, ' - ', tbProduto.nomeProd, ' - ', tbItemPedido.codProd, ' - ', tbItemPedido.qtdItem, ' - ', tbItemPedido.valorItem, ' - ', (Select nomeImg from tbImagem where codProd = tbItemPedido.codProd limit 1), ' - ', (Select enderecoImg from tbImagem where codProd = tbItemPedido.codProd limit 1)) Order By tbItemPedido.codItem Separator ' | ') As 'itensPedido'
+from tbPedido
+	Inner Join tbItemPedido On tbPedido.NF = tbItemPedido.NF
+    Left Join tbProduto On tbProduto.codProd = tbItemPedido.codProd
+Group By tbPedido.NF;
+    
+    
+Select * from vwPedido;
+
+
+Delimiter $$
+Create Procedure spSelectMeusPedidos(vCodLogin int)
+Begin
+	Select * from vwPedido where codLogin = vCodLogin;
+End $$
+
+
+Call spSelectMeusPedidos(1);
+
+Call spInsertTbPedido(1, 12.80)
+
+
+Select * from tbProduto;
+Select * from vwPedido Inner Join vwPreviaProduto On vwPedido.codProd = vwProduto where codLogin = vCodLogin;
+
+Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where codLogin = @codLogin
+
+Delimiter $$
+Create Procedure spSelectFavoritos(vCodLogin int)
+Begin
+	Select tbFavorito.codLogin, vwPreviaProduto.* from tbFavorito Inner Join vwPreviaProduto On tbFavorito.codProd = vwPreviaProduto.codProd where codLogin = vCodLogin;
+End $$
+
+select * from tbCartaoCredito;
+
+

@@ -4,7 +4,7 @@ namespace edutico.Repositorio
 {
     public interface ICartaoRepositorio
     {
-        String CadastrarCartao(decimal NumCartao, string NomeTitular, int DataVali, int Bandeira, int CodLogin);
+        string CadastrarCartao(decimal NumCartao, string NomeTitular, int DataVali, string Bandeira, int CodLogin);
         List<Cartao> ConsultarCartao(int CodLogin);
     }
 }

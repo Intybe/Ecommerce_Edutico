@@ -15,7 +15,7 @@ namespace edutico.Models
         [Required(ErrorMessage = "Esse campo é obrigatório")]
         public string dataVali { get; set; }
         [Required(ErrorMessage = "Esse campo é obrigatório")]
-        public int bandeira { get; set; }
+        public string bandeira { get; set; }
         public int codLogin { get; set; }
 
     }

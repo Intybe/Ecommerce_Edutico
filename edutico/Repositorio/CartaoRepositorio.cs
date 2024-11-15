@@ -6,7 +6,7 @@ namespace edutico.Repositorio
 {
     public class CartaoRepositorio : ICartaoRepositorio
     {
-        public String CadastrarCartao(decimal NumCartao, string NomeTitular, int DataVali, int Bandeira, int CodLogin)
+        public String CadastrarCartao(decimal NumCartao, string NomeTitular, int DataVali, string Bandeira, int CodLogin)
         {
             // Conexão com o banco de Dados
             Conexao con = new Conexao();
@@ -25,15 +25,8 @@ namespace edutico.Repositorio
             cmd.Parameters.AddWithValue("@Bandeira", Bandeira);
             cmd.Parameters.AddWithValue("@CodLogin", CodLogin);
 
-            // Lê os dados retornados pela procedure do BD
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-
-            // Armazena os dados retornados do Banco de Dados
-            MySqlDataReader dr;
-
-            // Executando os comandos do mysql e passsando paa a variavel dr
-            dr = cmd.ExecuteReader();
-
+            // Executa e lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
             // Para não dar erro na mensagem 
             string mensagem = null;
 
@@ -48,11 +41,15 @@ namespace edutico.Repositorio
             // Fechar o DataReader antes de executar outro comando
             dr.Close();
 
-            return mensagem;
-
             // deconecta do banco de dados
             con.DesconectarBD();
+
+            return mensagem;
         }
+
+
+
+
         public List<Cartao> ConsultarCartao(int CodLogin)
         {
             // Cria variável de Conexão com o Banco de Dados
@@ -82,7 +79,7 @@ namespace edutico.Repositorio
                     numCartao = Convert.ToDecimal(dr["numCartao"]),
                     nomeTitular = dr["nomeTitular"].ToString(),
                     dataVali = dr["dataVali"].ToString(),
-                    bandeira = Convert.ToInt32(dr["bandeira"])
+                    bandeira = dr["bandeira"].ToString(),
                 };
 
                 // Adiciona o cartão à lista

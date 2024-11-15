@@ -20,8 +20,13 @@ namespace edutico.Controllers
             _cartaoRepositorio = cartaoRepositorio;
         }
 
+        public IActionResult CadastroCartao()
+        {
+            return View();
+        }
 
-        public IActionResult CadastrarCartao(decimal numCartao, string nomeTitular, int dataVali)
+
+        public IActionResult CadastrarCartao(decimal numCartao, string nomeTitular, int dataVali, string bandeira)
         {
             // Pega o codLogin do Usuário Logado através da sessão
             var codLogin = _loginSessao.GetLogin();
@@ -31,8 +36,6 @@ namespace edutico.Controllers
                 // Se o cliente não estiver logado, redireciona para a página de login
                 return RedirectToAction("Login", "Login");
             }
-
-            int bandeira = 1;
 
             string mensagem = _cartaoRepositorio.CadastrarCartao(numCartao, nomeTitular, dataVali, bandeira, codLogin.codLogin);
 

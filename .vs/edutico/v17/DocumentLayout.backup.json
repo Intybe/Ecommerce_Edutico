@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\barro\\Desktop\\Ultima vers\u00E3o\\",
+  "WorkspaceRootPath": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\barro\\desktop\\ultima vers\u00E3o\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\views\\cartao\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cartao\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\barro\\desktop\\ultima vers\u00E3o\\edutico\\views\\cliente\\favoritoscheio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\favoritoscheio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\models\\cartao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\models\\cartao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\repositorio\\icartaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\icartaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\repositorio\\cartaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\cartaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\views\\cartao\\cadastrocartao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cartao\\cadastrocartao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\1\\edutico\\controllers\\cartaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\cartaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +34,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\barro\\Desktop\\Ultima vers\u00E3o\\edutico\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\barro\\Desktop\\Ultima vers\u00E3o\\edutico\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAewGUAAAC7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T00:50:44.221Z",
+              "DocumentIndex": 2,
+              "Title": "ICartaoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\ICartaoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\ICartaoRepositorio.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\ICartaoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\ICartaoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T22:30:39.511Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FavoritosCheio.cshtml",
-              "DocumentMoniker": "C:\\Users\\barro\\Desktop\\Ultima vers\u00E3o\\edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
-              "ToolTip": "C:\\Users\\barro\\Desktop\\Ultima vers\u00E3o\\edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Cliente\\FavoritosCheio.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADQAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CartaoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\CartaoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\CartaoRepositorio.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Repositorio\\CartaoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\CartaoRepositorio.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAYwFEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T22:32:28.78Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartaoController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Controllers\\CartaoController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\CartaoController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Controllers\\CartaoController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\CartaoController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T22:59:56.561Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadastroCartao.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Cartao\\CadastroCartao.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Cartao\\CadastroCartao.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Cartao\\CadastroCartao.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Cartao\\CadastroCartao.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwCQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T00:50:14.592Z",
+              "WhenOpened": "2024-11-14T23:01:36.735Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MeusCartoes.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Cartao\\MeusCartoes.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Cartao\\MeusCartoes.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Views\\Cartao\\MeusCartoes.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Cartao\\MeusCartoes.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T23:02:54.655Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cartao.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Models\\Cartao.cs",
+              "RelativeDocumentMoniker": "edutico\\Models\\Cartao.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\1\\edutico\\Models\\Cartao.cs",
+              "RelativeToolTip": "edutico\\Models\\Cartao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T00:17:53.937Z",
               "EditorCaption": ""
             }
           ]

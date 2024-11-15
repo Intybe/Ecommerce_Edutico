@@ -32,8 +32,10 @@ namespace edutico.Repositorio
             // Executa e lê os dados retornados pela query SQL
             MySqlDataReader dr = cmd.ExecuteReader();
 
-            string mensagem = null;
+            // obrigatório 
+            string mensagem = null; 
 
+            //dr = recebe e verifca se é "legivel os dados 
             if (dr.Read())
             {
                 if (dr.GetString(0) == "Produto Cadastrado com sucesso!")

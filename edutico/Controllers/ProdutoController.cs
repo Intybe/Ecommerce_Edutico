@@ -8,6 +8,7 @@ namespace edutico.Controllers
 {
     public class ProdutoController : Controller
     {
+        // instanciando métodos de outras classes para utilizar aq 
         private IProdutoRepositorio? _produtoRepositorio;
         private readonly LoginSessao _loginSessao;
         private IFavoritosRepositorio? _favoritosRepositorio;
