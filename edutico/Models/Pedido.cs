@@ -37,7 +37,7 @@
                 foreach (var campoPedido in (itensPedidoBD.Split(" | ")))
                 {
                     // Divide e coloca a habilidade e seu código em um vetor
-                    var itemPedido = campoPedido.Split(" - ");
+                    var itemPedido = campoPedido.Split(" -- ");
 
                     // Cria e adiciona um objeto habilidade na lista
                     itensPedido.Add(new ItemPedido()

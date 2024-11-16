@@ -42,8 +42,6 @@ else
         </div>
         @foreach (var pedido in Model)
         {
-            var pedidoOut = System.Text.Json.JsonSerializer.Serialize(pedido);
-
             <!-- Pedidos Pendentes (Aguardando Pagamento) -->
             if (pedido.statusPedido == 0)
             {
@@ -80,10 +78,9 @@ else
                         </div>
                         <!--botão para encaminhar a detalhes pedido-->
                         <div class="ops-btn">
-                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                            <a asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@pedido.NF" class="text-decoration-none">
                                 <button type="submit" class="btndeta-ped">Detalhes</button>
-                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
-                            </form>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -123,10 +120,9 @@ else
                         </div>
                         <!--botões para acesso do usuario-->
                         <div class="ops-btn">
-                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                            <a asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@pedido.NF" class="text-decoration-none">
                                 <button type="submit" class="btndeta-ped">Detalhes</button>
-                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
-                            </form>
+                            </a>
                             <button class="btnrastreio">Rastrear</button>
                             <button class="btncancelarped">Cancelar</button>
                         </div>
@@ -167,10 +163,9 @@ else
                         </div>
                         <!--botões de acesso-->
                         <div class="ops-btn">
-                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                            <a asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@pedido.NF" class="text-decoration-none">
                                 <button type="submit" class="btndeta-ped">Detalhes</button>
-                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
-                            </form>
+                            </a>
 
                             <button class="btnrastreio">Avaliar</button>
                             <!--aqui estou chamando a modal como se já fosse sido solicitado a devolução mas pode ter a outra opção de encaminhar para o inicio do processo-->
@@ -214,10 +209,9 @@ else
                         </div>
                         <!--botões de acesso-->
                         <div class="ops-btn">
-                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                            <a asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@pedido.NF" class="text-decoration-none">
                                 <button type="submit" class="btndeta-ped">Detalhes</button>
-                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
-                            </form>
+                            </a>
                             <button class="btnrastreio">Avaliar</button>
                             <!--aqui estou chamando a modal como se já fosse sido solicitado a devolução mas pode ter a outra opção de encaminhar para o inicio do processo-->
                             <button class="btncancelarped" type="button" data-bs-toggle="modal" data-bs-target="#avisodevo">Devolver Produto</button>
@@ -258,10 +252,9 @@ else
                             }
                         </div>
                         <div class="ops-btn">
-                            <form asp-controller="Pedido" asp-action="DetalhesPedido" method="post">
+                            <a asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@pedido.NF" class="text-decoration-none">
                                 <button type="submit" class="btndeta-ped">Detalhes</button>
-                                <input type="hidden" name="pedidoIn" value="@pedidoOut" />
-                            </form>
+                            </a>
                         </div>
 
                     </div>

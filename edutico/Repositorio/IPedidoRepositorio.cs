@@ -9,5 +9,7 @@ namespace edutico.Repositorio
         List<Pedido> ConsultarPedidos(int codLogin);
 
         List<Pedido> ConsultarPedidosFiltros(int codLogin, int statusPedido);
+
+        Pedido ConsultarDetalhesPedido(int NF);
     }
 }

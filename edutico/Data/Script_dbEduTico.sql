@@ -1189,7 +1189,7 @@ Select
     tbPedido.codLogin,
     tbPedido.statusPedido,
     tbPedido.valorTotal,
-	GROUP_CONCAT(CONCAT(tbItemPedido.codItem, ' - ', tbProduto.nomeProd, ' - ', tbItemPedido.codProd, ' - ', tbItemPedido.qtdItem, ' - ', tbItemPedido.valorItem, ' - ', (Select nomeImg from tbImagem where codProd = tbItemPedido.codProd limit 1), ' - ', (Select enderecoImg from tbImagem where codProd = tbItemPedido.codProd limit 1)) Order By tbItemPedido.codItem Separator ' | ') As 'itensPedido'
+	GROUP_CONCAT(CONCAT(tbItemPedido.codItem, ' -- ', tbProduto.nomeProd, ' -- ', tbItemPedido.codProd, ' -- ', tbItemPedido.qtdItem, ' -- ', tbItemPedido.valorItem, ' -- ', (Select nomeImg from tbImagem where codProd = tbItemPedido.codProd limit 1), ' -- ', (Select enderecoImg from tbImagem where codProd = tbItemPedido.codProd limit 1)) Order By tbItemPedido.codItem Separator ' | ') As 'itensPedido'
 from tbPedido
 	Inner Join tbItemPedido On tbPedido.NF = tbItemPedido.NF
     Left Join tbProduto On tbProduto.codProd = tbItemPedido.codProd
@@ -1207,7 +1207,7 @@ End $$
 Delimiter $$
 Create Procedure spSelectDetalhesPedido(vNF int)
 Begin
-	Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where NF = vNF;
+	Select * from vwPedido where NF = 1;
 End $$
 
 /* Inserção de Dados */

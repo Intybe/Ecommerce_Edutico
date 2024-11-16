@@ -17,9 +17,26 @@
                 <div class="scrollable-div overflow-auto" style="max-height: 150px;">
                     @foreach(var itemPedido in Model.itensPedido)
                     {
+                        string valor = itemPedido.valorItem.ToString();
+
+                        var valorItem = valor.Insert(valor.Length - 2, ",");
+
                         <div class="item-prod">
-                            <p> <img src="@itemPedido.produto.img.enderecoImg" alt="@itemPedido.produto.nomeProd"> @itemPedido.produto.nomeProd</p>
-                            <p>R$ @itemPedido.valorItem</p>
+                            <p> 
+                                <img src="@Url.Content(@itemPedido.produto.img.enderecoImg)" alt="@itemPedido.produto.nomeProd"> 
+                                @if (itemPedido.produto.nomeProd.Length > 35)
+                                {
+                                    @itemPedido.produto.nomeProd.Substring(0, 35)
+
+                                    <text>...</text> 
+                                }
+                                else
+                                {
+                                    @itemPedido.produto.nomeProd 
+                                }
+                            </p>
+
+                            <p>R$ @valorItem</p>
                         </div>
                     }
                 </div>
@@ -108,7 +125,7 @@
                     
             </div>
            <div class="d-flex pt-2 justify-content-center">
-                <button class="btncanc">Solicitar Devolução</button>
+                <button class="btncanc">Ver Nota Fiscal</button>
                 <button class="btnnav">Voltar para a navegação</button>
                 
             </div>

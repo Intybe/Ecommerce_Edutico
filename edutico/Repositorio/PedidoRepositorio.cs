@@ -168,5 +168,48 @@ namespace edutico.Repositorio
 
             return pedidos;
         }
+
+        public Pedido ConsultarDetalhesPedido(int NF)
+        {
+            // Cria a variável de conexão com o banco de dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "Call spSelectDetalhesPedido(@NF);";
+
+            // Junta o comando SQL com a informações do banco   
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@NF", NF);
+
+            // Executa e lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Cria um objeto Pedido null, estou criando aqui pois será usado fora da condicional
+            Pedido pedido = null;
+
+            // Se o resultado for legível
+            if (dr.Read())
+            {
+                pedido = new Pedido(
+                    Convert.ToInt32(dr["NF"]),
+                    Convert.ToDateTime(dr["data"]),
+                    Convert.ToInt32(dr["statusPedido"]),
+                    Convert.ToDecimal(dr["valorTotal"]),
+                    dr["itensPedido"].ToString()
+                );
+            }
+
+            // Fecha o leitor do produto
+            dr.Close();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna o pedido (ou null se não for encontrado)
+            return pedido;
+        }
     }
 }

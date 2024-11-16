@@ -196,14 +196,12 @@ namespace edutico.Controllers
                 return View("MeusPedidos", pedidos);
             }
         }
-        [HttpPost]
-        public IActionResult DetalhesPedido(string pedidoIn)
+        public IActionResult DetalhesPedido(int NF)
         {
             // Pega o codLogin do Usuário Logado através da sessão
             var Login = _loginSessao.GetLogin();
 
-            // Pega a string e transforma em objeto novamente
-            var pedido = JsonConvert.DeserializeObject<Pedido>(pedidoIn);
+            Pedido pedido = _pedidoRepositorio.ConsultarDetalhesPedido(NF);
 
             // Adiciona os dados do cliente ao pedido
             pedido.cliente = _clienteRepositorio.ConsultarCliente(Login.codLogin);
