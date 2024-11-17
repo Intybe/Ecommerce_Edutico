@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .header img {
+            max-width: 100%;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .table th, .table td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #f0f0f0;
+        }
+        .table-no-border td {
+            border: none;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info span {
+            display: inline-block;
+            min-width: 150px;
+            font-weight: bold;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nota Fiscal</h1>
+            <p>RECEBEMOS DE EDUTICO.COM.BR. LTDA OS PRODUTOS CONSTANTES DA NOTA FISCAL INDICADA AO LADO</p>
+        </div>
+
+        <div class="info">
+            <p><span>NF-e Nº:</span> {{NF}}</p>
+            <p><span>Série:</span> 001</p>
+            <p><span>Data de Emissão:</span> {{dataHoraEmissao}}</p>
+            <p><span>Destinatário:</span> {{nomeCli}}</p>
+            <p><span>CPF/CNPJ:</span> {{cpf}}</p>
+            <p><span>Endereço:</span> {{endereco}}</p>
+            <p><span>Bairro:</span> {{bairro}}</p>
+            <p><span>Cidade/UF:</span> {{cidade}} / {{uf}}</p>
+            <p><span>CEP:</span> {{cep}}</p>
+            <p><span>Telefone:</span> {{telefone}}</p>
+        </div>
+
+        <h3>Produtos e Serviços</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código Produto</th>
+                    <th>Nome do Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unit.</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#itensPedido}}
+                <tr>
+                    <td>{{codProd}}</td>
+                    <td>{{nomeProd}}</td>
+                    <td>{{qtdItem}}</td>
+                    <td>{{valorItem}}</td>
+                    <td>{{totalItem}}</td>
+                </tr>
+                {{/itensPedido}}
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p>Endereço: R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP - CEP 05089-000</p>
+            <p>Fone: (11) 3900-000</p>
+        </div>
+    </div>
+</body>
+</html>

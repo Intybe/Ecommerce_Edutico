@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "T:\\Backend Edutico\\edutico\\edutico.csproj": {}
+    "C:\\Users\\barro\\Desktop\\Backend Edutico\\edutico\\edutico.csproj": {}
   },
   "projects": {
-    "T:\\Backend Edutico\\edutico\\edutico.csproj": {
+    "C:\\Users\\barro\\Desktop\\Backend Edutico\\edutico\\edutico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Backend Edutico\\edutico\\edutico.csproj",
+        "projectUniqueName": "C:\\Users\\barro\\Desktop\\Backend Edutico\\edutico\\edutico.csproj",
         "projectName": "edutico",
-        "projectPath": "T:\\Backend Edutico\\edutico\\edutico.csproj",
+        "projectPath": "C:\\Users\\barro\\Desktop\\Backend Edutico\\edutico\\edutico.csproj",
         "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-        "outputPath": "T:\\Backend Edutico\\edutico\\obj\\",
+        "outputPath": "C:\\Users\\barro\\Desktop\\Backend Edutico\\edutico\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "P:\\Visual Studio\\Shared\\NuGetPackages"
@@ -50,9 +50,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Aspose.Words": {
+              "target": "Package",
+              "version": "[24.11.1, )"
+            },
             "MySql.Data": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[9.1.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

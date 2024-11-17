@@ -3,6 +3,10 @@ using edutico.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using edutico.Models;
 using Newtonsoft.Json;
+using Aspose.Words;
+using System.IO;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 
 namespace edutico.Controllers
 {
@@ -207,6 +211,127 @@ namespace edutico.Controllers
             pedido.cliente = _clienteRepositorio.ConsultarCliente(Login.codLogin);
 
             return View(pedido);
+        }
+
+        public IActionResult GerarNF(string pedido)
+        {
+            // Desserializa o pedido
+            var dadosPedido = JsonConvert.DeserializeObject<Pedido>(pedido);
+
+            // Armazena o caminho do template
+            string caminhoTemplate = "wwwroot/template/templateNF.docx";
+
+            // Transforma o arquivo original em bytes
+            byte[] arquivoTemplate = System.IO.File.ReadAllBytes(caminhoTemplate);
+
+            // Cria uma cópia arquivo na memória, pois não podemosalterar o temmplate diretamente
+            MemoryStream arquivoMemoria = new MemoryStream(arquivoTemplate);
+
+            // Abreo arquivo da memória em Word
+            Document arquivoWord = new Document(arquivoMemoria);
+
+            // Adicionando a função de edição ao arquivo
+            DocumentBuilder editarArquivo = new DocumentBuilder(arquivoWord);
+
+            // Editando o arquivo
+            arquivoWord.Range.Replace("{{nomeCli}}", $"{dadosPedido.cliente.nome} {dadosPedido.cliente.sobrenome}");
+            arquivoWord.Range.Replace("{{cpf}}", dadosPedido.cliente.cpf.ToString(@"000\.000\.000\-00"));
+            arquivoWord.Range.Replace("{{endereco}}", $"{dadosPedido.cliente.logradouro}, {dadosPedido.cliente.numEnd} {dadosPedido.cliente.compEnd ?? ""}");
+            arquivoWord.Range.Replace("{{bairro}}", dadosPedido.cliente.bairro);
+            arquivoWord.Range.Replace("{{cidade}}", dadosPedido.cliente.cidade);
+            arquivoWord.Range.Replace("{{uf}}", dadosPedido.cliente.uf);
+            arquivoWord.Range.Replace("{{cep}}", dadosPedido.cliente.cep);
+            arquivoWord.Range.Replace("{{telefone}}", dadosPedido.cliente.telefone);
+
+            arquivoWord.Range.Replace("{{Numero}}", dadosPedido.NF.ToString());
+            arquivoWord.Range.Replace("{{dataHoraEmissao}}", dadosPedido.data.ToString("dd/MM/yyyy HH:mm"));
+            arquivoWord.Range.Replace("{{valorTotal}}", dadosPedido.valorTotal.ToString("C2"));
+            arquivoWord.Range.Replace("{{HoraEmissao}}", dadosPedido.data.ToString("HH:mm"));
+            arquivoWord.Range.Replace("{{dataEmissao}}", dadosPedido.data.ToString("dd/MM/yyyy"));
+
+
+            if(dadosPedido.itensPedido.Count() == 1)
+            {
+                foreach (var item in dadosPedido.itensPedido)
+                {
+                    arquivoWord.Range.Replace("{{codProd}}", item.produto.codProd.ToString());
+                    arquivoWord.Range.Replace("{{nomeProd}}", item.produto.nomeProd.ToString());
+                    arquivoWord.Range.Replace("{{qtdItem}}", item.qtdItem.ToString());
+                    arquivoWord.Range.Replace("{{qtdItem}}", item.qtdItem.ToString());
+                    arquivoWord.Range.Replace("{{valorItem}}", item.valorItem.ToString());
+                }
+            }
+            else
+            {
+                // Encontre a tabela que contém o marcador {{codProd}}
+                Table tabela = arquivoWord.GetChildNodes(NodeType.Table, true)
+                                          .Cast<Table>()
+                                          .FirstOrDefault(t => t.Range.Text.Contains("{{codProd}}"));
+
+                if (tabela != null)
+                {
+                    // Encontre a linha base com o marcador {{codProd}}
+                    Row linhaBase = (Row)tabela.Rows.Cast<Row>()
+                                                    .FirstOrDefault(r => r.Range.Text.Contains("{{codProd}}"));
+
+                    if (linhaBase != null)
+                    {
+                        // Remove a linha base para evitar duplicação
+                        tabela.Rows.Remove(linhaBase);
+
+                        // Adicionar uma nova linha para cada item do pedido
+                        foreach (var item in dadosPedido.itensPedido)
+                        {
+                            // Clonando a linha base para criar uma nova linha
+                            Row novaLinha = (Row)linhaBase.Clone(true);  // Clonando a linha com todas as suas células
+
+                            // Itere sobre as células da nova linha para substituir os valores
+                            for (int i = 0; i < novaLinha.Cells.Count; i++)
+                            {
+                                // Obtenha a célula atual
+                                Cell cell = novaLinha.Cells[i];
+
+                                // Substitua os placeholders na célula com os valores do item
+                                if (cell.Range.Text.Contains("{{codProd}}"))
+                                {
+                                    cell.Range.Text.Replace("{{codProd}}", item.produto.codProd.ToString());
+                                }
+                                if (cell.Range.Text.Contains("{{nomeProd}}"))
+                                {
+                                    cell.Range.Text.Replace("{{nomeProd}}", item.produto.nomeProd.ToString());
+                                }
+                                if (cell.Range.Text.Contains("{{qtdItem}}"))
+                                {
+                                    cell.Range.Text.Replace("{{qtdItem}}", item.qtdItem.ToString());
+                                }
+                                if (cell.Range.Text.Contains("{{valorItem}}"))
+                                {
+                                    cell.Range.Text.Replace("{{valorItem}}", item.valorItem.ToString());
+                                }
+                            }
+
+                            // Adiciona a nova linha modificada de volta à tabela
+                            tabela.Rows.Add(novaLinha);
+                        }
+                    }
+                }
+            }
+
+            // Adicionando o número de páginas
+            arquivoWord.Range.Replace("{{qtd}}", arquivoWord.PageCount.ToString());
+
+            // Criando um novo arquivo na memória para esse word em pdf
+            MemoryStream arquivoPdf = new MemoryStream();
+
+            // Salva o arquivo em pdf (converte)
+            arquivoWord.Save(arquivoPdf, SaveFormat.Pdf);
+
+            // Garantie que o arquivo em pdf seja o primeiro na memória
+            arquivoPdf.Position = 0;
+
+            // Retorna o arquivo em pdf para visualização
+            return File(arquivoPdf.ToArray(), "application/pdf", "documento-editado.pdf");
+
         }
     }
 }
