@@ -333,6 +333,24 @@ namespace edutico.Controllers
             return File(arquivoPdf.ToArray(), "application/pdf", "documento-editado.pdf");
 
         }
+
+
+        public IActionResult AtualizarStatusPedido(string pedido, int status)
+        {
+            // Pega o codLogin do Usuário Logado através da sessão
+            var Login = _loginSessao.GetLogin();
+
+            var DadosPedido = JsonConvert.DeserializeObject<Pedido>(pedido);
+
+            _pedidoRepositorio.AtualizarStatusPedido(DadosPedido.NF, status);
+
+            Pedido pedidoAtulizado = _pedidoRepositorio.ConsultarDetalhesPedido(DadosPedido.NF);
+
+            // Adiciona os dados do cliente ao pedido
+            pedidoAtulizado.cliente = _clienteRepositorio.ConsultarCliente(Login.codLogin);
+
+            return View("DetalhesPedido", pedidoAtulizado);
+        }
     }
 }
 

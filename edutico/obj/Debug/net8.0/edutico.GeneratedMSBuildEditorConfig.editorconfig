@@ -9,199 +9,199 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = edutico
 build_property.RootNamespace = edutico
-build_property.ProjectDir = C:\Users\barro\Desktop\Backend Edutico\edutico\
+build_property.ProjectDir = C:\Users\3ds\Documents\BackendEdutico\edutico\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\barro\Desktop\Backend Edutico\edutico
+build_property.MSBuildProjectDirectory = C:\Users\3ds\Documents\BackendEdutico\edutico
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Cartao/CadastroCartao.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Cartao/CadastroCartao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydGFvXENhZGFzdHJvQ2FydGFvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Cartao/MeusCartoes.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Cartao/MeusCartoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydGFvXE1ldXNDYXJ0b2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Cliente/CadastroCliente.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Cliente/CadastroCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYWRhc3Ryb0NsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Cliente/Carrinho.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Cliente/Carrinho.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaW5oby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Cliente/FavoritosCheio.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Cliente/FavoritosCheio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxGYXZvcml0b3NDaGVpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Cliente/MeuPerfil.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Cliente/MeuPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxNZXVQZXJmaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/AlterarProdutosF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/AlterarProdutosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbHRlcmFyUHJvZHV0b3NGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/CancelamentoEfetuado.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/CancelamentoEfetuado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYW5jZWxhbWVudG9FZmV0dWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/DashBoard.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/DashBoard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoQm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/DetalhesPedidoConcluidoF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/DetalhesPedidoConcluidoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1BlZGlkb0NvbmNsdWlkb0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/DetalhesPedidoEmAndamentoF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/DetalhesPedidoEmAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1BlZGlkb0VtQW5kYW1lbnRvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/DetalhesProdutoF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/DetalhesProdutoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc1Byb2R1dG9GLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/DevolucaoConcluidaF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/DevolucaoConcluidaF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZvbHVjYW9Db25jbHVpZGFGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/DevolucaoEmAndamentoF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/DevolucaoEmAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZvbHVjYW9FbUFuZGFtZW50b0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/DevolucoesF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/DevolucoesF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZvbHVjb2VzRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/EsqueceuSenha.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/EsqueceuSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFc3F1ZWNldVNlbmhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/FavoritosF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/FavoritosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3NGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/FavoritosVazio.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/FavoritosVazio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3NWYXppby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/FormDevolucao.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/FormDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtRGV2b2x1Y2FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/HistoricoVendasF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/HistoricoVendasF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3JpY29WZW5kYXNGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/HistoricoVendasInfoF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/HistoricoVendasInfoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3JpY29WZW5kYXNJbmZvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/Index.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/notaFIscal.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/notaFIscal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxub3RhRklzY2FsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/PedidosAndamentoF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/PedidosAndamentoF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZWRpZG9zQW5kYW1lbnRvRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/ProdutosDevolucao.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/ProdutosDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdXRvc0Rldm9sdWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/ProdutosF.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/ProdutosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdXRvc0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/TermoCancelamento.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/TermoCancelamento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtb0NhbmNlbGFtZW50by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Home/TermoDevolucao.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Home/TermoDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtb0Rldm9sdWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Login/Login.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Pagamento/PagamentoCartao.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Pagamento/PagamentoCartao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvXFBhZ2FtZW50b0NhcnRhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Pagamento/PagamentoQrcode.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Pagamento/PagamentoQrcode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvXFBhZ2FtZW50b1FyY29kZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Pagamento/VisualizarCartao.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Pagamento/VisualizarCartao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvXFZpc3VhbGl6YXJDYXJ0YW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Pedido/DetalhesPedido.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Pedido/DetalhesPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXERldGFsaGVzUGVkaWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Pedido/FinalizarPedido.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Pedido/FinalizarPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEZpbmFsaXphclBlZGlkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Pedido/MeusPedidos.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Pedido/MeusPedidos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXE1ldXNQZWRpZG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Produto/CadastroProduto.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Produto/CadastroProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDYWRhc3Ryb1Byb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Produto/DetalhesProduto.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Produto/DetalhesProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlc1Byb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Produto/Pesquisa.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Produto/Pesquisa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQZXNxdWlzYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Shared/Error.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/_ViewImports.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/_ViewStart.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Shared/_Layout.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-suo7fxcrqw
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Shared/_LayoutCli2.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Shared/_LayoutCli2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDbGkyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-jom6apkxm2
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Shared/_LayoutFunc.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Shared/_LayoutFunc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGdW5jLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-067ufqa8tk
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Shared/_Login.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Shared/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-mzd9qvzkc6
 
-[C:/Users/barro/Desktop/Backend Edutico/edutico/Views/Shared/_MenuPerfil.cshtml]
+[C:/Users/3ds/Documents/BackendEdutico/edutico/Views/Shared/_MenuPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51UGVyZmlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-7dmhd0rn9m

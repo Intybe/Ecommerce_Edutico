@@ -11,5 +11,7 @@ namespace edutico.Repositorio
         List<Pedido> ConsultarPedidosFiltros(int codLogin, int statusPedido);
 
         Pedido ConsultarDetalhesPedido(int NF);
+
+        void AtualizarStatusPedido(int NF, int status);
     }
 }

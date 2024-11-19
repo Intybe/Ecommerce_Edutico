@@ -46,7 +46,7 @@ Update tbPedido set statusPedido = 2 where NF = 6;
 Select * from tbItemPedido;
 
 Delimiter $$
-	Call spInsertTbCartaoCredito(1234567890123456, 'Cleia Santana Alves', '06/27', 6, 2);
+	Call spInsertTbCartaoCredito(1234567890123456, 'Cleia Santana Alves', '06/27', 6, 1);
 $$
 
 Select * from tbCartaoCredito;

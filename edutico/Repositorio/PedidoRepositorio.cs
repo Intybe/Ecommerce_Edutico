@@ -211,5 +211,31 @@ namespace edutico.Repositorio
             // Retorna o pedido (ou null se não for encontrado)
             return pedido;
         }
+
+
+        public void AtualizarStatusPedido(int NF, int status)
+        {
+            // Cria a variável de conexão com o banco de dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "Call spUpdateTbPedido(@NF, @status);";
+
+            // Junta o comando SQL com a informações do banco   
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@NF", NF);
+            cmd.Parameters.AddWithValue("@status", status);
+
+            // Executa a query SQL
+            cmd.ExecuteNonQuery();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+        }
+
+
     }
 }

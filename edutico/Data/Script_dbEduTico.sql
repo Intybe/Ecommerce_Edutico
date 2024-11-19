@@ -515,7 +515,7 @@ Delimiter $$
 Create Procedure spInsertTbPedido(vCodLogin int, vValorTotal decimal(8,2))
 Begin
 	Insert into tbPedido(data, codLogin, statusPedido, valorTotal)
-				values(current_timestamp(), vCodLogin, 1, vValorTotal);
+				values(current_timestamp(), vCodLogin, 0, vValorTotal);
    SELECT LAST_INSERT_ID() AS NF;
 End $$ 
 
@@ -1207,7 +1207,7 @@ End $$
 Delimiter $$
 Create Procedure spSelectDetalhesPedido(vNF int)
 Begin
-	Select * from vwPedido where NF = 1;
+	Select * from vwPedido where NF = vNF;
 End $$
 
 /* Inserção de Dados */
