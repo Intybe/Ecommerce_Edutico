@@ -33,7 +33,7 @@
 
                 <!-- adiciona a classe "active" (coloca a cor azul no fundo) ao item de menu <p> quando a página atual corresponde à ação "ProdutosF". -->
                 <p class="d-flex align-items-center  @((ViewContext.RouteData.Values["action"] as string) == "ProdutosF" ? "active" : "")">
-                    <a asp-controller="Home" asp-action="ProdutosF">
+                    <a asp-controller="Funcionario" asp-action="ProdutosF">
                         <img src="~/imgs/caixa.png" alt="caixa" class="icone me-3">
                         Produto
                     </a>

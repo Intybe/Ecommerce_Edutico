@@ -1,5 +1,6 @@
 ﻿@model List<Produto>
 
+
 @{
     @* PARA ADICIONAR O LAYOUT 2 (FUNC) *@
     Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
@@ -73,11 +74,31 @@
                                 </p>
                             }
                             <p class="text-primary h5 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
+
+                
                         </div>
                         <!-- BOTÕES -->
                         <div class="button-container d-flex mt-3">
-                            <button class="btn desativar-btn">Desativar</button>
-                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
+                            @if (produto.statusProd == false ) // Se o produto está ativo
+                            {
+                                <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
+                                    <input type="hidden" name="codProd" value="@produto.codProd" />
+                                    <input type="hidden" name="statusProd" value="1" />
+                                    <button type="submit" class="btn ativar-btn">Ativar</button>
+                                </form>
+                            }
+                            else // Se o produto está inativo
+                            {
+                                <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
+                                    <input type="hidden" name="codProd" value="@produto.codProd" />
+                                    <input type="hidden" name="statusProd" value="0" />
+                                    <button type="submit" class="btn desativar-btn">Desativar</button>
+                                </form>
+                                
+                            }
+                           <a asp-controller="Funcionario" asp-action="AlterarProdutosF" asp-route-codProd="@produto.codProd" class="text-decoration-none">
+                            <button class="btn editar-btn">Editar</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -87,3 +108,5 @@
 
     </section>
 </section>
+
+

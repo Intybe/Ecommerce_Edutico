@@ -45,6 +45,8 @@
         Sessão de Atualização das Imagens do Produto
         Sessão de Atualização de Avaliações
         Sessão de Atualização do Status da devolução
+		Sessão de Ativação do Produto
+		Sessão de Atualização de Status do Produto
 	Procedures de Exclusão (Delete)
 		Sessão de Exclusão do Produto
 		Sessão de Exclusão de Favoritos
@@ -55,6 +57,7 @@
 		Sessão de Deletar os produtos do carrinho após realização do pedido
 	Views e Consultas
 		View para unificar as informações do produto
+        Procedure para Selecionar os Produtos do Funcionario
         Procedure para Selecionar os Produtos Relacionados
 		Procedure para Selecionar os Produtos Lancamentos
 		Procedure para Selecionar os Detalhes Produtos
@@ -837,6 +840,20 @@ Begin
 	End if;
 End $$
 
+-- Sessão de Atualização de Status do Produto --
+Delimiter $$
+create Procedure spUpdateStatusTbProduto(
+	vcodProd decimal (14,0), 
+	vstatusProd tinyint
+)
+Begin
+	Update tbProduto Set statusProd = vstatusProd where codProd = vcodProd;
+    /* Status do Pedido:
+	0 = Ativo;
+    1 = Desativado;
+	*/
+End $$
+
 -- Sessão de Atualização de Avaliações --
 Delimiter $$
 Create Procedure spUpdateTbAvaliacao(
@@ -872,17 +889,8 @@ End $$
 */
 
 
--- Sessão de Exclusão do Produto --
-Delimiter $$
-Create Procedure spDeleteTbProduto(vCodProd decimal(14,0))
-Begin
-	-- Não pode apagar o produto por conta da chave estrangeira, então só Ativa ou Desativa --
-	Update tbProduto Set StatusProd = 1 where codProd = vCodProd;
-    /*Status do produto
-    0 = Ativo;
-    1 = Desativado;
-    */
-End $$  
+
+
 
 -- Sessão de Exclusão de Favoritos --
 Delimiter $$
@@ -1035,6 +1043,13 @@ Begin
 		-- Se não retornar resultados, selecionar produtos aleatórios
         Select * from vwProdutoCompleto order by RAND() limit 5;
     End if;
+End $$
+
+-- Procedure para Selecionar os Produtos do Funcionario --
+Delimiter $$
+Create Procedure spSelectPreviaProdutoF()
+Begin
+	Select * from vwPreviaProduto;
 End $$
 
 -- Procedure para Selecionar os Produtos Lancamentos --

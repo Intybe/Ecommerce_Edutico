@@ -41,7 +41,9 @@ namespace edutico.Repositorio
                         Convert.ToDecimal(dr["valorUnit"]),
                         Convert.ToInt32(dr["qtdAvaliacao"]),
                         Convert.ToInt32(dr["somaAvaliacao"]),
-                        dr["imgs"].ToString()
+                        dr["imgs"].ToString(),
+                        statusProd: Convert.ToBoolean(dr["statusProd"])
+
                     )
                 };
 

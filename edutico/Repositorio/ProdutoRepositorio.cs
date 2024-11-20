@@ -1,5 +1,6 @@
 ﻿using edutico.Data;
 using edutico.Models;
+using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 
 namespace edutico.Repositorio
@@ -29,11 +30,12 @@ namespace edutico.Repositorio
             cmd.Parameters.AddWithValue("@estoque", produto.estoque);
             cmd.Parameters.AddWithValue("@lancamento", produto.lancamento);
 
+
             // Executa e lê os dados retornados pela query SQL
             MySqlDataReader dr = cmd.ExecuteReader();
 
             // obrigatório 
-            string mensagem = null; 
+            string mensagem = null;
 
             //dr = recebe e verifca se é "legivel os dados 
             if (dr.Read())
@@ -110,6 +112,7 @@ namespace edutico.Repositorio
         }
 
 
+
         // Método de consultar Produtos em Lançamento
         public IEnumerable<Produto> ConsultarProdutoLancamento()
         {
@@ -138,7 +141,8 @@ namespace edutico.Repositorio
                     Convert.ToDecimal(dr["valorUnit"]),
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
-                    dr["imgs"].ToString()
+                    dr["imgs"].ToString(),
+                     statusProd: Convert.ToBoolean(dr["statusProd"])
                 );
                 produtos.Add(produto);
             }
@@ -163,7 +167,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // comando sql para selecionar os produtos e suas imgs
-            string sql = "Call spSelectPreviaProduto()";
+            string sql = "Call spSelectPreviaProdutoF();";
 
             // Junta o comando SQL com a informações do banco
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
@@ -184,7 +188,8 @@ namespace edutico.Repositorio
                     Convert.ToDecimal(dr["valorUnit"]),
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
-                    dr["imgs"].ToString()
+                    dr["imgs"].ToString(),
+                     statusProd: Convert.ToBoolean(dr["statusProd"])
                 );
                 produtos.Add(produto);
             }
@@ -199,7 +204,7 @@ namespace edutico.Repositorio
             return produtos;
         }
 
-    
+
 
 
 
@@ -247,6 +252,7 @@ namespace edutico.Repositorio
                     qtdPorEstrelaConcatenada: dr["qtdPorEstrela"]?.ToString(),
                     qtdAvaliacao: Convert.ToInt32(dr["qtdAvaliacao"]),
                     somaAvaliacao: Convert.ToInt32(dr["somaAvaliacao"])
+                    
                 );
             }
 
@@ -277,7 +283,8 @@ namespace edutico.Repositorio
                     Convert.ToDecimal(dr["valorUnit"]),
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
-                    dr["imgs"]?.ToString()
+                    dr["imgs"]?.ToString(),
+                    statusProd: Convert.ToBoolean(dr["statusProd"])
                 );
                 produtos.Add(produtoRelacionados);
             }
@@ -369,7 +376,8 @@ namespace edutico.Repositorio
                     Convert.ToDecimal(dr["valorUnit"]),
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
-                    dr["imgs"]?.ToString()
+                    dr["imgs"]?.ToString(),
+                    statusProd: Convert.ToBoolean(dr["statusProd"])
                 );
                 produtos.Add(produtoRelacionados);
             }
@@ -379,6 +387,30 @@ namespace edutico.Repositorio
 
             // Retorna o produto (ou null se não for encontrado)
             return produtos;
+        }
+
+
+        public void AtualizarStatusProduto(decimal codProd, int statusProd)
+        {
+            // Cria variável de conexão com o Banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que recebe o comando SQL
+            string sql = "Call spUpdateStatusTbProduto(@codProd, @statusProd);";
+
+            // Junta o comando SQL com as informações do banco
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribuindo valores aos parâmetros
+            cmd.Parameters.AddWithValue("@codProd", codProd);
+            cmd.Parameters.AddWithValue("@statusProd", statusProd);
+
+            // Executa o comando no banco de dados
+            cmd.ExecuteNonQuery();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
         }
     }
 }

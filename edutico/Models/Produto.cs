@@ -31,7 +31,7 @@ namespace edutico.Models
         public bool statusProd { get; set; }
         [Required(ErrorMessage = "Selecione uma opção")]
         public bool lancamento { get; set; }
-    
+
         public Imagem img { get; set; }
         [Required(ErrorMessage = "Selecione ao menos 2 imagens")]
         public List<Imagem> imgs { get; set; }
@@ -40,6 +40,7 @@ namespace edutico.Models
         public int qtdAvaliacao { get; set; }
         public int somaAvaliacao { get; set; }
         public List<Produto> relacionados { get; set; }
+        public List<CategoriaView> ListaCategorias { get; internal set; }
 
 
 
@@ -47,7 +48,7 @@ namespace edutico.Models
         public Produto() { }
 
         // Construtor de prévia dos produtos (Geralmente utilizado na Index)
-        public Produto(decimal codProd, string nomeProd, decimal valorUnit, int qtdAvaliacao, int somaAvaliacao, string imgsConcatenadas)
+        public Produto(decimal codProd, string nomeProd, decimal valorUnit, int qtdAvaliacao, int somaAvaliacao, string imgsConcatenadas, bool statusProd)
         {
             this.codProd = codProd;
             this.nomeProd = nomeProd;
@@ -55,6 +56,7 @@ namespace edutico.Models
             this.qtdAvaliacao = qtdAvaliacao;
             this.somaAvaliacao = somaAvaliacao;
             this.imgs = ParseImagens(imgsConcatenadas);
+            this.statusProd = statusProd;
         }
 
         // Construtor de prévia dos produtos (Carrinho)
@@ -73,6 +75,7 @@ namespace edutico.Models
             string descricao,
             string classificacao,
             string categoria,
+
             string habilidadesConcatenadas,
             decimal valorUnit,
             int estoque,

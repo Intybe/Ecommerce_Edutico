@@ -16,5 +16,7 @@ namespace edutico.Repositorio
         IEnumerable<Produto> ConsultarProdutoPesquisa(string pesquisa);
 
         IEnumerable<Produto> ConsultarProdutoF();
+
+        void AtualizarStatusProduto(decimal codProd, int statusProd);
     }
 }
