@@ -1,0 +1,89 @@
+﻿@model List<Produto>
+
+@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC) *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Produtos Funcionário";
+}
+
+<section class="container">
+    <!-- base -->
+    <!-- Barra de pesquisa centralizada -->
+    <form class="d-flex justify-content-center align-items-center search-bar">
+        <img src="~/imgs/lupa.png" class="icone" style="height: 18px; width: 18px; opacity: 0.3; margin-left: 10px; margin-top: 5px;">
+        <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial Bold'; opacity: 0.5;">
+    </form>
+
+    <section class="ProdutosF" style="min-height:80vh;">
+        <div class="header">
+            <div class="mb-2">
+                <h1>PRODUTOS</h1>
+                <div class="sort">
+                    <span>Ordenar por</span>
+                    <select>
+                        <option value="BemAvaliados">Bem avaliados</option>
+                        <option value="OrdemAlfabetica">Ordem alfabética</option>
+                        <option value="Esgotados">Esgotados</option>
+                        <option value="MaisVendidos">Mais vendidos</option>
+                        <option value="MenosVendidos">Menos vendidos</option>
+                        <option value="MaiorPreco">Maior Preço</option>
+                        <option value="MenorPreco">Menor Preço</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <!-- ** COLOCAR FORA DESSA DIV-->
+            <a asp-controller="Produto" asp-action="CadastroProduto" class="register-button">Cadastrar produto</a>
+        </div>
+
+        <!-- PRODUTOS -->
+        <div class="row">
+            @foreach (var produto in Model)
+            {
+                <div class="col-xl-2 col-lg-3 col-md-2 col-sm-6 d-flex align-items-stretch">
+                    <div class="card product-card my-2">
+                        <div class="card-body py-2">
+
+
+                            <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
+                            <h6 class="card-title mt-3 mx-0 glacial-bold" style="color:#000">
+                                @if (produto.nomeProd.Length > 20)
+                                {
+                                    @produto.nomeProd.Substring(0, 20)
+
+                                    <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                }
+                                else
+                                {
+                                    @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                }
+                            </h6>
+
+                            @if (produto.avaliacoes != null && produto.avaliacoes.Any())
+                            {
+                                <p class="text mb-3 small-text">
+                                    <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
+                                </p>
+                            }
+                            else
+                            {
+                                <p class="text mb-3 small-text">
+                                    <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
+                                </p>
+                            }
+                            <p class="text-primary h5 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
+                        </div>
+                        <!-- BOTÕES -->
+                        <div class="button-container d-flex mt-3">
+                            <button class="btn desativar-btn">Desativar</button>
+                            <button class="btn editar-btn" onclick="window.location.href='@Url.Action("AlterarProdutosF", "Home")'">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+
+    </section>
+</section>

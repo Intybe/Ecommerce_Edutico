@@ -5,6 +5,8 @@ namespace edutico.Models
     {
         public List<Produto> produtos { get; set; }
         public List<decimal> favoritos { get; set; }
-        public Produto produto { get; set; }
+        public Produto produto { get; set; } = new Produto();
+
+        public Avaliacao avaliacaoUnica { get; set; }
     }
 }

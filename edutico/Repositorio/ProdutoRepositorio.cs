@@ -2,6 +2,7 @@
 using edutico.Models;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI;
 
 namespace edutico.Repositorio
 {
@@ -345,6 +346,78 @@ namespace edutico.Repositorio
 
             return mensagem;
         }
+
+        
+        public Avaliacao ConsultarAvaliacaoCliente(decimal codProd, int codLogin)
+        {
+            // Cria a variável de conexão com o banco de dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "Call spSelectTbAvaliacaoUnica(@codProd, @codLogin);";
+
+            // Junta o comando SQL com a informações do banco   
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@codProd", codProd);
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+
+            // Executa e le os dados retornados da query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            //criando um obj do tipo avaliacao 
+            Avaliacao avaliacaoUnica = null;
+
+            if (dr.Read()) //se o valor forem legiveis 
+            {
+                avaliacaoUnica = new Avaliacao() //dando valor pro obj 
+                {
+                    codProd = Convert.ToDecimal(dr["codProd"]),
+                    codAvaliacao = Convert.ToInt32(dr["codAvaliacao"]),
+                    comentario = dr["comentario"].ToString(),
+                    qtdEstrela = Convert.ToInt32(dr["qtdEstrela"]),
+                    cliente = new Cliente { codLogin = Convert.ToInt32(dr["codLogin"]) }
+                };
+
+            }
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna o produto (ou null se não for encontrado)
+            return avaliacaoUnica;
+        }
+        
+
+        public void DeletarAvaliacao(int codLogin, int codAvaliacao)
+        {
+            // Cria a variável de conexão com o banco de dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "Call spDeleteTbAvaliacao(@codLogin, @codAvaliacao);";
+
+            // Junta o comando SQL com a informações do banco   
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+            cmd.Parameters.AddWithValue("@codAvaliacao", codAvaliacao);
+
+            // Executa a query SQL
+            cmd.ExecuteNonQuery();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+        }
+
+
+        
+
+
 
         public IEnumerable<Produto> ConsultarProdutoPesquisa(string pesquisa)
         {

@@ -78,10 +78,12 @@
                         </a>
                     </p>
                     <p class="Botoes align-items-center">
-                        <a asp-controller="Login" asp-action="Login">
-                            <img src="~/imgs/sair.png" alt="Logout" class="icon me-3">
-                            Sair
-                        </a>
+                        <form method="post" asp-controller="Login" asp-action="Logout" style="display: inline;">
+                            <button type="submit" class="btn btn-link p-0" style="border: none; background: none;">
+                                <img src="~/imgs/sair.png" alt="Logout" class="icon me-3">
+                                Sair
+                            </button>
+                        </form>
                     </p>
                 </div>
             </div>

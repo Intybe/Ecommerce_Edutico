@@ -41,6 +41,7 @@ namespace edutico.Libraries.Login
         public void Logout()
         {
             _sessao.RemoverTodos();
+   
         }
     }
 }

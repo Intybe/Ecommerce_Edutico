@@ -11,7 +11,8 @@
     <div class="col-6">
         <div class="base-prod-detalhe d-flex">
             <div class="scrollable-div col-3 overflow-auto">
-                @foreach (var img in Model.produto.imgs)
+                <!--erro-->
+                @foreach (var img in Model.produto.imgs) 
                 {
                     <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem(" @Url.Content(img.enderecoImg)")" />
                 }
@@ -62,10 +63,11 @@
         <div class="base-prod-detalhe  texto-simples">
             <h3>Avaliações do produto</h3>
             <div class="row">
+
                 <div class="col-5 ">
                     <div class="rating-score ">
-
                         <div class="d-flex">
+                     
                             @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
                             {
 
@@ -159,34 +161,58 @@
                             @TempData["msg"]
                         </div>
                     }
+                    <!--AQUIII-->
+                    @if (Model.avaliacaoUnica != null)
+                    {
+                        <form asp-controller="Produto" asp-action="DeletarAvaliacao" method="post">
+                            <h6 id="glacial-bold" class="text-center">AVALIAÇÃO FEITA</h6>
 
-                    <form asp-controller="Produto" asp-action="CadastrarAvaliacao" method="post">
-                        <h6 id="glacial-bold" class="text-center">FAÇA SUA AVALIAÇÃO!</h6>
-                        <p class="mt-0">Dê uma nota geral para o produto</p>
-                        <div class="d-flex">
-                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star1" onclick="valorEstrela(1, this)">
-                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star2" onclick="valorEstrela(2, this)">
-                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star3" onclick="valorEstrela(3, this)">
-                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star4" onclick="valorEstrela(4, this)">
-                            <img src="~/imgs/estrelaVazia.png" class="icone" id="star5" onclick="valorEstrela(5, this)">
-                        </div>
 
-                        <input type="text" id="qtdEstrela" name="qtdEstrela" value="" style="display: none" />
+                            <input type="text" id="qtdEstrela" name="qtdEstrela" value="" style="display: none" />
 
-                        <input type="text" name="codProd" value="@Model.produto.codProd" style="display: none" />
+                            <input type="text" name="codProd" value="@Model.produto.codProd" style="display: none" />
 
-                        <p>Escreva o que você achou!</p>
+                        
 
-                        <textarea name="comentario" placeholder="Justifique sua resposta para ajudar outros consumidores :)"></textarea>
+                            <textarea name="comentario" placeholder="Agrdecemos sua avaliação" desable></textarea>
 
-                        <button type="submit" class="btnava">Enviar avaliação</button>
-                    </form>
+                            <button type="submit" class="btnava">Excluir Avaliação</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form asp-controller="Produto" asp-action="CadastrarAvaliacao" method="post">
+                            <h6 id="glacial-bold" class="text-center">FAÇA SUA AVALIAÇÃO!</h6>
+                            <p class="mt-0">Dê uma nota geral para o produto</p>
+                            <div class="d-flex">
+                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star1" onclick="valorEstrela(1, this)">
+                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star2" onclick="valorEstrela(2, this)">
+                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star3" onclick="valorEstrela(3, this)">
+                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star4" onclick="valorEstrela(4, this)">
+                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star5" onclick="valorEstrela(5, this)">
+                            </div>
+
+                            <input type="text" id="qtdEstrela" name="qtdEstrela" value="" style="display: none" />
+
+                            <input type="text" name="codProd" value="@Model.produto.codProd" style="display: none" />
+
+                            <p>Escreva o que você achou!</p>
+
+                            <textarea name="comentario" placeholder="Justifique sua resposta para ajudar outros consumidores :)"></textarea>
+
+                            <button type="submit" class="btnava">Enviar avaliação</button>
+                        </form>
+                    }
+
+
+
+                    
 
 
 
                 </div>
 
-
+                <!-- parte dos comentários-->
                 <div class="col-7 border-start">
                     @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
                     {
@@ -221,6 +247,8 @@
             </div>
         </div>
     </div>
+
+    <!-- CARDS AO LADO-->
     <div class="col-4">
         <div class="base-prod-detalhe">
             <div class="d-flex pb-2 px-1 justify-content-between">
@@ -473,7 +501,7 @@
     const totalRatings = @Model.produto.qtdAvaliacao;
     const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.produto.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
 
-        for (let rating in ratingsData) {
+            for (let rating in ratingsData) {
         const percentage = (ratingsData[rating] / totalRatings) * 100;
         const ratingBar = document.getElementById(`bar-${rating}`);
 

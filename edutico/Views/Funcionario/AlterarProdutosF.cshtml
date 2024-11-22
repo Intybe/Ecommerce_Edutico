@@ -12,6 +12,9 @@
     var habilidadesSelecionadas = string.Join(",", Model.habilidades.Select(h => h.nomeHabilidade));
 
 }
+<h2>@categoria</h2>
+<h2>@classificacao</h2>
+<h2>@habilidadesSelecionadas</h2>
 
 <input type="hidden" id="categoria" value="@categoria" /> 
 <input type="hidden" id="classificacao" value="@classificacao"/>

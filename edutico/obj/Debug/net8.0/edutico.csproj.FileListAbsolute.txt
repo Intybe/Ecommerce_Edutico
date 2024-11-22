@@ -2552,3 +2552,4 @@ C:\Users\flavi\OneDrive\Anexos\Edutico\2\edutico\obj\Debug\net8.0\scopedcss\proj
 C:\Users\flavi\OneDrive\Anexos\Edutico\2\edutico\obj\Debug\net8.0\edutico.csproj.Up2Date
 C:\Users\flavi\OneDrive\Anexos\Edutico\2\edutico\obj\Debug\net8.0\edutico.genruntimeconfig.cache
 C:\Users\flavi\OneDrive\Anexos\Edutico\2\edutico\obj\Debug\net8.0\ref\edutico.dll
+C:\Users\flavi\OneDrive\Anexos\Edutico\2\edutico\obj\Debug\net8.0\edutico.sourcelink.json

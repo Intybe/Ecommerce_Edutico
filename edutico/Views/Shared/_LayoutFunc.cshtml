@@ -59,8 +59,12 @@
                     </a>
                 </p>
                 <p class="d-flex align-items-center">
-                    <img src="~/imgs/Logout.png" alt="Logout" class="icone me-3">
-                    Sair
+                    <form method="post" asp-controller="Login" asp-action="Logout" style="display: flex; align-items: center; margin: 0;">
+                        <button type="submit" class="btn btn-link p-0 d-flex align-items-center" style="border: none; background: none; text-decoration: none;">
+                            <img src="~/imgs/Logout.png" alt="Logout" class="icone me-3">
+                            Sair
+                        </button>
+                    </form>
                 </p>
             </div>
         </div>

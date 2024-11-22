@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cUHJvZHV0b3NGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/AlterarProdutosF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbHRlcmFyUHJvZHV0b3NGLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/CancelamentoEfetuado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYW5jZWxhbWVudG9FZmV0dWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -120,6 +124,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/ProdutosDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdXRvc0Rldm9sdWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/ProdutosF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdXRvc0YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/TermoCancelamento.cshtml]

@@ -75,6 +75,7 @@
         Procedure para filtrar os produtos por habilidade
         Procedure para Consultar os produtos no carrinho
         Procedure para Selecionar os produtos favoritados do usuário
+        Procedure para selecionar as avaliações unicas do cliente
 		View para unificar as informações do pedido
 		Procedure para Selecionar todos os pedidos do usuário
 		Procedure para Selecionar os detalhes do pedido
@@ -86,6 +87,7 @@
         Consulta da quantidade de pedidos pendentes
         Consulta da quantidade de produtos esgotados
         Consulta da quntidade de pedidos cancelados
+        
 	Inserção de Dados
 		Inserção das Categorias
 		Inserção das Classificação Indicativa
@@ -888,10 +890,6 @@ End $$
 	Procedures de Exclusão (Delete)
 */
 
-
-
-
-
 -- Sessão de Exclusão de Favoritos --
 Delimiter $$
 Create Procedure spDeleteTbFavorito(
@@ -1111,6 +1109,14 @@ Create Procedure spSelectTbAvaliacao(vCodProd decimal(14,0))
 Begin
 	Select * from tbAvaliacao where codProd = vCodProd;
 End $$
+
+-- Procedure para selecionar as avaliações unicas do cliente --
+Delimiter $$
+Create Procedure spSelectTbAvaliacaoUnica(vCodProd decimal(14,0), vcodLogin int)
+Begin
+	Select * from tbAvaliacao where codProd = vCodProd and codLogin= vcodLogin;
+End $$
+
 
 -- Procedure de validação do login --
 Create Procedure spSelectTbLogin(vUsuario varchar(200), vSenha varchar(20))

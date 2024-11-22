@@ -6,4 +6,6 @@ namespace edutico.Repositorio
     {
         Login Login(string usuario, string senha);
     }
+
+
 }

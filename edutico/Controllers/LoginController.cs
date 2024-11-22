@@ -48,5 +48,16 @@ namespace edutico.Controllers
             }
 
         }
+
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            // Remove todos os dados da sessão
+            HttpContext.Session.Clear();
+
+            // Redireciona para a tela de login
+            return RedirectToAction("Login", "Login");
+        }
+
     }
 }

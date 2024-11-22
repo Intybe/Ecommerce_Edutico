@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vtfrBV73QhJq5TwXNKKVfZcIkdMEShh8BaocbowSMTw=",
+  "Hash": "hbr5orpvO7Kq0+tYPPJINOzkQ8odXK2mzNeVBVrjJVk=",
   "Source": "edutico",
   "BasePath": "_content/edutico",
   "Mode": "Default",
@@ -1611,6 +1611,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\produtos\\carrinho_1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\2\\edutico\\wwwroot\\imgs\\produtos\\carrinho_1.png",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\2\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/produtos/carrinho_1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\produtos\\carrinho_1.png"
     },
     {
       "Identity": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\2\\edutico\\wwwroot\\imgs\\produtos\\carrinhp_1.png",

@@ -7,5 +7,6 @@
         public string comentario { get; set; }
         public Cliente cliente { get; set; }
         public decimal codProd { get; set; }
+        
     }
 }

@@ -18,5 +18,9 @@ namespace edutico.Repositorio
         IEnumerable<Produto> ConsultarProdutoF();
 
         void AtualizarStatusProduto(decimal codProd, int statusProd);
+
+        void DeletarAvaliacao(int codLogin, int codAvaliacao);
+
+        Avaliacao ConsultarAvaliacaoCliente(decimal codProd, int codLogin);
     }
 }
