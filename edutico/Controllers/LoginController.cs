@@ -59,5 +59,27 @@ namespace edutico.Controllers
             return RedirectToAction("Login", "Login");
         }
 
+ 
+        public IActionResult AlterarSenha(string novaSenha, string confirmarSenha, string usuario)
+        {
+            if (novaSenha != confirmarSenha)
+            {
+                ViewData["msg"] = "As senhas não coincidem.";
+                return View();
+            }
+                // Obter o codLogin pelo e-mail
+                decimal codLogin = _loginRepositorio.ObterCodLoginPorUsuario(usuario);
+
+                // Chama o método do repositório para alterar a senha
+                _loginRepositorio.AlterarSenha(codLogin, novaSenha);
+
+                return RedirectToAction("Login");
+        }
+
+        public IActionResult EsqueceuSenha()
+        {
+            return View();
+        }
+
     }
 }

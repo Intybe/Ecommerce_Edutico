@@ -50,7 +50,54 @@ namespace edutico.Repositorio
                 // Fecha a conexão com o Banco de Dados
                 conexao.DesconectarBD();
                 return login;
+            }   
+        }
+
+        public decimal ObterCodLoginPorUsuario(string usuario)
+        {
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            string sql = "SELECT codLogin FROM tbLogin WHERE usuario = @usuario";
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+            cmd.Parameters.AddWithValue("@usuario", usuario);
+
+            object result = cmd.ExecuteScalar();
+            con.DesconectarBD();
+
+            if (result != null)
+            {
+                return Convert.ToDecimal(result);
             }
+            else
+            {
+                throw new Exception("Usuário não encontrado.");
+            }
+        }
+
+
+
+        public void AlterarSenha(decimal codLogin, string Senha)
+        {
+            // Cria variável de conexão com o Banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que recebe o comando SQL
+            string sql = "Call spUptade_SenhaCli(@codLogin, @Senha);";
+
+            // Junta o comando SQL com as informações do banco
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribuindo valores aos parâmetros
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+            cmd.Parameters.AddWithValue("@Senha", Senha);
+
+            // Executa o comando no banco de dados
+            cmd.ExecuteNonQuery();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
         }
 
     }

@@ -133,10 +133,7 @@ namespace edutico.Controllers
             return View();
         }
 
-        public IActionResult EsqueceuSenha()
-        {
-            return View();
-        }
+      
 
 
 

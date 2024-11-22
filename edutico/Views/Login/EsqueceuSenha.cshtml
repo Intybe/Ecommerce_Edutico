@@ -1,0 +1,33 @@
+﻿@model edutico.Models.Login
+
+@{
+    ViewData["Title"] = "Esqueceu a Senha";
+}
+<div class="imgBolas">
+    <div class="container containerSenha">
+        <div class="TxtNovaSenha">
+            <p>Digite aqui sua nova senha!</p>
+        </div>
+        <form method="post" asp-controller="Login" asp-action="AlterarSenha">
+                <div class="form-senha">
+                    <label for="usuario">E-mail ou Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite aqui seu e-mail" required>
+                </div>
+
+                <div class="form-senha">
+                    <label for="novaSenha">Senha nova</label>
+                    <input type="password" id="novaSenha" name="novaSenha" placeholder="Digite aqui sua senha nova" required>
+                </div>
+
+                <div class="form-senha">
+                    <label for="confirmarSenha">Confirme a senha</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Digite aqui sua senha nova novamente" required>
+                </div>
+
+                <div class="button-senha">
+                    <button type="submit" class="btn ConfirmarSenha-btn">Confirmar nova senha</button>
+                </div>
+        </form>
+
+    </div>
+</div>

@@ -86,10 +86,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZvbHVjb2VzRi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/EsqueceuSenha.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFc3F1ZWNldVNlbmhhLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/FavoritosF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3NGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -136,6 +132,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Home/TermoDevolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtb0Rldm9sdWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Login/EsqueceuSenha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRXNxdWVjZXVTZW5oYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/flavi/OneDrive/Anexos/Edutico/2/edutico/Views/Login/Login.cshtml]
