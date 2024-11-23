@@ -98,7 +98,7 @@
 
                                     @if (produto.avaliacoes != null && produto.avaliacoes.Any())
                                     {
-                                        <p class="text mb-3 small-text">
+                                        <p class="text mb-2 small-text">
                                             <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
                                         </p>
                                     }

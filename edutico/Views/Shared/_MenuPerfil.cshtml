@@ -1,4 +1,4 @@
-﻿   <!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -48,7 +48,7 @@
             </div>
         </nav>
     </header>
-    <div class="container d-flex  justify-content-center " style="min-height:80vh;">
+    <div class="container d-flex justify-content-between " style="min-height:80vh;">
         <div class="position-relative">
             <div class="MinhaConta align-items-center py-4">
                 <div class="MenuLateral">
@@ -78,12 +78,10 @@
                         </a>
                     </p>
                     <p class="Botoes align-items-center">
-                        <form method="post" asp-controller="Login" asp-action="Logout" style="display: inline;">
-                            <button type="submit" class="btn btn-link p-0" style="border: none; background: none;">
-                                <img src="~/imgs/sair.png" alt="Logout" class="icon me-3">
-                                Sair
-                            </button>
-                        </form>
+                        <a asp-controller="Login" asp-action="Login">
+                            <img src="~/imgs/sair.png" alt="Logout" class="icon me-3">
+                            Sair
+                        </a>
                     </p>
                 </div>
             </div>
@@ -92,7 +90,7 @@
             </div>
         </div>
 
-        <div class="col-9 mb-4">
+        <div class="container mb-4">
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>

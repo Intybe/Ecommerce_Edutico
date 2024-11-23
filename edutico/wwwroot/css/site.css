@@ -27,8 +27,8 @@ html, body {
     background-color: #FFFEF3;
 }
 
-h5{
-    margin-bottom:5px;
+h5 {
+    margin-bottom: 5px;
 }
 
 /*Tela inicial*/
@@ -1068,13 +1068,14 @@ input[type='radio']:checked + .custom-radio span { /* o "+"  é um seletor que ab
     font-family: 'Glacial Bold';
     font-size: 20px;
 }
+
 .base-cartao-com .info-grup {
     margin-block: 10px;
     height: auto;
     padding-block: 10px;
 }
 
-   .base-cartao-com .info-grup input {
+    .base-cartao-com .info-grup input {
         border-radius: 10px;
         padding: 5px 10px;
         border: 1px solid gray;
@@ -1095,6 +1096,7 @@ input[type='radio']:checked + .custom-radio span { /* o "+"  é um seletor que ab
             border: 1px solid blue;
             outline: none;
         }
+
 .vercartao {
     background: transparent;
     border: none;
@@ -1226,6 +1228,7 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é 
     height: auto;
     padding-block: 10px;
 }
+
     .info-grup input {
         border-radius: 10px;
         padding: 5px 10px;
@@ -1342,4 +1345,3 @@ html {
 body {
     margin-bottom: 60px;
 }
-

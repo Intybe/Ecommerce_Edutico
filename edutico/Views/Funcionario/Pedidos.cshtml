@@ -43,6 +43,7 @@
                     <tr>
                         <td>@pedido.NF</td>
                         <td>
+                            @*<span><img src="~/imgs/montamonta.jpg" class="prevproduto" /></span>*@
                             @if (pedido.itensPedido.First().produto.nomeProd.Length > 17)
                             {
                                 @pedido.itensPedido.First().produto.nomeProd.Substring(0,17)
@@ -58,7 +59,7 @@
                         <td>@pedido.data.ToString("dd/MM/yyyy")</td>
                         <td>@primeiroNome @ultimoSobrenome</td>
                         <td>@pedido.statusPedido</td>
-                        <td><a asp-controller="Home" asp-action="DetalhesPedidoEmAndamentoF">Detalhes</a></td>
+                        <td><a asp-controller="Home" asp-action="DetalhesPedidoF" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
                     </tr>
                 }
             </tbody>

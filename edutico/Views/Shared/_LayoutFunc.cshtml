@@ -24,7 +24,7 @@
                 <!-- Adicionei w-100 para ocupar toda a largura -->
                 <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "DashBoard" ? "active" : "")">
                     <!-- Alinhei ícones e texto -->
-                    <a asp-controller="Funcionario" asp-action="Dashboard">
+                    <a asp-controller="Funcionario" asp-action="DashBoard">
                         <img src="~/imgs/Dashboard.png" alt="Dashboard" class="icone me-3"> <!-- Adicionei me-2 para espaçar -->
                         Dashboard
                     </a>
@@ -40,31 +40,23 @@
                 </p>
 
 
-                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "PedidosAndamentoF" ? "active" : "")">
+                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "Pedidos" ? "active" : "")">
                     <a asp-controller="Funcionario" asp-action="Pedidos">
                         <img src="~/imgs/Notification.png" alt="Notification" class="icone me-3">
                         Pedidos
                     </a>
                 </p>
-                <p class="d-flex align-items-center  @((ViewContext.RouteData.Values["action"] as string) == "DevolucoesF" ? "active" : "")">
-                    <a asp-controller="Home" asp-action="DevolucoesF">
-                        <img src="~/imgs/Devolucao.png" alt="Devolucao" class="icone me-3">
-                        Devolução
+
+                    <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "Favoritados" ? "active" : "")">
+                    <a asp-controller="Funcionario" asp-action="Favoritados">
+                        <img src="~/imgs/favoritosdash.png" alt="Notification" class="icone me-3">
+                        Favoritados
                     </a>
                 </p>
-                <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "HistoricoVendasF" ? "active" : "")">
-                    <a asp-controller="Home" asp-action="HistoricoVendasF">
-                        <img src="~/imgs/Historico.png" alt="Historico" class="icone me-3">
-                        Histórico de Vendas
-                    </a>
-                </p>
+
                 <p class="d-flex align-items-center">
-                    <form method="post" asp-controller="Login" asp-action="Logout" style="display: flex; align-items: center; margin: 0;">
-                        <button type="submit" class="btn btn-link p-0 d-flex align-items-center" style="border: none; background: none; text-decoration: none;">
-                            <img src="~/imgs/Logout.png" alt="Logout" class="icone me-3">
-                            Sair
-                        </button>
-                    </form>
+                    <img src="~/imgs/Logout.png" alt="Logout" class="icone me-3">
+                    Sair
                 </p>
             </div>
         </div>

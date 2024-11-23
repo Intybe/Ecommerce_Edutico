@@ -36,11 +36,11 @@
                     <tr>
                         <td>@produto.codProd</td>
                         <td>
-                            <span><img src="@Url.Content(produto.imgs.First().enderecoImg)" /></span>
+                            <span><img src="@Url.Content(produto.imgs.First().enderecoImg)" class="prevproduto" /></span>
 
-                            @if (produto.nomeProd.Length > 20)
+                            @if (produto.nomeProd.Length > 17)
                             {
-                                @produto.nomeProd.Substring(0, 20)
+                                @produto.nomeProd.Substring(0, 17)
 
                                 <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
                             }
