@@ -24,7 +24,7 @@
                 <!-- Adicionei w-100 para ocupar toda a largura -->
                 <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "DashBoard" ? "active" : "")">
                     <!-- Alinhei ícones e texto -->
-                    <a asp-controller="Home" asp-action="DashBoard">
+                    <a asp-controller="Funcionario" asp-action="Dashboard">
                         <img src="~/imgs/Dashboard.png" alt="Dashboard" class="icone me-3"> <!-- Adicionei me-2 para espaçar -->
                         Dashboard
                     </a>
@@ -41,7 +41,7 @@
 
 
                 <p class="d-flex align-items-center @((ViewContext.RouteData.Values["action"] as string) == "PedidosAndamentoF" ? "active" : "")">
-                    <a asp-controller="Home" asp-action="PedidosAndamentoF">
+                    <a asp-controller="Funcionario" asp-action="Pedidos">
                         <img src="~/imgs/Notification.png" alt="Notification" class="icone me-3">
                         Pedidos
                     </a>

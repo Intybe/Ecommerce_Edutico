@@ -1,3 +1,5 @@
+Use dbEdutico;
+
 -- Inserção dos Clientes --
 Delimiter $$
  	Call spInsertTbCliente(10399833309, 'Cleia', 'Santana Alves', 11966163308, 'cleia@gmail.com', 'teste@123', 'Rua Angelina', 'Latrim', 'Rio de Janeiro','RJ', '12345058', 91, 'Residência');

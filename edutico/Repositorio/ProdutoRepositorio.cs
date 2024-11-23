@@ -414,11 +414,6 @@ namespace edutico.Repositorio
             con.DesconectarBD();
         }
 
-
-        
-
-
-
         public IEnumerable<Produto> ConsultarProdutoPesquisa(string pesquisa)
         {
             // Cria variável de Conexão com o Banco de Dados
@@ -484,6 +479,169 @@ namespace edutico.Repositorio
 
             // Fecha a conexão com o banco de dados
             con.DesconectarBD();
+        }
+
+        public Dashboard ConsultarInfosEcommerce()
+        {
+            // Cria variável de Conexão com o Banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Vairável que recebe o comando SQL
+            string sql = "Select * from vwInfosEcommerce;";
+
+            // Junta o comando SQL com a informações do banco
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Executa e lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Criando um objeto do tipo Dashboard
+            Dashboard infos = new Dashboard();
+
+            if (dr.Read())
+            {
+                infos.pedidosPendentes = Convert.ToInt32(dr["pendentes"]);
+                infos.qtdFavoritos = Convert.ToInt32(dr["qtdFavoritos"]);
+                infos.qtdVendasAtual = Convert.ToInt32(dr["VendasMesAtual"]);
+                infos.qtdVendasAnterior = Convert.ToInt32(dr["VendasMesAnterior"]);
+                infos.produtosEsgotados = Convert.ToInt32(dr["ProdutosEsgotados"]);
+            }
+
+            // Fechar o DataReader antes de executar outro comando
+            dr.Close();
+
+            // Vairável que recebe o comando SQL
+            sql = "Call spSelectDashboardProdutos();";
+
+            // Junta o comando SQL com a informações do banco
+            cmd = new MySqlCommand(sql, conexao);
+
+            // Executa e lê os dados retornados pela query SQL
+            dr = cmd.ExecuteReader();
+
+            // Cria uma lista de objetos Produtos
+            infos.maisVendidos = new List<Produto>();
+
+            // Enquanto houver resultados
+            while (dr.Read())
+            {
+                // Cria um objeto produto usando construtor
+                Produto produto = new Produto(
+                    Convert.ToDecimal(dr["codProd"]),
+                    dr["nomeProd"].ToString(),
+                    Convert.ToDecimal(dr["valorUnit"]),
+                    dr["img"].ToString(),
+                    Convert.ToInt32(dr["qtdVendas"]),
+                    Convert.ToDecimal(dr["valorVendas"])
+                );
+
+                // Adiciona o produto na Lista 
+                infos.maisVendidos.Add(produto);
+            }
+
+            // Fechar o DataReader
+            dr.Close();
+
+            // Vairável que recebe o comando SQL
+            sql = "Select * from vwdadosGrafico;";
+
+            // Junta o comando SQL com a informações do banco
+            cmd = new MySqlCommand(sql, conexao);
+
+            // Executa e lê os dados retornados pela query SQL
+            dr = cmd.ExecuteReader();
+
+            // Inicializa as listas
+            infos.vendaDiaria = new List<decimal>();
+            infos.vendaSemanal = new List<decimal>();
+            infos.vendaMensal = new List<decimal>();
+
+            // Enquanto houver resultados
+            while (dr.Read())
+            {
+                // Adiciona os valores na lista decimal, sendo dom o índice zero e assim por diante
+                infos.vendaDiaria.Add(Convert.ToDecimal(dr["dom"]));
+                infos.vendaDiaria.Add(Convert.ToDecimal(dr["seg"]));
+                infos.vendaDiaria.Add(Convert.ToDecimal(dr["ter"]));
+                infos.vendaDiaria.Add(Convert.ToDecimal(dr["qua"]));
+                infos.vendaDiaria.Add(Convert.ToDecimal(dr["qui"]));
+                infos.vendaDiaria.Add(Convert.ToDecimal(dr["sex"]));
+                infos.vendaDiaria.Add(Convert.ToDecimal(dr["sab"]));
+                infos.totalVendaSemanal = infos.vendaDiaria.Sum();
+
+                // Adiciona os valores na lista decimal, sendo semana1 o índice zero e assim por diante
+                infos.vendaSemanal.Add(Convert.ToDecimal(dr["semana1"]));
+                infos.vendaSemanal.Add(Convert.ToDecimal(dr["semana2"]));
+                infos.vendaSemanal.Add(Convert.ToDecimal(dr["semana3"]));
+                infos.vendaSemanal.Add(Convert.ToDecimal(dr["semana4"]));
+                infos.vendaSemanal.Add(Convert.ToDecimal(dr["semana5"]));
+                infos.totalVendaMensal = infos.vendaSemanal.Sum();
+
+                // Adiciona os valores na lista decimal, sendo janeiro o índice zero e assim por diante
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["janeiro"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["fevereiro"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["marco"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["abril"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["maio"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["junho"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["julho"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["agosto"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["setembro"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["outubro"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["novembro"]));
+                infos.vendaMensal.Add(Convert.ToDecimal(dr["dezembro"]));
+                infos.totalVendaAnual = infos.vendaMensal.Sum();
+            }
+
+            // Fechar o DataReader
+            dr.Close();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna as informações necessários do Dashboard
+            return infos;
+        }
+
+        public List<Produto> ConsultarProdutosFavoritos()
+        {
+            // Cria variável de Conexão com o Banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Vairável que recebe o comando SQL
+            string sql = "Call spSelectFavoritosFuncionario();";
+
+            // Junta o comando SQL com a informações do banco
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Executa e lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Criando um objeto do tipo Dashboard
+            List<Produto> produtos = new List<Produto>();
+
+            while (dr.Read())
+            {
+                Produto produto = new Produto(
+                    Convert.ToDecimal(dr["codProd"]),
+                    dr["nomeProd"].ToString(),
+                    Convert.ToDecimal(dr["valorUnit"]),
+                    dr["img"]?.ToString(),
+                    Convert.ToInt32(dr["qtdfavorito"])
+                );
+                produtos.Add(produto);
+            }
+
+            // Fecha o leitor do produto
+            dr.Close();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna o produto (ou null se não for encontrado)
+            return produtos;
         }
     }
 }

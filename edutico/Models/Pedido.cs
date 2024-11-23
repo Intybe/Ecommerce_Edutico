@@ -15,14 +15,16 @@
 
 
         // Construtor para criar prévia dos pedidos 
-        public Pedido(int NF, DateTime dataPedido, int statusPedido, decimal valorTotal, string itensPedido)
+        public Pedido(int NF, DateTime dataPedido, int codLogin, int statusPedido, decimal valorTotal, string itensPedido)
         {
             this.NF = NF;
             this.data = dataPedido;
+            this.cliente = new Cliente { codLogin = codLogin };
             this.statusPedido = statusPedido;
             this.valorTotal = valorTotal;
             this.itensPedido = ParseItemPedido(itensPedido);
         }
+
 
         // Método para converter a string em obejtos ItemPedido
         public List<ItemPedido> ParseItemPedido(string itensPedidoBD)

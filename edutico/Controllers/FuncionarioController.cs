@@ -10,17 +10,19 @@ namespace edutico.Controllers
 {
     public class FuncionarioController : Controller
     {
-        private IProdutoRepositorio? _produtoRepositorio;
-        private readonly LoginSessao _loginSessao;
         private readonly ILogger<FuncionarioController> _logger;
+        private IProdutoRepositorio? _produtoRepositorio;
+        private readonly IPedidoRepositorio _pedidoRepositorio;
+        private readonly LoginSessao _loginSessao;
+        private IClienteRepositorio? _clienteRepositorio;
 
-        //construtor - para iniciar
-        public FuncionarioController(ILogger<FuncionarioController> logger, IProdutoRepositorio produtoRepositorio, LoginSessao loginSessao)
+        public FuncionarioController(ILogger<FuncionarioController> logger, IProdutoRepositorio produtoRepositorio, IPedidoRepositorio pedidoRepositorio, LoginSessao loginSessao, IClienteRepositorio clienteRepositorio)
         {
             _logger = logger;
             _produtoRepositorio = produtoRepositorio;
+            _pedidoRepositorio = pedidoRepositorio;
             _loginSessao = loginSessao;
-
+            _clienteRepositorio = clienteRepositorio;
         }
 
         public IActionResult ProdutosF()
@@ -72,8 +74,6 @@ namespace edutico.Controllers
             return View("ProdutosF", produtos);
         }
 
-
-
         public IActionResult AlterarProdutosF(decimal codProd)
         {
             //puxando informaões    
@@ -83,6 +83,33 @@ namespace edutico.Controllers
             // Simulando a lista de categorias (você pode buscar isso do banco de dados)
 
             return View(produto);
+        }
+
+        public IActionResult Dashboard()
+        {
+            var dashboard = _produtoRepositorio.ConsultarInfosEcommerce();
+
+            return View(dashboard);
+        }
+
+        public IActionResult Pedidos()
+        {
+
+            List<Pedido> pedidos = _pedidoRepositorio.ConsultarPedidos();
+
+            foreach (var pedido in pedidos)
+            {
+                pedido.cliente = _clienteRepositorio.ConsultarCliente(pedido.cliente.codLogin);
+            }
+
+            return View(pedidos);
+        }
+
+        public IActionResult Favoritados()
+        {
+            List<Produto> produtos = _produtoRepositorio.ConsultarProdutosFavoritos();
+
+            return View(produtos);
         }
     }
 }

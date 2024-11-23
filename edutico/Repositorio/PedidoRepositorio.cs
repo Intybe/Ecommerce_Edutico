@@ -113,6 +113,50 @@ namespace edutico.Repositorio
             return pedidos;
         }
 
+        // Método para consultar todos os pedidos (Funcionário)
+        public List<Pedido> ConsultarPedidos()
+        {
+            // Cria a variável de conexão com o banco de dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que armazena o comando SQL
+            string sql = "Call spSelectPedidos();";
+
+            // Transforma em um comando SQL com a classe de conexão e adiciona os parâmetros
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Lê os dados retornados pelo comando SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Cria a Lista de Pedidos Vazia
+            List<Pedido> pedidos = new List<Pedido>();
+
+            // Enquanto houver resultados
+            while (dr.Read())
+            {
+                Pedido pedido = new Pedido(
+                    Convert.ToInt32(dr["NF"]),
+                    Convert.ToDateTime(dr["data"]),
+                    Convert.ToInt32(dr["codLogin"]),
+                    Convert.ToInt32(dr["statusPedido"]),
+                    Convert.ToDecimal(dr["valorTotal"]),
+                    dr["itensPedido"].ToString()
+                );
+
+                pedidos.Add(pedido);
+            }
+
+            // Fecha o leitor do produto
+            dr.Close();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna os pedidos (ou null se não for encontrado)
+            return pedidos;
+        }
+
         public List<Pedido> ConsultarPedidosFiltros(int codLogin, int statusPedido)
         {
             // Cria a variável de conexão com o banco de dados
@@ -196,6 +240,7 @@ namespace edutico.Repositorio
                 pedido = new Pedido(
                     Convert.ToInt32(dr["NF"]),
                     Convert.ToDateTime(dr["data"]),
+                    Convert.ToInt32(dr["codLogin"]),
                     Convert.ToInt32(dr["statusPedido"]),
                     Convert.ToDecimal(dr["valorTotal"]),
                     dr["itensPedido"].ToString()

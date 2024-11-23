@@ -42,8 +42,7 @@ namespace edutico.Repositorio
                         Convert.ToInt32(dr["qtdAvaliacao"]),
                         Convert.ToInt32(dr["somaAvaliacao"]),
                         dr["imgs"].ToString(),
-                        statusProd: Convert.ToBoolean(dr["statusProd"])
-
+                        Convert.ToBoolean(dr["statusProd"])
                     )
                 };
 

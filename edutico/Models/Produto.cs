@@ -40,8 +40,9 @@ namespace edutico.Models
         public int qtdAvaliacao { get; set; }
         public int somaAvaliacao { get; set; }
         public List<Produto> relacionados { get; set; }
-        public List<CategoriaView> ListaCategorias { get; internal set; }
-
+        public int qtdVendas { get; set; }
+        public decimal valorVendas { get; set; }
+        public int qtdFavorito { get; set; }
 
 
         // Construtor genérico
@@ -68,6 +69,16 @@ namespace edutico.Models
             this.imgs = ParseImagens(imgsConcatenadas);
         }
 
+        // Construtor para produtos favoritos (Fuuncionário)
+        public Produto(decimal codProd, string nomeProd, decimal valorUnit, string imgsConcatenadas, int qtdFavorito)
+        {
+            this.codProd = codProd;
+            this.nomeProd = nomeProd;
+            this.valorUnit = valorUnit;
+            this.imgs = ParseImagens(imgsConcatenadas);
+            this.qtdFavorito = qtdFavorito;
+        }
+
         // Construtor de detalhes do produto
         public Produto(
             decimal codProd,
@@ -75,7 +86,6 @@ namespace edutico.Models
             string descricao,
             string classificacao,
             string categoria,
-
             string habilidadesConcatenadas,
             decimal valorUnit,
             int estoque,
@@ -128,6 +138,17 @@ namespace edutico.Models
             this.valorUnit = valorUnit;
             this.estoque = estoque;
             this.lancamento = lancamento;
+        }
+
+        // Construtor para prévia dos produtos no dashboard
+        public Produto(decimal codProd, string nomeProd, decimal valorUnit, string imgsConcatenadas, int qtdVendas, decimal valorVendas)
+        {
+            this.codProd = codProd;
+            this.nomeProd = nomeProd;
+            this.valorUnit = valorUnit;
+            this.qtdVendas = qtdVendas;
+            this.valorVendas = valorVendas;
+            this.imgs = ParseImagens(imgsConcatenadas);
         }
 
 

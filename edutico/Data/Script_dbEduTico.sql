@@ -1,14 +1,14 @@
-/*						SUMÁRIO
-	Para utilizar basta copiar o título da área que deseja ir, precionar
+/*                      SUMÁRIO
+    Para utilizar basta copiar o título da área que deseja ir, pressionar
     Ctrl+F, colar na barra de pesquisa e dar um Enter.
 
-	Criando Database
+    Criando Database
     Criado as Tabelas
     Adicionando as chaves estrangeiras
-		FK tbCliente
+        FK tbCliente
         FK tbEndereco
         FK tbProduto
-		FK tbHabilidade_Produto
+        FK tbHabilidade_Produto
         FK tbImagem
         FK tbFavorito
         FK tbAvaliacao
@@ -18,14 +18,14 @@
         FK tbDevolucao
         FK tbPagamento
         FK tbCartaoCredito
-	Procedures de Cadastro (Insert)
-		Sessão Cadastro de Cliente
+    Procedures de Cadastro (Insert)
+        Sessão Cadastro de Cliente
         Sessão Cadastro de Categoria de Produto
         Sessão Cadastro de Classificação Indicativa do Produto
         Sessão de Cadastro de Habilidade trabalhada do Produto
-		Sessão de Cadastro da tabela Habilidade_Produto pois era relacionamento N:N
+        Sessão de Cadastro da tabela Habilidade_Produto pois era relacionamento N:N
         Sessão de Cadastro de Produtos
-        Sessão de Casdastro da Imagem do Produto
+        Sessão de Cadastro da Imagem do Produto
         Sessão de Cadastro dos Produtos favoritos
         Sessão de Cadastro de Produtos no Carrinho
         Sessão de Cadastro de Pedidos
@@ -34,7 +34,7 @@
         Sessão de Cadastro do Pagamento do Pedido
         Sessão de Cadastro de Avaliações
         Sessão de Cadastro de Devoluções
-	Procedures Alterações (Update)
+    Procedures Alterações (Update)
         Sessão de Atualização da Senha
         Sessão de Atualização da Quantidade Carrinho
         Sessão de Atualização dos Dados do Cliente (Informações Pessoais)
@@ -45,22 +45,22 @@
         Sessão de Atualização das Imagens do Produto
         Sessão de Atualização de Avaliações
         Sessão de Atualização do Status da devolução
-		Sessão de Ativação do Produto
-		Sessão de Atualização de Status do Produto
-	Procedures de Exclusão (Delete)
-		Sessão de Exclusão do Produto
-		Sessão de Exclusão de Favoritos
+        Sessão de Ativação do Produto
+        Sessão de Atualização de Status do Produto
+    Procedures de Exclusão (Delete)
+        Sessão de Exclusão do Produto
+        Sessão de Exclusão de Favoritos
         Sessão de Exclusão de Avaliação
         Sessão de Exclusão de Produtos do Carrinho
-	Triggers
-		Sessão de Redução de estoque
-		Sessão de Deletar os produtos do carrinho após realização do pedido
-	Views e Consultas
-		View para unificar as informações do produto
+    Triggers
+        Sessão de Redução de estoque
+        Sessão de Deletar os produtos do carrinho após realização do pedido
+    Views e Consultas
+        View para unificar as informações do produto
         Procedure para Selecionar os Produtos do Funcionario
         Procedure para Selecionar os Produtos Relacionados
-		Procedure para Selecionar os Produtos Lancamentos
-		Procedure para Selecionar os Detalhes Produtos
+        Procedure para Selecionar os Produtos Lancamentos
+        Procedure para Selecionar os Detalhes Produtos
         View para selecionar os produtos mais vendidos
         Consulta para obter as informações dos produtos mais vendidos
         View para selecionar os produtos mais favoritado
@@ -70,15 +70,15 @@
         Procedure de validação do login
         View para unificar os dados do Cliente
         Procedure para selecionar os cartões de um cliente
-        Procedure para filtrar produtos por classifcação
+        Procedure para filtrar produtos por classificação
         Procedure para filtrar produto por categoria
         Procedure para filtrar os produtos por habilidade
         Procedure para Consultar os produtos no carrinho
         Procedure para Selecionar os produtos favoritados do usuário
-        Procedure para selecionar as avaliações unicas do cliente
-		View para unificar as informações do pedido
-		Procedure para Selecionar todos os pedidos do usuário
-		Procedure para Selecionar os detalhes do pedido
+        View para unificar as informações do pedido
+        Procedure para Selecionar todos os pedidos do usuário
+        Procedure para Selecionar todos os pedidos
+        Procedure para Selecionar os detalhes do pedido
         Consulta para contar a quantidade de vendas no mês
         Consulta para contar a quantidade de vendas em R$ no mês
         Consulta para contar a quantidade de vendas em R$ no ano
@@ -86,13 +86,19 @@
         Consulta da quantidade de devoluções
         Consulta da quantidade de pedidos pendentes
         Consulta da quantidade de produtos esgotados
-        Consulta da quntidade de pedidos cancelados
-        
-	Inserção de Dados
-		Inserção das Categorias
-		Inserção das Classificação Indicativa
-		Inserção da Habilidade do Produto
+        Consulta da quantidade de pedidos cancelados
+	DashBoard
+		View para Selecionar Previa dos Produtos do DashBoard
+        Procedure para Selecionar os produtos mais vendidos
+        View para juntar as informações superiores do Dashboard
+        View para Unificar os dados do gráfico
+        Procedure para selecioanar o produtos favoritos do funcionário
+    Inserção de Dados
+        Inserção das Categorias
+        Inserção das Classificação Indicativa
+        Inserção da Habilidade do Produto
 */
+
 
 -- Criando Database --
 Drop database if exists dbEduTico;
@@ -1224,11 +1230,101 @@ Begin
 	Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where codLogin = vCodLogin;
 End $$
 
+-- Procedure para Selecionar todos os pedidos (Funcionário) --
+Delimiter $$
+Create Procedure spSelectPedidos()
+Begin
+	Select * from vwPedido;
+End $$
+
 -- Procedure para Selecionar os detalhes do Pedido --
 Delimiter $$
 Create Procedure spSelectDetalhesPedido(vNF int)
 Begin
 	Select * from vwPedido where NF = vNF;
+End $$
+
+
+/* DashBoard */
+
+
+-- View para Selecionar Previa dos Produtos do DashBoard --
+Delimiter $$
+Create View vwDashboardProduto As
+Select
+    tbProduto.codProd,
+    tbProduto.nomeProd,
+    tbProduto.valorUnit,
+    CONCAT((Select nomeImg from tbImagem where codProd = tbItemPedido.codProd limit 1), ' -- ', (Select enderecoImg from tbImagem where codProd = tbItemPedido.codProd limit 1))As 'img',
+    Sum(valorItem) As valorVendas,
+    Sum(qtdItem) As qtdVendAs
+from tbItemPedido
+	Inner Join tbPedido On tbPedido.NF = tbItemPedido.NF
+    Inner Join tbPagamento On tbPagamento.NF = tbPedido.NF
+    Inner Join tbProduto On tbProduto.codProd = tbItemPedido.codProd
+Group by tbProduto.codProd;
+$$
+
+-- Procedure para Selecionar os produtos mais vendidos --
+Delimiter $$
+Create Procedure spSelectDashboardProdutos()
+Begin
+	Select * from vwDashboardProduto order by qtdVendas limit 10;
+End $$
+
+-- View para juntar as informações superiores do Dashboard --
+Delimiter $$
+Create View vwInfosEcommerce As
+Select
+	(Select Count(*) from tbPedido where statusPedido = 1) As 'pendentes',
+	(Select Count(*) from tbFavorito) As 'qtdFavoritos',
+    (Select Count(*) from tbPagamento Join tbPedido On tbPedido.NF = tbPagamento.NF where MONTH(data) = MONTH(CURRENT_DATE()) And Year(data) = Year(CURRENT_DATE())) As 'VendAsMesAtual',
+	(Select Count(*) from tbPagamento Join tbPedido On tbPedido.NF = tbPagamento.NF where MONTH(data) = MONTH(DATE_SUB(CURRENT_DATE(), INTERVAL 1 MONTH)) And Year(data) = Year(DATE_SUB(CURRENT_DATE(), INTERVAL 1 MONTH))) As 'VendAsMesAnterior',
+	(Select Count(*) from tbProduto where estoque = 0) As 'ProdutosEsgotados';
+$$
+
+-- View para Unificar os dados do gráfico --
+Delimiter $$
+Create View vwdadosGrafico As
+Select
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) = STR_TO_DATE(COnCAT('2024-', (WEEKOFYEAR(CURDATE()) - 2), '-0'), '%X-%V-%w')), 0) As dom,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) = STR_TO_DATE(COnCAT('2024-', (WEEKOFYEAR(CURDATE()) - 2), '-1'), '%X-%V-%w')), 0) As seg,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) = STR_TO_DATE(COnCAT('2024-', (WEEKOFYEAR(CURDATE()) - 2), '-2'), '%X-%V-%w')), 0) As ter,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) = STR_TO_DATE(COnCAT('2024-', (WEEKOFYEAR(CURDATE()) - 2), '-3'), '%X-%V-%w')), 0) As qua,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) = STR_TO_DATE(COnCAT('2024-', (WEEKOFYEAR(CURDATE()) - 2), '-4'), '%X-%V-%w')), 0) As qui,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) = STR_TO_DATE(COnCAT('2024-', (WEEKOFYEAR(CURDATE()) - 2), '-5'), '%X-%V-%w')), 0) As sex,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) = STR_TO_DATE(COnCAT('2024-', (WEEKOFYEAR(CURDATE()) - 2), '-6'), '%X-%V-%w') ), 0) As sab,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) Between DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-1') And DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-7')), 0) As semana1,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) Between DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-8') And DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-14')), 0) As semana2,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) Between DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-15') And DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-21')), 0) As semana3,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) Between DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-22') And DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-28')), 0) As semana4,
+	IFNULL((Select Sum(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where DATE(data) Between DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-29') And LAsT_DAY(CURDATE() - INTERVAL 1 MONTH)), 0) As semana5,
+	IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 1 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As janeiro,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 2 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As fevereiro,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 3 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As marco,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 4 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As abril,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 5 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As maio,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 6 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As junho,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 7 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As julho,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 8 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As agosto,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 9 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As setembro,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 10 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As outubro,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 11 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As novembro,
+    IFNULL((Select SUM(ValorTotal) from tbPagamento Join tbPedido On tbPagamento.NF = tbPedido.NF where MONTH(data) = 12 And YEAR(data) = YEAR(CURDATE()) - 1), 0) As dezembro;
+$$
+
+-- Procedure para selecioanar o produtos favoritos do funcionário --
+Delimiter $$
+Create Procedure spSelectFavoritosFunciOnario()
+Begin
+	Select
+		vwPreviaProduto.codProd,
+		vwPreviaProduto.nomeProd,
+        vwPreviaProduto.valorUnit,
+		CONCAT((Select nomeImg from tbImagem where codProd = vwPreviaProduto.codProd limit 1), ' -- ', (Select enderecoImg from tbImagem where codProd = vwPreviaProduto.codProd limit 1)) As img,
+		(Select Count(*) from tbFavorito where codProd = vwPreviaProduto.codProd) As qtdFavorito
+	from vwPreviaProduto Inner Join tbFavorito On vwPreviaProduto.codProd = tbFavorito.codProd
+	Group by vwPreviaProduto.codProd;
 End $$
 
 /* Inserção de Dados */
@@ -1273,49 +1369,3 @@ Delimiter $$
     Call spInsertTbHabilidade('Jogos de Cartas');
     Call spInsertTbHabilidade('Jogos Eletrônicos');  
 $$
-
-
-/* REVISAR 
-
--- Consulta para obter as informações dos produtos mais favoritado --
-Select vwProduto.* from vwProduto Inner Join vwProduto_MaisFavoritado On vwProduto.Código = vwProduto_MaisFavoritado.codProd;
-
--- Consulta para contar a quantidade de vendas no mês --
-Select Count(*) As 'Vendas Realizadas esse mês' from tbPagamento 
-	Inner Join tbPedido On tbPagamento.NF = tbPedido.NF 
-where month(data) = Month(Curdate()) 
-	And Year(data) = YEAR(Curdate());
-
--- Consulta para contar a quantidade de vendas em R$ no mês --
-Select Sum(ValorTotal) As 'Total Vendas esse mês' from tbPagamento 
-	Inner Join tbPedido On tbPagamento.NF = tbPedido.NF 
-where month(data) = Month(Curdate()) 
-	And Year(data) = YEAR(Curdate());
-    
--- Consulta para contar a quantidade de vendas em R$ no ano --
-Select Sum(ValorTotal) As 'Total Vendas essa ano' from tbPagamento 
-	Inner Join tbPedido On tbPagamento.NF = tbPedido.NF 
-where Year(data) = YEAR(Curdate());
-
--- Consulta para contar a quantidade de vendas em R$ na semana --
-Select Sum(ValorTotal) As 'Total Vendas essa semana' from tbPagamento 
-	Inner Join tbPedido On tbPagamento.NF = tbPedido.NF 
-where YEARWEEK(data, 1) = YEARWEEK(CURDATE(), 1); 
--- O número 1 indica que a semana começa na Segunda, conforme o padrão ISO --
-
--- Consulta da quantidade de devoluções --
-Select Count(*) As 'Quantidade de devoluções' from tbDevolucao;
-
--- Consulta da quantidade de pedidos pendentes --
-Select Count(*) As 'Quantidade de pedido pendentes' from tbPedido where statusPedido = 1;
-
--- Consulta da quantidade de produtos esgotados --
-Select Count(*) As 'Quantidade de produtos esgotados' from vwProduto where estoque = 0;
-
--- Consulta da quntidade de pedidos cancelados --
-Select Count(*) As 'Quantidade de pedidos cancelados' from tbPedido where statusPedido = 3;
-
--- Consulta para obter as infromações dos produtos mais comentados --
-Select vwProduto.* from vwProduto Inner Join vwProduto_MaisComentado On vwProduto.Código = vwProduto_MaisComentado.codProd;
-
-*/

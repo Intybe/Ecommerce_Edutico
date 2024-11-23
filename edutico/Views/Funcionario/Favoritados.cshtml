@@ -1,0 +1,61 @@
+﻿@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Favoritos Funcionário";
+}
+
+@model List<Produto>;
+
+<section class="container">
+    <!-- base -->
+    <!-- Barra de pesquisa centralizada -->
+    <form class="d-flex justify-content-center align-items-center search-bar">
+        <img src="~/imgs/lupa.png" class="icone" style="height: 18px; width: 18px; opacity: 0.3; margin-left: 10px; margin-top: 5px;">
+        <input class="layout-label" type="search" placeholder="Procurar" aria-label="Search" style="font-family:'Glacial Bold'; opacity: 0.5;">
+
+    </form>
+
+    <section class="PedidosAndamento">
+        <div class="header">
+            <h1>FAVORITOS</h1>
+        </div>
+        <table class="TabelaF">
+            <thead>
+                <tr>
+                    <th>Cod Produto</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Curtidas</th>
+                    <th>Informações</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                @foreach (var produto in Model)
+                {
+                    <tr>
+                        <td>@produto.codProd</td>
+                        <td>
+                            <span><img src="@Url.Content(produto.imgs.First().enderecoImg)" /></span>
+
+                            @if (produto.nomeProd.Length > 20)
+                            {
+                                @produto.nomeProd.Substring(0, 20)
+
+                                <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                            }
+                            else
+                            {
+                                @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                            }
+                        
+                        </td>
+                        <td>R$ @produto.valorUnit.ToString("F2")</td>
+                        <td>@produto.qtdFavorito</td>
+                        <td><a asp-controller="Home" asp-action="DetalhesProdutoF">Detalhes</a></td>
+                    </tr>
+                }
+            </tbody>  
+        </table>
+    </section>
+</section>

@@ -32,7 +32,7 @@ namespace edutico.Controllers
                 if (loginDB.nivelAcesso == 0 || loginDB.nivelAcesso == 1)
                 {
                     _loginSessao.Login(loginDB);
-                    return RedirectToAction("PedidosAndamentoF", "Home");
+                    return RedirectToAction("Dashboard", "Funcionario");
                 }
                 else
                 {
