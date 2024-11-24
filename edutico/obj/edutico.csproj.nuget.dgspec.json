@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Evelyn\\Desktop\\fofa\\Ecommerce_Edutico\\edutico\\edutico.csproj": {}
+    "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\edutico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Evelyn\\Desktop\\fofa\\Ecommerce_Edutico\\edutico\\edutico.csproj": {
+    "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\edutico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Evelyn\\Desktop\\fofa\\Ecommerce_Edutico\\edutico\\edutico.csproj",
+        "projectUniqueName": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\edutico.csproj",
         "projectName": "edutico",
-        "projectPath": "C:\\Users\\Evelyn\\Desktop\\fofa\\Ecommerce_Edutico\\edutico\\edutico.csproj",
+        "projectPath": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\edutico.csproj",
         "packagesPath": "C:\\Users\\Evelyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Evelyn\\Desktop\\fofa\\Ecommerce_Edutico\\edutico\\obj\\",
+        "outputPath": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -8,159 +8,158 @@
 
 <section class="container texto-simples">
     <!-- Seção de cadastro de produtos -->
- 
-        <!-- Cabeçalho da seção -->
-        <div class="header">
-            <h1>CADASTRAR PRODUTOS</h1>
-        </div>
-        <hr />
-        <form asp-controller="Produto" asp-action="CadastrarProduto" method="post" enctype="multipart/form-data">
-            <!-- Mensagem -->
-            @{
-                if (ViewData["msg"] != null)
-                {
-                    @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
-                            <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
-                }
+    <!-- Cabeçalho da seção -->
+    <div class="header">
+        <h1>CADASTRAR PRODUTOS</h1>
+    </div>
+    <hr />
+    <form asp-controller="Produto" asp-action="CadastrarProduto" method="post" enctype="multipart/form-data">
+        <!-- Mensagem -->
+        @{
+            if (ViewData["msg"] != null)
+            {
+                @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
+                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
             }
-            <div class="row d-flex justify-content-between">
-                <div asp-validation-summary="ModelOnly"></div>
-                <!-- Primeiro form-group -->
-                <div class="form-group col-lg-6">
-                    <!-- Conteúdo do lado esquerdo aqui -->
-                    <label asp-for="nomeProd">Nome <span class="req">*</span></label>
-                    <input asp-for="nomeProd" type="text" id="InputType1" class="InputType1" placeholder="Digite aqui o nome do produto" name="nomeProd" />
-                    <br />
-                    <span asp-validation-for="nomeProd" class="text-danger"></span>
-                    <br />
-                    <label asp-for="codProd">Código Produto <span class="req">*</span></label>
-                    <input asp-for="codProd" type="text" id="InputType1" class="InputType1" placeholder="Digite aqui o código do produto" name="codProd" />
-                    <br />
-                    <span asp-validation-for="codProd" class="text-danger"></span>
-                    <br />
-                    <label asp-for="descricao">Descrição <span class="req">*</span></label>
-                    <textarea asp-for="descricao" id="CxDesc" class="CxDesc" placeholder="Digite aqui a descrição do produto" name="descricaoProd"></textarea>
-                    <br />
-                    <span asp-validation-for="descricao" class="text-danger"></span>
-                    <br />
-                    <!-- Classificação Indicativa e Valor Unitário -->
-                    <div class="d-flex">
-                        <div class="col-5 me-2">
-                            <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
-                            <select asp-for="classificacao" class="ClassIndProd" name="classificacao">
-                                <option value="0">Selecione</option>
-                                <option value="1 - Até 2 Anos">Até 2 Anos</option>
-                                <option value="2 - 3+ Anos">3+ Anos</option>
-                                <option value="3 - 6+ Anos">6+ Anos</option>
-                                <option value="4 - 10+ Anos">10+ Anos</option>
-                                <option value="5 - 12+ Anos">12+ Anos</option>
-                            </select>
-                            <br />
-                            <span asp-validation-for="classificacao" class="text-danger"></span>
-                            <br />
-                        </div>
-                        <div class="col-3">
-                            <label asp-for="valorUnit">Valor Unitário <span class="req">*</span></label>
-                            <input asp-for="valorUnit"type="text" id="ValorUni" class="InputType1" placeholder="Digite o valor" name="valorUnit"/>
-                            <br />
-                            <span asp-validation-for="valorUnit" class="text-danger"></span>
-                            <br />
-                        </div>
+        }
+        <div class="row d-flex justify-content-between">
+            <div asp-validation-summary="ModelOnly"></div>
+            <!-- Primeiro form-group -->
+            <div class="form-group col-lg-6">
+                <!-- Conteúdo do lado esquerdo aqui -->
+                <label asp-for="nomeProd">Nome <span class="req">*</span></label>
+                <input asp-for="nomeProd" type="text" id="InputType1" class="InputType1" placeholder="Digite aqui o nome do produto" name="nomeProd" />
+                <br />
+                <span asp-validation-for="nomeProd" class="text-danger"></span>
+                <br />
+                <label asp-for="codProd">Código Produto <span class="req">*</span></label>
+                <input asp-for="codProd" type="text" id="InputType1" class="InputType1" placeholder="Digite aqui o código do produto" name="codProd" />
+                <br />
+                <span asp-validation-for="codProd" class="text-danger"></span>
+                <br />
+                <label asp-for="descricao">Descrição <span class="req">*</span></label>
+                <textarea asp-for="descricao" id="CxDesc" class="CxDesc" placeholder="Digite aqui a descrição do produto" name="descricaoProd"></textarea>
+                <br />
+                <span asp-validation-for="descricao" class="text-danger"></span>
+                <br />
+                <!-- Classificação Indicativa e Valor Unitário -->
+                <div class="d-flex">
+                    <div class="col-5 me-2">
+                        <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
+                        <select asp-for="classificacao" class="ClassIndProd" name="classificacao">
+                            <option value="0">Selecione</option>
+                            <option value="1 - Até 2 Anos">Até 2 Anos</option>
+                            <option value="2 - 3+ Anos">3+ Anos</option>
+                            <option value="3 - 6+ Anos">6+ Anos</option>
+                            <option value="4 - 10+ Anos">10+ Anos</option>
+                            <option value="5 - 12+ Anos">12+ Anos</option>
+                        </select>
+                        <br />
+                        <span asp-validation-for="classificacao" class="text-danger"></span>
+                        <br />
                     </div>
+                    <div class="col-3">
+                        <label asp-for="valorUnit">Valor Unitário <span class="req">*</span></label>
+                        <input asp-for="valorUnit" type="text" id="ValorUni" class="InputType1" placeholder="Digite o valor" name="valorUnit" />
+                        <br />
+                        <span asp-validation-for="valorUnit" class="text-danger"></span>
+                        <br />
+                    </div>
+                </div>
 
-                    <label asp-for="categoria" placeholder="Selecione a categoria do brinquedo">Categoria de brinquedos <span class="req">*</span></label>
-                    <select asp-for="categoria" class="CatBrinquedo" name="categoria">
-                        <option value="0">Selecione</option>
-                        <option value="1 - Brinquedos de Montar">Brinquedos de Montar</option>
-                        <option value="2 - Brinquedos Sustentáveis">Brinquedos Sustentáveis</option>
-                        <option value="3 - Brinquedos Científicos">Brinquedos Científicos</option>
-                        <option value="4 - Quebra-Cabeças">Quebra-Cabeças</option>
-                        <option value="5 - Livros Interativos">Livros Interativos</option>
-                        <option value="6 - Brinquedos Sensoriais">Brinquedos Sensoriais</option>
-                        <option value="7 - Instrumentos Musicais">Instrumentos Musicais</option>
-                        <option value="8 - Jogos de Tabuleiro">Jogos de Tabuleiro</option>
-                        <option value="9 - Jogos de Desafio">Jogos de Desafio</option>
-                        <option value="10 - Jogos de Ação">Jogos de Ação</option>
-                        <option value="11 - Jogos de Cartas">Jogos de Cartas</option>
-                        <option value="12 - Jogos Eletrônicos">Jogos Eletrônicos</option>
+                <label asp-for="categoria" placeholder="Selecione a categoria do brinquedo">Categoria de brinquedos <span class="req">*</span></label>
+                <select asp-for="categoria" class="CatBrinquedo" name="categoria">
+                    <option value="0">Selecione</option>
+                    <option value="1 - Brinquedos de Montar">Brinquedos de Montar</option>
+                    <option value="2 - Brinquedos Sustentáveis">Brinquedos Sustentáveis</option>
+                    <option value="3 - Brinquedos Científicos">Brinquedos Científicos</option>
+                    <option value="4 - Quebra-Cabeças">Quebra-Cabeças</option>
+                    <option value="5 - Livros Interativos">Livros Interativos</option>
+                    <option value="6 - Brinquedos Sensoriais">Brinquedos Sensoriais</option>
+                    <option value="7 - Instrumentos Musicais">Instrumentos Musicais</option>
+                    <option value="8 - Jogos de Tabuleiro">Jogos de Tabuleiro</option>
+                    <option value="9 - Jogos de Desafio">Jogos de Desafio</option>
+                    <option value="10 - Jogos de Ação">Jogos de Ação</option>
+                    <option value="11 - Jogos de Cartas">Jogos de Cartas</option>
+                    <option value="12 - Jogos Eletrônicos">Jogos Eletrônicos</option>
 
-                    </select>
-                    <br />
-                    <span asp-validation-for="categoria" class="text-danger"></span>
-                    <br />
-                    <div class="d-flex">
-                        <div class="col-6">
-                            <label asp-for="estoque" for="Estoque">Estoque<span class="req">*</span></label>
-                            <input asp-for="estoque" type="text" id="Estoque" class="InputType1" placeholder="Quantidade em estoque" name="estoque"/>
-                            <br />
-                            <span asp-validation-for="estoque" class="text-danger"></span>
-                            <br />
-                        </div>
-                        <div class="col-4 mb-3">
-                            <label asp-for="lancamento" class="form-label">Lançamento <span class="req">*</span></label>
-                            <div   class="d-flex">
-                                <div class="form-check me-3">
-                                    <input type="radio" id="LancamentoSim" name="lacamentoProd" value="true" class="form-check-input">
-                                    <label for="LancamentoSim" class="form-check-label">Sim</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="radio" id="LancamentoNao" name="lacamentoProd" value="false" class="form-check-input">
-                                    <label for="LancamentoNao" class="form-check-label">Não</label>
-                                </div>
+                </select>
+                <br />
+                <span asp-validation-for="categoria" class="text-danger"></span>
+                <br />
+                <div class="d-flex">
+                    <div class="col-6">
+                        <label asp-for="estoque" for="Estoque">Estoque<span class="req">*</span></label>
+                        <input asp-for="estoque" type="text" id="Estoque" class="InputType1" placeholder="Quantidade em estoque" name="estoque" />
+                        <br />
+                        <span asp-validation-for="estoque" class="text-danger"></span>
+                        <br />
+                    </div>
+                    <div class="col-4 mb-3">
+                        <label asp-for="lancamento" class="form-label">Lançamento <span class="req">*</span></label>
+                        <div class="d-flex">
+                            <div class="form-check me-3">
+                                <input type="radio" id="LancamentoSim" name="lacamentoProd" value="true" class="form-check-input">
+                                <label for="LancamentoSim" class="form-check-label">Sim</label>
                             </div>
-                            <br />
-                            <span asp-validation-for="lancamento" class="text-danger"></span>
-                            <br />
+                            <div class="form-check">
+                                <input type="radio" id="LancamentoNao" name="lacamentoProd" value="false" class="form-check-input">
+                                <label for="LancamentoNao" class="form-check-label">Não</label>
+                            </div>
                         </div>
+                        <br />
+                        <span asp-validation-for="lancamento" class="text-danger"></span>
+                        <br />
                     </div>
-                </div>
-
-                <!-- Segundo form-group2 -->
-                <div class="form-group2 col-6">
-                    <!-- Conteúdo do lado direito aqui -->
-                    <label asp-for="habilidades">Habilidade Trabalhada <span class="req">*</span></label>
-                    <div id="HabTabalhada" class="chips-container">
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="1 - Criatividade">Criatividade</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="2 - Coordenação motora">Coordenação motora</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="3 - Concentração">Concentração</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="4 - Educação Emocional">Educação Emocional</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="5 - Linguagem e comunicação">Linguagem e comunicação</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="6 - Matemática">Matemática</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="7 - Raciocínio lógico">Raciocínio lógico</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="8 - Socialização">Socialização</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="9 - Resolução de problemas">Resolução de problemas</span>
-                        <span class="chip" onclick="selecionarHabilidade(this)" data-value="10 - Pensamento crítico">Pensamento crítico</span>
-                    </div>
-                    <!-- Um campo escondido para armazenar os chips selecionados -->
-                    <input  asp-for="habilidades" type="hidden" id="habilidadesSelecionadas" name="habilidadesEnviadas" />
-                    <br />
-                    <span asp-validation-for="habilidades" class="text-danger"></span>
-                    <br />
-                    <!-- Upload de imagem -->
-                   <div class="conteudo_imagens mt-2">
-                        <label for="ImgProduto">Selecione as imagens<span class="req">*</span></label>
-                        <div class="organizacao_imagens" id="grid_imgs">
-                            <label for="thumbnailInput" class="add-thumbnail">
-
-                               <img src="~/imgs/Plus.png" style="border: none; width: 50px; height: auto;" />
-
-                            </label>
-                            <input asp-for="imgs" type="file" id="thumbnailInput" name="imgs" accept="imgs/*" onchange="addMiniatura(event) " multiple>
-                        </div>
-                    </div>
-                    <br />
-                    <span asp-validation-for="imgs" class="text-danger"></span>
-                    <br />
                 </div>
             </div>
 
-            <!-- Botões de ação -->
-            <div class="d-flex justify-content-end btns">
-                <button class="btnCancelar btn-primary">Cancelar</button>
-                <button class="btnCadastrar btn-primary">Cadastrar</button>
+            <!-- Segundo form-group2 -->
+            <div class="form-group2 col-6">
+                <!-- Conteúdo do lado direito aqui -->
+                <label asp-for="habilidades">Habilidade Trabalhada <span class="req">*</span></label>
+                <div id="HabTabalhada" class="chips-container">
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="1 - Criatividade">Criatividade</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="2 - Coordenação motora">Coordenação motora</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="3 - Concentração">Concentração</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="4 - Educação Emocional">Educação Emocional</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="5 - Linguagem e comunicação">Linguagem e comunicação</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="6 - Matemática">Matemática</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="7 - Raciocínio lógico">Raciocínio lógico</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="8 - Socialização">Socialização</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="9 - Resolução de problemas">Resolução de problemas</span>
+                    <span class="chip" onclick="selecionarHabilidade(this)" data-value="10 - Pensamento crítico">Pensamento crítico</span>
+                </div>
+                <!-- Um campo escondido para armazenar os chips selecionados -->
+                <input asp-for="habilidades" type="hidden" id="habilidadesSelecionadas" name="habilidadesEnviadas" />
+                <br />
+                <span asp-validation-for="habilidades" class="text-danger"></span>
+                <br />
+                <!-- Upload de imagem -->
+                <div class="conteudo_imagens mt-2">
+                    <label for="ImgProduto">Selecione as imagens<span class="req">*</span></label>
+                    <div class="organizacao_imagens" id="grid_imgs">
+                        <label for="thumbnailInput" class="add-thumbnail">
+
+                            <img src="~/imgs/Plus.png" style="border: none; width: 50px; height: auto;" />
+
+                        </label>
+                        <input asp-for="imgs" type="file" id="thumbnailInput" name="imgs" accept="imgs/*" onchange="addMiniatura(event) " multiple>
+                    </div>
+                </div>
+                <br />
+                <span asp-validation-for="imgs" class="text-danger"></span>
+                <br />
             </div>
-        </form>
- 
+        </div>
+
+        <!-- Botões de ação -->
+        <div class="d-flex justify-content-end btns">
+            <button class="btnCancelar btn-primary">Cancelar</button>
+            <button class="btnCadastrar btn-primary">Cadastrar</button>
+        </div>
+    </form>
+
 </section>
 
 <script>
@@ -177,49 +176,38 @@
     }
 
     function addMiniatura(event) {
-        // Pega o primeiro arquivo que o usuário escolheu (no caso, a imagem)
         const file = event.target.files[0];
 
-        // Verifica se o arquivo existe
         if (file) {
-            // Cria um leitor de arquivos para ler o conteúdo da imagem
             const reader = new FileReader();
 
-            // Quando o leitor terminar de carregar a imagem, esta função será executada
             reader.onload = function (e) {
-                // Pega o elemento no HTML onde as miniaturas serão exibidas
                 const grid_imgs = document.getElementById("grid_imgs");
 
-                // Cria um contêiner para a miniatura (um <div> que vai envolver a miniatura)
                 const thumbnailContainer = document.createElement("div");
-                thumbnailContainer.classList.add("miniaturas");  // Corrigido para usar thumbnailContainer
+                thumbnailContainer.classList.add("miniaturas");
 
-                // Cria um elemento <img> para exibir a miniatura
                 const imgElement = document.createElement("img");
-                imgElement.src = e.target.result;  // Define a imagem carregada como a fonte da tag <img>
+                imgElement.src = e.target.result;
 
-                // Cria um botão para remover a miniatura
                 const removeButton = document.createElement("button");
-                removeButton.innerHTML = '<img src="/imgs/xx.png" id="remove-miniatura" style="width:30px; height:30px; background:none;">';  // Define o texto do botão como "x" (para remover)
+                removeButton.classList.add("remove-miniatura");
+                removeButton.innerHTML = "X";
 
-
-                // Define a ação do botão: remover a miniatura quando o botão for clicado
                 removeButton.onclick = function () {
-                    thumbnailContainer.remove();  // Remove o contêiner da miniatura correta
+                    thumbnailContainer.remove();
                 };
 
-                // Adiciona a imagem e o botão de remover ao contêiner da miniatura
                 thumbnailContainer.appendChild(imgElement);
                 thumbnailContainer.appendChild(removeButton);
 
-                // Adiciona o contêiner da miniatura antes do último item da galeria (um ícone "+")
                 grid_imgs.insertBefore(thumbnailContainer, grid_imgs.lastElementChild);
             };
 
-            // Lê o arquivo da imagem como uma URL (para exibição)
             reader.readAsDataURL(file);
         }
     }
+
 </script>
 
 @section Scripts {

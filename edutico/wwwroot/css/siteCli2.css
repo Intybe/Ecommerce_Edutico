@@ -876,6 +876,7 @@ input[type="number"]::-webkit-inner-spin-button {
     background: blue;
     color: white;
     justify-content: center;
+    border: none;
 }
 
 
@@ -1179,22 +1180,23 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 14px;
     background: none;
 }
+
 .base-cartao-com .info-grup {
     margin-block: 10px;
     height: auto;
     padding-block: 10px;
 }
 
-.base-cartao-com .info-grup input {
-    border-radius: 10px;
-    padding: 5px 10px;
-    border: 1px solid gray;
-}
-
-    .base-cartao-com .info-grup input:focus {
-        border: 1px solid blue;
-        outline: none;
+    .base-cartao-com .info-grup input {
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid gray;
     }
+
+        .base-cartao-com .info-grup input:focus {
+            border: 1px solid blue;
+            outline: none;
+        }
 
 
 .editar {
@@ -1863,6 +1865,4 @@ button.btnAvancar {
 .scrollable-div {
     scrollbar-width: thin;
     scrollbar-color: #1F3C9D transparent;
-
 }
-

@@ -914,20 +914,19 @@ h5 {
 
 
 #pedidos-alinhamento {
-    display: flex; 
+    display: flex;
     justify-content: flex-start; /* Mantém os itens alinhados inicialmente à esquerda */
-    align-items: center; 
-    width: 100%; 
-    gap: 20px; 
-    position: relative; 
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    position: relative;
 }
 
 .ops-btn {
-    display: flex; 
-    flex-direction: column; 
-    gap: 10px; 
-    align-items: center; 
-    margin-left: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
 }
 
 
