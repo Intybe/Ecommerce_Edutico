@@ -45,9 +45,12 @@ else
                     // Calcula o total do item
                     decimal totalItem = itemCarrinho.qtdProd * Convert.ToDecimal(itemCarrinho.produto.valorUnit);
 
-                    <input type="checkbox" id="check" value="@produto" onchange='atualizarListaProdutos(this, @produto, @subtotal)' />
+
 
                     <div class="produto position-relative" id="cardProduto">
+
+                        <input type="checkbox" id="check" value="@produto" onchange='atualizarListaProdutos(this, @produto, @subtotal)' />
+
                         <div class="imgProd">
                             <img src="@Url.Content(itemCarrinho.produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@itemCarrinho.produto.nomeProd" />
                         </div>

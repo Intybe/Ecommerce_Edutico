@@ -1,4 +1,4 @@
-@font-face {
+Ôªø@font-face {
     font-family: 'Edutico';
     src: url('/fonts/Edutico-Regular.otf') format('opentype');
     font-weight: normal;
@@ -25,7 +25,7 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: #FFFEF3;
-    position: relative; /* Adiciona posiÁ„o ao body para controle de camadas */
+    position: relative; /* Adiciona posi√ß√£o ao body para controle de camadas */
     z-index: 0; /* Garante que o body tenha um z-index menor que outros elementos */
 }
 
@@ -57,15 +57,15 @@ html, body {
 }
 
 .navbar .icons {
-    gap: 20px; /* EspaÁamento entre os Ìcones */
+    gap: 20px; /* Espa√ßamento entre os √≠cones */
 }
 
 .imgCataVento {
-    position: fixed; /* Faz com que a imagem permaneÁa fixa no final da p·gina */
+    position: fixed; /* Faz com que a imagem permane√ßa fixa no final da p√°gina */
     bottom: -150px; /* Alinha a imagem com a parte inferior da janela */
-    left: 0; /* Posiciona a imagem ‡ esquerda */
+    left: 0; /* Posiciona a imagem √† esquerda */
     width: 100%;
-    z-index: -1; /* Coloca a imagem atr·s de outros elementos */
+    z-index: -1; /* Coloca a imagem atr√°s de outros elementos */
 }
 
     .imgCataVento img {
@@ -354,7 +354,7 @@ html, body {
     padding-inline: 20px;
     font-size: 16px;
     background-color: #fff;
-    border-top: none; /* Remover a linha divisÛria */
+    border-top: none; /* Remover a linha divis√≥ria */
 }
 
     .filter-content label {
@@ -440,7 +440,7 @@ html, body {
         .form-senha input[type="text"]:focus,
         input[type="password"]:focus {
             border: 1px solid #1F3C9D; /* Cor da borda ao focar */
-            outline: none; /* Remove o contorno padr„o */
+            outline: none; /* Remove o contorno padr√£o */
         }
 
 .forgot-password {
@@ -526,7 +526,7 @@ html, body {
 }
 
     .MenuLateral .active a {
-        color: red; /* Cor do texto e Ìcone quando ativo */
+        color: red; /* Cor do texto e √≠cone quando ativo */
         font-weight: bold;
     }
 
@@ -617,6 +617,7 @@ html, body {
 
 
 /*CARRINHO CHEIO*/
+/*CARRINHO CHEIO*/
 .padrao {
     margin-left: 95px;
 }
@@ -642,6 +643,7 @@ html, body {
 
 .produto {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 10px;
     margin-bottom: 10px;
@@ -768,6 +770,37 @@ html, body {
     .btn-primary:hover {
         background-color: #0056b3;
     }
+
+
+/* Estilo para o checkbox */
+#check {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+}
+
+    #check:checked {
+        background-color: #1C3FB9;
+        border-color: #1C3FB9;
+    }
+
+        #check:checked::before {
+            content: "‚úì";
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            right: 594px;
+            transform: translate(-50%, -50%);
+        }
 
 /*botao de quantidade*/
 .contador {
@@ -944,7 +977,7 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
 }
 
-/*Cart„o pagamento*/
+/*Cart√£o pagamento*/
 .base-cartao {
     background: white;
     width: 450px;
@@ -1171,7 +1204,7 @@ input[type="number"]::-webkit-inner-spin-button {
     text-decoration: underline;
     margin-bottom: 0px;
 }
-/*customizaÁ„o radio buttons*/
+/*customiza√ß√£o radio buttons*/
 input[type='radio'] {
     display: none;
 }
@@ -1184,7 +1217,7 @@ input[type='radio'] {
 
 .custom-radio {
     border: 1px solid #fff;
-    width: 40px; /*epaÁo para o radio*/
+    width: 40px; /*epa√ßo para o radio*/
     height: 40px;
     display: grid;
     place-content: center;
@@ -1203,7 +1236,7 @@ input[type='radio'] {
         border-radius: 50%;
     }
 
-input[type='radio']:checked + .custom-radio span { /* o "+"  È um seletor que abrange o primeiro elemento span depois do input*/
+input[type='radio']:checked + .custom-radio span { /* o "+"  √© um seletor que abrange o primeiro elemento span depois do input*/
     background: #000; /*quando checado fica preto*/
 }
 
@@ -1282,7 +1315,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
         border-radius: 15px 15px 0 0;
     }
 
-/*customizaÁ„o check buttons*/
+/*customiza√ß√£o check buttons*/
 .check-container input[type='checkbox'] {
     display: none;
 }
@@ -1311,7 +1344,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
         background: transparent;
     }
 
-input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque È um seletor que abrange todos os elementos span depois do input*/
+input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque √© um seletor que abrange todos os elementos span depois do input*/
     background: #426ef0;
 }
 
@@ -1319,7 +1352,7 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque È 
     margin: 0;
 }
 
-/*Meus Cartıes*/
+/*Meus Cart√µes*/
 
 .btnvoltarcar {
     padding: 10px 20px;
@@ -1348,7 +1381,7 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque È 
     font-size: 15px;
 }
 
-/*Meus cartıes da tela PERFIL*/
+/*Meus cart√µes da tela PERFIL*/
 
 .base-op-cartao {
     background: white;
@@ -1387,10 +1420,10 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque È 
 
 
 .setaabre {
-    transition: transform 0.3s ease; /* AnimaÁ„o suave */
+    transition: transform 0.3s ease; /* Anima√ß√£o suave */
 }
 
-    /* classe para quando a div estiver expandida (rotaÁ„o de 90 graus) */
+    /* classe para quando a div estiver expandida (rota√ß√£o de 90 graus) */
     .setaabre.giraseta {
         transform: rotate(90deg);
     }
@@ -1400,7 +1433,7 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque È 
 .CancelamentoEfetuado {
     max-width: 400px;
     padding: 20px;
-    margin: 0 auto; /* Centraliza o conte˙do */
+    margin: 0 auto; /* Centraliza o conte√∫do */
     font-family: 'Arial', sans-serif;
 }
 
@@ -1431,7 +1464,7 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque È 
     display: block;
 }
 
-/*FORM DEVOLU«√O*/
+/*FORM DEVOLU√á√ÉO*/
 .FormDevolucao {
     width: 650px;
     margin: 50px auto;
@@ -1688,7 +1721,7 @@ button.btnAvancar {
     border: 1px solid #007bff;
 }
 
-/*Div avaliaÁıes*/
+/*Div avalia√ß√µes*/
 .rating-score {
     text-align: center;
 }
