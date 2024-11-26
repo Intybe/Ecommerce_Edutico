@@ -1,42 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\",
+  "WorkspaceRootPath": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\views\\cartao\\cadastrocartao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cartao\\cadastrocartao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\views\\funcionario\\detalhesprodutof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\funcionario\\detalhesprodutof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\views\\cartao\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cartao\\meuscartoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\detalhesproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\sitefuncionario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\views\\funcionario\\produtosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\funcionario\\produtosf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\wwwroot\\css\\sitecli2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\sitecli2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\produtorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\views\\pedido\\meuspedidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\pedido\\meuspedidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\views\\produto\\cadastroproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\cadastroproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\views\\cliente\\carrinho.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\cliente\\carrinho.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\repositorio\\iprodutorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\evelyn\\desktop\\novo\\ecommerce_edutico\\edutico\\views\\produto\\pesquisa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\produto\\pesquisa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\controllers\\pagamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\controllers\\pagamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|c:\\users\\flavi\\onedrive\\anexos\\edutico\\3\\edutico\\views\\home\\detalhespedidoemandamentof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E03635E-E1C6-46AD-9B05-9D042C33D6A1}|edutico\\edutico.csproj|solutionrelative:edutico\\views\\home\\detalhespedidoemandamentof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,122 +54,146 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CadastroCartao.cshtml",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Cartao\\CadastroCartao.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Cartao\\CadastroCartao.cshtml",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Cartao\\CadastroCartao.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Cartao\\CadastroCartao.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAlwDcAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DetalhesProduto.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Produto\\DetalhesProduto.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T22:05:42.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T22:31:59.698Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MeusCartoes.cshtml",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Cartao\\MeusCartoes.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Cartao\\MeusCartoes.cshtml",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Cartao\\MeusCartoes.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Cartao\\MeusCartoes.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAlwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FuncionarioController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\FuncionarioController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\FuncionarioController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\FuncionarioController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\FuncionarioController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAALUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T23:14:49.296Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAADIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T22:05:17.009Z",
+              "WhenOpened": "2024-11-25T12:02:59.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetalhesProdutoF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Funcionario\\DetalhesProdutoF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Funcionario\\DetalhesProdutoF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Funcionario\\DetalhesProdutoF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Funcionario\\DetalhesProdutoF.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T23:18:07.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "siteFuncionario.css",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\wwwroot\\css\\siteFuncionario.css",
-              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteFuncionario.css",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\wwwroot\\css\\siteFuncionario.css",
-              "RelativeToolTip": "edutico\\wwwroot\\css\\siteFuncionario.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-24T21:51:18.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CadastroProduto.cshtml",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Produto\\CadastroProduto.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Produto\\CadastroProduto.cshtml",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Produto\\CadastroProduto.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Produto\\CadastroProduto.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANAAAAAFAAAAAAAAAA==",
+              "Title": "ProdutosF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Funcionario\\ProdutosF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Funcionario\\ProdutosF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Funcionario\\ProdutosF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Funcionario\\ProdutosF.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGEAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T21:48:07.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MeusPedidos.cshtml",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Pedido\\MeusPedidos.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Pedido\\MeusPedidos.cshtml",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Pedido\\MeusPedidos.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Pedido\\MeusPedidos.cshtml",
-              "ViewState": "AgIAABoBAAAAAAAAAAAQwC8BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T00:07:53.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Pesquisa.cshtml",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Produto\\Pesquisa.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Produto\\Pesquisa.cshtml",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Produto\\Pesquisa.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Produto\\Pesquisa.cshtml",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAAIcAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T00:03:34.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "siteCli2.css",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\wwwroot\\css\\siteCli2.css",
-              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\siteCli2.css",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\wwwroot\\css\\siteCli2.css",
-              "RelativeToolTip": "edutico\\wwwroot\\css\\siteCli2.css",
-              "ViewState": "AgIAADUHAAAAAAAAAAAkwEwHAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-24T00:01:26.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T23:52:59.321Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "edutico\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "edutico\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAADQFAAAAAAAAAAAkwEsFAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-24T00:00:55.826Z",
-              "EditorCaption": ""
+              "Title": "ProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\ProdutoRepositorio.cs",
+              "ViewState": "AgIAADkBAAAAAAAAAAAmwDQBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T11:49:49.598Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Carrinho.cshtml",
-              "DocumentMoniker": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Cliente\\Carrinho.cshtml",
-              "RelativeDocumentMoniker": "edutico\\Views\\Cliente\\Carrinho.cshtml",
-              "ToolTip": "C:\\Users\\Evelyn\\Desktop\\novo\\Ecommerce_Edutico\\edutico\\Views\\Cliente\\Carrinho.cshtml",
-              "RelativeToolTip": "edutico\\Views\\Cliente\\Carrinho.cshtml",
-              "ViewState": "AgIAANQAAAAAAAAAAAAQwOkAAAAJAAAAAAAAAA==",
+              "Title": "IProdutoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "RelativeDocumentMoniker": "edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "RelativeToolTip": "edutico\\Repositorio\\IProdutoRepositorio.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T11:49:57.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAIwIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T11:47:28.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\PedidoController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\PedidoController.cs",
+              "ViewState": "AgIAABMBAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T12:05:39.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PagamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\PagamentoController.cs",
+              "RelativeDocumentMoniker": "edutico\\Controllers\\PagamentoController.cs",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Controllers\\PagamentoController.cs",
+              "RelativeToolTip": "edutico\\Controllers\\PagamentoController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T12:06:06.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DetalhesPedidoEmAndamentoF.cshtml",
+              "DocumentMoniker": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Home\\DetalhesPedidoEmAndamentoF.cshtml",
+              "RelativeDocumentMoniker": "edutico\\Views\\Home\\DetalhesPedidoEmAndamentoF.cshtml",
+              "ToolTip": "C:\\Users\\flavi\\OneDrive\\Anexos\\Edutico\\3\\edutico\\Views\\Home\\DetalhesPedidoEmAndamentoF.cshtml",
+              "RelativeToolTip": "edutico\\Views\\Home\\DetalhesPedidoEmAndamentoF.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T23:57:46.724Z"
+              "WhenOpened": "2024-11-25T00:05:17.902Z"
             }
           ]
         }

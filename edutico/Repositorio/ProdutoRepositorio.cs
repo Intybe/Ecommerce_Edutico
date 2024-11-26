@@ -253,7 +253,7 @@ namespace edutico.Repositorio
                     qtdPorEstrelaConcatenada: dr["qtdPorEstrela"]?.ToString(),
                     qtdAvaliacao: Convert.ToInt32(dr["qtdAvaliacao"]),
                     somaAvaliacao: Convert.ToInt32(dr["somaAvaliacao"])
-                    
+
                 );
             }
 
@@ -301,6 +301,98 @@ namespace edutico.Repositorio
         }
 
 
+        //DETAKHES PRODUTO FUNCIONARIO
+
+
+        // Método de consulta aos detalhes do produto
+        public Produto ConsultarDetalheProdutoF(decimal codProd)
+        {
+            // Cria variável de Conexão com o Banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Vairável que recebe o comando SQL
+            string sql = "Call spSelectDetalheProduto(@codProd)";
+
+            // Junta o comando SQL com a informações do banco
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@codProd", codProd);
+
+            // Executa e lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Cria um objeto Produto null, estou criando aqui pois será usado fora da condicional
+            Produto produto = null;
+
+            // Enquanto houver linhas retornadas
+            if (dr.Read())
+            {
+                // Cria um objeto do produto com os dados retornados
+                produto = new Produto(
+                    codProd: codProd,
+                    nomeProd: dr["nomeProd"].ToString(),
+                    descricao: dr["descricao"].ToString(),
+                    classificacao: dr["classificacao"].ToString(),
+                    categoria: dr["categoria"].ToString(),
+                    habilidadesConcatenadas: dr["habilidades"]?.ToString(),
+                    valorUnit: Convert.ToDecimal(dr["valorUnit"]),
+                    estoque: Convert.ToInt32(dr["estoque"]),
+                    statusProd: Convert.ToBoolean(dr["statusProd"]),
+                    lancamento: Convert.ToBoolean(dr["lancamento"]),
+                    imgsConcatenadas: dr["imgs"].ToString(),
+                    detalhesAvaliacaoConcatenados: dr["detalhesAvaliacao"]?.ToString(),
+                    qtdPorEstrelaConcatenada: dr["qtdPorEstrela"]?.ToString(),
+                    qtdAvaliacao: Convert.ToInt32(dr["qtdAvaliacao"]),
+                    somaAvaliacao: Convert.ToInt32(dr["somaAvaliacao"])
+
+                );
+            }
+
+            // Fecha o leitor do produto
+            dr.Close();
+
+            // Vairável que recebe o comando SQL
+            sql = "Call spSelectRelacionados(@nomeCategoria)";
+
+            // Junta o comando SQL com a informações do banco
+            cmd = new MySqlCommand(sql, conexao);
+
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@nomeCategoria", produto.categoria.nomeCategoria);
+
+            // Executa e lê os dados retornados pela query SQL
+            dr = cmd.ExecuteReader();
+
+            // Cria uma lista de objeto do tipo Produto
+            List<Produto> produtos = new List<Produto>();
+
+            // Enquanto houver linhas cria um objeto produto e adiciona a lista de produtos relacioados
+            while (dr.Read())
+            {
+                Produto produtoRelacionados = new Produto(
+                    Convert.ToDecimal(dr["codProd"]),
+                    dr["nomeProd"].ToString(),
+                    Convert.ToDecimal(dr["valorUnit"]),
+                    Convert.ToInt32(dr["qtdAvaliacao"]),
+                    Convert.ToInt32(dr["somaAvaliacao"]),
+                    dr["imgs"]?.ToString(),
+                    statusProd: Convert.ToBoolean(dr["statusProd"])
+                );
+                produtos.Add(produtoRelacionados);
+            }
+
+            // Adiciona os produtos relacionados
+            produto.relacionados = produtos;
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna o produto (ou null se não for encontrado)
+            return produto;
+        }
+
 
         public string CadastrarAvaliacao(int qtdEstrela, string comentario, int codLogin, decimal codProd)
         {
@@ -347,7 +439,7 @@ namespace edutico.Repositorio
             return mensagem;
         }
 
-        
+
         public Avaliacao ConsultarAvaliacaoCliente(decimal codProd, int codLogin)
         {
             // Cria a variável de conexão com o banco de dados
@@ -389,9 +481,9 @@ namespace edutico.Repositorio
             // Retorna o produto (ou null se não for encontrado)
             return avaliacaoUnica;
         }
-        
 
-        public void DeletarAvaliacao(int codLogin, int codAvaliacao)
+
+        public string DeletarAvaliacao(int codLogin, int codAvaliacao, decimal codProd)
         {
             // Cria a variável de conexão com o banco de dados
             Conexao con = new Conexao();
@@ -403,15 +495,18 @@ namespace edutico.Repositorio
             // Junta o comando SQL com a informações do banco   
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
-            // Atribui valor aos parâmetros do comando SQL
+            // Atribui valor aos parâmetros do comando  SQL
             cmd.Parameters.AddWithValue("@codLogin", codLogin);
             cmd.Parameters.AddWithValue("@codAvaliacao", codAvaliacao);
 
+            string mensagem = null;
             // Executa a query SQL
             cmd.ExecuteNonQuery();
 
             // Fecha a conexão com o banco de dados
             con.DesconectarBD();
+
+            return mensagem;
         }
 
         public IEnumerable<Produto> ConsultarProdutoPesquisa(string pesquisa)

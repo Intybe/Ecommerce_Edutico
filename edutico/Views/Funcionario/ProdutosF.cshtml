@@ -43,10 +43,10 @@
             @foreach (var produto in Model)
             {
                 <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 d-flex align-items-stretch">
+                    <a asp-controller="Funcionario" asp-action="DetalhesProdutoF" asp-route-codProd="@produto.codProd" class="text-decoration-none">
+
                     <div class="card product-card my-2">
                         <div class="card-body py-2">
-
-
                             <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
                             <h6 class="card-title mt-3 mx-0 glacial-bold" style="color:#000">
                                 @if (produto.nomeProd.Length > 20)
@@ -99,8 +99,9 @@
                                 </a>
                             </div>
                         </div>
-
+                       
                     </div>
+                    </a>
                 </div>
             }
         </div>

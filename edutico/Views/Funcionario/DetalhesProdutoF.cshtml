@@ -1,10 +1,11 @@
 ﻿@model ViewProdutoFavoritos
 
-@{
-    ViewData["Title"] = "Detalhe Produto";
-    Layout = "_LayoutCli2";
-}
 
+@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Detalhes Produto Funcionário";
+}
 
 
 <div class="container row justify-content-center">
@@ -157,51 +158,6 @@
 
                     </div>
 
-                    <!-- Mensagem -->
-                    @if (TempData["msg"] != null)
-                    {
-                        <div class="alert alert-success">
-                            @TempData["msg"]
-                        </div>
-                    }
-                    <!--AQUIII-->
-                    @if (Model.avaliacaoUnica != null)
-                    {
-                        <a asp-controller="Produto" asp-action="DeletarAvaliacao" asp-route-codAvaliacao="@Model.avaliacaoUnica.codAvaliacao" asp-route-codProd="@Model.produto.codProd">
-                            <button type="submit" class="btnava">Excluir Avaliação</button>
-                        </a>
-                    }
-                    else
-                    {
-                        <form asp-controller="Produto" asp-action="CadastrarAvaliacao" method="post">
-                            <h6 id="glacial-bold" class="text-center">FAÇA SUA AVALIAÇÃO!</h6>
-                            <p class="mt-0">Dê uma nota geral para o produto</p>
-                            <div class="d-flex">
-                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star1" onclick="valorEstrela(1, this)">
-                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star2" onclick="valorEstrela(2, this)">
-                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star3" onclick="valorEstrela(3, this)">
-                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star4" onclick="valorEstrela(4, this)">
-                                <img src="~/imgs/estrelaVazia.png" class="icone" id="star5" onclick="valorEstrela(5, this)">
-                            </div>
-
-                            <input type="text" id="qtdEstrela" name="qtdEstrela" value="" style="display: none" />
-
-                            <input type="text" name="codProd" value="@Model.produto.codProd" style="display: none" />
-
-                            <p>Escreva o que você achou!</p>
-
-                            <textarea name="comentario" placeholder="Justifique sua resposta para ajudar outros consumidores :)"></textarea>
-
-                            <button type="submit" class="btnava">Enviar avaliação</button>
-                        </form>
-                    }
-
-
-
-
-
-
-
                 </div>
 
                 <!-- parte dos comentários-->
@@ -245,37 +201,6 @@
         <div class="base-prod-detalhe">
             <div class="d-flex pb-2 px-1 justify-content-between">
                 <h5 class="glacial-bold titulo-detalhe">@Model.produto.nomeProd</h5>
-
-                @if (!Model.favoritos.Any())
-                {
-                    <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
-                        <button class="btn">
-                            <img src="~/imgs/heart.png" class="curti">
-                        </button>
-                    </form>
-                }
-                else
-                {
-                    if (Model.favoritos.Contains(Model.produto.codProd))
-                    {
-                        <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="RemoverFavorito" method="post">
-                            <button class="btn">
-                                <img src="~/imgs/favoritado.png" class="curti">
-                            </button>
-                        </form>
-                    }
-                    else
-                    {
-                        <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
-                            <button class="btn">
-                                <img src="~/imgs/heart.png" class="curti">
-                            </button>
-                        </form>
-
-                    }
-                }
-
-
             </div>
 
             @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
@@ -330,110 +255,46 @@
             <div class="mb-2 px-2">
                 <h4>R$ @Model.produto.valorUnit</h4>
             </div>
-            <form asp-controller="Cliente" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@Model.produto.codProd">
-                <div class="d-flex mb-3 px-2">
-                    <h6 class="glacial-bold" style="color:#8ED61A;"> Em estoque</h6>
-                    <select id="qtd" name="qtdProd">
-                        <option value="1">Quantidade: 1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
 
-                <div class="row justify-content-center px-2 m-1">
-                    <button class="btncar" type="submit">Adicionar carrinho</button>
-                </div>
-            </form>
-        </div>
+            <div class="d-flex mb-3 px-2">
 
-        <div class="base-prod-detalhe">
-            <div class="row d-flex justify-content-between pb-3 px-2">
-                <p class="texto-simples" id="cal-frete-text">Calcular prazo de entrega:</p>
-                <div class="cal-frete">
-                    <input type="text" placeholder="_ _ _ _ _ - _ _ _ ">
-                    <button type="submit">Ok</button>
-                </div>
-            </div>
-            <div class="text-esp px-2">
-                <p class="texto-simples" id="bold">Chegará a partir do dia: </p>
-                <p class="texto-simples">10 a 15 de Junho </p>
-            </div>
-        </div>
-        <div class="base-prod-detalhe">
-            <h3>Produtos recomendados</h3>
-            <div class="card-recome my-2">
-                @foreach (var produto in Model.produto.relacionados)
+                @if (Model.produto.estoque > 0)
                 {
-                    <div class="card-body d-flex py-2">
-                        <div class="position-relative">
-                            @if (!Model.favoritos.Any())
-                            {
-                                <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
-                                    <button class=" btn position-absolute start-0 top-0 px-0">
-                                        <img src="~/imgs/heart.png" class="heart-icon">
-                                    </button>
-                                </form>
-                            }
-                            else
-                            {
-                                if (Model.favoritos.Contains(produto.codProd))
-                                {
-                                    <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="RemoverFavorito" method="post">
-                                        <button class=" btn position-absolute start-0 top-0 px-0">
-                                            <img src="~/imgs/favoritado.png" class="heart-icon">
-                                        </button>
-                                    </form>
-                                }
-                                else
-                                {
-                                    <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
-                                        <button class=" btn position-absolute start-0 top-0 px-0">
-                                            <img src="~/imgs/heart.png" class="heart-icon">
-                                        </button>
-                                    </form>
+                    <h6 class="glacial-bold" style="color:#8ED61A;">Em estoque </h6>
+                }
+                else
+                {
+                    <h6 class="glacial-bold" style="color:red;"> Esgotado</h6>
+                }
 
-                                }
-                            }
-                        </div>
+                <div class="qtdProd"><p>@Model.produto.estoque</p> </div>
+            </div>
+            <div class="row justify-content-center px-2 m-1">
+                <a asp-controller="Home" asp-action="AlterarProdutosF" class="btnAlt">ALTERAR</a>
+                @if (Model.produto.statusProd == false) // Se o produto está ativo
+                {
+                    <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
+                        <input type="hidden" name="codProd" value="@Model.produto.codProd" />
+                        <input type="hidden" name="statusProd" value="1" />
+                        <button type="submit" class="btn ativar-btn">Ativar</button>
+                    </form>
+                }
+                else // Se o produto está inativo
+                {
+                    <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
+                        <input type="hidden" name="codProd" value="@Model.produto.codProd" />
+                        <input type="hidden" name="statusProd" value="0" />
+                        <button type="submit" class="btn desativar-btn">Desativar</button>
+                    </form>
 
-                        <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
-                        <div class="px-2">
-                            <h6 class="card-title mt-3 text-center mx-0 glacial-bold">
-                                @if (produto.nomeProd.Length > 20)
-                                {
-                                    @produto.nomeProd.Substring(0, 20)
-
-                                    <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
-                                }
-                                else
-                                {
-                                    @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
-                                }
-                            </h6>
-                            @if (produto.qtdAvaliacao == 0)
-                            {
-                                <p class="text mb-3 small-text">
-                                    <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
-                                </p>
-                            }
-                            else
-                            {
-                                <p class="text mb-3 small-text">
-                                    <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
-                                </p>
-                            }
-                            <p class="cor h4 glacial-bold">R$ @produto.valorUnit</p>
-                        </div>
-
-                    </div>
-                    <hr />
                 }
             </div>
         </div>
     </div>
+    }
 </div>
+
+
 
 <script>
     function valorEstrela(valor, estrelaId) {
@@ -493,7 +354,8 @@
     const totalRatings = @Model.produto.qtdAvaliacao;
     const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.produto.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
 
-                    for (let rating in ratingsData) {
+
+    for (let rating in ratingsData) {
         const percentage = (ratingsData[rating] / totalRatings) * 100;
         const ratingBar = document.getElementById(`bar-${rating}`);
 

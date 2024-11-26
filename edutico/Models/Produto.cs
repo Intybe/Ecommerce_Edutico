@@ -34,7 +34,7 @@ namespace edutico.Models
 
         public Imagem img { get; set; }
         [Required(ErrorMessage = "Selecione ao menos 2 imagens")]
-        public List<Imagem> imgs { get; set; }
+        public List<Imagem> imgs { get; set; } = new List<Imagem>();
         public List<Avaliacao> avaliacoes { get; set; }
         public Dictionary<int, int> dadosAvaliacoes { get; set; }
         public int qtdAvaliacao { get; set; }

@@ -58,7 +58,7 @@ namespace edutico.Controllers
         public IActionResult DetalhesProduto(decimal? codProd)
         {
             List<decimal> favoritos = new List<decimal>();
-            
+
 
             Produto produto = null;
             Avaliacao avaliacaoUnica = null;
@@ -105,13 +105,13 @@ namespace edutico.Controllers
 
                     // Obtém os favoritos do cliente logado
                     var favoritosList = _favoritosRepositorio.ConsultarFavoritos(login.codLogin).ToList();
-                   
+
 
                     // Extrai os códigos dos produtos favoritos
                     favoritos = favoritosList.Select(f => f.produto.codProd).ToList();
- 
-                   avaliacaoUnica = _produtoRepositorio.ConsultarAvaliacaoCliente(codProd.Value, login.codLogin);
-                    
+
+                    avaliacaoUnica = _produtoRepositorio.ConsultarAvaliacaoCliente(codProd.Value, login.codLogin);
+
                 }
             }
             else
@@ -149,13 +149,16 @@ namespace edutico.Controllers
         }
 
 
-        public IActionResult DeletarAvaliacao(int codLogin, int codAvaliacao)
+        public IActionResult DeletarAvaliacao(int codAvaliacao, decimal codProd)
         {
-            // Chama o método para deletar a avaliação
-            _produtoRepositorio.DeletarAvaliacao(codLogin, codAvaliacao);
+            // Pega o codLogin do Usuário Logado através da sessão
+            var Login = _loginSessao.GetLogin();
 
-            // Após a exclusão, redireciona para a página com as avaliações atualizadas
-            return RedirectToAction("DetalhesProduto", new { id = codAvaliacao });
+            // Chama o método para deletar a avaliação
+            string mensagem = _produtoRepositorio.DeletarAvaliacao(Login.codLogin, codAvaliacao, codProd);
+            TempData["msg"] = mensagem;
+
+            return RedirectToAction("DetalhesProduto", new { codProd });
 
         }
 

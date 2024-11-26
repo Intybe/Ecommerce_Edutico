@@ -27,7 +27,7 @@ namespace edutico.Repositorio
         void AtualizarStatusProduto(decimal codProd, int statusProd);
 
         // Método para deletar avaliação
-        void DeletarAvaliacao(int codLogin, int codAvaliacao);
+        string DeletarAvaliacao(int codLogin, int codAvaliacao, decimal codProd);
 
         // Método para consultar informações do Dashboard
         Dashboard ConsultarInfosEcommerce();
@@ -37,5 +37,7 @@ namespace edutico.Repositorio
 
         // Método para consultar a avalição do cliente
         Avaliacao ConsultarAvaliacaoCliente(decimal codProd, int codLogin);
+
+        Produto ConsultarDetalheProdutoF(decimal codProd);
     }
 }

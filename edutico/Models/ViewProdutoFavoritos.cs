@@ -8,5 +8,6 @@ namespace edutico.Models
         public Produto produto { get; set; } = new Produto();
 
         public Avaliacao avaliacaoUnica { get; set; }
+
     }
 }
