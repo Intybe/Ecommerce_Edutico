@@ -44,64 +44,66 @@
             {
                 <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 d-flex align-items-stretch">
                     <a asp-controller="Funcionario" asp-action="DetalhesProdutoF" asp-route-codProd="@produto.codProd" class="text-decoration-none">
+                        <div class="card product-card my-2">
+                            <div class="card-body py-2">
 
-                    <div class="card product-card my-2">
-                        <div class="card-body py-2">
-                            <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
-                            <h6 class="card-title mt-3 mx-0 glacial-bold" style="color:#000">
-                                @if (produto.nomeProd.Length > 20)
+
+                                <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
+                                <h6 class="card-title mt-3 mx-0 glacial-bold" style="color:#000">
+                                    @if (produto.nomeProd.Length > 20)
+                                    {
+                                        @produto.nomeProd.Substring(0, 20)
+
+                                        <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                    }
+                                    else
+                                    {
+                                        @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                    }
+                                </h6>
+
+                                @if (produto.avaliacoes != null && produto.avaliacoes.Any())
                                 {
-                                    @produto.nomeProd.Substring(0, 20)
-
-                                    <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                    <p class="text mb-2 small-text">
+                                        <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
+                                    </p>
                                 }
                                 else
                                 {
-                                    @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                    <p class="text mb-2 small-text">
+                                        <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
+                                    </p>
                                 }
-                            </h6>
+                                <p class="h5 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
 
-                            @if (produto.avaliacoes != null && produto.avaliacoes.Any())
-                            {
-                                <p class="text mb-2 small-text">
-                                    <img src="~/imgs/Star.png" class="icone mb-1" style="width: 15px; height: 15px;"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
-                                </p>
-                            }
-                            else
-                            {
-                                <p class="text mb-2 small-text">
-                                    <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
-                                </p>
-                            }
-                            <p class="h5 glacial-bold" style="color:#1C3FB9">R$ @produto.valorUnit</p>
+                                <!-- BOTÕES -->
+                                <div class="justify-content-between d-flex">
+                                    @if (produto.statusProd == false) // Se o produto está ativo
+                                    {
+                                        <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
+                                            <input type="hidden" name="codProd" value="@produto.codProd" />
+                                            <input type="hidden" name="statusProd" value="1" />
+                                            <button type="submit" class="btn ativar-btn">Ativar</button>
+                                        </form>
+                                    }
+                                    else // Se o produto está inativo
+                                    {
+                                        <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
+                                            <input type="hidden" name="codProd" value="@produto.codProd" />
+                                            <input type="hidden" name="statusProd" value="0" />
+                                            <button type="submit" class="btn desativar-btn">Desativar</button>
+                                        </form>
 
-                            <!-- BOTÕES -->
-                            <div class="justify-content-between d-flex">
-                                @if (produto.statusProd == false) // Se o produto está ativo
-                                {
-                                    <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
-                                        <input type="hidden" name="codProd" value="@produto.codProd" />
-                                        <input type="hidden" name="statusProd" value="1" />
-                                        <button type="submit" class="btn ativar-btn">Ativar</button>
-                                    </form>
-                                }
-                                else // Se o produto está inativo
-                                {
-                                    <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
-                                        <input type="hidden" name="codProd" value="@produto.codProd" />
-                                        <input type="hidden" name="statusProd" value="0" />
-                                        <button type="submit" class="btn desativar-btn">Desativar</button>
-                                    </form>
-
-                                }
-                                <a asp-controller="Funcionario" asp-action="AlterarProdutosF" asp-route-codProd="@produto.codProd" class="text-decoration-none">
-                                    <button class="btn editar-btn">Editar</button>
-                                </a>
+                                    }
+                                    <a asp-controller="Funcionario" asp-action="AlterarProdutosF" asp-route-codProd="@produto.codProd" class="text-decoration-none">
+                                        <button class="btn editar-btn">Editar</button>
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
-                       
-                    </div>
                     </a>
+
                 </div>
             }
         </div>

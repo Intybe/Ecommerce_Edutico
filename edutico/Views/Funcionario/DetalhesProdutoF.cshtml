@@ -8,22 +8,18 @@
 }
 
 
-<div class="container row justify-content-center">
-    <div class="col-6">
-        <div class="base-prod-detalhe d-flex">
-            <div class="scrollable-div col-3 overflow-auto">
-                @if (Model?.produto != null && Model.produto.imgs != null && Model.produto.imgs.Any())
+<div class="container row justify-content-between">
+    <div class="col-7">
+        <div class="base-prod-detalhe justify-content-between d-flex">
+            <div class="scrollable-div col-2 overflow-auto">
+                @foreach (var img in Model.produto.imgs)
                 {
-                    <img src="@Url.Content(Model.produto.imgs.First().enderecoImg)" class="imgprincipal" />
-                }
-                else
-                {
-                    <p>Sem imagens disponíveis.</p>
+                    <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem(" @Url.Content(img.enderecoImg)")" />
                 }
 
             </div>
 
-            <div class="imgprincipal-container">
+            <div class="imgprincipal-container position-relative">
                 <img src="@Url.Content(@Model.produto.imgs.First().enderecoImg)" class="imgprincipal" />
             </div>
         </div>
@@ -57,6 +53,11 @@
                             }
                         </li>
                     </ul>
+
+
+                    <br />
+                    <br />
+                    <br />
             </div>
             <div class="fundo_ver position-absolute bottom-0 end-0">
                 <button class="vermais position-absolute bottom-0 end-0" id="toggle-button">Ler descrição completa</button>
@@ -197,7 +198,7 @@
     </div>
 
     <!-- CARDS AO LADO-->
-    <div class="col-4">
+    <div class="col-5">
         <div class="base-prod-detalhe">
             <div class="d-flex pb-2 px-1 justify-content-between">
                 <h5 class="glacial-bold titulo-detalhe">@Model.produto.nomeProd</h5>
@@ -269,14 +270,13 @@
 
                 <div class="qtdProd"><p>@Model.produto.estoque</p> </div>
             </div>
-            <div class="row justify-content-center px-2 m-1">
-                <a asp-controller="Home" asp-action="AlterarProdutosF" class="btnAlt">ALTERAR</a>
+            <div class="justify-content-between d-flex">
                 @if (Model.produto.statusProd == false) // Se o produto está ativo
                 {
                     <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
                         <input type="hidden" name="codProd" value="@Model.produto.codProd" />
                         <input type="hidden" name="statusProd" value="1" />
-                        <button type="submit" class="btn ativar-btn">Ativar</button>
+                        <button type="submit" class="btn-detalhe ativar-btn">Ativar</button>
                     </form>
                 }
                 else // Se o produto está inativo
@@ -284,14 +284,17 @@
                     <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
                         <input type="hidden" name="codProd" value="@Model.produto.codProd" />
                         <input type="hidden" name="statusProd" value="0" />
-                        <button type="submit" class="btn desativar-btn">Desativar</button>
+                        <button type="submit" class="btn-detalhe desativar-btn">Desativar</button>
                     </form>
 
                 }
+                <a asp-controller="Funcionario" asp-action="AlterarProdutosF" asp-route-codProd="@Model.produto.codProd" class="text-decoration-none">
+                    <button class="btn-detalhe editar-btn">Editar</button>
+                </a>
             </div>
         </div>
     </div>
-    }
+    
 </div>
 
 
@@ -366,3 +369,6 @@
         }
     }
 </script>
+
+<script src="~/js/site.js"></script>
+

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\edutico.props" />
+</Project>

@@ -37,6 +37,7 @@ wwwroot\imgs\Devolucao.png
 wwwroot\imgs\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp
 wwwroot\imgs\edupedidos.png
 wwwroot\imgs\ee261419-bb8c-4706-90b7-7f44fab1a509.jfif
+wwwroot\imgs\elo.png
 wwwroot\imgs\esgotados.png
 wwwroot\imgs\estrelaVazia.png
 wwwroot\imgs\f8748c98-e708-4dec-a0e3-5eceaff5c959.webp
@@ -85,6 +86,7 @@ wwwroot\imgs\produtos\carrinho_1.png
 wwwroot\imgs\produtos\carrinhp_1.png
 wwwroot\imgs\produtos\ççç_1.png
 wwwroot\imgs\produtos\ççç_2.png
+wwwroot\imgs\produtos\eve_1.png
 wwwroot\imgs\produtos\Flaviinha.com_1.png
 wwwroot\imgs\produtos\Flaviinha.com_10.png
 wwwroot\imgs\produtos\Flaviinha.com_2.png
@@ -95,6 +97,7 @@ wwwroot\imgs\produtos\Flaviinha.com_6.png
 wwwroot\imgs\produtos\Flaviinha.com_7.png
 wwwroot\imgs\produtos\Flaviinha.com_8.png
 wwwroot\imgs\produtos\Flaviinha.com_9.png
+wwwroot\imgs\produtos\gerere_1.png
 wwwroot\imgs\produtos\Jogo_De_Ação_-_Disney_-_Dobble_-_Galápagos_1.webp
 wwwroot\imgs\produtos\KAKAKAKAK_1.png
 wwwroot\imgs\produtos\KAKAKAKAK_2.png
@@ -106,6 +109,7 @@ wwwroot\imgs\produtos\Quebra_Cabeça_-_Explorando_o_Corpo_Humano_-_120_Peças_-_
 wwwroot\imgs\produtos\r_1.png
 wwwroot\imgs\produtos\teste_1.jpg
 wwwroot\imgs\produtos\teste_1.png
+wwwroot\imgs\produtos\tetse_1.jpg
 wwwroot\imgs\produtos\wsedrjisdrtgy_1.jpg
 wwwroot\imgs\produtos\X_1.jpg
 wwwroot\imgs\produtos\X_1.png
@@ -122,6 +126,7 @@ wwwroot\imgs\ticofeliz.png
 wwwroot\imgs\ticolupa.png
 wwwroot\imgs\upload.png
 wwwroot\imgs\vendas.png
+wwwroot\imgs\Visa.png
 wwwroot\imgs\whatsapp.png
 wwwroot\imgs\x.png
 wwwroot\imgs\xx.png

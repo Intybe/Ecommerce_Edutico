@@ -7,72 +7,88 @@
 
 @if (!Model.Any())
 {
-    <div class=" align-content-center justify-content-center" style="min-height:80vh;">
-        <div class="glacial-bold text-center">
-            <img src="~/imgs/ticolupa.png" style="height:400px;" />
-            <br />
-            <p>
-                Nenhum produto corresponde a sua busca, tente outro item :)
-            </p>
-        </div>
-    </div>
-
-}
-else
-{
     <div class="container">
-        <div class="d-flex ">
+        <div class="d-flex">
             <p>Local de entrega</p>
             <div class="filtro">
                 <label for="option" style="font-family: 'Glacial Bold'">CEP:</label>
-                <select id="cep">
-                </select>
+                <select id="cep"></select>
             </div>
-
-
         </div>
         <div class="row">
             <div class="col-4">
                 <div class="filter-section">
                     <h3>FILTROS</h3>
+
+                    <!-- Filtros de categoria -->
                     <div class="filter-item">
                         <div class="filter-title">Categoria</div>
                         <div class="filter-content">
-                            <label><input type="checkbox" name="categoria" value="categoria1"> Categoria 1</label>
-                            <label><input type="checkbox" name="categoria" value="categoria2"> Categoria 2</label>
-                            <label><input type="checkbox" name="categoria" value="categoria3"> Categoria 3</label>
+                            <label><input type="checkbox" name="categoria" value="1" onchange="atualizarFiltros(this)"> Brinquedos de Montar</label>
+                            <label><input type="checkbox" name="categoria" value="2" onchange="atualizarFiltros(this)"> Brinquedos Sustentáveis</label>
+                            <label><input type="checkbox" name="categoria" value="3" onchange="atualizarFiltros(this)"> Brinquedos Científicos</label>
+                            <label><input type="checkbox" name="categoria" value="4" onchange="atualizarFiltros(this)"> Quebra-Cabeças</label>
+                            <label><input type="checkbox" name="categoria" value="5" onchange="atualizarFiltros(this)"> Livros Interativos</label>
+                            <label><input type="checkbox" name="categoria" value="6" onchange="atualizarFiltros(this)"> Brinquedos Sensoriais</label>
+                            <label><input type="checkbox" name="categoria" value="7" onchange="atualizarFiltros(this)"> Instrumentos Musicais</label>
+                            <label><input type="checkbox" name="categoria" value="8" onchange="atualizarFiltros(this)"> Jogos de Tabuleiro</label>
+                            <label><input type="checkbox" name="categoria" value="9" onchange="atualizarFiltros(this)"> Jogos de Desafio</label>
+                            <label><input type="checkbox" name="categoria" value="10" onchange="atualizarFiltros(this)"> Jogos de Ação</label>
+                            <label><input type="checkbox" name="categoria" value="11" onchange="atualizarFiltros(this)"> Jogos de Cartas</label>
+                            <label><input type="checkbox" name="categoria" value="12" onchange="atualizarFiltros(this)"> Jogos Eletrônicos</label>
                         </div>
                     </div>
 
+                    <!-- Filtros de habilidade -->
                     <div class="filter-item">
                         <div class="filter-title">Habilidade</div>
                         <div class="filter-content">
-                            <label><input type="checkbox" name="habilidade" value="motora"> Motora</label>
-                            <label><input type="checkbox" name="habilidade" value="critica"> Crítica</label>
-                            <label><input type="checkbox" name="habilidade" value="logica"> Lógica</label>
+                            <label><input type="checkbox" name="habilidade" value="1" onchange="atualizarFiltros(this)"> Criatividade</label>
+                            <label><input type="checkbox" name="habilidade" value="2" onchange="atualizarFiltros(this)"> Coordenação motora</label>
+                            <label><input type="checkbox" name="habilidade" value="3" onchange="atualizarFiltros(this)"> Concentração</label>
+                            <label><input type="checkbox" name="habilidade" value="4" onchange="atualizarFiltros(this)"> Educação Emocional</label>
+                            <label><input type="checkbox" name="habilidade" value="5" onchange="atualizarFiltros(this)"> Linguagem e comunicação</label>
+                            <label><input type="checkbox" name="habilidade" value="6" onchange="atualizarFiltros(this)"> Matemática</label>
+                            <label><input type="checkbox" name="habilidade" value="7" onchange="atualizarFiltros(this)"> Raciocínio lógico</label>
+                            <label><input type="checkbox" name="habilidade" value="8" onchange="atualizarFiltros(this)"> Socialização</label>
+                            <label><input type="checkbox" name="habilidade" value="9" onchange="atualizarFiltros(this)"> Resolução de problemas</label>
+                            <label><input type="checkbox" name="habilidade" value="10" onchange="atualizarFiltros(this)"> Pensamento crítico</label>
                         </div>
                     </div>
 
+                    <!-- Classificação Indicativa -->
                     <div class="filter-item">
-                        <div class="filter-title">Classificação</div>
+                        <div class="filter-title">Classificação Indicativa</div>
                         <div class="filter-content">
-                            <label><input type="checkbox" name="classificacao" value="5estrelas"> 5 Estrelas</label>
-                            <label><input type="checkbox" name="classificacao" value="4estrelas"> 4 Estrelas</label>
-                            <label><input type="checkbox" name="classificacao" value="3estrelas"> 3 Estrelas</label>
+                            <label><input type="checkbox" name="classificacao" value="1" onchange="atualizarFiltros(this)"> Até 2 Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="2" onchange="atualizarFiltros(this)"> 3+ Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="3" onchange="atualizarFiltros(this)"> 6+ Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="4" onchange="atualizarFiltros(this)"> 10+ Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="5" onchange="atualizarFiltros(this)"> 12+ Anos</label>
                         </div>
                     </div>
 
+                    <!-- Preço -->
                     <div class="filter-item">
                         <div class="filter-title">Preço</div>
                         <div class="filter-content">
-                            <label><input type="checkbox" name="preco" value="barato"> Barato</label>
-                            <label><input type="checkbox" name="preco" value="medio"> Médio</label>
-                            <label><input type="checkbox" name="preco" value="caro"> Caro</label>
+                            <label><input type="checkbox" name="preco" value="0-50" onchange="atualizarFiltros(this)"> R$ 0 - R$ 50</label>
+                            <label><input type="checkbox" name="preco" value="51-100" onchange="atualizarFiltros(this)"> R$ 51 - R$ 100</label>
+                            <label><input type="checkbox" name="preco" value="101-200" onchange="atualizarFiltros(this)"> R$ 101 - R$ 200</label>
+                            <label><input type="checkbox" name="preco" value="201-500" onchange="atualizarFiltros(this)"> R$ 201 - R$ 500</label>
+                            <label><input type="checkbox" name="preco" value="501-1000" onchange="atualizarFiltros(this)"> R$ 501 - R$ 1000</label>
+                            <label><input type="checkbox" name="preco" value="1001-mais" onchange="atualizarFiltros(this)"> R$ 1001 ou mais</label>
                         </div>
                     </div>
 
+                    <form id="formFiltro" asp-controller="Produto" asp-action="FiltrarProdutos" method="post">
+                        <input type="hidden" id="inputHabilidade" name="filtroHabilidade" value="@ViewData["filtroHabilidade"]" />
+                        <input type="hidden" id="inputCategoria" name="filtroCategoria" value="@ViewData["filtroCategoria"]" />
+                        <input type="hidden" id="inputClassificacao" name="filtroClassificacao" value="@ViewData["filtroClassificacao"]" />
+                        <input type="hidden" id="inputPreco" name="filtroPreco" value="@ViewData["filtroPreco"]" />
+                        <input type="hidden" name="pesquisa" value="@ViewData["pesquisa"]" />
+                    </form>
                 </div>
-
             </div>
             <div class="col-8">
                 <div class="justify-content-between d-flex">
@@ -83,9 +99,114 @@ else
                             <option value="relevante"> Relevante </option>
                         </select>
                     </div>
-
                 </div>
 
+                <div class="row align-items-center justify-content-center">
+                    <img src="~/imgs/ticolupa.png" id="imgTicoLupa" />
+                    <br />
+                    <p class="row align-items-center justify-content-center">
+                        Nenhum produto corresponde a sua busca, tente outro item :)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="d-flex">
+            <p>Local de entrega</p>
+            <div class="filtro">
+                <label for="option" style="font-family: 'Glacial Bold'">CEP:</label>
+                <select id="cep"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="filter-section">
+                    <h3>FILTROS</h3>
+
+                    <!-- Filtros de categoria -->
+                    <div class="filter-item">
+                        <div class="filter-title">Categoria</div>
+                        <div class="filter-content">
+                            <label><input type="checkbox" name="categoria" value="1" onchange="atualizarFiltros(this)"> Brinquedos de Montar</label>
+                            <label><input type="checkbox" name="categoria" value="2" onchange="atualizarFiltros(this)"> Brinquedos Sustentáveis</label>
+                            <label><input type="checkbox" name="categoria" value="3" onchange="atualizarFiltros(this)"> Jogos Educativos</label>
+                            <label><input type="checkbox" name="categoria" value="4" onchange="atualizarFiltros(this)"> Livros Infantis</label>
+                            <label><input type="checkbox" name="categoria" value="5" onchange="atualizarFiltros(this)"> Puzzles</label>
+                            <label><input type="checkbox" name="categoria" value="6" onchange="atualizarFiltros(this)"> Jogos de Tabuleiro</label>
+                            <label><input type="checkbox" name="categoria" value="7" onchange="atualizarFiltros(this)"> Kits de Ciências</label>
+                            <label><input type="checkbox" name="categoria" value="8" onchange="atualizarFiltros(this)"> Instrumentos Musicais</label>
+                            <label><input type="checkbox" name="categoria" value="9" onchange="atualizarFiltros(this)"> Brinquedos de Exterior</label>
+                            <label><input type="checkbox" name="categoria" value="10" onchange="atualizarFiltros(this)"> Fantasias</label>
+                            <label><input type="checkbox" name="categoria" value="11" onchange="atualizarFiltros(this)"> Robótica</label>
+                            <label><input type="checkbox" name="categoria" value="12" onchange="atualizarFiltros(this)"> Brinquedos Eletrônicos</label>
+                        </div>
+                    </div>
+
+                    <!-- Filtros de habilidade -->
+                    <div class="filter-item">
+                        <div class="filter-title">Habilidade</div>
+                        <div class="filter-content">
+                            <label><input type="checkbox" name="habilidade" value="1" onchange="atualizarFiltros(this)"> Criatividade</label>
+                            <label><input type="checkbox" name="habilidade" value="2" onchange="atualizarFiltros(this)"> Coordenação motora</label>
+                            <label><input type="checkbox" name="habilidade" value="3" onchange="atualizarFiltros(this)"> Concentração</label>
+                            <label><input type="checkbox" name="habilidade" value="4" onchange="atualizarFiltros(this)"> Educação Emocional</label>
+                            <label><input type="checkbox" name="habilidade" value="5" onchange="atualizarFiltros(this)"> Linguagem e comunicação</label>
+                            <label><input type="checkbox" name="habilidade" value="6" onchange="atualizarFiltros(this)"> Matemática</label>
+                            <label><input type="checkbox" name="habilidade" value="7" onchange="atualizarFiltros(this)"> Raciocínio lógico</label>
+                            <label><input type="checkbox" name="habilidade" value="8" onchange="atualizarFiltros(this)"> Socialização</label>
+                            <label><input type="checkbox" name="habilidade" value="9" onchange="atualizarFiltros(this)"> Resolução de problemas</label>
+                            <label><input type="checkbox" name="habilidade" value="10" onchange="atualizarFiltros(this)"> Pensamento crítico</label>
+                        </div>
+                    </div>
+
+                    <!-- Classificação Indicativa -->
+                    <div class="filter-item">
+                        <div class="filter-title">Classificação Indicativa</div>
+                        <div class="filter-content">
+                            <label><input type="checkbox" name="classificacao" value="1" onchange="atualizarFiltros(this)"> Até 2 Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="2" onchange="atualizarFiltros(this)"> 3+ Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="3" onchange="atualizarFiltros(this)"> 6+ Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="4" onchange="atualizarFiltros(this)"> 10+ Anos</label>
+                            <label><input type="checkbox" name="classificacao" value="5" onchange="atualizarFiltros(this)"> 12+ Anos</label>
+                        </div>
+                    </div>
+
+                    <!-- Preço -->
+                    <div class="filter-item">
+                        <div class="filter-title">Preço</div>
+                        <div class="filter-content">
+                            <label><input type="checkbox" name="preco" value="0-50" onchange="atualizarFiltros(this)"> R$ 0 - R$ 50</label>
+                            <label><input type="checkbox" name="preco" value="51-100" onchange="atualizarFiltros(this)"> R$ 51 - R$ 100</label>
+                            <label><input type="checkbox" name="preco" value="101-200" onchange="atualizarFiltros(this)"> R$ 101 - R$ 200</label>
+                            <label><input type="checkbox" name="preco" value="201-500" onchange="atualizarFiltros(this)"> R$ 201 - R$ 500</label>
+                            <label><input type="checkbox" name="preco" value="501-1000" onchange="atualizarFiltros(this)"> R$ 501 - R$ 1000</label>
+                            <label><input type="checkbox" name="preco" value="1001-mais" onchange="atualizarFiltros(this)"> R$ 1001 ou mais</label>
+                        </div>
+                    </div>
+
+                    <form id="formFiltro" asp-controller="Produto" asp-action="FiltrarProdutos" method="post">
+                        <input type="hidden" id="inputHabilidade" name="filtroHabilidade" value="@ViewData["filtroHabilidade"]" />
+                        <input type="hidden" id="inputCategoria" name="filtroCategoria" value="@ViewData["filtroCategoria"]" />
+                        <input type="hidden" id="inputClassificacao" name="filtroClassificacao" value="@ViewData["filtroClassificacao"]" />
+                        <input type="hidden" id="inputPreco" name="filtroPreco" value="@ViewData["filtroPreco"]" />
+                        <input type="hidden" name="pesquisa" value="@ViewData["pesquisa"]" />
+                    </form>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="justify-content-between d-flex">
+                    <p style="font-family:'Glacial Bold'; font-size:23px;">Resultados para "@ViewData["pesquisa"]"</p>
+                    <div class="filtro">
+                        <label for="option" style="font-family: 'Glacial Bold'; padding-inline:10px">Ordenar por</label>
+                        <select id="ordecao">
+                            <option value="relevante"> Relevante </option>
+                        </select>
+                    </div>
+                </div>
 
                 <div class="row">
                     @foreach (var produto in Model.Take(6))
@@ -105,11 +226,11 @@ else
                                             {
                                                 @produto.nomeProd.Substring(0, 20)
 
-                                                <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                                <text>...</text>
                                             }
                                             else
                                             {
-                                                @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                                @produto.nomeProd
                                             }
                                         </h6>
 
@@ -134,13 +255,84 @@ else
                                     </a>
                                 </div>
                             </a>
-
                         </div>
                     }
                 </div>
-
             </div>
         </div>
     </div>
-
 }
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const inputHabilidade = document.querySelector("#inputHabilidade");
+        const inputCategoria = document.querySelector("#inputCategoria");
+        const inputClassificacao = document.querySelector("#inputClassificacao");
+        const inputPreco = document.querySelector("#inputPreco");
+
+        const categorias = inputCategoria.value ? inputCategoria.value.split(',') : [];
+        const habilidades = inputHabilidade.value ? inputHabilidade.value.split(',') : [];
+        const classificacoes = inputClassificacao.value ? inputClassificacao.value.split(',') : [];
+        const preco = inputPreco.value ? JSON.parse(inputPreco.value) : [];
+
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach(function (checkbox) {
+            if (checkbox.name === "categoria" && categorias.includes(checkbox.value)) {
+                checkbox.checked = true;
+            } else if (checkbox.name === "habilidade" && habilidades.includes(checkbox.value)) {
+                checkbox.checked = true;
+            } else if (checkbox.name === "classificacao" && classificacoes.includes(checkbox.value)) {
+                checkbox.checked = true;
+            } else if (checkbox.name === "preco" && preco.includes(checkbox.value)) {
+                checkbox.checked = true;
+            } else {
+                checkbox.checked = false;
+            }
+        });
+    });
+
+    function atualizarFiltros(check) {
+        const form = document.querySelector("#formFiltro");
+
+        let habilidade = inputHabilidade.value ? inputHabilidade.value.split(',') : [];
+        let categoria = inputCategoria.value ? inputCategoria.value.split(',') : [];
+        let classificacao = inputClassificacao.value ? inputClassificacao.value.split(',') : [];
+        let preco = inputPreco.value ? JSON.parse(inputPreco.value) : [];
+
+        if (check.name == "categoria") {
+            if (check.checked) {
+                categoria.push(check.value);
+            } else {
+                categoria = categoria.filter(item => item !== check.value);
+            }
+            inputCategoria.value = categoria.join(',');
+        }
+        if (check.name == "habilidade") {
+            if (check.checked) {
+                habilidade.push(check.value);
+            } else {
+                habilidade = habilidade.filter(item => item !== check.value);
+            }
+            inputHabilidade.value = habilidade.join(',');
+        }
+        if (check.name == "classificacao") {
+            if (check.checked) {
+                classificacao.push(check.value);
+            } else {
+                classificacao = classificacao.filter(item => item !== check.value);
+            }
+            inputClassificacao.value = classificacao.join(',');
+        }
+        if (check.name == "preco") {
+            let partes = check.value.split("-");
+            if (check.checked) {
+                preco.push({ min: partes[0], max: partes[1] });
+            } else {
+                preco = preco.filter(item => item.min !== partes[0] || item.max !== partes[1]);
+            }
+            inputPreco.value = JSON.stringify(preco);
+        }
+
+        form.submit();
+    }
+</script>

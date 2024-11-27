@@ -19,50 +19,91 @@
         <div class="header">
             <h1>PEDIDOS</h1>
         </div>
-        <table class="Tabela">
-            <thead>
-                <tr>
-                    <th>N° Pedido</th>
-                    <th>Produtos</th>
-                    <th>Valor</th>
-                    <th>Data</th>
-                    <th>Cliente</th>
-                    <th>Status</th>
-                    <th>Informações</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach(var pedido in Model){
+        <div class="containerTabela">
+            <div class="status">
+                <div class="tab tabactive" data-status="Todos">Todos</div>
+                <div class="tab" data-status="2">Pendentes</div>
+                <div class="tab" data-status="0">Concluídos</div>
+                <div class="tab" data-status="Em andamento">Em andamento</div>
+                <div class="tab" data-status="Cancelados">Cancelados</div>
+            </div>
 
-                    var nome = pedido.cliente.nome;
-                    var sobrenome = pedido.cliente.sobrenome;
-
-                    string primeiroNome = nome.Contains(' ') ? nome.Substring(0, nome.IndexOf(' ')) : nome;
-                    string ultimoSobrenome = sobrenome.Contains(' ') ? sobrenome.Substring(sobrenome.LastIndexOf(' ') + 1) : sobrenome;
-
+            <table class="TabelaH">
+                <thead>
                     <tr>
-                        <td>@pedido.NF</td>
-                        <td>
-                            @*<span><img src="~/imgs/montamonta.jpg" class="prevproduto" /></span>*@
-                            @if (pedido.itensPedido.First().produto.nomeProd.Length > 17)
-                            {
-                                @pedido.itensPedido.First().produto.nomeProd.Substring(0,17)
-
-                                <text>...</text> 
-                            }
-                            else
-                            {
-                                @pedido.itensPedido.First().produto.nomeProd
-                            }
-                        </td>
-                        <td>R$ @pedido.valorTotal.ToString("F2")</td>
-                        <td>@pedido.data.ToString("dd/MM/yyyy")</td>
-                        <td>@primeiroNome @ultimoSobrenome</td>
-                        <td>@pedido.statusPedido</td>
-                        <td><a asp-controller="Home" asp-action="DetalhesPedidoF" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
+                        <th>N° Pedido</th>
+                        <th>Produtos</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Cliente</th>
+                        <th>Status</th>
+                        <th>Informações</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var pedido in Model)
+                    {
+
+                        var nome = pedido.cliente.nome;
+                        var sobrenome = pedido.cliente.sobrenome;
+
+                        string primeiroNome = nome.Contains(' ') ? nome.Substring(0, nome.IndexOf(' ')) : nome;
+                        string ultimoSobrenome = sobrenome.Contains(' ') ? sobrenome.Substring(sobrenome.LastIndexOf(' ') + 1) : sobrenome;
+
+                        <tr>
+                            <td>@pedido.NF</td>
+                            <td>
+                                @*<span><img src="~/imgs/montamonta.jpg" class="prevproduto" /></span>*@
+                                @if (pedido.itensPedido.First().produto.nomeProd.Length > 17)
+                                {
+                                    @pedido.itensPedido.First().produto.nomeProd.Substring(0, 17)
+
+                                    <text>...</text>
+                                }
+                                else
+                                {
+                                    @pedido.itensPedido.First().produto.nomeProd
+                                }
+                            </td>
+                            <td>R$ @pedido.valorTotal.ToString("F2")</td>
+                            <td>@pedido.data.ToString("dd/MM/yyyy")</td>
+                            <td>@primeiroNome @ultimoSobrenome</td>
+                            <td data-status="@pedido.statusPedido">@pedido.statusPedido</td>
+                            <td><a asp-controller="Home" asp-action="DetalhesPedidoF" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
     </section>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab");
+        const linhas = document.querySelectorAll(".TabelaH tbody tr");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                // Remover a classe ativa de todas as abas
+                tabs.forEach(t => t.classList.remove("tabactive"));
+                // Adicionar a classe ativa à aba clicada
+                tab.classList.add("tabactive");
+
+                // Obter o status correspondente à aba clicada
+                const pegarStatus = tab.getAttribute("data-status");
+
+                // Filtrar linhas da tabela
+                linhas.forEach(row => {
+                    const statusLinha = row.querySelector("td:nth-child(6)").textContent.trim(); // pega a coluna do status
+                    if (statusLinha === pegarStatus || pegarStatus === "Todos") {
+                        row.style.display = ""; // Mostrar linha
+                    } else {
+                        row.style.display = "none"; // Ocultar linha
+                    }
+                });
+            });
+        });
+    });
+</script>

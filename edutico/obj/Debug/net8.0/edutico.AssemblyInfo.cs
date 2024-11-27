@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("edutico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d50b7c3c80286687898f6136ace283a7b566f4c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1eb5f0d501efb0405af56ff2f5a60f6fcfae6f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("edutico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("edutico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

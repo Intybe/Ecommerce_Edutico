@@ -29,7 +29,7 @@
                     <th>Informações</th>
                 </tr>
             </thead>
-            
+
             <tbody>
                 @foreach (var produto in Model)
                 {
@@ -48,14 +48,14 @@
                             {
                                 @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
                             }
-                        
+
                         </td>
                         <td>R$ @produto.valorUnit.ToString("F2")</td>
                         <td>@produto.qtdFavorito</td>
-                        <td><a asp-controller="Home" asp-action="DetalhesProdutoF">Detalhes</a></td>
+                        <td><a asp-controller="Home" asp-action="DetalhesProdutoF" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
                     </tr>
                 }
-            </tbody>  
+            </tbody>
         </table>
     </section>
 </section>

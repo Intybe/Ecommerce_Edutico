@@ -33,7 +33,7 @@ body {
 .Tudo {
     display: flex;
     padding: 20px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Sidebar */
@@ -323,6 +323,16 @@ p {
     cursor: pointer; /* Muda o cursor ao passar sobre o botão */
 }
 
+.btn-detalhe {
+    padding: 10px;
+    border-radius: 30px;
+    border: none; /* Sem borda */
+    font-family: 'Glacial Bold';
+    width: 200px;
+    font-size: 15px;
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
 /* Estilos para o botão "desativar" */
 .desativar-btn {
     background-color: rgba(227, 27, 33, 0.3); /* Cor vermelha com 30% de opacidade */
@@ -459,10 +469,30 @@ td {
             text-align: left;
         }
 
+/*Detalhes Produto*/
 
+.base-prod-detalhe {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.provi {
+    background-color: #808080;
+    border-radius: 16px;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+}
 /* DETALHES PEDIDO */
 .DetalhesPedidosF {
-    height: auto;
+    height: 80vh;
     padding: 10px;
 }
 
@@ -507,10 +537,6 @@ td {
     margin-left: 15px;
 }
 
-.Data {
-    margin-left: 220px;
-    margin-top: -50px;
-}
 
 /* Dados Cliente */
 .DadosCliPed {
@@ -586,7 +612,7 @@ td {
 /*CARD PEDIDO */
 .CardPed {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
     padding: 20px;
@@ -614,12 +640,6 @@ td {
             justify-content: space-between;
             align-items: center;
         }
-
-            .CardPed .Detalhes p img {
-                width: 60px;
-                height: 60px;
-                margin-right: 10px;
-            }
 
     .CardPed .total {
         font-size: 18px;
@@ -650,22 +670,34 @@ td {
         font-size: 14px;
     }
 
+.item-ped {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .item-ped p img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
 
 .btnvoltar {
-    position: relative;
-    margin-left: 70%;
-    width: 150px;
-    height: 30px;
+    display: flex;
+    justify-content: center;
 }
 
     .btnvoltar .register-button {
-        font-size: 14px;
+        font-size: 16px;
         font-family: 'Glacial Bold';
         color: #385BD2;
         border: 2px solid #385BD2;
-        padding: 5px 30px;
-        border-radius: 20px;
-        text-decoration: none;
+        text-align: center;
+        padding: 5px 35px;
+        border-radius: 30px;
+        background: none;
+        align-items: center;
     }
 
 /*CADASTRAR PRODUTO*/
@@ -950,16 +982,12 @@ label {
 /*HISTÓRICO DE VENDAS*/
 .containerTabela {
     width: 100%;
-    margin: 20px auto;
-    border-radius: 8px;
-    margin-left: 10px;
 }
 
     .containerTabela .status {
-        width: 20rem;
-        margin-left: 180px;
-        margin-bottom: 10px;
-        max-width: 65%;
+        gap: 10px;
+        margin-block: 15px;
+        max-width: 50%;
         display: flex;
         font-size: 15px;
         font-family: "Glacial Bold";
@@ -970,6 +998,7 @@ label {
         text-align: left;
         cursor: pointer;
         color: #ABABAB;
+        transition: 0.5s ease-out;
     }
 
 .status .tabactive {
@@ -977,21 +1006,11 @@ label {
     border-bottom: 2px solid #385BD2;
 }
 
-.containerTabela .TabelaH {
-    margin-left: 190px;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    width: 78%;
-    border-collapse: collapse;
-    align-items: initial;
-}
-
 
 .TabelaH th {
-    margin-left: 15px;
     color: #ABABAB;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Glacial Indifference';
     text-align: left;
     border-top: none;
@@ -999,13 +1018,10 @@ label {
 }
 
 
-
 .TabelaH td {
-    margin-left: 8px;
-    font-size: 12px;
+    font-size: 15px;
     font-family: Glacial;
     text-align: left;
-    max-width: 80px;
 }
 
     .TabelaH td img {
@@ -1218,15 +1234,6 @@ label {
     margin-bottom: 10px;
 }
 
-.imgpequena {
-    background-color: #808080;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
 
 .imgprincipal {
     background-color: #fff;
@@ -1234,15 +1241,10 @@ label {
     border: 1px solid gray;
     width: 31rem;
     height: 31rem;
+    object-fit: cover;
 }
 
-.provi {
-    background-color: #808080;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 25px;
-    height: 25px;
-}
+
 
 .btncar {
     width: 100%;
@@ -1297,16 +1299,8 @@ label {
     border: 1px solid gray;
     width: 100px;
     height: 100px;
-    margin-right: 10px;
     margin-bottom: 10px;
-}
-
-.imgprincipal {
-    background-color: #fff;
-    border-radius: 16px;
-    border: 1px solid gray;
-    width: 31rem;
-    height: 31rem;
+    object-fit:cover;
 }
 
 /*Div detalhes*/

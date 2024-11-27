@@ -877,8 +877,9 @@ h5 {
 
 .sumario-pedido {
     background: white;
-    border: 1px solid black;
-    border-radius: 16px;
+    border-radius: 20px;
+    border: 1px solid #b2b2b2;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     padding: 20px;
     margin-bottom: 10px;
 }
@@ -909,6 +910,7 @@ h5 {
     border: none;
     color: white;
     border-radius: 50px;
+    margin-right: 30px;
     font-size: 15px;
 }
 
@@ -1330,6 +1332,9 @@ input[type='checkbox']:checked ~ .custom-check span { /*aqui usa o "~" porque é 
     .setaabre.giraseta {
         transform: rotate(90deg);
     }
+
+
+
 
 
 /*FUNCIONÁRIO*/
