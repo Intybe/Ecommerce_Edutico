@@ -1,7 +1,3 @@
-select * from tbLogin;
-
-select * from tbCartaoCredito;
-describe tbCartaoCredito;
 Use dbEdutico;
 
 -- Inserção dos Clientes --

@@ -24,39 +24,44 @@
 
         <div class="base-prod-detalhe position-relative">
             <h3>Descrição do produto</h3>
-            <p class="texto-simples">
+
+            <p class="texto-simples" style="text-align:justify;text-indent: 40px;">
                 @Model.produto.descricao
             </p>
             <div id="versaocompleta" class="hidden">
-                <p class="texto-simples">Características do Produto:</p>
                 <br />
-                <p class="texto-simple">
-                    @Model.produto.descricao;
-                    <ul class="texto-simples">
-                        <li><strong>Categoria: </strong>@Model.produto.categoria.nomeCategoria</li>
-                        <li><strong>Classificação Indicativa: </strong>@Model.produto.classificacao.nomeClassificacao</li>
+                <p class="texto-simples ">Características do Produto:</p>
+                <br />
 
-                        @{
-                            int colorIndex = 0;
-                            var colors = new List<string> { "azul", "vermelho", "amarelo" };
+                <ul class="texto-simples">
+                    <li><strong>Categoria: </strong>@Model.produto.categoria.nomeCategoria</li>
+                    <li><strong>Classificação Indicativa: </strong>@Model.produto.classificacao.nomeClassificacao</li>
+
+                    @{
+                        int colorIndex = 0;
+                        var colors = new List<string> { "azul", "vermelho", "amarelo" };
+                    }
+
+                    <li><strong>Habilidades:</strong></li>
+                    <strong class="texto-simples">
+                        @foreach (var habilidade in Model.produto.habilidades)
+                        {
+                            <span style="color: @colors[colorIndex]; display: inline-block; margin-right: 10px;">
+                                #@habilidade.nomeHabilidade
+                            </span>
+                            colorIndex = (colorIndex + 1) % colors.Count; // alterna entre as cores
                         }
+                    </strong>
+                </ul>
 
-                        <li>
-                            @foreach (var habilidade in Model.produto.habilidades)
-                            {
-                                <span style="color: @colors[colorIndex]; display: inline-block; margin-right: 10px;">
-                                    #@habilidade.nomeHabilidade
-                                </span>
-                                colorIndex = (colorIndex + 1) % colors.Count; // alterna entre as cores
-                            }
-                        </li>
-                    </ul>
+
+                <br />
+                <br />
+                <br />
             </div>
             <div class="fundo_ver position-absolute bottom-0 end-0">
                 <button class="vermais position-absolute bottom-0 end-0" id="toggle-button">Ler descrição completa</button>
             </div>
-
-
         </div>
         <div class="base-prod-detalhe  texto-simples">
             <h3>Avaliações do produto</h3>
@@ -353,69 +358,70 @@
             <div class="card-recome my-2">
                 @foreach (var produto in Model.produto.relacionados)
                 {
-                    <div class="card-body d-flex py-2">
-                        <div class="position-relative">
-                            @if (!Model.favoritos.Any())
-                            {
-                                <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
-                                    <button class=" btn position-absolute start-0 top-0 px-0">
-                                        <img src="~/imgs/heart.png" class="heart-icon">
-                                    </button>
-                                </form>
-                            }
-                            else
-                            {
-                                if (Model.favoritos.Contains(produto.codProd))
+                    <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-codProd="@produto.codProd" class="text-decoration-none">
+                        <div class="card-body d-flex py-2">
+                            <div class="position-relative">
+                                @if (!Model.favoritos.Any())
                                 {
-                                    <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="RemoverFavorito" method="post">
-                                        <button class=" btn position-absolute start-0 top-0 px-0">
-                                            <img src="~/imgs/favoritado.png" class="heart-icon">
-                                        </button>
-                                    </form>
-                                }
-                                else
-                                {
-                                    <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                                    <form asp-controller="Favorito" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
                                         <button class=" btn position-absolute start-0 top-0 px-0">
                                             <img src="~/imgs/heart.png" class="heart-icon">
                                         </button>
                                     </form>
-
-                                }
-                            }
-                        </div>
-
-                        <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
-                        <div class="px-2">
-                            <h6 class="card-title mt-3 text-center mx-0 glacial-bold">
-                                @if (produto.nomeProd.Length > 20)
-                                {
-                                    @produto.nomeProd.Substring(0, 20)
-
-                                    <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
                                 }
                                 else
                                 {
-                                    @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                    if (Model.favoritos.Contains(produto.codProd))
+                                    {
+                                        <form asp-controller="Favorito" asp-route-codProd="@Model.produto.codProd" asp-action="RemoverFavorito" method="post">
+                                            <button class=" btn position-absolute start-0 top-0 px-0">
+                                                <img src="~/imgs/favoritado.png" class="heart-icon">
+                                            </button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <form asp-controller="Favorito" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                                            <button class=" btn position-absolute start-0 top-0 px-0">
+                                                <img src="~/imgs/heart.png" class="heart-icon">
+                                            </button>
+                                        </form>
+                                    }
                                 }
-                            </h6>
-                            @if (produto.qtdAvaliacao == 0)
-                            {
-                                <p class="text mb-3 small-text">
-                                    <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
-                                </p>
-                            }
-                            else
-                            {
-                                <p class="text mb-3 small-text">
-                                    <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
-                                </p>
-                            }
-                            <p class="cor h4 glacial-bold">R$ @produto.valorUnit</p>
-                        </div>
+                            </div>
 
-                    </div>
-                    <hr />
+                            <img src="@Url.Content(produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produto.nomeProd" />
+                            <div class="px-2">
+                                <h6 class="card-title mt-3 text-center mx-0 glacial-bold">
+                                    @if (produto.nomeProd.Length > 20)
+                                    {
+                                        @produto.nomeProd.Substring(0, 20)
+
+                                        <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                    }
+                                    else
+                                    {
+                                        @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                    }
+                                </h6>
+                                @if (produto.qtdAvaliacao == 0)
+                                {
+                                    <p class="text mb-3 small-text">
+                                        <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
+                                    </p>
+                                }
+                                else
+                                {
+                                    <p class="text mb-3 small-text">
+                                        <img src="~/imgs/Star.png" class="icone mb-1"> @((produto.somaAvaliacao / produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
+                                    </p>
+                                }
+                                <p class="cor h4 glacial-bold">R$ @produto.valorUnit</p>
+                            </div>
+
+                        </div>
+                        <hr />
+                    </a>
                 }
             </div>
         </div>
@@ -433,7 +439,7 @@
             toast.show();
         });
     </script>
-}00000
+}
 
 
 <script>

@@ -142,8 +142,9 @@ namespace edutico.Repositorio
                     Convert.ToDecimal(dr["valorUnit"]),
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
-                    dr["imgs"].ToString(),
-                     statusProd: Convert.ToBoolean(dr["statusProd"])
+                    dr["imgs"]?.ToString(),
+                    Convert.ToBoolean(dr["statusProd"]),
+                    dr["classificacao"].ToString()
                 );
                 produtos.Add(produto);
             }
@@ -189,8 +190,9 @@ namespace edutico.Repositorio
                     Convert.ToDecimal(dr["valorUnit"]),
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
-                    dr["imgs"].ToString(),
-                     statusProd: Convert.ToBoolean(dr["statusProd"])
+                    dr["imgs"]?.ToString(),
+                    Convert.ToBoolean(dr["statusProd"]),
+                    dr["classificacao"].ToString()
                 );
                 produtos.Add(produto);
             }
@@ -206,10 +208,50 @@ namespace edutico.Repositorio
         }
 
 
+        public IEnumerable<Produto> ConsultarTodosProdutos()
+        {
+            //var para conectar o bd 
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // comando sql para selecionar os produtos e suas imgs
+            string sql = "Select * from vwPreviaProduto where statusProd = 1;";
+
+            // Junta o comando SQL com a informações do banco
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            //  executa e le oq veio da query 
+            MySqlDataReader dr = cmd.ExecuteReader();
 
 
+            // Cria uma lista de objeto do tipo Produto
+            List<Produto> produtos = new List<Produto>();
 
+            // Enquanto houver linhas cria um objeto produto e adiciona a lista
+            while (dr.Read())
+            {
+                Produto produto = new Produto(
+                    Convert.ToDecimal(dr["codProd"]),
+                    dr["nomeProd"].ToString(),
+                    Convert.ToDecimal(dr["valorUnit"]),
+                    Convert.ToInt32(dr["qtdAvaliacao"]),
+                    Convert.ToInt32(dr["somaAvaliacao"]),
+                    dr["imgs"]?.ToString(),
+                    Convert.ToBoolean(dr["statusProd"]),
+                    dr["classificacao"].ToString()
+                );
+                produtos.Add(produto);
+            }
 
+            // Fecha o leitor do produto
+            dr.Close();
+
+            // Fecha a conexão com o banco de dados
+            con.DesconectarBD();
+
+            // Retorna o produto (ou null se não for encontrado)
+            return produtos;
+        }
 
         // Método de consulta aos detalhes do produto
         public Produto ConsultarDetalheProduto(decimal codProd)
@@ -285,7 +327,8 @@ namespace edutico.Repositorio
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
                     dr["imgs"]?.ToString(),
-                    statusProd: Convert.ToBoolean(dr["statusProd"])
+                    Convert.ToBoolean(dr["statusProd"]),
+                    dr["classificacao"].ToString()
                 );
                 produtos.Add(produtoRelacionados);
             }
@@ -378,7 +421,8 @@ namespace edutico.Repositorio
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
                     dr["imgs"]?.ToString(),
-                    statusProd: Convert.ToBoolean(dr["statusProd"])
+                    Convert.ToBoolean(dr["statusProd"]),
+                    dr["classificacao"].ToString()
                 );
                 produtos.Add(produtoRelacionados);
             }
@@ -516,7 +560,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Comando SQL para selecionar produtos e suas respectivas imagens, com filtro de pesquisa
-            string sql = "Select * from vwPreviaProduto where statusProd = 1 and nomeProd like @pesquisa;"; // Filtro de pesquisa            
+            string sql = "Select * from vwPreviaProduto where statusProd = 1 and nomeProd like @pesquisa;";        
 
             // Junta o comando SQL com a informações do banco
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
@@ -540,7 +584,8 @@ namespace edutico.Repositorio
                     Convert.ToInt32(dr["qtdAvaliacao"]),
                     Convert.ToInt32(dr["somaAvaliacao"]),
                     dr["imgs"]?.ToString(),
-                    statusProd: Convert.ToBoolean(dr["statusProd"])
+                    Convert.ToBoolean(dr["statusProd"]),
+                    dr["classificacao"].ToString()
                 );
                 produtos.Add(produtoRelacionados);
             }

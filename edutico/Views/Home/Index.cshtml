@@ -54,11 +54,21 @@
         </div>
     </div>
     <div class="d-flex justify-content-between mb-5">
-        <img src="~/imgs/ate2anos.png" class="cat_img" />
-        <img src="~/imgs/mais3.png" class="cat_img" />
-        <img src="~/imgs/6maisanos.png" class="cat_img" />
-        <img src="~/imgs/mais10anos.png" class="cat_img" />
-        <img src="~/imgs/mais12.png" class="cat_img" />
+        <a asp-controller="Produto" asp-action="FiltrarClassificacao" asp-route-classificacao="1 - Até 2 Anos">
+            <img src="~/imgs/ate2anos.png" class="cat_img" />
+        </a>
+        <a asp-controller="Produto" asp-action="FiltrarClassificacao" asp-route-classificacao="2 - 3+ Anos">
+            <img src="~/imgs/mais3.png" class="cat_img" />
+        </a>
+        <a asp-controller="Produto" asp-action="FiltrarClassificacao" asp-route-classificacao="3 - 6+ Anos">
+            <img src="~/imgs/6maisanos.png" class="cat_img" />
+        </a>
+        <a asp-controller="Produto" asp-action="FiltrarClassificacao" asp-route-classificacao="4 - 10+ Anos">
+            <img src="~/imgs/mais10anos.png" class="cat_img" />
+        </a>
+        <a asp-controller="Produto" asp-action="FiltrarClassificacao" asp-route-classificacao="5 - 12+ Anos">
+            <img src="~/imgs/mais12.png" class="cat_img" />
+        </a>
     </div>
 </div>
 

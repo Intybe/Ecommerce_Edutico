@@ -2,6 +2,7 @@
 using edutico.Models;
 using edutico.Repositorio;
 using Microsoft.AspNetCore.Mvc;
+using Org.BouncyCastle.Asn1;
 using System.Security.Cryptography.X509Certificates;
 
 namespace edutico.Controllers
@@ -173,6 +174,16 @@ namespace edutico.Controllers
 
             ViewData["pesquisa"] = pesquisa;
             return View(produtos);
+        }
+
+        public IActionResult FiltrarClassificacao(string classificacao)
+        {
+            List<Produto> produtosFiltrados = _produtoRepositorio.ConsultarTodosProdutos()
+                    .Where(p => (p.classificacao.codClassificacao.ToString() + " - " + p.classificacao.nomeClassificacao)
+                        .Equals(classificacao))
+                    .ToList();
+
+            return View("Pesquisa", produtosFiltrados);
         }
     }
 }

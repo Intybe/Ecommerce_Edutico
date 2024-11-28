@@ -49,7 +49,7 @@ namespace edutico.Models
         public Produto() { }
 
         // Construtor de prévia dos produtos (Geralmente utilizado na Index)
-        public Produto(decimal codProd, string nomeProd, decimal valorUnit, int qtdAvaliacao, int somaAvaliacao, string imgsConcatenadas, bool statusProd)
+        public Produto(decimal codProd, string nomeProd, decimal valorUnit, int qtdAvaliacao, int somaAvaliacao, string imgsConcatenadas, bool statusProd, string classificacao)
         {
             this.codProd = codProd;
             this.nomeProd = nomeProd;
@@ -58,6 +58,7 @@ namespace edutico.Models
             this.somaAvaliacao = somaAvaliacao;
             this.imgs = ParseImagens(imgsConcatenadas);
             this.statusProd = statusProd;
+            this.classificacao = ParseClassificacao(classificacao);
         }
 
         // Construtor de prévia dos produtos (Carrinho)

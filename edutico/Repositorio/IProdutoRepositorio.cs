@@ -39,5 +39,7 @@ namespace edutico.Repositorio
         Avaliacao ConsultarAvaliacaoCliente(decimal codProd, int codLogin);
 
         Produto ConsultarDetalheProdutoF(decimal codProd);
+
+        public IEnumerable<Produto> ConsultarTodosProdutos();
     }
 }

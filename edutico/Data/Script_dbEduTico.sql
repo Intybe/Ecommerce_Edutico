@@ -988,11 +988,13 @@ Select
     tbProduto.statusProd,
     GROUP_CONCAT(CONCAT(tbImagem.nomeImg, ' -- ', tbImagem.enderecoImg) Separator ' | ') AS 'imgs',
     IFNULL(vwEstatisticasAvaliacao.totalAvaliacoes, 0) As 'qtdAvaliacao',
-    IFNULL(vwEstatisticasAvaliacao.totalEstrelas, 0) As 'somaAvaliacao'
+    IFNULL(vwEstatisticasAvaliacao.totalEstrelas, 0) As 'somaAvaliacao',
+    CONCAT(tbClassificacao.codClassificacao, ' - ', tbClassificacao.nomeClassificacao) As 'classificacao'
 from tbProduto
     Left Join tbImagem On tbImagem.codProd = tbProduto.codProd
     Left Join tbAvaliacao On tbAvaliacao.codProd = tbProduto.codProd
     Left Join vwEstatisticasAvaliacao On vwEstatisticasAvaliacao.codProd = tbProduto.codProd
+	Left Join tbClassificacao On tbClassificacao.codClassificacao = tbProduto.codClassificacao
 Group by tbProduto.codProd;
 $$
 
@@ -1184,29 +1186,13 @@ End $$
 
 -- Procedure para filtrar produtos por classifcação --
 Delimiter $$
-Create Procedure spSelectTbProdutoClassificacao(vCodClassificacao int)
+Create Procedure spSelectTbProdutoClassificacao(vClassificacao varchar(100))
 Begin
-	Select vwProduto.* from tbProduto Inner Join vwProduto On codProd = Código
-    where codClassificacao = vCodClassificacao and StatusProd = 0;
+	Select vwPreviaProduto.* from vwPreviaProduto where statusProd = 1 and lancamento = 1 and classificacao like vClassificacao;
 End $$
 
--- Procedure para filtrar produto por categoria --
-Delimiter $$
-Create Procedure spSelectTbProdutoCategoria(vCodCategoria int)
-Begin
-	Select vwProduto.* from tbProduto Inner Join vwProduto On codProd = Código
-    where codCategoria = vCodCategoria and StatusProd = 0;
-End $$
-
--- Procedure para filtrar os produtos por habilidade --
-Delimiter $$
-Create Procedure spSelectTbProdutoHabilidade(vCodHabilidade int)
-Begin
-	Select vwProduto.* from tbProduto 
-		Inner Join vwProduto On tbProduto.codProd = Código
-        Inner Join tbHabilidade_Produto On tbHabilidade_Produto.codProd = Código
-    where codHabilidade = vCodHabilidade and StatusProd = 0;
-End $$
+Select * from tbClassificacao
+Call spSelectTbProdutoClassificacao(1)
 
 -- Procedure para Consultar os produtos no carrinho --
 Delimiter $$
