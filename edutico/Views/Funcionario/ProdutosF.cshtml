@@ -21,15 +21,16 @@
                 <h1>PRODUTOS</h1>
                 <div class="sort">
                     <span>Ordenar por</span>
-                    <select>
-                        <option value="BemAvaliados">Bem avaliados</option>
-                        <option value="OrdemAlfabetica">Ordem alfabética</option>
-                        <option value="Esgotados">Esgotados</option>
-                        <option value="MaisVendidos">Mais vendidos</option>
-                        <option value="MenosVendidos">Menos vendidos</option>
-                        <option value="MaiorPreco">Maior Preço</option>
-                        <option value="MenorPreco">Menor Preço</option>
-                    </select>
+                    <form id="filtroPedido" asp-controller="Funcionario" asp-action="OrdenarProdutos">
+                        <select name="filtroOrdenacao" onchange="this.form.submit()">
+                            <option value="null">Todos</option>
+                            <option value="BemAvaliados">Bem avaliados</option>
+                            <option value="OrdemAlfabetica">Ordem alfabética</option>
+                            <option value="Esgotados">Esgotados</option>
+                            <option value="MaiorPreco">Maior Preço</option>
+                            <option value="MenorPreco">Menor Preço</option>
+                        </select>
+                    </form>
                 </div>
             </div>
 

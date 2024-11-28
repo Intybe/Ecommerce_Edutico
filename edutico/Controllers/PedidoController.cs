@@ -112,7 +112,7 @@ namespace edutico.Controllers
                     {
                         pedido = pedido,
                         cartoes = cartoes,
-                         retorno = retornoPag
+                        retorno = retornoPag
                     };
 
                     TempData["Pagamento"] = JsonConvert.SerializeObject(pagamento);
@@ -156,7 +156,7 @@ namespace edutico.Controllers
             return View(pedidos);
         }
 
-        public IActionResult ConsultarPedidosFiltros(int statusPedido)
+        public IActionResult FiltrarPedidos(int statusPedido)
         {
             // Pega o codLogin do Usuário Logado através da sessão
             var Login = _loginSessao.GetLogin();
@@ -213,6 +213,7 @@ namespace edutico.Controllers
             return View(pedido);
         }
 
+
         public IActionResult GerarNF(string pedido)
         {
             // Desserializa o pedido
@@ -224,14 +225,11 @@ namespace edutico.Controllers
             // Transforma o arquivo original em bytes
             byte[] arquivoTemplate = System.IO.File.ReadAllBytes(caminhoTemplate);
 
-            // Cria uma cópia arquivo na memória, pois não podemosalterar o temmplate diretamente
+            // Cria uma cópia arquivo na memória, pois não podemos alterar o template diretamente
             MemoryStream arquivoMemoria = new MemoryStream(arquivoTemplate);
 
-            // Abreo arquivo da memória em Word
+            // Abre o arquivo da memória em Word
             Document arquivoWord = new Document(arquivoMemoria);
-
-            // Adicionando a função de edição ao arquivo
-            DocumentBuilder editarArquivo = new DocumentBuilder(arquivoWord);
 
             // Editando o arquivo
             arquivoWord.Range.Replace("{{nomeCli}}", $"{dadosPedido.cliente.nome} {dadosPedido.cliente.sobrenome}");
@@ -249,16 +247,14 @@ namespace edutico.Controllers
             arquivoWord.Range.Replace("{{HoraEmissao}}", dadosPedido.data.ToString("HH:mm"));
             arquivoWord.Range.Replace("{{dataEmissao}}", dadosPedido.data.ToString("dd/MM/yyyy"));
 
-
-            if(dadosPedido.itensPedido.Count() == 1)
+            if (dadosPedido.itensPedido.Count() == 1)
             {
                 foreach (var item in dadosPedido.itensPedido)
                 {
                     arquivoWord.Range.Replace("{{codProd}}", item.produto.codProd.ToString());
                     arquivoWord.Range.Replace("{{nomeProd}}", item.produto.nomeProd.ToString());
                     arquivoWord.Range.Replace("{{qtdItem}}", item.qtdItem.ToString());
-                    arquivoWord.Range.Replace("{{qtdItem}}", item.qtdItem.ToString());
-                    arquivoWord.Range.Replace("{{valorItem}}", item.valorItem.ToString());
+                    arquivoWord.Range.Replace("{{valorItem}}", item.valorItem.ToString("C2"));
                 }
             }
             else
@@ -271,47 +267,38 @@ namespace edutico.Controllers
                 if (tabela != null)
                 {
                     // Encontre a linha base com o marcador {{codProd}}
-                    Row linhaBase = (Row)tabela.Rows.Cast<Row>()
-                                                    .FirstOrDefault(r => r.Range.Text.Contains("{{codProd}}"));
+                    Row linhaBase = tabela.Rows.Cast<Row>()
+                                               .FirstOrDefault(r => r.Range.Text.Contains("{{codProd}}"));
 
                     if (linhaBase != null)
                     {
-                        // Remove a linha base para evitar duplicação
-                        tabela.Rows.Remove(linhaBase);
+                        // Clonando a linha base antes de removê-la
+                        Row linhaModelo = (Row)linhaBase.Clone(true);
+
+                        // Formantando o valor do Item do e jeito correto
+                        string valor = dadosPedido.itensPedido.First().valorItem.ToString();
+                        string valorItem = valor.Insert(valor.Length - 2, ",");
+
+                        // Alterando a linha que já está no documento
+                        arquivoWord.Range.Replace("{{codProd}}", dadosPedido.itensPedido.First().produto.codProd.ToString());
+                        arquivoWord.Range.Replace("{{nomeProd}}", dadosPedido.itensPedido.First().produto.nomeProd.ToString());
+                        arquivoWord.Range.Replace("{{qtdItem}}", dadosPedido.itensPedido.First().qtdItem.ToString());
+                        arquivoWord.Range.Replace("{{valorItem}}", valorItem);
 
                         // Adicionar uma nova linha para cada item do pedido
-                        foreach (var item in dadosPedido.itensPedido)
+                        foreach (var item in dadosPedido.itensPedido.Skip(1))
                         {
-                            // Clonando a linha base para criar uma nova linha
-                            Row novaLinha = (Row)linhaBase.Clone(true);  // Clonando a linha com todas as suas células
+                            Row novaLinha = (Row)linhaModelo.Clone(true);
 
-                            // Itere sobre as células da nova linha para substituir os valores
-                            for (int i = 0; i < novaLinha.Cells.Count; i++)
-                            {
-                                // Obtenha a célula atual
-                                Cell cell = novaLinha.Cells[i];
-
-                                // Substitua os placeholders na célula com os valores do item
-                                if (cell.Range.Text.Contains("{{codProd}}"))
-                                {
-                                    cell.Range.Text.Replace("{{codProd}}", item.produto.codProd.ToString());
-                                }
-                                if (cell.Range.Text.Contains("{{nomeProd}}"))
-                                {
-                                    cell.Range.Text.Replace("{{nomeProd}}", item.produto.nomeProd.ToString());
-                                }
-                                if (cell.Range.Text.Contains("{{qtdItem}}"))
-                                {
-                                    cell.Range.Text.Replace("{{qtdItem}}", item.qtdItem.ToString());
-                                }
-                                if (cell.Range.Text.Contains("{{valorItem}}"))
-                                {
-                                    cell.Range.Text.Replace("{{valorItem}}", item.valorItem.ToString());
-                                }
-                            }
-
-                            // Adiciona a nova linha modificada de volta à tabela
                             tabela.Rows.Add(novaLinha);
+
+                            valor = item.valorItem.ToString();
+                            valorItem = valor.Insert(valor.Length - 2, ",");
+
+                            arquivoWord.Range.Replace("{{codProd}}", item.produto.codProd.ToString());
+                            arquivoWord.Range.Replace("{{nomeProd}}", item.produto.nomeProd.ToString());
+                            arquivoWord.Range.Replace("{{qtdItem}}", item.qtdItem.ToString());
+                            arquivoWord.Range.Replace("{{valorItem}}", valorItem);
                         }
                     }
                 }
@@ -326,25 +313,24 @@ namespace edutico.Controllers
             // Salva o arquivo em pdf (converte)
             arquivoWord.Save(arquivoPdf, SaveFormat.Pdf);
 
-            // Garantie que o arquivo em pdf seja o primeiro na memória
+            // Garante que o arquivo em pdf seja o primeiro na memória
             arquivoPdf.Position = 0;
 
             // Retorna o arquivo em pdf para visualização
             return File(arquivoPdf.ToArray(), "application/pdf", "documento-editado.pdf");
-
         }
 
 
-        public IActionResult AtualizarStatusPedido(string pedido, int status)
+
+        [HttpPost]
+        public IActionResult AtualizarStatusPedido(int NF, int status)
         {
             // Pega o codLogin do Usuário Logado através da sessão
             var Login = _loginSessao.GetLogin();
 
-            var DadosPedido = JsonConvert.DeserializeObject<Pedido>(pedido);
+            _pedidoRepositorio.AtualizarStatusPedido(NF, status);
 
-            _pedidoRepositorio.AtualizarStatusPedido(DadosPedido.NF, status);
-
-            Pedido pedidoAtulizado = _pedidoRepositorio.ConsultarDetalhesPedido(DadosPedido.NF);
+            Pedido pedidoAtulizado = _pedidoRepositorio.ConsultarDetalhesPedido(NF);
 
             // Adiciona os dados do cliente ao pedido
             pedidoAtulizado.cliente = _clienteRepositorio.ConsultarCliente(Login.codLogin);

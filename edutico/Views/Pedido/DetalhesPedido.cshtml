@@ -1,11 +1,12 @@
 ﻿@{
-     Layout = "_LayoutCli2";
+    Layout = "_LayoutCli2";
     ViewData["Title"] = "Detalhes Pedido";
 }
 
 @{
+    @using System.Text.Json;
     @model Pedido;
-    var pedido = Json.Serialize(Model);
+    var pedido = JsonSerializer.Serialize(@Model);
 }
 
 
@@ -13,36 +14,36 @@
     <h3 style="font-family:'Edutico'; margin-left:43%;">DETALHES PEDIDO</h3>
     <div class="d-flex justify-content-center">
         <div class="col-4 mx-3">
-       
+
         <div class="areaPedido">
             <p class="text-center" style="font-size:20px;">Pedido nº @Model.NF</P>
             <hr />
             <div class="detalhes-ped ">
                 <div class="scrollable-div overflow-auto" style="max-height: 150px;">
-                    @foreach(var itemPedido in Model.itensPedido)
-                    {
-                        string valor = itemPedido.valorItem.ToString();
+                        @foreach (var itemPedido in Model.itensPedido)
+                        {
+                            string valor = itemPedido.valorItem.ToString();
 
-                        var valorItem = valor.Insert(valor.Length - 2, ",");
+                            var valorItem = valor.Insert(valor.Length - 2, ",");
 
-                        <div class="item-prod">
-                            <p> 
-                                <img src="@Url.Content(@itemPedido.produto.img.enderecoImg)" alt="@itemPedido.produto.nomeProd"> 
-                                @if (itemPedido.produto.nomeProd.Length > 35)
-                                {
-                                    @itemPedido.produto.nomeProd.Substring(0, 35)
+                            <div class="item-prod">
+                                <p> 
+                                    <img src="@Url.Content(@itemPedido.produto.img.enderecoImg)" alt="@itemPedido.produto.nomeProd"> 
+                                    @if (itemPedido.produto.nomeProd.Length > 35)
+                                    {
+                                        @itemPedido.produto.nomeProd.Substring(0, 35)
 
-                                    <text>...</text> 
-                                }
-                                else
-                                {
-                                    @itemPedido.produto.nomeProd 
-                                }
-                            </p>
+                                        <text>...</text> 
+                                    }
+                                    else
+                                    {
+                                        @itemPedido.produto.nomeProd 
+                                    }
+                                </p>
 
-                            <p>R$ @valorItem</p>
-                        </div>
-                    }
+                                <p>R$ @valorItem</p>
+                            </div>
+                        }
                 </div>
                <div class="item-prod mt-2">
                     <p>Entrega</p>
@@ -52,17 +53,17 @@
              <hr />
             <div class="total-pedido d-flex" id="glacial-bold">
                 <p>Total</p>
-                <p>R$ @Model.valorTotal</p>
+                <p>R$ @Model.valorTotal.ToString("F2")</p>
             </div>
         </div>
 
         </div>
     </div>
-       
+
         <div class="col-6 mx-3">
-            
+
             <div class="areaPedido">
-                
+
                  <div class="sub_perfil">
                     <h5 id="glacial-bold">Endereço</h5>
                   </div>
@@ -99,7 +100,7 @@
                                 <p id="info_perfil">@Model.cliente.uf</p>
                             </div>
                         </div>
-                   
+
                 </div>
                 <div class="sub_perfil">
                     <h5 id="glacial-bold">Informações sobre a entrega</h5>
@@ -124,34 +125,39 @@
                             <p id="info_perfil">7 dias úteis</p>
                         </div>
                     </div>
-                
+
                 </div>
-                    
+
             </div>
            <div class="d-flex pt-2 justify-content-center">
-                @if(Model.statusPedido.ToString() == "0")
+                @if (Model.statusPedido.ToString() == "0")
                 {
-                    <a asp-controller="Pedido" asp-action="AtualizarStatusPedido" asp-route-pedido="@pedido" asp-route-status=3>
-                        <button class="btncanc">Cancelar Pedido</button>
-                    </a>
-                } 
-                else if(Model.statusPedido == 1)
+                        <form asp-controller="Pedido" asp-action="AtualizarStatusPedido" method="post">
+                            <input type="hidden" name="NF" value="@Model.NF" />
+                             <input type="hidden" name="status" value="3" />
+                            <button type="submit" class="btncanc">Cancelar Pedido</button>
+                        </form>
+                }
+                else if (Model.statusPedido == 1)
                 {
-                     <a asp-controller="Pedido" asp-action="AtualizarStatusPedido" asp-route-pedido="@pedido" asp-route-status=2>
-                        <button class="btncanc">Pedido Recebido</button>
-                     </a>
+                         <form asp-controller="Pedido" asp-action="AtualizarStatusPedido" method="post">
+                             <input type="hidden" name="NF" value="@Model.NF" />
+                             <input type="hidden" name="status" value="2" />
+                             <button type="submit" class="btncanc">Pedido Recebido</button>
+                         </form>
                 }
                 else
                 {
-                     <a asp-controller="Pedido" asp-action="GerarNF" asp-route-pedido="@pedido">
-                        <button class="btncanc">Ver Nota Fiscal</button>
-                     </a>
+                         <form asp-controller="Pedido" asp-action="GerarNF" method="post">
+                             <input type="hidden" name="pedido" value="@pedido" />
+                             <button type="submit" class="btncanc">Ver Nota Fiscal</button>
+                         </form>
                 }
                 <button class="btnnav">Voltar para a navegação</button>
             </div>
-            
+
        </div>
     </div>
-    
-        
+
+
     </section>

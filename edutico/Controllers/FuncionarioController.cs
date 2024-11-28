@@ -62,7 +62,48 @@ namespace edutico.Controllers
                 produtos = _produtoRepositorio.ConsultarProdutoF().ToList(); // Obtém os produtos
 
             }
+            if (TempData["ProdutosFiltrados"] != null)
+            {
+                produtos = TempData["ProdutosFiltrados"] as List<Produto>;
+            }
+
             return View(produtos);
+        }
+
+        public IActionResult OrdenarProdutos(string filtroOrdenacao)
+        {
+            List<Produto> listaProdutos = null;
+
+            listaProdutos = _produtoRepositorio.ConsultarProdutoF().ToList();
+
+            if (!string.IsNullOrEmpty(filtroOrdenacao))
+            {
+                switch (filtroOrdenacao)
+                {
+                    case "BemAvaliados":
+                        listaProdutos = listaProdutos.OrderByDescending(p => p.qtdAvaliacao).ThenByDescending(p => p.somaAvaliacao).ToList(); // Ordena por avaliação
+                        break;
+                    case "OrdemAlfabetica":
+                        listaProdutos = listaProdutos.OrderBy(p => p.nomeProd).ToList(); // Ordena por nome (alfabético)
+                        break;
+                    case "Esgotados":
+                        listaProdutos = listaProdutos.Where(p => p.estoque == 0).ToList(); // Filtra os produtos esgotados
+                        break;
+
+                    case "MaiorPreco":
+                        listaProdutos = listaProdutos.OrderByDescending(p => p.valorUnit).ToList(); // Ordena por maior preço
+                        break;
+                    case "MenorPreco":
+                        listaProdutos = listaProdutos.OrderBy(p => p.valorUnit).ToList(); // Ordena por menor preço
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            var produtosFiltrados = listaProdutos;
+
+            return View("ProdutosF", produtosFiltrados);
         }
 
         public IActionResult AtualizarStatusProduto(decimal codProd, int statusProd)
@@ -114,9 +155,6 @@ namespace edutico.Controllers
 
         public IActionResult DetalhesProdutoF(decimal? codProd)
         {
-           
-
-
             Produto produto = null;
             Avaliacao avaliacaoUnica = null;
 
@@ -161,10 +199,10 @@ namespace edutico.Controllers
                     produto = _produtoRepositorio.ConsultarDetalheProduto(codProd.Value);
 
                     // Obtém os favoritos do cliente logado
-                   
 
 
-           
+
+
 
                     avaliacaoUnica = _produtoRepositorio.ConsultarAvaliacaoCliente(codProd.Value, login.codLogin);
 
@@ -179,15 +217,12 @@ namespace edutico.Controllers
             var viewModel = new ViewProdutoFavoritos()
             {
                 produto = produto,
-               
+
                 avaliacaoUnica = avaliacaoUnica
 
             };
 
             return View(viewModel);
         }
-
-
-
     }
 }

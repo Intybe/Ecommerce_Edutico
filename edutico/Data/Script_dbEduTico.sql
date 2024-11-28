@@ -516,9 +516,13 @@ Begin
 		Insert into tbCarrinho(codLogin, codProd, qtdProd)
 						values(vCodLogin, vCodProd, vQtdProd); -- Insere os dados --
                         
+		Select("Produto adicionado ao carrinho!");
+                        
 	Else -- Caso o registro exista, só atualiza a quantidade --
 		Update tbCarrinho Set QtdProd = QtdProd + vQtdProd where codLogin = vCodLogin And codProd = vCodProd;
-    End if;
+        
+        Select("Produto adicionado ao carrinho!");
+	End if;
 End $$
 
 -- Sessão de Cadastro de Pedidos --
@@ -798,7 +802,6 @@ Begin
 	1 = Em andamento;
 	2 = Concluído (Entregue);
 	3 = Cancelado;
-	4 = Devolvido;
 	*/
 End $$
 
@@ -993,6 +996,25 @@ from tbProduto
 Group by tbProduto.codProd;
 $$
 
+-- View para junatr as detalhes das Avaliações --
+Delimiter $$
+Create View vwDetalhesAvaliacao As
+Select
+    tbAvaliacao.codProd,
+    GROUP_CONCAT(
+        CONCAT(
+            tbAvaliacao.qtdEstrela, ' - ', 
+            tbAvaliacao.comentario, ' - ',
+            tbCliente.codLogin, ' - ', 
+            SUBSTRING_INDEX(tbCliente.nomeCli, ' ', 1), ' ',
+            SUBSTRING_INDEX(tbCliente.sobrenome, ' ', -1)
+        ) Separator ' | '
+    ) As 'detalhesAvaliacao'
+from tbAvaliacao
+    Left Join tbCliente On tbCliente.codLogin = tbAvaliacao.codLogin
+Group by tbAvaliacao.codProd;
+$$
+
 -- View para unificar as informações do produto  --
 Delimiter $$
 Create View vwProdutoCompleto As
@@ -1008,13 +1030,7 @@ Select
     tbProduto.statusProd,
     tbProduto.lancamento,
     GROUP_CONCAT(Distinct CONCAT(tbImagem.nomeImg, ' -- ', tbImagem.enderecoImg) Separator ' | ') AS 'imgs',
-    GROUP_CONCAT(CONCAT(
-        tbAvaliacao.qtdEstrela, ' - ', 
-        tbAvaliacao.comentario, ' - ',
-        tbCliente.codLogin, ' - ', 
-        SUBSTRING_INDEX(tbCliente.nomeCli, ' ', 1), ' ', 
-        SUBSTRING_INDEX(tbCliente.sobrenome, ' ', -1)
-    ) Separator ' | ') As 'detalhesAvaliacao',
+    vwDetalhesAvaliacao.detalhesAvaliacao,
     CONCAT_WS(', ',
         IFNULL(vwEstatisticasAvaliacao.estrelas5, 0),
         IFNULL(vwEstatisticasAvaliacao.estrelas4, 0),
@@ -1030,9 +1046,8 @@ from tbProduto
     Left Join tbHabilidade_Produto On tbProduto.codProd = tbHabilidade_Produto.codProd
     Left Join tbHabilidade On tbHabilidade.codHabilidade = tbHabilidade_Produto.codHabilidade
     Left Join tbImagem On tbImagem.codProd = tbProduto.codProd
-    Left Join tbAvaliacao On tbAvaliacao.codProd = tbProduto.codProd
+    Left Join vwDetalhesAvaliacao On vwDetalhesAvaliacao.codProd = tbProduto.codProd
     Left Join vwEstatisticasAvaliacao On vwEstatisticasAvaliacao.codProd = tbProduto.codProd
-    Left Join tbCliente On tbCliente.codLogin = tbAvaliacao.codLogin
 Group by tbProduto.codProd;
 $$
 
@@ -1227,7 +1242,7 @@ $$
 Delimiter $$
 Create Procedure spSelectMeusPedidos(vCodLogin int)
 Begin
-	Select tbPedido.*, codItem, codprod, qtdItem, valorItem  from tbPedido Join tbItemPedido On tbPedido.NF = tbItemPedido.NF where codLogin = vCodLogin;
+	Select * from vwPedido where codLogin = vCodLogin Order By NF DESC;
 End $$
 
 -- Procedure para Selecionar todos os pedidos (Funcionário) --
@@ -1356,16 +1371,14 @@ $$
 
 -- Inserção da Habilidade do Produto --
 Delimiter $$
-	Call spInsertTbHabilidade('Brinquedos de Montar');
-    Call spInsertTbHabilidade('Brinquedos Sustentáveis');
-    Call spInsertTbHabilidade('Brinquedos Científicos');
-    Call spInsertTbHabilidade('Quebra-Cabeças');
-    Call spInsertTbHabilidade('Livros Interativos');
-    Call spInsertTbHabilidade('Brinquedos Sensoriais');
-    Call spInsertTbHabilidade('Instrumentos Musicais');
-    Call spInsertTbHabilidade('Jogos de Tabuleiro');
-    Call spInsertTbHabilidade('Jogos de Desafio');
-    Call spInsertTbHabilidade('Jogos de Ação');
-    Call spInsertTbHabilidade('Jogos de Cartas');
-    Call spInsertTbHabilidade('Jogos Eletrônicos');  
+	Call spInsertTbHabilidade('Criatividade');
+	Call spInsertTbHabilidade('Coordenação motora');
+	Call spInsertTbHabilidade('Concentração');
+	Call spInsertTbHabilidade('Educação Emocional');
+	Call spInsertTbHabilidade('Linguagem e comunicação');
+	Call spInsertTbHabilidade('Matemática');
+	Call spInsertTbHabilidade('Raciocínio lógico');
+	Call spInsertTbHabilidade('Socialização');
+	Call spInsertTbHabilidade('Resolução de problemas');
+	Call spInsertTbHabilidade('Pensamento crítico');
 $$

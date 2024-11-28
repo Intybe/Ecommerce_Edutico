@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Favorito>
+@{
+    Layout = "_MenuPerfil";
+    ViewData["Title"] = "Meus Favoritos";
+}
+
+
+
+@if (!Model.Any())
+{
+
+    <div class="col-9 base areaFavoritos">
+        <div class="justify-content-between d-flex">
+            <p style=" font-family: 'Edutico'; font-size:23px; color:#426ef0">FAVORITOS</p>
+        </div>
+        <div class="Vazio">
+            <img src="~/imgs/ticofavoritos.png" alt="Tico Vazio">
+            <p style=" font-family: 'Glacial Bold'; font-size:15px ">Seus brinquedos ficarão aqui!</p>
+            <p style=" font-family: 'Glacial Indifference'; font-size:15px ">Volte a navegação de produtos e encontre os brinquedos que você mais gosta.</p>
+        </div>
+    </div>
+
+}
+else
+{
+
+    <section class="quandoVazio ms-4">
+        <a href="#" class="Voltar">Voltar</a>
+        <div class="justify-content-between align-items-center d-flex">
+            <p class="titulo_perfil">FAVORITOS</p>
+            <div class="filtro">
+                <label for="option" style="font-family: 'Glacial Bold'; padding-inline:10px">Ordenar por</label>
+                <select id="ordecao">
+                    <option value="relevante"> Relevante </option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            @foreach (var produtoFavoritado in Model)
+            {
+                var produto = produtoFavoritado.produto;
+
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-codProd="@produtoFavoritado.produto.codProd" class="text-decoration-none">
+                        <div class="card product-card my-2">
+                            <div class="card-body py-2">
+                                <div class="position-relative">
+
+                                    <form asp-controller="Favorito" asp-route-codProd="@produtoFavoritado.produto.codProd" asp-action="RemoverFavorito" method="post">
+                                        <button class=" btn position-absolute start-0 top-0 px-0">
+                                            <img src="~/imgs/favoritado.png" class="heart-icon">
+                                        </button>
+                                    </form>
+
+                                </div>
+                                <img src="@Url.Content(@produtoFavoritado.produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@produtoFavoritado.produto.nomeProd" />
+                                <h6 class="card-title mt-3 mx-0" id="glacial-bold" style="color:#000">
+                                    @if (@produtoFavoritado.produto.nomeProd.Length > 20)
+                                    {
+                                        @produtoFavoritado.produto.nomeProd.Substring(0, 20)
+
+                                        <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                    }
+                                    else
+                                    {
+                                        @produtoFavoritado.produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                    }
+                                </h6>
+
+                                @if (produtoFavoritado.produto.avaliacoes != null && produtoFavoritado.produto.avaliacoes.Any())
+                                {
+                                    <p class="text mb-3 small-text">
+                                        <img src="~/imgs/Star.png" class="icone mb-1"> @((produtoFavoritado.produto.somaAvaliacao / produtoFavoritado.produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@produto.qtdAvaliacao avaliações)
+                                    </p>
+                                }
+                                else
+                                {
+                                    <p class="text mb-3 small-text">
+                                        <img src="~/imgs/estrelaVazia.png" class="icone mb-1"> 0 avaliações
+                                    </p>
+                                }
+                                <p class="h4 glacial-bold" style="color:#1C3FB9">R$ @produtoFavoritado.produto.valorUnit</p>
+                            </div>
+                            <a asp-controller="Carrinho" asp-action="CadastrarProdutoCarrinho" asp-route-codProd="@produtoFavoritado.produto.codProd" asp-route-qtdProd=1 class="text-decoration-none">
+                                <button class="btn position-absolute bottom-0 end-0 px-2">
+                                    <img src="~/imgs/carrinhoadd.png" class="cart-icon">
+                                </button>
+                            </a>
+                        </div>
+                    </a>
+
+                </div>
+            }
+        </div>
+
+    </section>
+}

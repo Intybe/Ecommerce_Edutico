@@ -17,19 +17,31 @@
                 <div class="col-3">
                     <div class="info-ped">
                         <p>Nome</p>
-                        <p id="info_perfil">@Model.cliente.nome + @Model.cliente.sobrenome</p>
+                        <p id="info_perfil">@Model.cliente.nome @Model.cliente.sobrenome</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-ped">
                         <p>CPF</p>
-                        <p id="info_perfil">@Model.cliente.cpf</p>
+                        <p id="info_perfil">
+                            @String.Format("{0}.{1}.{2}-{3}",
+                                     Model.cliente.cpf.ToString().Substring(0, 3),
+                                     Model.cliente.cpf.ToString().Substring(3, 3),
+                                     Model.cliente.cpf.ToString().Substring(6, 3),
+                                     Model.cliente.cpf.ToString().Substring(9, 2))
+                        </p>
+
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="info-ped">
                         <p>Telefone</p>
-                        <p id="info_perfil">@Model.cliente.telefone</p>
+                        <p id="info_perfil">
+                            @String.Format("({0}) {1}-{2}",
+                                     Model.cliente.telefone.Substring(0, 2),
+                                     Model.cliente.telefone.Substring(2, 5),
+                                     Model.cliente.telefone.Substring(7))
+                        </p>
                     </div>
                 </div>
             </div>
@@ -51,7 +63,11 @@
                         </div>
                         <div class="info-grup">
                             <p>CEP</p>
-                            <label id="info_perfil">@Model.cliente.cep</label>
+                            <label id="info_perfil">
+                                @String.Format("{0}-{1}",
+                                         Model.cliente.cep.Substring(0, 5),
+                                         Model.cliente.cep.Substring(5))
+                            </label>
                             <input type="text" id="cep" name="cep" value="@Model.cliente.cep" style="display: none">
                         </div>
                     </div>
@@ -80,7 +96,6 @@
                         </div>
                     </div>
                 </div>
-
             </form>
 
         </div>
@@ -102,11 +117,9 @@
                             </div>
                             <img src="~/imgs/pixpag.png" alt="PIX" width="30">
                             <p>PIX</p>
-
                         </label>
                     </div>
                     <div class="radio-container">
-
                         <label for="radiocartao">
                             <input type="radio" id="radiocartao" name="radio" onclick="tipoPagamento(1, this)" />
                             <div class="custom-radio">
@@ -119,13 +132,9 @@
 
                     <input type="hidden" id="tipoPag" name="tipoPag" />
                     <input type="hidden" name="pedidoIn" value='@Json.Serialize(Model)' />
-
                 </div>
             </form>
-
         </div>
-
-
     </div>
     <div class="col-4">
         <!--card pedido igual ao carrinho-->
@@ -140,8 +149,20 @@
                     @foreach (var itens in Model.itensPedido)
                     {
                         <div class="item-prod">
-                            <p> <img src="~/imgs/montamonta.jpg" alt=" Jogo MontaMonta"> @itens.produto.nomeProd</p>
-                            <p>R$ @itens.produto.valorUnit</p>
+                            <p>
+                                <img src="@Url.Content(@itens.produto.imgs.First().enderecoImg)" alt="@itens.produto.nomeProd">
+                                @if (itens.produto.nomeProd.Length > 20)
+                                {
+                                    @itens.produto.nomeProd.Substring(0, 20)
+
+                                    <text>...</text>
+                                }
+                                else
+                                {
+                                    @itens.produto.nomeProd
+                                }
+                            </p>
+                            <p>R$ @itens.produto.valorUnit.ToString("F2")</p>
                         </div>
                     }
                 </div>
@@ -155,7 +176,7 @@
                 <hr />
                 <div class="total-pedido d-flex" id="glacial-bold">
                     <p>Total</p>
-                    <p>R$ @Model.valorTotal</p>
+                    <p>R$ @Model.valorTotal.ToString("F2")</p>
                 </div>
             </div>
 
@@ -229,6 +250,5 @@
             const formulario = document.querySelector("#formPagamento");
 
             formulario.submit();
-
         }
     </script>

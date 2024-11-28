@@ -12,7 +12,7 @@
             {
                 ViewData["msg"] = null;
             }
-           
+
         }
         <p class="titulo_perfil">MEU PERFIL</p>
 
@@ -56,7 +56,12 @@
                     </div>
                     <div class="info-grup">
                         <p>Telefone</p>
-                        <label>@Model.telefone</label>
+                        <label>
+                            @String.Format("({0}) {1}-{2}",
+                                     Model.telefone.Substring(0, 2),
+                                     Model.telefone.Substring(2, 5),
+                                     Model.telefone.Substring(7))
+                        </label>
                         <input asp-for="telefone" type="text" style="display: none" />
                         <span asp-validation-for="telefone" class="text-danger"></span>
                     </div>
@@ -70,7 +75,13 @@
                     </div>
                     <div class="info-grup">
                         <p>CPF</p>
-                        <label>@Model.cpf</label>
+                        <label>
+                            @String.Format("{0}.{1}.{2}-{3}",
+                                     Model.cpf.ToString().Substring(0, 3),
+                                     Model.cpf.ToString().Substring(3, 3),
+                                     Model.cpf.ToString().Substring(6, 3),
+                                     Model.cpf.ToString().Substring(9, 2))
+                        </label>
                         <input asp-for="cpf" type="text" style="display: none" />
                         <span asp-validation-for="cpf" class="text-danger"></span>
                     </div>
@@ -95,7 +106,11 @@
                     </div>
                     <div class="info-grup">
                         <p>CEP</p>
-                        <label>@Model.cep</label>
+                        <label>
+                            @String.Format("{0}-{1}",
+                                     Model.cep.Substring(0, 5),
+                                     Model.cep.Substring(5))
+                        </label>
                         <input asp-for="cep" type="text" style="display: none" />
                         <span asp-validation-for="cep" class="text-danger"></span>
                     </div>

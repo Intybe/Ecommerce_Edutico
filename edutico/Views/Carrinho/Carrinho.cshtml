@@ -1,0 +1,213 @@
+﻿@model IEnumerable<Carrinho>
+
+@{
+    Layout = "_LayoutCli2";
+    ViewData["Title"] = "Carrinho";
+    decimal subtotal = 0;
+}
+
+@if (!Model.Any())
+{
+    <div class="carrinhoVTodo">
+        <div class="col-9 base carrinhoV">
+            <a href="#" class="Voltar">Voltar a navegação</a>
+            <div class="justify-content-between d-flex">
+                <p style="font-family: 'Edutico'; font-size:23px; color:#426ef0">SEU CARRINHO</p>
+            </div>
+        </div>
+        <div class="ticoCarrinho">
+            <img src="~/imgs/ticoCarrinhoVazio.png" alt="Tico Carrinho Vazio">
+            <p style="font-family: 'Glacial Bold'; font-size:15px">Seu carrinho está vazio</p>
+            <p style="font-family: 'Glacial Indifference'; font-size:15px">Explore a variedade de produtos e adicione produtos ao seu carrinho!</p>
+        </div>
+    </div>
+}
+else
+{
+    <section class="carrinhoCheio texto-simples">
+        <div class="row padrao">
+            <a href="#" class="Voltar">Voltar</a>
+            <div class="justify-content-between d-flex">
+                <p style="font-family: 'Edutico'; font-size:23px; color:#426ef0">SEU CARRINHO</p>
+            </div>
+        </div>
+
+        <div class="container d-flex col-10">
+            <div class="produtos texto-simples col-7">
+                @foreach (var itemCarrinho in Model)
+                {
+                    var produto = Json.Serialize(itemCarrinho);
+
+                    // Calcula o total do item
+                    decimal totalItem = itemCarrinho.qtdProd * Convert.ToDecimal(itemCarrinho.produto.valorUnit);
+
+                    <div class="produto position-relative" id="cardProduto">
+
+                        <input type="checkbox" id="check" value="@produto" onchange='atualizarListaProdutos(this, @produto, @subtotal)' />
+
+                        <div class="imgProd">
+                            <img src="@Url.Content(itemCarrinho.produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@itemCarrinho.produto.nomeProd" />
+                        </div>
+                        <div class="col-3">
+                            <div class="info_prod_car">
+                                <p>Produto</p>
+                                <p id="glacial-bold">
+                                    @if (itemCarrinho.produto.nomeProd.Length > 20)
+                                    {
+                                        @itemCarrinho.produto.nomeProd.Substring(0, 20)
+                                        <text>...</text>
+                                    }
+                                    else
+                                    {
+                                        @itemCarrinho.produto.nomeProd
+                                    }
+                                </p>
+                            </div>
+                            <div class="info_prod_car">
+                                <p>Quantidade:</p>
+                                <div class="contador glacial-bold">
+                                    <form id="form-carrinho" asp-controller="Cliente" asp-action="AtualizarQtdProdCarrinho" method="post">
+                                        <button id="decrementar" type="button">-</button>
+                                        <input type="number" id="valor" name="qtdProd" value="@itemCarrinho.qtdProd" min="1" />
+                                        <button id="incrementar" type="button">+</button>
+                                        <input type="hidden" name="codProd" value="@itemCarrinho.produto.codProd" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="info_prod_car">
+                                <p>Valor:</p>
+                                <p id="glacial-bold">R$ @itemCarrinho.produto.valorUnit.ToString("F2")</p>
+                            </div>
+                            <div class="info_prod_car">
+                                <p>Total:</p>
+                                <p id="glacial-bold">R$ @totalItem.ToString("F2")</p>
+                            </div>
+                        </div>
+                        <form asp-controller="Cliente" asp-action="ExcluirItemProduto" method="post">
+                            <input type="hidden" name="codProd" value="@itemCarrinho.produto.codProd" />
+                            <button class="fechar" id="fecharCard">
+                                <img src="@Url.Content("~/imgs/x.png")" />
+                            </button>
+                        </form>
+                    </div>
+                }
+            </div>
+
+            <div class="col-4 mx-4">
+                <div class="previa">
+                    <p class="previaTitulo">Previa</p>
+                    <hr />
+                    <div class="my-3">
+                        <div class="precoPrevia">
+                            <p>Entrega</p>
+                            <p>R$ 20,00</p> <!-- Taxa fixa -->
+                        </div>
+                        <div class="precoPrevia glacial-bold">
+                            <p>Subtotal</p>
+                            <p id="lblSubtotal">R$ 0,00</p>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="precoPreviaT">
+                        <p>Total</p>
+                        <p id="lblTotal">R$ 0,00 </p>
+                    </div>
+
+                    <div class="align-items-center d-flex">
+                        <img src="~/imgs/reembolso.png" class="prazoimg" alt="Prazo" />
+                        <p class="limite">Limite de 7 dias após a compra para reembolso do produto se solicitado. Saber mais.</p>
+                    </div>
+
+                    <form asp-controller="Pedido" asp-action="FinalizarPedido">
+                        <input type="hidden" id="SelecionadosInput" name="lista" />
+                        <input type="hidden" id="totalInput" name="valorTotal" />
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn-primary" type="submit">Prosseguir compra</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tipoPag">
+                    <p id="glacial-bold">Tipos de pagamentos</p>
+                    <div class="row">
+                        <div class="col-md-6 pagMet">
+                            <img src="~/imgs/cartaopag.png" class="img-fluid" alt="cartão" />
+                            <p id="glacial-bold">Cartão de credito</p>
+                        </div>
+                        <div class="col-md-6 pagMet">
+                            <img src="~/imgs/pixpag.png" class="img-fluid" alt="pix" />
+                            <p id="glacial-bold">PIX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<script>
+    const valorInput = document.getElementById("valor");
+    const incrementarBtn = document.getElementById("incrementar");
+    const decrementarBtn = document.getElementById("decrementar");
+    const form = document.getElementById("form-carrinho");
+
+    function submitForm() {
+        form.submit();
+    }
+
+    incrementarBtn.addEventListener("click", function () {
+        valorInput.value = parseInt(valorInput.value) + 1;
+        submitForm();
+    });
+
+    decrementarBtn.addEventListener("click", function () {
+        if (valorInput.value > 1) {
+            valorInput.value = parseInt(valorInput.value) - 1;
+            submitForm();
+        }
+    });
+
+    valorInput.addEventListener("input", function () {
+        if (valorInput.value < 1) {
+            valorInput.value = 1;
+        }
+    });
+
+    let itemSelecionado = [];
+
+    function atualizarListaProdutos(checkbox, produto, subtotal) {
+        var valorUnitario = parseFloat(produto.produto.valorUnit);  // Certifique-se de que valorUnit é um número
+        var qtdProduto = parseInt(produto.qtdProd);  // Certifique-se de que qtdProd é um número
+        const totalInput = document.querySelector("#totalInput");
+        const lblSubtotal = document.querySelector("#lblSubtotal");
+        const lblTotal = document.querySelector("#lblTotal");
+
+        if (checkbox.checked) {
+            itemSelecionado.push(produto);
+            subtotal += valorUnitario * qtdProduto;
+        }
+        else {
+            itemSelecionado = itemSelecionado.filter(item => item.produto.codProd !== produto.produto.codProd);
+            subtotal -= valorUnitario * qtdProduto;
+        }
+
+        // Corrigir o cálculo do total incluindo a taxa fixa de entrega (R$ 20,00)
+        var total = subtotal + 20.00;  // Subtotal + taxa de entrega
+        if (subtotal < 0) {
+            subtotal = 0;
+            total = 20.00;  // Caso não haja produtos, a entrega ainda é cobrada
+        }
+
+        const input = document.querySelector("#SelecionadosInput");
+        input.value = JSON.stringify(itemSelecionado);
+
+        // Atualiza os valores no formato correto
+        totalInput.value = total;
+        lblSubtotal.innerHTML = "R$ " + subtotal.toFixed(2).replace('.', ',');
+        lblTotal.innerHTML = "R$ " + total.toFixed(2).replace('.', ',');
+    }
+</script>

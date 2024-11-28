@@ -26,12 +26,14 @@
                 <!-- Ícones à direita -->
                 <div class="d-flex align-items-center icons">
                     <!-- Coração -->
-                    <button class="btn-with-image">
-                        <img src="~/imgs/coracao.png" alt="curtidas" class="btn-nav">
-                    </button>
+                    <a asp-controller="Favorito" asp-action="MeusFavoritos">
+                        <button class="btn-with-image">
+                            <img src="~/imgs/coracao.png" alt="curtidas" class="btn-nav">
+                        </button>
+                    </a>
 
                     <!-- Carrinho -->
-                    <a asp-controller="Cliente" asp-action="Carrinho">
+                    <a asp-controller="Carrinho" asp-action="Carrinho">
                         <button class="btn-with-image">
                             <img src="~/imgs/carrinho.png" alt="carrinho" style="height:26px; width:auto;">
                         </button>
@@ -66,7 +68,7 @@
                         </a>
                     </p>
                     <p class="Botoes align-items-center">
-                        <a asp-controller="Cliente" asp-action="FavoritosCheio">
+                        <a asp-controller="Favorito" asp-action="MeusFavoritos">
                             <img src="~/imgs/favoritos.png" alt="favoritos" class="icon me-3">
                             Meus Favoritos
                         </a>

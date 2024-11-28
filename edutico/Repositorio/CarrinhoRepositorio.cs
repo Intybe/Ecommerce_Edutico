@@ -94,10 +94,10 @@ namespace edutico.Repositorio
             // Fechar o DataReader antes de executar outro comando
             dr.Close();
 
-            return mensagem;
-
             // deconecta do banco de dados
             con.DesconectarBD();
+
+            return mensagem;
         }
 
         public string ExcluirItemCarrinho(int codLogin, decimal codProd)
@@ -150,43 +150,43 @@ namespace edutico.Repositorio
             Conexao con = new Conexao();
             MySqlConnection conexao = con.ConectarBD();
 
-                // Comando SQL para atualizar a quantidade de produtos no carrinho
-                string sql = "call spUpdateTbCarrinho(@codLogin,@codProd, @qtdProd);";
+            // Comando SQL para atualizar a quantidade de produtos no carrinho
+            string sql = "call spUpdateTbCarrinho(@codLogin,@codProd, @qtdProd);";
 
-                // Preparação do comando com parâmetros
-                MySqlCommand cmd = new MySqlCommand(sql, conexao);
-                cmd.Parameters.AddWithValue("@codLogin", codLogin);
-                cmd.Parameters.AddWithValue("@codProd", codProd);
-                cmd.Parameters.AddWithValue("@qtdProd", qtdProd);
+            // Preparação do comando com parâmetros
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+            cmd.Parameters.AddWithValue("@codLogin", codLogin);
+            cmd.Parameters.AddWithValue("@codProd", codProd);
+            cmd.Parameters.AddWithValue("@qtdProd", qtdProd);
 
-                // Lê os dados retornados pela procedure do BD
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            // Lê os dados retornados pela procedure do BD
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
-                // Armazena os dados retornados do Banco de Dados
-                MySqlDataReader dr;
+            // Armazena os dados retornados do Banco de Dados
+            MySqlDataReader dr;
 
-                // Executando os comandos do mysql e passsando paa a variavel dr
-                dr = cmd.ExecuteReader();
+            // Executando os comandos do mysql e passsando paa a variavel dr
+            dr = cmd.ExecuteReader();
 
-                // Para não dar erro na mensagem 
-                string mensagem = null;
+            // Para não dar erro na mensagem 
+            string mensagem = null;
 
-                if (dr.Read())
-                {
-                    mensagem = dr.GetString(0); // Captura a primeira coluna (que é a mensagem retornada)
-                }
-                else
-                {
-                    mensagem = "Erro Desconhecido";
-                }
-                // Fechar o DataReader antes de executar outro comando
-                dr.Close();
+            if (dr.Read())
+            {
+                mensagem = dr.GetString(0); // Captura a primeira coluna (que é a mensagem retornada)
+            }
+            else
+            {
+                mensagem = "Erro Desconhecido";
+            }
+            // Fechar o DataReader antes de executar outro comando
+            dr.Close();
 
-                return mensagem;
+            return mensagem;
 
-                // deconecta do banco de dados
-                con.DesconectarBD();
-            
+            // deconecta do banco de dados
+            con.DesconectarBD();
+
         }
     }
 }
