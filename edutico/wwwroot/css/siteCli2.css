@@ -206,7 +206,7 @@ html, body {
 
 .base-cli {
     width: 100%;
-    height: 81vh;
+    height: auto;
     margin-inline: 50px;
     padding: 20px;
     background-color: white;
@@ -252,9 +252,8 @@ html, body {
 .botao_cadastro {
     margin-inline: 30px;
     margin-bottom: 10px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    display:flex;
+    justify-content:right;
 }
 
 .cadastro-btn {
@@ -284,6 +283,7 @@ html, body {
     cursor: pointer;
     font-weight: bold;
     align-items: center;
+    margin-right:20px;
 }
 
     .cancelar-btn:hover {

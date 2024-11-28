@@ -98,10 +98,12 @@ wwwroot\imgs\produtos\Flaviinha.com_7.png
 wwwroot\imgs\produtos\Flaviinha.com_8.png
 wwwroot\imgs\produtos\Flaviinha.com_9.png
 wwwroot\imgs\produtos\gerere_1.png
+wwwroot\imgs\produtos\hhhhhh_1.png
 wwwroot\imgs\produtos\Jogo_De_Ação_-_Disney_-_Dobble_-_Galápagos_1.webp
 wwwroot\imgs\produtos\KAKAKAKAK_1.png
 wwwroot\imgs\produtos\KAKAKAKAK_2.png
 wwwroot\imgs\produtos\LEGO_City_-_Police_Car_-_60312_Copy_1.webp
+wwwroot\imgs\produtos\ljlj_1.png
 wwwroot\imgs\produtos\Oiee_1.png
 wwwroot\imgs\produtos\Oiee_2.png
 wwwroot\imgs\produtos\Oiee_3.png

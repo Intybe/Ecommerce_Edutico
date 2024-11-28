@@ -26,7 +26,7 @@ namespace edutico.Controllers
         }
 
 
-        public IActionResult CadastrarCartao(decimal numCartao, string nomeTitular, int dataVali, string bandeira)
+        public IActionResult CadastrarCartao(decimal numCartao, string nomeTitular, string dataVali, string bandeira)
         {
             // Pega o codLogin do Usuário Logado através da sessão
             var codLogin = _loginSessao.GetLogin();

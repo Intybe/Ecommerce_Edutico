@@ -6,7 +6,7 @@ namespace edutico.Repositorio
 {
     public class CartaoRepositorio : ICartaoRepositorio
     {
-        public String CadastrarCartao(decimal NumCartao, string NomeTitular, int DataVali, string Bandeira, int CodLogin)
+        public String CadastrarCartao(decimal NumCartao, string NomeTitular, string DataVali, string Bandeira, int CodLogin)
         {
             // Conexão com o banco de Dados
             Conexao con = new Conexao();
