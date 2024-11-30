@@ -56,6 +56,7 @@ namespace edutico.Controllers
             return View("CadastroProduto");
         }
 
+
         public IActionResult DetalhesProduto(decimal? codProd)
         {
             List<decimal> favoritos = new List<decimal>();
@@ -163,6 +164,15 @@ namespace edutico.Controllers
 
         }
 
+        public IActionResult FiltrarClassificacao(string classificacao)
+        {
+            List<Produto> produtosFiltrados = _produtoRepositorio.ConsultarTodosProdutos()
+                    .Where(p => (p.classificacao.codClassificacao.ToString() + " - " + p.classificacao.nomeClassificacao)
+                        .Equals(classificacao))
+                    .ToList();
+
+            return View("Pesquisa", produtosFiltrados);
+        }
 
         public IActionResult Pesquisa(string pesquisa)
         {
@@ -176,13 +186,68 @@ namespace edutico.Controllers
             return View(produtos);
         }
 
-        public IActionResult FiltrarClassificacao(string classificacao)
+        [HttpPost]
+        public IActionResult FiltrarProdutos(string filtroHabilidade, string filtroCategoria, string filtroClassificacao, string filtroPreco, string pesquisa)
         {
-            List<Produto> produtosFiltrados = _produtoRepositorio.ConsultarTodosProdutos()
-                    .Where(p => (p.classificacao.codClassificacao.ToString() + " - " + p.classificacao.nomeClassificacao)
-                        .Equals(classificacao))
-                    .ToList();
+            // Verificando se existe valor e convertendo para uma lista de ints (os Ids)
+            var categorias = filtroCategoria?.Split(',').Select(int.Parse).ToList() ?? new List<int>();
+            var habilidades = filtroHabilidade?.Split(',').Select(int.Parse).ToList() ?? new List<int>();
+            var classificacao = filtroClassificacao?.Split(',').Select(int.Parse).ToList() ?? new List<int>();
 
+
+            decimal? precoMin = null, precoMax = null;
+            if (!string.IsNullOrEmpty(filtroPreco))
+            {
+                var partes = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(filtroPreco);
+
+                if (decimal.TryParse(partes["min"], out var minValue))
+                    precoMin = minValue;
+
+                if (partes["max"]?.ToLower() != "mais" && decimal.TryParse(partes["max"], out var maxValue))
+                    precoMax = maxValue;
+            }
+
+            List<Produto> listaProdutos = null;
+
+            if (string.IsNullOrEmpty(pesquisa))
+            {
+                listaProdutos = _produtoRepositorio.ConsultarProdutoLancamento().ToList();
+
+            }
+            else
+            {
+                listaProdutos = _produtoRepositorio.ConsultarProdutoPesquisa(pesquisa).ToList();
+            }
+
+
+            // Filtros de categoria
+            if (categorias.Any())
+                listaProdutos = listaProdutos.Where(p => categorias.Contains(p.categoria.codCategoria)).ToList();
+
+            // Filtros de habilidade
+            if (habilidades.Any())
+                listaProdutos = listaProdutos.Where(p => habilidades.Any(h => p.habilidades.Select(hb => hb.codHabilidade).Contains(h))).ToList();
+
+            // Filtro de preço
+            if (precoMin.HasValue)
+                listaProdutos = listaProdutos.Where(p => p.valorUnit >= precoMin.Value).ToList();
+
+            if (precoMax.HasValue)
+                listaProdutos = listaProdutos.Where(p => p.valorUnit <= precoMax.Value).ToList();
+
+            // Filtro de classificação
+            if (classificacao.Any())
+                listaProdutos = listaProdutos.Where(p => classificacao.Contains(p.classificacao.codClassificacao)).ToList();
+
+            // Executa a consulta e obtém os resultados filtrados
+            var produtosFiltrados = listaProdutos;
+
+            // Retorna a view com os produtos filtrados
+            ViewData["pesquisa"] = pesquisa;
+            ViewData["filtroCategoria"] = filtroCategoria;
+            ViewData["filtroHabilidade"] = filtroHabilidade;
+            ViewData["filtroClassificacao"] = filtroClassificacao;
+            ViewData["filtroPreco"] = filtroPreco;
             return View("Pesquisa", produtosFiltrados);
         }
     }

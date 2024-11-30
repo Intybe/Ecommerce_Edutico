@@ -41,5 +41,7 @@ namespace edutico.Repositorio
         Produto ConsultarDetalheProdutoF(decimal codProd);
 
         public IEnumerable<Produto> ConsultarTodosProdutos();
+
+        string AtualizarProduto(Produto produtoAntigo, Produto produtoAtualizado, List<IFormFile> imgs);
     }
 }

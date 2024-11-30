@@ -9,28 +9,23 @@
 @{
     var categoria = (Model.categoria.codCategoria + " - " + Model.categoria.nomeCategoria).ToString();
     var classificacao = (Model.classificacao.codClassificacao + " - " + Model.classificacao.nomeClassificacao).ToString();
-    var habilidadesSelecionadas = string.Join(",", Model.habilidades.Select(h => h.nomeHabilidade));
-
+    var habilidadesSelecionadas = string.Join(" | ", Model.habilidades.Select(h => h.codHabilidade + " - " + h.nomeHabilidade));
+    var imgs = string.Join(",", Model.imgs.Select(img => img.nomeImg + " - " + img.enderecoImg));
 }
-<h2>@categoria</h2>
-<h2>@classificacao</h2>
-<h2>@habilidadesSelecionadas</h2>
-
-<input type="hidden" id="categoria" value="@categoria" /> 
-<input type="hidden" id="classificacao" value="@classificacao"/>
+<input type="hidden" id="categoria" value="@categoria" />
+<input type="hidden" id="classificacao" value="@classificacao" />
 <input type="hidden" id="habilidades" value="@habilidadesSelecionadas" />
-
-
+<input type="hidden" id="imgs" value="@imgs" />
 
 
 <section class="container">
     <!-- Seção de cadastro de produtos -->
     <!-- Cabeçalho da seção -->
     <div class="header">
-        <h1>ALTERARAR PRODUTOS</h1>
+        <h1>ALTERAR PRODUTOS</h1>
     </div>
     <hr />
-    <form asp-controller="Produto" asp-action="CadastrarProduto" method="post" enctype="multipart/form-data">
+    <form asp-controller="Funcionario" asp-action="AtualizarProduto" method="post" enctype="multipart/form-data">
         <!-- Mensagem -->
         @{
             if (ViewData["msg"] != null)
@@ -75,7 +70,7 @@
                         <span asp-validation-for="classificacao" class="text-danger"></span>
                         <br />
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-5">
                         <label asp-for="valorUnit">Valor Unitário <span class="req">*</span></label>
                         <input asp-for="valorUnit" type="text" id="ValorUni" class="InputType1" value="@Model.valorUnit" placeholder="Digite o valor" name="valorUnit" />
                         <br />
@@ -102,13 +97,6 @@
                     <option value="12 - Jogos Eletrônicos">Jogos Eletrônicos</option>
 
                 </select>
-                
-                
-
-                
-                
-
-
 
                 <br />
                 <span asp-validation-for="categoria" class="text-danger"></span>
@@ -121,11 +109,11 @@
                         <span asp-validation-for="estoque" class="text-danger"></span>
                         <br />
                     </div>
-                    <div class="col-4 mb-3">
+                    <div class="col-lg-5 mb-3">
                         <label asp-for="lancamento" class="form-label">Lançamento <span class="req">*</span></label>
                         <div class="d-flex">
                             <div class="form-check me-3">
-                                <input type="radio" id="LancamentoSim" name="lacamentoProd" value="true" class="form-check-input"  @(Model.lancamento ? "checked" : "")>
+                                <input type="radio" id="LancamentoSim" name="lacamentoProd" value="true" class="form-check-input" @(Model.lancamento ? "checked" : "")>
                                 <label for="LancamentoSim" class="form-check-label">Sim</label>
                             </div>
                             <div class="form-check">
@@ -137,12 +125,30 @@
                         <span asp-validation-for="lancamento" class="text-danger"></span>
                         <br />
                     </div>
+
+                    <div class="col-lg-5 mb-0">
+                        <label asp-for="statusProd" class="form-label">Status <span class="req">*</span></label>
+                        <div class="d-flex">
+                            <div class="form-check me-3">
+                                <input type="radio" id="statusProdSim" name="StatusProd" value="true" class="form-check-input" @(Model.statusProd == true ? "checked" : "")>
+                                <label for="statusProdSim" class="form-check-label">Ativado</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="statusProdNao" name="StatusProd" value="false" class="form-check-input" @(Model.statusProd == false ? "checked" : "")>
+                                <label for="statusProdSim" class="form-check-label">Desativado</label>
+                            </div>
+                        </div>
+                        <br />
+                        <span asp-validation-for="statusProd" class="text-danger"></span>
+                        <br />
+                    </div>
                 </div>
             </div>
 
             <!-- Segundo form-group2 -->
             <div class="form-group2 col-6">
-                <!-- Conteúdo do lado direito aqui --> 
+                <!-- Conteúdo do lado direito aqui -->
+                <!-- Habilidades Trabalhadas -->
                 <label asp-for="habilidades">Habilidade Trabalhada <span class="req">*</span></label>
                 <div id="HabTabalhada" class="chips-container">
                     <span class="chip" onclick="selecionarHabilidade(this)" data-value="1 - Criatividade">Criatividade</span>
@@ -157,6 +163,7 @@
                     <span class="chip" onclick="selecionarHabilidade(this)" data-value="10 - Pensamento crítico">Pensamento crítico</span>
                 </div>
 
+                <!-- Campo oculto para enviar as habilidades selecionadas -->
                 <input asp-for="habilidades" type="hidden" id="habilidadesSelecionadas" name="habilidadesEnviadas" />
                 <span id="error-habilidades" class="text-danger" style="display:none;">Selecione pelo menos uma habilidade.</span>
 
@@ -183,40 +190,71 @@
         <!-- Botões de ação -->
         <div class="d-flex justify-content-end btns">
             <button class="btnCancelar btn-primary">Cancelar</button>
-            <button class="btnCadastrar btn-primary">Alterar</button>
+            <button type="submit" class="btnCadastrar btn-primary">Alterar</button>
         </div>
     </form>
 
 </section>
 
 <script>
+    // Função para adicionar imagens
+    function adicionarImagens(imagens) {
+        const container = document.getElementById("grid_imgs");
+
+        imagens.forEach(function (imagem) {
+            const imgElement = document.createElement("img");
+            imgElement.src = imagem.enderecoImg;
+            imgElement.alt = imagem.nomeImg;
+
+            // Adiciona a imagem ao contêiner
+            container.appendChild(imgElement);
+        });
+    }
+
     // Define o valor padrão quando a página carrega
     document.addEventListener("DOMContentLoaded", function () {
         const selectCategoria = document.querySelector(".CatBrinquedo");
         const categoria = document.querySelector("#categoria");
         const selectclassificacao = document.querySelector(".ClassIndProd");
         const classificacao = document.querySelector("#classificacao");
-        const habilidadesInput = document.querySelector("#habilidadesSelecionadas"); // Atualizado para o ID correto
+        const habilidadesInput = document.querySelector("#habilidades"); // Atualizado para o ID correto
         const chips = document.querySelectorAll(".chip");
-
 
         // Define o valor predefinido no select
         selectCategoria.value = categoria.value;
         selectclassificacao.value = classificacao.value;
 
-
-
         // Configura os chips de habilidades selecionados
-        const habilidadesSelecionadas = habilidadesInput.value.split(",");
+        const habilidadesSelecionadas = habilidadesInput.value.split(" | ");
         chips.forEach(chip => {
             if (habilidadesSelecionadas.includes(chip.dataset.value)) {
                 chip.classList.add("selected");
             }
         });
-        }
+
+        document.getElementById('habilidadesSelecionadas').value = habilidadesInput.value;    
+        
+        const imgsConcatenadas = document.querySelector("#imgs").value.split(",");
+
+        console.log(imgsConcatenadas);
+        
+        /*
+        // Criando um array de objetos
+        let imgs = [];
+
+        imgsConcatenadas.forEach(item => {
+            let partes = item.split(" - ");
+            imgs.push({
+                nomeImg: partes[0],
+                enderecoImg: partes[1]
+            });
+        });
+
+        console.log(imgs);
+
+        // Chama a função para adicionar as imagens
+        adicionarImagens(imgs); */
     });
-
-
 
     function selecionarHabilidade(element) {
         // Alterna a classe "selected" para o chip
@@ -275,7 +313,6 @@
         }
     }
 </script>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

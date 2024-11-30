@@ -811,19 +811,14 @@ Create procedure spUpdateTbProduto(
 	vCodProd decimal(14,0), 
     vNomeProd varchar(200), 
     vDescricao varchar(600), 
-    vnomeClassificacao varchar(50), 
-    vCategoria varchar(100), 
-    vValorUnit decimal(8,2), 
-    vLancamento boolean
+    vCodClassificacao varchar(50), 
+    vCodCategoria varchar(100), 
+    vValorUnit decimal(8,2),
+    vEstoque int, 
+    vLancamento boolean,
+    vStatusProd boolean
 )
-Begin
-	Declare vCodClassificacao int;
-    Declare vCodCategoria int;
-    
-	-- Atribuindo valores --
-	Set vCodClassificacao = (Select CodClassificacao from tbClassificacao where nomeClassificacao = vnomeClassificacao);
-	Set vCodCategoria = (Select codCategoria from tbCategoria where nomeCategoria = vnomeCategoria);
-	
+Begin	
     -- Atualizando dados do produto --
 	Update tbProduto Set 
 		nomeProd = vNomeProd, 
@@ -831,7 +826,9 @@ Begin
         codClassificacao = vCodClassificacao, 
         codCategoria = vCodCategoria, 
         valorUnit = vValorUnit, 
-        lancamento = vLancamento 
+        estoque = vEstoque,
+        lancamento = vLancamento,
+        statusProd = vStatusProd
 	where codProd = vCodProd;
 
 	Select('Produto atualizado com sucesso!');

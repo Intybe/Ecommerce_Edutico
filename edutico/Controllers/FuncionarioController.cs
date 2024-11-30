@@ -115,14 +115,13 @@ namespace edutico.Controllers
             return View("ProdutosF", produtos);
         }
 
-        public IActionResult AlterarProdutosF(decimal codProd)
+        public IActionResult AlterarProduto(decimal codProd)
         {
             //puxando informaões    
             // Consultar o produto pelo código
             var produto = _produtoRepositorio.ConsultarDetalheProduto(codProd);
 
             // Simulando a lista de categorias (você pode buscar isso do banco de dados)
-
             return View(produto);
         }
 
@@ -151,6 +150,30 @@ namespace edutico.Controllers
             List<Produto> produtos = _produtoRepositorio.ConsultarProdutosFavoritos();
 
             return View(produtos);
+        }
+
+        public IActionResult AtualizarProduto(decimal codProd, string nomeProd, string descricaoProd, string classificacao, string habilidadesEnviadas, string valorUnit, string estoque, string categoria, string lacamentoProd, bool statusProd, List<IFormFile> imgs)
+        {
+            Produto produtoAntigo = _produtoRepositorio.ConsultarDetalheProduto(codProd);
+
+            // Criar o objeto produto com os dados recebidos
+            Produto produtoAtualizado = new Produto(
+                Convert.ToDecimal(codProd),
+                nomeProd,
+                descricaoProd,
+                classificacao,
+                categoria,
+                habilidadesEnviadas,
+                Convert.ToDecimal(valorUnit),
+                Convert.ToInt32(estoque),
+                Convert.ToBoolean(lacamentoProd),
+                Convert.ToBoolean(statusProd)
+            );
+
+            string mensagem = _produtoRepositorio.AtualizarProduto(produtoAntigo, produtoAtualizado, imgs);
+
+            ViewData["msg"] = mensagem;
+            return View("AlterarProduto", produtoAtualizado);
         }
 
         public IActionResult DetalhesProdutoF(decimal? codProd)

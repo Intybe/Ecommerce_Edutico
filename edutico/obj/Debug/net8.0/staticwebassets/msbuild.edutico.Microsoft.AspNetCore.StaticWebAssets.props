@@ -1232,6 +1232,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imgs\produtos\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_1.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imgs\produtos\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_109.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>edutico</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/edutico</BasePath>
+      <RelativePath>imgs/produtos/Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_109.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imgs\produtos\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_109.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imgs\produtos\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_110.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>edutico</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/edutico</BasePath>
+      <RelativePath>imgs/produtos/Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_110.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imgs\produtos\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_110.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imgs\produtos\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_2.png))">
       <SourceType>Package</SourceType>
       <SourceId>edutico</SourceId>

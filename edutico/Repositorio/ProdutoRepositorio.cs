@@ -35,14 +35,17 @@ namespace edutico.Repositorio
             // Executa e lê os dados retornados pela query SQL
             MySqlDataReader dr = cmd.ExecuteReader();
 
-            // obrigatório 
-            string mensagem = null;
+            // Variável para receber mensagem de erro ou sucesso (por padrão é erro)
+            string mensagem = "Ocorreu um erro inesperado! Tente novamente!";
 
             //dr = recebe e verifca se é "legivel os dados 
             if (dr.Read())
             {
                 if (dr.GetString(0) == "Produto Cadastrado com sucesso!")
                 {
+                    // Atribuindo a mensagem de retorno cadastrada
+                    mensagem = dr.GetString(0);
+
                     // Fecha o leitor utilizado para ler a mensagem
                     dr.Close();
 
@@ -100,10 +103,6 @@ namespace edutico.Repositorio
                     }
                 }
             }
-            else
-            {
-                mensagem = "Ocorreu um erro inesperado! Tente novamente!";
-            }
 
             // Fecha a conexão com o banco de dados
             con.DesconectarBD();
@@ -112,6 +111,127 @@ namespace edutico.Repositorio
             return mensagem;
         }
 
+
+        public string AtualizarProduto(Produto produtoAntigo, Produto produtoAtualizado, List<IFormFile> imgs)
+        {
+            // Cria variável de Conexão com o Banco de Dados
+            Conexao con = new Conexao();
+            MySqlConnection conexao = con.ConectarBD();
+
+            // Variável que recebe o comando SQL para inserir o produto
+            string sql = "Call spUpdateTbProduto(@codprod, @nomeProd, @descricao, @codClassificacao, @codCategoria, @valorUnit, @estoque, @lancamento, @statusProd);";
+
+            // Junta o comando SQL com a informações do banco   
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            // Atribui valor aos parâmetros do comando SQL
+            cmd.Parameters.AddWithValue("@codProd", produtoAtualizado.codProd);
+            cmd.Parameters.AddWithValue("@nomeProd", produtoAtualizado.nomeProd);
+            cmd.Parameters.AddWithValue("@descricao", produtoAtualizado.descricao);
+            cmd.Parameters.AddWithValue("@codClassificacao", produtoAtualizado.classificacao.codClassificacao);
+            cmd.Parameters.AddWithValue("@codCategoria", produtoAtualizado.categoria.codCategoria);
+            cmd.Parameters.AddWithValue("@valorUnit", produtoAtualizado.valorUnit);
+            cmd.Parameters.AddWithValue("@estoque", produtoAtualizado.estoque);
+            cmd.Parameters.AddWithValue("@lancamento", produtoAtualizado.lancamento);
+            cmd.Parameters.AddWithValue("@statusProd", produtoAtualizado.statusProd);
+
+            // Executa e lê os dados retornados pela query SQL
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            // Variável para receber mensagem de erro ou sucesso (por padrão é erro)
+            string mensagem = "Ocorreu um erro inesperado! Tente novamente!";
+
+            if (dr.Read())
+            {
+                if (dr.GetString(0) == "Produto atualizado com sucesso!")
+                {
+                    // Atribuindo a mensagem de retorno cadastrada
+                    mensagem = dr.GetString(0);
+
+                    // Fecha o leitor utilizado para ler a mensagem
+                    dr.Close();
+
+                    // Filtrando apenas as imagem para cadastrar
+                    var novasImgs = imgs
+                        .Where(img => !produtoAntigo.imgs.Any(oldImg => oldImg.nomeImg == img.FileName))
+                        .ToList();
+
+                    // Cria a variável para a sequência
+                    int i = Convert.ToInt32(produtoAntigo.imgs.LastOrDefault().ToString()[^1]);
+
+                    // Irá executar o código para cada imagem na lista
+                    foreach (var img in novasImgs)
+                    {
+                        // Deixa o nome do produto sem espaço
+                        string nomeProd = produtoAtualizado.nomeProd.Replace(" ", "_");
+
+                        // Atribui o nome do produto, um número e a extenção da imagem
+                        string nomeImg = string.Concat(nomeProd, "_", i, Path.GetExtension(img.FileName));
+
+                        // Variável com o caminho para salvar a imagem na pasta
+                        string caminhoImg = Path.Combine("wwwroot/imgs/produtos", nomeImg);
+
+                        // Variável para salvar o caminho da imagemm no Banco de Dados
+                        string caminhoImgBD = Path.Combine("~/imgs/produtos", nomeImg);
+
+                        // Cria uma instância da classe que permite criar um arquivo
+                        var criarImg = new FileStream(caminhoImg, FileMode.Create);
+
+                        // Cria fisicamento a imagem na pasta
+                        img.CopyTo(criarImg);
+
+                        // Comando SQL para inserir a imagem associada ao produto
+                        string sqlImagem = "Call spInsertTbImagem(@codProd, @nomeImg, @enderecoImg);";
+
+                        // Junta o comando SQL com a informações do banco
+                        cmd = new MySqlCommand(sqlImagem, conexao);
+
+                        // Atribui valor aos parâmetros do comando SQL
+                        cmd.Parameters.AddWithValue("@codProd", produtoAtualizado.codProd);
+                        cmd.Parameters.AddWithValue("@nomeImg", nomeImg);
+                        cmd.Parameters.AddWithValue("@enderecoImg", caminhoImgBD);
+
+                        // Executa a query sem retorno
+                        cmd.ExecuteNonQuery();
+
+                        // Auemntando valor da variável
+                        i++;
+                    }
+
+                    var habilidadesNovas = produtoAtualizado.habilidades
+                        .Where(habilidade => !produtoAntigo.habilidades.Any(h => h.codHabilidade == habilidade.codHabilidade))
+                        .ToList();
+
+                    var habilidadesExcluir = produtoAntigo.habilidades
+                        .Where(habilidade => !produtoAtualizado.habilidades.Any(h => h.codHabilidade == habilidade.codHabilidade))
+                        .ToList();
+
+                    foreach (var habilidade in habilidadesNovas)
+                    {
+                        // Comando SQL para inserir as habilidades associadas ao produto
+                        string sqlHabilidade = "Call spInsertTbHabilidade_Produto(@codProd, @codHabilidade);";
+                        cmd = new MySqlCommand(sqlHabilidade, conexao);
+                        cmd.Parameters.AddWithValue("@codProd", produtoAtualizado.codProd);
+                        cmd.Parameters.AddWithValue("@codHabilidade", habilidade.codHabilidade);
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    foreach (var habilidade in habilidadesExcluir)
+                    {
+                        // Comando SQL para inserir as habilidades associadas ao produto
+                        string sqlHabilidade = "Call spDeleteTbHabilidade_Produto(@codProd, @codHabilidade);";
+                        cmd = new MySqlCommand(sqlHabilidade, conexao);
+                        cmd.Parameters.AddWithValue("@codProd", produtoAtualizado.codProd);
+                        cmd.Parameters.AddWithValue("@codHabilidade", habilidade.codHabilidade);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+
+            return mensagem;
+        }
 
 
         // Método de consultar Produtos em Lançamento

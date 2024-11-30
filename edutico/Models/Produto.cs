@@ -20,18 +20,15 @@ namespace edutico.Models
         public Categoria categoria { get; set; }
         [Required(ErrorMessage = "Selecione uma opção")]
         public List<Habilidade> habilidades { get; set; }
-        [Required(ErrorMessage = "O campo é obrigatório.")]
-        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
 
-        public decimal valorUnit { get; set; }
-        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
+        [RegularExpression(@"^\d+(\.\d{1,2}|\,\d{1,2})?$", ErrorMessage = "Formato inválido. Use números com até duas casas decimais.")]
         [Required(ErrorMessage = "O campo é obrigatório.")]
+        public decimal valorUnit { get; set; }
         public int estoque { get; set; }
         [Required(ErrorMessage = "O campo é obrigatório.")]
         public bool statusProd { get; set; }
         [Required(ErrorMessage = "Selecione uma opção")]
         public bool lancamento { get; set; }
-
         public Imagem img { get; set; }
         [Required(ErrorMessage = "Selecione ao menos 2 imagens")]
         public List<Imagem> imgs { get; set; } = new List<Imagem>();
@@ -139,6 +136,32 @@ namespace edutico.Models
             this.valorUnit = valorUnit;
             this.estoque = estoque;
             this.lancamento = lancamento;
+        }
+
+        // Construtor para criar um produto para cadastro
+        public Produto(
+            decimal codProd,
+            string nomeProd,
+            string descricao,
+            string classificacao,
+            string categoria,
+            string habilidadesConcatenadas,
+            decimal valorUnit,
+            int estoque,
+            bool lancamento,
+            bool stausProd
+        )
+        {
+            this.codProd = codProd;
+            this.nomeProd = nomeProd;
+            this.descricao = descricao;
+            this.classificacao = ParseClassificacao(classificacao);
+            this.categoria = ParseCategoria(categoria);
+            this.habilidades = ParseHabilidades(habilidadesConcatenadas);
+            this.valorUnit = valorUnit;
+            this.estoque = estoque;
+            this.lancamento = lancamento;
+            this.statusProd = statusProd;
         }
 
         // Construtor para prévia dos produtos no dashboard
