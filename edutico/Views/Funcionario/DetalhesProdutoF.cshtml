@@ -1,4 +1,4 @@
-﻿@model ViewProdutoFavoritos
+﻿@model Produto
 
 
 @{
@@ -10,33 +10,32 @@
 
 <div class="container row justify-content-between">
     <div class="col-7">
-        <div class="base-prod-detalhe justify-content-between d-flex">
-            <div class="scrollable-div col-2 overflow-auto">
-                @foreach (var img in Model.produto.imgs)
+        <div class="base-prod-detalhe d-flex">
+            <div class="scrollable-div col-3 overflow-auto">
+                @foreach (var img in Model.imgs)
                 {
                     <img src="@Url.Content(img.enderecoImg)" class="imgpequena" onclick="mudarImagem(" @Url.Content(img.enderecoImg)")" />
                 }
-
             </div>
 
-            <div class="imgprincipal-container position-relative">
-                <img src="@Url.Content(@Model.produto.imgs.First().enderecoImg)" class="imgprincipal" />
+            <div class="imgprincipal-container">
+                <img src="@Url.Content(@Model.imgs.First().enderecoImg)" class="imgprincipal" />
             </div>
         </div>
 
         <div class="base-prod-detalhe position-relative">
             <h3>Descrição do produto</h3>
             <p class="texto-simples">
-                @Model.produto.descricao
+                @Model.descricao
             </p>
             <div id="versaocompleta" class="hidden">
                 <p class="texto-simples">Características do Produto:</p>
                 <br />
                 <p class="texto-simple">
-                    @Model.produto.descricao;
+                    @Model.descricao;
                     <ul class="texto-simples">
-                        <li><strong>Categoria: </strong>@Model.produto.categoria.nomeCategoria</li>
-                        <li><strong>Classificação Indicativa: </strong>@Model.produto.classificacao.nomeClassificacao</li>
+                        <li><strong>Categoria: </strong>@Model.categoria.nomeCategoria</li>
+                        <li><strong>Classificação Indicativa: </strong>@Model.classificacao.nomeClassificacao</li>
 
                         @{
                             int colorIndex = 0;
@@ -44,7 +43,7 @@
                         }
 
                         <li>
-                            @foreach (var habilidade in Model.produto.habilidades)
+                            @foreach (var habilidade in Model.habilidades)
                             {
                                 <span style="color: @colors[colorIndex]; display: inline-block; margin-right: 10px;">
                                     #@habilidade.nomeHabilidade
@@ -73,18 +72,18 @@
                     <div class="rating-score ">
                         <div class="d-flex">
 
-                            @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
+                            @if (Model.avaliacoes != null && Model.avaliacoes.Any())
                             {
 
                                 // Calcula a média arredondada para o múltiplo de 0.5 mais próximo
-                                decimal media = Math.Round((decimal)Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao * 2, MidpointRounding.AwayFromZero) / 2;
+                                decimal media = Math.Round((decimal)Model.somaAvaliacao / Model.qtdAvaliacao * 2, MidpointRounding.AwayFromZero) / 2;
 
                                 int estrelasCheias = (int)media; // Parte inteira da média
                                 bool meiaEstrela = media - estrelasCheias == 0.5m; // Verifica se tem meia estrela
                                 int estrelasVazias = 5 - estrelasCheias - (meiaEstrela ? 1 : 0); // Calcula quantas vazias faltam
 
 
-                                <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">@((Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao).ToString("F1").Replace(",", "."))</h4>
+                                <h4 style="font-size:50px; margin-bottom:0; margin-inline:5px;">@((Model.somaAvaliacao / Model.qtdAvaliacao).ToString("F1").Replace(",", "."))</h4>
                                 <div class="align-content-center">
                                     @for (int i = 0; i < estrelasCheias; i++)
                                     {
@@ -105,7 +104,7 @@
                                         // Exibe as estrelas vazias
                                         <img src="~/imgs/estrelaVazia.png" class="iconeava" />
                                     }
-                                    @((Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@Model.produto.qtdAvaliacao avaliações)
+                                    @((Model.somaAvaliacao / Model.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@Model.qtdAvaliacao avaliações)
                                 </div>
                             }
                             else
@@ -154,7 +153,7 @@
 
                         <div class="total-ratings">
                             <hr />
-                            <p class="texto-simples"><span id="total-ratings">@Model.produto.qtdAvaliacao</span> avaliações realizadas</p>
+                            <p class="texto-simples"><span id="total-ratings">@Model.qtdAvaliacao</span> avaliações realizadas</p>
                         </div>
 
                     </div>
@@ -163,9 +162,9 @@
 
                 <!-- parte dos comentários-->
                 <div class="col-7 border-start">
-                    @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
+                    @if (Model.avaliacoes != null && Model.avaliacoes.Any())
                     {
-                        foreach (var avaliacao in Model.produto.avaliacoes)
+                        foreach (var avaliacao in Model.avaliacoes)
                         {
                             <div class="review">
                                 <div class="d-flex">
@@ -201,14 +200,14 @@
     <div class="col-5">
         <div class="base-prod-detalhe">
             <div class="d-flex pb-2 px-1 justify-content-between">
-                <h5 class="glacial-bold titulo-detalhe">@Model.produto.nomeProd</h5>
+                <h5 class="glacial-bold titulo-detalhe">@Model.nomeProd</h5>
             </div>
 
-            @if (Model.produto.avaliacoes != null && Model.produto.avaliacoes.Any())
+            @if (Model.avaliacoes != null && Model.avaliacoes.Any())
             {
 
                 // Calcula a média arredondada para o múltiplo de 0.5 mais próximo
-                decimal media = Math.Round((decimal)Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao * 2, MidpointRounding.AwayFromZero) / 2;
+                decimal media = Math.Round((decimal)Model.somaAvaliacao / Model.qtdAvaliacao * 2, MidpointRounding.AwayFromZero) / 2;
 
                 int estrelasCheias = (int)media; // Parte inteira da média
                 bool meiaEstrela = media - estrelasCheias == 0.5m; // Verifica se tem meia estrela
@@ -236,7 +235,7 @@
                         // Exibe as estrelas vazias
                         <img src="~/imgs/estrelaVazia.png" class="iconeava" />
                     }
-                    @((Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@Model.produto.qtdAvaliacao avaliações)
+                    @((Model.somaAvaliacao / Model.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@Model.qtdAvaliacao avaliações)
                 </p>
             }
             else
@@ -254,12 +253,12 @@
             }
 
             <div class="mb-2 px-2">
-                <h4>R$ @Model.produto.valorUnit</h4>
+                <h4>R$ @Model.valorUnit</h4>
             </div>
 
             <div class="d-flex mb-3 px-2">
 
-                @if (Model.produto.estoque > 0)
+                @if (Model.estoque > 0)
                 {
                     <h6 class="glacial-bold" style="color:#8ED61A;">Em estoque </h6>
                 }
@@ -268,33 +267,33 @@
                     <h6 class="glacial-bold" style="color:red;"> Esgotado</h6>
                 }
 
-                <div class="qtdProd"><p>@Model.produto.estoque</p> </div>
+                <div class="qtdProd"><p>@Model.estoque</p> </div>
             </div>
             <div class="justify-content-between d-flex">
-                @if (Model.produto.statusProd == false) // Se o produto está ativo
+                @if (Model.statusProd == false)
                 {
                     <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
-                        <input type="hidden" name="codProd" value="@Model.produto.codProd" />
+                        <input type="hidden" name="codProd" value="@Model.codProd" />
                         <input type="hidden" name="statusProd" value="1" />
                         <button type="submit" class="btn-detalhe ativar-btn">Ativar</button>
                     </form>
                 }
-                else // Se o produto está inativo
+                else
                 {
                     <form asp-controller="Funcionario" asp-action="AtualizarStatusProduto" method="post">
-                        <input type="hidden" name="codProd" value="@Model.produto.codProd" />
+                        <input type="hidden" name="codProd" value="@Model.codProd" />
                         <input type="hidden" name="statusProd" value="0" />
                         <button type="submit" class="btn-detalhe desativar-btn">Desativar</button>
                     </form>
-
                 }
-                <a asp-controller="Funcionario" asp-action="AlterarProdutosF" asp-route-codProd="@Model.produto.codProd" class="text-decoration-none">
+                <a asp-controller="Funcionario" asp-action="AlterarProdutosF" asp-route-codProd="@Model.codProd" class="text-decoration-none">
                     <button class="btn-detalhe editar-btn">Editar</button>
                 </a>
             </div>
+
         </div>
     </div>
-    
+
 </div>
 
 
@@ -354,11 +353,11 @@
 
 
     // Quantidade de avaliações
-    const totalRatings = @Model.produto.qtdAvaliacao;
-    const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.produto.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
+    const totalRatings = @Model.qtdAvaliacao;
+    const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
 
 
-    for (let rating in ratingsData) {
+        for (let rating in ratingsData) {
         const percentage = (ratingsData[rating] / totalRatings) * 100;
         const ratingBar = document.getElementById(`bar-${rating}`);
 
@@ -371,4 +370,3 @@
 </script>
 
 <script src="~/js/site.js"></script>
-

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ETkbUvbbgl8=",
+  "dgSpecHash": "gxgeU7nQFMA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\edutico.csproj",
+  "projectFilePath": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\edutico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\barro\\.nuget\\packages\\aspose.words\\24.11.1\\aspose.words.24.11.1.nupkg.sha512",
     "C:\\Users\\barro\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",

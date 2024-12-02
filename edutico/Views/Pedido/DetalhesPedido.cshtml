@@ -26,23 +26,25 @@
 
                             var valorItem = valor.Insert(valor.Length - 2, ",");
 
-                            <div class="item-prod">
-                                <p> 
-                                    <img src="@Url.Content(@itemPedido.produto.img.enderecoImg)" alt="@itemPedido.produto.nomeProd"> 
-                                    @if (itemPedido.produto.nomeProd.Length > 35)
-                                    {
-                                        @itemPedido.produto.nomeProd.Substring(0, 35)
+                                <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-codProd="@itemPedido.produto.codProd" class="text-decoration-none" style="color: inherit;">
+                                <div class="item-prod">
+                                    <p> 
+                                        <img src="@Url.Content(@itemPedido.produto.img.enderecoImg)" alt="@itemPedido.produto.nomeProd"> 
+                                        @if (itemPedido.produto.nomeProd.Length > 20)
+                                        {
+                                            @itemPedido.produto.nomeProd.Substring(0, 20)
 
-                                        <text>...</text> 
-                                    }
-                                    else
-                                    {
-                                        @itemPedido.produto.nomeProd 
-                                    }
-                                </p>
+                                            <text>...</text> 
+                                        }
+                                        else
+                                        {
+                                            @itemPedido.produto.nomeProd 
+                                        }
+                                    </p>
 
-                                <p>R$ @valorItem</p>
-                            </div>
+                                    <p>R$ @valorItem</p>
+                                </div>
+                            </a>
                         }
                 </div>
                <div class="item-prod mt-2">
@@ -132,28 +134,25 @@
            <div class="d-flex pt-2 justify-content-center">
                 @if (Model.statusPedido.ToString() == "0")
                 {
-                        <form asp-controller="Pedido" asp-action="AtualizarStatusPedido" method="post">
-                            <input type="hidden" name="NF" value="@Model.NF" />
-                             <input type="hidden" name="status" value="3" />
-                            <button type="submit" class="btncanc">Cancelar Pedido</button>
-                        </form>
+                    <a asp-controller="Pedido" asp-action="TermoCancelamento" asp-route-NF="@Model.NF">
+                        <button class="btncanc">Cancelar Pedido</button>
+                    </a>
                 }
                 else if (Model.statusPedido == 1)
                 {
-                         <form asp-controller="Pedido" asp-action="AtualizarStatusPedido" method="post">
-                             <input type="hidden" name="NF" value="@Model.NF" />
-                             <input type="hidden" name="status" value="2" />
-                             <button type="submit" class="btncanc">Pedido Recebido</button>
-                         </form>
+                     <a asp-controller="Pedido" asp-action="AtualizarStatusPedido" asp-route-NF="@Model.NF" asp-route-status=2>
+                        <button class="btncanc">Pedido Recebido</button>
+                     </a>
                 }
                 else
                 {
-                         <form asp-controller="Pedido" asp-action="GerarNF" method="post">
-                             <input type="hidden" name="pedido" value="@pedido" />
-                             <button type="submit" class="btncanc">Ver Nota Fiscal</button>
-                         </form>
+                    <a asp-controller="Pedido" asp-action="GerarNF" asp-route-NF="@Model.NF">
+                        <button class="btncanc">Ver Nota Fiscal</button>
+                    </a>
                 }
-                <button class="btnnav">Voltar para a navegação</button>
+                <a asp-controller="Pedido" asp-action="MeusPedidos">
+                    <button class="btnnav">Voltar para a navegação</button>
+                </a>
             </div>
 
        </div>

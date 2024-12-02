@@ -1,9 +1,9 @@
 ﻿@model Produto;
 
 @{
-    // Ativa o layout específico para funcionários, em vez do layout padrão
+
     Layout = "_LayoutFunc";
-    ViewData["Title"] = "Cadastrar Produtos"; // Define o título da página
+    ViewData["Title"] = "Cadastrar Produtos";
 }
 
 @{
@@ -20,7 +20,6 @@
 
 <section class="container">
     <!-- Seção de cadastro de produtos -->
-    <!-- Cabeçalho da seção -->
     <div class="header">
         <h1>ALTERAR PRODUTOS</h1>
     </div>
@@ -30,8 +29,8 @@
         @{
             if (ViewData["msg"] != null)
             {
-                    @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
-                    <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+                @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
+                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
             }
         }
         <div class="row d-flex justify-content-between">
@@ -54,9 +53,10 @@
                 <br />
                 <span asp-validation-for="descricao" class="text-danger"></span>
                 <br />
+
                 <!-- Classificação Indicativa e Valor Unitário -->
-                <div class="d-flex">
-                    <div class="col-5 me-2">
+                <div class="row g-3 mb-3">
+                    <div class="col-lg-8 col-md-7">
                         <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
                         <select asp-for="classificacao" class="ClassIndProd" name="classificacao">
                             <option value="0">Selecione</option>
@@ -70,8 +70,9 @@
                         <span asp-validation-for="classificacao" class="text-danger"></span>
                         <br />
                     </div>
-                    <div class="col-lg-5">
-                        <label asp-for="valorUnit">Valor Unitário <span class="req">*</span></label>
+
+                    <div class="col-lg-4 col-md-5">
+                        <label asp-for="valorUnit">Valor Unitário<span class="req">*</span></label>
                         <input asp-for="valorUnit" type="text" id="ValorUni" class="InputType1" value="@Model.valorUnit" placeholder="Digite o valor" name="valorUnit" />
                         <br />
                         <span asp-validation-for="valorUnit" class="text-danger"></span>
@@ -79,37 +80,40 @@
                     </div>
                 </div>
 
+                <div class="row d-flex flex-column">
+                    <label asp-for="categoria" placeholder="Selecione a categoria do brinquedo">Categoria de brinquedos <span class="req">*</span></label>
+                    <select asp-for="categoria" class="CatBrinquedo" name="categoria">
+                        <option value="0">Selecione</option>
+                        <option value="1 - Brinquedos de Montar">Brinquedos de Montar</option>
+                        <option value="2 - Brinquedos Sustentáveis">Brinquedos Sustentáveis</option>
+                        <option value="3 - Brinquedos Científicos">Brinquedos Científicos</option>
+                        <option value="4 - Quebra-Cabeças">Quebra-Cabeças</option>
+                        <option value="5 - Livros Interativos">Livros Interativos</option>
+                        <option value="6 - Brinquedos Sensoriais">Brinquedos Sensoriais</option>
+                        <option value="7 - Instrumentos Musicais">Instrumentos Musicais</option>
+                        <option value="8 - Jogos de Tabuleiro">Jogos de Tabuleiro</option>
+                        <option value="9 - Jogos de Desafio">Jogos de Desafio</option>
+                        <option value="10 - Jogos de Ação">Jogos de Ação</option>
+                        <option value="11 - Jogos de Cartas">Jogos de Cartas</option>
+                        <option value="12 - Jogos Eletrônicos">Jogos Eletrônicos</option>
 
-                <label asp-for="categoria" placeholder="Selecione a categoria do brinquedo">Categoria de brinquedos <span class="req">*</span></label>
-                <select asp-for="categoria" class="CatBrinquedo" name="categoria">
-                    <option value="0">Selecione</option>
-                    <option value="1 - Brinquedos de Montar">Brinquedos de Montar</option>
-                    <option value="2 - Brinquedos Sustentáveis">Brinquedos Sustentáveis</option>
-                    <option value="3 - Brinquedos Científicos">Brinquedos Científicos</option>
-                    <option value="4 - Quebra-Cabeças">Quebra-Cabeças</option>
-                    <option value="5 - Livros Interativos">Livros Interativos</option>
-                    <option value="6 - Brinquedos Sensoriais">Brinquedos Sensoriais</option>
-                    <option value="7 - Instrumentos Musicais">Instrumentos Musicais</option>
-                    <option value="8 - Jogos de Tabuleiro">Jogos de Tabuleiro</option>
-                    <option value="9 - Jogos de Desafio">Jogos de Desafio</option>
-                    <option value="10 - Jogos de Ação">Jogos de Ação</option>
-                    <option value="11 - Jogos de Cartas">Jogos de Cartas</option>
-                    <option value="12 - Jogos Eletrônicos">Jogos Eletrônicos</option>
+                    </select>
 
-                </select>
+                    <br />
+                    <span asp-validation-for="categoria" class="text-danger"></span>
+                    <br />
+                </div>
 
-                <br />
-                <span asp-validation-for="categoria" class="text-danger"></span>
-                <br />
-                <div class="d-flex">
-                    <div class="col-6">
+                <div class="row g-3 mb-0">
+                    <div class="col-lg-8 col-md-7 d-flex flex-column">
                         <label asp-for="estoque" for="Estoque">Estoque<span class="req">*</span></label>
                         <input asp-for="estoque" type="text" id="Estoque" value="@Model.estoque" class="InputType1" placeholder="Quantidade em estoque" name="estoque" />
                         <br />
                         <span asp-validation-for="estoque" class="text-danger"></span>
                         <br />
                     </div>
-                    <div class="col-lg-5 mb-3">
+
+                    <div class="col-lg-4 col-md-5">
                         <label asp-for="lancamento" class="form-label">Lançamento <span class="req">*</span></label>
                         <div class="d-flex">
                             <div class="form-check me-3">
@@ -126,7 +130,7 @@
                         <br />
                     </div>
 
-                    <div class="col-lg-5 mb-0">
+                    <div class="row">
                         <label asp-for="statusProd" class="form-label">Status <span class="req">*</span></label>
                         <div class="d-flex">
                             <div class="form-check me-3">
@@ -232,13 +236,12 @@
             }
         });
 
-        document.getElementById('habilidadesSelecionadas').value = habilidadesInput.value;    
-        
+        document.getElementById('habilidadesSelecionadas').value = habilidadesInput.value;
+
         const imgsConcatenadas = document.querySelector("#imgs").value.split(",");
 
         console.log(imgsConcatenadas);
-        
-        /*
+
         // Criando um array de objetos
         let imgs = [];
 
@@ -253,7 +256,7 @@
         console.log(imgs);
 
         // Chama a função para adicionar as imagens
-        adicionarImagens(imgs); */
+        adicionarImagens(imgs);
     });
 
     function selecionarHabilidade(element) {

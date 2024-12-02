@@ -214,10 +214,11 @@ namespace edutico.Controllers
         }
 
 
-        public IActionResult GerarNF(string pedido)
+        public IActionResult GerarNF(int NF)
         {
             // Desserializa o pedido
-            var dadosPedido = JsonConvert.DeserializeObject<Pedido>(pedido);
+            var dadosPedido = _pedidoRepositorio.ConsultarDetalhesPedido(NF);
+            dadosPedido.cliente = _clienteRepositorio.ConsultarCliente(dadosPedido.cliente.codLogin);
 
             // Armazena o caminho do template
             string caminhoTemplate = "wwwroot/template/templateNF.docx";
@@ -321,8 +322,6 @@ namespace edutico.Controllers
         }
 
 
-
-        [HttpPost]
         public IActionResult AtualizarStatusPedido(int NF, int status)
         {
             // Pega o codLogin do Usuário Logado através da sessão
@@ -336,6 +335,20 @@ namespace edutico.Controllers
             pedidoAtulizado.cliente = _clienteRepositorio.ConsultarCliente(Login.codLogin);
 
             return View("DetalhesPedido", pedidoAtulizado);
+        }
+
+        public IActionResult TermoCancelamento(int NF)
+        {
+            ViewData["NF"] = NF;
+            return View();
+        }
+
+
+        public IActionResult CancelamentoEfetuado(int NF)
+        {
+            _pedidoRepositorio.AtualizarStatusPedido(NF, 3);
+
+            return View();
         }
     }
 }

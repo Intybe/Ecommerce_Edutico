@@ -176,76 +176,24 @@ namespace edutico.Controllers
             return View("AlterarProduto", produtoAtualizado);
         }
 
-        public IActionResult DetalhesProdutoF(decimal? codProd)
+        public IActionResult DetalhesProdutoF(decimal codProd)
         {
             Produto produto = null;
-            Avaliacao avaliacaoUnica = null;
 
-            if (_loginSessao != null && _loginSessao.GetLogin() != null)
-            {
-                var login = _loginSessao.GetLogin();
+            // Consultar o produto pelo código
+            produto = _produtoRepositorio.ConsultarDetalheProduto(codProd);
 
-                // Verifica se o codProd é nulo ou não foi passado
-                if (!codProd.HasValue)
-                {
-                    /*
-                    // Criar o produto padrão
-                    produto = new Produto()
-                    {
-                        codProd = 1, // Código do produto
-                        nomeProd = "Nome Produto Padrão",
-                        descricao = "Descrição Padrão",
-                        classificacao = "Classificação Indicativa",
-                        categoria = "Categoria",
-                        valorUnit = 0, // Valor padrão
-                        estoque = 100, // Estoque padrão
-                        statusProd = true, // Produto ativo
-                        lancamento = false, // Não é lançamento
-                        imgs = new List<Imagem>() // Inicializa a lista de imagens
-                    };
+            return View(produto);
+        }
 
-                    // Adiciona múltiplas imagens padrão ao produto
-                    for (int i = 1; i <= 5; i++)
-                    {
-                        Imagem imagem = new Imagem
-                        {
-                            enderecoImg = "~/imgs/img_prod_padrao_quadrada.png" // Caminhos de imagem diferentes
-                        };
+        public IActionResult DetalhesPedido(int NF)
+        {
+            Pedido pedido = _pedidoRepositorio.ConsultarDetalhesPedido(NF);
+            
+            // Adiciona os dados do cliente ao pedido
+            pedido.cliente = _clienteRepositorio.ConsultarCliente(pedido.cliente.codLogin);
 
-                        produto.imgs.Add(imagem); // Adiciona a imagem à lista de imagens do produto
-                    }
-                    */
-                }
-                else
-                {
-                    // Consultar o produto pelo código
-                    produto = _produtoRepositorio.ConsultarDetalheProduto(codProd.Value);
-
-                    // Obtém os favoritos do cliente logado
-
-
-
-
-
-                    avaliacaoUnica = _produtoRepositorio.ConsultarAvaliacaoCliente(codProd.Value, login.codLogin);
-
-                }
-            }
-            else
-            {
-                // Consultar o produto pelo código
-                produto = _produtoRepositorio.ConsultarDetalheProduto(codProd.Value);
-            }
-
-            var viewModel = new ViewProdutoFavoritos()
-            {
-                produto = produto,
-
-                avaliacaoUnica = avaliacaoUnica
-
-            };
-
-            return View(viewModel);
+            return View(pedido);
         }
     }
 }

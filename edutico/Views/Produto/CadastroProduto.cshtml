@@ -19,7 +19,7 @@
             if (ViewData["msg"] != null)
             {
                 @* O HTML Raw pode ser usado para: Procurar e baixar páginas HTML, Procurar e baixar cabeçalhos.*@
-                <p class="alert alert-danger">@Html.Raw(ViewData["msg"])</p>
+                <p class="alert alert-success">@Html.Raw(ViewData["msg"])</p>
             }
         }
         <div class="row d-flex justify-content-between">
@@ -42,9 +42,10 @@
                 <br />
                 <span asp-validation-for="descricao" class="text-danger"></span>
                 <br />
-                <!-- Classificação Indicativa e Valor Unitário -->
-                <div class="d-flex">
-                    <div class="col-5 me-2">
+
+                <div class="row g-3 mb-3">
+
+                    <div class="col-lg-8 col-md-7">
                         <label for="ClassIndProd">Classificação Indicativa <span class="req">*</span></label>
                         <select asp-for="classificacao" class="ClassIndProd" name="classificacao">
                             <option value="0">Selecione</option>
@@ -54,16 +55,11 @@
                             <option value="4 - 10+ Anos">10+ Anos</option>
                             <option value="5 - 12+ Anos">12+ Anos</option>
                         </select>
-                        <br />
-                        <span asp-validation-for="classificacao" class="text-danger"></span>
-                        <br />
                     </div>
-                    <div class="col-3">
-                        <label asp-for="valorUnit">Valor Unitário <span class="req">*</span></label>
-                        <input asp-for="valorUnit" type="text" id="ValorUni" class="InputType1" placeholder="Digite o valor" name="valorUnit" />
-                        <br />
-                        <span asp-validation-for="valorUnit" class="text-danger"></span>
-                        <br />
+
+                    <div class="col-lg-4 col-md-5">
+                        <label>Valor Unitário<span class="req">*</span></label>
+                        <input type="text" id="ValorUni" class="InputType1" placeholder="Digite o valor" name="valorUnit" />
                     </div>
                 </div>
 
@@ -87,31 +83,33 @@
                 <br />
                 <span asp-validation-for="categoria" class="text-danger"></span>
                 <br />
-                <div class="d-flex">
-                    <div class="col-6">
-                        <label asp-for="estoque" for="Estoque">Estoque<span class="req">*</span></label>
+
+                <div class="row g-3 ">
+
+                    <div class="col-lg-8 col-md-7 d-flex flex-column">
+                        <label asp-for="estoque" for="Estoque">Estoque <span class="req">*</span></label>
                         <input asp-for="estoque" type="text" id="Estoque" class="InputType1" placeholder="Quantidade em estoque" name="estoque" />
-                        <br />
                         <span asp-validation-for="estoque" class="text-danger"></span>
-                        <br />
                     </div>
-                    <div class="col-4 mb-3">
+
+                    <div class="col-lg-4 col-md-5">
                         <label asp-for="lancamento" class="form-label">Lançamento <span class="req">*</span></label>
                         <div class="d-flex">
+
                             <div class="form-check me-3">
                                 <input type="radio" id="LancamentoSim" name="lacamentoProd" value="true" class="form-check-input">
                                 <label for="LancamentoSim" class="form-check-label">Sim</label>
                             </div>
+
                             <div class="form-check">
                                 <input type="radio" id="LancamentoNao" name="lacamentoProd" value="false" class="form-check-input">
                                 <label for="LancamentoNao" class="form-check-label">Não</label>
                             </div>
                         </div>
-                        <br />
                         <span asp-validation-for="lancamento" class="text-danger"></span>
-                        <br />
                     </div>
                 </div>
+
             </div>
 
             <!-- Segundo form-group2 -->

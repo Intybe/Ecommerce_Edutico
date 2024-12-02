@@ -52,7 +52,7 @@
                         </td>
                         <td>R$ @produto.valorUnit.ToString("F2")</td>
                         <td>@produto.qtdFavorito</td>
-                        <td><a asp-controller="Home" asp-action="DetalhesProdutoF" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
+                        <td><a asp-controller="Funcionario" asp-action="DetalhesProdutoF" asp-route-codProd="produto.codProd" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
                     </tr>
                 }
             </tbody>

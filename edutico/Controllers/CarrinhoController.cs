@@ -15,7 +15,7 @@ namespace edutico.Controllers
         public CarrinhoController(IClienteRepositorio clienteRepositorio, LoginSessao loginSessao, ICarrinhoRepositorio carrinhoRepositorio, IFavoritosRepositorio favoritosRepositorio)
         {
             _clienteRepositorio = clienteRepositorio;
-            _loginSessao = loginSessao; 
+            _loginSessao = loginSessao;
             _carrinhoRepositorio = carrinhoRepositorio;
         }
 
@@ -31,7 +31,7 @@ namespace edutico.Controllers
                 // Se o cliente não estiver logado, redireciona para a página de login
                 return RedirectToAction("Login", "Login");
             }
-           
+
             IEnumerable<Carrinho> carrinho = _carrinhoRepositorio.ConsultarCarrinho(Login.codLogin);
 
             return View("Carrinho", carrinho);

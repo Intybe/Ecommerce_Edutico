@@ -1,0 +1,205 @@
+﻿@{
+    @* PARA ADICIONAR O LAYOUT 2 (FUNC)  *@
+    Layout = "_LayoutFunc"; // Isso ativa o layout do funcionário e não o padrão
+    ViewData["Title"] = "Detalhes Pedido";
+}
+
+@model Pedido;
+
+<section class="Conteudo">
+    <!-- base -->
+    <section class="DetalhesPedidosF">
+        <!--Cabeçaho do detalhes pedido-->
+        <div class="headerDetalhes">
+            <h1>DETALHES PEDIDO</h1>
+        </div>
+        <hr />
+
+        <!--conteudo começa aqui (informações/dados)-->
+        <div class="row texto-simples justify-content-between">
+            @*a classe texto-simples esta estilizando todos os textos para o glacial tradicional*@
+            <!--coluna que guarda os dados do cliente, endereço e fomas de pagamento-->
+            <div class="col-6">
+                <!--numero e datas da comanda-->
+                <div class="d-flex mb-4">
+                    <div class="info-devo">
+                        <p>Nº pedido</p>
+                        <p id="glacial-bold">@Model.NF</p>
+                    </div>
+                    <div class="info-devo">
+                        <p>Data de solicitação</p>
+                        <p id="glacial-bold">@Model.data.ToString("dd/MM/yyyy")</p>
+                    </div>
+                </div>
+                <!--Dados do cliente-->
+                <div class="sub_perfil">
+                    <p id="glacial-bold">Dados Cliente</p>
+                </div>
+                <hr />
+                <!--informações dado do cliente-->
+                <div class="d-flex mb-4">
+                    <!--colunas com informações (col-4 largura dela)-->
+                    <div class="col-4 mb-2">
+                        <div class="info-devo mb-3">
+                            <p>Primeiro nome</p>
+                            <p id="infoped">@Model.cliente.nome</p> @*esse id esta fazendo ficar negrito e cinza*@
+                        </div>
+                        <div class="info-devo">
+                            <p> Telefone</p>
+                            <p id="infoped">
+                                @String.Format("({0}) {1}-{2}",
+                                         Model.cliente.telefone.Substring(0, 2),
+                                         Model.cliente.telefone.Substring(2, 5),
+                                         Model.cliente.telefone.Substring(7))
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="info-devo mb-3">
+                            <p>Sobrenome</p>
+                            <p id="infoped">@Model.cliente.sobrenome</p>
+                        </div>
+                        <div class="info-devo">
+                            <p>CPF</p>
+                            <p id="infoped">
+                                @String.Format("{0}.{1}.{2}-{3}",
+                                         Model.cliente.cpf.ToString().Substring(0, 3),
+                                         Model.cliente.cpf.ToString().Substring(3, 3),
+                                         Model.cliente.cpf.ToString().Substring(6, 3),
+                                         Model.cliente.cpf.ToString().Substring(9, 2))
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--informações entrega-->
+                <div class="sub_perfil">
+                    @*essa classe esta tirando o margin do p*@
+                    <p id="glacial-bold">Endereço de entrega</p>
+                </div>
+                <hr />
+                <div class="d-flex mb-4">
+                    <div class="col-5">
+                        <div class="info-devo mb-3">
+                            <p>Logradouro</p>
+                            <p id="infoped">@Model.cliente.logradouro</p>
+                        </div>
+                        <div class="info-devo">
+                            <p>Bairro</p>
+                            <p id="infoped">@Model.cliente.bairro</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="info-devo mb-3">
+                            <p> CEP</p>
+                            <p id="infoped">
+                                @String.Format("{0}-{1}",
+                                         Model.cliente.cep.Substring(0, 5),
+                                         Model.cliente.cep.Substring(5))
+                            </p>
+                        </div>
+                        <div class="info-devo">
+                            <p>Cidade</p>
+                            <p id="infoped">@Model.cliente.cidade</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="info-devo mb-3">
+                            <p>Número</p>
+                            <p id="infoped">@Model.cliente.numEnd</p>
+                        </div>
+                        <div class="info-devo">
+                            <p>UF</p>
+                            <p id="infoped">@Model.cliente.uf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--coluna que tem os produtos pedidos e a msg-->
+            <div class="col-6">
+                <!--card do pedido-->
+                <div class="CardPed">
+                    <h1>Pedido</h1>
+                    <div class="line"></div>
+                    <div class="Detalhes">
+                        <p>Data da Compra:</p>
+                        @foreach (var item in Model.itensPedido)
+                        {
+                            string valor = item.valorItem.ToString();
+
+                            var valorItem = valor.Insert(valor.Length - 2, ",");
+
+                            <p><img src="@Url.Content(@item.produto.img.enderecoImg)" alt="@item.produto.nomeProd"> <span>@item.produto.nomeProd</span> <span>R$ @valorItem</span></p>
+                        }
+                        <p><span>Entrega</span> <span>R$ 20,00</span></p>
+                    </div> <div class="line"></div>
+                    <div class="total">
+                        <span>Total</span>
+                        <span class="amount">R$ @Model.valorTotal.ToString("F2")</span>
+                    </div>
+                    @if (Model.statusPedido == 1)
+                    {
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalPedidoEnviado">Pedido enviado</button>
+                    }
+                    else
+                    {
+                        @if (Model.statusPedido == 0)
+                        {
+                            <p id="glacial-bold" style="margin-bottom: -5px; font-size: 18px;">Aguardando Pagamento</p>
+
+                        }
+                        @if (Model.statusPedido == 2)
+                        {
+                            <p id="glacial-bold" style="margin-bottom: -5px; font-size: 18px;">Concluído</p>
+
+                        }
+                        @if (Model.statusPedido == 3)
+                        {
+                            <p id="glacial-bold" style="margin-bottom: -5px; font-size: 18px;">Cancelado</p>
+                        }
+
+                    }
+                </div>
+
+                <!-- MODAL -->
+                <div class="modal fade texto-simples" id="ModalPedidoEnviado" data-bs-backdrop="static" data-bs-keyboard="false">
+                    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
+                    <!-- modal-dialog-centered faz ficar no centro verticalmente-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
+
+                            <!-- x para fechar-->
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- aqui fica icone confere-->
+                                <div class="mb-3">
+                                    <img src="~/imgs/aprovado.png" alt="Ícone de Confirmação" class="mb-3" style="height: 80px;">
+                                </div>
+                                <!-- Título e Mensagem -->
+                                <h1 class="modal-title fs-4 glacial-bold">O Pedido agora está enviado!</h1>
+                                <!-- ese fs é fonte size-->
+                                <p class="mb-3 fs-5 glacial-bold">O cliente foi notificado.</p>
+
+                            </div>
+                            <!--botao de dentro da modal-->
+                            <div class="modal-footer border-0 d-flex justify-content-center">
+                                <a asp-controller="Funcionario" asp-action="Pedidos" class="btn btn-primary Modal-btn">
+                                    Voltar para o menu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="btnvoltar">
+            <a asp-controller="Pedido" asp-action="Pedidos" class="register-button">Voltar</a>
+        </div>
+
+
+    </section>
+</section>

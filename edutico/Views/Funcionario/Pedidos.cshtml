@@ -53,10 +53,9 @@
                         <tr>
                             <td>@pedido.NF</td>
                             <td>
-                                @*<span><img src="~/imgs/montamonta.jpg" class="prevproduto" /></span>*@
-                                @if (pedido.itensPedido.First().produto.nomeProd.Length > 17)
+                                @if (pedido.itensPedido.First().produto.nomeProd.Length > 13)
                                 {
-                                    @pedido.itensPedido.First().produto.nomeProd.Substring(0, 17)
+                                    @pedido.itensPedido.First().produto.nomeProd.Substring(0, 13)
 
                                     <text>...</text>
                                 }
@@ -68,8 +67,24 @@
                             <td>R$ @pedido.valorTotal.ToString("F2")</td>
                             <td>@pedido.data.ToString("dd/MM/yyyy")</td>
                             <td>@primeiroNome @ultimoSobrenome</td>
-                            <td data-status="@pedido.statusPedido">@pedido.statusPedido</td>
-                            <td><a asp-controller="Home" asp-action="DetalhesPedidoF" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
+                            @if (@pedido.statusPedido == 0)
+                            {
+                                <td data-status="@pedido.statusPedido">Aguardando Pagamento</td>
+                            }
+                            else if (@pedido.statusPedido == 1)
+                            {
+                                <td data-status="@pedido.statusPedido">Pendente</td>
+                            }
+                            else if (@pedido.statusPedido == 2)
+                            {
+                                <td data-status="@pedido.statusPedido">Concluído</td>
+                            }
+                            else
+                            {
+                                <td data-status="@pedido.statusPedido">Cancelado</td>
+                            }
+
+                            <td><a asp-controller="Funcionario" asp-action="DetalhesPedido" asp-route-NF="@pedido.NF" style="text-decoration:underline;  color: #385BD2;">Detalhes</a></td>
                         </tr>
                     }
                 </tbody>
@@ -96,7 +111,7 @@
 
                 // Filtrar linhas da tabela
                 linhas.forEach(row => {
-                    const statusLinha = row.querySelector("td:nth-child(6)").textContent.trim(); // pega a coluna do status
+                    const statusLinha = row.querySelector("td:nth-child(6)").textContent.trim();
                     if (statusLinha === pegarStatus || pegarStatus === "Todos") {
                         row.style.display = ""; // Mostrar linha
                     } else {

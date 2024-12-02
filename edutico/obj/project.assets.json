@@ -2264,11 +2264,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\edutico.csproj",
+      "projectUniqueName": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\edutico.csproj",
       "projectName": "edutico",
-      "projectPath": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\edutico.csproj",
+      "projectPath": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\edutico.csproj",
       "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\obj\\",
+      "outputPath": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "P:\\Visual Studio\\Shared\\NuGetPackages"

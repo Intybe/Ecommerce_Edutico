@@ -58,6 +58,21 @@ namespace edutico.Models
             this.classificacao = ParseClassificacao(classificacao);
         }
 
+        // Construtor de prévia dos produtos para a pesquisa
+        public Produto(decimal codProd, string nomeProd, decimal valorUnit, int qtdAvaliacao, int somaAvaliacao, string imgsConcatenadas, bool statusProd, string classificacao, string categoria, string habilidadesConcatenadas)
+        {
+            this.codProd = codProd;
+            this.nomeProd = nomeProd;
+            this.valorUnit = valorUnit;
+            this.qtdAvaliacao = qtdAvaliacao;
+            this.somaAvaliacao = somaAvaliacao;
+            this.imgs = ParseImagens(imgsConcatenadas);
+            this.statusProd = statusProd;
+            this.classificacao = ParseClassificacao(classificacao);
+            this.categoria = ParseCategoria(categoria);
+            this.habilidades = ParseHabilidades(habilidadesConcatenadas);
+        }
+
         // Construtor de prévia dos produtos (Carrinho)
         public Produto(decimal codProd, string nomeProd, decimal valorUnit, string imgsConcatenadas)
         {
@@ -267,8 +282,10 @@ namespace edutico.Models
             // Veirifica se a string está vazia
             if (!string.IsNullOrEmpty(imgsBD))
             {
+                var imagemLista = imgsBD.Split(" | ");
+
                 // Pega a string e separa em "objeto" imagem
-                foreach (var imagem in (imgsBD.Split(" | ")))
+                foreach (string imagem in imagemLista)
                 {
                     // Separa as informações da string (objeto) e coloca em um vetor
                     var vImagem = imagem.Split(" -- ");

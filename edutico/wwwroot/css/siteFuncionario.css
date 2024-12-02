@@ -326,20 +326,26 @@ p {
 .btn-detalhe {
     padding: 10px;
     border-radius: 30px;
-    border: none; /* Sem borda */
+    border: none;
     font-family: 'Glacial Bold';
-    width: 200px;
+    width: 180px;
     font-size: 15px;
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    margin: 0 5px;
+    cursor: pointer;
+    text-align: center;
 }
 
-/* Estilos para o botão "desativar" */
+    .btn-detalhe:hover {
+        opacity: 0.9;
+    }
+
+
 .desativar-btn {
-    background-color: rgba(227, 27, 33, 0.3); /* Cor vermelha com 30% de opacidade */
+    background-color: rgba(227, 27, 33, 0.3);
     color: black;
 }
 
-/* Estilos para o botão "editar" */
+
 .editar-btn {
     background-color: rgba(255, 204, 37, 0.5);
     color: black;
@@ -492,7 +498,7 @@ td {
 }
 /* DETALHES PEDIDO */
 .DetalhesPedidosF {
-    height: 80vh;
+    height: auto;
     padding: 10px;
 }
 
@@ -537,6 +543,10 @@ td {
     margin-left: 15px;
 }
 
+.Data {
+    margin-left: 220px;
+    margin-top: -50px;
+}
 
 /* Dados Cliente */
 .DadosCliPed {
@@ -612,7 +622,7 @@ td {
 /*CARD PEDIDO */
 .CardPed {
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
     padding: 20px;
@@ -640,6 +650,12 @@ td {
             justify-content: space-between;
             align-items: center;
         }
+
+            .CardPed .Detalhes p img {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+            }
 
     .CardPed .total {
         font-size: 18px;
@@ -670,34 +686,22 @@ td {
         font-size: 14px;
     }
 
-.item-ped {
-    display: flex;
-    justify-content: space-between;
-}
-
-    .item-ped p img {
-        width: 35px;
-        height: 35px;
-        margin-right: 10px;
-        border: 1px solid #bbb;
-        border-radius: 5px;
-    }
 
 .btnvoltar {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    margin-left: 70%;
+    width: 150px;
+    height: 30px;
 }
 
     .btnvoltar .register-button {
-        font-size: 16px;
+        font-size: 14px;
         font-family: 'Glacial Bold';
         color: #385BD2;
         border: 2px solid #385BD2;
-        text-align: center;
-        padding: 5px 35px;
-        border-radius: 30px;
-        background: none;
-        align-items: center;
+        padding: 5px 30px;
+        border-radius: 20px;
+        text-decoration: none;
     }
 
 /*CADASTRAR PRODUTO*/
@@ -738,7 +742,7 @@ label {
 #ValorUni {
     border: 1px solid #000;
     height: 30px;
-    width: 200px;
+    width: 130px;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -752,10 +756,10 @@ label {
     border-radius: 5px;
     margin-bottom: 10px;
     width: 400px;
-    padding-top: 10px; /* Espaçamento interno superior */
-    padding-left: 10px; /* Opcional: ajusta o espaçamento à esquerda */
+    padding-top: 10px;
+    padding-left: 10px;
     resize: none;
-    box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+    box-sizing: border-box;
     font-size: 12px;
 }
 
@@ -766,13 +770,24 @@ label {
 .ClassIndProd {
     border: 0.5px solid #000;
     height: 30px;
-    width: 180px;
+    width: 200px;
     font-size: 12px;
     border-radius: 5px;
-    margin-left: 4px;
     margin-bottom: 10px;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
 }
 
+.row > * {
+    padding-left: 0px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
 
 .CatBrinquedo {
     border: 0.5px solid #000;
@@ -780,8 +795,8 @@ label {
     width: 400px;
     font-size: 12px;
     border-radius: 5px;
-    margin-left: 4px;
     margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 #Estoque {
@@ -1300,7 +1315,7 @@ label {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 /*Div detalhes*/
@@ -1643,7 +1658,7 @@ label {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    width: 520px;
+    width: 490px;
     max-height: 320px;
     overflow-y: auto;
     margin-top: 15px;

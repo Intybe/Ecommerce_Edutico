@@ -1,4 +1,6 @@
-﻿
+﻿@{
+    var NF = (int)ViewData["NF"];
+}
 @{
     Layout = "_LayoutCli2";
     ViewData["Title"] = "Termos Cancelamento";
@@ -36,7 +38,10 @@
     </div>
     <div class="aceitar">
         <label><input type="checkbox"> Li e concordo com os Termos de Cancelamento</label>
-        <button class="btnaceitar">Aceitar</button>
+
+        <a asp-controller="Pedido" asp-action="CancelamentoEfetuado" asp-route-NF="@NF">
+            <button class="btnaceitar">Aceitar</button>
+        </a>
     </div>
 
 </section>

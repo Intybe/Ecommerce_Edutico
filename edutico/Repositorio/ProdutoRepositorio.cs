@@ -41,11 +41,10 @@ namespace edutico.Repositorio
             //dr = recebe e verifca se é "legivel os dados 
             if (dr.Read())
             {
+                // Atribuindo a mensagem de retorno cadastrada
+                mensagem = dr.GetString(0);
                 if (dr.GetString(0) == "Produto Cadastrado com sucesso!")
                 {
-                    // Atribuindo a mensagem de retorno cadastrada
-                    mensagem = dr.GetString(0);
-
                     // Fecha o leitor utilizado para ler a mensagem
                     dr.Close();
 
@@ -358,7 +357,9 @@ namespace edutico.Repositorio
                     Convert.ToInt32(dr["somaAvaliacao"]),
                     dr["imgs"]?.ToString(),
                     Convert.ToBoolean(dr["statusProd"]),
-                    dr["classificacao"].ToString()
+                    dr["classificacao"].ToString(),
+                    dr["categoria"].ToString(),
+                    dr["habilidades"]?.ToString()
                 );
                 produtos.Add(produto);
             }
@@ -462,9 +463,6 @@ namespace edutico.Repositorio
             // Retorna o produto (ou null se não for encontrado)
             return produto;
         }
-
-
-        //DETAKHES PRODUTO FUNCIONARIO
 
 
         // Método de consulta aos detalhes do produto
@@ -680,7 +678,7 @@ namespace edutico.Repositorio
             MySqlConnection conexao = con.ConectarBD();
 
             // Comando SQL para selecionar produtos e suas respectivas imagens, com filtro de pesquisa
-            string sql = "Select * from vwPreviaProduto where statusProd = 1 and nomeProd like @pesquisa;";        
+            string sql = "Select * from vwPreviaProduto where statusProd = 1 and nomeProd like @pesquisa;";
 
             // Junta o comando SQL com a informações do banco
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
@@ -705,7 +703,9 @@ namespace edutico.Repositorio
                     Convert.ToInt32(dr["somaAvaliacao"]),
                     dr["imgs"]?.ToString(),
                     Convert.ToBoolean(dr["statusProd"]),
-                    dr["classificacao"].ToString()
+                    dr["classificacao"].ToString(),
+                    dr["categoria"].ToString(),
+                    dr["habilidades"]?.ToString()
                 );
                 produtos.Add(produtoRelacionados);
             }

@@ -15,7 +15,6 @@
         FK tbPedido
         FK tbItemPedido
         FK tbCarrinho
-        FK tbDevolucao
         FK tbPagamento
         FK tbCartaoCredito
     Procedures de Cadastro (Insert)
@@ -44,7 +43,6 @@
         Sessão de Atualização de Produto
         Sessão de Atualização das Imagens do Produto
         Sessão de Atualização de Avaliações
-        Sessão de Atualização do Status da devolução
         Sessão de Ativação do Produto
         Sessão de Atualização de Status do Produto
     Procedures de Exclusão (Delete)
@@ -242,14 +240,6 @@ Create table tbCartaoCredito(
     codLogin int
 );
 
-Create table tbDevolucao(
-	codDevolucao int primary key auto_increment,
-    dataSolicitacao datetime not null,
-    motivo varchar(400) not null,
-    statusDevolucao decimal(1,0) not null,
-    codItem int not null
-);
-
 /*
 	Adicionando as chaves estrangeiras
 */
@@ -291,9 +281,6 @@ Alter table tbItemPedido Add foreign key(NF) references tbPedido(NF);
 -- FK tbCarrinho --
 Alter table tbCarrinho Add foreign key(codLogin) references tbLogin(codLogin);
 Alter table tbCarrinho Add foreign key(codProd) references tbProduto(codProd);
-
--- FK tbDevolucao --
-Alter table tbDevolucao Add foreign key(codItem) references tbItemPedido(codItem);
 
 -- FK tbPagamento --
 Alter table tbPagamento Add foreign key(NF) references tbPedido(NF);
@@ -633,30 +620,6 @@ Begin
 	End if;
 End $$
 
--- Sessão de Cadastro de Devoluções --
-Delimiter $$
-Create Procedure spInsertTbDevolucao(
-	vMotivo varchar(400), 
-    vCodItem int
-)
-Begin
-	-- Declara a variável para receber a NF --
-	Declare vNF int;
-    
-    -- Verifica se o Item existe --
-	If exists(Select codItem from tbItemPedido where codItem = vCodItem) then
-		-- Verifica se não existe uma devolução do Item doPedido --
-		If not exists(Select codItem from tbDevolucao where codItem = vCodItem) then
-			Insert into tbDevolucao(dataSolicitacao, motivo, statusDevolucao, codItem)
-							Values(current_timestamp(), vMotivo, 0, vCodItem); -- Insere os dados --
-			-- Atribui o número do pedido a variável -- 
-			Set vNF = (Select NF from tbItemPedido where codItem = vCodItem);    
-			
-			Update tbPedido Set statusPedido = 4 where NF = vNF;
-		End if;
-	End if;
-End $$
-
 /*
 	Procedures Alterações (Update)
 */
@@ -862,40 +825,6 @@ Begin
 	*/
 End $$
 
--- Sessão de Atualização de Avaliações --
-Delimiter $$
-Create Procedure spUpdateTbAvaliacao(
-	vCodAvaliacao int, 
-    vQtdEstrela decimal(1,0), 
-    vComentario varchar(700)
-)
-Begin 
-	-- Atualiza a avaliação --
-	Update tbAvaliacao Set qtdEstrela = vQtdEstrela, comentario = vComentario where codAvaliacao = vCodAvaliacao;
-End $$
-
-
--- Sessão de Atualização do Status da devolução --
-Delimiter $$
-Create Procedure spUpdateTbDevolucao(
-	vCodDevolucao int, 
-    vStatusDevolucao decimal(1,0)
-)
-Begin
-	-- Atualiza o status --
-	Update tbDevolucao Set statusDevolucao = vStatusDevolucao where codDevolucao = vCodDevolucao;
-    /* Status da Devolução:
-	0 = Em Análise;
-    1 = Aprovada;
-    2 = Negada;
-    */
-End $$
-
-
-/*
-	Procedures de Exclusão (Delete)
-*/
-
 -- Sessão de Exclusão de Favoritos --
 Delimiter $$
 Create Procedure spDeleteTbFavorito(
@@ -983,15 +912,20 @@ Select
     tbProduto.valorUnit,
     tbProduto.lancamento,
     tbProduto.statusProd,
-    GROUP_CONCAT(CONCAT(tbImagem.nomeImg, ' -- ', tbImagem.enderecoImg) Separator ' | ') AS 'imgs',
+    GROUP_CONCAT(Distinct CONCAT(tbImagem.nomeImg, ' -- ', tbImagem.enderecoImg) Separator ' | ') AS 'imgs',
     IFNULL(vwEstatisticasAvaliacao.totalAvaliacoes, 0) As 'qtdAvaliacao',
     IFNULL(vwEstatisticasAvaliacao.totalEstrelas, 0) As 'somaAvaliacao',
-    CONCAT(tbClassificacao.codClassificacao, ' - ', tbClassificacao.nomeClassificacao) As 'classificacao'
+    CONCAT(tbClassificacao.codClassificacao, ' - ', tbClassificacao.nomeClassificacao) As 'classificacao',
+    CONCAT(tbCategoria.codCategoria, ' - ', tbCategoria.nomeCategoria) As 'categoria',
+    GROUP_CONCAT(Distinct CONCAT(tbHabilidade.codHabilidade, ' - ', tbHabilidade.nomeHabilidade) Order By tbHabilidade.codHabilidade Separator ' | ') As 'habilidades'
 from tbProduto
     Left Join tbImagem On tbImagem.codProd = tbProduto.codProd
     Left Join tbAvaliacao On tbAvaliacao.codProd = tbProduto.codProd
     Left Join vwEstatisticasAvaliacao On vwEstatisticasAvaliacao.codProd = tbProduto.codProd
-	Left Join tbClassificacao On tbClassificacao.codClassificacao = tbProduto.codClassificacao
+	Left Join tbCategoria On tbCategoria.codCategoria = tbProduto.codCategoria
+    Left Join tbClassificacao On tbClassificacao.codClassificacao = tbProduto.codClassificacao
+    Left Join tbHabilidade_Produto On tbProduto.codProd = tbHabilidade_Produto.codProd
+    Left Join tbHabilidade On tbHabilidade.codHabilidade = tbHabilidade_Produto.codHabilidade
 Group by tbProduto.codProd;
 $$
 

@@ -10,7 +10,7 @@
 {
     <div class="carrinhoVTodo">
         <div class="col-9 base carrinhoV">
-            <a href="#" class="Voltar">Voltar a navegação</a>
+            <a href="~/Home/Index" class="Voltar">Voltar a navegação</a>
             <div class="justify-content-between d-flex">
                 <p style="font-family: 'Edutico'; font-size:23px; color:#426ef0">SEU CARRINHO</p>
             </div>
@@ -43,7 +43,7 @@ else
 
                     <div class="produto position-relative" id="cardProduto">
 
-                        <input type="checkbox" id="check" value="@produto" onchange='atualizarListaProdutos(this, @produto, @subtotal)' />
+                        <input type="checkbox" id="check" value="@produto" onchange='atualizarListaProdutos(this, @produto)' />
 
                         <div class="imgProd">
                             <img src="@Url.Content(itemCarrinho.produto.imgs.First().enderecoImg)" class="card-img-top rounded mt-1" alt="@itemCarrinho.produto.nomeProd" />
@@ -66,7 +66,7 @@ else
                             <div class="info_prod_car">
                                 <p>Quantidade:</p>
                                 <div class="contador glacial-bold">
-                                    <form id="form-carrinho" asp-controller="Cliente" asp-action="AtualizarQtdProdCarrinho" method="post">
+                                    <form id="form-carrinho" asp-controller="Carrinho" asp-action="AtualizarQtdProdCarrinho" method="post">
                                         <button id="decrementar" type="button">-</button>
                                         <input type="number" id="valor" name="qtdProd" value="@itemCarrinho.qtdProd" min="1" />
                                         <button id="incrementar" type="button">+</button>
@@ -85,7 +85,7 @@ else
                                 <p id="glacial-bold">R$ @totalItem.ToString("F2")</p>
                             </div>
                         </div>
-                        <form asp-controller="Cliente" asp-action="ExcluirItemProduto" method="post">
+                        <form asp-controller="Carrinho" asp-action="ExcluirItemProduto" method="post">
                             <input type="hidden" name="codProd" value="@itemCarrinho.produto.codProd" />
                             <button class="fechar" id="fecharCard">
                                 <img src="@Url.Content("~/imgs/x.png")" />
@@ -178,10 +178,11 @@ else
     });
 
     let itemSelecionado = [];
+    let subtotal = 0.00;
 
-    function atualizarListaProdutos(checkbox, produto, subtotal) {
-        var valorUnitario = parseFloat(produto.produto.valorUnit);  // Certifique-se de que valorUnit é um número
-        var qtdProduto = parseInt(produto.qtdProd);  // Certifique-se de que qtdProd é um número
+    function atualizarListaProdutos(checkbox, produto) {
+        var valorUnitario = parseFloat(produto.produto.valorUnit);
+        var qtdProduto = parseInt(produto.qtdProd);
         const totalInput = document.querySelector("#totalInput");
         const lblSubtotal = document.querySelector("#lblSubtotal");
         const lblTotal = document.querySelector("#lblTotal");
@@ -189,24 +190,22 @@ else
         if (checkbox.checked) {
             itemSelecionado.push(produto);
             subtotal += valorUnitario * qtdProduto;
-        }
-        else {
+        } else {
             itemSelecionado = itemSelecionado.filter(item => item.produto.codProd !== produto.produto.codProd);
             subtotal -= valorUnitario * qtdProduto;
         }
 
-        // Corrigir o cálculo do total incluindo a taxa fixa de entrega (R$ 20,00)
-        var total = subtotal + 20.00;  // Subtotal + taxa de entrega
+        var total = subtotal + 20.00;
+
         if (subtotal < 0) {
             subtotal = 0;
-            total = 20.00;  // Caso não haja produtos, a entrega ainda é cobrada
+            total = 20.00;
         }
 
         const input = document.querySelector("#SelecionadosInput");
         input.value = JSON.stringify(itemSelecionado);
 
-        // Atualiza os valores no formato correto
-        totalInput.value = total;
+        totalInput.value = total.toFixed(2).replace('.', ',');
         lblSubtotal.innerHTML = "R$ " + subtotal.toFixed(2).replace('.', ',');
         lblTotal.innerHTML = "R$ " + total.toFixed(2).replace('.', ',');
     }

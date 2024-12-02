@@ -1,12 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Cartao Pagamento";
-    string valorModal = null;
+    string valorModal = "#successModal";
 }
 
 @model Pagamento;
 
 
-
+@*
 @if (Model.retorno == true)
 {
     valorModal = "#successModal";
@@ -15,6 +15,8 @@ else
 {
     valorModal = "#negadoModal";
 }
+*@
+
 <div class="row texto-simples ">
     <div class="text-center mb-2">
         <p>Pedido confirmado! Realize o pagamento para efetuarmos a sua compra.</p>
@@ -28,6 +30,24 @@ else
             <div class="menu-cartões ">
                 @foreach (var cartoesLista in Model.cartoes)
                 {
+                    string imgBandeira = null;
+
+                    @if (cartoesLista.bandeira == "Visa")
+                    {
+                        imgBandeira = "~/imgs/Visa.png";
+                    }
+                    else if (cartoesLista.bandeira == "MasterCard")
+                    {
+                        imgBandeira = "~/imgs/master.png";
+                    }
+                    else if (cartoesLista.bandeira == "Elo")
+                    {
+                        imgBandeira = "~/imgs/elo.png";
+                    }
+                    else
+                    {
+                        imgBandeira = "~/imgs/Bandeira.png";
+                    }
                     var cartao = @Html.Raw(Json.Serialize(cartoesLista));
                     var index = Model.cartoes.IndexOf(cartoesLista);
 
@@ -38,7 +58,7 @@ else
                             <div class="custom-radio">
                                 <span></span>
                             </div>
-                            <img src="~/imgs/master.png" alt="iconecartao" width="50">
+                            <img src="@Url.Content(imgBandeira)" alt="iconecartao" width="50">
                             <p>@cartoesLista.numCartao.ToString().Substring(cartoesLista.numCartao.ToString().Length - 4)</p>
                         </label>
                         <a asp-controller="Pagamento" asp-action="VisualizarCartao" asp-route-cartaoEnviado="@cartao">
@@ -56,13 +76,13 @@ else
             <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">CADASTRE SEU CARTÃO AQUI</h5>
             <br />
 
-            <form id="cadastrocartao">
+            <form id="cadastroCartaoForm" style="display: none;">
                 <div class="info-grup d-flex flex-column mb-3">
                     <label for="titular">Nome do titular <span class="obg">*</span></label>
-                    <input type="text" placeholder="Digite aqui o número do cartão" />
+                    <input type="text" placeholder="Digite aqui o nome do titular" />
                 </div>
                 <div class="info-grup d-flex flex-column mb-3">
-                    <label for="titular">Número do cartão <span class="obg">*</span></label>
+                    <label for="numeroCartao">Número do cartão <span class="obg">*</span></label>
                     <input type="text" placeholder="Digite aqui o número do cartão" />
                 </div>
                 <div class="d-flex info-grup">
@@ -70,14 +90,9 @@ else
                         <label for="validade">Data de validade<span class="obg">*</span></label>
                         <input type="text" placeholder="MM/AA" />
                     </div>
-                    <div class="d-flex flex-column w-100">
-                        <label for="cvv">Código de segurança<span class="obg">*</span></label>
-                        <input type="text" placeholder="CVV" />
-                    </div>
                 </div>
-
                 <div class="d-flex justify-content-end">
-                    <button class="btn-cartao ">Confirmar</button>
+                    <button class="btn-cartao">Confirmar</button>
                 </div>
             </form>
         </div>
@@ -147,6 +162,19 @@ else
             const form = document.querySelector("#formPagamento");
             form.submit();
         }
+
+        function expandirSecao(formId, setaId) {
+            const form = document.getElementById(formId);
+            const setaIcon = document.getElementById(setaId);
+
+            if (form.style.display === 'none' || form.style.display === '') {
+                form.style.display = 'block';
+                setaIcon.classList.add('giraseta');
+            } else {
+                form.style.display = 'none';
+                setaIcon.classList.remove('giraseta');
+            }
+        }
     </script>
 </div>
 
@@ -181,13 +209,10 @@ else
             </div>
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
-                <a href="@Url.Action("DetalhesPedido", "Home")" class="btn btn-primary" style="border-radius: 25px;">
-                    <!--faz com que abra outra padina na mesma aba-->
+                <a asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@Model.pedido.NF">
                     Acompanhar pedido
                 </a>
             </div>
-
-
         </div>
     </div>
 </div>
@@ -230,12 +255,13 @@ else
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
                 <!--fecha modal-->
-                <bytton class="btn btn-primary" data-bs-dismiss="modal" style="border-radius: 25px;">
-                    Voltar para o menu
-                </bytton>
+                <a asp-controller="Home" asp-action="Index">
+                    <button class="btn btn-primary" data-bs-dismiss="modal" style="border-radius: 25px;">
+                        Voltar para o menu
+                    </button>
+                </a>
             </div>
         </div>
     </div>
 </div>
-
 

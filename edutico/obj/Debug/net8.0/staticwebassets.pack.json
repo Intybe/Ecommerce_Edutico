@@ -1,807 +1,1191 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\edutico.bundle.scp.css",
       "PackagePath": "staticwebassets\\edutico.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\css\\siteCli2.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\css\\siteCli2.css",
       "PackagePath": "staticwebassets\\css\\siteCli2.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\css\\siteFuncionario.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\css\\siteFuncionario.css",
       "PackagePath": "staticwebassets\\css\\siteFuncionario.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\fonts\\Edutico-Regular.otf",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\fonts\\Edutico-Regular.otf",
       "PackagePath": "staticwebassets\\fonts\\Edutico-Regular.otf"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\fonts\\GlacialIndifference-Bold.otf",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\fonts\\GlacialIndifference-Bold.otf",
       "PackagePath": "staticwebassets\\fonts\\GlacialIndifference-Bold.otf"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\fonts\\glacial.otf",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\fonts\\glacial.otf",
       "PackagePath": "staticwebassets\\fonts\\glacial.otf"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp",
       "PackagePath": "staticwebassets\\imgs\\35475685-7b34-41eb-8647-582f99c296c9.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\6maisanos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\6maisanos.png",
       "PackagePath": "staticwebassets\\imgs\\6maisanos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Bandeira.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Bandeira.png",
       "PackagePath": "staticwebassets\\imgs\\Bandeira.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Cancel.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Cancel.png",
       "PackagePath": "staticwebassets\\imgs\\Cancel.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Dashboard.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Dashboard.png",
       "PackagePath": "staticwebassets\\imgs\\Dashboard.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Devolucao.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Devolucao.png",
       "PackagePath": "staticwebassets\\imgs\\Devolucao.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Historico.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Historico.png",
       "PackagePath": "staticwebassets\\imgs\\Historico.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Logout.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Logout.png",
       "PackagePath": "staticwebassets\\imgs\\Logout.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Notification.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Notification.png",
       "PackagePath": "staticwebassets\\imgs\\Notification.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Pedidos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Pedidos.png",
       "PackagePath": "staticwebassets\\imgs\\Pedidos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\PerfilF.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\PerfilF.png",
       "PackagePath": "staticwebassets\\imgs\\PerfilF.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Plus.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Plus.png",
       "PackagePath": "staticwebassets\\imgs\\Plus.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\QrCode.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\QrCode.png",
       "PackagePath": "staticwebassets\\imgs\\QrCode.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Star.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Star.png",
       "PackagePath": "staticwebassets\\imgs\\Star.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\Visa.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\Visa.png",
       "PackagePath": "staticwebassets\\imgs\\Visa.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\aprovado.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\aprovado.png",
       "PackagePath": "staticwebassets\\imgs\\aprovado.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\ate2anos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\ate2anos.png",
       "PackagePath": "staticwebassets\\imgs\\ate2anos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\b781f72b-7b99-4671-ba92-50d80e806913.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\b781f72b-7b99-4671-ba92-50d80e806913.png",
       "PackagePath": "staticwebassets\\imgs\\b781f72b-7b99-4671-ba92-50d80e806913.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\blur.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\blur.png",
       "PackagePath": "staticwebassets\\imgs\\blur.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\blur.svg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\blur.svg",
       "PackagePath": "staticwebassets\\imgs\\blur.svg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\blurmenino.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\blurmenino.png",
       "PackagePath": "staticwebassets\\imgs\\blurmenino.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\blurmenino.svg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\blurmenino.svg",
       "PackagePath": "staticwebassets\\imgs\\blurmenino.svg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\bolas.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\bolas.png",
       "PackagePath": "staticwebassets\\imgs\\bolas.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\caixa.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\caixa.png",
       "PackagePath": "staticwebassets\\imgs\\caixa.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\carrinho.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\carrinho.png",
       "PackagePath": "staticwebassets\\imgs\\carrinho.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\carrinhoadd.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\carrinhoadd.png",
       "PackagePath": "staticwebassets\\imgs\\carrinhoadd.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\cartao.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\cartao.png",
       "PackagePath": "staticwebassets\\imgs\\cartao.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\cartaopag.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\cartaopag.png",
       "PackagePath": "staticwebassets\\imgs\\cartaopag.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\cartoes.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\cartoes.png",
       "PackagePath": "staticwebassets\\imgs\\cartoes.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\cataventos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\cataventos.png",
       "PackagePath": "staticwebassets\\imgs\\cataventos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\cataventos_largo.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\cataventos_largo.png",
       "PackagePath": "staticwebassets\\imgs\\cataventos_largo.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\cesta.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\cesta.png",
       "PackagePath": "staticwebassets\\imgs\\cesta.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\chamada-telefonica.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\chamada-telefonica.png",
       "PackagePath": "staticwebassets\\imgs\\chamada-telefonica.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\confereazul.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\confereazul.png",
       "PackagePath": "staticwebassets\\imgs\\confereazul.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\coracao.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\coracao.png",
       "PackagePath": "staticwebassets\\imgs\\coracao.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\curtidos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\curtidos.png",
       "PackagePath": "staticwebassets\\imgs\\curtidos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\d39f8968-2945-4929-af34-f8f3a94268ec.jpg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\d39f8968-2945-4929-af34-f8f3a94268ec.jpg",
       "PackagePath": "staticwebassets\\imgs\\d39f8968-2945-4929-af34-f8f3a94268ec.jpg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif",
       "PackagePath": "staticwebassets\\imgs\\db50df16-199f-4176-9e6d-536d8354f1c6.jfif"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp",
       "PackagePath": "staticwebassets\\imgs\\df96bfcf-29dd-4ca2-81e7-8d0d66bdefef.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\edupedidos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\edupedidos.png",
       "PackagePath": "staticwebassets\\imgs\\edupedidos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\ee261419-bb8c-4706-90b7-7f44fab1a509.jfif",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\ee261419-bb8c-4706-90b7-7f44fab1a509.jfif",
       "PackagePath": "staticwebassets\\imgs\\ee261419-bb8c-4706-90b7-7f44fab1a509.jfif"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\elo.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\elo.png",
       "PackagePath": "staticwebassets\\imgs\\elo.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\esgotados.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\esgotados.png",
       "PackagePath": "staticwebassets\\imgs\\esgotados.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\estrelaVazia.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\estrelaVazia.png",
       "PackagePath": "staticwebassets\\imgs\\estrelaVazia.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\f8748c98-e708-4dec-a0e3-5eceaff5c959.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\f8748c98-e708-4dec-a0e3-5eceaff5c959.webp",
       "PackagePath": "staticwebassets\\imgs\\f8748c98-e708-4dec-a0e3-5eceaff5c959.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\facebook.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\facebook.png",
       "PackagePath": "staticwebassets\\imgs\\facebook.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\favoritado.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\favoritado.png",
       "PackagePath": "staticwebassets\\imgs\\favoritado.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\favoritos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\favoritos.png",
       "PackagePath": "staticwebassets\\imgs\\favoritos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\favoritosdash.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\favoritosdash.png",
       "PackagePath": "staticwebassets\\imgs\\favoritosdash.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\heart.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\heart.png",
       "PackagePath": "staticwebassets\\imgs\\heart.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\img_mae_filho.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\img_mae_filho.png",
       "PackagePath": "staticwebassets\\imgs\\img_mae_filho.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\img_prod_padrao_quadrada.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\img_prod_padrao_quadrada.png",
       "PackagePath": "staticwebassets\\imgs\\img_prod_padrao_quadrada.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\instagram.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\instagram.png",
       "PackagePath": "staticwebassets\\imgs\\instagram.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\linha.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\linha.png",
       "PackagePath": "staticwebassets\\imgs\\linha.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\logo.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\logo.png",
       "PackagePath": "staticwebassets\\imgs\\logo.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\logonav.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\logonav.png",
       "PackagePath": "staticwebassets\\imgs\\logonav.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\lupa.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\lupa.png",
       "PackagePath": "staticwebassets\\imgs\\lupa.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\mais10anos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\mais10anos.png",
       "PackagePath": "staticwebassets\\imgs\\mais10anos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\mais12.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\mais12.png",
       "PackagePath": "staticwebassets\\imgs\\mais12.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\mais3.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\mais3.png",
       "PackagePath": "staticwebassets\\imgs\\mais3.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\master.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\master.png",
       "PackagePath": "staticwebassets\\imgs\\master.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\meiaEstrela.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\meiaEstrela.png",
       "PackagePath": "staticwebassets\\imgs\\meiaEstrela.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\meninoo.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\meninoo.png",
       "PackagePath": "staticwebassets\\imgs\\meninoo.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\montamonta.jpg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\montamonta.jpg",
       "PackagePath": "staticwebassets\\imgs\\montamonta.jpg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\notifica.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\notifica.png",
       "PackagePath": "staticwebassets\\imgs\\notifica.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\pagina-da-internet-preto.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\pagina-da-internet-preto.png",
       "PackagePath": "staticwebassets\\imgs\\pagina-da-internet-preto.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\perfil.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\perfil.png",
       "PackagePath": "staticwebassets\\imgs\\perfil.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\pix.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\pix.png",
       "PackagePath": "staticwebassets\\imgs\\pix.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\pixpag.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\pixpag.png",
       "PackagePath": "staticwebassets\\imgs\\pixpag.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Areia_para_Modelar_-_Massa_Areia_-_Kinetic_Sand_-_Cores_Neon_-_Embalagem_Unitária_-_Sunny_1.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\86_peças_Brinquedos_Educativos_brinquedo_para_crianças_blocos_de_construção_hastes_sticks_Infantis_Brinquedos_de_montar_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Areia_para_Modelar_-_Massa_Areia_-_Kinetic_Sand_-_Cores_Neon_-_Embalagem_Unitária_-_Sunny_1.webp",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Areia_para_Modelar_-_Massa_Areia_-_Kinetic_Sand_-_Cores_Neon_-_Embalagem_Unitária_-_Sunny_1.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_1.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_1.webp",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_1.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_109.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_109.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_109.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_110.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_110.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_110.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_2.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_2.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_2.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_3.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_3.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_3.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_4.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_4.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_4.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_5.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_5.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_5.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_6.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_6.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo_-_Toyster_6.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo__1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo__1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Blocos_de_Montar_-_Tand_Kids_-_Baú_com_120_Peças_-_Amarelo__1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brastoy_Maleta_Educativa_Montessori_Sensorial_Atividades_Infantil_Urso_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Educativo_Experiência_Científica_Para_Crianças_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Educativo_Montessori_de_Classificação_de_Cores_Jogo_de_Encaixe_de_Varetas_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Educativo_Montessori_de_Classificação_de_Cores_Jogo_de_Encaixe_de_Varetas_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Educativo_Montessori_de_Classificação_de_Cores_Jogo_de_Encaixe_de_Varetas_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Educativo_Montessori_de_Classificação_de_Cores_Jogo_de_Encaixe_de_Varetas_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Educativo_Montessori_de_Classificação_de_Cores_Jogo_de_Encaixe_de_Varetas_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Educativo_Montessori_de_Classificação_de_Cores_Jogo_de_Encaixe_de_Varetas_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_5.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedo_Pedagogico_Educativo_Magnético_Labirinto_Pirata_5.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Brinquedos_De_Aprendizagem_Pré-escolar_E_Recursos_De_Aprendi_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Carreta_Pedagógica_-_Especial_para_bebês_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_5.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Cubo_Didático_Grande_-_Mercotoys_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Dino_Papa_Tudo_-_Elka_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Dino_Papa_Tudo_-_Elka_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Dino_Papa_Tudo_-_Elka_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Dino_Papa_Tudo_-_Elka_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Dino_Papa_Tudo_-_Elka_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Dino_Papa_Tudo_-_Elka_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Divertidamente_2_-_Quebra-cabeça_100_peças_1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Divertidamente_2_-_Quebra-cabeça_100_peças_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Divertidamente_2_-_Quebra-cabeça_100_peças_2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Divertidamente_2_-_Quebra-cabeça_100_peças_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Divertidamente_2_-_Quebra-cabeça_100_peças_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Divertidamente_2_-_Quebra-cabeça_100_peças_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_1.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_1.webp",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_1.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_10.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_10.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_10.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_2.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_2.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_2.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_3.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_3.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_3.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_4.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_4.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_4.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_5.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_5.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_5.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_6.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_6.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_6.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_7.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_7.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_7.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_8.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_8.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_8.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_9.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Flaviinha.com_9.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Flaviinha.com_9.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Jogo_De_Ação_-_Disney_-_Dobble_-_Galápagos_1.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Formando_Palavras_112_Letras_Em_Madeira_-_Pais_e_Filhos_2906_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Formando_Palavras_112_Letras_Em_Madeira_-_Pais_e_Filhos_2906_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Formando_Palavras_112_Letras_Em_Madeira_-_Pais_e_Filhos_2906_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Formando_Palavras_112_Letras_Em_Madeira_-_Pais_e_Filhos_2906_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Formando_Palavras_112_Letras_Em_Madeira_-_Pais_e_Filhos_2906_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Formando_Palavras_112_Letras_Em_Madeira_-_Pais_e_Filhos_2906_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_De_Ação_-_Disney_-_Dobble_-_Galápagos_1.webp",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_De_Ação_-_Disney_-_Dobble_-_Galápagos_1.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\KAKAKAKAK_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_De_Tabuleiro_Pega_Pega_Tabuada_-_Grow_1467_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_De_Tabuleiro_Pega_Pega_Tabuada_-_Grow_1467_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_De_Tabuleiro_Pega_Pega_Tabuada_-_Grow_1467_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_De_Tabuleiro_Pega_Pega_Tabuada_-_Grow_1467_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_De_Tabuleiro_Pega_Pega_Tabuada_-_Grow_1467_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_De_Tabuleiro_Pega_Pega_Tabuada_-_Grow_1467_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_Educativo_Geomundo_de_Tabuleiro_Grow_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_Educativo_Geomundo_de_Tabuleiro_Grow_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_Educativo_Geomundo_de_Tabuleiro_Grow_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_Educativo_Geomundo_de_Tabuleiro_Grow_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_Matemática_Fecha_Caixa_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_Matemática_Fecha_Caixa_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_de_Geometria_com_129_Peças_para_Crianças_de_6_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_de_Geometria_com_129_Peças_para_Crianças_de_6_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_de_Tabuleiro_-_Banco_Imobiliário_-_Estrela_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_de_Tabuleiro_-_Banco_Imobiliário_-_Estrela_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_de_Tabuleiro_-_Banco_Imobiliário_-_Estrela_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_de_Tabuleiro_-_Banco_Imobiliário_-_Estrela_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_de_Tabuleiro_-_Banco_Imobiliário_-_Estrela_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_de_Tabuleiro_-_Banco_Imobiliário_-_Estrela_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_de_raciocínio_Cubo_3D_montessori_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_de_raciocínio_Cubo_3D_montessori_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_de_raciocínio_Cubo_3D_montessori_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Jogo_de_raciocínio_Cubo_3D_montessori_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\KAKAKAKAK_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\KAKAKAKAK_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\KAKAKAKAK_2.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\KAKAKAKAK_2.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\KAKAKAKAK_2.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\LEGO_City_-_Police_Car_-_60312_Copy_1.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\LEGO_City_-_Police_Car_-_60312_Copy_1.webp",
       "PackagePath": "staticwebassets\\imgs\\produtos\\LEGO_City_-_Police_Car_-_60312_Copy_1.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Oiee_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Laboratório_Show_da_Luna_Criativo_Infantil_Kit_com_24_Experimentos_Super_Divertidos,_Explorar_a_Ciência_1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Laboratório_Show_da_Luna_Criativo_Infantil_Kit_com_24_Experimentos_Super_Divertidos,_Explorar_a_Ciência_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Laboratório_Show_da_Luna_Criativo_Infantil_Kit_com_24_Experimentos_Super_Divertidos,_Explorar_a_Ciência_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Laboratório_Show_da_Luna_Criativo_Infantil_Kit_com_24_Experimentos_Super_Divertidos,_Explorar_a_Ciência_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Laboratório_Show_da_Luna_Criativo_Infantil_Kit_com_24_Experimentos_Super_Divertidos,_Explorar_a_Ciência_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Laboratório_Show_da_Luna_Criativo_Infantil_Kit_com_24_Experimentos_Super_Divertidos,_Explorar_a_Ciência_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Lousa_Magnética_Infantil_Cavalete_Dobrável_Giz_Caneta_3_em_1_Carimbras_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Oiee_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Oiee_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Oiee_2.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Oiee_2.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Oiee_2.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Oiee_3.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Oiee_3.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Oiee_3.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\Quebra_Cabeça_-_Explorando_o_Corpo_Humano_-_120_Peças_-_Toyster_1.webp",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Ouriço_Brincalhão_Educativo_-_Brinquedo_Pedagógico_Sensorial_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_5.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Países_e_suas_Bandeiras_-_Jogo_Educativo_-_Toyster_Brinquedos_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Prancha_De_Seleçao_Madeira_16_Peças_E.V.A_-_Jottplay_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Prancha_De_Seleçao_Madeira_16_Peças_E.V.A_-_Jottplay_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Prancha_De_Seleçao_Madeira_16_Peças_E.V.A_-_Jottplay_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Prancha_De_Seleçao_Madeira_16_Peças_E.V.A_-_Jottplay_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Prancha_De_Seleçao_Madeira_16_Peças_E.V.A_-_Jottplay_3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Prancha_De_Seleçao_Madeira_16_Peças_E.V.A_-_Jottplay_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Quebra-Cabeça_Mapa_do_Brasil_3D_Plástico_-_Elka_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Quebra-Cabeça_Mapa_do_Brasil_3D_Plástico_-_Elka_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Quebra-Cabeça_Mapa_do_Brasil_3D_Plástico_-_Elka_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Quebra-Cabeça_Mapa_do_Brasil_3D_Plástico_-_Elka_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Quebra-Cabeça_Mapa_do_Brasil_3D_Plástico_-_Elka_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Quebra-Cabeça_Mapa_do_Brasil_3D_Plástico_-_Elka_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Quebra_Cabeça_-_Explorando_o_Corpo_Humano_-_120_Peças_-_Toyster_1.webp",
       "PackagePath": "staticwebassets\\imgs\\produtos\\Quebra_Cabeça_-_Explorando_o_Corpo_Humano_-_120_Peças_-_Toyster_1.webp"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\X_1.jpg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_4.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Rompecabezas_De_Habilidades_Motoras_Montessori_Wooden_Man_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Stitch_-_Quebra-cabeça_200_peças_-_Toyster_Brinquedos_1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Stitch_-_Quebra-cabeça_200_peças_-_Toyster_Brinquedos_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Stitch_-_Quebra-cabeça_200_peças_-_Toyster_Brinquedos_2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Stitch_-_Quebra-cabeça_200_peças_-_Toyster_Brinquedos_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Stitch_-_Quebra-cabeça_200_peças_-_Toyster_Brinquedos_3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Stitch_-_Quebra-cabeça_200_peças_-_Toyster_Brinquedos_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__5.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__6.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_MadeiraBrinquedos_Montessori_de_tabuleiro_ocupado__6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_Madeira_1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_Madeira_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_Madeira_2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_Madeira_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_Madeira_3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tabuleiro_Sensorial_Montessori_Brinquedo_Encaixe_Madeira_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tatu_da_matemática_1.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tatu_da_matemática_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tatu_da_matemática_2.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tatu_da_matemática_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Tatu_da_matemática_3.webp",
+      "PackagePath": "staticwebassets\\imgs\\produtos\\Tatu_da_matemática_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Ver,_tocar_e_Sentir",
+      "PackagePath": "staticwebassets\\imgs\\produtos"
+    },
+    {
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\X_1.jpg",
       "PackagePath": "staticwebassets\\imgs\\produtos\\X_1.jpg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\X_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\X_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\X_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\bola_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\bola_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\bola_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\carrinho_1.jpg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\carrinho_1.jpg",
       "PackagePath": "staticwebassets\\imgs\\produtos\\carrinho_1.jpg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\carrinho_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\carrinho_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\carrinho_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\carrinhp_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\carrinhp_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\carrinhp_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\eve_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\eve_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\eve_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\gerere_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\gerere_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\gerere_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\hhhhhh_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\hhhhhh_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\hhhhhh_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\ljlj_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\ljlj_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\ljlj_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\r_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\r_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\r_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\teste_1.jpg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\teste_1.jpg",
       "PackagePath": "staticwebassets\\imgs\\produtos\\teste_1.jpg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\teste_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\teste_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\teste_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\tetse_1.jpg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\tetse_1.jpg",
       "PackagePath": "staticwebassets\\imgs\\produtos\\tetse_1.jpg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\wsedrjisdrtgy_1.jpg",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\wsedrjisdrtgy_1.jpg",
       "PackagePath": "staticwebassets\\imgs\\produtos\\wsedrjisdrtgy_1.jpg"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\ççç_1.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\ççç_1.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\ççç_1.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\produtos\\ççç_2.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\ççç_2.png",
       "PackagePath": "staticwebassets\\imgs\\produtos\\ççç_2.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\promo.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\promo.png",
       "PackagePath": "staticwebassets\\imgs\\promo.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\reembolso.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\reembolso.png",
       "PackagePath": "staticwebassets\\imgs\\reembolso.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\sair.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\sair.png",
       "PackagePath": "staticwebassets\\imgs\\sair.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\setalado.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\setalado.png",
       "PackagePath": "staticwebassets\\imgs\\setalado.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\ticoCarrinhoVazio.png",
       "PackagePath": "staticwebassets\\imgs\\ticoCarrinhoVazio.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\ticocartao.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\ticocartao.png",
       "PackagePath": "staticwebassets\\imgs\\ticocartao.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\ticofavoritos.png",
       "PackagePath": "staticwebassets\\imgs\\ticofavoritos.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\ticofeliz.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\ticofeliz.png",
       "PackagePath": "staticwebassets\\imgs\\ticofeliz.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\ticolupa.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\ticolupa.png",
       "PackagePath": "staticwebassets\\imgs\\ticolupa.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\upload.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\upload.png",
       "PackagePath": "staticwebassets\\imgs\\upload.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\vendas.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\vendas.png",
       "PackagePath": "staticwebassets\\imgs\\vendas.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\whatsapp.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\whatsapp.png",
       "PackagePath": "staticwebassets\\imgs\\whatsapp.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\x.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\x.png",
       "PackagePath": "staticwebassets\\imgs\\x.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\imgs\\xx.png",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\xx.png",
       "PackagePath": "staticwebassets\\imgs\\xx.png"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\js\\Chart.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\js\\Chart.min.js",
       "PackagePath": "staticwebassets\\js\\Chart.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\js\\chart-area-demo.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\js\\chart-area-demo.js",
       "PackagePath": "staticwebassets\\js\\chart-area-demo.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\js\\chart-pie-demo.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\js\\chart-pie-demo.js",
       "PackagePath": "staticwebassets\\js\\chart-pie-demo.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\js\\datatables-demo.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\js\\datatables-demo.js",
       "PackagePath": "staticwebassets\\js\\datatables-demo.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\barro\\Desktop\\MdsNuncaAcaba\\edutico\\wwwroot\\template\\templateNF.docx",
+      "Id": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\template\\templateNF.docx",
       "PackagePath": "staticwebassets\\template\\templateNF.docx"
     },
     {
