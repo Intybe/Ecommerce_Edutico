@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yO4cCsRnV/arVbpjJ/snsk8FHqj3YCzIZc/ApkR8jo0=",
+  "Hash": "u34oAZDpgm2uNhvZLItMtEbCJZZ6X1Ooq30w4/7vWKw=",
   "Source": "edutico",
   "BasePath": "_content/edutico",
   "Mode": "Default",
@@ -3074,6 +3074,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\produtos\\Jogo_Matemática_Fecha_Caixa_1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\Jogo_Matemática_Fecha_Caixa_109.webp",
+      "SourceId": "edutico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\",
+      "BasePath": "_content/edutico",
+      "RelativePath": "imgs/produtos/Jogo_Matemática_Fecha_Caixa_109.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\produtos\\Jogo_Matemática_Fecha_Caixa_109.webp"
     },
     {
       "Identity": "C:\\Users\\barro\\Desktop\\AhSla\\edutico\\wwwroot\\imgs\\produtos\\KAKAKAKAK_1.png",

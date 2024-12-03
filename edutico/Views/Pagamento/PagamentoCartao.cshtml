@@ -7,7 +7,7 @@
 
 
 @*
-@if (Model.retorno == true)
+    @if (Model.retorno == true)
 {
     valorModal = "#successModal";
 }
@@ -30,24 +30,6 @@ else
             <div class="menu-cartões ">
                 @foreach (var cartoesLista in Model.cartoes)
                 {
-                    string imgBandeira = null;
-
-                    @if (cartoesLista.bandeira == "Visa")
-                    {
-                        imgBandeira = "~/imgs/Visa.png";
-                    }
-                    else if (cartoesLista.bandeira == "MasterCard")
-                    {
-                        imgBandeira = "~/imgs/master.png";
-                    }
-                    else if (cartoesLista.bandeira == "Elo")
-                    {
-                        imgBandeira = "~/imgs/elo.png";
-                    }
-                    else
-                    {
-                        imgBandeira = "~/imgs/Bandeira.png";
-                    }
                     var cartao = @Html.Raw(Json.Serialize(cartoesLista));
                     var index = Model.cartoes.IndexOf(cartoesLista);
 
@@ -58,7 +40,7 @@ else
                             <div class="custom-radio">
                                 <span></span>
                             </div>
-                            <img src="@Url.Content(imgBandeira)" alt="iconecartao" width="50">
+                            <img src="~/imgs/master.png" alt="iconecartao" width="50">
                             <p>@cartoesLista.numCartao.ToString().Substring(cartoesLista.numCartao.ToString().Length - 4)</p>
                         </label>
                         <a asp-controller="Pagamento" asp-action="VisualizarCartao" asp-route-cartaoEnviado="@cartao">
@@ -76,13 +58,13 @@ else
             <h5 id="glacial-bold" class="text-center" style="color:#1C3FB9;">CADASTRE SEU CARTÃO AQUI</h5>
             <br />
 
-            <form id="cadastroCartaoForm" style="display: none;">
+            <form id="cadastrocartao">
                 <div class="info-grup d-flex flex-column mb-3">
                     <label for="titular">Nome do titular <span class="obg">*</span></label>
-                    <input type="text" placeholder="Digite aqui o nome do titular" />
+                    <input type="text" placeholder="Digite aqui o número do cartão" />
                 </div>
                 <div class="info-grup d-flex flex-column mb-3">
-                    <label for="numeroCartao">Número do cartão <span class="obg">*</span></label>
+                    <label for="titular">Número do cartão <span class="obg">*</span></label>
                     <input type="text" placeholder="Digite aqui o número do cartão" />
                 </div>
                 <div class="d-flex info-grup">
@@ -90,9 +72,14 @@ else
                         <label for="validade">Data de validade<span class="obg">*</span></label>
                         <input type="text" placeholder="MM/AA" />
                     </div>
+                    <div class="d-flex flex-column w-100">
+                        <label for="cvv">Código de segurança<span class="obg">*</span></label>
+                        <input type="text" placeholder="CVV" />
+                    </div>
                 </div>
+
                 <div class="d-flex justify-content-end">
-                    <button class="btn-cartao">Confirmar</button>
+                    <button class="btn-cartao ">Confirmar</button>
                 </div>
             </form>
         </div>
@@ -162,19 +149,6 @@ else
             const form = document.querySelector("#formPagamento");
             form.submit();
         }
-
-        function expandirSecao(formId, setaId) {
-            const form = document.getElementById(formId);
-            const setaIcon = document.getElementById(setaId);
-
-            if (form.style.display === 'none' || form.style.display === '') {
-                form.style.display = 'block';
-                setaIcon.classList.add('giraseta');
-            } else {
-                form.style.display = 'none';
-                setaIcon.classList.remove('giraseta');
-            }
-        }
     </script>
 </div>
 
@@ -184,7 +158,6 @@ else
 <!-- Modal Aprovado-->
 
 <div class="modal fade texto-simples" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false">
-    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
     <!-- modal-dialog-centered faz ficar no centro verticalmente-->
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
@@ -209,10 +182,12 @@ else
             </div>
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
-                <a asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@Model.pedido.NF">
+                <a  asp-controller="Pedido" asp-action="DetalhesPedido" asp-route-NF="@Model.pedido.NF" class="btn btn-primary" style="border-radius: 25px;">
                     Acompanhar pedido
                 </a>
             </div>
+
+
         </div>
     </div>
 </div>
@@ -223,7 +198,6 @@ else
 
 
 <div class="modal fade texto-simples" id="negadoModal" data-bs-backdrop="static" data-bs-keyboard="false">
-    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
     <!-- modal-dialog-centered faz ficar no centro verticalmente-->
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
@@ -255,13 +229,10 @@ else
             <!--botao de dentro da modal-->
             <div class="modal-footer border-0 d-flex justify-content-center">
                 <!--fecha modal-->
-                <a asp-controller="Home" asp-action="Index">
-                    <button class="btn btn-primary" data-bs-dismiss="modal" style="border-radius: 25px;">
-                        Voltar para o menu
-                    </button>
-                </a>
+                <button class="btn btn-primary" data-bs-dismiss="modal" style="border-radius: 25px;">
+                    Voltar para o menu
+                </button>
             </div>
         </div>
     </div>
 </div>
-

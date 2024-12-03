@@ -86,21 +86,21 @@
                                 <div class="align-content-center">
                                     @for (int i = 0; i < estrelasCheias; i++)
                                     {
-                                    // Exibe as estrelas cheias
+                                        // Exibe as estrelas cheias
                                         <img src="~/imgs/Star.png" class="iconeava" />
                                     }
 
 
                                     @if (meiaEstrela)
                                     {
-                                    // Exibe meia estrela, se necessário
+                                        // Exibe meia estrela, se necessário
                                         <img src="~/imgs/halfStar.png" class="iconeava" />
                                     }
 
 
                                     @for (int i = 0; i < estrelasVazias; i++)
                                     {
-                                    // Exibe as estrelas vazias
+                                        // Exibe as estrelas vazias
                                         <img src="~/imgs/estrelaVazia.png" class="iconeava" />
                                     }
                                     <br>
@@ -240,7 +240,7 @@
 
                 @if (!Model.favoritos.Any())
                 {
-                    <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                    <form asp-controller="Favorito" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
                         <button class="btn">
                             <img src="~/imgs/heart.png" class="curti">
                         </button>
@@ -258,7 +258,7 @@
                     }
                     else
                     {
-                        <form asp-controller="Home" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
+                        <form asp-controller="Favorito" asp-route-codProd="@Model.produto.codProd" asp-action="Favoritar" method="post">
                             <button class="btn">
                                 <img src="~/imgs/heart.png" class="curti">
                             </button>
@@ -299,7 +299,7 @@
 
                     @for (int i = 0; i < estrelasVazias; i++)
                     {
-                    // Exibe as estrelas vazias
+                        // Exibe as estrelas vazias
                         <img src="~/imgs/estrelaVazia.png" class="iconeava" />
                     }
                     @((Model.produto.somaAvaliacao / Model.produto.qtdAvaliacao).ToString("F1").Replace(",", ".")) (@Model.produto.qtdAvaliacao avaliações)
@@ -358,7 +358,7 @@
             <div class="card-recome my-2">
                 @foreach (var produto in Model.produto.relacionados)
                 {
-                    <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-codProd="@produto.codProd" class="text-decoration-none">
+                    <a asp-controller="Produto" asp-action="DetalhesProduto" asp-route-codProd="@produto.codProd" style="color: inherit;" class="text-decoration-none">
                         <div class="card-body d-flex py-2">
                             <div class="position-relative">
                                 @if (!Model.favoritos.Any())
@@ -500,14 +500,14 @@
     const totalRatings = @Model.produto.qtdAvaliacao;
     const ratingsData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.produto.dadosAvaliacoes).Replace("\"", "").Replace(":", ": "))
 
-                        for (let rating in ratingsData) {
+                            for (let rating in ratingsData) {
         const percentage = (ratingsData[rating] / totalRatings) * 100;
-        const ratingBar = document.getElementById(`bar-${rating}`);
+        const ratingBar = document.getElementById(`ba r -$ {ratin g}`);
 
         if (ratingBar) {
-            ratingBar.style.width = `${percentage}%`;
+            ratingBar.style.width = `$ {percentag e}%`;
         } else {
-            console.error(`Barra de progresso para ${rating} estrelas não encontrada.`);
+            console.error(`Barra de progresso para $ {ratin g} estrelas não encontrada.`);
         }
     }
 </script>

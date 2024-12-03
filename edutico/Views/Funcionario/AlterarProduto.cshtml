@@ -244,7 +244,7 @@
 
         // Criando um array de objetos
         let imgs = [];
-
+        /*
         imgsConcatenadas.forEach(item => {
             let partes = item.split(" - ");
             imgs.push({
@@ -256,7 +256,7 @@
         console.log(imgs);
 
         // Chama a função para adicionar as imagens
-        adicionarImagens(imgs);
+        adicionarImagens(imgs);*/
     });
 
     function selecionarHabilidade(element) {
@@ -272,49 +272,38 @@
     }
 
     function addMiniatura(event) {
-        // Pega o primeiro arquivo que o usuário escolheu (no caso, a imagem)
         const file = event.target.files[0];
 
-        // Verifica se o arquivo existe
         if (file) {
-            // Cria um leitor de arquivos para ler o conteúdo da imagem
             const reader = new FileReader();
 
-            // Quando o leitor terminar de carregar a imagem, esta função será executada
             reader.onload = function (e) {
-                // Pega o elemento no HTML onde as miniaturas serão exibidas
                 const grid_imgs = document.getElementById("grid_imgs");
 
-                // Cria um contêiner para a miniatura (um <div> que vai envolver a miniatura)
                 const thumbnailContainer = document.createElement("div");
-                thumbnailContainer.classList.add("miniaturas");  // Corrigido para usar thumbnailContainer
+                thumbnailContainer.classList.add("miniaturas");
 
-                // Cria um elemento <img> para exibir a miniatura
                 const imgElement = document.createElement("img");
-                imgElement.src = e.target.result;  // Define a imagem carregada como a fonte da tag <img>
+                imgElement.src = e.target.result;
 
-                // Cria um botão para remover a miniatura
                 const removeButton = document.createElement("button");
-                removeButton.innerHTML = '<img src="/imgs/xx.png" id="remove-miniatura" style="width:30px; height:30px; background:none;">';  // Define o texto do botão como "x" (para remover)
+                removeButton.classList.add("remove-miniatura");
+                removeButton.innerHTML = "X";
 
-
-                // Define a ação do botão: remover a miniatura quando o botão for clicado
                 removeButton.onclick = function () {
-                    thumbnailContainer.remove();  // Remove o contêiner da miniatura correta
+                    thumbnailContainer.remove();
                 };
 
-                // Adiciona a imagem e o botão de remover ao contêiner da miniatura
                 thumbnailContainer.appendChild(imgElement);
                 thumbnailContainer.appendChild(removeButton);
 
-                // Adiciona o contêiner da miniatura antes do último item da galeria (um ícone "+")
                 grid_imgs.insertBefore(thumbnailContainer, grid_imgs.lastElementChild);
             };
 
-            // Lê o arquivo da imagem como uma URL (para exibição)
             reader.readAsDataURL(file);
         }
     }
+
 </script>
 @section Scripts {
     @{

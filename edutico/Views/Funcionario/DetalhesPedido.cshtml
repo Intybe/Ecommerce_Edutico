@@ -6,8 +6,7 @@
 
 @model Pedido;
 
-<section class="Conteudo">
-    <!-- base -->
+
     <section class="DetalhesPedidosF">
         <!--Cabeçaho do detalhes pedido-->
         <div class="headerDetalhes">
@@ -17,8 +16,7 @@
 
         <!--conteudo começa aqui (informações/dados)-->
         <div class="row texto-simples justify-content-between">
-            @*a classe texto-simples esta estilizando todos os textos para o glacial tradicional*@
-            <!--coluna que guarda os dados do cliente, endereço e fomas de pagamento-->
+             <!--coluna que guarda os dados do cliente, endereço e fomas de pagamento-->
             <div class="col-6">
                 <!--numero e datas da comanda-->
                 <div class="d-flex mb-4">
@@ -42,7 +40,7 @@
                     <div class="col-4 mb-2">
                         <div class="info-devo mb-3">
                             <p>Primeiro nome</p>
-                            <p id="infoped">@Model.cliente.nome</p> @*esse id esta fazendo ficar negrito e cinza*@
+                            <p id="infoped">@Model.cliente.nome</p> 
                         </div>
                         <div class="info-devo">
                             <p> Telefone</p>
@@ -73,7 +71,6 @@
                 </div>
                 <!--informações entrega-->
                 <div class="sub_perfil">
-                    @*essa classe esta tirando o margin do p*@
                     <p id="glacial-bold">Endereço de entrega</p>
                 </div>
                 <hr />
@@ -129,7 +126,18 @@
 
                             var valorItem = valor.Insert(valor.Length - 2, ",");
 
-                            <p><img src="@Url.Content(@item.produto.img.enderecoImg)" alt="@item.produto.nomeProd"> <span>@item.produto.nomeProd</span> <span>R$ @valorItem</span></p>
+                            <p><img src="@Url.Content(@item.produto.img.enderecoImg)" alt="@item.produto.nomeProd"> <span>
+                                @if (item.produto.nomeProd.Length > 20)
+                                {
+                                    @item.produto.nomeProd.Substring(0, 20)
+
+                                    <text>...</text>
+                                }
+                                else
+                                {
+                                    @item.produto.nomeProd
+                                }
+                            </span> <span>R$ @valorItem</span></p>
                         }
                         <p><span>Entrega</span> <span>R$ 20,00</span></p>
                     </div> <div class="line"></div>
@@ -163,7 +171,6 @@
 
                 <!-- MODAL -->
                 <div class="modal fade texto-simples" id="ModalPedidoEnviado" data-bs-backdrop="static" data-bs-keyboard="false">
-                    @*esses datas bs impede que a modal se feche ao clicar no fundo o em esc*@
                     <!-- modal-dialog-centered faz ficar no centro verticalmente-->
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content text-center p-2 justify-content-center" style="border-radius: 20px;  position: relative;">
@@ -185,7 +192,8 @@
                             </div>
                             <!--botao de dentro da modal-->
                             <div class="modal-footer border-0 d-flex justify-content-center">
-                                <a asp-controller="Funcionario" asp-action="Pedidos" class="btn btn-primary Modal-btn">
+                                <a href="@Url.Action("Pedidos", "Funcionario")" class="btn btn-primary Modal-btn">
+                                    <!--faz com que abra outra padina na mesma aba-->
                                     Voltar para o menu
                                 </a>
                             </div>
@@ -197,9 +205,6 @@
 
         </div>
         <div class="btnvoltar">
-            <a asp-controller="Pedido" asp-action="Pedidos" class="register-button">Voltar</a>
+            <a asp-controller="Funcionario" asp-action="Pedidos" class="register-button">Voltar</a>
         </div>
-
-
     </section>
-</section>

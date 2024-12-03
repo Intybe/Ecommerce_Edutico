@@ -38,15 +38,15 @@
                         <td>
                             <span><img src="@Url.Content(produto.imgs.First().enderecoImg)" class="prevproduto" /></span>
 
-                            @if (produto.nomeProd.Length > 17)
+                            @if (produto.nomeProd.Length > 10)
                             {
-                                @produto.nomeProd.Substring(0, 17)
+                                @produto.nomeProd.Substring(0, 10)
 
-                                <text>...</text> <!-- Exibe apenas os 20 primeiros caracteres com "..." -->
+                                <text>...</text> 
                             }
                             else
                             {
-                                @produto.nomeProd  <!-- Exibe o nome completo se for menor ou igual a 20 caracteres -->
+                                @produto.nomeProd 
                             }
 
                         </td>
